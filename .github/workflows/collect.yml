@@ -1,0 +1,71 @@
+name: Collect CVE data
+
+on:
+  schedule:
+    - cron: "0 3 * * *"  # 매일 03:00 UTC (KST 12:00)
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "상태 파일 무시하고 최근 N일치 신규 CVE 후보를 강제로 풀에 유입 (백필용, 비워두면 증분 수집)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cve-collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    # GitHub Search API 30회/분이 병목이라 재검사 건수 x 2.2초가 그대로 실행 시간이 된다.
+    # 재검사 스케줄이 11단계로 촘촘해지면서 정상 실행이 60분대가 됐고, 스케줄 변경 직후
+    # 한 번은 밀린 후보가 몰려 그보다 길어진다. --max-github-checks(1800) 가 실질 상한.
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run collector
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd scripts
+          ARGS=""
+          if [ -n "${{ github.event.inputs.days }}" ]; then
+            ARGS="--days ${{ github.event.inputs.days }}"
+          fi
+          python collect.py $ARGS
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update CVE data ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      # 아카이브에 잘못된 PoC 근거가 섞였는지 확인한다. GitHub 검색이 정확 일치가
+      # 아니라 짧은 시퀀스 번호의 CVE가 긴 CVE에 잡아먹힌 적이 있어(아카이브 23% 오염),
+      # 사람이 눈으로 발견하기 전에 CI가 잡도록 둔다. 수집 자체는 이미 커밋했으므로
+      # 여기서 실패해도 데이터는 남고, 워크플로만 빨갛게 표시된다.
+      - name: Verify archive integrity
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd scripts
+          python collect.py --verify

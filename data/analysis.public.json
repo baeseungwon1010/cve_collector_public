@@ -1,0 +1,326 @@
+{
+  "CVE-2023-1370": {
+    "package": "MAVEN:net.minidev:json-smart"
+  },
+  "CVE-2024-42467": {
+    "package": "MAVEN:org.openhab.ui.bundles:org.openhab.ui.cometvisu"
+  },
+  "CVE-2025-66024": {
+    "package": "MAVEN:org.xwiki.contrib.blog:application-blog-ui"
+  },
+  "CVE-2025-71329": {
+    "package": "NPM:image-size"
+  },
+  "CVE-2025-71330": {
+    "package": "NPM:image-size"
+  },
+  "CVE-2026-11816": {
+    "package": "PIP:keras"
+  },
+  "CVE-2026-12479": {
+    "package": "PIP:keras"
+  },
+  "CVE-2026-12481": {
+    "package": "PIP:keras"
+  },
+  "CVE-2026-12484": {
+    "package": "PIP:keras"
+  },
+  "CVE-2026-13676": {
+    "package": "NPM:fast-uri"
+  },
+  "CVE-2026-17532": {
+    "package": "WORDPRESS:seraphinite-accelerator"
+  },
+  "CVE-2026-32686": {
+    "package": "ERLANG:decimal"
+  },
+  "CVE-2026-40181": {
+    "package": "NPM:@remix-run/router"
+  },
+  "CVE-2026-40984": {
+    "package": "MAVEN:io.micrometer:micrometer-jetty11"
+  },
+  "CVE-2026-44795": {
+    "package": "MAVEN:io.spinnaker.orca:orca-core"
+  },
+  "CVE-2026-45799": {
+    "package": "MAVEN:com.squareup.wire:wire-runtime-jvm"
+  },
+  "CVE-2026-48710": {
+    "package": "PIP:starlette"
+  },
+  "CVE-2026-48748": {
+    "package": "MAVEN:io.netty:netty-codec-http3"
+  },
+  "CVE-2026-50159": {
+    "package": "NPM:mermaid"
+  },
+  "CVE-2026-50163": {
+    "package": "GO:oras.land/oras-go/v2"
+  },
+  "CVE-2026-53878": {
+    "package": "PIP:django"
+  },
+  "CVE-2026-54164": {
+    "package": "COMPOSER:api-platform/core"
+  },
+  "CVE-2026-54513": {
+    "package": "MAVEN:tools.jackson.core:jackson-databind"
+  },
+  "CVE-2026-54572": {
+    "package": "GO:github.com/rclone/rclone"
+  },
+  "CVE-2026-54658": {
+    "package": "NPM:@hypequery/clickhouse"
+  },
+  "CVE-2026-54763": {
+    "package": "GO:github.com/traefik/traefik/v3"
+  },
+  "CVE-2026-54765": {
+    "package": "GO:github.com/traefik/traefik/v3"
+  },
+  "CVE-2026-54904": {
+    "package": "RUBYGEMS:concurrent-ruby"
+  },
+  "CVE-2026-56383": {
+    "package": "COMPOSER:craftcms/cms"
+  },
+  "CVE-2026-56384": {
+    "package": "COMPOSER:craftcms/cms"
+  },
+  "CVE-2026-56385": {
+    "package": "COMPOSER:craftcms/cms"
+  },
+  "CVE-2026-56393": {
+    "package": "COMPOSER:craftcms/cms"
+  },
+  "CVE-2026-56394": {
+    "package": "COMPOSER:craftcms/cms"
+  },
+  "CVE-2026-56818": {
+    "package": "MAVEN:io.netty:netty-codec-redis"
+  },
+  "CVE-2026-59710": {
+    "package": "NPM:showdown"
+  },
+  "CVE-2026-59711": {
+    "package": "NPM:showdown"
+  },
+  "CVE-2026-59733": {
+    "package": "GO:github.com/rclone/rclone"
+  },
+  "CVE-2026-59865": {
+    "package": "NUGET:Microsoft.OpenApi.Kiota.Builder"
+  },
+  "CVE-2026-62992": {
+    "package": "COMPOSER:smarty/smarty"
+  },
+  "CVE-2026-62996": {
+    "package": "COMPOSER:smarty/smarty"
+  },
+  "CVE-2026-63221": {
+    "package": "COMPOSER:codeigniter4/framework"
+  },
+  "CVE-2026-63222": {
+    "package": "COMPOSER:codeigniter4/framework"
+  },
+  "CVE-2026-64662": {
+    "package": "COMPOSER:statamic/cms"
+  },
+  "CVE-2026-64665": {
+    "package": "COMPOSER:statamic/cms"
+  },
+  "CVE-2026-65600": {
+    "package": "GO:github.com/traefik/traefik"
+  },
+  "CVE-2026-65601": {
+    "package": "GO:Traefik"
+  },
+  "CVE-2026-65602": {
+    "package": "GO:github.com/traefik/traefik/v3"
+  },
+  "CVE-2026-67309": {
+    "package": "GO:github.com/traefik/traefik/v3"
+  },
+  "CVE-2026-67314": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-67422": {
+    "package": "PIP:pymdown-extensions"
+  },
+  "CVE-2026-67434": {
+    "package": "COMPOSER:squizlabs/php_codesniffer"
+  },
+  "CVE-2026-69255": {
+    "package": "NPM:flowise-components"
+  },
+  "CVE-2026-69256": {
+    "package": "NPM:flowise"
+  },
+  "CVE-2026-69257": {
+    "package": "NPM:flowise"
+  },
+  "CVE-2026-69258": {
+    "package": "NPM:flowise"
+  },
+  "CVE-2026-69259": {
+    "package": "NPM:flowise-components"
+  },
+  "CVE-2026-69262": {
+    "package": "NPM:flowise"
+  },
+  "CVE-2026-69263": {
+    "package": "NPM:flowise-components"
+  },
+  "CVE-2026-69264": {
+    "package": "NPM:flowise-components"
+  },
+  "CVE-2026-70470": {
+    "package": "NPM:flowise-components"
+  },
+  "CVE-2026-70472": {
+    "package": "NPM:flowise"
+  },
+  "CVE-2026-70473": {
+    "package": "NPM:flowise"
+  },
+  "CVE-2026-70475": {
+    "package": "NPM:flowise"
+  },
+  "CVE-2026-70476": {
+    "package": "NPM:flowise"
+  },
+  "CVE-2026-70477": {
+    "package": "NPM:flowise-components"
+  },
+  "CVE-2026-70479": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-70482": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-70485": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-70486": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-70489": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-70491": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-70492": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-70493": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-70494": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-70593": {
+    "package": "NPM:ghost"
+  },
+  "CVE-2026-70594": {
+    "package": "NPM:ghost"
+  },
+  "CVE-2026-70597": {
+    "package": "NPM:electron"
+  },
+  "CVE-2026-70608": {
+    "package": "NPM:electron"
+  },
+  "CVE-2026-70611": {
+    "package": "NPM:electron"
+  },
+  "CVE-2026-70646": {
+    "package": "PIP:aiosend"
+  },
+  "CVE-2026-71211": {
+    "package": "PIP:mlflow"
+  },
+  "CVE-2026-71309": {
+    "package": "GO:github.com/rclone/rclone"
+  },
+  "CVE-2026-71311": {
+    "package": "GO:github.com/rclone/rclone"
+  },
+  "CVE-2026-71312": {
+    "package": "GO:github.com/rclone/rclone"
+  },
+  "CVE-2026-71313": {
+    "package": "GO:github.com/rclone/rclone"
+  },
+  "CVE-2026-71314": {
+    "package": "NPM:nuxt"
+  },
+  "CVE-2026-71315": {
+    "package": "NPM:nuxt"
+  },
+  "CVE-2026-71316": {
+    "package": "NPM:nuxt"
+  },
+  "CVE-2026-71320": {
+    "package": "NPM:nuxt"
+  },
+  "CVE-2026-71321": {
+    "package": "NPM:nuxt"
+  },
+  "CVE-2026-71324": {
+    "package": "GO:github.com/traefik/traefik"
+  },
+  "CVE-2026-71325": {
+    "package": "GO:github.com/traefik/traefik"
+  },
+  "CVE-2026-71326": {
+    "package": "GO:github.com/traefik/traefik/v3"
+  },
+  "CVE-2026-71327": {
+    "package": "GO:github.com/traefik/traefik/v3"
+  },
+  "CVE-2026-71435": {
+    "package": "COMPOSER:statamic/cms"
+  },
+  "CVE-2026-71436": {
+    "package": "NPM:mermaid"
+  },
+  "CVE-2026-71437": {
+    "package": "NPM:mermaid"
+  },
+  "CVE-2026-71438": {
+    "package": "NPM:mermaid"
+  },
+  "CVE-2026-71439": {
+    "package": "NPM:mermaid"
+  },
+  "CVE-2026-71476": {
+    "package": "NPM:nx"
+  },
+  "CVE-2026-71478": {
+    "package": "COMPOSER:league/commonmark"
+  },
+  "CVE-2026-71488": {
+    "package": "COMPOSER:league/commonmark"
+  },
+  "CVE-2026-71556": {
+    "package": "GO:github.com/go-git/go-git/v6"
+  },
+  "CVE-2026-71557": {
+    "package": "GO:github.com/go-git/go-git/v6"
+  },
+  "CVE-2026-71851": {
+    "package": "NPM:crypto-js"
+  },
+  "CVE-2026-71852": {
+    "package": "PIP:pypdf"
+  },
+  "CVE-2026-71870": {
+    "package": "PIP:pypdf"
+  },
+  "CVE-2026-9335": {
+    "package": "PIP:keras"
+  }
+}
