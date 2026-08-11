@@ -1,8 +1,0 @@
-{
-  "CVE-2026-67426": {
-    "package": "PIP:flyto-core"
-  },
-  "CVE-2026-71870": {
-    "package": "PIP:pypdf"
-  }
-}
