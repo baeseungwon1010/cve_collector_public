@@ -1,1 +1,11 @@
-{}
+{
+  "CVE-2024-7387": {
+    "package": "GO:github.com/openshift/builder"
+  },
+  "CVE-2026-54635": {
+    "package": "PIP:pytonapi"
+  },
+  "CVE-2026-73080": {
+    "package": "GO:github.com/seaweedfs/seaweedfs"
+  }
+}
