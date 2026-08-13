@@ -1,11 +1,26 @@
 {
-  "CVE-2024-7387": {
-    "package": "GO:github.com/openshift/builder"
+  "CVE-2026-32257": {
+    "package": "COMPOSER:winter/wn-backend-module"
   },
-  "CVE-2026-54635": {
-    "package": "PIP:pytonapi"
+  "CVE-2026-32258": {
+    "package": "COMPOSER:winter/wn-backend-module"
   },
-  "CVE-2026-73080": {
-    "package": "GO:github.com/seaweedfs/seaweedfs"
+  "CVE-2026-34487": {
+    "package": "MAVEN:org.apache.tomcat.embed:tomcat-embed-core"
+  },
+  "CVE-2026-46369": {
+    "package": "RUST:nimiq-blockchain"
+  },
+  "CVE-2026-48798": {
+    "package": "NUGET:SSH.NET"
+  },
+  "CVE-2026-52776": {
+    "package": "PIP:compliance-trestle"
+  },
+  "CVE-2026-53673": {
+    "package": "COMPOSER:buddypress/buddypress"
+  },
+  "CVE-2026-73302": {
+    "package": "NPM:@budibase/server"
   }
 }
