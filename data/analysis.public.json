@@ -1,26 +1,92 @@
 {
-  "CVE-2026-32257": {
-    "package": "COMPOSER:winter/wn-backend-module"
+  "CVE-2025-71408": {
+    "package": "PIP:nltk"
   },
-  "CVE-2026-32258": {
-    "package": "COMPOSER:winter/wn-backend-module"
+  "CVE-2026-49296": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-34487": {
-    "package": "MAVEN:org.apache.tomcat.embed:tomcat-embed-core"
+  "CVE-2026-53914": {
+    "package": "MAVEN:org.jetbrains.kotlin:kotlin-gradle-plugin"
   },
-  "CVE-2026-46369": {
-    "package": "RUST:nimiq-blockchain"
+  "CVE-2026-54399": {
+    "package": "MAVEN:org.apache.httpcomponents.core5:httpcore5"
   },
-  "CVE-2026-48798": {
-    "package": "NUGET:SSH.NET"
+  "CVE-2026-54917": {
+    "package": "GO:github.com/seaweedfs/seaweedfs"
   },
-  "CVE-2026-52776": {
-    "package": "PIP:compliance-trestle"
+  "CVE-2026-59727": {
+    "package": "NPM:astro"
   },
-  "CVE-2026-53673": {
-    "package": "COMPOSER:buddypress/buddypress"
+  "CVE-2026-59729": {
+    "package": "NPM:astro"
   },
-  "CVE-2026-73302": {
+  "CVE-2026-59730": {
+    "package": "NPM:@astrojs/node"
+  },
+  "CVE-2026-61459": {
+    "package": "PIP:mcp-server-kubernetes"
+  },
+  "CVE-2026-73307": {
     "package": "NPM:@budibase/server"
+  },
+  "CVE-2026-73406": {
+    "package": "NPM:@budibase/server"
+  },
+  "CVE-2026-73409": {
+    "package": "NPM:@budibase/server"
+  },
+  "CVE-2026-73410": {
+    "package": "NPM:@budibase/server"
+  },
+  "CVE-2026-73411": {
+    "package": "NPM:shescape"
+  },
+  "CVE-2026-73412": {
+    "package": "NPM:shescape"
+  },
+  "CVE-2026-73413": {
+    "package": "NPM:shescape"
+  },
+  "CVE-2026-73414": {
+    "package": "NPM:shescape"
+  },
+  "CVE-2026-73415": {
+    "package": "PIP:jupyterlab"
+  },
+  "CVE-2026-73416": {
+    "package": "PIP:jupyterlab"
+  },
+  "CVE-2026-73417": {
+    "package": "PIP:jupyterlab"
+  },
+  "CVE-2026-73420": {
+    "package": "NPM:next-auth"
+  },
+  "CVE-2026-73421": {
+    "package": "NPM:next-auth"
+  },
+  "CVE-2026-73422": {
+    "package": "NPM:astro"
+  },
+  "CVE-2026-73423": {
+    "package": "NPM:astro"
+  },
+  "CVE-2026-73427": {
+    "package": "RUBYGEMS:action_text-trix"
+  },
+  "CVE-2026-73491": {
+    "package": "RUBYGEMS:loofah"
+  },
+  "CVE-2026-73493": {
+    "package": "MAVEN:org.http4s:http4s-blaze-server_3"
+  },
+  "CVE-2026-73494": {
+    "package": "MAVEN:org.http4s:blaze-http_2.13"
+  },
+  "CVE-2026-73495": {
+    "package": "MAVEN:org.http4s:blaze-http_2.13"
+  },
+  "CVE-2026-73498": {
+    "package": "PIP:mcp-atlassian"
   }
 }
