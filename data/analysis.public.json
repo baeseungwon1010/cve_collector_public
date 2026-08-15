@@ -1,92 +1,77 @@
 {
-  "CVE-2025-71408": {
-    "package": "PIP:nltk"
+  "CVE-2026-40984": {
+    "package": "MAVEN:io.micrometer:micrometer-jetty11"
   },
-  "CVE-2026-49296": {
-    "package": "PIP:apache-airflow"
+  "CVE-2026-52810": {
+    "package": "GO:gogs.io/gogs"
   },
-  "CVE-2026-53914": {
-    "package": "MAVEN:org.jetbrains.kotlin:kotlin-gradle-plugin"
+  "CVE-2026-52813": {
+    "package": "GO:gogs.io/gogs"
   },
-  "CVE-2026-54399": {
-    "package": "MAVEN:org.apache.httpcomponents.core5:httpcore5"
+  "CVE-2026-52815": {
+    "package": "GO:gogs.io/gogs"
   },
-  "CVE-2026-54917": {
-    "package": "GO:github.com/seaweedfs/seaweedfs"
+  "CVE-2026-54526": {
+    "package": "GO:github.com/argoproj/argo-workflows"
   },
-  "CVE-2026-59727": {
-    "package": "NPM:astro"
+  "CVE-2026-55072": {
+    "package": "COMPOSER:pimcore/pimcore"
   },
-  "CVE-2026-59729": {
-    "package": "NPM:astro"
+  "CVE-2026-55074": {
+    "package": "PIP:ansible-jailexec"
   },
-  "CVE-2026-59730": {
-    "package": "NPM:@astrojs/node"
+  "CVE-2026-55087": {
+    "package": "NPM:ep_etherpad-lite"
   },
-  "CVE-2026-61459": {
-    "package": "PIP:mcp-server-kubernetes"
+  "CVE-2026-55088": {
+    "package": "NPM:ep_etherpad-lite"
   },
-  "CVE-2026-73307": {
-    "package": "NPM:@budibase/server"
+  "CVE-2026-59222": {
+    "package": "PIP:open-webui"
   },
-  "CVE-2026-73406": {
-    "package": "NPM:@budibase/server"
+  "CVE-2026-72744": {
+    "package": "NPM:nuxt"
   },
-  "CVE-2026-73409": {
-    "package": "NPM:@budibase/server"
+  "CVE-2026-73499": {
+    "package": "GO:go.etcd.io/etcd/v3"
   },
-  "CVE-2026-73410": {
-    "package": "NPM:@budibase/server"
+  "CVE-2026-73500": {
+    "package": "GO:go.etcd.io/etcd/v3"
   },
-  "CVE-2026-73411": {
-    "package": "NPM:shescape"
+  "CVE-2026-73505": {
+    "package": "GO:github.com/jandedobbeleer/oh-my-posh"
   },
-  "CVE-2026-73412": {
-    "package": "NPM:shescape"
+  "CVE-2026-73506": {
+    "package": "GO:github.com/jandedobbeleer/oh-my-posh"
   },
-  "CVE-2026-73413": {
-    "package": "NPM:shescape"
+  "CVE-2026-73507": {
+    "package": "MAVEN:io.netty:netty-codec-xml"
   },
-  "CVE-2026-73414": {
-    "package": "NPM:shescape"
+  "CVE-2026-73509": {
+    "package": "GO:github.com/OpenListTeam/OpenList/v4"
   },
-  "CVE-2026-73415": {
-    "package": "PIP:jupyterlab"
+  "CVE-2026-73561": {
+    "package": "NPM:@anephenix/hub"
   },
-  "CVE-2026-73416": {
-    "package": "PIP:jupyterlab"
+  "CVE-2026-73562": {
+    "package": "NPM:mongoose"
   },
-  "CVE-2026-73417": {
-    "package": "PIP:jupyterlab"
+  "CVE-2026-73564": {
+    "package": "GO:github.com/fatedier/frp"
   },
-  "CVE-2026-73420": {
-    "package": "NPM:next-auth"
+  "CVE-2026-73567": {
+    "package": "NPM:sm-crypto"
   },
-  "CVE-2026-73421": {
-    "package": "NPM:next-auth"
+  "CVE-2026-73568": {
+    "package": "PIP:libp2p"
   },
-  "CVE-2026-73422": {
-    "package": "NPM:astro"
+  "CVE-2026-73569": {
+    "package": "NPM:fast-xml-parser"
   },
-  "CVE-2026-73423": {
-    "package": "NPM:astro"
+  "CVE-2026-73643": {
+    "package": "NPM:js-yaml"
   },
-  "CVE-2026-73427": {
-    "package": "RUBYGEMS:action_text-trix"
-  },
-  "CVE-2026-73491": {
-    "package": "RUBYGEMS:loofah"
-  },
-  "CVE-2026-73493": {
-    "package": "MAVEN:org.http4s:http4s-blaze-server_3"
-  },
-  "CVE-2026-73494": {
-    "package": "MAVEN:org.http4s:blaze-http_2.13"
-  },
-  "CVE-2026-73495": {
-    "package": "MAVEN:org.http4s:blaze-http_2.13"
-  },
-  "CVE-2026-73498": {
-    "package": "PIP:mcp-atlassian"
+  "CVE-2026-73644": {
+    "package": "MAVEN:org.openidentityplatform.opendj:opendj-server-legacy"
   }
 }
