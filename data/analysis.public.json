@@ -1,77 +1,101 @@
 {
-  "CVE-2026-40984": {
-    "package": "MAVEN:io.micrometer:micrometer-jetty11"
+  "CVE-2026-12243": {
+    "package": "PIP:nltk"
   },
-  "CVE-2026-52810": {
-    "package": "GO:gogs.io/gogs"
+  "CVE-2026-13676": {
+    "package": "NPM:fast-uri"
   },
-  "CVE-2026-52813": {
-    "package": "GO:gogs.io/gogs"
+  "CVE-2026-23490": {
+    "package": "PIP:pyasn1"
   },
-  "CVE-2026-52815": {
-    "package": "GO:gogs.io/gogs"
+  "CVE-2026-35511": {
+    "package": "GO:github.com/authorizerdev/authorizer"
   },
-  "CVE-2026-54526": {
-    "package": "GO:github.com/argoproj/argo-workflows"
+  "CVE-2026-47429": {
+    "package": "NPM:vitest"
   },
-  "CVE-2026-55072": {
-    "package": "COMPOSER:pimcore/pimcore"
+  "CVE-2026-49844": {
+    "package": "MAVEN:org.apache.logging.log4j:log4j-api"
   },
-  "CVE-2026-55074": {
-    "package": "PIP:ansible-jailexec"
+  "CVE-2026-49970": {
+    "package": "COMPOSER:plank/laravel-mediable"
   },
-  "CVE-2026-55087": {
-    "package": "NPM:ep_etherpad-lite"
+  "CVE-2026-53435": {
+    "package": "MAVEN:org.jenkins-ci.main:jenkins-core"
   },
-  "CVE-2026-55088": {
-    "package": "NPM:ep_etherpad-lite"
+  "CVE-2026-53469": {
+    "package": "GO:github.com/kubev2v/migration-planner"
   },
-  "CVE-2026-59222": {
-    "package": "PIP:open-webui"
+  "CVE-2026-53470": {
+    "package": "GO:github.com/kubev2v/migration-planner"
   },
-  "CVE-2026-72744": {
+  "CVE-2026-53471": {
+    "package": "GO:github.com/kubev2v/migration-planner"
+  },
+  "CVE-2026-53474": {
+    "package": "GO:github.com/kubev2v/migration-planner"
+  },
+  "CVE-2026-53475": {
+    "package": "GO:github.com/kubev2v/assisted-migration-agent"
+  },
+  "CVE-2026-53476": {
+    "package": "GO:github.com/kubev2v/assisted-migration-agent"
+  },
+  "CVE-2026-53633": {
+    "package": "NPM:vite-plus"
+  },
+  "CVE-2026-53722": {
     "package": "NPM:nuxt"
   },
-  "CVE-2026-73499": {
-    "package": "GO:go.etcd.io/etcd/v3"
+  "CVE-2026-54428": {
+    "package": "MAVEN:org.apache.httpcomponents.core5:httpcore5-h2"
   },
-  "CVE-2026-73500": {
-    "package": "GO:go.etcd.io/etcd/v3"
+  "CVE-2026-54513": {
+    "package": "MAVEN:tools.jackson.core:jackson-databind"
   },
-  "CVE-2026-73505": {
-    "package": "GO:github.com/jandedobbeleer/oh-my-posh"
+  "CVE-2026-55590": {
+    "package": "COMPOSER:cakephp/authentication"
   },
-  "CVE-2026-73506": {
-    "package": "GO:github.com/jandedobbeleer/oh-my-posh"
+  "CVE-2026-56326": {
+    "package": "NPM:nuxt"
   },
-  "CVE-2026-73507": {
-    "package": "MAVEN:io.netty:netty-codec-xml"
+  "CVE-2026-59880": {
+    "package": "NPM:immutable"
   },
-  "CVE-2026-73509": {
-    "package": "GO:github.com/OpenListTeam/OpenList/v4"
+  "CVE-2026-63397": {
+    "package": "NPM:@genql/cli"
   },
-  "CVE-2026-73561": {
-    "package": "NPM:@anephenix/hub"
+  "CVE-2026-64825": {
+    "package": "PIP:homeassistant"
   },
-  "CVE-2026-73562": {
-    "package": "NPM:mongoose"
+  "CVE-2026-73418": {
+    "package": "NPM:next-auth"
   },
-  "CVE-2026-73564": {
-    "package": "GO:github.com/fatedier/frp"
+  "CVE-2026-73419": {
+    "package": "NPM:next-auth"
   },
-  "CVE-2026-73567": {
-    "package": "NPM:sm-crypto"
+  "CVE-2026-73559": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-73568": {
-    "package": "PIP:libp2p"
+  "CVE-2026-73646": {
+    "package": "NPM:postcss"
   },
-  "CVE-2026-73569": {
-    "package": "NPM:fast-xml-parser"
+  "CVE-2026-73648": {
+    "package": "RUBYGEMS:rails-html-sanitizer"
   },
-  "CVE-2026-73643": {
-    "package": "NPM:js-yaml"
+  "CVE-2026-73649": {
+    "package": "NPM:velocityjs"
   },
-  "CVE-2026-73644": {
-    "package": "MAVEN:org.openidentityplatform.opendj:opendj-server-legacy"
+  "CVE-2026-73650": {
+    "package": "NPM:svgo"
+  },
+  "CVE-2026-73653": {
+    "package": "NPM:@vitest/browser"
+  },
+  "CVE-2026-73654": {
+    "package": "NPM:@trigger.dev/core"
+  },
+  "CVE-2026-8147": {
+    "package": "PIP:mlflow"
   }
 }

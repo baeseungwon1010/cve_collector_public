@@ -386,6 +386,24 @@
     "poc_source": "github_search",
     "published": "2023-09-13T20:15:08.187"
   },
+  "CVE-2023-43654": {
+    "cvss_score": 10.0,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-08-16",
+    "poc_published_date": "2023-10-02",
+    "poc_source": "github_search",
+    "published": "2023-09-28T23:15:09.627"
+  },
+  "CVE-2023-46604": {
+    "cvss_score": 10.0,
+    "cvss_severity": "CRITICAL",
+    "kev": true,
+    "poc_confirmed_date": "2026-08-16",
+    "poc_published_date": "2023-11-03",
+    "poc_source": "github_search",
+    "published": "2023-10-27T15:15:14.017"
+  },
   "CVE-2025-70962": {
     "cvss_score": 7.5,
     "cvss_severity": "HIGH",
@@ -665,6 +683,15 @@
     "poc_source": "github_search",
     "published": "2026-08-12T13:17:22.943"
   },
+  "CVE-2026-58231": {
+    "cvss_score": 10.0,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-08-16",
+    "poc_published_date": "2026-08-15",
+    "poc_source": "github_search",
+    "published": "2026-08-11T11:17:15.390"
+  },
   "CVE-2026-60009": {
     "cvss_score": 8.8,
     "cvss_severity": "HIGH",
@@ -935,6 +962,15 @@
     "poc_source": "nvd_exploit_tag",
     "published": "2026-08-05T13:24:47.087"
   },
+  "CVE-2026-71362": {
+    "cvss_score": 9.1,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-08-16",
+    "poc_published_date": "2026-08-15",
+    "poc_source": "github_search",
+    "published": "2026-08-11T18:18:21.610"
+  },
   "CVE-2026-71557": {
     "cvss_score": 6.3,
     "cvss_severity": "MEDIUM",
@@ -979,6 +1015,15 @@
     "poc_published_date": "2026-08-13",
     "poc_source": "github_search",
     "published": "2026-08-14T13:19:09.573"
+  },
+  "CVE-2026-73678": {
+    "cvss_score": 10.0,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-08-16",
+    "poc_published_date": "2026-08-15",
+    "poc_source": "github_search",
+    "published": "2026-08-14T19:18:01.457"
   },
   "CVE-2026-7867": {
     "cvss_score": 7.8,
