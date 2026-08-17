@@ -1,101 +1,17 @@
 {
-  "CVE-2026-12243": {
-    "package": "PIP:nltk"
+  "CVE-2025-13590": {
+    "package": "MAVEN:org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.rest.api.admin.v1"
   },
-  "CVE-2026-13676": {
-    "package": "NPM:fast-uri"
+  "CVE-2026-53653": {
+    "package": "COMPOSER:getgrav/grav"
   },
-  "CVE-2026-23490": {
-    "package": "PIP:pyasn1"
+  "CVE-2026-53657": {
+    "package": "GO:github.com/lima-vm/lima/v2"
   },
-  "CVE-2026-35511": {
-    "package": "GO:github.com/authorizerdev/authorizer"
+  "CVE-2026-53658": {
+    "package": "GO:github.com/hyperledger/fabric-ca"
   },
-  "CVE-2026-47429": {
-    "package": "NPM:vitest"
-  },
-  "CVE-2026-49844": {
-    "package": "MAVEN:org.apache.logging.log4j:log4j-api"
-  },
-  "CVE-2026-49970": {
-    "package": "COMPOSER:plank/laravel-mediable"
-  },
-  "CVE-2026-53435": {
-    "package": "MAVEN:org.jenkins-ci.main:jenkins-core"
-  },
-  "CVE-2026-53469": {
-    "package": "GO:github.com/kubev2v/migration-planner"
-  },
-  "CVE-2026-53470": {
-    "package": "GO:github.com/kubev2v/migration-planner"
-  },
-  "CVE-2026-53471": {
-    "package": "GO:github.com/kubev2v/migration-planner"
-  },
-  "CVE-2026-53474": {
-    "package": "GO:github.com/kubev2v/migration-planner"
-  },
-  "CVE-2026-53475": {
-    "package": "GO:github.com/kubev2v/assisted-migration-agent"
-  },
-  "CVE-2026-53476": {
-    "package": "GO:github.com/kubev2v/assisted-migration-agent"
-  },
-  "CVE-2026-53633": {
-    "package": "NPM:vite-plus"
-  },
-  "CVE-2026-53722": {
-    "package": "NPM:nuxt"
-  },
-  "CVE-2026-54428": {
-    "package": "MAVEN:org.apache.httpcomponents.core5:httpcore5-h2"
-  },
-  "CVE-2026-54513": {
-    "package": "MAVEN:tools.jackson.core:jackson-databind"
-  },
-  "CVE-2026-55590": {
-    "package": "COMPOSER:cakephp/authentication"
-  },
-  "CVE-2026-56326": {
-    "package": "NPM:nuxt"
-  },
-  "CVE-2026-59880": {
-    "package": "NPM:immutable"
-  },
-  "CVE-2026-63397": {
-    "package": "NPM:@genql/cli"
-  },
-  "CVE-2026-64825": {
-    "package": "PIP:homeassistant"
-  },
-  "CVE-2026-73418": {
-    "package": "NPM:next-auth"
-  },
-  "CVE-2026-73419": {
-    "package": "NPM:next-auth"
-  },
-  "CVE-2026-73559": {
-    "package": "PIP:vllm"
-  },
-  "CVE-2026-73646": {
-    "package": "NPM:postcss"
-  },
-  "CVE-2026-73648": {
-    "package": "RUBYGEMS:rails-html-sanitizer"
-  },
-  "CVE-2026-73649": {
-    "package": "NPM:velocityjs"
-  },
-  "CVE-2026-73650": {
-    "package": "NPM:svgo"
-  },
-  "CVE-2026-73653": {
-    "package": "NPM:@vitest/browser"
-  },
-  "CVE-2026-73654": {
-    "package": "NPM:@trigger.dev/core"
-  },
-  "CVE-2026-8147": {
-    "package": "PIP:mlflow"
+  "CVE-2026-55157": {
+    "package": "NPM:@ooples/token-optimizer-mcp"
   }
 }
