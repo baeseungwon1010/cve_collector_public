@@ -1,107 +1,83 @@
 {
-  "CVE-2024-9355": {
-    "package": "GO:github.com/golang-fips/openssl"
+  "CVE-2026-48798": {
+    "package": "NUGET:SSH.NET"
   },
-  "CVE-2026-46345": {
-    "package": "PIP:compliance-trestle"
+  "CVE-2026-53423": {
+    "package": "ERLANG:membrane_mp4_plugin"
   },
-  "CVE-2026-53728": {
-    "package": "NPM:@medplum/core"
+  "CVE-2026-53698": {
+    "package": "MAVEN:org.silverpeas.core:silverpeas-core"
   },
-  "CVE-2026-54284": {
-    "package": "PIP:sqlparse"
+  "CVE-2026-53766": {
+    "package": "NPM:chrome-devtools-mcp"
   },
-  "CVE-2026-54463": {
-    "package": "RUBYGEMS:websocket-driver"
+  "CVE-2026-54147": {
+    "package": "MAVEN:org.http4k:http4k-security-digest"
   },
-  "CVE-2026-54464": {
-    "package": "RUBYGEMS:websocket-driver"
+  "CVE-2026-54148": {
+    "package": "MAVEN:org.http4k:http4k-security-digest"
   },
-  "CVE-2026-54465": {
-    "package": "RUBYGEMS:websocket-driver"
+  "CVE-2026-5497": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-55061": {
-    "package": "GO:gitlab.com/uniget-org/cli"
+  "CVE-2026-55107": {
+    "package": "RUBYGEMS:kobako"
   },
-  "CVE-2026-55062": {
-    "package": "GO:gitlab.com/uniget-org/cli"
+  "CVE-2026-55178": {
+    "package": "PIP:geolens"
   },
-  "CVE-2026-55090": {
-    "package": "NPM:ep_etherpad-lite"
+  "CVE-2026-55211": {
+    "package": "PIP:surfio"
   },
-  "CVE-2026-55158": {
-    "package": "ACTIONS:wktk/conflibot"
+  "CVE-2026-55224": {
+    "package": "COMPOSER:mineadmin/mineadmin"
   },
-  "CVE-2026-59859": {
-    "package": "NUGET:Microsoft.OpenApi.Kiota.Builder"
+  "CVE-2026-55839": {
+    "package": "MAVEN:io.kestra:kestra"
   },
-  "CVE-2026-59860": {
-    "package": "NUGET:Microsoft.OpenApi.Kiota.Builder"
+  "CVE-2026-61634": {
+    "package": "MAVEN:com.rabbitmq:amqp-client"
   },
-  "CVE-2026-59861": {
-    "package": "NUGET:Microsoft.OpenApi.Kiota.Builder"
+  "CVE-2026-63328": {
+    "package": "GO:github.com/aquasecurity/trivy"
   },
-  "CVE-2026-59863": {
-    "package": "NUGET:Microsoft.OpenApi.Kiota.Builder"
+  "CVE-2026-63335": {
+    "package": "MAVEN:com.rabbitmq:amqp-client"
   },
-  "CVE-2026-59864": {
-    "package": "NUGET:Microsoft.OpenApi.Kiota.Builder"
+  "CVE-2026-63336": {
+    "package": "MAVEN:com.rabbitmq:amqp-client"
   },
-  "CVE-2026-59865": {
-    "package": "NUGET:Microsoft.OpenApi.Kiota.Builder"
+  "CVE-2026-63337": {
+    "package": "MAVEN:com.rabbitmq:amqp-client"
   },
-  "CVE-2026-59866": {
-    "package": "NUGET:Microsoft.OpenApi.Kiota.Builder"
+  "CVE-2026-63641": {
+    "package": "NPM:magicmirror"
   },
-  "CVE-2026-59867": {
-    "package": "NUGET:Microsoft.OpenApi.Kiota.Builder"
+  "CVE-2026-63642": {
+    "package": "NPM:magicmirror"
   },
-  "CVE-2026-59893": {
-    "package": "PIP:sqlparse"
+  "CVE-2026-63643": {
+    "package": "NPM:magicmirror"
   },
-  "CVE-2026-59894": {
-    "package": "PIP:sqlparse"
+  "CVE-2026-64849": {
+    "package": "PIP:mlflow"
   },
-  "CVE-2026-59902": {
-    "package": "MAVEN:io.netty:netty-transport-sctp"
+  "CVE-2026-68923": {
+    "package": "PIP:mobsf"
   },
-  "CVE-2026-59903": {
-    "package": "MAVEN:io.netty:netty-codec-http"
+  "CVE-2026-69146": {
+    "package": "NPM:mlflow"
   },
-  "CVE-2026-62982": {
-    "package": "PIP:glances"
+  "CVE-2026-69148": {
+    "package": "NPM:mlflow"
   },
-  "CVE-2026-64859": {
-    "package": "GO:github.com/QuantumNous/new-api"
+  "CVE-2026-69160": {
+    "package": "GO:github.com/OpenListTeam/OpenList/v4"
   },
-  "CVE-2026-64865": {
-    "package": "GO:github.com/QuantumNous/new-api"
+  "CVE-2026-69219": {
+    "package": "MAVEN:com.rabbitmq:amqp-client"
   },
-  "CVE-2026-64866": {
-    "package": "GO:github.com/QuantumNous/new-api"
-  },
-  "CVE-2026-64868": {
-    "package": "GO:github.com/QuantumNous/new-api"
-  },
-  "CVE-2026-68517": {
-    "package": "PIP:glances"
-  },
-  "CVE-2026-68518": {
-    "package": "PIP:glances"
-  },
-  "CVE-2026-68519": {
-    "package": "PIP:glances"
-  },
-  "CVE-2026-71479": {
-    "package": "GO:github.com/QuantumNous/new-api"
-  },
-  "CVE-2026-71491": {
-    "package": "PIP:sqlparse"
-  },
-  "CVE-2026-73424": {
-    "package": "NPM:@astrojs/vercel"
-  },
-  "CVE-2026-73851": {
-    "package": "NUGET:Microsoft.OpenApi.Kiota"
+  "CVE-2026-69220": {
+    "package": "MAVEN:com.rabbitmq:amqp-client"
   }
 }
