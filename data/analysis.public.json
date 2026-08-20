@@ -1,83 +1,62 @@
 {
-  "CVE-2026-48798": {
-    "package": "NUGET:SSH.NET"
+  "CVE-2024-45747": {
+    "package": "MAVEN:org.geoserver.web:gs-web-app"
   },
-  "CVE-2026-53423": {
-    "package": "ERLANG:membrane_mp4_plugin"
+  "CVE-2026-13676": {
+    "package": "NPM:fast-uri"
   },
-  "CVE-2026-53698": {
-    "package": "MAVEN:org.silverpeas.core:silverpeas-core"
+  "CVE-2026-53957": {
+    "package": "NPM:@contentful/mcp-tools"
   },
-  "CVE-2026-53766": {
-    "package": "NPM:chrome-devtools-mcp"
+  "CVE-2026-53966": {
+    "package": "MAVEN:org.xwiki.platform:xwiki-platform-livedata-livetable"
   },
-  "CVE-2026-54147": {
-    "package": "MAVEN:org.http4k:http4k-security-digest"
+  "CVE-2026-54347": {
+    "package": "COMPOSER:froxlor/froxlor"
   },
-  "CVE-2026-54148": {
-    "package": "MAVEN:org.http4k:http4k-security-digest"
+  "CVE-2026-54348": {
+    "package": "COMPOSER:froxlor/froxlor"
   },
-  "CVE-2026-5497": {
-    "package": "PIP:vllm"
+  "CVE-2026-55593": {
+    "package": "COMPOSER:froxlor/froxlor"
   },
-  "CVE-2026-55107": {
-    "package": "RUBYGEMS:kobako"
+  "CVE-2026-55694": {
+    "package": "COMPOSER:snipe/snipe-it"
   },
-  "CVE-2026-55178": {
-    "package": "PIP:geolens"
+  "CVE-2026-61807": {
+    "package": "COMPOSER:snipe/snipe-it"
   },
-  "CVE-2026-55211": {
-    "package": "PIP:surfio"
+  "CVE-2026-62673": {
+    "package": "COMPOSER:getgrav/grav"
   },
-  "CVE-2026-55224": {
-    "package": "COMPOSER:mineadmin/mineadmin"
+  "CVE-2026-62988": {
+    "package": "COMPOSER:froxlor/froxlor"
   },
-  "CVE-2026-55839": {
-    "package": "MAVEN:io.kestra:kestra"
+  "CVE-2026-70594": {
+    "package": "NPM:ghost"
   },
-  "CVE-2026-61634": {
-    "package": "MAVEN:com.rabbitmq:amqp-client"
+  "CVE-2026-70666": {
+    "package": "PIP:lemur"
   },
-  "CVE-2026-63328": {
-    "package": "GO:github.com/aquasecurity/trivy"
+  "CVE-2026-70667": {
+    "package": "PIP:lemur"
   },
-  "CVE-2026-63335": {
-    "package": "MAVEN:com.rabbitmq:amqp-client"
+  "CVE-2026-71303": {
+    "package": "PIP:lemur"
   },
-  "CVE-2026-63336": {
-    "package": "MAVEN:com.rabbitmq:amqp-client"
+  "CVE-2026-71307": {
+    "package": "PIP:lemur"
   },
-  "CVE-2026-63337": {
-    "package": "MAVEN:com.rabbitmq:amqp-client"
+  "CVE-2026-71308": {
+    "package": "PIP:lemur"
   },
-  "CVE-2026-63641": {
-    "package": "NPM:magicmirror"
+  "CVE-2026-71317": {
+    "package": "PIP:lemur"
   },
-  "CVE-2026-63642": {
-    "package": "NPM:magicmirror"
+  "CVE-2026-71417": {
+    "package": "PIP:lemur"
   },
-  "CVE-2026-63643": {
-    "package": "NPM:magicmirror"
-  },
-  "CVE-2026-64849": {
-    "package": "PIP:mlflow"
-  },
-  "CVE-2026-68923": {
-    "package": "PIP:mobsf"
-  },
-  "CVE-2026-69146": {
-    "package": "NPM:mlflow"
-  },
-  "CVE-2026-69148": {
-    "package": "NPM:mlflow"
-  },
-  "CVE-2026-69160": {
-    "package": "GO:github.com/OpenListTeam/OpenList/v4"
-  },
-  "CVE-2026-69219": {
-    "package": "MAVEN:com.rabbitmq:amqp-client"
-  },
-  "CVE-2026-69220": {
-    "package": "MAVEN:com.rabbitmq:amqp-client"
+  "CVE-2026-9796": {
+    "package": "MAVEN:org.keycloak:keycloak-server"
   }
 }
