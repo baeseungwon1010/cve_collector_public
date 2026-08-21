@@ -1,62 +1,47 @@
 {
-  "CVE-2024-45747": {
-    "package": "MAVEN:org.geoserver.web:gs-web-app"
-  },
   "CVE-2026-13676": {
     "package": "NPM:fast-uri"
   },
-  "CVE-2026-53957": {
-    "package": "NPM:@contentful/mcp-tools"
+  "CVE-2026-34755": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-53966": {
-    "package": "MAVEN:org.xwiki.platform:xwiki-platform-livedata-livetable"
+  "CVE-2026-41523": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-54347": {
-    "package": "COMPOSER:froxlor/froxlor"
+  "CVE-2026-42571": {
+    "package": "GO:github.com/pelicanplatform/pelican"
   },
-  "CVE-2026-54348": {
-    "package": "COMPOSER:froxlor/froxlor"
+  "CVE-2026-45404": {
+    "package": "GO:go.opentelemetry.io/otel/bridge/opentracing"
   },
-  "CVE-2026-55593": {
-    "package": "COMPOSER:froxlor/froxlor"
+  "CVE-2026-53782": {
+    "package": "NPM:@steipete/summarize"
   },
-  "CVE-2026-55694": {
-    "package": "COMPOSER:snipe/snipe-it"
+  "CVE-2026-54150": {
+    "package": "NPM:next-video"
   },
-  "CVE-2026-61807": {
-    "package": "COMPOSER:snipe/snipe-it"
+  "CVE-2026-54175": {
+    "package": "COMPOSER:backpack/crud"
   },
-  "CVE-2026-62673": {
-    "package": "COMPOSER:getgrav/grav"
+  "CVE-2026-54176": {
+    "package": "COMPOSER:backpack/crud"
   },
-  "CVE-2026-62988": {
-    "package": "COMPOSER:froxlor/froxlor"
+  "CVE-2026-55149": {
+    "package": "GO:github.com/vouch/vouch-proxy"
   },
-  "CVE-2026-70594": {
-    "package": "NPM:ghost"
+  "CVE-2026-55410": {
+    "package": "NPM:@nocobase/plugin-backups"
   },
-  "CVE-2026-70666": {
-    "package": "PIP:lemur"
+  "CVE-2026-55445": {
+    "package": "NPM:@whyour/qinglong"
   },
-  "CVE-2026-70667": {
-    "package": "PIP:lemur"
+  "CVE-2026-61712": {
+    "package": "GO:github.com/moby/buildkit"
   },
-  "CVE-2026-71303": {
-    "package": "PIP:lemur"
+  "CVE-2026-63123": {
+    "package": "NPM:@tinacms/cli"
   },
-  "CVE-2026-71307": {
-    "package": "PIP:lemur"
-  },
-  "CVE-2026-71308": {
-    "package": "PIP:lemur"
-  },
-  "CVE-2026-71317": {
-    "package": "PIP:lemur"
-  },
-  "CVE-2026-71417": {
-    "package": "PIP:lemur"
-  },
-  "CVE-2026-9796": {
-    "package": "MAVEN:org.keycloak:keycloak-server"
+  "CVE-2026-63188": {
+    "package": "NPM:@logto/tunnel"
   }
 }
