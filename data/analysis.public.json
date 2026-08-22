@@ -1,47 +1,38 @@
 {
-  "CVE-2026-13676": {
-    "package": "NPM:fast-uri"
+  "CVE-2024-11392": {
+    "package": "PIP:transformers"
   },
-  "CVE-2026-34755": {
-    "package": "PIP:vllm"
+  "CVE-2024-11393": {
+    "package": "PIP:transformers"
   },
-  "CVE-2026-41523": {
-    "package": "PIP:vllm"
+  "CVE-2024-11394": {
+    "package": "PIP:transformers"
   },
-  "CVE-2026-42571": {
-    "package": "GO:github.com/pelicanplatform/pelican"
+  "CVE-2025-30405": {
+    "package": "SWIFT:github.com/pytorch/executorch"
   },
-  "CVE-2026-45404": {
-    "package": "GO:go.opentelemetry.io/otel/bridge/opentracing"
+  "CVE-2025-54951": {
+    "package": "SWIFT:github.com/pytorch/executorch"
   },
-  "CVE-2026-53782": {
-    "package": "NPM:@steipete/summarize"
-  },
-  "CVE-2026-54150": {
-    "package": "NPM:next-video"
-  },
-  "CVE-2026-54175": {
+  "CVE-2026-54177": {
     "package": "COMPOSER:backpack/crud"
   },
-  "CVE-2026-54176": {
-    "package": "COMPOSER:backpack/crud"
+  "CVE-2026-54622": {
+    "package": "PIP:django-cms"
   },
-  "CVE-2026-55149": {
-    "package": "GO:github.com/vouch/vouch-proxy"
+  "CVE-2026-54624": {
+    "package": "PIP:django-cms"
   },
-  "CVE-2026-55410": {
-    "package": "NPM:@nocobase/plugin-backups"
+  "CVE-2026-55451": {
+    "package": "NPM:gettext-converter"
   },
-  "CVE-2026-55445": {
-    "package": "NPM:@whyour/qinglong"
+  "CVE-2026-59939": {
+    "package": "PIP:httplib2"
   },
-  "CVE-2026-61712": {
-    "package": "GO:github.com/moby/buildkit"
+  "CVE-2026-63003": {
+    "package": "PIP:django-cms"
   },
-  "CVE-2026-63123": {
-    "package": "NPM:@tinacms/cli"
-  },
-  "CVE-2026-63188": {
-    "package": "NPM:@logto/tunnel"
+  "CVE-2026-67448": {
+    "package": "GO:github.com/axllent/mailpit"
   }
 }
