@@ -1,38 +1,83 @@
 {
-  "CVE-2024-11392": {
-    "package": "PIP:transformers"
-  },
-  "CVE-2024-11393": {
-    "package": "PIP:transformers"
-  },
-  "CVE-2024-11394": {
-    "package": "PIP:transformers"
-  },
-  "CVE-2025-30405": {
+  "CVE-2025-30402": {
     "package": "SWIFT:github.com/pytorch/executorch"
   },
-  "CVE-2025-54951": {
-    "package": "SWIFT:github.com/pytorch/executorch"
+  "CVE-2025-59250": {
+    "package": "MAVEN:com.microsoft.sqlserver:mssql-jdbc"
   },
-  "CVE-2026-54177": {
-    "package": "COMPOSER:backpack/crud"
+  "CVE-2026-13676": {
+    "package": "NPM:fast-uri"
   },
-  "CVE-2026-54622": {
-    "package": "PIP:django-cms"
+  "CVE-2026-34755": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-54624": {
-    "package": "PIP:django-cms"
+  "CVE-2026-40998": {
+    "package": "MAVEN:org.springframework.ws:spring-xml"
   },
-  "CVE-2026-55451": {
-    "package": "NPM:gettext-converter"
+  "CVE-2026-40999": {
+    "package": "MAVEN:org.springframework.ws:spring-ws-core"
   },
-  "CVE-2026-59939": {
-    "package": "PIP:httplib2"
+  "CVE-2026-41523": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-63003": {
-    "package": "PIP:django-cms"
+  "CVE-2026-41699": {
+    "package": "MAVEN:org.springframework.graphql:spring-graphql"
   },
-  "CVE-2026-67448": {
-    "package": "GO:github.com/axllent/mailpit"
+  "CVE-2026-41700": {
+    "package": "MAVEN:org.springframework.graphql:spring-graphql"
+  },
+  "CVE-2026-41856": {
+    "package": "MAVEN:org.springframework.graphql:spring-graphql"
+  },
+  "CVE-2026-48507": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-59989": {
+    "package": "COMPOSER:phalcon/cphalcon"
+  },
+  "CVE-2026-61539": {
+    "package": "PIP:xinference"
+  },
+  "CVE-2026-61824": {
+    "package": "NPM:defuddle"
+  },
+  "CVE-2026-63123": {
+    "package": "NPM:@tinacms/cli"
+  },
+  "CVE-2026-63135": {
+    "package": "COMPOSER:yourls/yourls"
+  },
+  "CVE-2026-63421": {
+    "package": "NPM:@keystone-6/core"
+  },
+  "CVE-2026-63462": {
+    "package": "NPM:unleash-server"
+  },
+  "CVE-2026-64679": {
+    "package": "GO:github.com/runatlantis/atlantis"
+  },
+  "CVE-2026-68508": {
+    "package": "PIP:hydra-core"
+  },
+  "CVE-2026-73566": {
+    "package": "NPM:tar"
+  },
+  "CVE-2026-76904": {
+    "package": "MAVEN:org.geotools.jdbc:gt-jdbc-postgis"
+  },
+  "CVE-2026-76905": {
+    "package": "GO:github.com/getkin/kin-openapi"
+  },
+  "CVE-2026-77354": {
+    "package": "GO:github.com/getkin/kin-openapi"
+  },
+  "CVE-2026-77413": {
+    "package": "NPM:jsonata"
+  },
+  "CVE-2026-77414": {
+    "package": "NPM:jsonata"
+  },
+  "CVE-2026-77415": {
+    "package": "NPM:jsonata"
   }
 }
