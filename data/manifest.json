@@ -1106,15 +1106,6 @@
     "poc_source": "nvd_exploit_tag",
     "published": "2026-07-29T16:17:55.560"
   },
-  "CVE-2026-61241": {
-    "cvss_score": 10.0,
-    "cvss_severity": "CRITICAL",
-    "kev": false,
-    "poc_confirmed_date": "2026-08-20",
-    "poc_published_date": "2026-08-19",
-    "poc_source": "github_search",
-    "published": "2026-08-18T21:16:56.467"
-  },
   "CVE-2026-62737": {
     "cvss_score": 7.8,
     "cvss_severity": "HIGH",

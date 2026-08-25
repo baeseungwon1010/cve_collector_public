@@ -267,7 +267,13 @@ def audit_archive(manifest: dict, gh_token: str | None, nvd_api_key: str | None)
         source = entry.get("poc_source")
 
         if source == "github_search":
-            repos = search_poc_repos(cve_id, gh_token)
+            # max_results 기본값(3)은 수집 시점엔 충분하지만 재검증 시점엔 얕다:
+            # 우리 CVE ID가 훨씬 유명한 다른 CVE(예: CVE-2024-2389 vs CVE-2024-23897)의
+            # 접두어면, 그쪽 저장소들이 스타순 상위를 채워 진짜 매치가 top-3 밖으로
+            # 밀려난다(실측: CVE-2024-2389 진짜 매치가 30개 중 16위). mentions_cve()의
+            # 경계검사는 정상이라 오매칭이 아니라 "찾아보는 폭"이 문제이므로, 재검증만
+            # 더 깊이 본다(2026-08-25 CI 오탐으로 발견).
+            repos = search_poc_repos(cve_id, gh_token, max_results=30)
             time.sleep(rate_limit_delay(gh_token))
             if repos is None:
                 unknown.append((cve_id, "GitHub 검색 실패"))
