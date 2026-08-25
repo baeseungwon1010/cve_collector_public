@@ -1,1 +1,41 @@
-{}
+{
+  "CVE-2026-11624": {
+    "package": "GO:github.com/googleapis/mcp-toolbox"
+  },
+  "CVE-2026-34040": {
+    "package": "GO:github.com/moby/moby"
+  },
+  "CVE-2026-42151": {
+    "package": "GO:github.com/prometheus/prometheus"
+  },
+  "CVE-2026-45830": {
+    "package": "PIP:chromadb"
+  },
+  "CVE-2026-45831": {
+    "package": "PIP:chromadb"
+  },
+  "CVE-2026-54049": {
+    "package": "MAVEN:org.sakaiproject.rubrics:rubrics-impl"
+  },
+  "CVE-2026-54050": {
+    "package": "MAVEN:org.sakaiproject.profile2:profile2-impl"
+  },
+  "CVE-2026-54623": {
+    "package": "PIP:django-cms"
+  },
+  "CVE-2026-55477": {
+    "package": "GO:github.com/mhsanaei/3x-ui/v2"
+  },
+  "CVE-2026-6739": {
+    "package": "GO:github.com/mattermost/mattermost/server/v8"
+  },
+  "CVE-2026-6961": {
+    "package": "GO:github.com/mattermost/mattermost/server/v8"
+  },
+  "CVE-2026-7184": {
+    "package": "GO:github.com/mattermost/mattermost/server/v8"
+  },
+  "CVE-2026-7387": {
+    "package": "GO:github.com/mattermost/mattermost/server/v8"
+  }
+}
