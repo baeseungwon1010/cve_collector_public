@@ -1,41 +1,110 @@
 {
-  "CVE-2026-11624": {
-    "package": "GO:github.com/googleapis/mcp-toolbox"
+  "CVE-2024-9355": {
+    "package": "GO:github.com/golang-fips/openssl"
   },
-  "CVE-2026-34040": {
-    "package": "GO:github.com/moby/moby"
+  "CVE-2026-34755": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-42151": {
-    "package": "GO:github.com/prometheus/prometheus"
+  "CVE-2026-41523": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-45830": {
-    "package": "PIP:chromadb"
+  "CVE-2026-54421": {
+    "package": "PIP:ironic"
   },
-  "CVE-2026-45831": {
-    "package": "PIP:chromadb"
+  "CVE-2026-55092": {
+    "package": "GO:github.com/aquasecurity/trivy"
   },
-  "CVE-2026-54049": {
-    "package": "MAVEN:org.sakaiproject.rubrics:rubrics-impl"
+  "CVE-2026-55522": {
+    "package": "PIP:PraisonAI"
   },
-  "CVE-2026-54050": {
-    "package": "MAVEN:org.sakaiproject.profile2:profile2-impl"
+  "CVE-2026-55523": {
+    "package": "PIP:praisonaiagents"
   },
-  "CVE-2026-54623": {
-    "package": "PIP:django-cms"
+  "CVE-2026-55524": {
+    "package": "PIP:praisonaiagents"
   },
-  "CVE-2026-55477": {
-    "package": "GO:github.com/mhsanaei/3x-ui/v2"
+  "CVE-2026-55525": {
+    "package": "PIP:praisonaiagents"
   },
-  "CVE-2026-6739": {
-    "package": "GO:github.com/mattermost/mattermost/server/v8"
+  "CVE-2026-55526": {
+    "package": "PIP:praisonaiagents"
   },
-  "CVE-2026-6961": {
-    "package": "GO:github.com/mattermost/mattermost/server/v8"
+  "CVE-2026-55527": {
+    "package": "PIP:praisonaiagents"
   },
-  "CVE-2026-7184": {
-    "package": "GO:github.com/mattermost/mattermost/server/v8"
+  "CVE-2026-55528": {
+    "package": "PIP:praisonaiagents"
   },
-  "CVE-2026-7387": {
-    "package": "GO:github.com/mattermost/mattermost/server/v8"
+  "CVE-2026-55529": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55530": {
+    "package": "PIP:praisonaiagents"
+  },
+  "CVE-2026-55531": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55532": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55533": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55534": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55535": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55536": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55537": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55538": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55539": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55540": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55541": {
+    "package": "PIP:PraisonAI"
+  },
+  "CVE-2026-55546": {
+    "package": "PIP:qwed-mcp"
+  },
+  "CVE-2026-55553": {
+    "package": "NPM:urllib"
+  },
+  "CVE-2026-55557": {
+    "package": "NPM:browse-mcp"
+  },
+  "CVE-2026-55571": {
+    "package": "PIP:djust"
+  },
+  "CVE-2026-55580": {
+    "package": "GO:github.com/sonirico/mcp-shell"
+  },
+  "CVE-2026-55581": {
+    "package": "GO:github.com/sonirico/mcp-shell"
+  },
+  "CVE-2026-55582": {
+    "package": "GO:github.com/sonirico/mcp-shell"
+  },
+  "CVE-2026-55585": {
+    "package": "PIP:qwed"
+  },
+  "CVE-2026-55596": {
+    "package": "NPM:@platejs/media"
+  },
+  "CVE-2026-55640": {
+    "package": "PIP:nextcloud-mcp-server"
+  },
+  "CVE-2026-55677": {
+    "package": "GO:github.com/labstack/echo"
   }
 }
