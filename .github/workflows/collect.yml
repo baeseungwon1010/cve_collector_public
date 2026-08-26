@@ -2,7 +2,9 @@ name: Collect CVE data
 
 on:
   schedule:
+    - cron: "0 0 * * *"  # 매일 00:00 UTC (KST 09:00)
     - cron: "0 3 * * *"  # 매일 03:00 UTC (KST 12:00)
+    - cron: "0 8 * * *"  # 매일 08:00 UTC (KST 17:00)
   workflow_dispatch:
     inputs:
       days:
