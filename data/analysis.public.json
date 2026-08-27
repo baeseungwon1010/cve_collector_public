@@ -1,110 +1,86 @@
 {
-  "CVE-2024-9355": {
-    "package": "GO:github.com/golang-fips/openssl"
+  "CVE-2020-13935": {
+    "package": "MAVEN:org.apache.tomcat:tomcat-websocket"
   },
-  "CVE-2026-34755": {
-    "package": "PIP:vllm"
+  "CVE-2020-9484": {
+    "package": "MAVEN:org.apache.tomcat.embed:tomcat-embed-core"
   },
-  "CVE-2026-41523": {
-    "package": "PIP:vllm"
+  "CVE-2025-27597": {
+    "package": "NPM:@intlify/vue-i18n-core"
   },
-  "CVE-2026-54421": {
-    "package": "PIP:ironic"
+  "CVE-2026-40047": {
+    "package": "MAVEN:org.apache.camel:camel-docling"
   },
-  "CVE-2026-55092": {
-    "package": "GO:github.com/aquasecurity/trivy"
+  "CVE-2026-40859": {
+    "package": "MAVEN:org.apache.camel:camel-netty-http"
   },
-  "CVE-2026-55522": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-40860": {
+    "package": "MAVEN:org.apache.camel:camel-activemq6"
   },
-  "CVE-2026-55523": {
-    "package": "PIP:praisonaiagents"
+  "CVE-2026-42527": {
+    "package": "MAVEN:org.apache.camel:camel-sql"
   },
-  "CVE-2026-55524": {
-    "package": "PIP:praisonaiagents"
+  "CVE-2026-45018": {
+    "package": "PIP:chainlit"
   },
-  "CVE-2026-55525": {
-    "package": "PIP:praisonaiagents"
+  "CVE-2026-45019": {
+    "package": "PIP:chainlit"
   },
-  "CVE-2026-55526": {
-    "package": "PIP:praisonaiagents"
+  "CVE-2026-47835": {
+    "package": "MAVEN:org.springframework.ai:spring-ai-gemfire-store"
   },
-  "CVE-2026-55527": {
-    "package": "PIP:praisonaiagents"
+  "CVE-2026-48599": {
+    "package": "ERLANG:grpc"
   },
-  "CVE-2026-55528": {
-    "package": "PIP:praisonaiagents"
+  "CVE-2026-48853": {
+    "package": "ERLANG:grpc"
   },
-  "CVE-2026-55529": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-48854": {
+    "package": "ERLANG:grpc"
   },
-  "CVE-2026-55530": {
-    "package": "PIP:praisonaiagents"
+  "CVE-2026-49757": {
+    "package": "ERLANG:ash_authentication"
   },
-  "CVE-2026-55531": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-53430": {
+    "package": "ERLANG:grpc"
   },
-  "CVE-2026-55532": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-54511": {
+    "package": "NPM:@logtape/syslog"
   },
-  "CVE-2026-55533": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-54523": {
+    "package": "GO:github.com/kyverno/kyverno"
   },
-  "CVE-2026-55534": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-54550": {
+    "package": "MAVEN:org.codehaus.izpack:izpack-installer"
   },
-  "CVE-2026-55535": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-54556": {
+    "package": "MAVEN:org.http4s:http4s-ember-core_2.13"
   },
-  "CVE-2026-55536": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-54569": {
+    "package": "PIP:senaite.core"
   },
-  "CVE-2026-55537": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-54606": {
+    "package": "NPM:suneditor"
   },
-  "CVE-2026-55538": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-55099": {
+    "package": "PIP:icalendar"
   },
-  "CVE-2026-55539": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-55609": {
+    "package": "NPM:sublinear-time-solver"
   },
-  "CVE-2026-55540": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-55618": {
+    "package": "PIP:eml_parser"
   },
-  "CVE-2026-55541": {
-    "package": "PIP:PraisonAI"
+  "CVE-2026-55620": {
+    "package": "PIP:eml_parser"
   },
-  "CVE-2026-55546": {
-    "package": "PIP:qwed-mcp"
+  "CVE-2026-55629": {
+    "package": "NPM:whistle"
   },
-  "CVE-2026-55553": {
-    "package": "NPM:urllib"
+  "CVE-2026-55637": {
+    "package": "GO:github.com/geiserx/genieacs-mcp"
   },
-  "CVE-2026-55557": {
-    "package": "NPM:browse-mcp"
-  },
-  "CVE-2026-55571": {
-    "package": "PIP:djust"
-  },
-  "CVE-2026-55580": {
-    "package": "GO:github.com/sonirico/mcp-shell"
-  },
-  "CVE-2026-55581": {
-    "package": "GO:github.com/sonirico/mcp-shell"
-  },
-  "CVE-2026-55582": {
-    "package": "GO:github.com/sonirico/mcp-shell"
-  },
-  "CVE-2026-55585": {
-    "package": "PIP:qwed"
-  },
-  "CVE-2026-55596": {
-    "package": "NPM:@platejs/media"
-  },
-  "CVE-2026-55640": {
-    "package": "PIP:nextcloud-mcp-server"
-  },
-  "CVE-2026-55677": {
-    "package": "GO:github.com/labstack/echo"
+  "CVE-2026-56140": {
+    "package": "MAVEN:org.apache.camel:camel-aws2-sns"
   }
 }
