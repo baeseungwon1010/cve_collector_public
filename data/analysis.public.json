@@ -1,86 +1,17 @@
 {
-  "CVE-2020-13935": {
-    "package": "MAVEN:org.apache.tomcat:tomcat-websocket"
+  "CVE-2026-43865": {
+    "package": "MAVEN:org.apache.camel:camel-hazelcast"
   },
-  "CVE-2020-9484": {
-    "package": "MAVEN:org.apache.tomcat.embed:tomcat-embed-core"
-  },
-  "CVE-2025-27597": {
-    "package": "NPM:@intlify/vue-i18n-core"
-  },
-  "CVE-2026-40047": {
-    "package": "MAVEN:org.apache.camel:camel-docling"
-  },
-  "CVE-2026-40859": {
-    "package": "MAVEN:org.apache.camel:camel-netty-http"
-  },
-  "CVE-2026-40860": {
+  "CVE-2026-43866": {
     "package": "MAVEN:org.apache.camel:camel-activemq6"
   },
-  "CVE-2026-42527": {
-    "package": "MAVEN:org.apache.camel:camel-sql"
+  "CVE-2026-43867": {
+    "package": "MAVEN:org.apache.camel:camel-pqc"
   },
-  "CVE-2026-45018": {
-    "package": "PIP:chainlit"
+  "CVE-2026-46454": {
+    "package": "MAVEN:org.apache.camel:camel-cometd"
   },
-  "CVE-2026-45019": {
-    "package": "PIP:chainlit"
-  },
-  "CVE-2026-47835": {
-    "package": "MAVEN:org.springframework.ai:spring-ai-gemfire-store"
-  },
-  "CVE-2026-48599": {
-    "package": "ERLANG:grpc"
-  },
-  "CVE-2026-48853": {
-    "package": "ERLANG:grpc"
-  },
-  "CVE-2026-48854": {
-    "package": "ERLANG:grpc"
-  },
-  "CVE-2026-49757": {
-    "package": "ERLANG:ash_authentication"
-  },
-  "CVE-2026-53430": {
-    "package": "ERLANG:grpc"
-  },
-  "CVE-2026-54511": {
-    "package": "NPM:@logtape/syslog"
-  },
-  "CVE-2026-54523": {
-    "package": "GO:github.com/kyverno/kyverno"
-  },
-  "CVE-2026-54550": {
-    "package": "MAVEN:org.codehaus.izpack:izpack-installer"
-  },
-  "CVE-2026-54556": {
-    "package": "MAVEN:org.http4s:http4s-ember-core_2.13"
-  },
-  "CVE-2026-54569": {
-    "package": "PIP:senaite.core"
-  },
-  "CVE-2026-54606": {
-    "package": "NPM:suneditor"
-  },
-  "CVE-2026-55099": {
-    "package": "PIP:icalendar"
-  },
-  "CVE-2026-55609": {
-    "package": "NPM:sublinear-time-solver"
-  },
-  "CVE-2026-55618": {
-    "package": "PIP:eml_parser"
-  },
-  "CVE-2026-55620": {
-    "package": "PIP:eml_parser"
-  },
-  "CVE-2026-55629": {
-    "package": "NPM:whistle"
-  },
-  "CVE-2026-55637": {
-    "package": "GO:github.com/geiserx/genieacs-mcp"
-  },
-  "CVE-2026-56140": {
-    "package": "MAVEN:org.apache.camel:camel-aws2-sns"
+  "CVE-2026-54591": {
+    "package": "PIP:asyncssh"
   }
 }
