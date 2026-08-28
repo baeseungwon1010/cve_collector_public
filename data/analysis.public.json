@@ -1,8 +1,1 @@
-{
-  "CVE-2026-54156": {
-    "package": "NPM:node-opcua"
-  },
-  "CVE-2026-54770": {
-    "package": "PIP:webob"
-  }
-}
+{}
