@@ -1,35 +1,8 @@
 {
-  "CVE-2026-13676": {
-    "package": "NPM:fast-uri"
+  "CVE-2026-54156": {
+    "package": "NPM:node-opcua"
   },
-  "CVE-2026-42151": {
-    "package": "GO:github.com/prometheus/prometheus"
-  },
-  "CVE-2026-42350": {
-    "package": "GO:github.com/akuity/kargo"
-  },
-  "CVE-2026-50888": {
-    "package": "COMPOSER:koillection/koillection"
-  },
-  "CVE-2026-53435": {
-    "package": "MAVEN:org.jenkins-ci.main:jenkins-core"
-  },
-  "CVE-2026-54687": {
-    "package": "NPM:n8n-nodes-sqlite3"
-  },
-  "CVE-2026-54718": {
-    "package": "COMPOSER:symbiote/silverstripe-advancedworkflow"
-  },
-  "CVE-2026-54721": {
-    "package": "COMPOSER:silverstripe/userforms"
-  },
-  "CVE-2026-54732": {
-    "package": "NPM:libreoffice-convert"
-  },
-  "CVE-2026-59989": {
-    "package": "COMPOSER:phalcon/cphalcon"
-  },
-  "CVE-2026-9496": {
-    "package": "NPM:pacote"
+  "CVE-2026-54770": {
+    "package": "PIP:webob"
   }
 }
