@@ -1,1 +1,98 @@
-{}
+{
+  "CVE-2026-54736": {
+    "package": "COMPOSER:phalcon/cphalcon"
+  },
+  "CVE-2026-54746": {
+    "package": "GO:github.com/hatchet-dev/hatchet"
+  },
+  "CVE-2026-54754": {
+    "package": "GO:github.com/klever-io/klever-go"
+  },
+  "CVE-2026-54755": {
+    "package": "GO:github.com/klever-io/klever-go"
+  },
+  "CVE-2026-54757": {
+    "package": "PIP:compliance-trestle"
+  },
+  "CVE-2026-54766": {
+    "package": "GO:code.vikunja.io/api"
+  },
+  "CVE-2026-54788": {
+    "package": "RUST:datadog-opentelemetry"
+  },
+  "CVE-2026-55065": {
+    "package": "GO:code.vikunja.io/api"
+  },
+  "CVE-2026-55066": {
+    "package": "GO:code.vikunja.io/api"
+  },
+  "CVE-2026-55068": {
+    "package": "GO:github.com/free5gc/free5gc"
+  },
+  "CVE-2026-55108": {
+    "package": "GO:github.com/oam-dev/kubevela"
+  },
+  "CVE-2026-55452": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55460": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55461": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55466": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55469": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55474": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55476": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55478": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55479": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55481": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55485": {
+    "package": "PIP:piccolo-admin"
+  },
+  "CVE-2026-55509": {
+    "package": "PIP:WsgiDAV"
+  },
+  "CVE-2026-55511": {
+    "package": "MAVEN:org.yamcs:yamcs-core"
+  },
+  "CVE-2026-55516": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-55545": {
+    "package": "MAVEN:org.yamcs:yamcs-core"
+  },
+  "CVE-2026-55549": {
+    "package": "MAVEN:org.yamcs:yamcs-core"
+  },
+  "CVE-2026-55552": {
+    "package": "MAVEN:org.yamcs:yamcs-core"
+  },
+  "CVE-2026-55559": {
+    "package": "MAVEN:org.yamcs:yamcs-core"
+  },
+  "CVE-2026-55565": {
+    "package": "MAVEN:org.yamcs:yamcs-core"
+  },
+  "CVE-2026-55569": {
+    "package": "GO:github.com/aquaproj/aqua/v2"
+  },
+  "CVE-2026-57584": {
+    "package": "COMPOSER:phalcon/cphalcon"
+  }
+}
