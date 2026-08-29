@@ -1,9 +1,9 @@
 {
   "backfill_severity_index": 0,
-  "backfill_start_index": 7600,
+  "backfill_start_index": 7800,
   "last_ghsa_updated": "2026-08-28T22:53:42Z",
-  "last_lastmod_end": "2026-08-29T09:38:36.000+00:00",
-  "last_pub_end": "2026-08-29T09:38:35.000+00:00",
+  "last_lastmod_end": "2026-08-29T13:35:59.000+00:00",
+  "last_pub_end": "2026-08-29T13:35:58.000+00:00",
   "study_delivered": [
     "CVE-2015-5995",
     "CVE-2016-2555",
@@ -82,6 +82,11 @@
     "CVE-2024-51567",
     "CVE-2024-51568",
     "CVE-2024-51793",
+    "CVE-2024-5932",
+    "CVE-2024-7854",
+    "CVE-2025-10035",
+    "CVE-2025-13390",
+    "CVE-2025-24085",
     "CVE-2026-0163",
     "CVE-2026-10036",
     "CVE-2026-10053",
@@ -180,6 +185,6 @@
     "CVE-2026-77806",
     "CVE-2026-82286"
   ],
-  "study_scan_index": 576,
+  "study_scan_index": 593,
   "study_severity_index": 0
 }
