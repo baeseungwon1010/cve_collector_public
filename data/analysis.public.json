@@ -1,107 +1,74 @@
 {
-  "CVE-2026-13676": {
-    "package": "NPM:fast-uri"
+  "CVE-2026-12681": {
+    "package": "GO:github.com/google/go-attestation"
   },
-  "CVE-2026-46455": {
-    "package": "MAVEN:org.apache.camel:camel-keycloak"
+  "CVE-2026-18963": {
+    "package": "MAVEN:org.keycloak:keycloak-services"
   },
-  "CVE-2026-46456": {
-    "package": "MAVEN:org.apache.camel:camel-aws2-sqs"
+  "CVE-2026-27878": {
+    "package": "GO:github.com/grafana/tempo"
   },
-  "CVE-2026-46457": {
-    "package": "MAVEN:org.apache.camel:camel-nats"
+  "CVE-2026-46726": {
+    "package": "MAVEN:org.apache.camel:camel-vertx-websocket"
   },
-  "CVE-2026-46585": {
-    "package": "MAVEN:org.apache.camel:camel-lucene"
+  "CVE-2026-48203": {
+    "package": "MAVEN:org.apache.camel:camel-solr"
   },
-  "CVE-2026-46587": {
-    "package": "MAVEN:org.apache.camel:camel-couchbase"
+  "CVE-2026-49042": {
+    "package": "MAVEN:org.apache.camel:camel-spring-ai-tools"
   },
-  "CVE-2026-46588": {
-    "package": "MAVEN:org.apache.camel:camel-couchdb"
+  "CVE-2026-49086": {
+    "package": "MAVEN:org.apache.camel:camel-dapr"
   },
-  "CVE-2026-46590": {
-    "package": "MAVEN:org.apache.camel:camel-pqc"
+  "CVE-2026-55678": {
+    "package": "GO:github.com/basekick-labs/arc"
   },
-  "CVE-2026-46591": {
-    "package": "MAVEN:org.apache.camel:camel-neo4j"
+  "CVE-2026-55763": {
+    "package": "GO:github.com/klever-io/klever-go"
   },
-  "CVE-2026-46592": {
-    "package": "MAVEN:org.apache.camel:camel-cxf-rest"
+  "CVE-2026-55764": {
+    "package": "GO:github.com/klever-io/klever-go"
   },
-  "CVE-2026-48710": {
-    "package": "PIP:starlette"
+  "CVE-2026-55830": {
+    "package": "PIP:RestrictedPython"
   },
-  "CVE-2026-49097": {
-    "package": "MAVEN:org.apache.camel:camel-irc"
+  "CVE-2026-55841": {
+    "package": "MAVEN:org.graylog2:graylog2-server"
   },
-  "CVE-2026-55175": {
-    "package": "MAVEN:io.spinnaker.rosco:rosco-manifests"
+  "CVE-2026-55843": {
+    "package": "COMPOSER:snipe/snipe-it"
   },
-  "CVE-2026-55207": {
-    "package": "COMPOSER:pimcore/studio-backend-bundle"
+  "CVE-2026-55848": {
+    "package": "MAVEN:org.mapfish.print:print-servlet"
   },
-  "CVE-2026-55208": {
-    "package": "COMPOSER:pimcore/studio-backend-bundle"
-  },
-  "CVE-2026-55212": {
-    "package": "COMPOSER:pimcore/studio-backend-bundle"
-  },
-  "CVE-2026-55215": {
+  "CVE-2026-55855": {
     "package": "NPM:mariadb"
   },
-  "CVE-2026-55220": {
-    "package": "COMPOSER:pimcore/pimcore"
+  "CVE-2026-55867": {
+    "package": "MAVEN:org.graylog2:graylog2-server"
   },
-  "CVE-2026-55228": {
-    "package": "PIP:Weblate"
+  "CVE-2026-55874": {
+    "package": "GO:github.com/seaweedfs/seaweedfs"
   },
-  "CVE-2026-55245": {
-    "package": "GO:github.com/maximhq/bifrost/core"
+  "CVE-2026-55891": {
+    "package": "COMPOSER:privatebin/privatebin"
   },
-  "CVE-2026-55247": {
-    "package": "PIP:plone.app.event"
+  "CVE-2026-59230": {
+    "package": "MAVEN:org.apache.camel:camel-mail"
   },
-  "CVE-2026-55248": {
-    "package": "PIP:plone.app.portlets"
+  "CVE-2026-66906": {
+    "package": "MAVEN:org.apache.camel:camel-azure-storage-blob"
   },
-  "CVE-2026-55406": {
-    "package": "RUST:buffa"
+  "CVE-2026-66907": {
+    "package": "MAVEN:org.apache.camel:camel-google-storage"
   },
-  "CVE-2026-55407": {
-    "package": "RUST:buffa"
+  "CVE-2026-66908": {
+    "package": "MAVEN:org.apache.camel:camel-platform-http-main"
   },
-  "CVE-2026-55484": {
-    "package": "GO:github.com/guno1928/alos-http"
-  },
-  "CVE-2026-55520": {
-    "package": "PIP:Protego"
-  },
-  "CVE-2026-55584": {
-    "package": "COMPOSER:phpsysinfo/phpsysinfo"
-  },
-  "CVE-2026-55621": {
-    "package": "GO:github.com/lxc/incus"
-  },
-  "CVE-2026-55622": {
-    "package": "GO:github.com/lxc/incus/v7/cmd/incusd"
-  },
-  "CVE-2026-55634": {
-    "package": "COMPOSER:pimcore/pimcore"
-  },
-  "CVE-2026-55638": {
-    "package": "NPM:9router"
-  },
-  "CVE-2026-55641": {
-    "package": "NPM:9router"
-  },
-  "CVE-2026-55673": {
-    "package": "MAVEN:com.powsybl:powsybl-computation-local"
-  },
-  "CVE-2026-55993": {
+  "CVE-2026-71300": {
     "package": "MAVEN:org.apache.camel:camel-atmosphere-websocket"
   },
-  "CVE-2026-55994": {
-    "package": "MAVEN:org.apache.camel:camel-iggy"
+  "CVE-2026-78329": {
+    "package": "MAVEN:org.apache.camel:camel-undertow"
   }
 }
