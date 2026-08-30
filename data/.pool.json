@@ -14698,6 +14698,49 @@
     },
     "next_check": "2026-08-31"
   },
+  "CVE-2019-14910": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-295",
+        "CWE-305",
+        "CWE-592"
+      ],
+      "description": "A vulnerability was found in keycloak 7.x, when keycloak is configured with LDAP user federation and StartTLS is used instead of SSL/TLS from the LDAP server (ldaps), in this case user authentication succeeds even if invalid password has entered.",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-14910",
+      "last_modified": "2026-06-17T02:19:18.140",
+      "products": [
+        "redhat:keycloak"
+      ],
+      "published": "2019-12-05T15:15:11.157",
+      "references": [
+        {
+          "tags": [
+            "Issue Tracking",
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14910"
+        },
+        {
+          "tags": [
+            "Issue Tracking",
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14910"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
   "CVE-2019-15319": {
     "added": "2026-08-29",
     "checks_done": 1,
@@ -14871,6 +14914,76 @@
             "Release Notes"
           ],
           "url": "https://wordpress.org/plugins/shortcode-factory/#developers"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2019-15897": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "beegfs-ctl in ThinkParQ BeeGFS through 7.1.3 allows Authentication Bypass via communication with a BeeGFS metadata server (which is typically not exposed to external networks).",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-15897",
+      "last_modified": "2026-06-17T02:21:17.353",
+      "products": [
+        "thinkparq:beegfs"
+      ],
+      "published": "2019-12-05T16:15:10.727",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory",
+            "VDB Entry"
+          ],
+          "url": "http://packetstormsecurity.com/files/155573/BeeGFS-7.1.3-Privilege-Escalation.html"
+        },
+        {
+          "tags": [
+            "Mailing List",
+            "Mitigation",
+            "Third Party Advisory"
+          ],
+          "url": "https://seclists.org/bugtraq/2019/Dec/7"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.hpcsec.com/2019/12/04/cve-2019-15897/"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory",
+            "VDB Entry"
+          ],
+          "url": "http://packetstormsecurity.com/files/155573/BeeGFS-7.1.3-Privilege-Escalation.html"
+        },
+        {
+          "tags": [
+            "Mailing List",
+            "Mitigation",
+            "Third Party Advisory"
+          ],
+          "url": "https://seclists.org/bugtraq/2019/Dec/7"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.hpcsec.com/2019/12/04/cve-2019-15897/"
         }
       ]
     },
@@ -15161,6 +15274,189 @@
             "Third Party Advisory"
           ],
           "url": "https://github.com/dahua966/Routers-vuls/tree/master/DIR-859"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2019-19317": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-681"
+      ],
+      "description": "lookupName in resolve.c in SQLite 3.30.1 omits bits from the colUsed bitmask in the case of a generated column, which allows attackers to cause a denial of service or possibly have unspecified other impact.",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-19317",
+      "last_modified": "2026-06-17T02:26:29.647",
+      "products": [
+        "netapp:cloud_backup",
+        "netapp:ontap_select_deploy_administration_utility",
+        "oracle:mysql_workbench",
+        "siemens:sinec_infrastructure_network_services",
+        "sqlite:sqlite"
+      ],
+      "published": "2019-12-05T14:15:09.163",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/sqlite/sqlite/commit/522ebfa7cee96fb325a22ea3a2464a63485886a8"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/sqlite/sqlite/commit/73bacb7f93eab9f4bd5a65cbc4ae242acf63c9e3"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security.netapp.com/advisory/ntap-20191223-0001/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.oracle.com/security-alerts/cpuapr2020.html"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/sqlite/sqlite/commit/522ebfa7cee96fb325a22ea3a2464a63485886a8"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/sqlite/sqlite/commit/73bacb7f93eab9f4bd5a65cbc4ae242acf63c9e3"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security.netapp.com/advisory/ntap-20191223-0001/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.oracle.com/security-alerts/cpuapr2020.html"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2019-19589": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-436"
+      ],
+      "description": "The Lever PDF Embedder plugin 4.4 for WordPress does not block the distribution of polyglot PDF documents that are valid JAR archives. Note: It has been argued that \"The vulnerability reported in PDF Embedder Plugin is not valid as the plugin itself doesn't control or manage the file upload process. It only serves the uploaded PDF files and the responsibility of uploading PDF file remains with the Site owner of Wordpress installation, the upload of PDF file is managed by Wordpress core and not by PDF Embedder Plugin. Control & block of polyglot file is required to be taken care at the time of upload, not on showing the file. Moreover, the reference mentions retrieving the files from the browser cache and manually renaming it to jar for executing the file. That refers to a two step non-connected steps which has nothing to do with PDF Embedder.",
+      "has_exploit_tag": true,
+      "id": "CVE-2019-19589",
+      "last_modified": "2026-06-17T02:26:54.650",
+      "products": [
+        "wp-pdf:pdf_embedder"
+      ],
+      "published": "2019-12-05T04:15:11.677",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://sejalivre.org/usando-arquivos-polyglot-para-distribuir-malwares/"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://wordpress.org/plugins/pdf-embedder/#developers"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://sejalivre.org/usando-arquivos-polyglot-para-distribuir-malwares/"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://wordpress.org/plugins/pdf-embedder/#developers"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2019-19594": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "reset/modules/fotoliaFoto/multi_upload.php in the RESET.PRO Adobe Stock API Integration for PrestaShop 1.6 and 1.7 allows remote attackers to execute arbitrary code by uploading a .php file.",
+      "has_exploit_tag": true,
+      "id": "CVE-2019-19594",
+      "last_modified": "2026-06-17T02:26:55.060",
+      "products": [
+        "adobe:stock_api_integration",
+        "prestashop:prestashop"
+      ],
+      "published": "2019-12-05T16:15:11.007",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://ia-informatica.com/it/CVE-2019-19594"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://ia-informatica.com/it/CVE-2019-19594"
         }
       ]
     },
@@ -185735,36 +186031,6 @@
     },
     "next_check": "2026-09-05"
   },
-  "CVE-2026-76581": {
-    "added": "2026-08-28",
-    "checks_done": 2,
-    "cve": {
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-347"
-      ],
-      "description": "The WPMU DEV Dashboard plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.0.1. This is due to inconsistent and ambiguous HMAC message construction between the unauthenticated `wdpsso_step1` and `wdpsso_step2` AJAX actions, where step 1 signs and discloses an unseparated concatenation of the token, state, redirect, and domain values, while step 2 verifies an unseparated concatenation that omits the domain field. This makes it possible for unauthenticated attackers, on sites connected to WPMU DEV with Hub SSO enabled and mapped to an administrator, to obtain a valid HMAC from step 1 and replay it to step 2 by moving the domain value into the redirect field, resulting in an authenticated administrator session.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-76581",
-      "last_modified": "2026-08-28T08:16:41.463",
-      "products": [],
-      "published": "2026-08-28T08:16:41.463",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://wpmudev.com/project/wpmu-dev-dashboard/"
-        },
-        {
-          "tags": [],
-          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/3d4321c8-15a4-46f5-9b0e-2098a7fcfb5b?source=cve"
-        }
-      ]
-    },
-    "next_check": "2026-08-31"
-  },
   "CVE-2026-76582": {
     "added": "2026-08-20",
     "checks_done": 7,
@@ -206322,6 +206588,463 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/397030/cti"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82484": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A flaw has been found in itsourcecode Sales and Inventory System 1.0. Affected is an unknown function of the file /pages/emp_searchfrm.php. This manipulation of the argument ID causes sql injection. The attack may be initiated remotely. The exploit has been published and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82484",
+      "last_modified": "2026-08-30T09:16:46.433",
+      "products": [],
+      "published": "2026-08-30T09:16:46.433",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ltranquility/submit_vuln/issues/20"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82484"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/888362"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397034"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397034/cti"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82485": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability has been found in itsourcecode Sales and Inventory System 1.0. Affected by this vulnerability is an unknown functionality of the file /pages/pro_edit.php. Such manipulation of the argument ID leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82485",
+      "last_modified": "2026-08-30T09:16:46.623",
+      "products": [],
+      "published": "2026-08-30T09:16:46.623",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ltranquility/submit_vuln/issues/21"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82485"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/888363"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397035"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397035/cti"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82487": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-640"
+      ],
+      "description": "A vulnerability was determined in Beetel 450TC3 01.00.00_01. This affects an unknown part. Executing a manipulation can lead to weak password recovery. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82487",
+      "last_modified": "2026-08-30T10:17:16.287",
+      "products": [],
+      "published": "2026-08-30T10:17:16.287",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Greejith-k/Authenticated-Privilege-Escalation-Vulnerability-in-Beetel-450TC3-Router"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82487"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/881965"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397037"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397037/cti"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82539": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119"
+      ],
+      "description": "A vulnerability was determined in TOTOLINK A720R 4.1.5cu.630_B20250509. This impacts the function setMacFilterRules of the file cstecgi.cgi of the component MAC Filtering. Executing a manipulation of the argument desc can lead to memory corruption. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82539",
+      "last_modified": "2026-08-30T11:17:35.067",
+      "products": [],
+      "published": "2026-08-30T11:17:35.067",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Xernary/CVE-2026-82539"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82539"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/888696"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397055"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397055/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.totolink.net/"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82540": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was identified in itsourcecode Sales and Inventory System 1.0. Affected is an unknown function of the file /pages/cust_searchfrm.php. The manipulation of the argument ID leads to sql injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82540",
+      "last_modified": "2026-08-30T12:17:19.190",
+      "products": [],
+      "published": "2026-08-30T12:17:19.190",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/niadwj221/cve/issues/2"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82540"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/888710"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397056"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397056/cti"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82541": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security flaw has been discovered in itsourcecode Sales and Inventory System 1.0. Affected by this vulnerability is an unknown functionality of the file /pages/sup_edit.php. The manipulation of the argument ID results in sql injection. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82541",
+      "last_modified": "2026-08-30T12:17:19.390",
+      "products": [],
+      "published": "2026-08-30T12:17:19.390",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kimjh1946/cve/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82541"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/888711"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397057"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397057/cti"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82542": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "description": "A weakness has been identified in Tenda HG10 300001138. Affected by this issue is the function formIPv6Routing of the file /boaform/admin/formIPv6Routing of the component Boa Web Server. This manipulation of the argument destNet causes buffer overflow. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82542",
+      "last_modified": "2026-08-30T13:16:56.267",
+      "products": [],
+      "published": "2026-08-30T13:16:56.267",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/SunnyYANGyaya/cuicuishark-sheep-fishIOT/blob/main/Tenda/HG10/bof-formIPv6Route-destNt.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82542"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/888876"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397058"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397058/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.tenda.com.cn/"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82543": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-362"
+      ],
+      "description": "A vulnerability was detected in vastsa FileCodeBox up to 2.3. This vulnerability affects the function update_file_usage of the file apps/base/views.py of the component Pickup Limit Handler. Performing a manipulation results in race condition. It is possible to initiate the attack remotely. The exploit is now public and may be used. Upgrading to version 2.5.0 is able to resolve this issue. The patch is named 8d7d856c62d73badd0797eb4daec8d2ff10a403a. Upgrading the affected component is recommended.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82543",
+      "last_modified": "2026-08-30T13:16:56.447",
+      "products": [],
+      "published": "2026-08-30T13:16:56.447",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/vastsa/FileCodeBox/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/vastsa/FileCodeBox/commit/8d7d856c62d73badd0797eb4daec8d2ff10a403a"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/vastsa/FileCodeBox/issues/482"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/vastsa/FileCodeBox/pull/487"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/vastsa/FileCodeBox/releases/tag/v2.5.0"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82543"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/891416"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397060"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397060/cti"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82634": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "Frappe Framework development builds contain an authorization flaw in the render_jinja_template endpoint that allows low-privileged users to render arbitrary Jinja templates by supplying raw template strings. Attackers with print permission on any document can execute arbitrary SELECT statements against unrelated tables, including reading password hashes from the __Auth table.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82634",
+      "last_modified": "2026-08-30T13:16:56.780",
+      "products": [],
+      "published": "2026-08-30T13:16:56.780",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/frappe/frappe"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/frappe/frappe/blob/0a80046da32bb8976cd7854f551c179a4a06b1b3/frappe/utils/print_format_generator.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/frappe/frappe/commit/37d2eb59790633da01c741b950cc00ca3558c494"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/frappe/frappe/pull/40710"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/frappe-framework-development-branch-incorrect-authorization-via-jinja-template-preview-endpoint"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82635": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Pake before 3.13.1 joins the JavaScript-supplied filename for the download_file Tauri command onto the user's Downloads directory with no sanitization. A filename containing path traversal sequences (for example ../Library/LaunchAgents/com.evil.plist) or an absolute path resolves outside ~/Downloads. The command then fetches attacker-controlled content from the supplied URL (via Rust HTTP, not the browser) and writes it to that path. A script that can invoke the command can overwrite user-writable files and install persistence (macOS LaunchAgents, Linux autostart, Windows Startup), leading to code execution in the user account. All desktop apps generated from an affected Pake tree expose the same command.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82635",
+      "last_modified": "2026-08-30T13:16:56.923",
+      "products": [],
+      "published": "2026-08-30T13:16:56.923",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/tw93/Pake"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tw93/Pake/commit/a5463a84d6e36705ee0dd1886cf0e4b5a75b0ab4"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tw93/Pake/releases/tag/V3.13.1"
         }
       ]
     },
