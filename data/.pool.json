@@ -326,6 +326,104 @@
     },
     "next_check": "2026-10-29"
   },
+  "CVE-2010-2446": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "Rbot Reaction plugin allows command execution",
+      "has_exploit_tag": false,
+      "id": "CVE-2010-2446",
+      "last_modified": "2026-06-16T23:20:46.067",
+      "products": [
+        "ruby-rbot:rbot"
+      ],
+      "published": "2019-11-06T17:15:10.567",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security-tracker.debian.org/tracker/CVE-2010-2446"
+        },
+        {
+          "tags": [
+            "Third Party Advisory",
+            "VDB Entry"
+          ],
+          "url": "https://www.securityfocus.com/archive/1/509719/30/0/threaded"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security-tracker.debian.org/tracker/CVE-2010-2446"
+        },
+        {
+          "tags": [
+            "Third Party Advisory",
+            "VDB Entry"
+          ],
+          "url": "https://www.securityfocus.com/archive/1/509719/30/0/threaded"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2011-4628": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "TYPO3 before 4.3.12, 4.4.x before 4.4.9, and 4.5.x before 4.5.4 allows remote attackers to bypass authentication mechanisms in the backend through a crafted request.",
+      "has_exploit_tag": false,
+      "id": "CVE-2011-4628",
+      "last_modified": "2026-06-16T23:35:10.470",
+      "products": [
+        "typo3:typo3"
+      ],
+      "published": "2019-11-06T17:15:10.753",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security-tracker.debian.org/tracker/CVE-2011-4628"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://typo3.org/security/advisory/typo3-core-sa-2011-001/#Authentication_Delay_Bypass"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security-tracker.debian.org/tracker/CVE-2011-4628"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://typo3.org/security/advisory/typo3-core-sa-2011-001/#Authentication_Delay_Bypass"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
   "CVE-2012-4449": {
     "added": "2026-08-11",
     "checks_done": 8,
@@ -13140,6 +13238,343 @@
       ]
     },
     "next_check": "2026-09-05"
+  },
+  "CVE-2019-10505": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "Out of bound access while processing a non-standard IE measurement request with length crossing past the size of frame in Snapdragon Auto, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables in MDM9150, MDM9206, MDM9607, MDM9640, MDM9650, MSM8909W, MSM8996AU, QCA6174A, QCA6574AU, QCA9377, QCA9379, QCS405, SD 210/SD 212/SD 205, SD 425, SD 439 / SD 429, SD 450, SD 615/16/SD 415, SD 625, SD 632, SD 636, SD 650/52, SD 665, SD 675, SD 712 / SD 710 / SD 670, SD 730, SD 820A, SD 835, SD 845 / SD 850, SD 855, SDA660, SDM439, SDM630, SDM660, SDX20, SDX24",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-10505",
+      "last_modified": "2026-06-17T02:11:05.427",
+      "products": [
+        "qualcomm:mdm9150",
+        "qualcomm:mdm9150_firmware",
+        "qualcomm:mdm9206",
+        "qualcomm:mdm9206_firmware",
+        "qualcomm:mdm9607",
+        "qualcomm:mdm9607_firmware",
+        "qualcomm:mdm9640",
+        "qualcomm:mdm9640_firmware",
+        "qualcomm:mdm9650",
+        "qualcomm:mdm9650_firmware",
+        "qualcomm:msm8909w",
+        "qualcomm:msm8909w_firmware",
+        "qualcomm:msm8996au",
+        "qualcomm:msm8996au_firmware",
+        "qualcomm:qca6174a",
+        "qualcomm:qca6174a_firmware",
+        "qualcomm:qca6574au",
+        "qualcomm:qca6574au_firmware",
+        "qualcomm:qca9377",
+        "qualcomm:qca9377_firmware",
+        "qualcomm:qca9379",
+        "qualcomm:qca9379_firmware",
+        "qualcomm:qcs405",
+        "qualcomm:qcs405_firmware",
+        "qualcomm:sd_205",
+        "qualcomm:sd_205_firmware",
+        "qualcomm:sd_210",
+        "qualcomm:sd_210_firmware",
+        "qualcomm:sd_212",
+        "qualcomm:sd_212_firmware",
+        "qualcomm:sd_415",
+        "qualcomm:sd_415_firmware",
+        "qualcomm:sd_425",
+        "qualcomm:sd_425_firmware",
+        "qualcomm:sd_429",
+        "qualcomm:sd_429_firmware",
+        "qualcomm:sd_439",
+        "qualcomm:sd_439_firmware",
+        "qualcomm:sd_450",
+        "qualcomm:sd_450_firmware",
+        "qualcomm:sd_615",
+        "qualcomm:sd_615_firmware",
+        "qualcomm:sd_616",
+        "qualcomm:sd_616_firmware",
+        "qualcomm:sd_625",
+        "qualcomm:sd_625_firmware",
+        "qualcomm:sd_632",
+        "qualcomm:sd_632_firmware",
+        "qualcomm:sd_636",
+        "qualcomm:sd_636_firmware",
+        "qualcomm:sd_650",
+        "qualcomm:sd_650_firmware",
+        "qualcomm:sd_652",
+        "qualcomm:sd_652_firmware",
+        "qualcomm:sd_665",
+        "qualcomm:sd_665_firmware",
+        "qualcomm:sd_670",
+        "qualcomm:sd_670_firmware",
+        "qualcomm:sd_675",
+        "qualcomm:sd_675_firmware",
+        "qualcomm:sd_710",
+        "qualcomm:sd_710_firmware",
+        "qualcomm:sd_712",
+        "qualcomm:sd_712_firmware",
+        "qualcomm:sd_730",
+        "qualcomm:sd_730_firmware",
+        "qualcomm:sd_820a",
+        "qualcomm:sd_820a_firmware",
+        "qualcomm:sd_835",
+        "qualcomm:sd_835_firmware",
+        "qualcomm:sd_845",
+        "qualcomm:sd_845_firmware",
+        "qualcomm:sd_850",
+        "qualcomm:sd_850_firmware",
+        "qualcomm:sd_855",
+        "qualcomm:sd_855_firmware",
+        "qualcomm:sda660",
+        "qualcomm:sda660_firmware",
+        "qualcomm:sdm439",
+        "qualcomm:sdm439_firmware",
+        "qualcomm:sdm630",
+        "qualcomm:sdm630_firmware",
+        "qualcomm:sdm660",
+        "qualcomm:sdm660_firmware",
+        "qualcomm:sdx20",
+        "qualcomm:sdx20_firmware",
+        "qualcomm:sdx24",
+        "qualcomm:sdx24_firmware"
+      ],
+      "published": "2019-11-06T17:15:12.127",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2019-10522": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-120"
+      ],
+      "description": "While playing the clip which is nonstandard buffer overflow can occur while parsing in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables in MDM9206, MDM9607, MSM8909W, MSM8996AU, QCA6574AU, QCS405, QCS605, Qualcomm 215, SD 210/SD 212/SD 205, SD 425, SD 427, SD 430, SD 435, SD 439 / SD 429, SD 450, SD 600, SD 615/16/SD 415, SD 625, SD 632, SD 636, SD 665, SD 675, SD 712 / SD 710 / SD 670, SD 730, SD 820, SD 820A, SD 835, SD 845 / SD 850, SD 855, SDA660, SDM439, SDM630, SDM660, SDX20",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-10522",
+      "last_modified": "2026-06-17T02:11:07.627",
+      "products": [
+        "qualcomm:mdm9206",
+        "qualcomm:mdm9206_firmware",
+        "qualcomm:mdm9607",
+        "qualcomm:mdm9607_firmware",
+        "qualcomm:msm8909w",
+        "qualcomm:msm8909w_firmware",
+        "qualcomm:msm8996au",
+        "qualcomm:msm8996au_firmware",
+        "qualcomm:qca6574au",
+        "qualcomm:qca6574au_firmware",
+        "qualcomm:qcs405",
+        "qualcomm:qcs405_firmware",
+        "qualcomm:qcs605",
+        "qualcomm:qcs605_firmware",
+        "qualcomm:qualcomm_215",
+        "qualcomm:qualcomm_215_firmware",
+        "qualcomm:sd_205",
+        "qualcomm:sd_205_firmware",
+        "qualcomm:sd_210",
+        "qualcomm:sd_210_firmware",
+        "qualcomm:sd_212",
+        "qualcomm:sd_212_firmware",
+        "qualcomm:sd_415",
+        "qualcomm:sd_415_firmware",
+        "qualcomm:sd_425",
+        "qualcomm:sd_425_firmware",
+        "qualcomm:sd_427",
+        "qualcomm:sd_427_firmware",
+        "qualcomm:sd_429",
+        "qualcomm:sd_429_firmware",
+        "qualcomm:sd_430",
+        "qualcomm:sd_430_firmware",
+        "qualcomm:sd_435",
+        "qualcomm:sd_435_firmware",
+        "qualcomm:sd_439",
+        "qualcomm:sd_439_firmware",
+        "qualcomm:sd_450",
+        "qualcomm:sd_450_firmware",
+        "qualcomm:sd_600",
+        "qualcomm:sd_600_firmware",
+        "qualcomm:sd_615",
+        "qualcomm:sd_615_firmware",
+        "qualcomm:sd_616",
+        "qualcomm:sd_616_firmware",
+        "qualcomm:sd_625",
+        "qualcomm:sd_625_firmware",
+        "qualcomm:sd_632",
+        "qualcomm:sd_632_firmware",
+        "qualcomm:sd_636",
+        "qualcomm:sd_636_firmware",
+        "qualcomm:sd_665",
+        "qualcomm:sd_665_firmware",
+        "qualcomm:sd_670",
+        "qualcomm:sd_670_firmware",
+        "qualcomm:sd_675",
+        "qualcomm:sd_675_firmware",
+        "qualcomm:sd_710",
+        "qualcomm:sd_710_firmware",
+        "qualcomm:sd_712",
+        "qualcomm:sd_712_firmware",
+        "qualcomm:sd_730",
+        "qualcomm:sd_730_firmware",
+        "qualcomm:sd_820",
+        "qualcomm:sd_820_firmware",
+        "qualcomm:sd_820a",
+        "qualcomm:sd_820a_firmware",
+        "qualcomm:sd_835",
+        "qualcomm:sd_835_firmware",
+        "qualcomm:sd_845",
+        "qualcomm:sd_845_firmware",
+        "qualcomm:sd_850",
+        "qualcomm:sd_850_firmware",
+        "qualcomm:sd_855",
+        "qualcomm:sd_855_firmware",
+        "qualcomm:sda660",
+        "qualcomm:sda660_firmware",
+        "qualcomm:sdm439",
+        "qualcomm:sdm439_firmware",
+        "qualcomm:sdm630",
+        "qualcomm:sdm630_firmware",
+        "qualcomm:sdm660",
+        "qualcomm:sdm660_firmware",
+        "qualcomm:sdx20",
+        "qualcomm:sdx20_firmware"
+      ],
+      "published": "2019-11-06T17:15:12.347",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2019-10528": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Use after free issue in kernel while accessing freed mdlog session info and its attributes after closing the session in Snapdragon Auto, Snapdragon Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables in MDM9206, MDM9607, MDM9640, MDM9650, MSM8909W, MSM8996AU, QCS405, SD 210/SD 212/SD 205, SD 425, SD 427, SD 430, SD 435, SD 450, SD 625, SD 636, SD 675, SD 730, SD 820, SD 820A, SD 835, SD 855, SDA660, SDM630, SDM660, SDX20, SDX24",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-10528",
+      "last_modified": "2026-06-17T02:11:08.593",
+      "products": [
+        "qualcomm:mdm9206",
+        "qualcomm:mdm9206_firmware",
+        "qualcomm:mdm9607",
+        "qualcomm:mdm9607_firmware",
+        "qualcomm:mdm9640",
+        "qualcomm:mdm9640_firmware",
+        "qualcomm:mdm9650",
+        "qualcomm:mdm9650_firmware",
+        "qualcomm:msm8909w",
+        "qualcomm:msm8909w_firmware",
+        "qualcomm:msm8996au",
+        "qualcomm:msm8996au_firmware",
+        "qualcomm:qcs405",
+        "qualcomm:qcs405_firmware",
+        "qualcomm:sd_205",
+        "qualcomm:sd_205_firmware",
+        "qualcomm:sd_210",
+        "qualcomm:sd_210_firmware",
+        "qualcomm:sd_212",
+        "qualcomm:sd_212_firmware",
+        "qualcomm:sd_425",
+        "qualcomm:sd_425_firmware",
+        "qualcomm:sd_427",
+        "qualcomm:sd_427_firmware",
+        "qualcomm:sd_430",
+        "qualcomm:sd_430_firmware",
+        "qualcomm:sd_435",
+        "qualcomm:sd_435_firmware",
+        "qualcomm:sd_450",
+        "qualcomm:sd_450_firmware",
+        "qualcomm:sd_625",
+        "qualcomm:sd_625_firmware",
+        "qualcomm:sd_636",
+        "qualcomm:sd_636_firmware",
+        "qualcomm:sd_675",
+        "qualcomm:sd_675_firmware",
+        "qualcomm:sd_730",
+        "qualcomm:sd_730_firmware",
+        "qualcomm:sd_820",
+        "qualcomm:sd_820_firmware",
+        "qualcomm:sd_820a",
+        "qualcomm:sd_820a_firmware",
+        "qualcomm:sd_835",
+        "qualcomm:sd_835_firmware",
+        "qualcomm:sd_855",
+        "qualcomm:sd_855_firmware",
+        "qualcomm:sda660",
+        "qualcomm:sda660_firmware",
+        "qualcomm:sdm630",
+        "qualcomm:sdm630_firmware",
+        "qualcomm:sdm660",
+        "qualcomm:sdm660_firmware",
+        "qualcomm:sdx20",
+        "qualcomm:sdx20_firmware",
+        "qualcomm:sdx24",
+        "qualcomm:sdx24_firmware"
+      ],
+      "published": "2019-11-06T17:15:12.487",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
   },
   "CVE-2019-11030": {
     "added": "2026-08-29",
@@ -28576,6 +29011,36 @@
       ]
     },
     "next_check": "2026-09-05"
+  },
+  "CVE-2026-15980": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-289"
+      ],
+      "description": "The MyHome Core plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 4.4.5. This is due to missing authorization in the send_link() AJAX handler and improper token validation in the activate() function. This makes it possible for unauthenticated attackers to generate an activation token for an unconfirmed user account and obtain a valid authentication cookie for that account, including administrators. Successful exploitation requires the MyHome theme to be configured in legacy/WPBakery mode with frontend registration and confirmation email enabled, and the target account must not already have the myhome_agent_confirmed user meta set.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15980",
+      "last_modified": "2026-08-30T05:16:58.407",
+      "products": [],
+      "published": "2026-08-30T05:16:58.407",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://themeforest.net/item/myhome-real-estate-wordpress-theme/19508653"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/c458e018-5901-4917-9847-35f07646e068?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
   },
   "CVE-2026-15985": {
     "added": "2026-08-27",
@@ -205741,6 +206206,127 @@
     },
     "next_check": "2026-08-31"
   },
+  "CVE-2026-82478": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "description": "A vulnerability was determined in NASA Trick 19.6.0. This issue affects the function JSONVariableServerThread::parse_request of the file trick_source/sim_services/JSONVariableServer/JSONVariableServerThread.cpp of the component TCP Socket Handler. This manipulation causes stack-based buffer overflow. The attack is possible to be carried out remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82478",
+      "last_modified": "2026-08-30T05:16:59.380",
+      "products": [],
+      "published": "2026-08-30T05:16:59.380",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://app.notion.com/p/Stack-based-Buffer-Overflow-in-NASA-Trick-JSONVariableServer-via-Unbounded-sscanf-on-Network-Receive-39cbd773e51180e1917cd717b90b8bc8?source=copy_link"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82478"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/888016"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397028"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397028/cti"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82479": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "description": "A vulnerability was identified in NASA cFS up to 7.0.1. Impacted is the function OS_read of the file modules/protocol/tcp/fsw/src/sbn_tcp_if.c of the component SBN TCP Module. Such manipulation of the argument MsgSz leads to buffer overflow. The attack must be carried out from within the local network. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82479",
+      "last_modified": "2026-08-30T06:16:55.450",
+      "products": [],
+      "published": "2026-08-30T06:16:55.450",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82479"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/888017"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397029"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397029/cti"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
+  "CVE-2026-82480": {
+    "added": "2026-08-30",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-189",
+        "CWE-191"
+      ],
+      "description": "A security flaw has been discovered in NASA cFS up to 7.0.1. The affected element is the function CFE_SB_GetUserDataLength of the file src/cFS/cfe/modules/sb/fsw/src/cfe_sb_util.c of the component cFE Software Bus. Performing a manipulation of the argument TotalMsgSize/HdrSize results in integer underflow. It is possible to initiate the attack remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82480",
+      "last_modified": "2026-08-30T06:16:56.730",
+      "products": [],
+      "published": "2026-08-30T06:16:56.730",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82480"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/888018"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397030"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397030/cti"
+        }
+      ]
+    },
+    "next_check": "2026-08-31"
+  },
   "CVE-2026-8325": {
     "added": "2026-08-07",
     "checks_done": 8,
@@ -206019,7 +206605,7 @@
   },
   "CVE-2026-8715": {
     "added": "2026-08-14",
-    "checks_done": 7,
+    "checks_done": 8,
     "cve": {
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
@@ -206041,7 +206627,7 @@
         }
       ]
     },
-    "next_check": "2026-08-28"
+    "next_check": "2026-09-13"
   },
   "CVE-2026-8718": {
     "added": "2026-08-11",
