@@ -15072,6 +15072,42 @@
     },
     "next_check": "2026-09-01"
   },
+  "CVE-2019-16029": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "A vulnerability in the application programming interface (API) of Cisco Smart Software Manager On-Prem could allow an unauthenticated, remote attacker to change user account information which can prevent users from logging in, resulting in a denial of service (DoS) condition of the web interface. The vulnerability is due to the lack of input validation in the API. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. An exploit could allow the attacker to change or corrupt user account information which could grant the attacker administrator access or prevent legitimate user access to the web interface, resulting in a denial of service (DoS) condition.",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-16029",
+      "last_modified": "2026-06-17T02:21:35.870",
+      "products": [
+        "cisco:smart_software_manager_on-prem"
+      ],
+      "published": "2020-01-26T05:15:17.083",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20200122-on-prem-dos"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20200122-on-prem-dos"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
   "CVE-2019-16327": {
     "added": "2026-08-31",
     "checks_done": 0,
@@ -16632,6 +16668,184 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/coq-and-rocq-prover-print-assumptions-omits-unsafe-universe-checking-inlined-through-parameter-inline"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2020-7995": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-307"
+      ],
+      "description": "The htdocs/index.php?mainmenu=home login page in Dolibarr 10.0.6 allows an unlimited rate of failed authentication attempts.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-7995",
+      "last_modified": "2026-06-17T03:25:45.233",
+      "products": [
+        "dolibarr:dolibarr_erp\\/crm"
+      ],
+      "published": "2020-01-26T23:15:10.587",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory",
+            "VDB Entry"
+          ],
+          "url": "http://packetstormsecurity.com/files/163541/Dolibarr-ERP-CRM-10.0.6-Login-Brute-Forcer.html"
+        },
+        {
+          "tags": [
+            "Broken Link"
+          ],
+          "url": "https://github.com/tufangungor/tufangungor.github.io/blob/master/_posts/2020-01-19-dolibarr-10.0.6-brute-force.md"
+        },
+        {
+          "tags": [
+            "Broken Link"
+          ],
+          "url": "https://tufangungor.github.io/exploit/2020/01/18/dolibarr-10.0.6-brute-force.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory",
+            "VDB Entry"
+          ],
+          "url": "http://packetstormsecurity.com/files/163541/Dolibarr-ERP-CRM-10.0.6-Login-Brute-Forcer.html"
+        },
+        {
+          "tags": [
+            "Broken Link"
+          ],
+          "url": "https://github.com/tufangungor/tufangungor.github.io/blob/master/_posts/2020-01-19-dolibarr-10.0.6-brute-force.md"
+        },
+        {
+          "tags": [
+            "Broken Link"
+          ],
+          "url": "https://tufangungor.github.io/exploit/2020/01/18/dolibarr-10.0.6-brute-force.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2020-7999": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-798"
+      ],
+      "description": "The Intellian Aptus application 1.0.2 for Android has hardcoded values for DOWNLOAD_API_KEY and FILE_DOWNLOAD_API_KEY.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-7999",
+      "last_modified": "2026-06-17T03:25:45.670",
+      "products": [
+        "intelliantech:aptus"
+      ],
+      "published": "2020-01-27T01:15:08.247",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://sku11army.blogspot.com/2020/01/intellian-multiple-vulnerabilities-in.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://sku11army.blogspot.com/2020/01/intellian-multiple-vulnerabilities-in.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2020-8000": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-798"
+      ],
+      "description": "Intellian Aptus Web 1.24 has a hardcoded password of 12345678 for the intellian account.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-8000",
+      "last_modified": "2026-06-17T03:25:45.777",
+      "products": [
+        "intelliantech:aptus_web"
+      ],
+      "published": "2020-01-27T01:15:08.293",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://sku11army.blogspot.com/2020/01/intellian-multiple-vulnerabilities-in.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://sku11army.blogspot.com/2020/01/intellian-multiple-vulnerabilities-in.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2020-8001": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-798"
+      ],
+      "description": "The Intellian Aptus application 1.0.2 for Android has a hardcoded password of intellian for the masteruser FTP account.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-8001",
+      "last_modified": "2026-06-17T03:25:45.883",
+      "products": [
+        "intelliantech:aptus"
+      ],
+      "published": "2020-01-27T01:15:08.340",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://sku11army.blogspot.com/2020/01/intellian-multiple-vulnerabilities-in.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://sku11army.blogspot.com/2020/01/intellian-multiple-vulnerabilities-in.html"
         }
       ]
     },
@@ -87290,6 +87504,36 @@
     },
     "next_check": "2026-10-29"
   },
+  "CVE-2026-53620": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "GROWI contains a vulnerability with an authorization bypass through user-controlled key in the bookmark folder APIs. If this vulnerability is exploited, an authenticated attacker could retrieve, tamper with, and/or delete the other user's bookmark data.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-53620",
+      "last_modified": "2026-08-31T07:17:43.967",
+      "products": [],
+      "published": "2026-08-31T07:17:43.967",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://growi.co.jp/news/46/"
+        },
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN42348352/"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
   "CVE-2026-53656": {
     "added": "2026-08-22",
     "checks_done": 7,
@@ -97078,6 +97322,32 @@
       ]
     },
     "next_check": "2026-09-06"
+  },
+  "CVE-2026-58574": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "Dell PowerStore contains a Missing Authentication for Critical Function vulnerability. An unauthenticated attacker with network access to the restricted management interface could potentially exploit this vulnerability to read internal system information from the appliance filesystem. This is a Critical vulnerability as it could expose sensitive information and credentials which allow full administrative access to the array.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-58574",
+      "last_modified": "2026-08-31T07:17:44.743",
+      "products": [],
+      "published": "2026-08-31T07:17:44.743",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-us/000497829/dsa-2026-330-dell-powerstore-t-security-update-for-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
   },
   "CVE-2026-58612": {
     "added": "2026-08-12",
@@ -207642,6 +207912,561 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/397109/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82609": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was identified in itsourcecode Sales and Inventory System 1.0. This impacts an unknown function of the file /pages/inv_edit.php. The manipulation of the argument ID leads to sql injection. It is possible to initiate the attack remotely. The exploit is publicly available and might be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82609",
+      "last_modified": "2026-08-31T04:17:16.390",
+      "products": [],
+      "published": "2026-08-31T04:17:16.390",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ltranquility/submit_repository/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82609"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/892906"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397110"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397110/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82610": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security flaw has been discovered in itsourcecode Online Medicine Delivery System 1.0. Affected is the function Employee::employeeAuthentication of the file /rider/login.php of the component Login Interface. The manipulation of the argument emp_email results in sql injection. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82610",
+      "last_modified": "2026-08-31T04:17:26.273",
+      "products": [],
+      "published": "2026-08-31T04:17:26.273",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/boyslikesports/202607_vul_dir/blob/main/C-01-SQLi-Employee-Auth-Bypass_en.md"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82610"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/892907"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397111"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397111/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82611": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A weakness has been identified in itsourcecode Online Medicine Delivery System 1.0. Affected by this vulnerability is the function Customer::cusAuthentication of the file /login.php of the component Customer Login Interface. This manipulation of the argument U_USERNAME causes sql injection. The attack can be initiated remotely. The exploit has been made available to the public and could be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82611",
+      "last_modified": "2026-08-31T04:17:28.317",
+      "products": [],
+      "published": "2026-08-31T04:17:28.317",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/boyslikesports/202607_vul_dir/blob/main/C-02-SQLi-Customer-Auth-Bypass_en.md"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82611"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/892909"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397112"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397112/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82612": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security vulnerability has been detected in itsourcecode Online Medicine Delivery System 1.0. Affected by this issue is the function loadResultList of the file /index.php?q=single-item of the component Product Detail Page. Such manipulation of the argument ID leads to sql injection. The attack can be launched remotely. The exploit has been disclosed publicly and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82612",
+      "last_modified": "2026-08-31T04:17:28.543",
+      "products": [],
+      "published": "2026-08-31T04:17:28.543",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/boyslikesports/202607_vul_dir/blob/main/C-03-SQLi-Single-Item-ID_en.md"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82612"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/892910"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397113"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397113/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82613": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was detected in itsourcecode Online Medicine Delivery System 1.0. This affects the function loadResultList of the file /index.php?q=product of the component Product Search Interface. Performing a manipulation of the argument Search results in sql injection. The attack may be initiated remotely. The exploit is now public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82613",
+      "last_modified": "2026-08-31T04:17:28.777",
+      "products": [],
+      "published": "2026-08-31T04:17:28.777",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/boyslikesports/202607_vul_dir/blob/main/C-04-SQLi-Product-Search-LIKE_en.md"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82613"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/892912"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397114"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397114/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82614": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A flaw has been found in itsourcecode Online Medicine Delivery System 1.0. This vulnerability affects the function loadResultList of the file /index.php?q=product of the component Product Category Filter Interface. Executing a manipulation of the argument Category can lead to sql injection. The attack may be launched remotely. The exploit has been published and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82614",
+      "last_modified": "2026-08-31T05:17:04.020",
+      "products": [],
+      "published": "2026-08-31T05:17:04.020",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/boyslikesports/202607_vul_dir/blob/main/C-05-SQLi-Product-Category_en.md"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82614"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/892938"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397115"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397115/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82615": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability has been found in itsourcecode Online Medicine Delivery System 1.0. This issue affects the function Customer::find_phone of the file /passwordrecover.php of the component Password Recovery Interface. The manipulation of the argument phonenumber leads to sql injection. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82615",
+      "last_modified": "2026-08-31T05:17:06.217",
+      "products": [],
+      "published": "2026-08-31T05:17:06.217",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/boyslikesports/202607_vul_dir/blob/main/C-06-SQLi-Password-Recover_en.md"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82615"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/892940"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397116"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397116/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82616": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "description": "A vulnerability was found in TOTOLINK NR1800X 9.1.0u.6681_B20230703. Impacted is the function setUploadSetting of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument FileName results in stack-based buffer overflow. The attack can be executed remotely. The exploit has been made public and could be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82616",
+      "last_modified": "2026-08-31T05:17:06.393",
+      "products": [],
+      "published": "2026-08-31T05:17:06.393",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/lxiansheng488-bit/-/blob/main/TOTOlink/totolink%20setUploadSetting%E6%A0%88%E6%BA%A2%E5%87%BA.pdf"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82616"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/892941"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397117"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397117/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.totolink.net/"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82620": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security flaw has been discovered in Soarkey StudentManagement and 学生信息管理系统 up to e08f7f1d5015af407aa4cca0ada3dea189b4937e. This affects the function CourseDao.course_ranking of the file code/src/dao/CourseDao.java. Performing a manipulation of the argument cno results in sql injection. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82620",
+      "last_modified": "2026-08-31T06:17:08.103",
+      "products": [],
+      "published": "2026-08-31T06:17:08.103",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Soarkey/StudentManagement/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/Soarkey/StudentManagement/issues/33"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82620"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/893103"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397120"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397120/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82621": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "description": "A weakness has been identified in Soarkey StudentManagement and 学生信息管理系统 up to e08f7f1d5015af407aa4cca0ada3dea189b4937e. This impacts the function AdminDao.doGet of the file code/src/service/AdminDao.java of the component Administrative Servlet. Executing a manipulation of the argument action can lead to authorization bypass. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82621",
+      "last_modified": "2026-08-31T06:17:08.280",
+      "products": [],
+      "published": "2026-08-31T06:17:08.280",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Soarkey/StudentManagement/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/Soarkey/StudentManagement/issues/32"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82621"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/893104"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397121"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397121/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82628": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266",
+        "CWE-269"
+      ],
+      "description": "A vulnerability was found in Colorful iGameCenter 2.0.0.81. This vulnerability affects the function sub_11504 in the library WinRing0x64.sys of the component IOCTL Dispatch. Performing a manipulation of the argument PhysicalAddress/AlignNumer/AlignSize results in improper privilege management. Attacking locally is a requirement.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82628",
+      "last_modified": "2026-08-31T07:17:47.307",
+      "products": [],
+      "published": "2026-08-31T07:17:47.307",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82628"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/893754"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397126"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397126/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-01"
+  },
+  "CVE-2026-82630": {
+    "added": "2026-08-31",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "A vulnerability was identified in PowerJob up to 5.1.2. Impacted is the function MuConnectionManager.getOrCreateConnection of the file powerjob-server/powerjob-server-starter/src/main/java/tech/powerjob/server/web/controller/TestController.java of the component Transport Endpoint. The manipulation leads to server-side request forgery. The attack is possible to be carried out remotely. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82630",
+      "last_modified": "2026-08-31T08:17:03.700",
+      "products": [],
+      "published": "2026-08-31T08:17:03.700",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/PowerJob/PowerJob/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/PowerJob/PowerJob/issues/1181"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-82630"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/893779"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397128"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397128/cti"
         }
       ]
     },
