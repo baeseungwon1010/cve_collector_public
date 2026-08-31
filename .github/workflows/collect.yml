@@ -57,7 +57,18 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "chore: update CVE data ($(date -u +%Y-%m-%d))"
-            git push
+            # 하루 3회로 실행 빈도가 늘고 사람이 세션 중 수시로 push하면서
+            # non-fast-forward 충돌이 나기 시작함(2026-08-31 최초 관측). 커밋 자체는
+            # 이미 로컬에 있으니 rebase 재시도로 흡수한다.
+            for i in 1 2 3 4 5; do
+              if git push; then
+                break
+              fi
+              echo "push rejected, retrying with rebase ($i/5)"
+              git fetch origin master
+              git rebase origin/master
+              sleep $((i * 5))
+            done
           fi
 
       # 아카이브에 잘못된 PoC 근거가 섞였는지 확인한다. GitHub 검색이 정확 일치가
