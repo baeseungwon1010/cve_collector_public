@@ -1,1 +1,8 @@
-{}
+{
+  "CVE-2026-13676": {
+    "package": "NPM:fast-uri"
+  },
+  "CVE-2026-46517": {
+    "package": "PIP:lmdeploy"
+  }
+}
