@@ -13821,6 +13821,228 @@
     },
     "next_check": "2026-09-02"
   },
+  "CVE-2019-10610": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "Possible buffer over read when trying to process SDP message Video media line with frame-size attribute in video Media line in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables in APQ8009, APQ8017, APQ8053, APQ8076, APQ8096, APQ8096AU, APQ8098, MDM9150, MDM9206, MDM9607, MDM9615, MDM9625, MDM9635M, MDM9640, MDM9645, MDM9650, MDM9655, MSM8905, MSM8909, MSM8909W, MSM8917, MSM8920, MSM8937, MSM8940, MSM8953, MSM8996AU, MSM8998, Nicobar, QCM2150, QCS605, QM215, Rennell, SC7180, SC8180X, SDA660, SDA845, SDM429, SDM429W, SDM439, SDM450, SDM630, SDM632, SDM636, SDM660, SDM670, SDM710, SDM845, SDM850, SDX20, SDX24, SDX55, SM6150, SM7150, SM8150, SXR1130",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-10610",
+      "last_modified": "2026-06-17T02:11:21.333",
+      "products": [
+        "qualcomm:apq8009",
+        "qualcomm:apq8009_firmware",
+        "qualcomm:apq8017",
+        "qualcomm:apq8017_firmware",
+        "qualcomm:apq8053",
+        "qualcomm:apq8053_firmware",
+        "qualcomm:apq8076",
+        "qualcomm:apq8076_firmware",
+        "qualcomm:apq8096",
+        "qualcomm:apq8096_firmware",
+        "qualcomm:apq8096au",
+        "qualcomm:apq8096au_firmware",
+        "qualcomm:apq8098",
+        "qualcomm:apq8098_firmware",
+        "qualcomm:mdm9150",
+        "qualcomm:mdm9150_firmware",
+        "qualcomm:mdm9206",
+        "qualcomm:mdm9206_firmware",
+        "qualcomm:mdm9607",
+        "qualcomm:mdm9607_firmware",
+        "qualcomm:mdm9615",
+        "qualcomm:mdm9615_firmware",
+        "qualcomm:mdm9625",
+        "qualcomm:mdm9625_firmware",
+        "qualcomm:mdm9635m",
+        "qualcomm:mdm9635m_firmware",
+        "qualcomm:mdm9640",
+        "qualcomm:mdm9640_firmware",
+        "qualcomm:mdm9645",
+        "qualcomm:mdm9645_firmware",
+        "qualcomm:mdm9650",
+        "qualcomm:mdm9650_firmware",
+        "qualcomm:mdm9655",
+        "qualcomm:mdm9655_firmware",
+        "qualcomm:msm8905",
+        "qualcomm:msm8905_firmware",
+        "qualcomm:msm8909",
+        "qualcomm:msm8909_firmware",
+        "qualcomm:msm8909w",
+        "qualcomm:msm8909w_firmware",
+        "qualcomm:msm8917",
+        "qualcomm:msm8917_firmware",
+        "qualcomm:msm8920",
+        "qualcomm:msm8920_firmware",
+        "qualcomm:msm8937",
+        "qualcomm:msm8937_firmware",
+        "qualcomm:msm8940",
+        "qualcomm:msm8940_firmware",
+        "qualcomm:msm8953",
+        "qualcomm:msm8953_firmware",
+        "qualcomm:msm8996au",
+        "qualcomm:msm8996au_firmware",
+        "qualcomm:msm8998",
+        "qualcomm:msm8998_firmware",
+        "qualcomm:nicobar",
+        "qualcomm:nicobar_firmware",
+        "qualcomm:qcm2150",
+        "qualcomm:qcm2150_firmware",
+        "qualcomm:qcs605",
+        "qualcomm:qcs605_firmware",
+        "qualcomm:qm215",
+        "qualcomm:qm215_firmware",
+        "qualcomm:rennell",
+        "qualcomm:rennell_firmware",
+        "qualcomm:sc7180",
+        "qualcomm:sc7180_firmware",
+        "qualcomm:sc8180x",
+        "qualcomm:sc8180x_firmware",
+        "qualcomm:sda660",
+        "qualcomm:sda660_firmware",
+        "qualcomm:sda845",
+        "qualcomm:sda845_firmware",
+        "qualcomm:sdm429",
+        "qualcomm:sdm429_firmware",
+        "qualcomm:sdm429w",
+        "qualcomm:sdm429w_firmware",
+        "qualcomm:sdm439",
+        "qualcomm:sdm439_firmware",
+        "qualcomm:sdm450",
+        "qualcomm:sdm450_firmware",
+        "qualcomm:sdm630",
+        "qualcomm:sdm630_firmware",
+        "qualcomm:sdm632",
+        "qualcomm:sdm632_firmware",
+        "qualcomm:sdm636",
+        "qualcomm:sdm636_firmware",
+        "qualcomm:sdm660",
+        "qualcomm:sdm660_firmware",
+        "qualcomm:sdm670",
+        "qualcomm:sdm670_firmware",
+        "qualcomm:sdm710",
+        "qualcomm:sdm710_firmware",
+        "qualcomm:sdm845",
+        "qualcomm:sdm845_firmware",
+        "qualcomm:sdm850",
+        "qualcomm:sdm850_firmware",
+        "qualcomm:sdx20",
+        "qualcomm:sdx20_firmware",
+        "qualcomm:sdx24",
+        "qualcomm:sdx24_firmware",
+        "qualcomm:sdx55",
+        "qualcomm:sdx55_firmware",
+        "qualcomm:sm6150",
+        "qualcomm:sm6150_firmware",
+        "qualcomm:sm7150",
+        "qualcomm:sm7150_firmware",
+        "qualcomm:sm8150",
+        "qualcomm:sm8150_firmware",
+        "qualcomm:sxr1130",
+        "qualcomm:sxr1130_firmware"
+      ],
+      "published": "2020-04-16T11:15:13.810",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.qualcomm.com/company/product-security/bulletins/april-2020-bulletin"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.qualcomm.com/company/product-security/bulletins/april-2020-bulletin"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2019-10622": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "Out of bound memory access can happen while parsing ADSP message due to lack of check of size of payload received from userspace in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wired Infrastructure and Networking in APQ8009, APQ8096AU, IPQ4019, IPQ6018, IPQ8064, IPQ8074, MDM9206, MDM9207C, MDM9607, MDM9640, MDM9650, QCN7605, QCS605, SC8180X, SDM710, SDX24, SDX55, SM8150, SM8250, SXR2130",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-10622",
+      "last_modified": "2026-06-17T02:11:22.957",
+      "products": [
+        "qualcomm:apq8009",
+        "qualcomm:apq8009_firmware",
+        "qualcomm:apq8096au",
+        "qualcomm:apq8096au_firmware",
+        "qualcomm:ipq4019",
+        "qualcomm:ipq4019_firmware",
+        "qualcomm:ipq6018",
+        "qualcomm:ipq6018_firmware",
+        "qualcomm:ipq8064",
+        "qualcomm:ipq8064_firmware",
+        "qualcomm:ipq8074",
+        "qualcomm:ipq8074_firmware",
+        "qualcomm:mdm9206",
+        "qualcomm:mdm9206_firmware",
+        "qualcomm:mdm9207c",
+        "qualcomm:mdm9207c_firmware",
+        "qualcomm:mdm9607",
+        "qualcomm:mdm9607_firmware",
+        "qualcomm:mdm9640",
+        "qualcomm:mdm9640_firmware",
+        "qualcomm:mdm9650",
+        "qualcomm:mdm9650_firmware",
+        "qualcomm:qcn7605",
+        "qualcomm:qcn7605_firmware",
+        "qualcomm:qcs605",
+        "qualcomm:qcs605_firmware",
+        "qualcomm:sc8180x",
+        "qualcomm:sc8180x_firmware",
+        "qualcomm:sdm710",
+        "qualcomm:sdm710_firmware",
+        "qualcomm:sdx24",
+        "qualcomm:sdx24_firmware",
+        "qualcomm:sdx55",
+        "qualcomm:sdx55_firmware",
+        "qualcomm:sm8150",
+        "qualcomm:sm8150_firmware",
+        "qualcomm:sm8250",
+        "qualcomm:sm8250_firmware",
+        "qualcomm:sxr2130",
+        "qualcomm:sxr2130_firmware"
+      ],
+      "published": "2020-04-16T11:15:13.963",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://www.qualcomm.com/company/product-security/bulletins/april-2020-bulletin"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://www.qualcomm.com/company/product-security/bulletins/april-2020-bulletin"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
   "CVE-2019-11030": {
     "added": "2026-08-29",
     "checks_done": 3,
@@ -14630,6 +14852,439 @@
       ]
     },
     "next_check": "2026-09-05"
+  },
+  "CVE-2019-14011": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "Multiple Read overflows issue due to improper length check while decoding 3G attach accept/ SMS/ pdn connection reject/ esm data transport/ bearer modify context reject in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables in APQ8009, APQ8053, APQ8096, APQ8096AU, APQ8098, MDM9150, MDM9205, MDM9206, MDM9207C, MDM9607, MDM9625, MDM9635M, MDM9640, MDM9645, MDM9650, MDM9655, MSM8905, MSM8909, MSM8909W, MSM8917, MSM8920, MSM8937, MSM8940, MSM8953, MSM8996AU, MSM8998, Nicobar, QCM2150, QCS605, QM215, Rennell, SC7180, SC8180X, SDA660, SDA845, SDM429, SDM429W, SDM439, SDM450, SDM630, SDM632, SDM636, SDM660, SDM670, SDM710, SDM845, SDM850, SDX20, SDX24, SDX55, SM6150, SM7150, SM8150, SXR1130",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-14011",
+      "last_modified": "2026-06-17T02:17:37.733",
+      "products": [
+        "qualcomm:apq8009",
+        "qualcomm:apq8009_firmware",
+        "qualcomm:apq8053",
+        "qualcomm:apq8053_firmware",
+        "qualcomm:apq8096",
+        "qualcomm:apq8096_firmware",
+        "qualcomm:apq8096au",
+        "qualcomm:apq8096au_firmware",
+        "qualcomm:apq8098",
+        "qualcomm:apq8098_firmware",
+        "qualcomm:mdm9150",
+        "qualcomm:mdm9150_firmware",
+        "qualcomm:mdm9205",
+        "qualcomm:mdm9205_firmware",
+        "qualcomm:mdm9206",
+        "qualcomm:mdm9206_firmware",
+        "qualcomm:mdm9207c",
+        "qualcomm:mdm9207c_firmware",
+        "qualcomm:mdm9607",
+        "qualcomm:mdm9607_firmware",
+        "qualcomm:mdm9625",
+        "qualcomm:mdm9625_firmware",
+        "qualcomm:mdm9635m",
+        "qualcomm:mdm9635m_firmware",
+        "qualcomm:mdm9640",
+        "qualcomm:mdm9640_firmware",
+        "qualcomm:mdm9645",
+        "qualcomm:mdm9645_firmware",
+        "qualcomm:mdm9650",
+        "qualcomm:mdm9650_firmware",
+        "qualcomm:mdm9655",
+        "qualcomm:mdm9655_firmware",
+        "qualcomm:msm8905",
+        "qualcomm:msm8905_firmware",
+        "qualcomm:msm8909",
+        "qualcomm:msm8909_firmware",
+        "qualcomm:msm8909w",
+        "qualcomm:msm8909w_firmware",
+        "qualcomm:msm8917",
+        "qualcomm:msm8917_firmware",
+        "qualcomm:msm8920",
+        "qualcomm:msm8920_firmware",
+        "qualcomm:msm8937",
+        "qualcomm:msm8937_firmware",
+        "qualcomm:msm8940",
+        "qualcomm:msm8940_firmware",
+        "qualcomm:msm8953",
+        "qualcomm:msm8953_firmware",
+        "qualcomm:msm8996au",
+        "qualcomm:msm8996au_firmware",
+        "qualcomm:msm8998",
+        "qualcomm:msm8998_firmware",
+        "qualcomm:nicobar",
+        "qualcomm:nicobar_firmware",
+        "qualcomm:qcm2150",
+        "qualcomm:qcm2150_firmware",
+        "qualcomm:qcs605",
+        "qualcomm:qcs605_firmware",
+        "qualcomm:qm215",
+        "qualcomm:qm215_firmware",
+        "qualcomm:rennell",
+        "qualcomm:rennell_firmware",
+        "qualcomm:sc7180",
+        "qualcomm:sc7180_firmware",
+        "qualcomm:sc8180x",
+        "qualcomm:sc8180x_firmware",
+        "qualcomm:sda660",
+        "qualcomm:sda660_firmware",
+        "qualcomm:sda845",
+        "qualcomm:sda845_firmware",
+        "qualcomm:sdm429",
+        "qualcomm:sdm429_firmware",
+        "qualcomm:sdm429w",
+        "qualcomm:sdm429w_firmware",
+        "qualcomm:sdm439",
+        "qualcomm:sdm439_firmware",
+        "qualcomm:sdm450",
+        "qualcomm:sdm450_firmware",
+        "qualcomm:sdm630",
+        "qualcomm:sdm630_firmware",
+        "qualcomm:sdm632",
+        "qualcomm:sdm632_firmware",
+        "qualcomm:sdm636",
+        "qualcomm:sdm636_firmware",
+        "qualcomm:sdm660",
+        "qualcomm:sdm660_firmware",
+        "qualcomm:sdm670",
+        "qualcomm:sdm670_firmware",
+        "qualcomm:sdm710",
+        "qualcomm:sdm710_firmware",
+        "qualcomm:sdm845",
+        "qualcomm:sdm845_firmware",
+        "qualcomm:sdm850",
+        "qualcomm:sdm850_firmware",
+        "qualcomm:sdx20",
+        "qualcomm:sdx20_firmware",
+        "qualcomm:sdx24",
+        "qualcomm:sdx24_firmware",
+        "qualcomm:sdx55",
+        "qualcomm:sdx55_firmware",
+        "qualcomm:sm6150",
+        "qualcomm:sm6150_firmware",
+        "qualcomm:sm7150",
+        "qualcomm:sm7150_firmware",
+        "qualcomm:sm8150",
+        "qualcomm:sm8150_firmware",
+        "qualcomm:sxr1130",
+        "qualcomm:sxr1130_firmware"
+      ],
+      "published": "2020-04-16T11:15:14.370",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.qualcomm.com/company/product-security/bulletins/april-2020-bulletin"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.qualcomm.com/company/product-security/bulletins/april-2020-bulletin"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2019-14019": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "Multiple Read overflows issue due to improper length check while decoding RAU accept/PDN disconnect Rej/Modify EPS ctxt req/bearer resource alloc Rej/Deact EPs bearer REq in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon IoT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables in APQ8009, APQ8053, APQ8076, APQ8096, APQ8096AU, APQ8098, MDM9150, MDM9205, MDM9206, MDM9207C, MDM9607, MDM9615, MDM9625, MDM9635M, MDM9640, MDM9645, MDM9650, MDM9655, MSM8905, MSM8909, MSM8909W, MSM8917, MSM8920, MSM8937, MSM8940, MSM8953, MSM8996AU, MSM8998, Nicobar, QCM2150, QCS605, QM215, Rennell, SC7180, SC8180X, SDA660, SDA845, SDM429, SDM429W, SDM439, SDM450, SDM630, SDM632, SDM636, SDM660, SDM670, SDM710, SDM845, SDM850, SDX20, SDX24, SDX55, SM6150, SM7150, SM8150, SXR1130",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-14019",
+      "last_modified": "2026-06-17T02:17:39.020",
+      "products": [
+        "qualcomm:apq8009",
+        "qualcomm:apq8009_firmware",
+        "qualcomm:apq8053",
+        "qualcomm:apq8053_firmware",
+        "qualcomm:apq8076",
+        "qualcomm:apq8076_firmware",
+        "qualcomm:apq8096",
+        "qualcomm:apq8096_firmware",
+        "qualcomm:apq8096au",
+        "qualcomm:apq8096au_firmware",
+        "qualcomm:apq8098",
+        "qualcomm:apq8098_firmware",
+        "qualcomm:mdm9150",
+        "qualcomm:mdm9150_firmware",
+        "qualcomm:mdm9205",
+        "qualcomm:mdm9205_firmware",
+        "qualcomm:mdm9206",
+        "qualcomm:mdm9206_firmware",
+        "qualcomm:mdm9207c",
+        "qualcomm:mdm9207c_firmware",
+        "qualcomm:mdm9607",
+        "qualcomm:mdm9607_firmware",
+        "qualcomm:mdm9615",
+        "qualcomm:mdm9615_firmware",
+        "qualcomm:mdm9625",
+        "qualcomm:mdm9625_firmware",
+        "qualcomm:mdm9635m",
+        "qualcomm:mdm9635m_firmware",
+        "qualcomm:mdm9640",
+        "qualcomm:mdm9640_firmware",
+        "qualcomm:mdm9645",
+        "qualcomm:mdm9645_firmware",
+        "qualcomm:mdm9650",
+        "qualcomm:mdm9650_firmware",
+        "qualcomm:mdm9655",
+        "qualcomm:mdm9655_firmware",
+        "qualcomm:msm8905",
+        "qualcomm:msm8905_firmware",
+        "qualcomm:msm8909",
+        "qualcomm:msm8909_firmware",
+        "qualcomm:msm8909w",
+        "qualcomm:msm8909w_firmware",
+        "qualcomm:msm8917",
+        "qualcomm:msm8917_firmware",
+        "qualcomm:msm8920",
+        "qualcomm:msm8920_firmware",
+        "qualcomm:msm8937",
+        "qualcomm:msm8937_firmware",
+        "qualcomm:msm8940",
+        "qualcomm:msm8940_firmware",
+        "qualcomm:msm8953",
+        "qualcomm:msm8953_firmware",
+        "qualcomm:msm8996au",
+        "qualcomm:msm8996au_firmware",
+        "qualcomm:msm8998",
+        "qualcomm:msm8998_firmware",
+        "qualcomm:nicobar",
+        "qualcomm:nicobar_firmware",
+        "qualcomm:qcm2150",
+        "qualcomm:qcm2150_firmware",
+        "qualcomm:qcs605",
+        "qualcomm:qcs605_firmware",
+        "qualcomm:qm215",
+        "qualcomm:qm215_firmware",
+        "qualcomm:rennell",
+        "qualcomm:rennell_firmware",
+        "qualcomm:sc7180",
+        "qualcomm:sc7180_firmware",
+        "qualcomm:sc8180x",
+        "qualcomm:sc8180x_firmware",
+        "qualcomm:sda660",
+        "qualcomm:sda660_firmware",
+        "qualcomm:sda845",
+        "qualcomm:sda845_firmware",
+        "qualcomm:sdm429",
+        "qualcomm:sdm429_firmware",
+        "qualcomm:sdm429w",
+        "qualcomm:sdm429w_firmware",
+        "qualcomm:sdm439",
+        "qualcomm:sdm439_firmware",
+        "qualcomm:sdm450",
+        "qualcomm:sdm450_firmware",
+        "qualcomm:sdm630",
+        "qualcomm:sdm630_firmware",
+        "qualcomm:sdm632",
+        "qualcomm:sdm632_firmware",
+        "qualcomm:sdm636",
+        "qualcomm:sdm636_firmware",
+        "qualcomm:sdm660",
+        "qualcomm:sdm660_firmware",
+        "qualcomm:sdm670",
+        "qualcomm:sdm670_firmware",
+        "qualcomm:sdm710",
+        "qualcomm:sdm710_firmware",
+        "qualcomm:sdm845",
+        "qualcomm:sdm845_firmware",
+        "qualcomm:sdm850",
+        "qualcomm:sdm850_firmware",
+        "qualcomm:sdx20",
+        "qualcomm:sdx20_firmware",
+        "qualcomm:sdx24",
+        "qualcomm:sdx24_firmware",
+        "qualcomm:sdx55",
+        "qualcomm:sdx55_firmware",
+        "qualcomm:sm6150",
+        "qualcomm:sm6150_firmware",
+        "qualcomm:sm7150",
+        "qualcomm:sm7150_firmware",
+        "qualcomm:sm8150",
+        "qualcomm:sm8150_firmware",
+        "qualcomm:sxr1130",
+        "qualcomm:sxr1130_firmware"
+      ],
+      "published": "2020-04-16T11:15:14.543",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.qualcomm.com/company/product-security/bulletins/april-2020-bulletin"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.qualcomm.com/company/product-security/bulletins/april-2020-bulletin"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2019-14020": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "Multiple Read overflows issue due to improper length check while decoding dedicated_eps_bearer_req/ act_def_context_req/ cs_serv_notification/ emm_info/ guti_realloc_cmd in Snapdragon Auto, Snapdragon Compute, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables in APQ8053, APQ8076, APQ8096, APQ8096AU, APQ8098, MDM9150, MDM9205, MDM9206, MDM9607, MDM9615, MDM9625, MDM9635M, MDM9640, MDM9645, MDM9650, MDM9655, MSM8905, MSM8909, MSM8909W, MSM8917, MSM8920, MSM8937, MSM8940, MSM8953, MSM8996AU, MSM8998, Nicobar, QCM2150, QCS605, QM215, Rennell, SC7180, SC8180X, SDA660, SDA845, SDM429, SDM429W, SDM439, SDM450, SDM630, SDM632, SDM636, SDM660, SDM670, SDM710, SDM845, SDM850, SDX20, SDX24, SDX55, SM6150, SM7150, SM8150, SXR1130",
+      "has_exploit_tag": false,
+      "id": "CVE-2019-14020",
+      "last_modified": "2026-06-17T02:17:39.193",
+      "products": [
+        "qualcomm:apq8053",
+        "qualcomm:apq8053_firmware",
+        "qualcomm:apq8076",
+        "qualcomm:apq8076_firmware",
+        "qualcomm:apq8096",
+        "qualcomm:apq8096_firmware",
+        "qualcomm:apq8096au",
+        "qualcomm:apq8096au_firmware",
+        "qualcomm:apq8098",
+        "qualcomm:apq8098_firmware",
+        "qualcomm:mdm9150",
+        "qualcomm:mdm9150_firmware",
+        "qualcomm:mdm9205",
+        "qualcomm:mdm9205_firmware",
+        "qualcomm:mdm9206",
+        "qualcomm:mdm9206_firmware",
+        "qualcomm:mdm9607",
+        "qualcomm:mdm9607_firmware",
+        "qualcomm:mdm9615",
+        "qualcomm:mdm9615_firmware",
+        "qualcomm:mdm9625",
+        "qualcomm:mdm9625_firmware",
+        "qualcomm:mdm9635m",
+        "qualcomm:mdm9635m_firmware",
+        "qualcomm:mdm9640",
+        "qualcomm:mdm9640_firmware",
+        "qualcomm:mdm9645",
+        "qualcomm:mdm9645_firmware",
+        "qualcomm:mdm9650",
+        "qualcomm:mdm9650_firmware",
+        "qualcomm:mdm9655",
+        "qualcomm:mdm9655_firmware",
+        "qualcomm:msm8905",
+        "qualcomm:msm8905_firmware",
+        "qualcomm:msm8909",
+        "qualcomm:msm8909_firmware",
+        "qualcomm:msm8909w",
+        "qualcomm:msm8909w_firmware",
+        "qualcomm:msm8917",
+        "qualcomm:msm8917_firmware",
+        "qualcomm:msm8920",
+        "qualcomm:msm8920_firmware",
+        "qualcomm:msm8937",
+        "qualcomm:msm8937_firmware",
+        "qualcomm:msm8940",
+        "qualcomm:msm8940_firmware",
+        "qualcomm:msm8953",
+        "qualcomm:msm8953_firmware",
+        "qualcomm:msm8996au",
+        "qualcomm:msm8996au_firmware",
+        "qualcomm:msm8998",
+        "qualcomm:msm8998_firmware",
+        "qualcomm:nicobar",
+        "qualcomm:nicobar_firmware",
+        "qualcomm:qcm2150",
+        "qualcomm:qcm2150_firmware",
+        "qualcomm:qcs605",
+        "qualcomm:qcs605_firmware",
+        "qualcomm:qm215",
+        "qualcomm:qm215_firmware",
+        "qualcomm:rennell",
+        "qualcomm:rennell_firmware",
+        "qualcomm:sc7180",
+        "qualcomm:sc7180_firmware",
+        "qualcomm:sc8180x",
+        "qualcomm:sc8180x_firmware",
+        "qualcomm:sda660",
+        "qualcomm:sda660_firmware",
+        "qualcomm:sda845",
+        "qualcomm:sda845_firmware",
+        "qualcomm:sdm429",
+        "qualcomm:sdm429_firmware",
+        "qualcomm:sdm429w",
+        "qualcomm:sdm429w_firmware",
+        "qualcomm:sdm439",
+        "qualcomm:sdm439_firmware",
+        "qualcomm:sdm450",
+        "qualcomm:sdm450_firmware",
+        "qualcomm:sdm630",
+        "qualcomm:sdm630_firmware",
+        "qualcomm:sdm632",
+        "qualcomm:sdm632_firmware",
+        "qualcomm:sdm636",
+        "qualcomm:sdm636_firmware",
+        "qualcomm:sdm660",
+        "qualcomm:sdm660_firmware",
+        "qualcomm:sdm670",
+        "qualcomm:sdm670_firmware",
+        "qualcomm:sdm710",
+        "qualcomm:sdm710_firmware",
+        "qualcomm:sdm845",
+        "qualcomm:sdm845_firmware",
+        "qualcomm:sdm850",
+        "qualcomm:sdm850_firmware",
+        "qualcomm:sdx20",
+        "qualcomm:sdx20_firmware",
+        "qualcomm:sdx24",
+        "qualcomm:sdx24_firmware",
+        "qualcomm:sdx55",
+        "qualcomm:sdx55_firmware",
+        "qualcomm:sm6150",
+        "qualcomm:sm6150_firmware",
+        "qualcomm:sm7150",
+        "qualcomm:sm7150_firmware",
+        "qualcomm:sm8150",
+        "qualcomm:sm8150_firmware",
+        "qualcomm:sxr1130",
+        "qualcomm:sxr1130_firmware"
+      ],
+      "published": "2020-04-16T11:15:14.603",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.qualcomm.com/company/product-security/bulletins/april-2020-bulletin"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.qualcomm.com/company/product-security/bulletins/april-2020-bulletin"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
   },
   "CVE-2019-14193": {
     "added": "2026-08-29",
@@ -18611,6 +19266,36 @@
     },
     "next_check": "2026-09-06"
   },
+  "CVE-2025-15613": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Kyverno before v1.13.4 is vulnerable to server-side request forgery (SSRF) via its Service Call functionality. An attacker with permission to create Kyverno (Cluster)Policies can specify an external URL in a policy's apiCall/service configuration; although Service Call is documented for in-cluster services, it also resolves external addresses, allowing requests to an attacker-controlled server. Because policy context data (including contents of Kubernetes resources such as secrets) is sent in these requests, an attacker can exfiltrate sensitive cluster data.",
+      "has_exploit_tag": false,
+      "id": "CVE-2025-15613",
+      "last_modified": "2026-09-01T12:17:18.183",
+      "products": [],
+      "published": "2026-09-01T12:17:18.183",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kyverno/kyverno/security/advisories/GHSA-459x-q9hg-4gpq"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/kyverno-before-1.13.4-ssrf-via-service-call"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
   "CVE-2025-15637": {
     "added": "2026-08-21",
     "checks_done": 7,
@@ -21223,6 +21908,36 @@
       ]
     },
     "next_check": "2026-10-29"
+  },
+  "CVE-2026-11873": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-209"
+      ],
+      "description": "An Apache-proxied Dogtag CA REST endpoint exposed by IdM (POST /ca/rest/certrequests) returns HTTP 500 with internal Java stack traces for unauthenticated malformed requests. The same unauthenticated error path emits large multi-line stack traces into the CA debug log, creating a log-amplification resource exhaustion vector (disk growth and I/O contention) without requiring authentication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-11873",
+      "last_modified": "2026-09-01T12:17:35.300",
+      "products": [],
+      "published": "2026-09-01T12:17:35.300",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-11873"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2487505"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
   },
   "CVE-2026-11881": {
     "added": "2026-07-31",
@@ -25878,32 +26593,6 @@
     },
     "next_check": "2026-10-29"
   },
-  "CVE-2026-14662": {
-    "added": "2026-08-14",
-    "checks_done": 8,
-    "cve": {
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-190"
-      ],
-      "description": "Integer wraparound in PostgreSQL tsvector and tsquery data type functions allows an unprivileged database user to cause the server to undersize an allocation and write out-of-bounds, via crafted large inputs.  This may execute arbitrary code as the operating system user running the database.  These types are typically sourced from application logic, not taken from the application's user.  Hence, application users attacking the database, through the application as a conduit, are unlikely.  CVE-2026-6473 had fixed similar problems.  Versions before PostgreSQL 18.5, 17.11, 16.15, 15.19, and 14.24 are affected.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-14662",
-      "last_modified": "2026-08-13T16:17:55.490",
-      "products": [],
-      "published": "2026-08-13T13:17:43.553",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://www.postgresql.org/support/security/CVE-2026-14662/"
-        }
-      ]
-    },
-    "next_check": "2026-09-13"
-  },
   "CVE-2026-14663": {
     "added": "2026-08-14",
     "checks_done": 8,
@@ -27554,6 +28243,48 @@
       ]
     },
     "next_check": "2026-09-03"
+  },
+  "CVE-2026-15101": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The WPBakery Page Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'data' parameter in all versions up to, and including, 8.7.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The wp_kses_post sanitization applied during save does not neutralize the payload because the malicious script content is base64-encoded as plain alphanumeric text with no HTML tags to strip; the vc_raw_html shortcode template then decodes and echoes this content unescaped at render time.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15101",
+      "last_modified": "2026-09-01T10:17:10.253",
+      "products": [],
+      "published": "2026-09-01T10:17:10.253",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/js_composer/trunk/include/autoload/hooks/vc-settings-presets.php#L56"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/js_composer/trunk/include/autoload/hooks/vc-settings-presets.php#L88"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/js_composer/trunk/include/classes/core/presets/class-vc-settings-presets.php#L227"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/js_composer/trunk/include/templates/shortcodes/vc_raw_html.php#L30"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/b61ced52-30a2-407a-8659-1ae4a4d99aab?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
   },
   "CVE-2026-15142": {
     "added": "2026-08-16",
@@ -34791,6 +35522,52 @@
     },
     "next_check": "2026-09-08"
   },
+  "CVE-2026-16786": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Live Composer – Free WordPress Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via dslc_module_testimonials_output Shortcode in all versions up to, and including, 2.1.19 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The injected payload survives save-time wp_kses_post filtering because KSES treats shortcode delimiters as opaque, and the unescaped fields — including main_heading_title, view_all_link, main_heading_link_title, and main_filter_title_all — are only rendered when do_shortcode() executes at page-view time.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-16786",
+      "last_modified": "2026-09-01T10:17:11.603",
+      "products": [],
+      "published": "2026-09-01T10:17:11.603",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/live-composer-page-builder/tags/2.1.18/modules/testimonials/module.php#L5024"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/live-composer-page-builder/tags/2.1.18/modules/testimonials/module.php#L5251"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/live-composer-page-builder/tags/2.1.18/modules/testimonials/module.php#L5257"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/live-composer-page-builder/tags/2.1.18/modules/testimonials/module.php#L5291"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3662813%40live-composer-page-builder&new=3662813%40live-composer-page-builder"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/852b1766-8674-44a0-843c-381cd4155a2b?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
   "CVE-2026-16787": {
     "added": "2026-09-01",
     "checks_done": 0,
@@ -34828,6 +35605,56 @@
         {
           "tags": [],
           "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/91febd9e-0b46-4f67-9ba0-97c01bf1c699?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-16788": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Live Composer – Free WordPress Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via dslc_module_projects_output Shortcode in all versions up to, and including, 2.1.19 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. WordPress's shortcode-aware kses handling preserves the serialized shortcode body as a placeholder before content filtering runs, allowing attacker-controlled values such as view_all_link, main_heading_link_title, main_filter_title_all, and button_text to reach render-time sinks entirely unescaped.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-16788",
+      "last_modified": "2026-09-01T10:17:11.740",
+      "products": [],
+      "published": "2026-09-01T10:17:11.740",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/live-composer-page-builder/tags/2.1.18/modules/projects/module.php#L6025"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/live-composer-page-builder/tags/2.1.18/modules/projects/module.php#L6278"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/live-composer-page-builder/tags/2.1.18/modules/projects/module.php#L6312"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/live-composer-page-builder/tags/2.1.18/modules/projects/module.php#L6563"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/live-composer-page-builder/tags/2.1.18/modules/projects/module.php#L6743"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3662813%40live-composer-page-builder&new=3662813%40live-composer-page-builder"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/a8ae901a-c32a-43d8-b23b-088e695a5823?source=cve"
         }
       ]
     },
@@ -50996,6 +51823,40 @@
     },
     "next_check": "2026-09-15"
   },
+  "CVE-2026-18550": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The Nokri - Job Board WordPress Theme for WordPress is vulnerable to Privilege Escalation via Account Takeover in all versions up to, and including, 1.6.6. This is due to insufficient reset token validation in the `nokri_reset_password()` function, which allows empty attacker-supplied reset tokens to match empty or unset `sb_password_forget_token` user meta values. This makes it possible for unauthenticated attackers to reset the password of any user, including administrators, and gain access to their account.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-18550",
+      "last_modified": "2026-09-01T12:17:35.920",
+      "products": [],
+      "published": "2026-09-01T12:17:35.920",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://nokriwp.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://themeforest.net/item/nokri-job-board-wordpress-theme/22677241"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/b03b7ea8-6485-495d-b815-2b7b882a75a2?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
   "CVE-2026-18554": {
     "added": "2026-08-15",
     "checks_done": 8,
@@ -65483,6 +66344,60 @@
     },
     "next_check": "2026-09-14"
   },
+  "CVE-2026-19914": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Welcart e-Commerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'custom_order' parameter in all versions up to, and including, 2.12.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The injected payload is delivered via the guest checkout form, requiring no authentication, and executes when an administrator views the affected order in the WordPress admin panel.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19914",
+      "last_modified": "2026-09-01T10:17:12.843",
+      "products": [],
+      "published": "2026-09-01T10:17:12.843",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/usc-e-shop/tags/2.11.34/classes/cart.class.php#L552"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/usc-e-shop/tags/2.11.34/functions/function.php#L228"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/usc-e-shop/tags/2.11.34/functions/utility.php#L1548"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/usc-e-shop/tags/2.11.34/includes/order_edit_form.php#L233"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3673344/usc-e-shop/trunk/includes/order_edit_form.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?old_path=%2Fusc-e-shop/tags/2.12.1&new_path=%2Fusc-e-shop/tags/2.12.2"
+        },
+        {
+          "tags": [],
+          "url": "https://wordpress.org/plugins/usc-e-shop/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/527630bf-d034-4fcd-8fbe-01b388701049?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
   "CVE-2026-19917": {
     "added": "2026-08-16",
     "checks_done": 8,
@@ -70060,6 +70975,32 @@
       ]
     },
     "next_check": "2026-09-05"
+  },
+  "CVE-2026-25706": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "Improper neutralization of special elements used in an OS command in yast2-samba-client allows an attacker who controls the content of an Active Directory directory tree - a rogue domain controller, or a directory user delegated the right to create objects - to execute arbitrary commands as root on a machine being joined to that domain.\nThis issue affects yast2-samba-client through 5.0.4.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25706",
+      "last_modified": "2026-09-01T10:17:12.993",
+      "products": [],
+      "published": "2026-09-01T10:17:12.993",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.suse.com/show_bug.cgi?id=1272776"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
   },
   "CVE-2026-26035": {
     "added": "2026-08-13",
@@ -100895,6 +101836,59 @@
       ]
     },
     "next_check": "2026-09-05"
+  },
+  "CVE-2026-59680": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1287",
+        "CWE-78"
+      ],
+      "description": "An OS command injection vulnerability was found in yast2-users. When displaying the \"Password Settings\" tab of a user, get_password_term() in src/include/users/dialogs.rb read the shadowLastChange and shadowExpire fields with GetString(), which performs no numeric validation, and passed the resulting string to format_days_after_epoch(). That helper interpolated the value into a shell command executed via Ruby backticks without quoting or escaping.\n\nImpact: an administrator who manages users against an external/federated LDAP directory via `yast2 users` triggers root command execution the moment they view or edit that particular user's \"Password Settings\" tab. No \"join domain\" or trust setup is required, just browsing/editing one user entry.\n\nThis issue affects yast2-users through 5.0.8.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-59680",
+      "last_modified": "2026-09-01T10:17:13.160",
+      "products": [],
+      "published": "2026-09-01T10:17:13.160",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.suse.com/show_bug.cgi?id=1272839"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-59681": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A OS command injection vulnerability in yast2-auth-client allows an attacker who controls Active Directory configuration values to execute arbitrary commands as root on the configured host.\n Auth::AuthConf in src/lib/auth/authconf.rb assembles the Samba net ads join, net ads lookup -S and net ads testjoin invocations by interpolating configuration values into a single command string and passing that string to Open3.popen2 / Open3.capture2, which causes Ruby to run it through /bin/sh. The Organizational Unit (ou), dnshostname, AD user name and AD domain name values are neither validated nor shell-quoted.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-59681",
+      "last_modified": "2026-09-01T10:17:13.300",
+      "products": [],
+      "published": "2026-09-01T10:17:13.300",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.suse.com/show_bug.cgi?id=1272775"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
   },
   "CVE-2026-59682": {
     "added": "2026-08-27",
@@ -178449,6 +179443,30 @@
     },
     "next_check": "2026-09-02"
   },
+  "CVE-2026-74916": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "The WP Fastest Cache WordPress plugin before 1.5.1 does not include a set of tracking-related query parameters in its page-cache key while still caching pages requested with them, allowing unauthenticated attackers to have a page rendered under their own request context stored under, and served from, the clean URL's cache entry to every subsequent visitor.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-74916",
+      "last_modified": "2026-09-01T08:17:01.393",
+      "products": [],
+      "published": "2026-09-01T08:17:01.393",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/b6f8be96-13d9-497a-8e57-5a65b519958b/"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
   "CVE-2026-74928": {
     "added": "2026-08-27",
     "checks_done": 5,
@@ -185541,6 +186559,32 @@
       ]
     },
     "next_check": "2026-09-08"
+  },
+  "CVE-2026-76111": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "Dell PowerStore contains an Incorrect Authorization vulnerability. An authenticated attacker with low privileges could potentially exploit this vulnerability to invoke administrator-only operations, leading to privilege escalation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76111",
+      "last_modified": "2026-09-01T12:17:47.113",
+      "products": [],
+      "published": "2026-09-01T12:17:47.113",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-us/000497829/dsa-2026-330-dell-powerstore-t-security-update-for-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
   },
   "CVE-2026-76128": {
     "added": "2026-08-26",
@@ -210771,53 +211815,6 @@
     },
     "next_check": "2026-09-02"
   },
-  "CVE-2026-82592": {
-    "added": "2026-08-31",
-    "checks_done": 1,
-    "cve": {
-      "cvss_score": 9.9,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-119",
-        "CWE-121"
-      ],
-      "description": "A vulnerability was detected in D-Link DIR-825M 1.1.8. This affects the function sub_46725C of the file /boafrm/formDiskFormat of the component Disk Formatting Handler Endpoint. The manipulation of the argument partition results in stack-based buffer overflow. The attack can be executed remotely. The exploit is now public and may be used.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-82592",
-      "last_modified": "2026-08-30T23:17:08.303",
-      "products": [],
-      "published": "2026-08-30T23:17:08.303",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/Robots10/IoT_vlu/blob/main/reports/Dlink/formDiskFormat/formDiskFormat.md"
-        },
-        {
-          "tags": [],
-          "url": "https://vuldb.com/cve/CVE-2026-82592"
-        },
-        {
-          "tags": [],
-          "url": "https://vuldb.com/submit/892514"
-        },
-        {
-          "tags": [],
-          "url": "https://vuldb.com/vuln/397087"
-        },
-        {
-          "tags": [],
-          "url": "https://vuldb.com/vuln/397087/cti"
-        },
-        {
-          "tags": [],
-          "url": "https://www.dlink.com/"
-        }
-      ]
-    },
-    "next_check": "2026-09-02"
-  },
   "CVE-2026-82593": {
     "added": "2026-08-31",
     "checks_done": 1,
@@ -214685,6 +215682,36 @@
     },
     "next_check": "2026-09-02"
   },
+  "CVE-2026-83595": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-352"
+      ],
+      "description": "AVideo contains a cross-site request forgery vulnerability in plugin/API/set.json.php that allows attackers to perform state-changing actions by crafting GET requests that bypass CSRF protection. Attackers can navigate a victim's browser to a malicious URL with API parameters to delete videos, deactivate accounts, or modify playlists without user interaction.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-83595",
+      "last_modified": "2026-09-01T12:17:47.870",
+      "products": [],
+      "published": "2026-09-01T12:17:47.870",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-mwr9-5m78-rhgm"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-cross-site-request-forgery-via-plugin-api-set-json-php"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
   "CVE-2026-83596": {
     "added": "2026-09-01",
     "checks_done": 0,
@@ -214838,6 +215865,327 @@
       ]
     },
     "next_check": "2026-09-05"
+  },
+  "CVE-2026-84059": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "description": "A flaw has been found in ICP DAS UA-2200 and UA-5200 up to 20260704. The affected element is the function ArmAngstromInstructionSet of the file /CGI?RestApi=SetHostname. Executing a manipulation of the argument ParameterArray can lead to command injection. The attack can be executed remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84059",
+      "last_modified": "2026-09-01T11:16:45.493",
+      "products": [],
+      "published": "2026-09-01T11:16:45.493",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://uvxbywu62qm.feishu.cn/wiki/KwSzwcCstioZqKk7PODcIsDAn4W?from=from_copylink"
+        },
+        {
+          "tags": [],
+          "url": "https://uvxbywu62qm.feishu.cn/wiki/SzRyw0uSnieCLDkMR8NcgcvanMd?from=from_copylink"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-84059"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/880065"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/880072"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397547"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/397547/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-84187": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-284"
+      ],
+      "description": "AVideo contains a missing authentication vulnerability in plugin/Live/on_publish.php that allows unauthenticated attackers to mark arbitrary scheduled broadcasts as failed by sending crafted POST requests with schedule identifiers. Attackers can exploit the unguarded RTMP callback endpoint to modify scheduled broadcast status fields by supplying fabricated stream keys matching the pattern -ps-<N>, silently canceling any scheduled live broadcast without credentials or authorization.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84187",
+      "last_modified": "2026-09-01T12:17:48.007",
+      "products": [],
+      "published": "2026-09-01T12:17:48.007",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-v395-2xmq-cg23"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-on-publish-php-missing-authentication-check-via-rtmp-callback"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-84189": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "LibreNMS through 26.4.0 renders JSON fields (name, ip, model, author, commit message) returned by the admin-configurable Oxidized integration URL (oxidized.url) into the device showconfig page without applying htmlspecialchars(). An administrator who points the Oxidized URL at an attacker-controlled server (SSRF) can cause it to return malicious JSON, resulting in stored/persistent cross-site scripting affecting all users who view any device's showconfig tab. Fixed in 26.7.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84189",
+      "last_modified": "2026-09-01T12:17:48.287",
+      "products": [],
+      "published": "2026-09-01T12:17:48.287",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/librenms/librenms/security/advisories/GHSA-7gww-x7fh-jf9j"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/librenms-before-26.7.0-stored-xss-via-oxidized-api"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-84190": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77"
+      ],
+      "description": "LibreNMS versions before 26.5.0 contain a remote code execution vulnerability in the AboutController where the snmpget configuration parameter is passed to shell_exec() without proper validation. An authenticated administrator can modify the snmpget configuration to point to a malicious executable file and trigger code execution by accessing the /about endpoint.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84190",
+      "last_modified": "2026-09-01T12:17:48.450",
+      "products": [],
+      "published": "2026-09-01T12:17:48.450",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/librenms/librenms/security/advisories/GHSA-jf24-8g2h-2wg7"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/librenms-before-26.5.0-remote-code-execution-via-aboutcontroller"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-84191": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "LibreNMS before 26.5.0 contains stored cross-site scripting vulnerabilities in VRF display pages where mplsVpnVrfDescription, vrf_name, and mplsVpnVrfRouteDistinguisher fields from SNMP polling are rendered without sanitization. Attackers controlling a monitored network device can inject arbitrary JavaScript through SNMP responses that executes in the browser of any user viewing VRF-related pages.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84191",
+      "last_modified": "2026-09-01T12:17:48.587",
+      "products": [],
+      "published": "2026-09-01T12:17:48.587",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/librenms/librenms/security/advisories/GHSA-g993-wffj-m3gv"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/librenms-before-26.5.0-stored-xss-via-snmp-vrf-fields"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-84192": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "LibreNMS before 26.3.1 contains a stored cross-site scripting vulnerability in legacy PHP templates that output SNMP-sourced and syslog-sourced data without escaping. An attacker who controls a monitored network device can inject arbitrary JavaScript through SNMP interface descriptions or syslog program fields that executes when authenticated users view affected pages.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84192",
+      "last_modified": "2026-09-01T12:17:48.723",
+      "products": [],
+      "published": "2026-09-01T12:17:48.723",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/librenms/librenms/security/advisories/GHSA-7w8c-qgxg-m7jx"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/librenms-before-26.3.1-stored-xss-via-snmp-syslog-data"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-84195": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-200"
+      ],
+      "description": "Kyverno before 1.16.4 automatically attaches the admission controller's ServiceAccount token to outbound HTTP requests in apiCall service mode without explicit authorization headers. Attackers can exfiltrate the token by directing apiCall requests to external or attacker-controlled endpoints, gaining full control over Kyverno policies and cluster resources.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84195",
+      "last_modified": "2026-09-01T12:17:49.130",
+      "products": [],
+      "published": "2026-09-01T12:17:49.130",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kyverno/kyverno/security/advisories/GHSA-8wfp-579w-6r25"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/kyverno-before-1.16.4-credential-leak-via-apicall"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-84196": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Kyverno before 1.18.0 contains a server-side request forgery vulnerability in apiCall.service.url that allows authenticated users to send arbitrary HTTP requests by injecting user-controlled input through variable substitution. Attackers can target internal services, cloud metadata endpoints, and loopback addresses, with response data reflected in admission error messages enabling non-blind data exfiltration.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84196",
+      "last_modified": "2026-09-01T12:17:49.270",
+      "products": [],
+      "published": "2026-09-01T12:17:49.270",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kyverno/kyverno/security/advisories/GHSA-qr4g-8hrp-c4rw"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/kyverno-before-1.18.0-server-side-request-forgery-via-apicall"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-84199": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Kyverno before 1.16.2 contains a server-side request forgery (SSRF) vulnerability in the APICall feature. The URL field in a Policy's ServiceCall configuration is not validated, so a user with namespace-level Policy creation permissions can direct Kyverno to make HTTP requests to arbitrary internal resources (e.g., cloud metadata endpoints such as 169.254.169.254 or other tenants' resources). Because Kyverno executes these requests using its cluster-wide high-privilege ServiceAccount (a Confused Deputy problem), the responses—potentially including other tenants' secrets and cloud IAM credentials—are returned in the PolicyReport and can be read by the attacker, breaking multi-tenant isolation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84199",
+      "last_modified": "2026-09-01T12:17:49.407",
+      "products": [],
+      "published": "2026-09-01T12:17:49.407",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kyverno/kyverno/security/advisories/GHSA-fmqp-4wfc-w3v7"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/kyverno-before-1.16.2-ssrf-via-apicall-feature"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
+  },
+  "CVE-2026-84200": {
+    "added": "2026-09-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-284"
+      ],
+      "description": "Kyverno versions v1.9.0 through v1.12.7 contain a policy exception handling flaw. When a policy in enforce mode is combined with two PolicyExceptions, the less restrictive exception takes precedence, allowing an attacker to bypass the policy by crafting a resource name that matches the second exception's name pattern (e.g., '*ingress*'). This can be used to circumvent policies such as one blocking hostPath volumes. Fixed in v1.13.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84200",
+      "last_modified": "2026-09-01T12:17:49.540",
+      "products": [],
+      "published": "2026-09-01T12:17:49.540",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kyverno/kyverno/security/advisories/GHSA-gg4x-fgg2-h9w9"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/kyverno-before-1.13.0-policy-bypass-via-multiple-exceptions"
+        }
+      ]
+    },
+    "next_check": "2026-09-02"
   },
   "CVE-2026-8445": {
     "added": "2026-08-24",
