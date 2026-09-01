@@ -1,8 +1,71 @@
 {
-  "CVE-2026-13676": {
-    "package": "NPM:fast-uri"
+  "CVE-2024-38821": {
+    "package": "MAVEN:org.springframework.security:spring-security-web"
   },
-  "CVE-2026-46517": {
-    "package": "PIP:lmdeploy"
+  "CVE-2024-43202": {
+    "package": "MAVEN:org.apache.dolphinscheduler:dolphinscheduler-task-api"
+  },
+  "CVE-2024-45479": {
+    "package": "MAVEN:org.apache.ranger:ranger"
+  },
+  "CVE-2024-56325": {
+    "package": "MAVEN:org.apache.pinot:pinot-controller"
+  },
+  "CVE-2025-66614": {
+    "package": "MAVEN:org.apache.tomcat:tomcat-coyote"
+  },
+  "CVE-2026-15305": {
+    "package": "COMPOSER:typo3/cms-form"
+  },
+  "CVE-2026-15925": {
+    "package": "PIP:snowflake-connector-python"
+  },
+  "CVE-2026-22244": {
+    "package": "MAVEN:org.open-metadata:platform"
+  },
+  "CVE-2026-38360": {
+    "package": "PIP:dash-uploader"
+  },
+  "CVE-2026-41293": {
+    "package": "MAVEN:org.apache.tomcat:tomcat-coyote"
+  },
+  "CVE-2026-4137": {
+    "package": "PIP:mlflow"
+  },
+  "CVE-2026-42812": {
+    "package": "MAVEN:org.apache.polaris:polaris-runtime-service"
+  },
+  "CVE-2026-44795": {
+    "package": "MAVEN:io.spinnaker.orca:orca-core"
+  },
+  "CVE-2026-45822": {
+    "package": "NPM:decode-uri-component"
+  },
+  "CVE-2026-47751": {
+    "package": "ACTIONS:anthropics/claude-code-action"
+  },
+  "CVE-2026-59724": {
+    "package": "NPM:engine.io"
+  },
+  "CVE-2026-67312": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-67316": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-71211": {
+    "package": "PIP:mlflow"
+  },
+  "CVE-2026-71415": {
+    "package": "COMPOSER:getkirby/cms"
+  },
+  "CVE-2026-75594": {
+    "package": "COMPOSER:getkirby/cms"
+  },
+  "CVE-2026-81889": {
+    "package": "COMPOSER:studio-42/elfinder"
+  },
+  "CVE-2026-8657": {
+    "package": "NPM:jsondiffpatch"
   }
 }
