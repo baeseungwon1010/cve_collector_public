@@ -521,6 +521,15 @@
     "poc_source": "github_search",
     "published": "2023-10-10T17:15:11.607"
   },
+  "CVE-2023-40029": {
+    "cvss_score": 9.9,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-02",
+    "poc_published_date": "2025-01-25",
+    "poc_source": "github_search",
+    "published": "2023-09-07T23:15:09.763"
+  },
   "CVE-2023-41892": {
     "cvss_score": 10.0,
     "cvss_severity": "CRITICAL",
@@ -538,6 +547,15 @@
     "poc_published_date": "2023-10-02",
     "poc_source": "github_search",
     "published": "2023-09-28T23:15:09.627"
+  },
+  "CVE-2023-46404": {
+    "cvss_score": 9.9,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-02",
+    "poc_published_date": "2023-10-26",
+    "poc_source": "github_search",
+    "published": "2023-11-03T16:15:31.050"
   },
   "CVE-2023-46604": {
     "cvss_score": 10.0,
@@ -575,6 +593,15 @@
     "poc_source": "github_search",
     "published": "2024-01-12T14:15:49.420"
   },
+  "CVE-2024-0402": {
+    "cvss_score": 9.9,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-02",
+    "poc_published_date": "2025-03-10",
+    "poc_source": "github_search",
+    "published": "2024-01-26T01:15:08.920"
+  },
   "CVE-2024-1212": {
     "cvss_score": 10.0,
     "cvss_severity": "CRITICAL",
@@ -610,6 +637,15 @@
     "poc_published_date": "2024-02-21",
     "poc_source": "github_search",
     "published": "2024-02-21T16:15:50.420"
+  },
+  "CVE-2024-2083": {
+    "cvss_score": 9.9,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-02",
+    "poc_published_date": "2026-03-08",
+    "poc_source": "github_search",
+    "published": "2024-04-16T00:15:11.057"
   },
   "CVE-2024-23108": {
     "cvss_score": 10.0,
@@ -655,6 +691,15 @@
     "poc_published_date": "2026-03-06",
     "poc_source": "github_search",
     "published": "2024-04-03T13:16:02.017"
+  },
+  "CVE-2024-27956": {
+    "cvss_score": 9.9,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-02",
+    "poc_published_date": "2024-04-27",
+    "poc_source": "github_search",
+    "published": "2024-03-21T17:15:08.437"
   },
   "CVE-2024-3094": {
     "cvss_score": 10.0,
