@@ -1,107 +1,59 @@
 {
-  "CVE-2025-64076": {
-    "package": "PIP:cbor2"
+  "CVE-2023-39533": {
+    "package": "GO:github.com/libp2p/go-libp2p"
   },
-  "CVE-2025-71401": {
-    "package": "NPM:better-auth"
+  "CVE-2026-19418": {
+    "package": "COMPOSER:typo3/cms-core"
   },
-  "CVE-2026-10142": {
-    "package": "PIP:kafka-python"
+  "CVE-2026-45360": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-10143": {
-    "package": "PIP:kafka-python"
+  "CVE-2026-56740": {
+    "package": "MAVEN:org.jline:jline-remote-telnet"
   },
-  "CVE-2026-13346": {
-    "package": "PIP:pip"
+  "CVE-2026-56741": {
+    "package": "MAVEN:org.jline:jline-remote-telnet"
   },
-  "CVE-2026-18401": {
-    "package": "MAVEN:com.fasterxml.jackson.core:jackson-core"
+  "CVE-2026-72778": {
+    "package": "COMPOSER:craftcms/cms"
   },
-  "CVE-2026-22547": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-72779": {
+    "package": "COMPOSER:craftcms/cms"
   },
-  "CVE-2026-24690": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-72781": {
+    "package": "COMPOSER:craftcms/cms"
   },
-  "CVE-2026-25534": {
-    "package": "MAVEN:io.spinnaker.orca:orca-core"
+  "CVE-2026-72783": {
+    "package": "COMPOSER:craftcms/cms"
   },
-  "CVE-2026-25712": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-72785": {
+    "package": "COMPOSER:craftcms/cms"
   },
-  "CVE-2026-25718": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-77567": {
+    "package": "COMPOSER:filament/filament"
   },
-  "CVE-2026-26232": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-78680": {
+    "package": "PIP:nltk"
   },
-  "CVE-2026-26247": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-79675": {
+    "package": "PIP:nltk"
   },
-  "CVE-2026-26292": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-84304": {
+    "package": "GO:google.golang.org/grpc"
   },
-  "CVE-2026-26307": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-84305": {
+    "package": "PIP:sqlparse"
   },
-  "CVE-2026-27657": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-84306": {
+    "package": "COMPOSER:filament/filament"
   },
-  "CVE-2026-27660": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-84309": {
+    "package": "PIP:pypdf"
   },
-  "CVE-2026-27779": {
-    "package": "GO:code.gitea.io/gitea"
+  "CVE-2026-84310": {
+    "package": "PIP:pypdf"
   },
-  "CVE-2026-27780": {
-    "package": "GO:code.gitea.io/gitea"
-  },
-  "CVE-2026-41523": {
-    "package": "PIP:vllm"
-  },
-  "CVE-2026-42151": {
-    "package": "GO:github.com/prometheus/prometheus"
-  },
-  "CVE-2026-48746": {
-    "package": "PIP:vllm"
-  },
-  "CVE-2026-58191": {
-    "package": "NPM:@appium/base-driver"
-  },
-  "CVE-2026-62993": {
-    "package": "COMPOSER:smarty/smarty"
-  },
-  "CVE-2026-67313": {
-    "package": "NPM:axios"
-  },
-  "CVE-2026-67315": {
-    "package": "NPM:axios"
-  },
-  "CVE-2026-67317": {
-    "package": "NPM:axios"
-  },
-  "CVE-2026-67318": {
-    "package": "NPM:axios"
-  },
-  "CVE-2026-67319": {
-    "package": "NPM:axios"
-  },
-  "CVE-2026-67320": {
-    "package": "NPM:axios"
-  },
-  "CVE-2026-69127": {
-    "package": "COMPOSER:getkirby/cms"
-  },
-  "CVE-2026-73086": {
-    "package": "NPM:nanoid"
-  },
-  "CVE-2026-73088": {
-    "package": "NPM:browserslist"
-  },
-  "CVE-2026-73089": {
-    "package": "NPM:browserslist"
-  },
-  "CVE-2026-9856": {
-    "package": "PIP:transformers"
+  "CVE-2026-84311": {
+    "package": "PIP:pypdf"
   }
 }
