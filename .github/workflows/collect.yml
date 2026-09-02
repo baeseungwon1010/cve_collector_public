@@ -73,12 +73,35 @@ jobs:
 
       # 아카이브에 잘못된 PoC 근거가 섞였는지 확인한다. GitHub 검색이 정확 일치가
       # 아니라 짧은 시퀀스 번호의 CVE가 긴 CVE에 잡아먹힌 적이 있어(아카이브 23% 오염),
-      # 사람이 눈으로 발견하기 전에 CI가 잡도록 둔다. 수집 자체는 이미 커밋했으므로
-      # 여기서 실패해도 데이터는 남고, 워크플로만 빨갛게 표시된다.
+      # 사람이 눈으로 발견하기 전에 CI가 잡도록 둔다. --purge-bad로 실제 제거까지
+      # 자동화했다(2026-09-02, CVE-2026-24301 — 승격 근거였던 저장소가 나중에 삭제돼
+      # verify가 매 실행마다 잡던 걸 사람이 수동 정리한 뒤 추가). manifest/연간·study md만
+      # 지우고 analysis.json은 사람이 손댄 값이 있으면 절대 안 건드리므로 안전하다.
       - name: Verify archive integrity
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd scripts
-          python collect.py --verify
+          python collect.py --verify --purge-bad
+
+      - name: Commit purge changes
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data README.md
+          if git diff --cached --quiet; then
+            echo "No purge changes to commit"
+          else
+            git commit -m "fix: verify가 잡은 오매칭/근거소실 항목 자동 정리 ($(date -u +%Y-%m-%d))"
+            for i in 1 2 3 4 5; do
+              if git push; then
+                break
+              fi
+              echo "push rejected, retrying with rebase ($i/5)"
+              git fetch origin master
+              git rebase origin/master
+              sleep $((i * 5))
+            done
+          fi

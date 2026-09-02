@@ -146,6 +146,63 @@ def rebuild_indices(manifest: dict) -> None:
         f.write(render.render_root_readme(latest, years_sorted))
 
 
+def rebuild_study_index(manifest: dict, state_data: dict) -> None:
+    """data/study/README.md 를 state의 study_delivered 기준으로 다시 만든다.
+
+    manifest 에서 빠진 id(예: purge로 아카이브에서 제거된 CVE)는 조용히 걸러진다.
+    study_delivered 자체는 건드리지 않는다 — 한 번 배분된 CVE는 나중에 다시
+    아카이브에 들어와도 재배분하지 않는 게 설계 의도.
+    """
+    delivered = set(state_data.get("study_delivered", []))
+    all_delivered = sorted(
+        (
+            {**manifest[cve_id], "id": cve_id, "year": cve_id.split("-")[1]}
+            for cve_id in delivered
+            if cve_id in manifest
+        ),
+        key=lambda e: e.get("poc_confirmed_date") or "",
+        reverse=True,
+    )
+    os.makedirs(STUDY_DIR, exist_ok=True)
+    with open(os.path.join(STUDY_DIR, "README.md"), "w", encoding="utf-8") as f:
+        f.write(render.render_study_index(all_delivered))
+
+
+def purge_bad_entries(bad: list[tuple[str, str]], manifest: dict, analysis: dict) -> list[str]:
+    """verify가 '문제'로 잡은 항목을 아카이브에서 실제로 제거한다.
+
+    manifest.json + data/<year>/<CVE-ID>.md + data/study/<CVE-ID>.md 를 지운다.
+    analysis.json 스텁은 사람이 손댄 흔적(reviewed/bypass_note/report_status 등)이
+    전혀 없는 기본값일 때만 같이 지운다 — 사람이 적은 내용은 절대 안 지운다
+    (analysis.json은 유일하게 사람이 직접 편집하는 파일이라는 프로젝트 규칙).
+    사람이 적은 값이 있으면 analysis.json 쪽은 그대로 두고, render_analysis_index가
+    "아카이브 외" 섹션으로 계속 보여준다.
+    """
+    removed = []
+    for cve_id, _why in bad:
+        if cve_id not in manifest:
+            continue
+        manifest.pop(cve_id)
+        year = cve_id.split("-")[1] if cve_id.startswith("CVE-") else None
+        if year:
+            path = os.path.join(DATA_DIR, year, f"{cve_id}.md")
+            if os.path.exists(path):
+                os.remove(path)
+        study_path = os.path.join(STUDY_DIR, f"{cve_id}.md")
+        if os.path.exists(study_path):
+            os.remove(study_path)
+
+        entry = analysis.get(cve_id)
+        if entry is not None:
+            default = analysis_store.DEFAULT_ENTRY
+            untouched = all(entry.get(k) == v for k, v in default.items())
+            if untouched:
+                del analysis[cve_id]
+
+        removed.append(cve_id)
+    return removed
+
+
 def find_poc(cve_id: str, poc_index: set | None, gh_token: str | None) -> tuple[list | None, bool]:
     """이 CVE 의 PoC 저장소를 찾는다. 반환: (repos, 검색API를 썼는지)
 
@@ -565,17 +622,7 @@ def write_daily_study_batch(
         with open(os.path.join(STUDY_DIR, f"{entry['id']}.md"), "w", encoding="utf-8") as f:
             f.write(render.render_study_entry(entry))
 
-    all_delivered = sorted(
-        (
-            {**manifest[cve_id], "id": cve_id, "year": cve_id.split("-")[1]}
-            for cve_id in delivered
-            if cve_id in manifest
-        ),
-        key=lambda e: e.get("poc_confirmed_date") or "",
-        reverse=True,
-    )
-    with open(os.path.join(STUDY_DIR, "README.md"), "w", encoding="utf-8") as f:
-        f.write(render.render_study_index(all_delivered))
+    rebuild_study_index(manifest, state_data)
 
     return len(selected)
 
@@ -597,6 +644,10 @@ def main() -> None:
                         help="아카이브 PoC 근거를 재확인만 하고 종료 (쓰기 없음). 문제 발견 시 종료코드 1")
     parser.add_argument("--rerender", action="store_true",
                         help="아카이브 파일을 현재 소스/포맷으로 다시 생성. --verify와 함께 쓰면 오매칭 정리 후 재생성")
+    parser.add_argument("--purge-bad", action="store_true",
+                        help="--verify가 '문제'로 잡은 항목을 실제로 아카이브에서 제거하고 인덱스를 재생성 "
+                             "(manifest/연간·study md 삭제, analysis.json은 사람이 손댄 값이 없을 때만 같이 제거). "
+                             "오매칭뿐 아니라 승격 후 PoC 저장소가 삭제된 경우도 이걸로 정리한다.")
     args = parser.parse_args()
 
     nvd_api_key = os.environ.get("NVD_API_KEY")
@@ -614,6 +665,19 @@ def main() -> None:
         print(f"[verify] 정상 {len(manifest)-len(bad)-len(unknown)} / 문제 {len(bad)} / 확인불가 {len(unknown)}",
               file=sys.stderr)
 
+        purged: list[str] = []
+        if args.purge_bad and bad:
+            analysis = analysis_store.load()
+            purged = purge_bad_entries(bad, manifest, analysis)
+            manifest_store.save(manifest)
+            analysis_store.save(analysis)
+            rebuild_indices(manifest)
+            write_high_severity_index(manifest, args.high_severity_min_cvss)
+            rebuild_study_index(manifest, state.load())
+            for cve_id in purged:
+                print(f"  [제거] {cve_id}", file=sys.stderr)
+            print(f"[purge] {len(purged)}건 아카이브에서 제거, 인덱스 재생성", file=sys.stderr)
+
         if args.rerender:
             kev_map = kev_client.fetch_kev()
             done, changed = rerender_archive(manifest, evidence, kev_map, gh_token, nvd_api_key)
@@ -625,8 +689,10 @@ def main() -> None:
             sync_analysis(manifest)
             print(f"[rerender] {done}건 재생성, 날짜 정정 {len(changed)}건", file=sys.stderr)
 
-        # 확인불가는 일시적 장애일 수 있으므로 실패로 치지 않는다
-        sys.exit(1 if bad else 0)
+        # 확인불가는 일시적 장애일 수 있으므로 실패로 치지 않는다.
+        # purge로 실제 제거된 건은 이번 실행에서 이미 해소된 것이므로 실패로 안 친다.
+        still_bad = len(bad) - len(purged)
+        sys.exit(1 if still_bad > 0 else 0)
 
     today = date.today()
     state_data = state.load()
