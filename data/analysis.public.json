@@ -1,101 +1,92 @@
 {
-  "CVE-2026-12876": {
-    "package": "PIP:nltk"
+  "CVE-2026-11407": {
+    "package": "COMPOSER:pimcore/pimcore"
   },
-  "CVE-2026-16732": {
-    "package": "NPM:fastify"
+  "CVE-2026-40984": {
+    "package": "MAVEN:io.micrometer:micrometer-jetty11"
   },
-  "CVE-2026-27732": {
-    "package": "COMPOSER:wwbn/avideo"
+  "CVE-2026-41523": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-29113": {
-    "package": "COMPOSER:craftcms/cms"
+  "CVE-2026-53622": {
+    "package": "GO:github.com/traefik/traefik/v3"
   },
-  "CVE-2026-59832": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
+  "CVE-2026-53710": {
+    "package": "PIP:mcp-contextforge-gateway"
   },
-  "CVE-2026-59834": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
+  "CVE-2026-54513": {
+    "package": "MAVEN:tools.jackson.core:jackson-databind"
   },
-  "CVE-2026-62680": {
-    "package": "NPM:orval"
+  "CVE-2026-55643": {
+    "package": "COMPOSER:snipe/snipe-it"
   },
-  "CVE-2026-63667": {
-    "package": "NPM:@apostrophecms/import-export"
-  },
-  "CVE-2026-64850": {
+  "CVE-2026-61690": {
     "package": "COMPOSER:getgrav/grav"
   },
-  "CVE-2026-69248": {
-    "package": "PIP:cryptography"
+  "CVE-2026-61704": {
+    "package": "NPM:link-preview-js"
   },
-  "CVE-2026-71492": {
-    "package": "PIP:banks"
+  "CVE-2026-61842": {
+    "package": "COMPOSER:getgrav/grav"
   },
-  "CVE-2026-71513": {
+  "CVE-2026-62388": {
     "package": "PIP:nltk"
   },
-  "CVE-2026-71553": {
-    "package": "NPM:apostrophe"
+  "CVE-2026-62669": {
+    "package": "COMPOSER:getgrav/grav"
   },
-  "CVE-2026-71866": {
-    "package": "NPM:orval"
+  "CVE-2026-62674": {
+    "package": "PIP:omnigent"
   },
-  "CVE-2026-72716": {
-    "package": "NPM:orval"
+  "CVE-2026-62675": {
+    "package": "PIP:omnigent"
   },
-  "CVE-2026-72818": {
+  "CVE-2026-62676": {
+    "package": "PIP:omnigent"
+  },
+  "CVE-2026-62677": {
+    "package": "PIP:omnigent"
+  },
+  "CVE-2026-63311": {
     "package": "PIP:nltk"
   },
-  "CVE-2026-72920": {
-    "package": "GO:github.com/seaweedfs/seaweedfs"
+  "CVE-2026-63481": {
+    "package": "RUST:hurl"
   },
-  "CVE-2026-73231": {
-    "package": "NPM:@faker-js/faker"
+  "CVE-2026-63490": {
+    "package": "MAVEN:com.github.jknack:handlebars-springmvc"
   },
-  "CVE-2026-75592": {
-    "package": "COMPOSER:getkirby/cms"
+  "CVE-2026-65182": {
+    "package": "MAVEN:org.apache.tomcat.embed:tomcat-embed-core"
   },
-  "CVE-2026-76098": {
-    "package": "PIP:mistune"
+  "CVE-2026-65842": {
+    "package": "NPM:@platejs/docx-io"
   },
-  "CVE-2026-81722": {
+  "CVE-2026-66393": {
     "package": "PIP:nltk"
   },
-  "CVE-2026-81726": {
-    "package": "PIP:nltk"
+  "CVE-2026-67446": {
+    "package": "GO:github.com/axllent/mailpit"
   },
-  "CVE-2026-81727": {
-    "package": "PIP:nltk"
+  "CVE-2026-68525": {
+    "package": "MAVEN:org.apache.tomcat.embed:tomcat-embed-core"
   },
-  "CVE-2026-81887": {
-    "package": "COMPOSER:livewire/livewire"
+  "CVE-2026-75899": {
+    "package": "NPM:fast-uri"
   },
-  "CVE-2026-81892": {
-    "package": "COMPOSER:easycorp/easyadmin-bundle"
+  "CVE-2026-75931": {
+    "package": "NPM:fast-uri"
   },
-  "CVE-2026-82392": {
-    "package": "NPM:pnpm"
+  "CVE-2026-75975": {
+    "package": "NPM:fast-uri"
   },
-  "CVE-2026-82393": {
-    "package": "NPM:pnpm"
+  "CVE-2026-76172": {
+    "package": "NPM:fast-uri"
   },
-  "CVE-2026-82394": {
-    "package": "COMPOSER:sulu/sulu"
+  "CVE-2026-81891": {
+    "package": "COMPOSER:Studio-42/elFinder"
   },
-  "CVE-2026-82395": {
-    "package": "COMPOSER:sulu/sulu"
-  },
-  "CVE-2026-82397": {
-    "package": "PIP:tornado"
-  },
-  "CVE-2026-82398": {
-    "package": "PIP:pypdf"
-  },
-  "CVE-2026-82659": {
-    "package": "NPM:nodemailer"
-  },
-  "CVE-2026-83610": {
-    "package": "NPM:xmldom"
+  "CVE-2026-84366": {
+    "package": "PIP:scrapy"
   }
 }

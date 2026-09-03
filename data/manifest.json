@@ -764,6 +764,24 @@
     "poc_source": "github_search",
     "published": "2024-06-13T02:15:08.833"
   },
+  "CVE-2024-39700": {
+    "cvss_score": 9.9,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-03",
+    "poc_published_date": "2024-07-29",
+    "poc_source": "github_search",
+    "published": "2024-07-16T18:15:07.857"
+  },
+  "CVE-2024-39930": {
+    "cvss_score": 9.9,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-03",
+    "poc_published_date": "2025-06-29",
+    "poc_source": "github_search",
+    "published": "2024-07-04T16:15:02.277"
+  },
   "CVE-2024-43918": {
     "cvss_score": 10.0,
     "cvss_severity": "CRITICAL",
