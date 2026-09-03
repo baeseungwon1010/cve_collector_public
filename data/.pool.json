@@ -17878,6 +17878,65 @@
     },
     "next_check": "2026-09-04"
   },
+  "CVE-2020-10256": {
+    "added": "2026-09-03",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "An issue was discovered in beta versions of the 1Password command-line tool prior to 0.5.5 and in beta versions of the 1Password SCIM bridge prior to 0.7.3. An insecure random number generator was used to generate various keys. An attacker with access to the user's encrypted data may be able to perform brute-force calculations of encryption keys and thus succeed at decryption.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-10256",
+      "last_modified": "2026-06-17T02:47:34.717",
+      "products": [
+        "1password:command_line_interface",
+        "1password:scim"
+      ],
+      "published": "2020-10-27T14:15:13.453",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.1password.com/command-line/"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.1password.com/kb/202010/"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.1password.com/scim/"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.1password.com/command-line/"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.1password.com/kb/202010/"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.1password.com/scim/"
+        }
+      ]
+    },
+    "next_check": "2026-09-04"
+  },
   "CVE-2020-10283": {
     "added": "2026-09-03",
     "checks_done": 0,
@@ -18798,6 +18857,255 @@
             "Third Party Advisory"
           ],
           "url": "https://github.com/enesozeser/Vulnerabilities/blob/master/CVE-2020-23936"
+        }
+      ]
+    },
+    "next_check": "2026-09-04"
+  },
+  "CVE-2020-26879": {
+    "added": "2026-09-03",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-798"
+      ],
+      "description": "Ruckus vRioT through 1.5.1.0.21 has an API backdoor that is hardcoded into validate_token.py. An unauthenticated attacker can interact with the service API by using a backdoor value as the Authorization header.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-26879",
+      "last_modified": "2026-06-17T03:08:27.370",
+      "products": [
+        "commscope:ruckus_iot_module",
+        "commscope:ruckus_vriot"
+      ],
+      "published": "2020-10-26T20:15:14.537",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://adepts.of0x.cc"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://adepts.of0x.cc/ruckus-vriot-rce/"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.ruckuswireless.com/documents"
+        },
+        {
+          "tags": [
+            "Product",
+            "Vendor Advisory"
+          ],
+          "url": "https://support.ruckuswireless.com/security_bulletins/305"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://twitter.com/TheXC3LL"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://x-c3ll.github.io"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://adepts.of0x.cc"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://adepts.of0x.cc/ruckus-vriot-rce/"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.ruckuswireless.com/documents"
+        },
+        {
+          "tags": [
+            "Product",
+            "Vendor Advisory"
+          ],
+          "url": "https://support.ruckuswireless.com/security_bulletins/305"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://twitter.com/TheXC3LL"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://x-c3ll.github.io"
+        }
+      ]
+    },
+    "next_check": "2026-09-04"
+  },
+  "CVE-2020-27179": {
+    "added": "2026-09-03",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-640"
+      ],
+      "description": "konzept-ix publiXone before 2020.015 allows attackers to take over arbitrary user accounts by crafting password-reset tokens.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-27179",
+      "last_modified": "2026-06-17T03:08:54.523",
+      "products": [
+        "konzept-ix:publixone"
+      ],
+      "published": "2020-10-27T05:15:12.863",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://sec-consult.com/en/blog/advisories/multiple-vulnerabilities-in-publixone/"
+        },
+        {
+          "tags": [
+            "Mailing List",
+            "Third Party Advisory"
+          ],
+          "url": "https://seclists.org/fulldisclosure/2020/Oct/28"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://sec-consult.com/en/blog/advisories/multiple-vulnerabilities-in-publixone/"
+        },
+        {
+          "tags": [
+            "Mailing List",
+            "Third Party Advisory"
+          ],
+          "url": "https://seclists.org/fulldisclosure/2020/Oct/28"
+        }
+      ]
+    },
+    "next_check": "2026-09-04"
+  },
+  "CVE-2020-27183": {
+    "added": "2026-09-03",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "A RemoteFunctions endpoint with missing access control in konzept-ix publiXone before 2020.015 allows attackers to disclose sensitive user information, send arbitrary e-mails, escalate the privileges of arbitrary user accounts, and have unspecified other impact.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-27183",
+      "last_modified": "2026-06-17T03:08:54.957",
+      "products": [
+        "konzept-ix:publixone"
+      ],
+      "published": "2020-10-27T05:15:13.130",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://sec-consult.com/en/blog/advisories/multiple-vulnerabilities-in-publixone/"
+        },
+        {
+          "tags": [
+            "Mailing List",
+            "Third Party Advisory"
+          ],
+          "url": "https://seclists.org/fulldisclosure/2020/Oct/28"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://sec-consult.com/en/blog/advisories/multiple-vulnerabilities-in-publixone/"
+        },
+        {
+          "tags": [
+            "Mailing List",
+            "Third Party Advisory"
+          ],
+          "url": "https://seclists.org/fulldisclosure/2020/Oct/28"
+        }
+      ]
+    },
+    "next_check": "2026-09-04"
+  },
+  "CVE-2020-27743": {
+    "added": "2026-09-03",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-330"
+      ],
+      "description": "libtac in pam_tacplus through 1.5.1 lacks a check for a failure of RAND_bytes()/RAND_pseudo_bytes(). This could lead to use of a non-random/predictable session_id.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-27743",
+      "last_modified": "2026-06-17T03:09:33.507",
+      "products": [
+        "pam_tacplus_project:pam_tacplus"
+      ],
+      "published": "2020-10-26T22:15:13.203",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/kravietz/pam_tacplus/pull/163"
+        },
+        {
+          "tags": [
+            "Technical Description",
+            "Third Party Advisory"
+          ],
+          "url": "https://tools.ietf.org/html/rfc8907"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/kravietz/pam_tacplus/pull/163"
+        },
+        {
+          "tags": [
+            "Technical Description",
+            "Third Party Advisory"
+          ],
+          "url": "https://tools.ietf.org/html/rfc8907"
         }
       ]
     },
@@ -69541,60 +69849,6 @@
     },
     "next_check": "2026-09-09"
   },
-  "CVE-2026-19949": {
-    "added": "2026-08-26",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-89"
-      ],
-      "description": "The All-in-One WP Migration and Backup plugin for WordPress is vulnerable to SQL Injection via archive restore functionality in all versions up to, and including, 7.109 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This can be leveraged to obtain the ai1wm_secret_key when a site administrator performs an archive restore and achieve remote code execution once able to leverage the ai1wm_secret_key value.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-19949",
-      "last_modified": "2026-08-25T12:16:23.783",
-      "products": [],
-      "published": "2026-08-25T12:16:23.783",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/all-in-one-wp-migration/tags/7.109/lib/controller/class-ai1wm-import-controller.php#L68"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/all-in-one-wp-migration/tags/7.109/lib/controller/class-ai1wm-main-controller.php#L1336"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/all-in-one-wp-migration/tags/7.109/lib/model/import/class-ai1wm-import-database.php#L1065"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/all-in-one-wp-migration/tags/7.109/lib/vendor/servmask/database/class-ai1wm-database.php#L1250"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/all-in-one-wp-migration/tags/7.109/lib/vendor/servmask/database/class-ai1wm-database.php#L1637"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/all-in-one-wp-migration/tags/7.109/lib/vendor/servmask/database/class-ai1wm-database.php#L1726"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3656677%40all-in-one-wp-migration&new=3656677%40all-in-one-wp-migration"
-        },
-        {
-          "tags": [],
-          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/22e273d9-a268-4dc5-b1f6-3bc5c29232c5?source=cve"
-        }
-      ]
-    },
-    "next_check": "2026-09-09"
-  },
   "CVE-2026-19952": {
     "added": "2026-09-01",
     "checks_done": 2,
@@ -83392,40 +83646,6 @@
       ]
     },
     "next_check": "2026-09-09"
-  },
-  "CVE-2026-47627": {
-    "added": "2026-08-19",
-    "checks_done": 8,
-    "cve": {
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-22"
-      ],
-      "description": "NVIDIA Triton Inference Server for Linux contains a vulnerability where an attacker could cause path traversal. A successful exploit might lead to denial of service.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-47627",
-      "last_modified": "2026-08-18T19:16:51.290",
-      "products": [],
-      "published": "2026-08-18T19:16:51.290",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/NVIDIA/product-security/tree/main/2026/5865"
-        },
-        {
-          "tags": [],
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47627"
-        },
-        {
-          "tags": [],
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-47627"
-        }
-      ]
-    },
-    "next_check": "2026-09-18"
   },
   "CVE-2026-47628": {
     "added": "2026-08-19",
@@ -118538,33 +118758,6 @@
         {
           "tags": [],
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62734"
-        }
-      ]
-    },
-    "next_check": "2026-09-11"
-  },
-  "CVE-2026-62735": {
-    "added": "2026-08-12",
-    "checks_done": 8,
-    "cve": {
-      "cvss_score": 7.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-122",
-        "CWE-190"
-      ],
-      "description": "Heap-based buffer overflow in Windows HTTP.sys allows an authorized attacker to elevate privileges locally.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-62735",
-      "last_modified": "2026-08-11T22:17:54.747",
-      "products": [],
-      "published": "2026-08-11T17:18:25.037",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62735"
         }
       ]
     },

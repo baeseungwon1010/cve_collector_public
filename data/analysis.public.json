@@ -1,92 +1,20 @@
 {
-  "CVE-2026-11407": {
-    "package": "COMPOSER:pimcore/pimcore"
-  },
-  "CVE-2026-40984": {
-    "package": "MAVEN:io.micrometer:micrometer-jetty11"
-  },
-  "CVE-2026-41523": {
-    "package": "PIP:vllm"
-  },
-  "CVE-2026-53622": {
-    "package": "GO:github.com/traefik/traefik/v3"
-  },
-  "CVE-2026-53710": {
-    "package": "PIP:mcp-contextforge-gateway"
-  },
-  "CVE-2026-54513": {
-    "package": "MAVEN:tools.jackson.core:jackson-databind"
-  },
-  "CVE-2026-55643": {
-    "package": "COMPOSER:snipe/snipe-it"
-  },
-  "CVE-2026-61690": {
-    "package": "COMPOSER:getgrav/grav"
-  },
-  "CVE-2026-61704": {
-    "package": "NPM:link-preview-js"
-  },
-  "CVE-2026-61842": {
-    "package": "COMPOSER:getgrav/grav"
-  },
-  "CVE-2026-62388": {
-    "package": "PIP:nltk"
-  },
-  "CVE-2026-62669": {
-    "package": "COMPOSER:getgrav/grav"
-  },
-  "CVE-2026-62674": {
-    "package": "PIP:omnigent"
-  },
-  "CVE-2026-62675": {
-    "package": "PIP:omnigent"
-  },
-  "CVE-2026-62676": {
-    "package": "PIP:omnigent"
-  },
-  "CVE-2026-62677": {
-    "package": "PIP:omnigent"
-  },
-  "CVE-2026-63311": {
-    "package": "PIP:nltk"
-  },
-  "CVE-2026-63481": {
-    "package": "RUST:hurl"
-  },
-  "CVE-2026-63490": {
-    "package": "MAVEN:com.github.jknack:handlebars-springmvc"
-  },
-  "CVE-2026-65182": {
-    "package": "MAVEN:org.apache.tomcat.embed:tomcat-embed-core"
-  },
-  "CVE-2026-65842": {
-    "package": "NPM:@platejs/docx-io"
-  },
-  "CVE-2026-66393": {
-    "package": "PIP:nltk"
-  },
-  "CVE-2026-67446": {
+  "CVE-2026-67445": {
     "package": "GO:github.com/axllent/mailpit"
   },
-  "CVE-2026-68525": {
-    "package": "MAVEN:org.apache.tomcat.embed:tomcat-embed-core"
+  "CVE-2026-67448": {
+    "package": "GO:github.com/axllent/mailpit"
   },
-  "CVE-2026-75899": {
-    "package": "NPM:fast-uri"
+  "CVE-2026-72921": {
+    "package": "GO:github.com/seaweedfs/seaweedfs"
   },
-  "CVE-2026-75931": {
-    "package": "NPM:fast-uri"
+  "CVE-2026-73667": {
+    "package": "GO:github.com/openchoreo/openchoreo"
   },
-  "CVE-2026-75975": {
-    "package": "NPM:fast-uri"
+  "CVE-2026-73841": {
+    "package": "GO:github.com/openchoreo/openchoreo"
   },
-  "CVE-2026-76172": {
-    "package": "NPM:fast-uri"
-  },
-  "CVE-2026-81891": {
-    "package": "COMPOSER:Studio-42/elFinder"
-  },
-  "CVE-2026-84366": {
-    "package": "PIP:scrapy"
+  "CVE-2026-73843": {
+    "package": "GO:github.com/openchoreo/openchoreo"
   }
 }
