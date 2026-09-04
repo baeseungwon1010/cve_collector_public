@@ -1,20 +1,122 @@
 {
-  "CVE-2026-67445": {
-    "package": "GO:github.com/axllent/mailpit"
+  "CVE-2026-15529": {
+    "package": "PIP:pyod"
   },
-  "CVE-2026-67448": {
-    "package": "GO:github.com/axllent/mailpit"
+  "CVE-2026-15736": {
+    "package": "PIP:snowflake-sqlalchemy"
   },
-  "CVE-2026-72921": {
-    "package": "GO:github.com/seaweedfs/seaweedfs"
+  "CVE-2026-41523": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-73667": {
-    "package": "GO:github.com/openchoreo/openchoreo"
+  "CVE-2026-45820": {
+    "package": "NPM:fflate"
   },
-  "CVE-2026-73841": {
-    "package": "GO:github.com/openchoreo/openchoreo"
+  "CVE-2026-56811": {
+    "package": "ERLANG:phoenix"
   },
-  "CVE-2026-73843": {
-    "package": "GO:github.com/openchoreo/openchoreo"
+  "CVE-2026-56812": {
+    "package": "NPM:phoenix"
+  },
+  "CVE-2026-58473": {
+    "package": "PIP:cognee"
+  },
+  "CVE-2026-58659": {
+    "package": "PIP:lightning"
+  },
+  "CVE-2026-59880": {
+    "package": "NPM:immutable"
+  },
+  "CVE-2026-61556": {
+    "package": "NPM:liquidjs"
+  },
+  "CVE-2026-61625": {
+    "package": "GO:github.com/VictoriaMetrics/VictoriaMetrics"
+  },
+  "CVE-2026-62240": {
+    "package": "PIP:crewai-tools"
+  },
+  "CVE-2026-62681": {
+    "package": "NPM:orval"
+  },
+  "CVE-2026-62682": {
+    "package": "NPM:orval"
+  },
+  "CVE-2026-63376": {
+    "package": "NPM:toml"
+  },
+  "CVE-2026-63669": {
+    "package": "NPM:apostrophe"
+  },
+  "CVE-2026-63670": {
+    "package": "NPM:sanitize-html"
+  },
+  "CVE-2026-68586": {
+    "package": "GO:github.com/siyuan-note/siyuan/kernel"
+  },
+  "CVE-2026-68587": {
+    "package": "GO:github.com/siyuan-note/siyuan/kernel"
+  },
+  "CVE-2026-69083": {
+    "package": "GO:github.com/siyuan-note/siyuan/kernel"
+  },
+  "CVE-2026-69084": {
+    "package": "GO:github.com/siyuan-note/siyuan/kernel"
+  },
+  "CVE-2026-71428": {
+    "package": "PIP:unstructured"
+  },
+  "CVE-2026-71429": {
+    "package": "NPM:stream-json"
+  },
+  "CVE-2026-71864": {
+    "package": "NPM:orval"
+  },
+  "CVE-2026-71865": {
+    "package": "NPM:orval"
+  },
+  "CVE-2026-71867": {
+    "package": "NPM:orval"
+  },
+  "CVE-2026-71868": {
+    "package": "NPM:orval"
+  },
+  "CVE-2026-71869": {
+    "package": "NPM:orval"
+  },
+  "CVE-2026-71871": {
+    "package": "NPM:orval"
+  },
+  "CVE-2026-72717": {
+    "package": "NPM:orval"
+  },
+  "CVE-2026-72812": {
+    "package": "GO:github.com/siyuan-note/siyuan/kernel"
+  },
+  "CVE-2026-73222": {
+    "package": "NPM:claude-code-templates"
+  },
+  "CVE-2026-73232": {
+    "package": "GO:github.com/ffuf/ffuf"
+  },
+  "CVE-2026-73292": {
+    "package": "GO:github.com/semaphoreui/semaphore"
+  },
+  "CVE-2026-73293": {
+    "package": "GO:github.com/semaphoreui/semaphore"
+  },
+  "CVE-2026-73846": {
+    "package": "NPM:@aborruso/ckan-mcp-server"
+  },
+  "CVE-2026-75602": {
+    "package": "GO:github.com/OpenListTeam/OpenList"
+  },
+  "CVE-2026-77465": {
+    "package": "NPM:toml"
+  },
+  "CVE-2026-79921": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-82404": {
+    "package": "NPM:@toon-format/toon"
   }
 }
