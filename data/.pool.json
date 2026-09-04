@@ -18810,6 +18810,254 @@
     },
     "next_check": "2026-09-05"
   },
+  "CVE-2020-24673": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "In S+ Operations and S+ Historian, a successful SQL injection exploit can read sensitive data from the database, modify database data (Insert/Update/Delete), execute administration operations on the database (such as shutdown the DBMS), recover the content of a given file present on the DBMS file system and in some cases issue commands to the operating system. This can lead to a loss of confidentiality and data integrity or even affect the product behavior and its availability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-24673",
+      "last_modified": "2026-06-17T03:05:57.577",
+      "products": [
+        "abb:symphony_\\+_historian",
+        "abb:symphony_\\+_operations"
+      ],
+      "published": "2020-12-22T22:15:13.053",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123980&LanguageCode=en&DocumentPartId=&Action=Launch"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123982&LanguageCode=en&DocumentPartId=&Action=Launch"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123980&LanguageCode=en&DocumentPartId=&Action=Launch"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123982&LanguageCode=en&DocumentPartId=&Action=Launch"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2020-24675": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "In S+ Operations and S+ History, it is possible that an unauthenticated user could inject values to the Operations History server (or standalone S+ History server) and ultimately write values to the controlled process.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-24675",
+      "last_modified": "2026-06-17T03:05:57.827",
+      "products": [
+        "abb:symphony_\\+_historian",
+        "abb:symphony_\\+_operations"
+      ],
+      "published": "2020-12-22T22:15:13.257",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123980&LanguageCode=en&DocumentPartId=&Action=Launch"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123982&LanguageCode=en&DocumentPartId=&Action=Launch"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123980&LanguageCode=en&DocumentPartId=&Action=Launch"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123982&LanguageCode=en&DocumentPartId=&Action=Launch"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2020-24679": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "A S+ Operations and S+ Historian service is subject to a DoS by special crafted messages. An attacker might use this flaw to make it crash or even execute arbitrary code on the machine where the service is hosted.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-24679",
+      "last_modified": "2026-06-17T03:05:58.323",
+      "products": [
+        "abb:symphony_\\+_historian",
+        "abb:symphony_\\+_operations"
+      ],
+      "published": "2020-12-22T22:15:13.583",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123980&LanguageCode=en&DocumentPartId=&Action=Launch"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123982&LanguageCode=en&DocumentPartId=&Action=Launch"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123980&LanguageCode=en&DocumentPartId=&Action=Launch"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123982&LanguageCode=en&DocumentPartId=&Action=Launch"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2020-24683": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-305",
+        "CWE-602",
+        "CWE-669"
+      ],
+      "description": "The affected versions of S+ Operations (version 2.1 SP1 and earlier) used an approach for user authentication which relies on validation at the client node (client-side authentication). This is not as secure as having the server validate a client application before allowing a connection. Therefore, if the network communication or endpoints for these applications are not protected, unauthorized actors can bypass authentication and make unauthorized connections to the server application.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-24683",
+      "last_modified": "2026-06-17T03:05:58.960",
+      "products": [
+        "abb:symphony_\\+_historian",
+        "abb:symphony_\\+_operations"
+      ],
+      "published": "2020-12-22T22:15:13.757",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123980&LanguageCode=en&DocumentPartId=&Action=Launch"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://search.abb.com/library/Download.aspx?DocumentID=2PAA123980&LanguageCode=en&DocumentPartId=&Action=Launch"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2020-25066": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "A heap-based buffer overflow in the Treck HTTP Server component before 6.0.1.68 allows remote attackers to cause a denial of service (crash/reset) or to possibly execute arbitrary code.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-25066",
+      "last_modified": "2026-06-17T03:06:19.723",
+      "products": [
+        "treck:tcp\\/ip"
+      ],
+      "published": "2020-12-22T22:15:13.833",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security.netapp.com/advisory/ntap-20210201-0003/"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://treck.com/vulnerability-response-information/"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security.netapp.com/advisory/ntap-20210201-0003/"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://treck.com/vulnerability-response-information/"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2020-26879": {
     "added": "2026-09-03",
     "checks_done": 1,
@@ -23809,6 +24057,36 @@
       ]
     },
     "next_check": "2026-09-06"
+  },
+  "CVE-2026-11613": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-98"
+      ],
+      "description": "The Divi Ajax Filter plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 5.1.2 via the 'custom_loop_template' parameter parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included. This vulnerability is only exploitable when the loop_templates parameter is set to 'custom-template'.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-11613",
+      "last_modified": "2026-09-04T05:17:13.013",
+      "products": [],
+      "published": "2026-09-04T05:17:13.013",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://diviengine.com/divi-ajax-filter-changelog/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/8fbb92ac-a8e7-480d-8910-416fbe902a2a?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
   },
   "CVE-2026-11707": {
     "added": "2026-07-31",
@@ -31437,6 +31715,36 @@
       ]
     },
     "next_check": "2026-09-14"
+  },
+  "CVE-2026-15354": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The ACPT (Premium) plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.0.66. This is due to missing authorization in the `submit()` function, which allows unauthenticated form submissions to control the target user ID before calling `wp_update_user()`. This makes it possible for unauthenticated attackers to overwrite any WordPress user's email address and password, including an administrator's, and take over the account. Successful exploitation requires a public ACPT user form that permits anonymous submissions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15354",
+      "last_modified": "2026-09-04T07:17:08.487",
+      "products": [],
+      "published": "2026-09-04T07:17:08.487",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://acpt.io/changelog/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/abc138f5-0bb7-4ce3-a504-89580021bedb?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
   },
   "CVE-2026-15359": {
     "added": "2026-08-08",
@@ -122064,6 +122372,36 @@
     },
     "next_check": "2026-09-06"
   },
+  "CVE-2026-62928": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "XING CPTrans-ME-X contains an OS Command Injection (CWE-78). Unauthenticated OS command may be injected.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-62928",
+      "last_modified": "2026-09-04T07:17:09.057",
+      "products": [],
+      "published": "2026-09-04T07:17:09.057",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://joysound.biz/product/other/rack_accessories/cptrans-me-x"
+        },
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN32505330/"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-62940": {
     "added": "2026-08-22",
     "checks_done": 7,
@@ -136474,6 +136812,36 @@
     },
     "next_check": "2026-09-05"
   },
+  "CVE-2026-66840": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-497"
+      ],
+      "description": "XING CPTrans-ME-X contains an Exposure of Sensitive System Information to an Unauthorized Control Sphere (CWE-497). Sensitive system information may be leaked.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-66840",
+      "last_modified": "2026-09-04T07:17:09.210",
+      "products": [],
+      "published": "2026-09-04T07:17:09.210",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://joysound.biz/product/other/rack_accessories/cptrans-me-x"
+        },
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN32505330/"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-66842": {
     "added": "2026-09-03",
     "checks_done": 1,
@@ -144439,6 +144807,36 @@
     },
     "next_check": "2026-09-20"
   },
+  "CVE-2026-69657": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-1393"
+      ],
+      "description": "XING CPTrans-ME-X contains a Use of Default Password (CWE-1393). Anyone with the knowledge of the credential may log in to the affected device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-69657",
+      "last_modified": "2026-09-04T07:17:09.340",
+      "products": [],
+      "published": "2026-09-04T07:17:09.340",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://joysound.biz/product/other/rack_accessories/cptrans-me-x"
+        },
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN32505330/"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-69658": {
     "added": "2026-08-28",
     "checks_done": 7,
@@ -145810,6 +146208,36 @@
       ]
     },
     "next_check": "2026-09-11"
+  },
+  "CVE-2026-70403": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-259"
+      ],
+      "description": "XING CPTrans-ME-X contains a Use of Hard-coded Password (CWE-259). Anyone with the knowledge of the credential may log in to the affected device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-70403",
+      "last_modified": "2026-09-04T07:17:09.467",
+      "products": [],
+      "published": "2026-09-04T07:17:09.467",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://joysound.biz/product/other/rack_accessories/cptrans-me-x"
+        },
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN32505330/"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
   },
   "CVE-2026-70408": {
     "added": "2026-08-20",
@@ -229997,6 +230425,32 @@
     },
     "next_check": "2026-09-05"
   },
+  "CVE-2026-85085": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-940"
+      ],
+      "description": "The Canva Android App before 2.376.0 allowed an external origin to be loaded in a privileged WebView. A threat actor who controls the page loaded by the user is able to communicate with Canva using the user’s session.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85085",
+      "last_modified": "2026-09-04T07:17:11.133",
+      "products": [],
+      "published": "2026-09-04T07:17:11.133",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://trust.canva.com/?tcuUid=be2ebc32-7053-4885-bf71-68771aa4589a"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-85089": {
     "added": "2026-09-04",
     "checks_done": 0,
@@ -230168,6 +230622,32 @@
         {
           "tags": [],
           "url": "https://github.com/cheshire-cat-ai/core/issues/1136"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85094": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-212"
+      ],
+      "description": "The Canva Android App  before 2.376.0 did not restrict the headers returned to an external origin running in a privileged WebView. A threat actor with control of the WebView could access a user’s session.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85094",
+      "last_modified": "2026-09-04T07:17:11.263",
+      "products": [],
+      "published": "2026-09-04T07:17:11.263",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://trust.canva.com/?tcuUid=be2ebc32-7053-4885-bf71-68771aa4589a"
         }
       ]
     },
@@ -230502,6 +230982,96 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/398365/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85146": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-798"
+      ],
+      "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can obtain the SSH service account credentials and passwords for the SmartIT Agent directly from the application source code.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85146",
+      "last_modified": "2026-09-04T03:17:45.770",
+      "products": [],
+      "published": "2026-09-04T03:17:45.770",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/en/cp-139-11177-13ca3-2.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/tw/cp-132-11176-a4cc2-1.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85147": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-284"
+      ],
+      "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can obtain a specific password from the source code, which can be used to retrieve the AES encryption key used for communication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85147",
+      "last_modified": "2026-09-04T03:17:45.920",
+      "products": [],
+      "published": "2026-09-04T03:17:45.920",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/en/cp-139-11177-13ca3-2.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/tw/cp-132-11176-a4cc2-1.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85148": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-798"
+      ],
+      "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can exploit a fixed password to remotely access user hosts.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85148",
+      "last_modified": "2026-09-04T03:17:46.050",
+      "products": [],
+      "published": "2026-09-04T03:17:46.050",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/en/cp-139-11177-13ca3-2.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/tw/cp-132-11176-a4cc2-1.html"
         }
       ]
     },
@@ -232374,6 +232944,295 @@
     },
     "next_check": "2026-09-05"
   },
+  "CVE-2026-85398": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was identified in code-projects Hospital Information System 1.0. Affected is the function viewReq of the file viewReq.php. Such manipulation of the argument ID leads to sql injection. It is possible to launch the attack remotely. The exploit is publicly available and might be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85398",
+      "last_modified": "2026-09-04T03:17:46.327",
+      "products": [],
+      "published": "2026-09-04T03:17:46.327",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://code-projects.org/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/lccc-t/CVE/issues/3"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-85398"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/894859"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398541"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398541/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85399": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security flaw has been discovered in code-projects Hospital Information System 1.0. Affected by this vulnerability is the function getSinglePresp of the file includes/presp/PrespController.php. Performing a manipulation of the argument ID results in sql injection. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85399",
+      "last_modified": "2026-09-04T03:17:46.500",
+      "products": [],
+      "published": "2026-09-04T03:17:46.500",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://code-projects.org/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/lccc-t/CVE/issues/4"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-85399"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/894860"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398542"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398542/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85401": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "description": "A weakness has been identified in Dolibarr up to 21.0.4/22.0.5/23.0.3. Affected by this issue is some unknown functionality of the file htdocs/core/filemanagerdol/connectors/php/config.inc.php of the component Legacy File Manager. Executing a manipulation can lead to improper access controls. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks. Upgrading to version 23.0.4 can resolve this issue. This patch is called ef6631e9bd5ec4b8cec0e88f1796d3d10dad02ec. It is suggested to upgrade the affected component.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85401",
+      "last_modified": "2026-09-04T03:17:46.677",
+      "products": [],
+      "published": "2026-09-04T03:17:46.677",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Dolibarr/dolibarr/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/Dolibarr/dolibarr/commit/ef6631e9bd5ec4b8cec0e88f1796d3d10dad02ec"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/Dolibarr/dolibarr/issues/38963"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/Dolibarr/dolibarr/pull/39731"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/Dolibarr/dolibarr/releases/tag/23.0.4"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-85401"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/894869"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398543"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398543/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85402": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was detected in code-projects Doctor Appointment System 1.0. This vulnerability affects unknown code of the file /patient/booking.php. The manipulation of the argument doc_id results in sql injection. The attack may be launched remotely. The exploit is now public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85402",
+      "last_modified": "2026-09-04T03:17:46.863",
+      "products": [],
+      "published": "2026-09-04T03:17:46.863",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://code-projects.org/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/lccc-t/CVE/issues/5"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-85402"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/894879"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398545"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398545/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85403": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A flaw has been found in code-projects Doctor Appointment System 1.0. This issue affects some unknown processing of the file /contactus.php. This manipulation of the argument firstname causes sql injection. Remote exploitation of the attack is possible. The exploit has been published and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85403",
+      "last_modified": "2026-09-04T04:18:08.163",
+      "products": [],
+      "published": "2026-09-04T04:18:08.163",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://code-projects.org/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/lccc-t/CVE/issues/6"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-85403"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/894881"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398546"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398546/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85409": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "A vulnerability was identified in Eleveo Quality Management 9.7.0. The affected element is the function QuestionnaireService.runDataExportNow of the component Questionnaire Service. Such manipulation of the argument file_name leads to path traversal. The attack may be performed from remote. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85409",
+      "last_modified": "2026-09-04T05:17:15.897",
+      "products": [],
+      "published": "2026-09-04T05:17:15.897",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://drive.google.com/file/d/1fCPpqzYyoII_lfC6iXy-hLd1YpJcgmgR/view?usp=sharing"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-85409"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/894907"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398559"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398559/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-85424": {
     "added": "2026-09-04",
     "checks_done": 0,
@@ -233713,6 +234572,210 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/moos-core-moos-through-10.4.0-moosdb-out-of-bounds-read-via-short-packet"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85504": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "FreeIPMI before 1.6.19 has a stack-based buffer overflow in _ipmi_sel_oem_fujitsu_get_sel_entry_long_text in libfreeipmi/sel/ipmi-sel-string-fujitsu-irmc-common.c via malformed Fujitsu SEL long-text responses.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85504",
+      "last_modified": "2026-09-04T05:17:16.047",
+      "products": [],
+      "published": "2026-09-04T05:17:16.047",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://ftp.gnu.org/gnu/freeipmi/freeipmi-1.6.19.tar.gz"
+        },
+        {
+          "tags": [],
+          "url": "https://www.gnu.org/software/freeipmi/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.openwall.com/lists/oss-security/2026/08/28/5"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85505": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer over-read in ipmi_oem_fujitsu_get_sel_entry_long_text in ipmi-oem/ipmi-oem-fujitsu.c when a BMC provides a short response, a different vulnerability than CVE-2026-50031 (which has different affected versions).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85505",
+      "last_modified": "2026-09-04T05:17:16.170",
+      "products": [],
+      "published": "2026-09-04T05:17:16.170",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://ftp.gnu.org/gnu/freeipmi/freeipmi-1.6.19.tar.gz"
+        },
+        {
+          "tags": [],
+          "url": "https://www.gnu.org/software/freeipmi/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.openwall.com/lists/oss-security/2026/08/28/5"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85506": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _get_dell_system_info_idrac_info in ipmi-oem/ipmi-oem-dell.c (idrac-info subcommand to dell get-system-info).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85506",
+      "last_modified": "2026-09-04T05:17:16.290",
+      "products": [],
+      "published": "2026-09-04T05:17:16.290",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://ftp.gnu.org/gnu/freeipmi/freeipmi-1.6.19.tar.gz"
+        },
+        {
+          "tags": [],
+          "url": "https://www.gnu.org/software/freeipmi/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.openwall.com/lists/oss-security/2026/08/28/5"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85507": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _output_dell_system_info_cmc_info in ipmi-oem/ipmi-oem-dell.c (cmc-info subcommand to dell get-system-info).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85507",
+      "last_modified": "2026-09-04T05:17:16.433",
+      "products": [],
+      "published": "2026-09-04T05:17:16.433",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://ftp.gnu.org/gnu/freeipmi/freeipmi-1.6.19.tar.gz"
+        },
+        {
+          "tags": [],
+          "url": "https://www.gnu.org/software/freeipmi/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.openwall.com/lists/oss-security/2026/08/28/5"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85508": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _output_dell_system_info_cmc_ipv6_info in ipmi-oem/ipmi-oem-dell.c (cmc-ipv6-info subcommand to dell get-system-info).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85508",
+      "last_modified": "2026-09-04T05:17:16.570",
+      "products": [],
+      "published": "2026-09-04T05:17:16.570",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://ftp.gnu.org/gnu/freeipmi/freeipmi-1.6.19.tar.gz"
+        },
+        {
+          "tags": [],
+          "url": "https://www.gnu.org/software/freeipmi/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.openwall.com/lists/oss-security/2026/08/28/5"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85509": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "FreeIPMI before 1.6.19 has a stack-based buffer overflow in _read_fru_data in libfreeipmi/fru/ipmi-fru.c when a BMC returns more bytes than requested.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85509",
+      "last_modified": "2026-09-04T05:17:16.723",
+      "products": [],
+      "published": "2026-09-04T05:17:16.723",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://ftp.gnu.org/gnu/freeipmi/freeipmi-1.6.19.tar.gz"
+        },
+        {
+          "tags": [],
+          "url": "https://www.gnu.org/software/freeipmi/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.openwall.com/lists/oss-security/2026/08/28/5"
         }
       ]
     },
