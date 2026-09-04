@@ -20284,6 +20284,549 @@
     },
     "next_check": "2026-09-05"
   },
+  "CVE-2021-21242": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-502",
+        "CWE-74"
+      ],
+      "description": "OneDev is an all-in-one devops platform. In OneDev before version 4.0.3, there is a critical vulnerability which can lead to pre-auth remote code execution. AttachmentUploadServlet deserializes untrusted data from the `Attachment-Support` header. This Servlet does not enforce any authentication or authorization checks. This issue may lead to pre-auth remote code execution. This issue was fixed in 4.0.3 by removing AttachmentUploadServlet and not using deserialization",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-21242",
+      "last_modified": "2026-06-17T03:35:06.800",
+      "products": [
+        "onedev_project:onedev"
+      ],
+      "published": "2021-01-15T21:15:13.227",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/commit/f864053176c08f59ef2d97fea192ceca46a4d9be"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/security/advisories/GHSA-5q3q-f373-2jv8"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/commit/f864053176c08f59ef2d97fea192ceca46a4d9be"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/security/advisories/GHSA-5q3q-f373-2jv8"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2021-21244": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "description": "OneDev is an all-in-one devops platform. In OneDev before version 4.0.3, There is a vulnerability that enabled pre-auth server side template injection via Bean validation message tampering. Full details in the reference GHSA. This issue was fixed in 4.0.3 by disabling validation interpolation completely.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-21244",
+      "last_modified": "2026-06-17T03:35:07.030",
+      "products": [
+        "onedev_project:onedev"
+      ],
+      "published": "2021-01-15T20:15:12.097",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/commit/4f5dc6fb9e50f2c41c4929b0d8c5824b2cca3d65"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/security/advisories/GHSA-vm26-xg39-cfj4"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/commit/4f5dc6fb9e50f2c41c4929b0d8c5824b2cca3d65"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/security/advisories/GHSA-vm26-xg39-cfj4"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2021-21245": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "OneDev is an all-in-one devops platform. In OneDev before version 4.0.3, AttachmentUploadServlet also saves user controlled data (`request.getInputStream()`) to a user specified location (`request.getHeader(\"File-Name\")`). This issue may lead to arbitrary file upload which can be used to upload a WebShell to OneDev server. This issue is addressed in 4.0.3 by only allowing uploaded file to be in attachments folder. The webshell issue is not possible as OneDev never executes files in attachments folder.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-21245",
+      "last_modified": "2026-06-17T03:35:07.140",
+      "products": [
+        "onedev_project:onedev"
+      ],
+      "published": "2021-01-15T21:15:13.413",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/commit/0c060153fb97c0288a1917efdb17cc426934dacb"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/security/advisories/GHSA-62m2-38q5-96w9"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/commit/0c060153fb97c0288a1917efdb17cc426934dacb"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/security/advisories/GHSA-62m2-38q5-96w9"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2021-25294": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-502"
+      ],
+      "description": "OpenCATS through 0.9.5-3 unsafely deserializes index.php?m=activity requests, leading to remote code execution. This occurs because lib/DataGrid.php calls unserialize for the parametersactivity:ActivityDataGrid parameter. The PHP object injection exploit chain can leverage an __destruct magic method in guzzlehttp.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-25294",
+      "last_modified": "2026-06-17T03:41:46.997",
+      "products": [
+        "opencats:opencats"
+      ],
+      "published": "2021-01-18T06:15:12.897",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/snoopysecurity/snoopysecurity.github.io/blob/master/web-application-security/2021/01/16/09_opencats_php_object_injection.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://snoopysecurity.github.io/web-application-security/2021/01/16/09_opencats_php_object_injection.html"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.opencats.org/news/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/snoopysecurity/snoopysecurity.github.io/blob/master/web-application-security/2021/01/16/09_opencats_php_object_injection.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://snoopysecurity.github.io/web-application-security/2021/01/16/09_opencats_php_object_injection.html"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.opencats.org/news/"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2021-3177": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-120"
+      ],
+      "description": "Python 3.x through 3.9.1 has a buffer overflow in PyCArg_repr in _ctypes/callproc.c, which may lead to remote code execution in certain Python applications that accept floating-point numbers as untrusted input, as demonstrated by a 1e300 argument to c_double.from_param. This occurs because sprintf is used unsafely.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-3177",
+      "last_modified": "2026-06-17T04:04:47.457",
+      "products": [
+        "debian:debian_linux",
+        "fedoraproject:fedora",
+        "netapp:active_iq_unified_manager",
+        "netapp:ontap_select_deploy_administration_utility",
+        "oracle:communications_cloud_native_core_network_function_cloud_native_environment",
+        "oracle:communications_offline_mediation_controller",
+        "oracle:communications_pricing_design_center",
+        "oracle:enterprise_manager_ops_center",
+        "oracle:zfs_storage_appliance_kit",
+        "python:python"
+      ],
+      "published": "2021-01-19T06:15:12.967",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://bugs.python.org/issue42938"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/python/cpython/pull/24239"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+        },
+        {
+          "tags": [
+            "Mailing List",
+            "Third Party Advisory"
+          ],
+          "url": "https://lists.debian.org/debian-lts-announce/2021/04/msg00005.html"
+        },
+        {
+          "tags": [
+            "Mailing List",
+            "Third Party Advisory"
+          ],
+          "url": "https://lists.debian.org/debian-lts-announce/2022/02/msg00013.html"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.debian.org/debian-lts-announce/2023/05/msg00024.html"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BRHOCQYX3QLDGDQGTWQAUUT2GGIZCZUO/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CCFZMVRQUKCBQIG5F2CBVADK63NFSE4A/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FONHJIOZOFD7CD35KZL6SVBUTMBPGZGA/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FPE7SMXYUIWPOIZV4DQYXODRXMFX3C5E/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HCQTCSP6SCVIYNIRUJC5X7YBVUHPLSC4/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/MGSV6BJQLRQ6RKVUXK7JGU7TP4QFGQXC/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/MP572OLHMS7MZO4KUPSCIMSZIA5IZZ62/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NODWHDIFBQE5RU5PUWUVE47JOT5VCMJ2/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NQPARTLNSFQVMMQHPNBFOCOZOO3TMQNA/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NXSMBHES3ANXXS2RSO5G6Q24BR4B2PWK/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/V6XJAULOS5JVB2L67NCKKMJ5NTKZJBSD/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Y4KSYYWMGAKOA2JVCQA422OINT6CKQ7O/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YDTZVGSXQ7HR7OCGSUHTRNTMBG43OMKU/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Z7GZV74KM72O2PEJN2C4XP3V5Q5MZUOO/"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://news.ycombinator.com/item?id=26185005"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://python-security.readthedocs.io/vuln/ctypes-buffer-overflow-pycarg_repr.html"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security.gentoo.org/glsa/202101-18"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security.netapp.com/advisory/ntap-20210226-0003/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.oracle.com//security-alerts/cpujul2021.html"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.oracle.com/security-alerts/cpujan2022.html"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.oracle.com/security-alerts/cpujul2022.html"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://bugs.python.org/issue42938"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/python/cpython/pull/24239"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E"
+        },
+        {
+          "tags": [
+            "Mailing List",
+            "Third Party Advisory"
+          ],
+          "url": "https://lists.debian.org/debian-lts-announce/2021/04/msg00005.html"
+        },
+        {
+          "tags": [
+            "Mailing List",
+            "Third Party Advisory"
+          ],
+          "url": "https://lists.debian.org/debian-lts-announce/2022/02/msg00013.html"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.debian.org/debian-lts-announce/2023/05/msg00024.html"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BRHOCQYX3QLDGDQGTWQAUUT2GGIZCZUO/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CCFZMVRQUKCBQIG5F2CBVADK63NFSE4A/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FONHJIOZOFD7CD35KZL6SVBUTMBPGZGA/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FPE7SMXYUIWPOIZV4DQYXODRXMFX3C5E/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HCQTCSP6SCVIYNIRUJC5X7YBVUHPLSC4/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/MGSV6BJQLRQ6RKVUXK7JGU7TP4QFGQXC/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/MP572OLHMS7MZO4KUPSCIMSZIA5IZZ62/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NODWHDIFBQE5RU5PUWUVE47JOT5VCMJ2/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NQPARTLNSFQVMMQHPNBFOCOZOO3TMQNA/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/NXSMBHES3ANXXS2RSO5G6Q24BR4B2PWK/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/V6XJAULOS5JVB2L67NCKKMJ5NTKZJBSD/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Y4KSYYWMGAKOA2JVCQA422OINT6CKQ7O/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YDTZVGSXQ7HR7OCGSUHTRNTMBG43OMKU/"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/Z7GZV74KM72O2PEJN2C4XP3V5Q5MZUOO/"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://news.ycombinator.com/item?id=26185005"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://python-security.readthedocs.io/vuln/ctypes-buffer-overflow-pycarg_repr.html"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security.gentoo.org/glsa/202101-18"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://security.netapp.com/advisory/ntap-20210226-0003/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.oracle.com//security-alerts/cpujul2021.html"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.oracle.com/security-alerts/cpujan2022.html"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.oracle.com/security-alerts/cpujul2022.html"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2021-38489": {
     "added": "2026-09-04",
     "checks_done": 0,
@@ -62158,6 +62701,32 @@
     },
     "next_check": "2026-09-12"
   },
+  "CVE-2026-19051": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-256"
+      ],
+      "description": "Plaintext storage of a password vulnerability in Menulux Software Inc. Menulux Portal allows Retrieve Embedded Sensitive Data.\n\nThis issue affects Menulux Portal: before 20260903211448.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19051",
+      "last_modified": "2026-09-04T12:17:18.323",
+      "products": [],
+      "published": "2026-09-04T12:17:18.323",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-0989"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-19053": {
     "added": "2026-08-11",
     "checks_done": 8,
@@ -62556,6 +63125,32 @@
       ]
     },
     "next_check": "2026-09-06"
+  },
+  "CVE-2026-19080": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-204"
+      ],
+      "description": "Observable response discrepancy vulnerability in Menulux Software Inc. Menulux Portal allows Account Footprinting.\n\nThis issue affects Menulux Portal: before 20260903211448.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19080",
+      "last_modified": "2026-09-04T12:17:18.443",
+      "products": [],
+      "published": "2026-09-04T12:17:18.443",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-0989"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
   },
   "CVE-2026-19082": {
     "added": "2026-08-08",
@@ -74546,6 +75141,32 @@
         {
           "tags": [],
           "url": "https://wpscan.com/vulnerability/779304f2-7dc2-4f12-b134-dede9a0c5eb6/"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-27086": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Xtemos WoodMart allows DOM-Based XSS.\n\nThis issue affects WoodMart: from n/a before 8.3.8.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27086",
+      "last_modified": "2026-09-04T10:17:11.843",
+      "products": [],
+      "published": "2026-09-04T10:17:11.843",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/theme/woodmart/vulnerability/wordpress-woodmart-theme-8-3-8-cross-site-scripting-xss-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -102984,6 +103605,36 @@
     },
     "next_check": "2026-09-07"
   },
+  "CVE-2026-57777": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Automattic WooCommerce allows Blind SQL Injection.\n\nThis issue affects WooCommerce: from n/a before 11.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57777",
+      "last_modified": "2026-09-04T09:17:10.810",
+      "products": [],
+      "published": "2026-09-04T09:17:10.810",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/woocommerce/woocommerce/pull/67554"
+        },
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/woocommerce/vulnerability/wordpress-woocommerce-plugin-10-9-4-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-57817": {
     "added": "2026-08-07",
     "checks_done": 8,
@@ -115458,6 +116109,32 @@
       ]
     },
     "next_check": "2026-09-19"
+  },
+  "CVE-2026-6217": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-759"
+      ],
+      "description": "Use of a One-Way hash without a salt vulnerability in Pik Online Software Solutions Inc. Pik Online Portal allows Cryptanalysis.\n\nThis issue affects Pik Online Portal: through 3.5.1.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-6217",
+      "last_modified": "2026-09-04T08:17:16.067",
+      "products": [],
+      "published": "2026-09-04T08:17:16.067",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-0987"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
   },
   "CVE-2026-62204": {
     "added": "2026-08-23",
@@ -194540,6 +195217,36 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2026-76169": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-288"
+      ],
+      "description": "fastify versions >= 4.0.0 and before 5.12.2 can route a malformed URL sent under one plugin prefix to the custom not-found handler of a different sibling plugin, and invoke it without the preHandler hook declared for that handler. The internal not-found router for encapsulated handlers dispatches malformed paths through a single shared handler pointer before URL decoding, ignoring the prefix and skipping the selected handler's normal lifecycle. An unauthenticated attacker can therefore reach an authentication-protected private fallback through an unrelated public prefix and read its full response, bypassing the authentication hook and breaking prefix encapsulation. Users should upgrade to fastify 5.12.2 or later.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76169",
+      "last_modified": "2026-09-04T10:17:12.020",
+      "products": [],
+      "published": "2026-09-04T10:17:12.020",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://cna.openjsf.org/security-advisories.html"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/fastify/fastify/security/advisories/GHSA-p68q-wchp-6fh7"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-76172": {
     "added": "2026-08-25",
     "checks_done": 7,
@@ -213904,6 +214611,36 @@
     },
     "next_check": "2026-09-05"
   },
+  "CVE-2026-81302": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-276"
+      ],
+      "description": "PALLET CONTROL products contain an incorrect default permission vulnerability, which may allow a local attacker to execute arbitrary code with SYSTEM privileges on the affected product.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81302",
+      "last_modified": "2026-09-04T09:17:11.230",
+      "products": [],
+      "published": "2026-09-04T09:17:11.230",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN84094853/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.jaldx.co.jp/solution/palletcontrol/2026/08/31/"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-81334": {
     "added": "2026-08-27",
     "checks_done": 7,
@@ -214744,6 +215481,66 @@
       ]
     },
     "next_check": "2026-09-10"
+  },
+  "CVE-2026-81665": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-122"
+      ],
+      "description": "A heap-based buffer overflow was found in Corosync's Totem Process Group (totempg) message reassembly. When processing fragmented multicast messages, the buffer used to reassemble fragments lacks a runtime bounds check in release builds. A network-adjacent attacker able to send crafted multicast protocol messages to the cluster could cause a heap buffer overflow with attacker-controlled data. This can crash the Corosync daemon, causing a denial of service to the entire cluster, and may potentially allow further exploitation given sufficient heap-corruption control.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81665",
+      "last_modified": "2026-09-04T09:17:11.357",
+      "products": [],
+      "published": "2026-09-04T09:17:11.357",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-81665"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2524910"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-81666": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-190"
+      ],
+      "description": "An integer overflow was found in Corosync's handling of membership commit token messages. The length-validation check for these messages can be bypassed on 32-bit systems due to an integer overflow in the calculation of the expected message length, allowing a crafted network packet to trigger an out-of-bounds memory access that crashes the Corosync daemon. This results in a denial of service for the affected cluster node. The overflow does not occur on 64-bit systems, where the length calculation is correctly performed in 64-bit arithmetic.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81666",
+      "last_modified": "2026-09-04T10:17:13.187",
+      "products": [],
+      "published": "2026-09-04T10:17:13.187",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-81666"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2524923"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
   },
   "CVE-2026-81678": {
     "added": "2026-08-27",
@@ -224079,40 +224876,6 @@
     },
     "next_check": "2026-09-05"
   },
-  "CVE-2026-82876": {
-    "added": "2026-08-31",
-    "checks_done": 4,
-    "cve": {
-      "cvss_score": 8.2,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-347"
-      ],
-      "description": "Phison PS3111-S11 controller firmware verifies RSA signatures using a public modulus embedded within the firmware image itself rather than anchored in immutable storage. Attackers can generate arbitrary RSA key pairs, sign modified firmware with the private key, embed the matching modulus in the signature segment, and the controller accepts the tampered firmware as valid.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-82876",
-      "last_modified": "2026-08-31T11:16:41.190",
-      "products": [],
-      "published": "2026-08-31T11:16:41.190",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/trulycrisp/psychite"
-        },
-        {
-          "tags": [],
-          "url": "https://trulycrisp.github.io/drivefirmware/phison_s11/"
-        },
-        {
-          "tags": [],
-          "url": "https://www.vulncheck.com/advisories/phison-ps3111-s11-controller-firmware-signature-verification-bypass"
-        }
-      ]
-    },
-    "next_check": "2026-09-05"
-  },
   "CVE-2026-82877": {
     "added": "2026-08-31",
     "checks_done": 4,
@@ -224635,6 +225398,30 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/397302/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-82923": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "The AI Website Builder WordPress plugin (GitHub build) 1.0.0 does not perform any authorisation or nonce check on its REST API routes, allowing unauthenticated attackers to install and activate plugins and themes, import content from a URL under their control, write a file of their choosing into the uploads directory, and delete site content and media. On a host that serves PHP from the uploads directory, that file write is remote code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82923",
+      "last_modified": "2026-09-04T10:17:13.340",
+      "products": [],
+      "published": "2026-09-04T10:17:13.340",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/663e7004-1cca-4c0f-8d54-7298d40fe179/"
         }
       ]
     },
@@ -227279,6 +228066,36 @@
     },
     "next_check": "2026-09-05"
   },
+  "CVE-2026-84428": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-178"
+      ],
+      "description": "fastify versions before 5.12.2 implement the case-insensitive nature of HTTP header names by lowercasing names in a route's header schema before compiling it, but the transformation is incomplete: it lowercases the properties keys and the root-level required array, and does not lowercase the trigger and dependent names inside the JSON Schema Draft 7 dependencies keyword. Because Node stores request header names in lowercase, a canonical-case dependency such as requiring an authentication header whenever a privileged-mode header is present never matches, and the presence assertion is silently skipped. An unauthenticated remote client can therefore send the header that activates a privileged branch while omitting the header the dependency was meant to require, bypassing the conditional check. Users should upgrade to fastify 5.12.2 or later.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84428",
+      "last_modified": "2026-09-04T11:17:19.317",
+      "products": [],
+      "published": "2026-09-04T11:17:19.317",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://cna.openjsf.org/security-advisories.html"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/fastify/fastify/security/advisories/GHSA-9q9j-q6p8-xq58"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-84430": {
     "added": "2026-09-02",
     "checks_done": 2,
@@ -227419,6 +228236,36 @@
         {
           "tags": [],
           "url": "https://www.ibm.com/support/pages/node/7282147"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-84469": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "fastify versions before 5.12.2 decide whether to compile a request schema based on JavaScript truthiness, but JSON Schema Draft 7 defines the boolean false as a valid schema that rejects every instance. When an application assigns false to a route's body, querystring, params, or headers schema to deny all input, fastify treats it as a missing schema, compiles no validator, and runs the route handler on any request. An unauthenticated remote client can therefore reach a handler that a valid deny-all schema was intended to make unreachable, a complete validation bypass that can lead to unauthorized state changes or execution of disabled operations. Users should upgrade to fastify 5.12.2 or later.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84469",
+      "last_modified": "2026-09-04T10:17:13.677",
+      "products": [],
+      "published": "2026-09-04T10:17:13.677",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://cna.openjsf.org/security-advisories.html"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/fastify/fastify/security/advisories/GHSA-hwr6-493r-vm6h"
         }
       ]
     },
@@ -227691,6 +228538,36 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/apitable-through-1.13.0-beta.1-missing-authentication-on-the-internal-organization-load-or-search-endpoint"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-84504": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "fastify versions before 5.12.2 treat the object resolved by a successful Ajv async validator as the value result protocol used by custom validator compilers. If a request that passes its route schema contains a property named value at the root, fastify replaces the entire request body with that property's value before the handler runs, so the handler receives a different object than the one that satisfied the schema. An authenticated low-privilege caller can use this to make nested data replace the validated body and trigger an operation the route schema did not authorize, leading to unauthorized state changes and data disclosure. Users should upgrade to fastify 5.12.2 or later.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84504",
+      "last_modified": "2026-09-04T10:17:13.790",
+      "products": [],
+      "published": "2026-09-04T10:17:13.790",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://cna.openjsf.org/security-advisories.html"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/fastify/fastify/security/advisories/GHSA-667r-xxjv-c9mm"
         }
       ]
     },
@@ -230146,36 +231023,6 @@
     },
     "next_check": "2026-09-05"
   },
-  "CVE-2026-85046": {
-    "added": "2026-09-04",
-    "checks_done": 0,
-    "cve": {
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-843"
-      ],
-      "description": "Type confusion in V8 in Google Chrome prior to 152.0.7977.82 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-85046",
-      "last_modified": "2026-09-03T20:17:24.210",
-      "products": [],
-      "published": "2026-09-03T20:17:24.210",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_01882797386.html"
-        },
-        {
-          "tags": [],
-          "url": "https://issues.chromium.org/issues/542403045"
-        }
-      ]
-    },
-    "next_check": "2026-09-05"
-  },
   "CVE-2026-85047": {
     "added": "2026-09-04",
     "checks_done": 0,
@@ -231669,6 +232516,36 @@
     },
     "next_check": "2026-09-05"
   },
+  "CVE-2026-85184": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-436"
+      ],
+      "description": "@fastify/middie versions >= 9.1.0 and before 9.3.4 decide whether to run path-scoped middleware by matching against the raw request target, while the Fastify router resolves an absolute-form request target to its path before dispatching. Because the two layers evaluate different strings, a request using an absolute-form target reaches the route handler while the path-scoped middleware, such as authentication or authorization, is skipped. An unauthenticated network attacker can use this to bypass path-based access controls in a Fastify application that relies on middie for those controls. Users should upgrade to @fastify/middie 9.3.4 or later.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85184",
+      "last_modified": "2026-09-04T10:17:13.900",
+      "products": [],
+      "published": "2026-09-04T10:17:13.900",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://cna.openjsf.org/security-advisories.html"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/fastify/middie/security/advisories/GHSA-hx87-8wv7-pjv8"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
   "CVE-2026-85186": {
     "added": "2026-09-04",
     "checks_done": 0,
@@ -231758,6 +232635,36 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/398400/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85197": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "A flaw was found in libsoup. A malicious HTTP/2 server or a Man-in-the-Middle (MITM) attacker can exploit a heap use-after-free vulnerability in the HTTP/2 client implementation. This occurs when a GNOME application uploads a file using HTTP/2, and the server sends a GOAWAY frame while the file body is being read asynchronously. This can lead to memory corruption, potentially resulting in information disclosure or arbitrary code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85197",
+      "last_modified": "2026-09-04T08:17:16.677",
+      "products": [],
+      "published": "2026-09-04T08:17:16.677",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-85197"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2528425"
         }
       ]
     },
@@ -234776,6 +235683,722 @@
         {
           "tags": [],
           "url": "https://www.openwall.com/lists/oss-security/2026/08/28/5"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85512": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862",
+        "CWE-863"
+      ],
+      "description": "A security flaw has been discovered in SourceCodester Class and Exam Timetabling System 1.0. This vulnerability affects unknown code of the file /admin/session.php. The manipulation of the argument ID results in missing authorization. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85512",
+      "last_modified": "2026-09-04T11:17:19.433",
+      "products": [],
+      "published": "2026-09-04T11:17:19.433",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/justconter/cve/issues/7"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-85512"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895057"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398677"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/398677/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85525": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-295",
+        "CWE-347"
+      ],
+      "description": "Improper OCSP response validation in the Snowflake Python, Go, JDBC, and Node.js drivers allowed a revoked TLS certificate to be accepted as valid, because OCSP responses were not reliably bound to the certificate being validated and definitive verification failures were treated as transient. A man-in-the-middle attacker holding a revoked certificate and its private key for a Snowflake or stage hostname could cause the driver to establish a TLS session to the attacker-controlled endpoint anyway, allowing the attacker to read and modify data transmitted within that connection. Successful exploitation requires that on-path position and the corresponding private key, and impact is limited to data carried within the intercepted connection. The fix is available in the patched versions listed above. Users must manually upgrade.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85525",
+      "last_modified": "2026-09-04T09:17:11.610",
+      "products": [],
+      "published": "2026-09-04T09:17:11.610",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.snowflake.com/en/release-notes/clients-drivers/golang-2026"
+        },
+        {
+          "tags": [],
+          "url": "https://docs.snowflake.com/en/release-notes/clients-drivers/jdbc-2026"
+        },
+        {
+          "tags": [],
+          "url": "https://docs.snowflake.com/en/release-notes/clients-drivers/nodejs-2026"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/snowflakedb/snowflake-connector-python/releases/tag/v4.7.3"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85540": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "DreamMaker developed by Interinfo has a SQL Injection vulnerability. Authenticated remote attackers can inject arbitrary SQL commands to read, modify, and delete database contents.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85540",
+      "last_modified": "2026-09-04T10:17:14.017",
+      "products": [],
+      "published": "2026-09-04T10:17:14.017",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/en/cp-139-11184-9ad14-2.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/tw/cp-132-11183-06a5e-1.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85578": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "SiYuan through 3.8.1 contains an authorization bypass vulnerability in the /api/file/getFile endpoint that allows readers to retrieve files from notebooks explicitly configured as Visible:false. Attackers with reader role can access private workspace files including notebook metadata and internal configuration by knowing the hidden notebook identifier and file path.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85578",
+      "last_modified": "2026-09-04T12:17:19.640",
+      "products": [],
+      "published": "2026-09-04T12:17:19.640",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8ggq-wq3f-vxrw"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-through-3.8.1-authorization-bypass-via-getfile"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85580": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "SiYuan versions before v3.8.2 contain a path guard bypass vulnerability in the MCP file-access handler that uses case-sensitive matching on Linux filesystems. Attackers can read the protected publishAccess.json file by requesting case-variant paths like PublishAccess.json to disclose sensitive publish-access configuration and metadata.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85580",
+      "last_modified": "2026-09-04T12:17:19.917",
+      "products": [],
+      "published": "2026-09-04T12:17:19.917",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-mmgw-3mx9-cfwp"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-path-guard-bypass-via-case-mismatch"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85581": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-770"
+      ],
+      "description": "SiYuan before v3.8.2 contains a denial of service vulnerability in the unauthenticated /api/system/uiproc endpoint that accepts and retains attacker-controlled process identifiers without size limits or authentication. Attackers can send repeated requests with unique identifiers to exhaust process memory and degrade service availability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85581",
+      "last_modified": "2026-09-04T12:17:20.050",
+      "products": [],
+      "published": "2026-09-04T12:17:20.050",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-wv96-wmf5-xvj2"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-denial-of-service-via-unauthenticated-ui-process-registration"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85582": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-770"
+      ],
+      "description": "SiYuan versions before v3.8.2 contain an unbounded session creation vulnerability in the publish-service Basic Auth handler that allows authenticated attackers to exhaust memory. Attackers can repeatedly authenticate with valid credentials to create persistent session entries without expiry or capacity limits, causing indefinite process memory growth and denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85582",
+      "last_modified": "2026-09-04T12:17:20.190",
+      "products": [],
+      "published": "2026-09-04T12:17:20.190",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-f4vj-ppp2-5hg4"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-unbounded-session-creation-via-basic-auth"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85583": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-59"
+      ],
+      "description": "SiYuan versions before v3.8.2 contain a path traversal vulnerability in the reader-accessible file-read endpoint that follows symlinks when opening authorized asset paths. Attackers with reader role can request a logical asset under data/assets/ that is a symlink to a file outside the workspace and receive the target file bytes, bypassing workspace boundary restrictions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85583",
+      "last_modified": "2026-09-04T12:17:20.327",
+      "products": [],
+      "published": "2026-09-04T12:17:20.327",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-g7gf-v79m-jwrm"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-path-traversal-via-symlink-in-file-api"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85584": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-770"
+      ],
+      "description": "SiYuan versions before v3.8.2 contain a denial of service vulnerability in the publish-service Basic Auth throttle that stores failed-attempt state using attacker-controlled usernames without enforcing capacity limits or eviction policies. Unauthenticated attackers can submit repeated authentication requests with unique invalid usernames to exhaust memory and increase synchronization overhead, degrading service availability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85584",
+      "last_modified": "2026-09-04T12:17:20.463",
+      "products": [],
+      "published": "2026-09-04T12:17:20.463",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-2x7j-p79w-7744"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-denial-of-service-via-auth-throttle"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85585": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-400"
+      ],
+      "description": "SiYuan before v3.8.2 contains an unbounded resource consumption vulnerability in the request-concurrency middleware that retains mutex entries for every unique request path without eviction. Unauthenticated attackers can send numerous unique request paths to permanently increase process memory and synchronization overhead, degrading availability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85585",
+      "last_modified": "2026-09-04T12:17:20.593",
+      "products": [],
+      "published": "2026-09-04T12:17:20.593",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-p59v-3q54-qq55"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-unbounded-memory-consumption-via-controlconcurrency"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85598": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Grav versions 2.0.0 through 2.0.17 fail to apply save-time XSS detection to modular pages, allowing authenticated page editors to store Twig-assembled XSS payloads. Attackers with page-edit rights can create modular pages with malicious Twig code that executes in visitor browsers when the parent page is rendered, including in administrator sessions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85598",
+      "last_modified": "2026-09-04T12:17:23.340",
+      "products": [],
+      "published": "2026-09-04T12:17:23.340",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/getgrav/grav/security/advisories/GHSA-fg8g-663r-f366"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/grav-2.0.0-through-2.0.17-stored-xss-via-modular-pages"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85599": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Grav Shortcode Core before 6.2.5 contains stored cross-site scripting vulnerabilities in the [lorem] tag parameter and [details] summary parameter that are written to rendered pages without escaping. Attackers with page-edit access can inject arbitrary HTML and JavaScript that executes in the browsers of all page visitors, including administrators.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85599",
+      "last_modified": "2026-09-04T12:17:23.490",
+      "products": [],
+      "published": "2026-09-04T12:17:23.490",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/getgrav/grav/security/advisories/GHSA-hvm8-wx3f-j774"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/grav-shortcode-core-before-6.2.5-stored-xss-via-unescaped-parameters"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85603": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-73"
+      ],
+      "description": "Grav versions before 1.10.55 contain a path traversal vulnerability in the admin plugin's Save As action that fails to validate the language code parameter. An authenticated admin user with admin.pages.create permission can supply directory traversal sequences in the lang POST field to write arbitrary .md files outside the pages directory with attacker-controlled content.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85603",
+      "last_modified": "2026-09-04T12:17:24.040",
+      "products": [],
+      "published": "2026-09-04T12:17:24.040",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/getgrav/grav/security/advisories/GHSA-h9g9-73c3-23c9"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/grav-admin-plugin-path-traversal-via-save-as-language-code"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85604": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "Grav before 2.0.19 (affected versions <= 2.0.17) contains a remote code execution vulnerability in the Twig sort filter. The sortFunc wrapper in GravExtension.php hardcodes Twig's isSandboxed argument to false, so unlike |map/|filter/|reduce, |sort accepts a plain function name inside the sandbox; the remaining denylist misses spl_autoload, which performs a PHP include. An authenticated user with only page-write rights (admin.pages or api.pages.write) can supply a crafted payload (e.g., via form frontmatter rendered by the Email plugin) that invokes spl_autoload through the sort filter, resulting in arbitrary PHP execution as the web server user.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85604",
+      "last_modified": "2026-09-04T12:17:24.177",
+      "products": [],
+      "published": "2026-09-04T12:17:24.177",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/getgrav/grav/security/advisories/GHSA-p6qj-p5m7-f62h"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/grav-before-2.0.19-remote-code-execution-via-sort-filter"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85609": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Openpanel before 2.3.0 contains an unauthenticated full-read server-side request forgery (SSRF) vulnerability in the GET /tools/site-checker endpoint (apps/api/src/controllers/tools.controller.ts). The endpoint passes a user-supplied url query parameter to fetchWithRedirects() and performs server-side HTTP requests to arbitrary URLs without any SSRF/IP validation. An unauthenticated remote attacker can access cloud instance metadata endpoints, probe internal services, scan internal network ports, and read returned content (status code, page size, timing, and parsed HTML metadata), and leak internal IP addresses (via getIPInfo() to a third party).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85609",
+      "last_modified": "2026-09-04T12:17:24.317",
+      "products": [],
+      "published": "2026-09-04T12:17:24.317",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-r3jv-rmrg-j395"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/openpanel-before-2.3.0-ssrf-via-site-checker-endpoint"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85610": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "OpenPanel before 2.3.0 fails to properly validate chart formula expressions, allowing authenticated project members with read access to execute arbitrary code by recovering the native JavaScript Function constructor through mathjs matrix objects. Attackers can use the recovered constructor to load Node.js built-ins and execute operating system commands with the privileges of the API process, bypassing organization authorization boundaries.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85610",
+      "last_modified": "2026-09-04T12:17:24.463",
+      "products": [],
+      "published": "2026-09-04T12:17:24.463",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-7476-c5cc-8999"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/openpanel-before-2.3.0-remote-code-execution-via-chart-formulas"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85611": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "OpenPanel before 2.3.0 contains a cross-tenant broken object level authorization vulnerability in the report.getLayouts and report.resetLayout tRPC procedures that fail to scope dashboard queries to the caller's project. Authenticated attackers can supply their own projectId with a victim organization's guessable dashboardId to read confidential report definitions or permanently delete dashboard layouts across tenant boundaries.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85611",
+      "last_modified": "2026-09-04T12:17:24.593",
+      "products": [],
+      "published": "2026-09-04T12:17:24.593",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-g3xf-pqfp-22v7"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/openpanel-before-2.3.0-cross-tenant-bola-via-report-procedures"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85612": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "OpenPanel before 2.3.0 contains an unauthenticated server-side request forgery vulnerability in the /misc/favicon and /misc/og endpoints that accept an attacker-supplied url parameter with insufficient validation. Attackers can force the API to fetch arbitrary internal hosts and cloud metadata endpoints, with small responses returned verbatim enabling credential theft and internal service enumeration.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85612",
+      "last_modified": "2026-09-04T12:17:24.727",
+      "products": [],
+      "published": "2026-09-04T12:17:24.727",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-2hff-m67f-2w2w"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/openpanel-before-2.3.0-ssrf-via-favicon-and-og-endpoints"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85613": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "OpenPanel before 2.3.0 contains a cross-site scripting vulnerability in the unauthenticated favicon proxy endpoint GET /misc/favicon that allows remote attackers to execute scripts by supplying an SVG file URL. Attackers can host malicious SVG files with embedded scripts that execute in the victim's browser on the API origin, enabling same-origin credentialed requests to authenticated endpoints.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85613",
+      "last_modified": "2026-09-04T12:17:24.863",
+      "products": [],
+      "published": "2026-09-04T12:17:24.863",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-r7hx-q6f4-vj6h"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/openpanel-unauthenticated-xss-via-svg-favicon-proxy"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85614": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "OpenPanel before 2.3.0 contains an unauthenticated server-side request forgery vulnerability in the GET /tools/site-checker endpoint that accepts a fully client-controlled URL parameter with no private IP filtering or DNS-rebinding protection. Attackers can make the OpenPanel server issue requests to internal services, localhost, and cloud metadata endpoints, reading internal HTTP response titles, headers, status codes, and SSL certificate information.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85614",
+      "last_modified": "2026-09-04T12:17:24.993",
+      "products": [],
+      "published": "2026-09-04T12:17:24.993",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-gqcr-xgfj-pq29"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/openpanel-api-before-2.3.0-unauthenticated-ssrf-via-site-checker"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85615": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "Openpanel before 2.3.0 contains an insecure direct object reference vulnerability in the report.getLayouts and report.resetLayout tRPC procedures that fail to bind dashboardId to the authorized projectId. Authenticated attackers can supply an arbitrary victim dashboardId with their own projectId to read report layouts and configurations or delete dashboard grid arrangements across tenants.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85615",
+      "last_modified": "2026-09-04T12:17:25.130",
+      "products": [],
+      "published": "2026-09-04T12:17:25.130",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Openpanel-dev/openpanel/security/advisories/GHSA-5cpv-vqvr-7mrh"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/openpanel-before-2.3.0-cross-tenant-idor-via-report-getlayouts"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85616": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "Snipe-IT versions before 8.6.2 contain an authorization bypass vulnerability in checkout-acceptance report actions when Full Multiple Company Support is enabled. Authenticated users with reports.view permission can enumerate sequential acceptance IDs and soft-delete or trigger reminder emails for acceptances belonging to other companies by exploiting a null check on the legacy users.company_id column.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85616",
+      "last_modified": "2026-09-04T12:17:25.270",
+      "products": [],
+      "published": "2026-09-04T12:17:25.270",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/grokability/snipe-it/security/advisories/GHSA-jqgw-vpjc-86fc"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/snipe-it-before-8.6.2-authorization-bypass-via-checkout-acceptance"
+        }
+      ]
+    },
+    "next_check": "2026-09-05"
+  },
+  "CVE-2026-85617": {
+    "added": "2026-09-04",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "snipe-it versions before 8.6.3 contain an authorization bypass vulnerability in the bulk delete functionality that allows restricted users to soft-delete users outside their authorized scope. Attackers can include unauthorized user IDs in bulk delete requests to bypass instance-level restrictions and modify or disable accounts they should not access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85617",
+      "last_modified": "2026-09-04T12:17:25.410",
+      "products": [],
+      "published": "2026-09-04T12:17:25.410",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/grokability/snipe-it/security/advisories/GHSA-mx3g-8v84-j6gg"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/snipe-it-before-8.6.3-authorization-bypass-via-bulk-delete"
         }
       ]
     },

@@ -1,17 +1,1 @@
-{
-  "CVE-2026-72804": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
-  },
-  "CVE-2026-72807": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
-  },
-  "CVE-2026-72809": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
-  },
-  "CVE-2026-72810": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
-  },
-  "CVE-2026-72811": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
-  }
-}
+{}
