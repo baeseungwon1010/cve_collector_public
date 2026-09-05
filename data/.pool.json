@@ -21475,6 +21475,84 @@
     },
     "next_check": "2026-09-06"
   },
+  "CVE-2020-27238": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "An exploitable SQL injection vulnerability exists in ‘getAssets.jsp’ page of OpenClinic GA 5.173.3. The code parameter in the getAssets.jsp page is vulnerable to unauthenticated SQL injection. An attacker can make an authenticated HTTP request to trigger this vulnerability.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-27238",
+      "last_modified": "2026-06-17T03:09:01.827",
+      "products": [
+        "openclinic_ga_project:openclinic_ga"
+      ],
+      "published": "2021-04-15T14:15:15.857",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Technical Description",
+            "Third Party Advisory"
+          ],
+          "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1207"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Technical Description",
+            "Third Party Advisory"
+          ],
+          "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1207"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2020-27239": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "An exploitable SQL injection vulnerability exists in ‘getAssets.jsp’ page of OpenClinic GA 5.173.3. The assetStatus parameter in the getAssets.jsp page is vulnerable to unauthenticated SQL injection An attacker can make an authenticated HTTP request to trigger this vulnerability.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-27239",
+      "last_modified": "2026-06-17T03:09:01.933",
+      "products": [
+        "openclinic_ga_project:openclinic_ga"
+      ],
+      "published": "2021-04-15T14:15:15.903",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1207"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1207"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
   "CVE-2020-27743": {
     "added": "2026-09-03",
     "checks_done": 2,
@@ -21520,6 +21598,46 @@
             "Third Party Advisory"
           ],
           "url": "https://tools.ietf.org/html/rfc8907"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2020-28592": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-120",
+        "CWE-787"
+      ],
+      "description": "A heap-based buffer overflow vulnerability exists in the configuration server functionality of the Cosori Smart 5.8-Quart Air Fryer CS158-AF 1.1.0. A specially crafted JSON object can lead to remote code execution. An attacker can send a malicious packet to trigger this vulnerability.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-28592",
+      "last_modified": "2026-06-17T03:10:34.987",
+      "products": [
+        "cosori:cs158-af",
+        "cosori:cs158-af_firmware"
+      ],
+      "published": "2021-04-15T14:15:15.967",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1216"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1216"
         }
       ]
     },
@@ -22838,6 +22956,44 @@
     },
     "next_check": "2026-09-06"
   },
+  "CVE-2021-27112": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "LightCMS v1.3.5 contains a remote code execution vulnerability in /app/Http/Controllers/Admin/NEditorController.php during the downloading of external images.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-27112",
+      "last_modified": "2026-06-17T03:44:18.383",
+      "products": [
+        "lightcms_project:lightcms"
+      ],
+      "published": "2021-04-15T16:15:13.907",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/eddy8/LightCMS/issues/19"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/eddy8/LightCMS/issues/19"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
   "CVE-2021-27160": {
     "added": "2026-09-05",
     "checks_done": 0,
@@ -23028,6 +23184,44 @@
             "Third Party Advisory"
           ],
           "url": "https://pierrekim.github.io/blog/2021-01-12-fiberhome-ont-0day-vulnerabilities.html#httpd-hardcoded-credentials"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2021-27691": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-78"
+      ],
+      "description": "Command Injection in Tenda G0 routers with firmware versions v15.11.0.6(9039)_CN and v15.11.0.5(5876)_CN , and Tenda G1 and G3 routers with firmware versions v15.11.0.17(9502)_CN or v15.11.0.16(9024)_CN allows remote attackers to execute arbitrary OS commands via a crafted action/setDebugCfg request. This occurs because the \"formSetDebugCfg\" function executes glibc's system function with untrusted input.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-27691",
+      "last_modified": "2026-06-17T03:45:20.533",
+      "products": [
+        "tendacn:g0",
+        "tendacn:g0_firmware",
+        "tendacn:g1",
+        "tendacn:g1_firmware",
+        "tendacn:g3",
+        "tendacn:g3_firmware"
+      ],
+      "published": "2021-04-16T00:15:12.007",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://hackmd.io/%40aZYpdinUS2SD-yhAeHwOkw/rkhTCGzMd"
+        },
+        {
+          "tags": [],
+          "url": "https://hackmd.io/%40aZYpdinUS2SD-yhAeHwOkw/rkhTCGzMd"
         }
       ]
     },
@@ -23889,6 +24083,44 @@
       ]
     },
     "next_check": "2026-09-09"
+  },
+  "CVE-2024-11080": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "The Post Grid and Gutenberg Blocks – ComboBlocks plugin for WordPress is vulnerable to Unauthenticated Hook Injection in versions 2.2.32 to 2.3.1 via several functions in the ~/includes/blocks/form-wrap/function.php file. This makes it possible for unauthenticated attackers to execute actions with hooks in WordPress, granted no other security controls are present in the function.",
+      "has_exploit_tag": false,
+      "id": "CVE-2024-11080",
+      "last_modified": "2026-09-05T09:16:48.880",
+      "products": [],
+      "published": "2026-09-05T09:16:48.880",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/post-grid/trunk/includes/blocks/form-wrap/functions.php#L116"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/post-grid/trunk/includes/blocks/form-wrap/functions.php#L262"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/post-grid/trunk/includes/blocks/form-wrap/functions.php#L3249"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/ec8666d4-042e-4cf4-86f5-474a69d90ff6?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
   },
   "CVE-2024-13784": {
     "added": "2026-08-17",
@@ -196205,6 +196437,52 @@
     },
     "next_check": "2026-09-08"
   },
+  "CVE-2026-75586": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Unlimited Elements For Elementor plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via 'formData[id]' Parameter in all versions up to, and including, 2.0.17 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link. The front-end AJAX handler is registered on the public 'wp' action with no nonce, capability, or referer check, and the raw attacker-controlled id value is interpolated verbatim into an exception message that is echoed back without escaping; when the response is served as text/html rather than application/json, the browser parses the injected markup.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-75586",
+      "last_modified": "2026-09-05T08:16:40.600",
+      "products": [],
+      "published": "2026-09-05T08:16:40.600",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/unlimited-elements-for-elementor/trunk/inc_php/framework/helper_base.class.php#L44"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/unlimited-elements-for-elementor/trunk/inc_php/unitecreator_filters_process.class.php#L4083"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/unlimited-elements-for-elementor/trunk/inc_php/unitecreator_form.class.php#L1159"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/unlimited-elements-for-elementor/trunk/inc_php/unitecreator_form.class.php#L179"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/unlimited-elements-for-elementor/trunk/provider/core/unlimited_elements/helper_provider_core.class.php#L746"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/522bdd65-8077-4cd4-800a-e6ef9a982d33?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
   "CVE-2026-75602": {
     "added": "2026-09-04",
     "checks_done": 1,
@@ -197566,36 +197844,6 @@
       ]
     },
     "next_check": "2026-09-20"
-  },
-  "CVE-2026-75865": {
-    "added": "2026-09-01",
-    "checks_done": 4,
-    "cve": {
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-434"
-      ],
-      "description": "The WPLP Cookie Consent – Cookie Banner & Consent Management for GDPR, CCPA & Google Consent Mode plugin for WordPress is vulnerable to arbitrary file upload due to missing file type validation in the saas_upload_logo() function combined with an authorization bypass on the WPLP connector REST endpoints in all versions up to, and including, 4.4.1. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-75865",
-      "last_modified": "2026-09-01T03:16:51.370",
-      "products": [],
-      "published": "2026-09-01T03:16:51.370",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/changeset/3674117/gdpr-cookie-consent"
-        },
-        {
-          "tags": [],
-          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/96a2a552-e73f-4b27-88de-50eb63a8d131?source=cve"
-        }
-      ]
-    },
-    "next_check": "2026-09-06"
   },
   "CVE-2026-75871": {
     "added": "2026-08-27",
@@ -202397,6 +202645,52 @@
       ]
     },
     "next_check": "2026-11-04"
+  },
+  "CVE-2026-76573": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Pods – Custom Content Types and Fields plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'not_found' Shortcode Attribute in all versions up to, and including, 3.3.9.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76573",
+      "last_modified": "2026-09-05T09:16:50.010",
+      "products": [],
+      "published": "2026-09-05T09:16:50.010",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/pods/tags/3.3.9.1/classes/PodsInit.php#L514"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/pods/tags/3.3.9.1/includes/general.php#L1399"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/pods/tags/3.3.9.1/includes/general.php#L2535"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/pods/tags/3.3.9.1/includes/general.php#L2539"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3674726%40pods&new=3674726%40pods"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/82ca2dfc-a820-49d7-bb73-38dbb8406841?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
   },
   "CVE-2026-76574": {
     "added": "2026-08-20",
@@ -220717,6 +221011,36 @@
     },
     "next_check": "2026-09-12"
   },
+  "CVE-2026-81543": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The Abandoned Cart Pro for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 10.7.1. This is due to missing capability checks and nonce verification on multiple AJAX actions including wcap_save_connector_settings, wcap_send_manual_email, wcap_abandoned_cart_info, and wcap_change_manual_email_data. This makes it possible for authenticated attackers, with subscriber-level access and above, to modify SMTP connector settings to route administrator recovery emails through an attacker-controlled server and intercept auto-login links to gain full administrative access. The plugin's auto-login feature must be enabled, which is the default configuration.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81543",
+      "last_modified": "2026-09-05T08:16:40.730",
+      "products": [],
+      "published": "2026-09-05T08:16:40.730",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://woocommerce.com/products/abandoned-cart-pro/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/b8d8aa73-2e68-4353-a603-6fb61ab3406b?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
   "CVE-2026-81572": {
     "added": "2026-08-27",
     "checks_done": 7,
@@ -231604,6 +231928,76 @@
     },
     "next_check": "2026-09-06"
   },
+  "CVE-2026-83625": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Contact Form by Supsystic plugin for WordPress is vulnerable to Stored Cross-Site Scripting via IP Address Header in all versions up to, and including, 1.10.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. An unauthenticated attacker can first call the 'updateNonce' action — which is accessible without authentication due to its absence from the plugin's permission list — to obtain a valid nonce, then submit a contact form with a malicious payload in a spoofed IP header such as X-Forwarded-For.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-83625",
+      "last_modified": "2026-09-05T08:16:40.857",
+      "products": [],
+      "published": "2026-09-05T08:16:40.857",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-by-supsystic/tags/1.10.2/classes/utils.php#L77"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-by-supsystic/tags/1.10.2/modules/forms/controller.php#L390"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-by-supsystic/tags/1.10.2/modules/forms/controller.php#L411"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-by-supsystic/tags/1.10.2/modules/forms/js/admin.forms.contacts.list.js#L204"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-by-supsystic/tags/1.10.2/modules/forms/models/forms.php#L103"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-by-supsystic/tags/1.8.1/classes/utils.php#L77"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-by-supsystic/tags/1.8.1/modules/forms/controller.php#L390"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-by-supsystic/tags/1.8.1/modules/forms/controller.php#L411"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-by-supsystic/tags/1.8.1/modules/forms/js/admin.forms.contacts.list.js#L204"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-by-supsystic/tags/1.8.1/modules/forms/models/forms.php#L103"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3679442%40contact-form-by-supsystic&new=3679442%40contact-form-by-supsystic"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/aa65bced-a449-4ba5-accf-40a824ee464d?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
   "CVE-2026-83627": {
     "added": "2026-09-05",
     "checks_done": 0,
@@ -240026,6 +240420,76 @@
     },
     "next_check": "2026-09-06"
   },
+  "CVE-2026-85414": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Gallery : FooGallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'custom_settings' Shortcode Attribute in all versions up to, and including, 3.3.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85414",
+      "last_modified": "2026-09-05T08:16:40.993",
+      "products": [],
+      "published": "2026-09-05T08:16:40.993",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/foogallery/tags/3.2.6/assets/js/foogallery.4cc6f51b.js#L6599"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/foogallery/tags/3.2.6/assets/js/foogallery.4cc6f51b.js#L7367"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/foogallery/tags/3.2.6/assets/js/foogallery.4cc6f51b.js#L8048"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/foogallery/tags/3.2.6/includes/class-gallery-advanced-settings.php#L138"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/foogallery/tags/3.2.6/includes/functions.php#L301"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/foogallery/trunk/assets/js/foogallery.4cc6f51b.js#L6599"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/foogallery/trunk/assets/js/foogallery.4cc6f51b.js#L7367"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/foogallery/trunk/assets/js/foogallery.4cc6f51b.js#L8048"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/foogallery/trunk/includes/class-gallery-advanced-settings.php#L138"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/foogallery/trunk/includes/functions.php#L301"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3680965/foogallery"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/859e78cd-3dfe-41b9-86dd-6f9db319cad8?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
   "CVE-2026-85424": {
     "added": "2026-09-04",
     "checks_done": 1,
@@ -244700,6 +245164,396 @@
     },
     "next_check": "2026-09-06"
   },
+  "CVE-2026-86111": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "BookWyrm through 0.9.1 fails to validate user visibility permissions in the status edit endpoint, allowing authenticated attackers to read followers-only and direct-message reviews by enumerating sequential status IDs. Attackers can access the raw content of restricted statuses through the edit view, bypassing the privacy protections documented for these message types.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86111",
+      "last_modified": "2026-09-05T10:16:40.963",
+      "products": [],
+      "published": "2026-09-05T10:16:40.963",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/bookwyrm-social/bookwyrm"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/bookwyrm-social/bookwyrm/blob/v0.9.1/bookwyrm/templates/snippets/create_status/content_field.html"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/bookwyrm-social/bookwyrm/blob/v0.9.1/bookwyrm/views/status.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/geo-chen/oss/blob/main/bookwyrm.md#finding-1-authenticated-idor-in-editstatus-exposes-private-review-comment-and-quotation-content"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/bookwyrm-through-0.9.1-insecure-direct-object-reference-in-editstatus-exposes-followers-only-and-direct-statuses"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86113": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "BookWyrm through 0.9.1 contains an authorization bypass vulnerability in the edit_readthrough function that allows authenticated users to modify other users' reading records. Attackers can exploit sequential ReadThrough IDs to overwrite arbitrary users' start dates, finish dates, progress, and progress mode, affecting reading statistics and exported data.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86113",
+      "last_modified": "2026-09-05T10:16:42.273",
+      "products": [],
+      "published": "2026-09-05T10:16:42.273",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/bookwyrm-social/bookwyrm"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/bookwyrm-social/bookwyrm/blob/v0.9.1/bookwyrm/views/status.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/geo-chen/oss/blob/main/bookwyrm.md#finding-3-authenticated-idor-in-edit-readthrough-allows-tampering-with-other-users-reading-progress"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/bookwyrm-through-0.9.1-insecure-direct-object-reference-in-edit-readthrough-allows-tampering-with-other-users-reading-records"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86114": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Arcane versions before 2.0.0 fail to properly restrict template operations, allowing default user role accounts to create, modify, and delete compose templates including instance-wide defaults. Attackers can inject malicious container configurations with privileged settings or host path mounts that execute with administrative privileges when deployed by administrators.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86114",
+      "last_modified": "2026-09-05T10:16:42.423",
+      "products": [],
+      "published": "2026-09-05T10:16:42.423",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/geo-chen/oss/blob/main/arcane.md"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/getarcaneapp/arcane"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/getarcaneapp/arcane/blob/v1.19.5/backend/api/handlers/templates.go"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/getarcaneapp/arcane/commit/1500646aa91f"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/getarcaneapp/arcane/releases/tag/v2.0.0"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/arcane-before-2.0.0-missing-administrator-authorization-on-the-compose-template-mutation-endpoints"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86116": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Metabase versions before 0.63.1 fail to enforce data analyst permission checks on glossary API endpoints, allowing any authenticated user to create, modify, and delete glossary entries. Attackers can submit requests to POST, PUT, and DELETE glossary endpoints to tamper with instance-wide business glossary data without proper authorization.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86116",
+      "last_modified": "2026-09-05T10:16:42.713",
+      "products": [],
+      "published": "2026-09-05T10:16:42.713",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/geo-chen/oss/blob/main/metabase.md"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/metabase/metabase"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/metabase/metabase/blob/v0.62.1/src/metabase/glossary/api.clj"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/metabase/metabase/commit/0a0589299cfd"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/metabase/metabase/releases/tag/v0.63.1"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/metabase-before-0.63.1-missing-function-level-authorization-on-the-glossary-management-api"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86117": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "Coolify through 4.3.17 contains an authentication bypass vulnerability in the OAuth callback handler that signs users into existing accounts based solely on email address without verifying provider assertions or binding OAuth identities. Attackers can register a victim's email address on any enabled OAuth provider to obtain authenticated sessions as that user, bypassing password requirements and two-factor authentication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86117",
+      "last_modified": "2026-09-05T10:16:42.860",
+      "products": [],
+      "published": "2026-09-05T10:16:42.860",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/coollabsio/coolify"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/coollabsio/coolify/blob/v4.3.17/app/Http/Controllers/OauthController.php"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/coollabsio/coolify/blob/v4.3.17/routes/web.php"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/geo-chen/oss/blob/main/coolify.md"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/coolify-through-4.3.17-oauth-account-takeover-via-unverified-email-matching"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86119": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Webstudio through 0.296.0 contains an unauthenticated server-side request forgery vulnerability in the /cgi/image, /cgi/video, and /cgi/asset proxy routes when RESIZE_ORIGIN environment variable is unset. Attackers can supply arbitrary URLs to these endpoints to read cloud instance metadata, access internal services, and perform network reconnaissance on the instance infrastructure.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86119",
+      "last_modified": "2026-09-05T10:16:43.157",
+      "products": [],
+      "published": "2026-09-05T10:16:43.157",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/webstudio-is/webstudio"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/webstudio-is/webstudio/blob/55920c57c4d3e128a0fa48fceabbbc3a1d73f1ef/apps/builder/app/routes/cgi.asset.$.ts"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/webstudio-is/webstudio/blob/55920c57c4d3e128a0fa48fceabbbc3a1d73f1ef/apps/builder/app/routes/cgi.image.$.ts"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/webstudio-is/webstudio/blob/55920c57c4d3e128a0fa48fceabbbc3a1d73f1ef/apps/builder/app/routes/cgi.video.$.ts"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/webstudio-is/webstudio/issues/5816"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/webstudio-through-0.296.0-ssrf-via-cgi-proxy-routes"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86121": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "Cua computer-server versions before 0.3.42 skip authentication when the CONTAINER_NAME environment variable is unset and bind to all interfaces by default, allowing unauthenticated attackers to execute arbitrary commands. Attackers can reach TCP port 8000 to run shell commands via the run_command endpoint, read and write arbitrary files through file operation endpoints, and access interactive PTY shells without authentication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86121",
+      "last_modified": "2026-09-05T10:16:43.463",
+      "products": [],
+      "published": "2026-09-05T10:16:43.463",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/trycua/cua"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/trycua/cua/blob/10a2e71792db/libs/python/computer-server/computer_server/cli.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/trycua/cua/blob/10a2e71792db/libs/python/computer-server/computer_server/main.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/trycua/cua/commit/59cf25c0ec54"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/trycua/cua/issues/1892"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/cua-computer-server-before-0.3.42-unauthenticated-rce-via-desktop-control"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86123": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "SQL Chat contains four unauthenticated API endpoints that accept client-supplied database connection parameters and execute arbitrary SQL queries against attacker-specified hosts. Attackers can connect to internal databases, execute SQL commands, enumerate schemas, and pivot into the server's network without authentication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86123",
+      "last_modified": "2026-09-05T10:16:43.750",
+      "products": [],
+      "published": "2026-09-05T10:16:43.750",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/sqlchat/sqlchat"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sqlchat/sqlchat/blob/665af875413affadfeefff81794f1d7758782bc2/src/pages/api/connection/execute.ts"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sqlchat/sqlchat/blob/665af875413affadfeefff81794f1d7758782bc2/src/pages/api/connection/test.ts"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sqlchat/sqlchat/issues/189"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/sql-chat-unauthenticated-database-connection-proxy-in-the-api-connection-endpoints"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86124": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "AutoAgent contains an unauthenticated remote code execution vulnerability in the TCP server that binds to all interfaces and executes attacker-supplied commands as root. Attackers can connect to the exposed communication port and execute arbitrary bash commands within the container, gaining access to bind-mounted host workspace directories.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86124",
+      "last_modified": "2026-09-05T10:16:43.900",
+      "products": [],
+      "published": "2026-09-05T10:16:43.900",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/HKUDS/AutoAgent"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/HKUDS/AutoAgent/blob/16c12b052ef2330a198063c62a07a7f9723031e3/autoagent/environment/docker_env.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/HKUDS/AutoAgent/blob/16c12b052ef2330a198063c62a07a7f9723031e3/autoagent/environment/tcp_server.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/HKUDS/AutoAgent/issues/96"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/autoagent-unauthenticated-remote-code-execution-via-the-sandbox-tcp-command-server"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
   "CVE-2026-86138": {
     "added": "2026-09-05",
     "checks_done": 0,
@@ -244883,6 +245737,194 @@
         {
           "tags": [],
           "url": "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-3r4p-g7gg-ppmf"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86169": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-829"
+      ],
+      "description": "Axolotl through 0.18.0 contains a remote code execution vulnerability in the multipack patch path where trust_remote_code defaults to None instead of False, causing the security guard to be bypassed. Attackers can execute arbitrary Python code by crafting a malicious Hugging Face model repository selected as base_model, which is loaded with hardcoded trust_remote_code=True during AutoModelForCausalLM.from_pretrained.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86169",
+      "last_modified": "2026-09-05T11:16:45.703",
+      "products": [],
+      "published": "2026-09-05T11:16:45.703",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/axolotl-ai-cloud/axolotl"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/axolotl-ai-cloud/axolotl/blob/v0.18.0/src/axolotl/loaders/patch_manager.py#L794-L806"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/axolotl-ai-cloud/axolotl/blob/v0.18.0/src/axolotl/monkeypatch/multipack.py#L86-L96"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/axolotl-ai-cloud/axolotl/commit/b62d60b101eea7f32532ee3c0b17c2f2430a9262"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/axolotl-ai-cloud/axolotl/pull/3858"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/axolotl-through-0.18.0-remote-code-execution-via-multipack-patching"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86173": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "MindsDB through 26.1.0 contains a server-side request forgery vulnerability in the web crawler handler that allows unauthenticated attackers to fetch arbitrary URLs by supplying caller-controlled URLs to CrawlerTable.list. Attackers can bypass the allowlist control by exploiting the default empty configuration and access internal services and cloud metadata endpoints without authentication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86173",
+      "last_modified": "2026-09-05T11:16:45.850",
+      "products": [],
+      "published": "2026-09-05T11:16:45.850",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/mindsdb/mindshub"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/mindsdb/mindshub/blob/v26.1.0/mindsdb/integrations/handlers/web_handler/web_handler.py#L50-L65"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/mindsdb/mindshub/blob/v26.1.0/mindsdb/utilities/config.py#L273"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/mindsdb/mindshub/issues/12480"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/mindsdb-through-26.1.0-unauthenticated-ssrf-via-web-crawler"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86175": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-522"
+      ],
+      "description": "NetBox through 4.7.0 fails to redact sensitive data source backend credentials in REST and GraphQL API responses. Authenticated users with only view permission can retrieve plaintext passwords and secret keys for Git and Amazon S3 backends through API endpoints, gaining unauthorized access to external repositories and storage buckets.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86175",
+      "last_modified": "2026-09-05T11:16:46.123",
+      "products": [],
+      "published": "2026-09-05T11:16:46.123",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/geo-chen/oss/blob/main/netbox.md#finding-2-netbox-data-source-backend-credentials-git-password--s3-secret-key-returned-in-plaintext-via-rest-api-and-graphql-to-users-with-only-view-permission-incomplete-fix-of-12625"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/netbox-community/netbox"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/netbox-community/netbox/blob/v4.7.0/netbox/core/api/serializers_/data.py#L26-L32"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/netbox-community/netbox/blob/v4.7.0/netbox/core/data_backends.py#L80"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/netbox-community/netbox/blob/v4.7.0/netbox/core/graphql/types.py#L30-L38"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/netbox-community/netbox/issues/12625"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/netbox-through-4.7.0-credential-disclosure-via-rest-and-graphql-apis"
+        }
+      ]
+    },
+    "next_check": "2026-09-06"
+  },
+  "CVE-2026-86177": {
+    "added": "2026-09-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Pterodactyl Panel before 1.14.1 fails to validate action-specific permissions in scheduled task creation, allowing subusers with only schedule.update permission to execute arbitrary console commands. Attackers can create and immediately trigger scheduled tasks that run game-server console commands, control server power state, or create backups without proper authorization checks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86177",
+      "last_modified": "2026-09-05T11:16:46.397",
+      "products": [],
+      "published": "2026-09-05T11:16:46.397",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/geo-chen/oss/blob/main/panel.md"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pterodactyl/panel"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pterodactyl/panel/blob/v1.14.0/app/Http/Requests/Api/Client/Servers/Schedules/StoreTaskRequest.php#L10-L25"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pterodactyl/panel/blob/v1.14.0/app/Jobs/Schedule/RunTaskJob.php#L60-L75"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pterodactyl/panel/commit/913b354aff43ff04fce95357ed68a675a1dd0fa6"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pterodactyl/panel/releases/tag/v1.14.1"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pterodactyl-panel-before-1.14.1-privilege-escalation-via-schedule-tasks"
         }
       ]
     },

@@ -1,17 +1,1 @@
-{
-  "CVE-2026-54527": {
-    "package": "NPM:@jupyterlab/git"
-  },
-  "CVE-2026-69249": {
-    "package": "PIP:cryptography"
-  },
-  "CVE-2026-72793": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
-  },
-  "CVE-2026-73557": {
-    "package": "PIP:vllm"
-  },
-  "CVE-2026-73842": {
-    "package": "GO:github.com/openchoreo/openchoreo"
-  }
-}
+{}
