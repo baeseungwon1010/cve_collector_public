@@ -1,95 +1,17 @@
 {
-  "CVE-2024-58356": {
-    "package": "RUST:surrealdb-core"
+  "CVE-2026-54527": {
+    "package": "NPM:@jupyterlab/git"
   },
-  "CVE-2024-58367": {
-    "package": "RUST:surrealdb-core"
+  "CVE-2026-69249": {
+    "package": "PIP:cryptography"
   },
-  "CVE-2024-58368": {
-    "package": "RUST:surrealdb"
-  },
-  "CVE-2025-71390": {
-    "package": "RUST:SurrealDB"
-  },
-  "CVE-2025-71398": {
-    "package": "RUST:surrealdb"
-  },
-  "CVE-2026-11720": {
-    "package": "GO:github.com/googleapis/mcp-toolbox"
-  },
-  "CVE-2026-13676": {
-    "package": "NPM:fast-uri"
-  },
-  "CVE-2026-33264": {
-    "package": "PIP:apache-airflow"
-  },
-  "CVE-2026-48828": {
-    "package": "PIP:apache-airflow"
-  },
-  "CVE-2026-48892": {
-    "package": "PIP:apache-airflow"
-  },
-  "CVE-2026-49297": {
-    "package": "PIP:apache-airflow-providers-google"
-  },
-  "CVE-2026-49486": {
-    "package": "PIP:apache-airflow-providers-ftp"
-  },
-  "CVE-2026-49487": {
-    "package": "PIP:apache-airflow"
-  },
-  "CVE-2026-56695": {
-    "package": "PIP:openharness-ai"
-  },
-  "CVE-2026-63735": {
-    "package": "RUST:surrealdb"
-  },
-  "CVE-2026-63740": {
-    "package": "RUST:surrealdb"
-  },
-  "CVE-2026-63743": {
-    "package": "RUST:surrealdb"
-  },
-  "CVE-2026-63755": {
-    "package": "RUST:surrealdb"
-  },
-  "CVE-2026-63760": {
-    "package": "RUST:surrealdb"
-  },
-  "CVE-2026-72794": {
+  "CVE-2026-72793": {
     "package": "GO:github.com/siyuan-note/siyuan/kernel"
   },
-  "CVE-2026-72795": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
+  "CVE-2026-73557": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-72798": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
-  },
-  "CVE-2026-75856": {
-    "package": "NPM:codewhale"
-  },
-  "CVE-2026-75857": {
-    "package": "NPM:codewhale"
-  },
-  "CVE-2026-75858": {
-    "package": "NPM:codewhale"
-  },
-  "CVE-2026-75859": {
-    "package": "NPM:codewhale"
-  },
-  "CVE-2026-75911": {
-    "package": "NPM:codewhale"
-  },
-  "CVE-2026-75912": {
-    "package": "NPM:codewhale"
-  },
-  "CVE-2026-75913": {
-    "package": "NPM:codewhale"
-  },
-  "CVE-2026-75914": {
-    "package": "NPM:codewhale"
-  },
-  "CVE-2026-75915": {
-    "package": "NPM:codewhale"
+  "CVE-2026-73842": {
+    "package": "GO:github.com/openchoreo/openchoreo"
   }
 }
