@@ -1772,15 +1772,6 @@
     "poc_source": "github_search",
     "published": "2026-08-18T19:16:51.290"
   },
-  "CVE-2026-47851": {
-    "cvss_score": 7.5,
-    "cvss_severity": "HIGH",
-    "kev": false,
-    "poc_confirmed_date": "2026-08-28",
-    "poc_published_date": "2026-08-27",
-    "poc_source": "github_search",
-    "published": "2026-08-27T01:17:32.150"
-  },
   "CVE-2026-47858": {
     "cvss_score": 8.0,
     "cvss_severity": "HIGH",
