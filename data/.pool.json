@@ -20894,6 +20894,46 @@
     },
     "next_check": "2026-09-07"
   },
+  "CVE-2020-22212": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "SQL Injection in 74cms 3.2.0 via the id parameter to wap/wap-company-show.php.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-22212",
+      "last_modified": "2026-06-17T03:04:11.387",
+      "products": [
+        "74cms:74cms"
+      ],
+      "published": "2021-06-16T18:15:07.890",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/blindkey/cve_like/issues/14"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/blindkey/cve_like/issues/14"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2020-2279": {
     "added": "2026-09-03",
     "checks_done": 3,
@@ -21307,6 +21347,69 @@
             "Vendor Advisory"
           ],
           "url": "https://treck.com/vulnerability-response-information/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2020-25753": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "An issue was discovered on Enphase Envoy R3.x and D4.x devices with v3 software. The default admin password is set to the last 6 digits of the serial number. The serial number can be retrieved by an unauthenticated user at /info.xml.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-25753",
+      "last_modified": "2026-06-17T03:07:14.667",
+      "products": [
+        "enphase:envoy",
+        "enphase:envoy_firmware"
+      ],
+      "published": "2021-06-16T19:15:23.380",
+      "references": [
+        {
+          "tags": [
+            "Product",
+            "Vendor Advisory"
+          ],
+          "url": "https://enphase.com/en-us/products-and-services/envoy-and-combiner"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://medium.com/stage-2-security/can-solar-controllers-be-used-to-generate-fake-clean-energy-credits-4a7322e7661a"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://stage2sec.com"
+        },
+        {
+          "tags": [
+            "Product",
+            "Vendor Advisory"
+          ],
+          "url": "https://enphase.com/en-us/products-and-services/envoy-and-combiner"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://medium.com/stage-2-security/can-solar-controllers-be-used-to-generate-fake-clean-energy-credits-4a7322e7661a"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://stage2sec.com"
         }
       ]
     },
@@ -22808,6 +22911,44 @@
     },
     "next_check": "2026-09-07"
   },
+  "CVE-2021-21777": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "An information disclosure vulnerability exists in the Ethernet/IP UDP handler functionality of EIP Stack Group OpENer 2.3 and development commit 8c73bf3. A specially crafted network request can lead to an out-of-bounds read.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-21777",
+      "last_modified": "2026-06-17T03:36:05.997",
+      "products": [
+        "opener_project:opener"
+      ],
+      "published": "2021-06-17T11:15:07.707",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2021-1234"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2021-1234"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2021-22668": {
     "added": "2026-09-06",
     "checks_done": 0,
@@ -23717,6 +23858,73 @@
     },
     "next_check": "2026-09-07"
   },
+  "CVE-2021-32691": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-303"
+      ],
+      "description": "Apollos Apps is an open source platform for launching church-related apps. In Apollos Apps versions prior to 2.20.0, new user registrations are able to access anyone's account by only knowing their basic profile information (name, birthday, gender, etc). This includes all app functionality within the app, as well as any authenticated links to Rock-based webpages (such as giving and events). There is a patch in version 2.20.0. As a workaround, one can patch one's server by overriding the `create` data source method on the `People` class.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-32691",
+      "last_modified": "2026-06-17T03:53:26.140",
+      "products": [
+        "apollosapp:data-connector-rock"
+      ],
+      "published": "2021-06-16T22:15:07.830",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/ApollosProject/apollos-apps/commit/cb5f8f1c0b24f1b215b2bb5eb6f9a8e16d728ce2"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/ApollosProject/apollos-apps/releases/tag/v2.20.0"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/ApollosProject/apollos-apps/security/advisories/GHSA-r578-pj6f-r4ff"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/ApollosProject/apollos-apps/commit/cb5f8f1c0b24f1b215b2bb5eb6f9a8e16d728ce2"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/ApollosProject/apollos-apps/releases/tag/v2.20.0"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/ApollosProject/apollos-apps/security/advisories/GHSA-r578-pj6f-r4ff"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2021-3402": {
     "added": "2026-09-06",
     "checks_done": 0,
@@ -23797,6 +24005,74 @@
             "Third Party Advisory"
           ],
           "url": "https://www.x41-dsec.de/lab/advisories/x41-2021-001-yara/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2021-34813": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "Matrix libolm before 3.2.3 allows a malicious Matrix homeserver to crash a client (while it is attempting to retrieve an Olm encrypted room key backup from the homeserver) because olm_pk_decrypt has a stack-based buffer overflow. Remote code execution might be possible for some nonstandard build configurations.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-34813",
+      "last_modified": "2026-06-17T03:56:36.990",
+      "products": [
+        "matrix:olm"
+      ],
+      "published": "2021-06-16T18:15:09.730",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://gitlab.matrix.org/matrix-org/olm/-/commit/ccc0d122ee1b4d5e5ca4ec1432086be17d5f901b"
+        },
+        {
+          "tags": [
+            "Release Notes",
+            "Vendor Advisory"
+          ],
+          "url": "https://gitlab.matrix.org/matrix-org/olm/-/releases/3.2.3"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://matrix.org/blog/2021/06/14/adventures-in-fuzzing-libolm"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://gitlab.matrix.org/matrix-org/olm/-/commit/ccc0d122ee1b4d5e5ca4ec1432086be17d5f901b"
+        },
+        {
+          "tags": [
+            "Release Notes",
+            "Vendor Advisory"
+          ],
+          "url": "https://gitlab.matrix.org/matrix-org/olm/-/releases/3.2.3"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://matrix.org/blog/2021/06/14/adventures-in-fuzzing-libolm"
         }
       ]
     },
@@ -39958,6 +40234,36 @@
     },
     "next_check": "2026-10-29"
   },
+  "CVE-2026-16310": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "The MemberDash plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.8.5 via the 'id' parameter due to missing validation on a user controlled key. This makes it possible for unauthenticated attackers to change the password of any WordPress user, including administrators, by supplying an arbitrary user ID during registration, and take over their account without any notification sent to the victim.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-16310",
+      "last_modified": "2026-09-06T03:17:15.540",
+      "products": [],
+      "published": "2026-09-06T03:17:15.540",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.memberdashwp.com"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/222e0f27-f269-4751-9544-1a6cb03ab3a7?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2026-16315": {
     "added": "2026-08-07",
     "checks_done": 9,
@@ -54063,6 +54369,52 @@
       ]
     },
     "next_check": "2026-09-19"
+  },
+  "CVE-2026-18056": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "The HivePress Authentication plugin for WordPress is vulnerable to Authentication Bypass via the access_token parameter in all versions up to, and including, 1.1.4. This is due to the authenticate_user function's Facebook authenticator resolving third-party identity by forwarding the attacker-supplied access_token to the Facebook Graph API and trusting the returned email and ID verbatim, without performing any application ID or audience validation — specifically, no /debug_token verification and no comparison of the token's app_id against the configured hp_facebook_app_id. This makes it possible for unauthenticated attackers to authenticate as any existing WordPress user, including administrators, whose email address is associated with a Facebook account for which the attacker can obtain any valid access token. Important Note: To exploit the vulnerability, the attacker must obtain the victim's access token.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-18056",
+      "last_modified": "2026-09-06T03:17:16.467",
+      "products": [],
+      "published": "2026-09-06T03:17:16.467",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://developers.facebook.com/docs/facebook-login/guides/advanced/manual-flow/#confirm"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/hivepress/hivepress-authentication/commit/f97d9109002905cf57597d15c535d1155dc64657"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/hivepress-authentication/tags/1.1.4/includes/components/class-facebook-authentication.php#L59"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/hivepress-authentication/tags/1.1.4/includes/controllers/class-authentication.php#L84"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3664231/hivepress-authentication"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/c0ba6392-e6f7-479a-8b9b-9cea4b140c71?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
   },
   "CVE-2026-18057": {
     "added": "2026-08-13",
@@ -197245,6 +197597,56 @@
     },
     "next_check": "2026-09-11"
   },
+  "CVE-2026-75816": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Authentication Bypass to Account Takeover in all versions up to, and including, 3.29.12. This is due to the pre_update_value function lacking any capability or ownership check, and ActionPost::conditions_logic() short-circuiting its current_user_can('edit_post') authorization gate whenever the post ID is non-numeric — such as the string user_1 — allowing unauthenticated form submissions to be routed to arbitrary user records without restriction. This makes it possible for unauthenticated attackers to overwrite any user's registered email address, including an administrator's, and then leverage WordPress's native password-reset flow to fully take over the targeted account.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-75816",
+      "last_modified": "2026-09-06T03:17:16.607",
+      "products": [],
+      "published": "2026-09-06T03:17:16.607",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.10/main/frontend/fields/user/class-user-email.php#L127"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.10/main/frontend/forms/actions/post.php#L1001"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.10/main/frontend/forms/actions/post.php#L1224"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.10/main/frontend/forms/classes/display.php#L26"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/acf-frontend-form-element/tags/3.29.10/main/frontend/forms/classes/submit.php#L125"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3664865/acf-frontend-form-element"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/f1637a3b-7b0f-485d-9d19-4f711f8c671b?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2026-75827": {
     "added": "2026-08-19",
     "checks_done": 8,
@@ -246028,6 +246430,480 @@
     },
     "next_check": "2026-09-07"
   },
+  "CVE-2026-86159": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A flaw has been found in SourceCodester Online Voting System 1.0. Impacted is an unknown function of the file /ajax.php?action=save_user. This manipulation of the argument ID causes sql injection. The attack may be initiated remotely. The exploit has been published and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86159",
+      "last_modified": "2026-09-06T03:17:16.730",
+      "products": [],
+      "published": "2026-09-06T03:17:16.730",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/lwcc223/CVE/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86159"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895412"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399284"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399284/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86160": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability has been found in SourceCodester Online Voting System 1.0. The affected element is an unknown function of the file /ajax.php?action=delete_voting. Such manipulation of the argument ID leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86160",
+      "last_modified": "2026-09-06T03:17:16.913",
+      "products": [],
+      "published": "2026-09-06T03:17:16.913",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/lwcc223/CVE/issues/2"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86160"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895415"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399285"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399285/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86161": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was found in SourceCodester Online Voting System 1.0. The impacted element is an unknown function of the file /ajax.php?action=delete_category. Performing a manipulation of the argument ID results in sql injection. Remote exploitation of the attack is possible. The exploit has been made public and could be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86161",
+      "last_modified": "2026-09-06T03:17:17.067",
+      "products": [],
+      "published": "2026-09-06T03:17:17.067",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/lwcc223/CVE/issues/3"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86161"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895416"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399286"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399286/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86162": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was determined in SourceCodester Online Voting System 1.0. This affects an unknown function of the file /ajax.php?action=login. Executing a manipulation of the argument Username can lead to sql injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86162",
+      "last_modified": "2026-09-06T03:17:17.220",
+      "products": [],
+      "published": "2026-09-06T03:17:17.220",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Aurora-Song/cve/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86162"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895450"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399287"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399287/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86163": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was identified in itsourcecode Sales and Inventory System 1.0. This impacts an unknown function of the file /pages/pro_del.php. The manipulation of the argument ID leads to sql injection. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86163",
+      "last_modified": "2026-09-06T04:18:30.320",
+      "products": [],
+      "published": "2026-09-06T04:18:30.320",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/CSDVi/cve/issues/3"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86163"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895531"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399288"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399288/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86164": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security flaw has been discovered in itsourcecode Sales and Inventory System 1.0. Affected is an unknown function of the file /pages/trans_view.php. The manipulation of the argument ID results in sql injection. The attack may be performed from remote. The exploit has been released to the public and may be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86164",
+      "last_modified": "2026-09-06T04:18:31.037",
+      "products": [],
+      "published": "2026-09-06T04:18:31.037",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ltranquility/submit_repository/issues/4"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86164"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895549"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399289"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399289/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86165": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "description": "A vulnerability was found in Tenda HG10 300001138. This vulnerability affects the function formURL of the file /boaform/admin/formURL. Performing a manipulation of the argument Keywd/urlFQDN results in buffer overflow. The attack may be initiated remotely. The exploit has been made public and could be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86165",
+      "last_modified": "2026-09-06T04:18:32.523",
+      "products": [],
+      "published": "2026-09-06T04:18:32.523",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/SunnyYANGyaya/cuicuishark-sheep-fishIOT/blob/main/Tenda/HG10/bof-formURL-keywd.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86165"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895583"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895594"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399304"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399304/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.tenda.com.cn/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86166": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-120"
+      ],
+      "description": "A vulnerability was determined in Tenda HG10 300001138. This issue affects the function formWanRedirect of the file /boaform/formWanRedirect of the component Boa Web Server. Executing a manipulation of the argument if can lead to buffer overflow. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86166",
+      "last_modified": "2026-09-06T04:18:32.783",
+      "products": [],
+      "published": "2026-09-06T04:18:32.783",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/SunnyYANGyaya/cuicuishark-sheep-fishIOT/blob/main/Tenda/HG10/bof-formWanRedirect-if.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86166"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895595"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399305"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399305/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.tenda.com.cn/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86167": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A vulnerability was identified in Tenda HG10 300001138. Impacted is the function formgponConf of the file /boaform/admin/formgponConf of the component Boa. The manipulation of the argument fmgpon_loid leads to os command injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86167",
+      "last_modified": "2026-09-06T05:16:50.477",
+      "products": [],
+      "published": "2026-09-06T05:16:50.477",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/SunnyYANGyaya/cuicuishark-sheep-fishIOT/blob/main/Tenda/HG10/command-formgponConf-fmgpon_loid.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86167"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895596"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399306"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399306/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.tenda.com.cn/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86168": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security flaw has been discovered in code-projects Content Management System 1.0. The affected element is an unknown function of the file /login.php. The manipulation of the argument user_name results in sql injection. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86168",
+      "last_modified": "2026-09-06T05:16:50.673",
+      "products": [],
+      "published": "2026-09-06T05:16:50.673",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://code-projects.org/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ahmadmarz10-hub/CVEsMarz/blob/main/SQL%20Injection%20Vulnerability%20in%20Content%20Management%20System%20%60user_name%60%20Parameter.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86168"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895608"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399307"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399307/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2026-86169": {
     "added": "2026-09-05",
     "checks_done": 1,
@@ -246069,6 +246945,92 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/axolotl-through-0.18.0-remote-code-execution-via-multipack-patching"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86170": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A weakness has been identified in DefaultFuction CRM 1.0.0. The impacted element is an unknown function of the file /modules/orders/edit.php. This manipulation of the argument ID causes sql injection. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86170",
+      "last_modified": "2026-09-06T06:16:41.403",
+      "products": [],
+      "published": "2026-09-06T06:16:41.403",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/DefaultFuction/Customer-Relationship-Management-System/issues/3"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86170"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895742"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399308"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399308/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86171": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security vulnerability has been detected in DefaultFuction CRM 1.0.0. This affects an unknown function of the file /modules/orders/delete.php. Such manipulation of the argument ID leads to sql injection. The attack may be performed from remote. The exploit has been disclosed publicly and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86171",
+      "last_modified": "2026-09-06T07:16:43.633",
+      "products": [],
+      "published": "2026-09-06T07:16:43.633",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/DefaultFuction/Customer-Relationship-Management-System/issues/4"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86171"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895743"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399309"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399309/cti"
         }
       ]
     },
