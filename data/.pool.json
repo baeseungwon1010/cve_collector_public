@@ -20801,6 +20801,56 @@
     },
     "next_check": "2026-09-07"
   },
+  "CVE-2020-14032": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "ASRock 4x4 BOX-R1000 before BIOS P1.40 allows privilege escalation via code execution in the SMM.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-14032",
+      "last_modified": "2026-06-17T02:54:08.213",
+      "products": [
+        "asrock:box-r1000_firmware"
+      ],
+      "published": "2021-07-23T11:15:08.443",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://dannyodler.medium.com/attacking-the-golden-ring-on-amd-mini-pc-b7bfb217b437"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.asrock.com/support/index.us.asp?cat=BIOS"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://dannyodler.medium.com/attacking-the-golden-ring-on-amd-mini-pc-b7bfb217b437"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.asrock.com/support/index.us.asp?cat=BIOS"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2020-16147": {
     "added": "2026-09-03",
     "checks_done": 3,
@@ -23102,6 +23152,186 @@
             "Third Party Advisory"
           ],
           "url": "https://www.twcert.org.tw/tw/cp-132-4518-c813c-1.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2021-24036": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-122",
+        "CWE-190"
+      ],
+      "description": "Passing an attacker controlled size when creating an IOBuf could cause integer overflow, leading to an out of bounds write on the heap with the possibility of remote code execution. This issue affects versions of folly prior to v2021.07.22.00. This issue affects HHVM versions prior to 4.80.5, all versions between 4.81.0 and 4.102.1, all versions between 4.103.0 and 4.113.0, and versions 4.114.0, 4.115.0, 4.116.0, 4.117.0, 4.118.0 and 4.118.1.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-24036",
+      "last_modified": "2026-06-17T03:39:11.957",
+      "products": [
+        "facebook:folly",
+        "facebook:hhvm"
+      ],
+      "published": "2021-07-23T01:15:07.073",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/facebook/folly/commit/4f304af1411e68851bdd00ef6140e9de4616f7d3"
+        },
+        {
+          "tags": [
+            "Product",
+            "Vendor Advisory"
+          ],
+          "url": "https://hhvm.com/blog/2021/07/20/security-update.html"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.facebook.com/security/advisories/cve-2021-24036"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/facebook/folly/commit/4f304af1411e68851bdd00ef6140e9de4616f7d3"
+        },
+        {
+          "tags": [
+            "Product",
+            "Vendor Advisory"
+          ],
+          "url": "https://hhvm.com/blog/2021/07/20/security-update.html"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.facebook.com/security/advisories/cve-2021-24036"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2021-25203": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "Arbitrary file upload vulnerability in Victor CMS v 1.0 allows attackers to execute arbitrary code via the file upload to \\CMSsite-master\\admin\\includes\\admin_add_post.php.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-25203",
+      "last_modified": "2026-06-17T03:41:37.640",
+      "products": [
+        "victor_cms_project:victor_cms"
+      ],
+      "published": "2021-07-23T14:15:08.087",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/TCSWT/Victor-CMS/blob/main/README.md"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/TCSWT/Victor-CMS/blob/main/README.md"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2021-25206": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "Arbitrary file upload vulnerability in SourceCodester Responsive Ordering System v 1.0 allows attackers to execute arbitrary code via the file upload to Product_model.php.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-25206",
+      "last_modified": "2026-06-17T03:41:37.983",
+      "products": [
+        "responsive_ordering_system_project:responsive_ordering_system"
+      ],
+      "published": "2021-07-23T14:15:08.317",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/BigTiger2020/Responsive-Ordering-System/blob/main/Responsive%20Ordering%20System.md"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/BigTiger2020/Responsive-Ordering-System/blob/main/Responsive%20Ordering%20System.md"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2021-25207": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "Arbitrary file upload vulnerability in SourceCodester E-Commerce Website v 1.0 allows attackers to execute arbitrary code via the file upload to prodViewUpdate.php.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-25207",
+      "last_modified": "2026-06-17T03:41:38.110",
+      "products": [
+        "e-commerce_website_project:e-commerce_website"
+      ],
+      "published": "2021-07-23T13:15:07.747",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/BigTiger2020/E-Commerce-Website/blob/main/E-Commerce%20Website%20-upload.md"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/BigTiger2020/E-Commerce-Website/blob/main/E-Commerce%20Website%20-upload.md"
         }
       ]
     },
@@ -58760,6 +58990,32 @@
     },
     "next_check": "2026-09-12"
   },
+  "CVE-2026-18480": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The SureCart  WordPress plugin before 4.6.3 does not ensure that the account affected by a customer update is the same account its permission check authorised, allowing users with a subscriber-level account to change another user's email address, including an administrator's, and take over that account via a password reset. It further allows an attacker-controlled customer record to be associated with an arbitrary user, and discloses customer identifiers and email addresses to any authenticated user, which together make the takeover reachable from a subscriber-level account alone.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-18480",
+      "last_modified": "2026-09-06T11:18:00.657",
+      "products": [],
+      "published": "2026-09-06T07:16:43.097",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/88839ada-9c59-44cb-96e6-3548e5a59b9f/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2026-18481": {
     "added": "2026-07-31",
     "checks_done": 9,
@@ -74412,6 +74668,32 @@
       ]
     },
     "next_check": "2026-09-10"
+  },
+  "CVE-2026-19859": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74"
+      ],
+      "description": "The JetFormBuilder WordPress plugin before 3.6.5.2 does not sanitize a request parameter before rendering it as message content, allowing unauthenticated users to execute arbitrary shortcodes registered on the site on any page displaying a form. Escaping is applied to that content before a later shortcode-expansion pass rather than after it, so the escaping can be bypassed.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19859",
+      "last_modified": "2026-09-06T11:18:00.937",
+      "products": [],
+      "published": "2026-09-06T10:17:13.577",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/19c115a5-4280-4b78-a460-140ecfc78d4f/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
   },
   "CVE-2026-19875": {
     "added": "2026-08-20",
@@ -197443,6 +197725,32 @@
     },
     "next_check": "2026-09-18"
   },
+  "CVE-2026-75793": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-284"
+      ],
+      "description": "The SureCart  WordPress plugin before 4.7.0 does not consult the site's user registration setting before creating WordPress accounts, allowing unauthenticated users to create an account and receive a logged-in session even when registration is disabled.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-75793",
+      "last_modified": "2026-09-06T11:18:01.323",
+      "products": [],
+      "published": "2026-09-06T07:16:43.220",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/d1c2ea43-2643-4cdf-8dfe-e11109266f51/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2026-75796": {
     "added": "2026-08-22",
     "checks_done": 8,
@@ -232750,6 +233058,32 @@
     },
     "next_check": "2026-11-04"
   },
+  "CVE-2026-84028": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Bold Page Builder WordPress plugin before 5.9.9 does not sanitise and escape a shortcode attribute before outputting it in an HTML attribute, allowing users with the Contributor role and above to inject arbitrary web scripts that execute when a user views the affected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84028",
+      "last_modified": "2026-09-06T11:18:03.790",
+      "products": [],
+      "published": "2026-09-06T07:16:43.320",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/6abd5d49-af3a-4515-ba33-57b56a9fba4e/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2026-84059": {
     "added": "2026-09-01",
     "checks_done": 5,
@@ -233953,6 +234287,32 @@
         {
           "tags": [],
           "url": "https://github.com/jolokia/jolokia/issues/1049"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-84219": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Kirki  WordPress plugin before 6.3.0 does not hold back every spelling of the HTML entities it decodes when rendering, allowing unauthenticated users to store JavaScript in a comment which then runs in the session of anyone viewing a page that displays it, including an administrator, and on every page of the site when its header or footer is built to show comments.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84219",
+      "last_modified": "2026-09-06T11:18:03.950",
+      "products": [],
+      "published": "2026-09-06T07:16:43.427",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/e95bd1e3-6f61-423f-add6-519e1ca7bf66/"
         }
       ]
     },
@@ -247036,6 +247396,49 @@
     },
     "next_check": "2026-09-07"
   },
+  "CVE-2026-86172": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was detected in DefaultFuction CRM 1.0.0. This impacts an unknown function of the file /modules/customers/delete.php. Performing a manipulation of the argument ID results in sql injection. It is possible to initiate the attack remotely. The exploit is now public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86172",
+      "last_modified": "2026-09-06T08:16:40.760",
+      "products": [],
+      "published": "2026-09-06T08:16:40.760",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/DefaultFuction/Customer-Relationship-Management-System/issues/5"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86172"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895744"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399310"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399310/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
   "CVE-2026-86173": {
     "added": "2026-09-05",
     "checks_done": 1,
@@ -247173,6 +247576,53 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/pterodactyl-panel-before-1.14.1-privilege-escalation-via-schedule-tasks"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86180": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability has been found in code-projects Task Management System In PHP 1.0. Affected by this vulnerability is an unknown functionality of the file /index.php of the component Login. The manipulation of the argument email leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86180",
+      "last_modified": "2026-09-06T08:16:41.910",
+      "products": [],
+      "published": "2026-09-06T08:16:41.910",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://code-projects.org/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ahmadmarz10-hub/CVEsMarz/blob/main/Task%20Management%20System%20in%20PHP%20%E2%80%93%20SQL%20Injection%20in%20%60email%60%20Parameter.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86180"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/896122"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399312"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399312/cti"
         }
       ]
     },
@@ -247407,6 +247857,190 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-information-disclosure-via-attribute-view"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86208": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security flaw has been discovered in SourceCodester Class and Exam Timetabling System 1.0. This impacts an unknown function of the file /delete_teacher.php. The manipulation of the argument ID results in sql injection. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86208",
+      "last_modified": "2026-09-06T10:17:14.933",
+      "products": [],
+      "published": "2026-09-06T10:17:14.933",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/justconter/cve/issues/10"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86208"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/896588"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399343"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399343/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86209": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A weakness has been identified in SourceCodester Class and Exam Timetabling System 1.0. Affected is an unknown function of the file /delete_user.php. This manipulation of the argument ID causes sql injection. The attack may be initiated remotely. The exploit has been made available to the public and could be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86209",
+      "last_modified": "2026-09-06T10:17:15.163",
+      "products": [],
+      "published": "2026-09-06T10:17:15.163",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/justconter/cve/issues/9"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86209"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/896589"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399344"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399344/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86210": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security vulnerability has been detected in SourceCodester Class and Exam Timetabling System 1.0. Affected by this vulnerability is an unknown functionality of the file /delete_user_account.php. Such manipulation of the argument ID leads to sql injection. The attack may be launched remotely. The exploit has been disclosed publicly and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86210",
+      "last_modified": "2026-09-06T10:17:15.330",
+      "products": [],
+      "published": "2026-09-06T10:17:15.330",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/justconter/cve/issues/8"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86210"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/896590"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399345"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399345/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-07"
+  },
+  "CVE-2026-86211": {
+    "added": "2026-09-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A flaw has been found in rabindralamsal inventory-management-system 1.0.0. This affects an unknown part of the file index.php of the component Login. Executing a manipulation of the argument username/password can lead to sql injection. The attack can be executed remotely. The exploit has been published and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86211",
+      "last_modified": "2026-09-06T11:18:06.427",
+      "products": [],
+      "published": "2026-09-06T11:18:06.427",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/yingxiujie/cve/issues/8"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86211"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/897074"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399347"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399347/cti"
         }
       ]
     },
