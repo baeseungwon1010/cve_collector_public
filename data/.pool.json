@@ -23243,6 +23243,141 @@
     },
     "next_check": "2026-09-08"
   },
+  "CVE-2021-23031": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "On version 16.0.x before 16.0.1.2, 15.1.x before 15.1.3, 14.1.x before 14.1.4.1, 13.1.x before 13.1.4, 12.1.x before 12.1.6, and 11.6.x before 11.6.5.3, an authenticated user may perform a privilege escalation on the BIG-IP Advanced WAF and ASM Configuration utility. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-23031",
+      "last_modified": "2026-06-17T03:38:14.730",
+      "products": [
+        "f5:big-ip_advanced_web_application_firewall",
+        "f5:big-ip_application_security_manager"
+      ],
+      "published": "2021-09-14T19:15:07.273",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://support.f5.com/csp/article/K41351250"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://support.f5.com/csp/article/K41351250"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2021-23037": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "On all versions of 16.1.x, 16.0.x, 15.1.x, 14.1.x, 13.1.x, 12.1.x, and 11.6.x, a reflected cross-site scripting (XSS) vulnerability exists in an undisclosed page of the BIG-IP Configuration utility that allows an attacker to execute JavaScript in the context of the currently logged-in user. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-23037",
+      "last_modified": "2026-06-17T03:38:15.380",
+      "products": [
+        "f5:big-ip_access_policy_manager",
+        "f5:big-ip_advanced_firewall_manager",
+        "f5:big-ip_analytics",
+        "f5:big-ip_application_acceleration_manager",
+        "f5:big-ip_application_security_manager",
+        "f5:big-ip_domain_name_system",
+        "f5:big-ip_fraud_protection_service",
+        "f5:big-ip_global_traffic_manager",
+        "f5:big-ip_link_controller",
+        "f5:big-ip_local_traffic_manager",
+        "f5:big-ip_policy_enforcement_manager"
+      ],
+      "published": "2021-09-14T18:15:08.310",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://support.f5.com/csp/article/K21435974"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://support.f5.com/csp/article/K21435974"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2021-23038": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "On version 16.0.x before 16.0.1.2, 15.1.x before 15.1.3.1, 14.1.x before 14.1.4.2, 13.1.x before 13.1.4.1, and all versions of 12.1.x, a stored cross-site scripting (XSS) vulnerability exists in an undisclosed page of the BIG-IP Configuration utility that allows an attacker to execute JavaScript in the context of the currently logged-in user. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-23038",
+      "last_modified": "2026-06-17T03:38:15.497",
+      "products": [
+        "f5:big-ip_access_policy_manager",
+        "f5:big-ip_advanced_firewall_manager",
+        "f5:big-ip_analytics",
+        "f5:big-ip_application_acceleration_manager",
+        "f5:big-ip_application_security_manager",
+        "f5:big-ip_domain_name_system",
+        "f5:big-ip_fraud_protection_service",
+        "f5:big-ip_global_traffic_manager",
+        "f5:big-ip_link_controller",
+        "f5:big-ip_local_traffic_manager",
+        "f5:big-ip_policy_enforcement_manager"
+      ],
+      "published": "2021-09-14T18:15:08.370",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://support.f5.com/csp/article/K61643620"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://support.f5.com/csp/article/K61643620"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2021-24036": {
     "added": "2026-09-06",
     "checks_done": 1,
@@ -24564,6 +24699,62 @@
     },
     "next_check": "2026-09-08"
   },
+  "CVE-2021-3751": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "libmobi is vulnerable to Out-of-bounds Write",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-3751",
+      "last_modified": "2026-06-17T04:05:41.863",
+      "products": [
+        "libmobi_project:libmobi"
+      ],
+      "published": "2021-09-15T07:15:06.980",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/bfabiszewski/libmobi/commit/ab5bf0e37e540eac682a14e628853b918626e72b"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://huntr.dev/bounties/fcb4383c-bc27-4b89-bfce-6b041f0cb769"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/bfabiszewski/libmobi/commit/ab5bf0e37e540eac682a14e628853b918626e72b"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://huntr.dev/bounties/fcb4383c-bc27-4b89-bfce-6b041f0cb769"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2021-37708": {
     "added": "2026-09-07",
     "checks_done": 0,
@@ -24610,6 +24801,62 @@
             "Third Party Advisory"
           ],
           "url": "https://github.com/shopware/platform/security/advisories/GHSA-xh55-2fqp-p775"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2021-3797": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-597"
+      ],
+      "description": "hestiacp is vulnerable to Use of Wrong Operator in String Comparison",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-3797",
+      "last_modified": "2026-06-17T04:05:47.277",
+      "products": [
+        "hestiacp:control_panel"
+      ],
+      "published": "2021-09-15T13:15:08.297",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/hestiacp/hestiacp/commit/fc68baff4f94b59e38316f886d0ce47d337042f7"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://huntr.dev/bounties/c24fb15c-3c84-45c8-af04-a660f8da388f"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/hestiacp/hestiacp/commit/fc68baff4f94b59e38316f886d0ce47d337042f7"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://huntr.dev/bounties/c24fb15c-3c84-45c8-af04-a660f8da388f"
         }
       ]
     },
@@ -215680,6 +215927,116 @@
     },
     "next_check": "2026-09-08"
   },
+  "CVE-2026-79697": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "description": "A vulnerability was determined in Advantech WISE-6610-NB, WISE-6610-EB, WISE-6610-TB, WISE-6610-JB, WISE-6610-CB, WISE-6610-EL-NB, WISE-6610-EL-EB, WISE-6610-EL-TB, WISE-6610-EL-JB, WISE-6610-EL-CB, WISE-6610P-DEA, WISE-6610P-DNA and WISE-6610P-DTA 1.2.1_20251110. This affects the function basicstation_apply of the component Basic Station Certificate-Deletion Handler. This manipulation of the argument act causes command injection. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized. Upgrading to version 1.2.4_20260821 is able to mitigate this issue. Upgrading the affected component is advised. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79697",
+      "last_modified": "2026-09-07T07:16:45.903",
+      "products": [],
+      "published": "2026-09-07T07:16:45.903",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://uvxbywu62qm.feishu.cn/wiki/EzwXwS0vKiroHmk9rqzcjP0EnMe?from=from_copylink"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-79697"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/879208"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399512"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399512/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.advantech.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.advantech.com/en-us/support/details/firmware?id=1-2K7AXRI"
+        },
+        {
+          "tags": [],
+          "url": "https://www.advantech.com/zh-tw/security-advisory"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-79698": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "description": "A vulnerability was identified in Advantech WISE-6610-NB, WISE-6610-EB, WISE-6610-TB, WISE-6610-JB, WISE-6610-CB, WISE-6610-EL-NB, WISE-6610-EL-EB, WISE-6610-EL-TB, WISE-6610-EL-JB, WISE-6610-EL-CB, WISE-6610P-DEA, WISE-6610P-DNA and WISE-6610P-DTA 1.2.1_20251110. This vulnerability affects the function nodered_lib_apply of the component Node-RED Library. Such manipulation of the argument act leads to command injection. The attack can be launched remotely. The exploit is publicly available and might be used. Upgrading to version 1.2.4_20260821 is able to resolve this issue. It is advisable to upgrade the affected component. The vendor was contacted early, responded in a very professional manner and quickly released a fixed version of the affected product.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79698",
+      "last_modified": "2026-09-07T07:16:47.420",
+      "products": [],
+      "published": "2026-09-07T07:16:47.420",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://uvxbywu62qm.feishu.cn/wiki/RgziwoXf2iD9zKkI4MJcfWcNn7c?from=from_copylink"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-79698"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/879219"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399513"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399513/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.advantech.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.advantech.com/en-us/support/details/firmware?id=1-2K7AXRI"
+        },
+        {
+          "tags": [],
+          "url": "https://www.advantech.com/zh-tw/security-advisory"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2026-79717": {
     "added": "2026-08-26",
     "checks_done": 7,
@@ -249393,6 +249750,658 @@
     },
     "next_check": "2026-09-08"
   },
+  "CVE-2026-86260": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-620",
+        "CWE-640"
+      ],
+      "description": "A security flaw has been discovered in sfturing hosp_order up to 627f426331da8086ce8fff2017d65b1ddef384f8. The affected element is the function modifyPassWord of the file ssm_pro/src/main/java/cn/sfturing/web/CommonUserController.java of the component Password Recovery. Performing a manipulation results in unverified password change. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used for attacks. This product follows a rolling release approach for continuous delivery, so version details for affected or updated releases are not provided. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86260",
+      "last_modified": "2026-09-07T03:17:17.647",
+      "products": [],
+      "published": "2026-09-07T03:17:17.647",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/sfturing/hosp_order/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sfturing/hosp_order/issues/113"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86260"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/902239"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399406"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399406/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86261": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "description": "A weakness has been identified in sfturing hosp_order up to 627f426331da8086ce8fff2017d65b1ddef384f8. The impacted element is an unknown function of the file ssm_pro/src/main/java/cn/sfturing/web/OrderController.java of the component Order Controller. Executing a manipulation of the argument userIdenf can lead to authorization bypass. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks. This product implements a rolling release for ongoing delivery, which means version information for affected or updated releases is unavailable. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86261",
+      "last_modified": "2026-09-07T03:17:18.723",
+      "products": [],
+      "published": "2026-09-07T03:17:18.723",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/sfturing/hosp_order/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sfturing/hosp_order/issues/114"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86261"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/902240"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399407"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399407/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86262": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "description": "A security vulnerability has been detected in sfturing hosp_order up to 627f426331da8086ce8fff2017d65b1ddef384f8. This affects the function updateOrderSta1/updateOrderdiseaseInfo of the file ssm_pro/src/main/java/cn/sfturing/web/OrderController.java of the component Order Handler. The manipulation of the argument userID/id leads to authorization bypass. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. This product adopts a rolling release strategy to maintain continuous delivery. Therefore, version details for affected or updated releases cannot be specified. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86262",
+      "last_modified": "2026-09-07T03:17:18.893",
+      "products": [],
+      "published": "2026-09-07T03:17:18.893",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/sfturing/hosp_order/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sfturing/hosp_order/issues/115"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86262"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/902241"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399408"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399408/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86263": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "description": "A vulnerability was detected in sfturing hosp_order up to 627f426331da8086ce8fff2017d65b1ddef384f8. This impacts the function orderRecordsService.cancelOrder of the file ssm_pro/src/main/java/cn/sfturing/web/OrderController.java of the component Order Cancellation. The manipulation of the argument ID results in authorization bypass. The attack may be performed from remote. The exploit is now public and may be used. This product utilizes a rolling release system for continuous delivery, and as such, version information for affected or updated releases is not disclosed. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86263",
+      "last_modified": "2026-09-07T03:17:19.070",
+      "products": [],
+      "published": "2026-09-07T03:17:19.070",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/sfturing/hosp_order/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sfturing/hosp_order/issues/116"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86263"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/902242"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399409"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399409/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86265": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability has been found in itsourcecode Sales and Inventory System 1.0. Affected by this vulnerability is an unknown functionality of the file /pages/us_transac.php. Such manipulation of the argument Username leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86265",
+      "last_modified": "2026-09-07T04:17:50.427",
+      "products": [],
+      "published": "2026-09-07T04:17:50.427",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ltranquility/submit_repository/issues/8"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86265"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/902721"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399411"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399411/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86267": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security vulnerability has been detected in itsourcecode Information System Society Membership System 1.0. This issue affects some unknown processing of the file /society/check_student.php. The manipulation of the argument student_id leads to sql injection. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86267",
+      "last_modified": "2026-09-07T04:17:55.087",
+      "products": [],
+      "published": "2026-09-07T04:17:55.087",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/anglemsg2401-bot/cve/issues/5"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86267"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/903719"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399426"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399426/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86268": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was detected in itsourcecode School Management System 1.0. Impacted is an unknown function of the file User_Login.php. The manipulation of the argument email results in sql injection. The attack can be executed remotely. The exploit is now public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86268",
+      "last_modified": "2026-09-07T04:17:55.277",
+      "products": [],
+      "published": "2026-09-07T04:17:55.277",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/anglemsg2401-bot/cve/issues/6"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86268"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/903720"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399427"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399427/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86269": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A flaw has been found in itsourcecode Sales and Inventory System 1.0. The affected element is an unknown function of the file /pages/emp_edit1.php. This manipulation of the argument ID causes sql injection. The attack is possible to be carried out remotely. The exploit has been published and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86269",
+      "last_modified": "2026-09-07T04:17:55.467",
+      "products": [],
+      "published": "2026-09-07T04:17:55.467",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ltranquility/submit_repository/issues/9"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86269"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/904510"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399428"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399428/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86270": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability has been found in itsourcecode Sales and Inventory System 1.0. The impacted element is an unknown function of the file /pages/settings_edit.php. Such manipulation of the argument ID leads to sql injection. The attack may be performed from remote. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86270",
+      "last_modified": "2026-09-07T05:16:55.020",
+      "products": [],
+      "published": "2026-09-07T05:16:55.020",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ltranquility/submit_repository/issues/10"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86270"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/904784"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399429"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399429/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86272": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "description": "A vulnerability was determined in Beijing Meite Software Technology U+Smart Enjoyment WebSite 18.6001.1096.1000. This impacts an unknown function of the file /Report/Upload/UploadFormImg.ashx. Executing a manipulation of the argument File can lead to unrestricted upload. It is possible to launch the attack remotely. The exploit has been publicly disclosed and may be utilized.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86272",
+      "last_modified": "2026-09-07T05:16:55.387",
+      "products": [],
+      "published": "2026-09-07T05:16:55.387",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://ucn9h68n9289.feishu.cn/wiki/IYaowPR6licbC3kdw3xcJpQ7n6b?from=from_copylink"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86272"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/904145"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399431"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399431/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86273": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "A weakness has been identified in projeto-siga siga up to 11.1.1. Affected by this issue is the function DownloadExterno.getUrl of the file sigaex/src/main/java/br/gov/jfrj/siga/vraptor/ExUtilController.java of the component HTML-to-PDF Endpoint. This manipulation of the argument html causes server-side request forgery. The attack may be initiated remotely. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86273",
+      "last_modified": "2026-09-07T06:17:23.580",
+      "products": [],
+      "published": "2026-09-07T06:17:23.580",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/projeto-siga/siga/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/projeto-siga/siga/issues/2492"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86273"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/904863"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399434"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399434/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86276": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-259",
+        "CWE-798"
+      ],
+      "description": "A flaw has been found in SourceCodester Syllabus-Aligned Learning Management & Examination System 1.0. This issue affects some unknown processing of the file db.php. Executing a manipulation can lead to hard-coded credentials. The attack can be executed remotely. The exploit has been published and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86276",
+      "last_modified": "2026-09-07T06:17:24.173",
+      "products": [],
+      "published": "2026-09-07T06:17:24.173",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/hackliu/Vulnerability-Reports/blob/master/Syllabus%20Aligned%20Learning%20Management%20Examination%20System/VULN-03-SQL-Injection-Hardcoded-Credentials.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86276"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/904873"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399437"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399437/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86277": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-285",
+        "CWE-639"
+      ],
+      "description": "A vulnerability has been found in SourceCodester Syllabus-Aligned Learning Management & Examination System 1.0. Impacted is an unknown function of the file delete_exam.php. The manipulation of the argument ID leads to authorization bypass. The attack is possible to be carried out remotely. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86277",
+      "last_modified": "2026-09-07T07:16:47.620",
+      "products": [],
+      "published": "2026-09-07T07:16:47.620",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/hackliu/Vulnerability-Reports/blob/master/Syllabus%20Aligned%20Learning%20Management%20Examination%20System/VULN-04-IDOR-Broken-Access-Control.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86277"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/904877"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399438"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399438/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86279": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-384"
+      ],
+      "description": "A vulnerability was determined in SourceCodester Syllabus-Aligned Learning Management & Examination System 1.0. The impacted element is an unknown function of the file auth_process.php of the component Login. This manipulation causes session fixiation. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86279",
+      "last_modified": "2026-09-07T07:16:47.973",
+      "products": [],
+      "published": "2026-09-07T07:16:47.973",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/hackliu/Vulnerability-Reports/blob/master/Syllabus%20Aligned%20Learning%20Management%20Examination%20System/VULN-06-Session-Management-Flaws.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86279"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/904880"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399440"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399440/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2026-8630": {
     "added": "2026-08-24",
     "checks_done": 8,
@@ -249422,6 +250431,84 @@
       ]
     },
     "next_check": "2026-09-23"
+  },
+  "CVE-2026-86313": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "Out-of-bounds write vulnerability in Samsung Opensource Walrus allows Overflow Buffers.\n\nThis issue affects Walrus: af80e665ea49d9003695a66502f841ed1d8397e7.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86313",
+      "last_modified": "2026-09-07T03:17:19.407",
+      "products": [],
+      "published": "2026-09-07T03:17:19.407",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Samsung/walrus/pull/482"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86314": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.2,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-190"
+      ],
+      "description": "Integer overflow in the source-bounds check in Memory::init() (src/runtime/Memory.cpp) in Samsung walrus on all platforms allows a remote attacker to cause an out-of-bounds heap read and denial of service via a crafted WebAssembly module in which a 32-bit unsigned addition wraps around and bypasses the bounds check.\n\n\n\nThis issue affects Walrus: ff3bf5ff5c4878f8e5572c9593d303f6bc997443.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86314",
+      "last_modified": "2026-09-07T03:17:19.530",
+      "products": [],
+      "published": "2026-09-07T03:17:19.530",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Samsung/walrus/pull/482"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86315": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.2,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-197"
+      ],
+      "description": "An out-of-bounds write caused by numeric truncation  Samsung Open Source Escargot on Linux x86-64 allows an attacker who can supply JavaScript for execution to corrupt native memory and crash the host process via a crafted class definition whose instance initialization entry count exceeds UINT16_MAX.\n\n\n\nThis issue affects Escargot: 5dc93606abd42b859045add05d704a038e197359.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86315",
+      "last_modified": "2026-09-07T04:17:55.650",
+      "products": [],
+      "published": "2026-09-07T04:17:55.650",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Samsung/escargot/pull/1660"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
   },
   "CVE-2026-8709": {
     "added": "2026-08-06",
