@@ -22895,6 +22895,45 @@
     },
     "next_check": "2026-09-14"
   },
+  "CVE-2021-20125": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22",
+        "CWE-434"
+      ],
+      "description": "An arbitrary file upload and directory traversal vulnerability exists in the file upload functionality of DownloadFileServlet in Draytek VigorConnect 1.6.0-B3. An unauthenticated attacker could leverage this vulnerability to upload files to any location on the target operating system with root privileges.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-20125",
+      "last_modified": "2026-06-17T03:33:18.940",
+      "products": [
+        "draytek:vigorconnect"
+      ],
+      "published": "2021-10-13T16:15:07.437",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.tenable.com/security/research/tra-2021-42"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.tenable.com/security/research/tra-2021-42"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2021-21242": {
     "added": "2026-09-04",
     "checks_done": 3,
@@ -24493,6 +24532,46 @@
     },
     "next_check": "2026-09-08"
   },
+  "CVE-2021-3323": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-191"
+      ],
+      "description": "Integer Underflow in 6LoWPAN IPHC Header Uncompression in Zephyr. Zephyr versions >= >=2.4.0 contain Integer Underflow (Wrap or Wraparound) (CWE-191). For more information, see https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-89j6-qpxf-pfpc",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-3323",
+      "last_modified": "2026-06-17T04:04:56.487",
+      "products": [
+        "zephyrproject:zephyr"
+      ],
+      "published": "2021-10-12T22:15:08.093",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "http://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-89j6-qpxf-pfpc"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "http://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-89j6-qpxf-pfpc"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2021-3402": {
     "added": "2026-09-06",
     "checks_done": 1,
@@ -24641,6 +24720,55 @@
             "Vendor Advisory"
           ],
           "url": "https://matrix.org/blog/2021/06/14/adventures-in-fuzzing-libolm"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2021-35498": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-521"
+      ],
+      "description": "The TIBCO EBX Web Server component of TIBCO Software Inc.'s TIBCO EBX, TIBCO EBX, TIBCO EBX, and TIBCO Product and Service Catalog powered by TIBCO EBX contains a vulnerability that under certain specific conditions allows an attacker to enter a password other than the legitimate password and it will be accepted as valid. Affected releases are TIBCO Software Inc.'s TIBCO EBX: versions 5.8.123 and below, TIBCO EBX: versions 5.9.3, 5.9.4, 5.9.5, 5.9.6, 5.9.7, 5.9.8, 5.9.9, 5.9.10, 5.9.11, 5.9.12, 5.9.13, and 5.9.14, TIBCO EBX: versions 6.0.0 and 6.0.1, and TIBCO Product and Service Catalog powered by TIBCO EBX: version 1.0.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-35498",
+      "last_modified": "2026-06-17T03:57:35.197",
+      "products": [
+        "tibco:ebx",
+        "tibco:product_and_service_catalog_powered_by_tibco_ebx"
+      ],
+      "published": "2021-10-13T17:15:07.407",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.tibco.com/services/support/advisories"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.tibco.com/support/advisories/2021/10/tibco-security-advisory-october-13-2021-tibco-ebx-2021-35498"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.tibco.com/services/support/advisories"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.tibco.com/support/advisories/2021/10/tibco-security-advisory-october-13-2021-tibco-ebx-2021-35498"
         }
       ]
     },
@@ -24883,6 +25011,122 @@
         {
           "tags": [],
           "url": "https://www.insyde.com/security-pledge/sa-2022025/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2021-40842": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Proofpoint Insider Threat Management Server contains a SQL injection vulnerability in the Web Console. The vulnerability exists due to improper input validation on the database name parameter required in certain unauthenticated APIs. A malicious URL visited by anyone with network access to the server could be used to blindly execute arbitrary SQL statements on the backend database. Version 7.12.0 and all versions prior to 7.11.2 are affected.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-40842",
+      "last_modified": "2026-06-17T04:07:31.303",
+      "products": [
+        "proofpoint:insider_threat_management_server"
+      ],
+      "published": "2021-10-13T18:15:08.000",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.proofpoint.com/us/security/security-advisories"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.proofpoint.com/us/security/security-advisories/pfpt-sa-2021-0008"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.proofpoint.com/us/security/security-advisories"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.proofpoint.com/us/security/security-advisories/pfpt-sa-2021-0008"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2021-42224": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "SQL Injection vulnerability exists in IFSC Code Finder Project 1.0 via the searchifsccode POST parameter in /search.php.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-42224",
+      "last_modified": "2026-06-17T04:09:29.377",
+      "products": [
+        "phpgurukul:ifsc_code_finder"
+      ],
+      "published": "2021-10-13T18:15:08.227",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "http://packetstormsecurity.com/files/164514/IFSC-Code-Finder-Project-1.0-SQL-Injection.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/nu11secur1ty/CVE-mitre/tree/main/CVE-2021-42224"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory",
+            "VDB Entry"
+          ],
+          "url": "https://www.exploit-db.com/exploits/50391"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "http://packetstormsecurity.com/files/164514/IFSC-Code-Finder-Project-1.0-SQL-Injection.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/nu11secur1ty/CVE-mitre/tree/main/CVE-2021-42224"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory",
+            "VDB Entry"
+          ],
+          "url": "https://www.exploit-db.com/exploits/50391"
         }
       ]
     },
@@ -25297,6 +25541,278 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/pocketmine-mp-before-4.7.2-denial-of-service-via-skin-geometry"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2022-51010": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "PocketMine-MP versions before 4.4.2 fail to properly validate item IDs received from clients in itemstack NBT data. Attackers can send crafted item IDs outside the valid range to trigger an uncaught exception that crashes the server.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-51010",
+      "last_modified": "2026-09-07T13:17:21.510",
+      "products": [],
+      "published": "2026-09-07T13:17:21.510",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/commit/5fd685e07d61ef670584ed11a52fd5f4b99a81a7"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-fqx3-r75h-vc89"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pocketmine-mp-before-4.4.2-server-crash-via-item-id"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2022-51012": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "PocketMine-MP versions before 4.2.9 fail to properly validate NBT data types during deserialization of inventory transaction packets from clients. Attackers can send crafted inventory transactions with malformed NBT tags to trigger server crashes and cause denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-51012",
+      "last_modified": "2026-09-07T13:17:23.030",
+      "products": [],
+      "published": "2026-09-07T13:17:23.030",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/commit/5a98b08ee8dc8ff14862cd83d2e4af9d212fefc2"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-g5rr-p69h-7v3g"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pocketmine-mp-before-4.2.9-denial-of-service-via-nbt-deserialization"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2022-51013": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "PocketMine-MP versions before 4.2.3 fail to validate damage metadata values in tool and armor item NBT data received from clients. Attackers can send negative or out-of-range damage values in itemstack NBT to trigger unhandled exceptions in the Durable class, causing server crashes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-51013",
+      "last_modified": "2026-09-07T13:17:23.173",
+      "products": [],
+      "published": "2026-09-07T13:17:23.173",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/commit/c8e1cfcbee4945fd4b63d2a7e96025c59744d4f1"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-46c5-pfj8-fv65"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pocketmine-mp-before-4.2.3-denial-of-service-via-nbt-metadata"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2022-51014": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-248"
+      ],
+      "description": "PocketMine-MP before 4.0.7 contains an unhandled exception vulnerability in the ModalFormResponsePacket handler when processing malformed JSON from clients. Attackers can send specially crafted form response packets with invalid JSON to trigger an uncaught InvalidArgumentException, causing server crashes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-51014",
+      "last_modified": "2026-09-07T13:17:23.317",
+      "products": [],
+      "published": "2026-09-07T13:17:23.317",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/commit/56fe71d939c38fe14e18a31a673a9331bcc0e4ca"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-wjfq-88q2-r34j"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pocketmine-mp-before-4.0.7-denial-of-service-via-json-decoding"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2022-51015": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "PocketMine-MP before 4.0.6 does not validate facing values in PlayerActionPacket (for START_BREAK and CRACK_BREAK actions) or in UseItemTransactionData (typically within InventoryTransactionPacket). A remote authenticated attacker can send crafted packets with invalid facing values (e.g., negative or out-of-range) to crash the server, resulting in a denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-51015",
+      "last_modified": "2026-09-07T13:17:23.463",
+      "products": [],
+      "published": "2026-09-07T13:17:23.463",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/commit/f126479c37ff00a717a828f5271cf8e821d12d6c"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-xh99-hw7h-wf63"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pocketmine-mp-before-4.0.6-denial-of-service-via-playeractionpacket"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2022-51016": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-294"
+      ],
+      "description": "PocketMine-MP 3.x (before 3.27.0) does not implement Minecraft Bedrock protocol encryption, so the server cannot verify that a connecting client possesses the private key corresponding to its login token. An attacker who captures a valid login from another player's session (for example by tricking the player into connecting to an attacker-controlled server) can replay that login to impersonate the victim and pass XBOX Live authentication until the JWT token expires (typically 2-3 days). This affects servers directly reachable over the internet that are not behind a proxy with encryption enabled. Fixed in 4.0.0 and backported to 3.27.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-51016",
+      "last_modified": "2026-09-07T13:17:23.607",
+      "products": [],
+      "published": "2026-09-07T13:17:23.607",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/commit/d28be4eaf24a890f7ef110a51181a3d806a6acca"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-h79x-98r2-g6qc"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pocketmine-mp-before-4.0.0-authentication-bypass-via-login-replay"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2022-51017": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "PocketMine-MP versions before 3.26.5 and 4.0.5 fail to validate the length of skin data fields submitted by players, allowing uncapped values to exceed the 32767 byte TAG_String limit. Attackers can submit oversized skin data fields like skinID or geometryName to trigger exceptions during NBT data serialization, causing server crashes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-51017",
+      "last_modified": "2026-09-07T13:17:23.747",
+      "products": [],
+      "published": "2026-09-07T13:17:23.747",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/commit/6492cac5c10f9fa8443ceddd2191a7b65b73f601"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/commit/958a9dbf0fe3131ab60319c5a939f5dfbfe5dfbb"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-c6fg-99pr-25m9"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pocketmine-mp-before-3.26.5-and-4.0.5-denial-of-service-via-skin-data"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2022-51018": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-400"
+      ],
+      "description": "PocketMine-MP before 3.26.5 and 4.0.x before 4.0.5 does not limit book page text length, page count, or author/title length. A player who obtains a writable book can create oversized NBT ('book bombs'), causing excess bandwidth consumption and server crashes (exceeding the 1 MB chunk size limit when saving region-based worlds in PM3, or exceeding the 32 KiB TAG_String limit in PM4).",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-51018",
+      "last_modified": "2026-09-07T13:17:23.893",
+      "products": [],
+      "published": "2026-09-07T13:17:23.893",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pmmp/PocketMine-MP/security/advisories/GHSA-p62j-hrxm-xcxf"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pocketmine-mp-before-3.26.5-input-validation-via-book-pages"
         }
       ]
     },
@@ -33215,6 +33731,32 @@
       ]
     },
     "next_check": "2026-09-09"
+  },
+  "CVE-2026-14296": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-347"
+      ],
+      "description": "When using the Direct XIP\nupdate strategy, the main application image starts other cores (i.e. radio\ncore), based on the currently active slot without additional verification. The\nMCUboot in the bare (upstream) configuration assumes that if there is at least\na single slot for each image available, the system is bootable and continues\nthe boot process. This may lead to a situation when MCUboot picks different\nslot for different images (i.e. (a) for the main application and (b) for the\nradio image), boots the main application (from slot (a)) that afterwards starts\nthe radio image by providing an address of the unauthenticated slot ((a)\ninstead of (b)).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-14296",
+      "last_modified": "2026-09-07T08:17:11.773",
+      "products": [],
+      "published": "2026-09-07T08:17:11.773",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.nordicsemi.com/r/bundle/struct_sa/page/struct/sa.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
   },
   "CVE-2026-14298": {
     "added": "2026-08-14",
@@ -79719,6 +80261,48 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2026-2390": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Powerkit plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Lazy Load module's image processing in all versions up to, and including, 3.0.4. This is due to the 'content_process_images' function using a flawed regex-based HTML attribute parser. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-2390",
+      "last_modified": "2026-09-07T12:17:18.097",
+      "products": [],
+      "published": "2026-09-07T12:17:18.097",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/powerkit/trunk/modules/lazyload/public/class-powerkit-lazyload-public.php#L199"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/powerkit/trunk/modules/lazyload/public/class-powerkit-lazyload-public.php#L227"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/powerkit/trunk/modules/lazyload/public/class-powerkit-lazyload-public.php#L49"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3604146"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/222241ce-f534-435a-8667-8cc1d527ef95?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2026-24076": {
     "added": "2026-08-05",
     "checks_done": 9,
@@ -119093,6 +119677,58 @@
     },
     "next_check": "2026-09-18"
   },
+  "CVE-2026-61409": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "Dell Secure Connect Gateway (SCG) 5.0 Application, versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to remote execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-61409",
+      "last_modified": "2026-09-07T13:20:33.720",
+      "products": [],
+      "published": "2026-09-07T13:20:33.720",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-61410": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains a Missing Authorization vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to remote execution. This vulnerability is considered critical because it allows an attacker to execute commands remotely on a target system by sending a specially crafted request to the application, bypassing intended restrictions on code execution.Dell recommends customers to upgrade at the earliest opportunity.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-61410",
+      "last_modified": "2026-09-07T13:20:33.853",
+      "products": [],
+      "published": "2026-09-07T13:20:33.853",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2026-61419": {
     "added": "2026-08-25",
     "checks_done": 7,
@@ -122313,6 +122949,32 @@
       ]
     },
     "next_check": "2026-09-22"
+  },
+  "CVE-2026-6223": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-307"
+      ],
+      "description": "Improper restriction of excessive authentication attempts vulnerability in Bahçelievler Muncipality BiHayat App allows Authentication Bypass.\n\nThis issue affects BiHayat App: from 2.1.7 through 07092026. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-6223",
+      "last_modified": "2026-09-07T13:20:33.977",
+      "products": [],
+      "published": "2026-09-07T13:20:33.977",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1014"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
   },
   "CVE-2026-62243": {
     "added": "2026-08-23",
@@ -132301,6 +132963,52 @@
       ]
     },
     "next_check": "2026-09-09"
+  },
+  "CVE-2026-6431": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The User Profile Builder – Beautiful User Registration Forms, User Profiles & User Role Editor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Biographical Info' meta field parameter in all versions up to, and including, 3.15.7 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-6431",
+      "last_modified": "2026-09-07T13:20:36.653",
+      "products": [],
+      "published": "2026-09-07T13:20:36.653",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/profile-builder/tags/3.15.6/features/email-confirmation/class-email-confirmation.php#L95"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/profile-builder/tags/3.15.6/front-end/class-formbuilder.php#L743"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/profile-builder/trunk/features/email-confirmation/class-email-confirmation.php#L95"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/profile-builder/trunk/front-end/class-formbuilder.php#L743"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3511465"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/99e6cc7b-7e65-4b8d-a927-1329ed6c1954?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
   },
   "CVE-2026-6453": {
     "added": "2026-08-06",
@@ -204207,6 +204915,36 @@
     },
     "next_check": "2026-09-19"
   },
+  "CVE-2026-76578": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "A flaw was found in FreeIPA. The self-managed OTP token ACI does not require authentication and does not restrict which attributes may be added alongside the token entry. An unauthenticated LDAP client can exploit this, combined with a related flaw in the underlying directory server's ACI evaluation (tracked separately), to create an arbitrary attacker-controlled Kerberos principal and have it added to the administrators group. This allows a remote, unauthenticated attacker to obtain genuine FreeIPA administrator-group membership and perform administrative operations against the directory and, on SID-enabled deployments, other IdM services.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76578",
+      "last_modified": "2026-09-07T13:20:36.850",
+      "products": [],
+      "published": "2026-09-07T13:20:36.850",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-76578"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2519522"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2026-7658": {
     "added": "2026-08-06",
     "checks_done": 9,
@@ -209219,6 +209957,32 @@
       ]
     },
     "next_check": "2026-09-10"
+  },
+  "CVE-2026-77697": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "Zohocorp ManageEngine Endpoint Central versions below 11.4.2540.23 are vulnerable to Privilege Escalation During JAR Extraction",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77697",
+      "last_modified": "2026-09-07T11:17:35.687",
+      "products": [],
+      "published": "2026-09-07T11:17:35.687",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/products/desktop-central/kb/vulnerability-management/privilege-escalation-vulnerability-during-jar-extraction.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
   },
   "CVE-2026-77763": {
     "added": "2026-08-22",
@@ -215745,6 +216509,36 @@
     },
     "next_check": "2026-09-09"
   },
+  "CVE-2026-79678": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-95"
+      ],
+      "description": "A flaw was found in FreeIPA's idp-add command, where insufficiently validated --organization/--base-url input reaches a constrained eval() call before the corresponding LDAP access control check is enforced. This allows any authenticated IPA principal, regardless of privilege level, to enumerate and read the environment variables of the affected server process and to cause denial of service via memory exhaustion.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79678",
+      "last_modified": "2026-09-07T13:20:38.380",
+      "products": [],
+      "published": "2026-09-07T13:20:38.380",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-79678"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2523356"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2026-79679": {
     "added": "2026-09-04",
     "checks_done": 3,
@@ -217374,6 +218168,110 @@
     },
     "next_check": "2026-09-08"
   },
+  "CVE-2026-80132": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "ell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains a Missing Authentication for Critical Function vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80132",
+      "last_modified": "2026-09-07T13:20:38.670",
+      "products": [],
+      "published": "2026-09-07T13:20:38.670",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-80133": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-23"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains a Relative Path Traversal vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to remote execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80133",
+      "last_modified": "2026-09-07T13:20:38.800",
+      "products": [],
+      "published": "2026-09-07T13:20:38.800",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-80134": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-798"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Use of Hard-coded Credentials vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80134",
+      "last_modified": "2026-09-07T13:20:38.923",
+      "products": [],
+      "published": "2026-09-07T13:20:38.923",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-80135": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-703"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Check or Handling of Exceptional Conditions vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to protection mechanism bypass.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80135",
+      "last_modified": "2026-09-07T13:20:39.047",
+      "products": [],
+      "published": "2026-09-07T13:20:39.047",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities?msockid=3021cac2195069ed3194ddad186a68f9"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2026-80138": {
     "added": "2026-08-26",
     "checks_done": 7,
@@ -217947,6 +218845,32 @@
       ]
     },
     "next_check": "2026-09-10"
+  },
+  "CVE-2026-80238": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-250"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Execution with Unnecessary Privileges vulnerability. An unauthenticated attacker with local access could potentially exploit this vulnerability, leading to Protection mechanism bypass. This vulnerability is considered critical because a low-privileged operator with SSH access to the SCG host can gain root-level access to the host without requiring a password by leveraging the exposed Docker socket. Additionally, an attacker who compromises a service running within the orchestrator container can access the same socket and escape the container boundary to obtain host-level control. Dell recommends that customers upgrade at the earliest opportunity.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80238",
+      "last_modified": "2026-09-07T13:20:39.293",
+      "products": [],
+      "published": "2026-09-07T13:20:39.293",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities?msockid=3021cac2195069ed3194ddad186a68f9"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
   },
   "CVE-2026-80253": {
     "added": "2026-09-04",
@@ -224402,32 +225326,6 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/theme/newspapers-x/vulnerability/wordpress-newspapers-x-theme-1-0-46-1-0-48-backdoor-vulnerability?_s_id=cve"
-        }
-      ]
-    },
-    "next_check": "2026-09-08"
-  },
-  "CVE-2026-81780": {
-    "added": "2026-09-01",
-    "checks_done": 6,
-    "cve": {
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-434"
-      ],
-      "description": "Unauthenticated Arbitrary File Upload in Hash Form <= 1.4.2 versions.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-81780",
-      "last_modified": "2026-08-31T21:17:52.027",
-      "products": [],
-      "published": "2026-08-31T21:17:52.027",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://patchstack.com/database/wordpress/plugin/hash-form/vulnerability/wordpress-hash-form-plugin-1-4-2-arbitrary-file-upload-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -244995,6 +245893,32 @@
     },
     "next_check": "2026-09-08"
   },
+  "CVE-2026-85640": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "Zohocorp ManageEngine Endpoint Central versions below 11.5.2600.15 are vulnerable to Privilege Escalation Due to Outdated Component",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85640",
+      "last_modified": "2026-09-07T11:17:37.613",
+      "products": [],
+      "published": "2026-09-07T11:17:37.613",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/products/desktop-central/help/patch_management/kb/privilege-escalation-outdated.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2026-85651": {
     "added": "2026-09-05",
     "checks_done": 2,
@@ -250402,6 +251326,543 @@
     },
     "next_check": "2026-09-08"
   },
+  "CVE-2026-86282": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A weakness has been identified in jaychouchannel Tourism-Management-System up to 8122bf020d91199eddfff3ee02d1632a70a9a132. Affected is an unknown function of the file travel/src/main/java/com/controller/CommonController.java of the component CommonDao. Executing a manipulation of the argument table/column/xColumn/yColumn can lead to sql injection. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. This patch is called d44ec3aa0bd2a72c8800e3befb0a9a96a6491b86. A patch should be applied to remediate this issue.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86282",
+      "last_modified": "2026-09-07T08:17:14.590",
+      "products": [],
+      "published": "2026-09-07T08:17:14.590",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/jaychouchannel/Tourism-Management-System/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/jaychouchannel/Tourism-Management-System/commit/d44ec3aa0bd2a72c8800e3befb0a9a96a6491b86"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/jaychouchannel/Tourism-Management-System/pull/14"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/jaychouchannel/Tourism_Management_System/issues/7"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86282"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/905639"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399443"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399443/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86288": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-125"
+      ],
+      "description": "A vulnerability has been found in ModelCloud GPTQModel up to 7.2.0. This vulnerability affects unknown code of the file gptqmodel/nn_modules/qlinear/tritonv2.py of the component Triton dequantization kernel. Such manipulation of the argument g_idx leads to out-of-bounds read. The attack can be executed remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 7.3.0 is able to resolve this issue. The name of the patch is 877c732f7d7dccd56a729844c6a5bd20f3aa8bb1. Upgrading the affected component is recommended.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86288",
+      "last_modified": "2026-09-07T09:17:17.297",
+      "products": [],
+      "published": "2026-09-07T09:17:17.297",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ModelCloud/GPTQModel/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ModelCloud/GPTQModel/commit/877c732f7d7dccd56a729844c6a5bd20f3aa8bb1"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ModelCloud/GPTQModel/issues/2949"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ModelCloud/GPTQModel/pull/2950"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ModelCloud/GPTQModel/releases/tag/v7.3.0"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86288"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906135"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399447"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399447/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86290": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A weakness has been identified in SourceCodester Online Voting System 1.0. This affects an unknown function of the file /voting/ajax.php?action=save_category. This manipulation of the argument Category causes sql injection. The attack can be initiated remotely. The exploit has been made available to the public and could be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86290",
+      "last_modified": "2026-09-07T09:17:17.650",
+      "products": [],
+      "published": "2026-09-07T09:17:17.650",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/W5M1n9/cve/issues/2"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86290"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906187"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399452"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399452/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86291": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security vulnerability has been detected in itsourcecode Sales and Inventory System 1.0. This impacts an unknown function of the file /pages/us_edit1.php. Such manipulation of the argument ID leads to sql injection. The attack can be launched remotely. The exploit has been disclosed publicly and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86291",
+      "last_modified": "2026-09-07T10:16:54.997",
+      "products": [],
+      "published": "2026-09-07T10:16:54.997",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ltranquility/submit_repository/issues/11"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86291"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906259"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399453"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399453/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86292": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "description": "A vulnerability was detected in SourceCodester Simple Traffic Offense System 1.0. Affected is an unknown function of the file saveuser.php of the component User Creation. Performing a manipulation of the argument position results in missing authentication. The attack may be initiated remotely. The exploit is now public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86292",
+      "last_modified": "2026-09-07T10:16:55.230",
+      "products": [],
+      "published": "2026-09-07T10:16:55.230",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/tan1540684326-QAQ/cve/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86292"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906272"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399454"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399454/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86293": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "description": "A flaw has been found in SourceCodester Simple Traffic Offense System 1.0. Affected by this vulnerability is an unknown functionality of the file delete-user.php of the component Deletion Endpoint. Executing a manipulation of the argument ID can lead to missing authentication. The attack may be launched remotely. The exploit has been published and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86293",
+      "last_modified": "2026-09-07T10:16:55.407",
+      "products": [],
+      "published": "2026-09-07T10:16:55.407",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/tan1540684326-QAQ/cve/issues/2"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86293"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906278"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399455"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399455/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86295": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "description": "A vulnerability was found in D-Link DIR-895L A1_102b07. This affects the function sendACK of the file udhcpcd/serverpacket.c of the component udhcpcd. The manipulation of the argument Hostname results in command injection. The attack can be executed remotely. The exploit has been made public and could be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86295",
+      "last_modified": "2026-09-07T11:17:39.373",
+      "products": [],
+      "published": "2026-09-07T11:17:39.373",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://tzh00203.notion.site/D-Link-DIR-895L-Command-Injection-in-udhcpd-sendACK-TR-069-Host-Helper-33cb5c52018a80aaaa5be16a761ff457"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86295"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906296"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399457"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399457/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.dlink.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86296": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "description": "A vulnerability was determined in D-Link DIR-822A A_101. This vulnerability affects the function strcpy of the file udhcpcd/serverpacket.c of the component udhcpcd. This manipulation causes stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86296",
+      "last_modified": "2026-09-07T11:17:39.550",
+      "products": [],
+      "published": "2026-09-07T11:17:39.550",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://tzh00203.notion.site/D-Link-DIR-822A-Stack-Overflow-in-udhcpd-TR-111-Option-125-Parsing-33cb5c52018a80238b80e89e7c7c68f0"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86296"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906297"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399458"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399458/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.dlink.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86297": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-189",
+        "CWE-193"
+      ],
+      "description": "A vulnerability was identified in D-Link DIR-605 B1v202WWB03. This issue affects the function tunnel_set_params of the file progs.gpl/pppd.alpha/l2tp/tunnel.c of the component L2TP Control Message Parser. Such manipulation of the argument peer_hostname  leads to off-by-one. The attack may be performed from remote. Attacks of this nature are highly complex. The exploitability is assessed as difficult. The exploit is publicly available and might be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86297",
+      "last_modified": "2026-09-07T11:17:39.730",
+      "products": [],
+      "published": "2026-09-07T11:17:39.730",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://tzh00203.notion.site/D-Link-DIR-605-L2TP-Host-Name-AVP-Out-of-Bounds-Write-33cb5c52018a809ba163f988c15fc1b7"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86297"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906299"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399459"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399459/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.dlink.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86298": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security flaw has been discovered in SourceCodester Class and Exam Timetabling System 1.0. Impacted is an unknown function of the file /delete_subject.php. Performing a manipulation of the argument ID results in sql injection. It is possible to initiate the attack remotely. The exploit has been released to the public and may be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86298",
+      "last_modified": "2026-09-07T11:17:39.917",
+      "products": [],
+      "published": "2026-09-07T11:17:39.917",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/mexics2/vulnerability-report/issues/5"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86298"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906517"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399460"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399460/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86299": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A vulnerability was detected in Linksys RE7000 2.0.15. This affects the function platform_event_pingTest of the file /cgi-bin/json.cgi?PingTest of the component PingTest Handler. The manipulation of the argument pingTestIp/pingTestPktSize/pingTestTimes results in os command injection. The attack can be launched remotely. The exploit is now public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86299",
+      "last_modified": "2026-09-07T12:17:21.340",
+      "products": [],
+      "published": "2026-09-07T12:17:21.340",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/limou89/somevul/blob/main/Linksys_RE7000_v2_PingTest_Command_Injection.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86299"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906547"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399463"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399463/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.linksys.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
   "CVE-2026-8630": {
     "added": "2026-08-24",
     "checks_done": 8,
@@ -250431,6 +251892,212 @@
       ]
     },
     "next_check": "2026-09-23"
+  },
+  "CVE-2026-86300": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "A flaw has been found in Tenda AC9 15.03.05.14. This impacts the function R7WebsSecurityHandler of the component Web Management. This manipulation causes improper authentication. The attack may be initiated remotely. The exploit has been published and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86300",
+      "last_modified": "2026-09-07T12:17:21.520",
+      "products": [],
+      "published": "2026-09-07T12:17:21.520",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/limou89/somevul/blob/main/Tenda_AC9_fast_setting_wifi_set_Unauth_Password.md"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/limou89/somevul/blob/main/Tenda_AC9_getProduct_Info_Disclosure.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86300"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906606"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906607"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/906608"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399464"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399464/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.tenda.com.cn/"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86303": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-125"
+      ],
+      "description": "A vulnerability was determined in 92181 markdown up to 058cab0cb7fb245a0ccc6b8446963ff8d573558f. Affected by this issue is the function lds of the file md.c. Executing a manipulation can lead to out-of-bounds read. The attack can be executed remotely. This product implements a rolling release for ongoing delivery, which means version information for affected or updated releases is unavailable. This patch is called c000d2f9cf390c315378d3717cf20911cf3e80a6. A patch should be applied to remediate this issue.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86303",
+      "last_modified": "2026-09-07T13:20:39.587",
+      "products": [],
+      "published": "2026-09-07T13:20:39.587",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/92181/markdown/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/92181/markdown/commit/c000d2f9cf390c315378d3717cf20911cf3e80a6"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/92181/markdown/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/92181/markdown/pull/2"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86303"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/907499"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399467"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399467/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86305": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "description": "A security flaw has been discovered in light0011 cms c774dce31c6df0055568a8d5c53d964d99be199d/f72cf46f601efb2a0618c3814cc2f61380b38930. Affected by this issue is the function Upload::upload of the file ThinkPHP/Library/Think/Upload.class.php. Performing a manipulation results in unrestricted upload. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. This product adopts a rolling release strategy to maintain continuous delivery. Therefore, version details for affected or updated releases cannot be specified. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86305",
+      "last_modified": "2026-09-07T13:20:39.753",
+      "products": [],
+      "published": "2026-09-07T13:20:39.753",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/light0011/cms/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/light0011/cms/issues/9"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86305"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/894804"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399478"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399478/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86306": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "A weakness has been identified in light0011 cms c774dce31c6df0055568a8d5c53d964d99be199d/f72cf46f601efb2a0618c3814cc2f61380b38930. This affects an unknown part of the file App/Home/Model/UserModel.class.php of the component Cookie Helper. Executing a manipulation of the argument Username can lead to improper authentication. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. This product utilizes a rolling release system for continuous delivery, and as such, version information for affected or updated releases is not disclosed. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86306",
+      "last_modified": "2026-09-07T13:20:39.927",
+      "products": [],
+      "published": "2026-09-07T13:20:39.927",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/light0011/cms/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/light0011/cms/issues/11"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-86306"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/894817"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399479"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/399479/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
   },
   "CVE-2026-86313": {
     "added": "2026-09-07",
@@ -250505,6 +252172,310 @@
         {
           "tags": [],
           "url": "https://github.com/Samsung/escargot/pull/1660"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86332": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "A flaw was found in odh-dashboard in Red Hat OpenShift AI. The backend-for-frontend route GET /api/nim-serving/:nimResource reads Kubernetes Secrets using the dashboard service account and returns the full Secret object, including .data, without an authorization check. Any authenticated dashboard user can retrieve the cluster NVIDIA NGC API key Secret (apiKeySecret) and the NIM image pull secret (nimPullSecret). Create and delete of the same NIM credential are admin-gated; the read path is not. This is missing authorization (CWE-862) and insufficiently protected credentials (CWE-522). It is distinct from CVE-2026-5483 (service-account token leak in the Kubernetes client response wrapper on the same route) and CVE-2026-16456 (odh-model-controller cross-namespace confused deputy).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86332",
+      "last_modified": "2026-09-07T10:16:55.580",
+      "products": [],
+      "published": "2026-09-07T09:17:17.807",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-86332"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2529287"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86404": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-502"
+      ],
+      "description": "EAP's Artemis deserialization configuration permits deserialization by default. ObjectMessage.getObject() uses ObjectInputStreamWithClassLoader, which implements allow-list/block-list filtering via its checkSecurity()/isTrustedType() method. However, by default both allow-list and block-list are empty. When the allow-list is empty (size == 0), isTrustedType() returns true for ALL classes. This means all classes are deserializable by default.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86404",
+      "last_modified": "2026-09-07T12:17:21.840",
+      "products": [],
+      "published": "2026-09-07T12:17:21.840",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-86404"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2477930"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86427": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77"
+      ],
+      "description": "LibreNMS before 26.8.0 contains an argument injection vulnerability in the graph_title parameter that allows authenticated attackers to inject arbitrary rrdtool arguments by breaking out of double-quote escaping. Attackers can inject DEF and LINE arguments to read RRD files from unauthorized devices, or use newline injection to execute arbitrary rrdtool commands, bypassing per-device authorization checks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86427",
+      "last_modified": "2026-09-07T13:20:41.870",
+      "products": [],
+      "published": "2026-09-07T13:20:41.870",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/librenms/librenms/security/advisories/GHSA-3hvv-wxpw-cx83"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/librenms-before-26.8.0-argument-injection-via-graph-title"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86428": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-407"
+      ],
+      "description": "commonmark versions from 1.5.0 before 2.10.0 contain a denial of service vulnerability in the AttributesExtension when processing distinctly-named attributes. Attackers can submit Markdown with numerous distinct attribute names to cause quadratic-time attribute merging and filtering, consuming disproportionate CPU resources and preventing legitimate requests from completing.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86428",
+      "last_modified": "2026-09-07T13:20:42.037",
+      "products": [],
+      "published": "2026-09-07T13:20:42.037",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/thephpleague/commonmark/security/advisories/GHSA-8rr7-cvq3-gmfh"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/commonmark-1.5.0-before-2.10.0-denial-of-service-via-attributes"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86429": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-407"
+      ],
+      "description": "The league/commonmark (thephpleague/commonmark) library in versions >= 1.5.0 and < 2.9.1 contains quadratic parsing complexity in its SmartPunctExtension and AttributesExtension. When either extension is explicitly registered on the Environment (they are not enabled by default and are excluded from the standard CommonMark and GitHub-Flavored Markdown converters), an unauthenticated attacker can submit small, specially crafted Markdown documents — such as text alternating with unpaired quotes, contiguous runs of block-level attribute blocks, or repeated class attributes — to trigger disproportionate CPU consumption and cause a denial of service. Fixed in 2.9.1.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86429",
+      "last_modified": "2026-09-07T13:20:42.180",
+      "products": [],
+      "published": "2026-09-07T13:20:42.180",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/thephpleague/commonmark/security/advisories/GHSA-jjv6-8j6v-6j52"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/commonmark-before-2.9.1-denial-of-service-via-smartpunct-and-attributes"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86430": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-407"
+      ],
+      "description": "league/commonmark versions before 2.9.1 contain multiple denial of service vulnerabilities in fenced code block detection, reference link label lookup, and emphasis delimiter processing that perform super-linear work on crafted input. Attackers can submit specially crafted Markdown with long backtick runs, nested brackets, or delimiter sequences to consume disproportionate CPU time and prevent legitimate requests from completing.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86430",
+      "last_modified": "2026-09-07T13:20:42.320",
+      "products": [],
+      "published": "2026-09-07T13:20:42.320",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/thephpleague/commonmark/security/advisories/GHSA-j8pm-gj4c-rq4x"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/league-commonmark-before-2.9.1-denial-of-service-via-parsing"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86431": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "league/commonmark (thephpleague/commonmark) versions >= 2.7.0 and < 2.9.1 contain a cross-site scripting vulnerability in the AttributesExtension. Prefixing an attribute name with a single U+000C form feed byte (e.g. {\\x0Conclick=\"alert(1)\"}) bypasses the AttributesHelper::filterAttributes() 'on*' event-handler filter because PHP's trim() does not strip U+000C, causing the attribute to be written verbatim into the output where browsers parse it as a genuine event handler. The same prefix also defeats the allow_unsafe_links check, allowing javascript: URIs through href/src attributes even when allow_unsafe_links is false. Exploitation requires processing untrusted Markdown with the AttributesExtension enabled; the injected script executes when the rendered HTML is viewed. Fixed in 2.9.1.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86431",
+      "last_modified": "2026-09-07T13:20:42.460",
+      "products": [],
+      "published": "2026-09-07T13:20:42.460",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/thephpleague/commonmark/commit/43207253ea5f14867c77c697cd3838c446cadcea"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/thephpleague/commonmark/security/advisories/GHSA-f8fg-pg57-v4j8"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/commonmark-before-2.9.1-xss-via-attributesextension-form-feed-bypass"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86433": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-407"
+      ],
+      "description": "commonmark versions from 1.5.0 before 2.8.4 contain a denial of service vulnerability in the Attributes extension where AttributesListener::findTargetAndDirection() performs quadratic-time sibling list scanning. Unauthenticated attackers can submit approximately 32 KB of repeated attribute blocks to cause parsing to take over 5 seconds, exhausting server resources.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86433",
+      "last_modified": "2026-09-07T13:20:42.733",
+      "products": [],
+      "published": "2026-09-07T13:20:42.733",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/thephpleague/commonmark/security/advisories/GHSA-g2gp-3wwq-f4ph"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/commonmark-1.5.0-before-2.8.4-denial-of-service-via-attributes"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86434": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-407"
+      ],
+      "description": "league/commonmark versions >= 2.0.0 and < 2.8.4 (patched in 2.9.0) contain a denial of service vulnerability in UniqueSlugNormalizer::normalize(), which restarts its numeric-suffix search from 1 on every slug collision, resulting in O(K^2) time complexity for K headings that collapse to the same base slug. The vulnerable path is reached when HeadingPermalinkExtension, FootnoteExtension, or TableOfContentsExtension is registered. An unauthenticated attacker can force many headings onto a single base slug (e.g., via empty ATX headings, identical heading text, or punctuation-only headings) in a small Markdown document, consuming excessive CPU and denying service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86434",
+      "last_modified": "2026-09-07T13:20:42.870",
+      "products": [],
+      "published": "2026-09-07T13:20:42.870",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/thephpleague/commonmark/security/advisories/GHSA-mh25-x5hq-wrqp"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/commonmark-2.0.0-through-2.8.3-denial-of-service-via-slug-collision"
+        }
+      ]
+    },
+    "next_check": "2026-09-08"
+  },
+  "CVE-2026-86435": {
+    "added": "2026-09-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-407"
+      ],
+      "description": "commonmark versions from 1.5.0 before 2.8.4 contain a denial of service vulnerability in the Footnote extension that fails to deduplicate footnote definitions. Attackers can craft documents with duplicate footnote definitions and references to create quadratic output expansion, consuming excessive memory and CPU to exhaust server resources.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86435",
+      "last_modified": "2026-09-07T13:20:43.013",
+      "products": [],
+      "published": "2026-09-07T13:20:43.013",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/thephpleague/commonmark/security/advisories/GHSA-jfm3-95jq-q3rf"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/commonmark-1.5.0-before-2.8.4-denial-of-service-via-footnote"
         }
       ]
     },
