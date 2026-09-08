@@ -1,5 +1,1 @@
-{
-  "CVE-2026-10050": {
-    "package": "MAVEN:org.eclipse.jetty.ee9:jetty-ee9-security"
-  }
-}
+{}
