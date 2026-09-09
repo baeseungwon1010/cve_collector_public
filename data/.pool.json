@@ -24876,6 +24876,42 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2021-32586": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "An improper input validation vulnerability in the web server CGI facilities of FortiMail before 7.0.1 may allow an unauthenticated attacker to alter the environment of the underlying script interpreter via specifically crafted HTTP requests.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-32586",
+      "last_modified": "2026-06-17T03:53:13.273",
+      "products": [
+        "fortinet:fortimail"
+      ],
+      "published": "2022-03-01T19:15:08.227",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://fortiguard.com/psirt/FG-IR-21-008"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://fortiguard.com/psirt/FG-IR-21-008"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2021-32691": {
     "added": "2026-09-06",
     "checks_done": 3,
@@ -25355,6 +25391,42 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2021-36166": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-330"
+      ],
+      "description": "An improper authentication vulnerability in FortiMail before 7.0.1 may allow a remote attacker to efficiently guess one administrative account's authentication token by means of the observation of certain system's properties.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-36166",
+      "last_modified": "2026-06-17T03:58:26.920",
+      "products": [
+        "fortinet:fortimail"
+      ],
+      "published": "2022-03-01T18:15:08.240",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://fortiguard.com/psirt/FG-IR-21-028"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://fortiguard.com/psirt/FG-IR-21-028"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2021-37049": {
     "added": "2026-09-08",
     "checks_done": 1,
@@ -25823,6 +25895,58 @@
             "Vendor Advisory"
           ],
           "url": "https://www.xylem.com/siteassets/about-xylem/cybersecurity/advisories/xylem-aanderaa-psa-2021-003.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2021-41193": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-134"
+      ],
+      "description": "wire-avs is the audio visual signaling (AVS) component of Wire, an open-source messenger. A remote format string vulnerability in versions prior to 7.1.12 allows an attacker to cause a denial of service or possibly execute arbitrary code. The issue has been fixed in wire-avs 7.1.12. There are currently no known workarounds.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-41193",
+      "last_modified": "2026-06-17T04:08:04.070",
+      "products": [
+        "wire:wire-audio_video_signaling"
+      ],
+      "published": "2022-03-01T19:15:08.403",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/wireapp/wire-avs/commit/40d373ede795443ae6f2f756e9fb1f4f4ae90bbe"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/wireapp/wire-avs/security/advisories/GHSA-2j6v-xpf3-xvrv"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/wireapp/wire-avs/commit/40d373ede795443ae6f2f756e9fb1f4f4ae90bbe"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/wireapp/wire-avs/security/advisories/GHSA-2j6v-xpf3-xvrv"
         }
       ]
     },
@@ -26758,6 +26882,107 @@
             "US Government Resource"
           ],
           "url": "https://www.kb.cert.org/vuls/id/692873"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2022-24720": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "image_processing is an image processing wrapper for libvips and ImageMagick/GraphicsMagick. Prior to version 1.12.2, using the `#apply` method from image_processing to apply a series of operations that are coming from unsanitized user input allows the attacker to execute shell commands. This method is called internally by Active Storage variants, so Active Storage is vulnerable as well. The vulnerability has been fixed in version 1.12.2 of image_processing. As a workaround, users who process based on user input should always sanitize the user input by allowing only a constrained set of operations.",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-24720",
+      "last_modified": "2026-06-17T04:32:22.093",
+      "products": [
+        "debian:debian_linux",
+        "image_processing_project:image_processing"
+      ],
+      "published": "2022-03-01T23:15:08.993",
+      "references": [
+        {
+          "tags": [
+            "Patch"
+          ],
+          "url": "https://github.com/janko/image_processing/commit/038e4574e8f4f4b636a62394e09983c71980dada"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Vendor Advisory"
+          ],
+          "url": "https://github.com/janko/image_processing/security/advisories/GHSA-cxf7-qrc5-9446"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.debian.org/security/2022/dsa-5310"
+        },
+        {
+          "tags": [
+            "Patch"
+          ],
+          "url": "https://github.com/janko/image_processing/commit/038e4574e8f4f4b636a62394e09983c71980dada"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Vendor Advisory"
+          ],
+          "url": "https://github.com/janko/image_processing/security/advisories/GHSA-cxf7-qrc5-9446"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.debian.org/security/2022/dsa-5310"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2022-25010": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-732"
+      ],
+      "description": "The component /rootfs in RageFile of Stepmania v5.1b2 and below allows attackers access to the entire file system.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-25010",
+      "last_modified": "2026-06-17T04:32:55.730",
+      "products": [
+        "stepmania:stepmania"
+      ],
+      "published": "2022-03-01T23:15:09.047",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/stepmania/stepmania/pull/2184"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/stepmania/stepmania/pull/2184"
         }
       ]
     },
@@ -28717,6 +28942,36 @@
       ]
     },
     "next_check": "2026-09-16"
+  },
+  "CVE-2025-46808": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-532"
+      ],
+      "description": "An Insertion of Sensitive Information into Log File vulnerability in SUSE neuvector manager exposes sensitive information into the manager container’s log\n\n\n\n\n\n\nThis issue affects neuvector: before 5.4.5.",
+      "has_exploit_tag": false,
+      "id": "CVE-2025-46808",
+      "last_modified": "2026-09-09T09:17:10.013",
+      "products": [],
+      "published": "2026-09-09T09:17:10.013",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.suse.com/show_bug.cgi?id=CVE-2025-46808"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/neuvector/manager/security/advisories/GHSA-fggw-hv56-8m6r"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2025-49506": {
     "added": "2026-08-07",
@@ -35847,6 +36102,36 @@
     },
     "next_check": "2026-09-16"
   },
+  "CVE-2026-14359": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The YITH WooCommerce Waitlist Premium plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 3.35.0. This is due to the add_user_in_waiting_list() function registered on the wp_ajax_yith_wcwtl_add_user action being missing both a capability check and a nonce verification, and using parse_str() + extract() to import attacker-controlled variables from $_POST['params'] that are then passed to wp_create_user() and $user->set_role(). This makes it possible for authenticated attackers, with Subscriber-level access and above, to elevate their privileges to that of an administrator by creating a new user account and assigning it the administrator role.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-14359",
+      "last_modified": "2026-09-09T09:17:10.450",
+      "products": [],
+      "published": "2026-09-09T09:17:10.450",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/48660afe-1e03-4bf5-b821-6538a4daf201?source=cve"
+        },
+        {
+          "tags": [],
+          "url": "https://yithemes.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-14364": {
     "added": "2026-08-08",
     "checks_done": 9,
@@ -37804,6 +38089,60 @@
       ]
     },
     "next_check": "2026-09-16"
+  },
+  "CVE-2026-14989": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Cookie Banner for GDPR / CCPA – WPLP Cookie Consent plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'wpl_user_preference' parameter in all versions up to, and including, 4.4.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The consent-logging AJAX endpoint is registered for unauthenticated users and its required nonce (wpl_consent_logging_nonce) is publicly emitted via wp_localize_script on the frontend, meaning any unauthenticated site visitor can plant a payload without any prior authentication or privileged access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-14989",
+      "last_modified": "2026-09-09T09:17:10.580",
+      "products": [],
+      "published": "2026-09-09T09:17:10.580",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/gdpr-cookie-consent/tags/4.2.7/public/modules/consent-logs/class-wpl-consent-logs.php#L700"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/gdpr-cookie-consent/tags/4.2.7/public/modules/consent-logs/class-wpl-cookie-consent-consent-logs.php#L594"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/gdpr-cookie-consent/tags/4.2.7/public/modules/consent-logs/class-wpl-cookie-consent-consent-logs.php#L725"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/gdpr-cookie-consent/tags/4.3.5/public/modules/consent-logs/class-wpl-consent-logs.php#L700"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/gdpr-cookie-consent/tags/4.3.5/public/modules/consent-logs/class-wpl-cookie-consent-consent-logs.php#L594"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/gdpr-cookie-consent/tags/4.3.5/public/modules/consent-logs/class-wpl-cookie-consent-consent-logs.php#L725"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3674117%40gdpr-cookie-consent&new=3674117%40gdpr-cookie-consent"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/6045c4fd-60ed-4771-93f4-d4df41ef888b?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-15001": {
     "added": "2026-08-15",
@@ -43616,6 +43955,32 @@
       ]
     },
     "next_check": "2026-11-05"
+  },
+  "CVE-2026-16272": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-348"
+      ],
+      "description": "Use of less trusted source vulnerability in PayTR Payment and Electronic Money Institution Inc. PayTR Virtual Pos iFrame API (v9x) WHMCS Module allows Exploitation of Trusted Identifiers.\n\nThis issue affects PayTR Virtual Pos iFrame API (v9x) WHMCS Module: from v9.0.0 before v9.0.3.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-16272",
+      "last_modified": "2026-09-09T09:17:10.720",
+      "products": [],
+      "published": "2026-09-09T09:17:10.720",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1034"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-16279": {
     "added": "2026-08-27",
@@ -50770,6 +51135,60 @@
       ]
     },
     "next_check": "2026-09-20"
+  },
+  "CVE-2026-17149": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Points Management System For Gamification, Ranks, Badges, and Loyalty Rewards Program – myCred plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'wrapper' Shortcode Attribute in all versions up to, and including, 3.2.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-17149",
+      "last_modified": "2026-09-09T08:17:19.870",
+      "products": [],
+      "published": "2026-09-09T08:17:19.870",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/mycred/tags/3.2.0/addons/sell-content/includes/mycred-sell-shortcodes.php#L152"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/mycred/tags/3.2.0/addons/sell-content/includes/mycred-sell-shortcodes.php#L163"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/mycred/tags/3.2.0/addons/sell-content/myCRED-addon-sell-content.php#L69"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/mycred/tags/3.2.3/addons/sell-content/includes/mycred-sell-shortcodes.php#L152"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/mycred/tags/3.2.3/addons/sell-content/includes/mycred-sell-shortcodes.php#L163"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/mycred/tags/3.2.3/addons/sell-content/myCRED-addon-sell-content.php#L69"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3640734%40mycred&new=3640734%40mycred"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/9d8c7e79-00c4-4667-9ef6-e988901bb6a0?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-17152": {
     "added": "2026-08-21",
@@ -77052,6 +77471,52 @@
       ]
     },
     "next_check": "2026-09-13"
+  },
+  "CVE-2026-19778": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "The WPMR Google Feed Manager for WooCommerce – Sell on Google Merchant Center & Shopping plugin for WordPress is vulnerable to time-based SQL Injection via the 'feed' parameter in all versions up to, and including, 2.23.7 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with administrator-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19778",
+      "last_modified": "2026-09-09T08:17:20.263",
+      "products": [],
+      "published": "2026-09-09T08:17:20.263",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-product-feed-manager/tags/2.23.7/includes/data/class-wppfm-ajax-data.php#L266"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-product-feed-manager/tags/2.23.7/includes/data/class-wppfm-data.php#L542"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-product-feed-manager/tags/2.23.7/includes/data/class-wppfm-feed-crud-handler.php#L25"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-product-feed-manager/tags/2.23.7/includes/data/class-wppfm-queries.php#L1113"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3677452%40wp-product-feed-manager&new=3677452%40wp-product-feed-manager"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/12fd3157-6dfc-478f-81eb-49db1fb66b7f?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-19783": {
     "added": "2026-08-21",
@@ -222334,6 +222799,56 @@
     },
     "next_check": "2026-09-18"
   },
+  "CVE-2026-75927": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The PublishPress Capabilities – User Role Editor, Access Permissions, User Capabilities, Admin Menus plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.50.0. This is due to the `addPluginCapabilities()` function unconditionally granting the Editor role all 15 `manage_capabilities_*` capabilities — including `manage_capabilities`, `manage_capabilities_roles`, `manage_capabilities_settings`, and `manage_capabilities_backup` — via a hard-coded `$eligible_roles = ['administrator', 'editor']` assignment that runs automatically on the first `admin_init` after plugin activation with no administrator opt-in, persisting the grants directly to the database. This makes it possible for authenticated attackers with Editor-level access to elevate their privileges to a site-wide capability manager, enabling them to create, rename, and delete non-system roles, modify capabilities of non-administrator roles, restore role backups, and write arbitrary plugin options whose names begin with `cme_`, `capsman`, `pp_capabilities`, or `presspermit` via `update_option()`. The escalation stops short of full Administrator access, as WordPress's `map_meta_cap` layer still prevents the escalated Editor from granting administrator-only capabilities to other roles; however, all role-management and plugin-settings functionality gated solely on `manage_capabilities_*` capabilities remains fully accessible.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-75927",
+      "last_modified": "2026-09-09T08:17:21.997",
+      "products": [],
+      "published": "2026-09-09T08:17:21.997",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/capability-manager-enhanced/tags/2.50.0/classes/pp-capabilities-installer.php#L78"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/capability-manager-enhanced/tags/2.50.0/includes/admin-load.php#L758"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/capability-manager-enhanced/tags/2.50.0/includes/functions-admin.php#L361"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/capability-manager-enhanced/tags/2.50.0/includes/manager.php#L1186"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/capability-manager-enhanced/tags/2.50.0/includes/settings-handler.php#L22"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3665572%40capability-manager-enhanced&new=3665572%40capability-manager-enhanced"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/2f35ab5c-f897-404b-92ea-71bf1c98e0c0?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-75931": {
     "added": "2026-08-25",
     "checks_done": 8,
@@ -238529,6 +239044,32 @@
     },
     "next_check": "2026-09-24"
   },
+  "CVE-2026-78377": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-601"
+      ],
+      "description": "URL redirection to untrusted site ('open redirect') vulnerability in Yordam Informatics Technology Consulting, Training, and Electronic Systems Industry and Trade Inc. Library Information and Document Automation Program allows Phishing.\n\nThis issue affects Library Information and Document Automation Program: from v22.1 before v22.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78377",
+      "last_modified": "2026-09-09T10:21:34.813",
+      "products": [],
+      "published": "2026-09-09T10:21:34.813",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1036"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-78379": {
     "added": "2026-08-26",
     "checks_done": 8,
@@ -239408,6 +239949,58 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2026-78481": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-321"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Use of Hard-coded Cryptographic Key vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to protection mechanism bypass.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78481",
+      "last_modified": "2026-09-09T12:17:13.313",
+      "products": [],
+      "published": "2026-09-09T12:17:13.313",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-78485": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Unauthorized access",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78485",
+      "last_modified": "2026-09-09T12:17:13.457",
+      "products": [],
+      "published": "2026-09-09T12:17:13.457",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-78488": {
     "added": "2026-09-08",
     "checks_done": 1,
@@ -239459,6 +240052,110 @@
       ]
     },
     "next_check": "2026-10-29"
+  },
+  "CVE-2026-78490": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-307"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Restriction of Excessive Authentication Attempts vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to client-side request forgery.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78490",
+      "last_modified": "2026-09-09T12:17:13.720",
+      "products": [],
+      "published": "2026-09-09T12:17:13.720",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-78491": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-295"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Certificate Validation vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78491",
+      "last_modified": "2026-09-09T09:17:10.870",
+      "products": [],
+      "published": "2026-09-09T09:17:10.870",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-78492": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-295"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Certificate Validation vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78492",
+      "last_modified": "2026-09-09T12:17:13.850",
+      "products": [],
+      "published": "2026-09-09T12:17:13.850",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-78494": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-295"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Certificate Validation vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78494",
+      "last_modified": "2026-09-09T09:17:10.990",
+      "products": [],
+      "published": "2026-09-09T09:17:10.990",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-78502": {
     "added": "2026-09-09",
@@ -241607,6 +242304,84 @@
     },
     "next_check": "2026-09-25"
   },
+  "CVE-2026-79635": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains a Server-Side Request Forgery (SSRF) vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79635",
+      "last_modified": "2026-09-09T11:17:15.353",
+      "products": [],
+      "published": "2026-09-09T11:17:15.353",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-79636": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-297"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Validation of Certificate with Host Mismatch vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79636",
+      "last_modified": "2026-09-09T08:17:22.133",
+      "products": [],
+      "published": "2026-09-09T08:17:22.133",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-79637": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-295"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Certificate Validation vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79637",
+      "last_modified": "2026-09-09T12:17:13.977",
+      "products": [],
+      "published": "2026-09-09T12:17:13.977",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-79639": {
     "added": "2026-09-08",
     "checks_done": 1,
@@ -241628,6 +242403,32 @@
         {
           "tags": [],
           "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities?msockid=3021cac2195069ed3194ddad186a68f9"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-79641": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to elevation of privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79641",
+      "last_modified": "2026-09-09T11:17:15.500",
+      "products": [],
+      "published": "2026-09-09T11:17:15.500",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
         }
       ]
     },
@@ -242276,6 +243077,58 @@
         {
           "tags": [],
           "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities?msockid=3021cac2195069ed3194ddad186a68f9"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-79692": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-73"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an External Control of File Name or Path vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to filesystem access for attacker.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79692",
+      "last_modified": "2026-09-09T12:17:14.120",
+      "products": [],
+      "published": "2026-09-09T12:17:14.120",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-79695": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-409"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Handling of Highly Compressed Data (Data Amplification) vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79695",
+      "last_modified": "2026-09-09T12:17:14.250",
+      "products": [],
+      "published": "2026-09-09T12:17:14.250",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
         }
       ]
     },
@@ -243256,6 +244109,110 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2026-79963": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-494"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains a Download of Code Without Integrity Check vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to command execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79963",
+      "last_modified": "2026-09-09T12:17:14.507",
+      "products": [],
+      "published": "2026-09-09T12:17:14.507",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-79972": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79972",
+      "last_modified": "2026-09-09T12:17:14.760",
+      "products": [],
+      "published": "2026-09-09T12:17:14.760",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-79973": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-567"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Unsynchronized Access to Shared Data in a Multithreaded Context vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79973",
+      "last_modified": "2026-09-09T09:17:11.473",
+      "products": [],
+      "published": "2026-09-09T09:17:11.473",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-79974": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Authentication vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79974",
+      "last_modified": "2026-09-09T09:17:11.590",
+      "products": [],
+      "published": "2026-09-09T09:17:11.590",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-79992": {
     "added": "2026-08-26",
     "checks_done": 8,
@@ -244017,6 +244974,72 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2026-80099": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "Several Newfold plugins are vulnerable to Authentication Bypass. The vulnerability exists because the plugins bundle the wp-module-data module. In the module, the `authenticate()` method — registered on the `rest_authentication_errors` filter and therefore evaluated for every unauthenticated REST API request — performs an HMAC-style Bearer token comparison that degenerates when `HiiveConnection::get_auth_token()` returns `false`: PHP coerces `strrev(false)` to `strrev('')`, collapsing the secret salt to the publicly known constant `hash('sha256', '') = e3b0c44...`, while all remaining hash inputs (HTTP method, request URL, raw request body, and the `X-Timestamp` header) remain fully attacker-controlled. This makes it possible for unauthenticated attackers to compute a valid Bearer token entirely offline, pass the token equality check, and have `wp_set_current_user()` invoked against the first administrator returned by `get_users(['role' => 'administrator'])`, granting full administrator-level access and enabling arbitrary REST API operations such as creating new administrator accounts and achieving complete site takeover. Vulnerable versions are WP Plugin Crazy Domains (<= 2.5.2), WP Plugin Web (<= 2.3.4), WP Plugin Hostgator (<= 3.1.0), WP Plugin Bluehost (<= 4.17.1). The affected module is vulnerable in versions up to, and including, 2.9.4.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80099",
+      "last_modified": "2026-09-09T09:17:12.157",
+      "products": [],
+      "published": "2026-09-09T09:17:12.157",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/newfold-labs/wp-module-data/commit/9d913fd8fa12796c4d9c09081e4aeccfa5cb1301"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/newfold-labs/wp-plugin-bluehost/compare/4.19.0...4.19.1"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/newfold-labs/wp-plugin-crazy-domains/compare/2.5.2...2.5.3"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/newfold-labs/wp-plugin-hostgator/compare/3.2.0...3.2.1"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/newfold-labs/wp-plugin-web/compare/2.3.5...2.3.6"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-module-data/trunk/includes/Data.php#L191"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-module-data/trunk/includes/Data.php#L201"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-module-data/trunk/includes/Data.php#L222"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-module-data/trunk/includes/Data.php#L69"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-module-data/trunk/includes/HiiveConnection.php#L406"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/3ee369c0-0d7c-4142-b3ba-a518288647ba?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-80104": {
     "added": "2026-08-26",
     "checks_done": 8,
@@ -244431,6 +245454,58 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2026-80122": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-295"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Certificate Validation vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80122",
+      "last_modified": "2026-09-09T09:17:12.303",
+      "products": [],
+      "published": "2026-09-09T09:17:12.303",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-80123": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains a Server-Side Request Forgery (SSRF) vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80123",
+      "last_modified": "2026-09-09T08:17:22.383",
+      "products": [],
+      "published": "2026-09-09T08:17:22.383",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-80126": {
     "added": "2026-09-08",
     "checks_done": 1,
@@ -244832,6 +245907,58 @@
         {
           "tags": [],
           "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities?msockid=3021cac2195069ed3194ddad186a68f9"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-80172": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-345"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Insufficient Verification of Data Authenticity vulnerability. An unauthenticated attacker with remote access could exploit this, leading to unauthorized access. This vulnerability is considered critical as an unauthenticated attacker can repeatedly reuse a captured request to generate ADMIN access and refresh tokens. Since there is no nonce validation or time limit on requests, the attack can be performed indefinitely. Dell recommends customers to upgrade at the earliest opportunity",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80172",
+      "last_modified": "2026-09-09T12:17:15.057",
+      "products": [],
+      "published": "2026-09-09T12:17:15.057",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-80177": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to script injection.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80177",
+      "last_modified": "2026-09-09T08:17:22.627",
+      "products": [],
+      "published": "2026-09-09T08:17:22.627",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-in/000503426/dsa-2026-382-security-update-for-dell-secure-connect-gateway-virtual-edition-multiple-vulnerabilities"
         }
       ]
     },
@@ -284133,6 +285260,40 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2026-86547": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.2,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-476"
+      ],
+      "description": "mrubyc through 4.0.0 contains a null pointer dereference vulnerability in the op_enter() handler in src/vm.c when processing untrusted bytecode. Attackers can craft malicious .mrb bytecode files with OP_ENTER instructions at the top level to crash the embedding application and cause denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86547",
+      "last_modified": "2026-09-09T10:22:33.803",
+      "products": [],
+      "published": "2026-09-09T10:22:33.803",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/mrubyc/mrubyc/blob/4261cf5e5ae5579e3110dab98a04b91c7d919429/src/vm.c#L1534"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/mrubyc/mrubyc/blob/release4.0.0/src/vm.c#L1537"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/mrubyc-through-4.0.0-null-pointer-dereference-via-op-enter"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-86550": {
     "added": "2026-09-08",
     "checks_done": 1,
@@ -286027,6 +287188,578 @@
         {
           "tags": [],
           "url": "https://osv.dev/vulnerability/OSEC-2026-11"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87766": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-59"
+      ],
+      "description": "A flaw was found in bubblewrap. During sandbox setup, creating files or directories under the new root can follow a parent symlink onto the host via /oldroot, writing attacker-chosen paths outside the sandbox as the launching user. This happens before the sandboxed process starts. This issue is GHSA-pxhw-h44j-8pfx. It is fixed in bubblewrap 0.12.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87766",
+      "last_modified": "2026-09-09T10:22:34.290",
+      "products": [],
+      "published": "2026-09-09T09:17:12.540",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-87766"
+        },
+        {
+          "tags": [],
+          "url": "https://bugs.debian.org/1145655"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2530542"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/containers/bubblewrap/releases/tag/v0.12.0"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/containers/bubblewrap/security/advisories/GHSA-pxhw-h44j-8pfx"
+        },
+        {
+          "tags": [],
+          "url": "https://www.openwall.com/lists/oss-security/2026/08/27/7"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87794": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-88"
+      ],
+      "description": "bestzip versions 2.2.6 and 3.0.2 contain an argument injection vulnerability in the nativeZip function that allows attackers to inject arbitrary arguments to the Info-ZIP backend. Attackers can supply a malicious destination path combined with crafted source entries to execute arbitrary commands with Node.js process privileges. Fixed in 2.2.7 and 3.0.3.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87794",
+      "last_modified": "2026-09-09T10:22:34.397",
+      "products": [],
+      "published": "2026-09-09T10:22:34.397",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/nfriedly/node-bestzip"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/nfriedly/node-bestzip/blob/v3.0.2/lib/bestzip.js"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/nfriedly/node-bestzip/commit/2adb637b0acb05b8475de7db5af4b86ffcf40aaf"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/nfriedly/node-bestzip/security/advisories/GHSA-p87m-9567-rgcc"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/nfriedly/node-bestzip/security/advisories/GHSA-xhwx-rch4-ph2v"
+        },
+        {
+          "tags": [],
+          "url": "https://www.npmjs.com/package/bestzip"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/bestzip-2.2.6-and-3.0.2-argument-injection-via-the-native-zip-destination"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87795": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "zstd-jni versions before 1.5.7-14 fail to validate offset and length parameters in the ZstdDictCompress constructor, allowing out-of-bounds memory reads. Attackers can supply untrusted offset or length values to read native heap memory into the compression dictionary, typically causing JVM crashes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87795",
+      "last_modified": "2026-09-09T10:22:34.557",
+      "products": [],
+      "published": "2026-09-09T10:22:34.557",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/luben/zstd-jni"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/luben/zstd-jni/blob/v1.5.7-13/src/main/java/com/github/luben/zstd/ZstdDictCompress.java"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/luben/zstd-jni/blob/v1.5.7-13/src/main/native/jni_fast_zstd.c"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/luben/zstd-jni/commit/0d64de4dee6606ff506be36c7f2e714ad0c80fdb"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/luben/zstd-jni/commit/1c4e5a6c3ce8458095225d987d669e6a0937734a"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/luben/zstd-jni/releases/tag/v1.5.7-14"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/luben/zstd-jni/security/advisories/GHSA-ff36-7w3w-g8rm"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/zstd-jni-1.2.0-through-1.5.7-13-out-of-bounds-read-via-zstddictcompress"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87806": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "Parse Server versions <= 8.6.87 and >= 9.0.0 < 9.10.1-alpha.7 contain an authentication bypass in the built-in LDAP authentication adapter. The adapter forwarded the client-supplied password to the directory without verifying that a password had been supplied, and treated any non-error response from the directory as proof of authentication. A zero-length credential turns an LDAP simple bind into the unauthenticated authentication mechanism described in RFC 4513 section 5.1.2, which some directories (including Active Directory in its default configuration) answer with success while mapping the connection to anonymous. As a result, an unauthenticated attacker who knows a directory username can obtain a valid session token for that account, resulting in account takeover. Only deployments that enable the LDAP authentication adapter are affected, and deployments whose directory refuses unauthenticated simple bind (such as a stock OpenLDAP configuration) are not exploitable. The issue is fixed in 8.6.88 and 9.10.1-alpha.7, which require the password to be a non-empty string and reject the request before contacting the directory.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87806",
+      "last_modified": "2026-09-09T12:17:15.190",
+      "products": [],
+      "published": "2026-09-09T12:17:15.190",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-863r-39r9-vfcf"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/parse-server-9.0.0-authentication-bypass-via-ldap-empty-password"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87807": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "siyuan versions before v3.8.2 contain an authenticated SQL injection vulnerability in the fullTextSearchBlock endpoint's method=1 query parameter. Attackers can inject UNION SELECT statements to read the entire blocks table, bypassing publish-access controls and exposing all document content and sensitive attributes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87807",
+      "last_modified": "2026-09-09T12:17:15.343",
+      "products": [],
+      "published": "2026-09-09T12:17:15.343",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-336w-67gx-gx2h"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-sql-injection-via-fulltextsearchblock"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87809": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "Siyuan before v3.8.2 fails to apply publish-access filtering to embedded blocks before rendering in the /api/export/preview and /api/lute/copyStdMarkdown endpoints. Attackers with reader access can retrieve the full rendered content of private, hidden, or publish-disabled blocks by accessing public documents containing embed queries that select those blocks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87809",
+      "last_modified": "2026-09-09T12:17:15.650",
+      "products": [],
+      "published": "2026-09-09T12:17:15.650",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8wx4-fvqw-f5f8"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-information-disclosure-via-export-preview"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87811": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "SiYuan before v3.8.2 inserts persisted notebook template paths into HTML input value attributes without proper attribute encoding. Attackers can craft malicious template paths that break out of the attribute context and execute JavaScript when a victim opens notebook configuration, enabling same-origin API requests and application state manipulation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87811",
+      "last_modified": "2026-09-09T12:17:15.950",
+      "products": [],
+      "published": "2026-09-09T12:17:15.950",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-v6wf-r2gr-rrgf"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-stored-xss-via-notebook-template-paths"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87812": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "SiYuan before v3.8.2 contains a stored cross-site scripting vulnerability in Bazaar package cards where the iconURL metadata is inserted directly into HTML img src attributes without escaping. Attackers can inject malicious URLs with event handlers that execute JavaScript in the authenticated SiYuan origin when users view Bazaar listings, enabling API requests and application state manipulation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87812",
+      "last_modified": "2026-09-09T12:17:16.100",
+      "products": [],
+      "published": "2026-09-09T12:17:16.100",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-rvcf-q4h8-w6c9"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-stored-xss-via-bazaar-iconurl"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87813": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "SiYuan before v3.8.2 contains a stored cross-site scripting vulnerability in the Search Assets result list where asset filenames are interpolated into HTML without escaping. Authenticated attackers can craft asset filenames containing malicious markup that executes JavaScript in the victim's browser when searching assets, enabling same-origin API requests and application state manipulation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87813",
+      "last_modified": "2026-09-09T12:17:16.250",
+      "products": [],
+      "published": "2026-09-09T12:17:16.250",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-qcw6-qm34-28h8"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-stored-xss-via-unescaped-asset-filenames"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87814": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "SiYuan before v3.8.2 contains a stored cross-site scripting vulnerability in the search asset preview feature that fails to escape indexed asset content before inserting it into the DOM using innerHTML. Attackers who can place crafted text assets in a workspace can execute JavaScript in the SiYuan origin when victims preview the assets, enabling authenticated API requests and workspace manipulation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87814",
+      "last_modified": "2026-09-09T12:17:16.390",
+      "products": [],
+      "published": "2026-09-09T12:17:16.390",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-64gp-333q-mq6j"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-stored-xss-via-asset-preview"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87815": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-73"
+      ],
+      "description": "SiYuan versions before v3.8.2 contain a path traversal vulnerability in the /api/riff/removeRiffDeck endpoint that fails to validate the deckID parameter. An authenticated administrator can supply path traversal sequences to delete arbitrary .deck and .cards files outside the workspace directory.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87815",
+      "last_modified": "2026-09-09T12:17:16.537",
+      "products": [],
+      "published": "2026-09-09T12:17:16.537",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-94vh-rpgr-rpwc"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.2-path-traversal-via-removeriffdeck"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87816": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-362"
+      ],
+      "description": "PasswordPusher before 2.11.1 contains a time-of-check-to-time-of-use race condition in view limit enforcement that allows unauthenticated attackers to bypass expire_after_views limits. Attackers can send concurrent requests to the show endpoint to access one-time secrets multiple times before the view count is incremented and the push expires.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87816",
+      "last_modified": "2026-09-09T12:17:16.683",
+      "products": [],
+      "published": "2026-09-09T12:17:16.683",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pglombardo/PasswordPusher/security/advisories/GHSA-6q3c-57pp-wvpp"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/passwordpusher-before-2.11.1-race-condition-view-limit-bypass"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87817": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "GitPython before 3.1.60 fails to properly validate the git directory location, allowing attackers to impersonate the git directory using tracked files like gitdir, commondir, and HEAD. Attackers can execute arbitrary code by placing a malicious pre-commit hook in the tracked hooks directory that executes when a victim calls index.commit() on a cloned or opened repository.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87817",
+      "last_modified": "2026-09-09T12:17:16.830",
+      "products": [],
+      "published": "2026-09-09T12:17:16.830",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-239g-whfq-7xj9"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/gitpython-before-3.1.60-remote-code-execution-via-git-directory-impersonation"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87818": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-88"
+      ],
+      "description": "GitPython 3.1.59 fails to restrict the --no-index option in the high-level diff API, allowing attackers to read arbitrary filesystem paths as repository operands. Attackers can combine --no-index with -I/--ignore-matching-lines to create a content-dependent Boolean oracle, repeatedly querying local files to recover single-line secrets through distinguishable success or error responses.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87818",
+      "last_modified": "2026-09-09T12:17:16.980",
+      "products": [],
+      "published": "2026-09-09T12:17:16.980",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-whh4-5q6c-9v3x"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/gitpython-3.1.59-local-file-content-oracle-via-no-index"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87819": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1333"
+      ],
+      "description": "GitPython before 3.1.60 contains a regular expression denial of service vulnerability in Actor.name_email_regex that processes commit author and committer fields. Attackers can craft a commit object with a malformed author field containing an unterminated angle bracket to cause quadratic backtracking, exhausting CPU resources for over two minutes per commit access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87819",
+      "last_modified": "2026-09-09T12:17:17.120",
+      "products": [],
+      "published": "2026-09-09T12:17:17.120",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/gitpython-developers/GitPython/security/advisories/GHSA-g5vv-9gxw-82hx"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/gitpython-before-3.1.60-denial-of-service-via-redos"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87821": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Lara Dashboard through 1.3.1 contains a server-side request forgery vulnerability in the POST /api/admin/builder/markdown/fetch endpoint that allows any authenticated user to fetch arbitrary URLs and read the response body. Attackers can read internal HTTP services and cloud metadata including IAM credentials by supplying malicious URLs without host validation or redirect restrictions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87821",
+      "last_modified": "2026-09-09T12:17:17.417",
+      "products": [],
+      "published": "2026-09-09T12:17:17.417",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/blob/v0.9.2/app/Services/Builder/MarkdownFetchService.php"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/blob/v1.3.1/app/Http/Controllers/Api/Builder/MarkdownController.php"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/blob/v1.3.1/app/Services/Builder/MarkdownFetchService.php"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/blob/v1.3.2/app/Support/Security/SafeUrlValidator.php"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/commit/738cc1a219ce459323ef1d09c3789075f1b8d2f2"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/releases/tag/v1.3.2"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/security/advisories/GHSA-4xqv-4c27-6c4j"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/security/advisories/GHSA-f36j-h77g-6wj8"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/lara-dashboard-0.9.2-through-1.3.1-server-side-request-forgery-in-builder-markdown-fetch"
         }
       ]
     },
