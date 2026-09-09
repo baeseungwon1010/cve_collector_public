@@ -1,107 +1,122 @@
 {
-  "CVE-2018-1000164": {
-    "package": "PIP:gunicorn"
+  "CVE-2026-19693": {
+    "package": "NPM:extract-zip"
   },
-  "CVE-2025-59057": {
-    "package": "NPM:@remix-run/react"
+  "CVE-2026-45819": {
+    "package": "NPM:baseline-browser-mapping"
   },
-  "CVE-2026-21884": {
-    "package": "NPM:@remix-run/react"
+  "CVE-2026-62815": {
+    "package": "NUGET:Microsoft.Native.Quic.MsQuic.Schannel"
   },
-  "CVE-2026-41855": {
-    "package": "MAVEN:org.springframework:spring-jms"
+  "CVE-2026-73560": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-53668": {
-    "package": "NPM:react-router-dom"
+  "CVE-2026-73843": {
+    "package": "GO:github.com/openchoreo/openchoreo"
   },
-  "CVE-2026-60004": {
-    "package": "GO:gitea.dev"
+  "CVE-2026-75604": {
+    "package": "NPM:next"
   },
-  "CVE-2026-62384": {
-    "package": "PIP:nltk"
-  },
-  "CVE-2026-63312": {
-    "package": "PIP:nltk"
-  },
-  "CVE-2026-65915": {
-    "package": "PIP:nltk"
-  },
-  "CVE-2026-67321": {
-    "package": "NPM:axios"
-  },
-  "CVE-2026-67322": {
-    "package": "PIP:gitpython"
-  },
-  "CVE-2026-67323": {
+  "CVE-2026-76217": {
     "package": "PIP:GitPython"
   },
-  "CVE-2026-67325": {
+  "CVE-2026-76218": {
     "package": "PIP:GitPython"
   },
-  "CVE-2026-68584": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
-  },
-  "CVE-2026-69112": {
-    "package": "PIP:accelerate"
-  },
-  "CVE-2026-69222": {
-    "package": "NPM:liquidjs"
-  },
-  "CVE-2026-70626": {
-    "package": "PIP:nltk"
-  },
-  "CVE-2026-71493": {
-    "package": "GO:github.com/infracost/infracost"
-  },
-  "CVE-2026-71494": {
-    "package": "GO:github.com/infracost/infracost"
-  },
-  "CVE-2026-72789": {
-    "package": "GO:github.com/siyuan-note/siyuan/kernel"
-  },
-  "CVE-2026-72925": {
-    "package": "RUST:swc_html_minifier"
-  },
-  "CVE-2026-73087": {
-    "package": "GO:github.com/amir20/dozzle"
-  },
-  "CVE-2026-73294": {
-    "package": "GO:github.com/semaphoreui/semaphore"
-  },
-  "CVE-2026-75595": {
-    "package": "MAVEN:io.netty:netty-handler"
-  },
-  "CVE-2026-75596": {
-    "package": "MAVEN:io.netty:netty-handler"
-  },
-  "CVE-2026-78675": {
+  "CVE-2026-76219": {
     "package": "PIP:GitPython"
   },
-  "CVE-2026-78677": {
+  "CVE-2026-76220": {
     "package": "PIP:GitPython"
   },
-  "CVE-2026-78679": {
+  "CVE-2026-76222": {
     "package": "PIP:GitPython"
   },
-  "CVE-2026-78681": {
+  "CVE-2026-76845": {
+    "package": "NPM:adm-zip"
+  },
+  "CVE-2026-77634": {
+    "package": "COMPOSER:cakephp/cakephp"
+  },
+  "CVE-2026-77635": {
+    "package": "COMPOSER:cakephp/database"
+  },
+  "CVE-2026-80205": {
     "package": "PIP:nltk"
   },
-  "CVE-2026-78682": {
+  "CVE-2026-80206": {
     "package": "PIP:nltk"
   },
-  "CVE-2026-78683": {
+  "CVE-2026-81725": {
     "package": "PIP:nltk"
   },
-  "CVE-2026-79657": {
-    "package": "PIP:nltk"
+  "CVE-2026-83605": {
+    "package": "NPM:xmldom"
   },
-  "CVE-2026-79674": {
-    "package": "PIP:nltk"
+  "CVE-2026-83606": {
+    "package": "NPM:@xmldom/xmldom"
   },
-  "CVE-2026-79676": {
-    "package": "PIP:nltk"
+  "CVE-2026-83607": {
+    "package": "NPM:xmldom"
   },
-  "CVE-2026-85063": {
-    "package": "NPM:csv-parse"
+  "CVE-2026-83608": {
+    "package": "NPM:xmldom"
+  },
+  "CVE-2026-83609": {
+    "package": "NPM:@xmldom/xmldom"
+  },
+  "CVE-2026-83611": {
+    "package": "NPM:xmldom"
+  },
+  "CVE-2026-83612": {
+    "package": "NPM:@xmldom/xmldom"
+  },
+  "CVE-2026-83613": {
+    "package": "NPM:xmldom"
+  },
+  "CVE-2026-83614": {
+    "package": "NPM:xmldom"
+  },
+  "CVE-2026-83615": {
+    "package": "NPM:xmldom"
+  },
+  "CVE-2026-83616": {
+    "package": "NPM:xmldom"
+  },
+  "CVE-2026-83617": {
+    "package": "NPM:@xmldom/xmldom"
+  },
+  "CVE-2026-83618": {
+    "package": "NPM:@xmldom/xmldom"
+  },
+  "CVE-2026-83619": {
+    "package": "NPM:@xmldom/xmldom"
+  },
+  "CVE-2026-84303": {
+    "package": "GO:google.golang.org/grpc"
+  },
+  "CVE-2026-84369": {
+    "package": "NPM:svgo"
+  },
+  "CVE-2026-84370": {
+    "package": "NPM:svgo"
+  },
+  "CVE-2026-84372": {
+    "package": "COMPOSER:predis/predis"
+  },
+  "CVE-2026-84374": {
+    "package": "COMPOSER:maatwebsite/excel"
+  },
+  "CVE-2026-84381": {
+    "package": "PIP:httpx2"
+  },
+  "CVE-2026-84382": {
+    "package": "PIP:httpx2"
+  },
+  "CVE-2026-85061": {
+    "package": "NPM:maplibre-gl"
+  },
+  "CVE-2026-85062": {
+    "package": "NPM:colord"
   }
 }

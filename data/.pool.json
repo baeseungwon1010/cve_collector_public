@@ -20951,6 +20951,206 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2020-14521": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-276",
+        "CWE-428"
+      ],
+      "description": "Multiple Mitsubishi Electric Factory Automation engineering software products have a malicious code execution vulnerability. A malicious attacker could use this vulnerability to obtain information, modify information, and cause a denial-of-service condition.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-14521",
+      "last_modified": "2026-06-17T02:54:55.153",
+      "products": [
+        "mitsubishielectric:c_controller_interface_module_utility",
+        "mitsubishielectric:c_controller_module_setting_and_monitoring_tool",
+        "mitsubishielectric:cc-link_ie_control_network_data_collector",
+        "mitsubishielectric:cc-link_ie_field_network_data_collector",
+        "mitsubishielectric:cc-link_ie_tsn_data_collector",
+        "mitsubishielectric:cpu_module_logging_configuration_tool",
+        "mitsubishielectric:cw_configurator",
+        "mitsubishielectric:data_transfer",
+        "mitsubishielectric:ezsocket",
+        "mitsubishielectric:fr_configurator2",
+        "mitsubishielectric:fr_configurator_sw3",
+        "mitsubishielectric:got1000_series_gt10",
+        "mitsubishielectric:got1000_series_gt11",
+        "mitsubishielectric:got1000_series_gt12",
+        "mitsubishielectric:got1000_series_gt14",
+        "mitsubishielectric:got1000_series_gt15",
+        "mitsubishielectric:got1000_series_gt16",
+        "mitsubishielectric:got1000_series_gt21",
+        "mitsubishielectric:got1000_series_gt23",
+        "mitsubishielectric:got1000_series_gt25",
+        "mitsubishielectric:got1000_series_gt27",
+        "mitsubishielectric:gt_designer2_classic",
+        "mitsubishielectric:gt_designer3",
+        "mitsubishielectric:gt_softgot1000",
+        "mitsubishielectric:gt_softgot2000",
+        "mitsubishielectric:gx_developer",
+        "mitsubishielectric:gx_logviewer",
+        "mitsubishielectric:gx_works2",
+        "mitsubishielectric:gx_works3",
+        "mitsubishielectric:m_commdtm-io-link",
+        "mitsubishielectric:melfa-works",
+        "mitsubishielectric:melsec_wincpu_setting_utility",
+        "mitsubishielectric:melsoft_complete_clean_up_tool",
+        "mitsubishielectric:melsoft_em_software_development_kit",
+        "mitsubishielectric:melsoft_iq_appportal",
+        "mitsubishielectric:melsoft_navigator",
+        "mitsubishielectric:mi_configurator",
+        "mitsubishielectric:motion_control_setting",
+        "mitsubishielectric:motorizer",
+        "mitsubishielectric:mr_configurator2",
+        "mitsubishielectric:mt_works2",
+        "mitsubishielectric:mtconnect_data_collector",
+        "mitsubishielectric:mx_component",
+        "mitsubishielectric:mx_mesinterface",
+        "mitsubishielectric:mx_mesinterface-r",
+        "mitsubishielectric:mx_sheet",
+        "mitsubishielectric:network_interface_board_cc-link_ver.2_utility",
+        "mitsubishielectric:network_interface_board_cc-link_ver.2_utility_firmware",
+        "mitsubishielectric:network_interface_board_cc_ie_control_utility",
+        "mitsubishielectric:network_interface_board_cc_ie_control_utility_firmware",
+        "mitsubishielectric:network_interface_board_cc_ie_field_utility",
+        "mitsubishielectric:network_interface_board_cc_ie_field_utility_firmware",
+        "mitsubishielectric:network_interface_board_mneth_utility",
+        "mitsubishielectric:network_interface_board_mneth_utility_firmware",
+        "mitsubishielectric:position_board_utility_2",
+        "mitsubishielectric:px_developer",
+        "mitsubishielectric:rt_toolbox2",
+        "mitsubishielectric:rt_toolbox3",
+        "mitsubishielectric:setting\\/monitoring_tools_for_the_c_controller_module",
+        "mitsubishielectric:slmp_data_collector"
+      ],
+      "published": "2022-02-11T18:15:08.513",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-20-212-04"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2020-007_en.pdf"
+        },
+        {
+          "tags": [
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-20-212-04"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2020-007_en.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2020-14523": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Multiple Mitsubishi Electric Factory Automation products have a vulnerability that allows an attacker to execute arbitrary code.",
+      "has_exploit_tag": false,
+      "id": "CVE-2020-14523",
+      "last_modified": "2026-06-17T02:54:55.580",
+      "products": [
+        "mitsubishielectric:cw_configurator",
+        "mitsubishielectric:fr_configurator2",
+        "mitsubishielectric:gx_works2",
+        "mitsubishielectric:gx_works3",
+        "mitsubishielectric:iu_configuration_tool",
+        "mitsubishielectric:iu_developer2",
+        "mitsubishielectric:melsoft_iq_appportal",
+        "mitsubishielectric:melsoft_navigator",
+        "mitsubishielectric:mi_configurator",
+        "mitsubishielectric:mr_configurator2",
+        "mitsubishielectric:mt_works2",
+        "mitsubishielectric:mx_component",
+        "mitsubishielectric:rd78g16",
+        "mitsubishielectric:rd78g16_firmware",
+        "mitsubishielectric:rd78g32",
+        "mitsubishielectric:rd78g32_firmware",
+        "mitsubishielectric:rd78g4",
+        "mitsubishielectric:rd78g4_firmware",
+        "mitsubishielectric:rd78g64",
+        "mitsubishielectric:rd78g64_firmware",
+        "mitsubishielectric:rd78g8",
+        "mitsubishielectric:rd78g8_firmware",
+        "mitsubishielectric:rd78ghv",
+        "mitsubishielectric:rd78ghv_firmware",
+        "mitsubishielectric:rd78ghw",
+        "mitsubishielectric:rd78ghw_firmware",
+        "mitsubishielectric:rt_toolbox3"
+      ],
+      "published": "2022-02-11T18:15:08.577",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://jvn.jp/vu/JVNVU90224831/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-20-212-03"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2020-008_en.pdf"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://jvn.jp/vu/JVNVU90224831/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-20-212-03"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2020-008_en.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2020-16147": {
     "added": "2026-09-03",
     "checks_done": 6,
@@ -23310,6 +23510,82 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2021-22801": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "A CWE-269: Improper Privilege Management vulnerability exists that could cause an arbitrary command execution when the software is configured with specially crafted event actions. Affected Product: ConneXium Network Manager Software (All Versions)",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-22801",
+      "last_modified": "2026-06-17T03:37:48.740",
+      "products": [
+        "schneider-electric:connexium_network_manager"
+      ],
+      "published": "2022-02-11T18:15:09.260",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-285-02"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Vendor Advisory"
+          ],
+          "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-285-02"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2021-22802": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-120"
+      ],
+      "description": "A CWE-120: Buffer Copy without Checking Size of Input vulnerability exists that could result in remote code execution due to missing length check on user supplied data, when a constructed message is received on the network. Affected Product: Interactive Graphical SCADA System Data Collector (dc.exe) (V15.0.0.21243 and prior)",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-22802",
+      "last_modified": "2026-06-17T03:37:48.843",
+      "products": [
+        "schneider-electric:interactive_graphical_scada_system_data_collector"
+      ],
+      "published": "2022-02-11T18:15:09.307",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-285-03"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-285-03"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2021-22859": {
     "added": "2026-09-05",
     "checks_done": 4,
@@ -25615,6 +25891,58 @@
             "VDB Entry"
           ],
           "url": "https://www.exploit-db.com/exploits/50391"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2021-42940": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "A Cross Site Scripting (XSS) vulnerability exists in Projeqtor 9.3.1 via /projeqtor/tool/saveAttachment.php, which allows an attacker to upload a SVG file containing malicious JavaScript code.",
+      "has_exploit_tag": true,
+      "id": "CVE-2021-42940",
+      "last_modified": "2026-06-17T04:10:16.510",
+      "products": [
+        "projeqtor:projeqtor"
+      ],
+      "published": "2022-02-11T16:15:08.620",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://truedigitalsecurity.com/services/penetration-testing-services/advisory-summary-2.2022-cve-2021-42940"
+        },
+        {
+          "tags": [
+            "Product",
+            "Vendor Advisory"
+          ],
+          "url": "https://www.projeqtor.org/en/"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://truedigitalsecurity.com/services/penetration-testing-services/advisory-summary-2.2022-cve-2021-42940"
+        },
+        {
+          "tags": [
+            "Product",
+            "Vendor Advisory"
+          ],
+          "url": "https://www.projeqtor.org/en/"
         }
       ]
     },
@@ -30307,6 +30635,68 @@
     },
     "next_check": "2026-09-12"
   },
+  "CVE-2026-11363": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.6,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-502"
+      ],
+      "description": "The Ninja Forms – The Contact Form Builder That Grows With You plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.14.6 via deserialization of untrusted input . This makes it possible for authenticated attackers, with administrator-level access and above, to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present. The deserialization is triggered automatically during form import when WPN_Helper::build_nf_cache() invokes $action->get_settings() immediately after the crafted form is imported, requiring no further interaction beyond the import action itself.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-11363",
+      "last_modified": "2026-09-09T04:17:56.297",
+      "products": [],
+      "published": "2026-09-09T04:17:56.297",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.14.2/includes/Abstracts/Model.php#L344"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.14.2/includes/Admin/Menus/ImportExport.php#L63"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.14.2/includes/Admin/Processes/ImportForm.php#L426"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.14.2/includes/Helper.php#L451"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.14.5/includes/Abstracts/Model.php#L344"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.14.5/includes/Admin/Menus/ImportExport.php#L63"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.14.5/includes/Admin/Processes/ImportForm.php#L426"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ninja-forms/tags/3.14.5/includes/Helper.php#L451"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3581939%40ninja-forms&new=3581939%40ninja-forms"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/d95427d0-77c6-41d6-93f1-508999e14242?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-11421": {
     "added": "2026-08-06",
     "checks_done": 9,
@@ -32716,6 +33106,32 @@
     },
     "next_check": "2026-11-06"
   },
+  "CVE-2026-12855": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "Unvalidated memory boundary could result in arbitrary code execution. The vulnerability exists in the code developed specifically for HP projects.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-12855",
+      "last_modified": "2026-09-09T04:17:56.480",
+      "products": [],
+      "published": "2026-09-09T04:17:56.480",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.insyde.com/security-pledge/sa-2026009/"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-12865": {
     "added": "2026-09-02",
     "checks_done": 7,
@@ -33940,6 +34356,44 @@
     },
     "next_check": "2026-09-16"
   },
+  "CVE-2026-13359": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Contact Form to DB by BestWebSoft – Messages Database Plugin For WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via cntctfrm_contact_dropdown Parameter in all versions up to, and including, 1.7.5 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The injected payload executes in the context of an administrator's browser session when they visit the plugin's message manager page at /wp-admin/admin.php?page=cntctfrmtdb_manager, making it possible to compromise administrator-level sessions via a simple unauthenticated contact form submission.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-13359",
+      "last_modified": "2026-09-09T03:17:22.627",
+      "products": [],
+      "published": "2026-09-09T03:17:22.627",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-to-db/tags/1.7.4/contact_form_to_db.php#L2035"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/contact-form-to-db/tags/1.7.4/contact_form_to_db.php#L582"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3624996/contact-form-to-db"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/838dd2f9-22e3-4833-9f55-09bd729fd6ed?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-13360": {
     "added": "2026-08-16",
     "checks_done": 8,
@@ -34661,6 +35115,52 @@
       ]
     },
     "next_check": "2026-10-29"
+  },
+  "CVE-2026-13709": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Graphina – Charts and Graphs For Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'iq_tree_tree_chart_template' Widget Setting in all versions up to, and including, 3.1.11 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-13709",
+      "last_modified": "2026-09-09T03:17:22.770",
+      "products": [],
+      "published": "2026-09-09T03:17:22.770",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/graphina-elementor-charts-and-graphs/tags/3.1.11/assets/elementor/js/apex-tree/TreeChart.js#L146"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/graphina-elementor-charts-and-graphs/tags/3.1.11/includes/Charts/Elementor/GraphinaElementorControls.php#L1446"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/graphina-elementor-charts-and-graphs/tags/3.1.11/includes/GraphinaFunction.php#L1653"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/graphina-elementor-charts-and-graphs/tags/3.1.11/templates/graphina-apex-tree/tree-chart.php#L19"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3553477%40graphina-elementor-charts-and-graphs&new=3553477%40graphina-elementor-charts-and-graphs"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/fb99c935-947e-43a2-8291-c6a0724f8610?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-13717": {
     "added": "2026-08-11",
@@ -35830,6 +36330,32 @@
       ]
     },
     "next_check": "2026-09-16"
+  },
+  "CVE-2026-14505": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.6,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Tanium addressed a path traversal vulnerability in Tanium Data Service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-14505",
+      "last_modified": "2026-09-09T03:17:22.913",
+      "products": [],
+      "published": "2026-09-09T03:17:22.913",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-044"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-14514": {
     "added": "2026-08-20",
@@ -38941,6 +39467,68 @@
     },
     "next_check": "2026-10-29"
   },
+  "CVE-2026-15406": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-98"
+      ],
+      "description": "The Eventin – Event Calendar, Event Registration, Tickets & Booking (AI Powered) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.1.22 via the 'event_layout' parameter parameter. This makes it possible for authenticated attackers, with custom-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15406",
+      "last_modified": "2026-09-09T03:17:23.157",
+      "products": [],
+      "published": "2026-09-09T03:17:23.157",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.15/core/AccessControl/Permission.php#L297"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.15/core/event/Api/EventController.php#L1041"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.15/core/event/Api/EventController.php#L2165"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.15/core/event/template-functions.php#L480"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.16/core/AccessControl/Permission.php#L297"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.16/core/event/Api/EventController.php#L1041"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.16/core/event/Api/EventController.php#L2165"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.16/core/event/template-functions.php#L480"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3668637%40wp-event-solution&new=3668637%40wp-event-solution"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/a50b8e5c-d7f2-45d9-ba24-ea7a3d807deb?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-15413": {
     "added": "2026-08-14",
     "checks_done": 8,
@@ -40168,6 +40756,56 @@
       ]
     },
     "next_check": "2026-10-31"
+  },
+  "CVE-2026-15667": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-98"
+      ],
+      "description": "The Eventin – Event Calendar, Event Registration, Tickets & Booking (AI Powered) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.1.22 via the 'event_layout' parameter parameter. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included. The etn_manage_event capability is assigned to Contributors by default, meaning any Contributor-level user can set the malicious event_layout value via the REST API without any additional configuration.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15667",
+      "last_modified": "2026-09-09T03:17:23.523",
+      "products": [],
+      "published": "2026-09-09T03:17:23.523",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.17/base/post-model.php#L202"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.17/core/AccessControl/Permission.php#L298"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.17/core/event/Api/EventController.php#L2165"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.17/core/event/Api/EventController.php#L814"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-event-solution/tags/4.1.17/core/event/template-functions.php#L480"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3668637%40wp-event-solution&new=3668637%40wp-event-solution"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/c3001ec4-a1d8-43d7-8e0c-1fe2e4e7f314?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-15679": {
     "added": "2026-08-21",
@@ -51868,6 +52506,56 @@
         {
           "tags": [],
           "url": "https://wpscan.com/vulnerability/d17f3de9-b0f9-4bbd-8a57-18cda9d43d79/"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-17553": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The WP EasyCart plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 5.9.3. This is due to the ec_ajax_save_page_default_options() AJAX handler iterating over every $_POST key and passing it directly into update_option() without any allowlist, while gating the handler only on 'manage_options' OR the plugin's custom 'wpec_manager' capability. The plugin's built-in 'wpec_store_manager' role holds 'wpec_manager' but not 'manage_options', and the required nonce is emitted on frontend product/category templates that render for any user with 'wpec_manager'. This makes it possible for authenticated attackers, with Store Manager-level access and above, to elevate their privileges to administrator by updating arbitrary WordPress options such as default_role='administrator' and users_can_register='1', then self-registering a new account that is assigned the administrator role.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-17553",
+      "last_modified": "2026-09-09T04:17:56.607",
+      "products": [],
+      "published": "2026-09-09T04:17:56.607",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-easycart/tags/5.9.1/admin/inc/wp_easycart_admin.php#L209"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-easycart/tags/5.9.1/design/layout/base-responsive-v3/ec_product_page.php#L415"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-easycart/tags/5.9.1/wpeasycart.php#L7103"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-easycart/tags/5.9.1/wpeasycart.php#L7107"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-easycart/tags/5.9.1/wpeasycart.php#L7110"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3681924%40wp-easycart&new=3681924%40wp-easycart"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/08e62276-f004-48ca-bb00-2f81e6ac4892?source=cve"
         }
       ]
     },
@@ -76787,6 +77475,52 @@
     },
     "next_check": "2026-09-15"
   },
+  "CVE-2026-19797": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The User Access Manager plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'tab_group_section' parameter in all versions up to, and including, 2.3.18 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19797",
+      "last_modified": "2026-09-09T04:17:57.307",
+      "products": [],
+      "published": "2026-09-09T04:17:57.307",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/user-access-manager/tags/2.3.18/src/Controller/Backend/ControllerTabNavigationTrait.php#L39"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/user-access-manager/tags/2.3.18/src/Controller/BaseControllerTrait.php#L37"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/user-access-manager/tags/2.3.18/src/Controller/BaseControllerTrait.php#L45"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/user-access-manager/tags/2.3.18/src/View/AdminSettings.php#L55"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3680890%40user-access-manager&new=3680890%40user-access-manager"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/a7e1fd8f-548e-4fb2-9ee4-b24c412aaa8e?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-19806": {
     "added": "2026-09-01",
     "checks_done": 7,
@@ -77741,6 +78475,30 @@
         {
           "tags": [],
           "url": "https://grafana.com/security/security-advisories/cve-2026-19854"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-19855": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "The CleanTalk WordPress plugin before 6.87 does not prevent unauthenticated, user-supplied comment content from being passed to WordPress's shortcode engine, allowing any visitor to have arbitrary shortcodes registered on the site executed server-side and rendered to every subsequent visitor of the page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19855",
+      "last_modified": "2026-09-09T07:16:56.500",
+      "products": [],
+      "published": "2026-09-09T07:16:56.500",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/c27f3657-261a-46cd-860c-0bdf5c849190/"
         }
       ]
     },
@@ -79152,6 +79910,48 @@
       ]
     },
     "next_check": "2026-09-25"
+  },
+  "CVE-2026-19945": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The WP Crowdfunding plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'first_name' parameter in all versions up to, and including, 2.2.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. An administrator viewing any user's profile via the ?show_user_id= parameter will render the attacker's stored payload in the admin's browser session, enabling cross-privilege script execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19945",
+      "last_modified": "2026-09-09T05:17:20.207",
+      "products": [],
+      "published": "2026-09-09T05:17:20.207",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-crowdfunding/tags/2.2.1/includes/woocommerce/Actions.php#L116"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-crowdfunding/tags/2.2.1/includes/woocommerce/Actions.php#L79"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-crowdfunding/tags/2.2.1/includes/woocommerce/dashboard/profile.php#L62"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3677675%40wp-crowdfunding&new=3677675%40wp-crowdfunding"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/0b78d34f-6702-45dd-ba56-46e9c547bc9f?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-19952": {
     "added": "2026-09-01",
@@ -89310,6 +90110,36 @@
     },
     "next_check": "2026-10-29"
   },
+  "CVE-2026-41987": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.2,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-264"
+      ],
+      "description": "Permission control vulnerability in the app management module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-41987",
+      "last_modified": "2026-09-09T04:17:57.760",
+      "products": [],
+      "published": "2026-09-09T04:17:57.760",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletin/2026/9/"
+        },
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletinvision/2026/9/"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-42007": {
     "added": "2026-08-28",
     "checks_done": 7,
@@ -98733,6 +99563,142 @@
       ]
     },
     "next_check": "2026-09-17"
+  },
+  "CVE-2026-49310": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-264"
+      ],
+      "description": "Permission control vulnerability in the event notification module.\nImpact: Successful exploitation of this vulnerability may affect service confidentiality.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-49310",
+      "last_modified": "2026-09-09T04:17:58.680",
+      "products": [],
+      "published": "2026-09-09T04:17:58.680",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletin/2026/9/"
+        },
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletinlaptops/2026/9/"
+        },
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletinvision/2026/9/"
+        },
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletinwearables/2026/9/"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-49311": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.2,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-275"
+      ],
+      "description": "Permission control vulnerability in the event notification module.Impact: Successful exploitation of this vulnerability may affect availability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-49311",
+      "last_modified": "2026-09-09T04:17:58.813",
+      "products": [],
+      "published": "2026-09-09T04:17:58.813",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletin/2026/9/"
+        },
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletinlaptops/2026/9/"
+        },
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletinvision/2026/9/"
+        },
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletinwearables/2026/9/"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-49314": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "OOB write vulnerability in the rendering and composition module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-49314",
+      "last_modified": "2026-09-09T04:17:59.783",
+      "products": [],
+      "published": "2026-09-09T04:17:59.783",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletin/2026/9/"
+        },
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletinlaptops/2026/9/"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-49315": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-264"
+      ],
+      "description": "DoS vulnerability in the input device module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-49315",
+      "last_modified": "2026-09-09T04:17:59.933",
+      "products": [],
+      "published": "2026-09-09T04:17:59.933",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletin/2026/9/"
+        },
+        {
+          "tags": [],
+          "url": "https://consumer.huawei.com/en/support/bulletinvision/2026/9/"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-49329": {
     "added": "2026-09-02",
@@ -137322,6 +138288,32 @@
       ]
     },
     "next_check": "2026-09-11"
+  },
+  "CVE-2026-6485": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-489"
+      ],
+      "description": "UEFI BIOS embedded Shell could be used to bypass Secure Boot via shell commands or startup scripts.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-6485",
+      "last_modified": "2026-09-09T04:19:36.437",
+      "products": [],
+      "published": "2026-09-09T04:19:36.437",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.insyde.com/security-pledge/sa-2026004/"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-64859": {
     "added": "2026-08-18",
@@ -221660,6 +222652,68 @@
     },
     "next_check": "2026-09-15"
   },
+  "CVE-2026-75966": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Podlove Podcast Publisher plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'episode_contributor[..][..][comment]' Parameter in all versions up to, and including, 4.5.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The contributor comment is stored in a plugin-managed custom table, bypassing WordPress core's wp_kses_post filter, and the save_post hook fires without a nonce check, meaning any user who can edit posts can exploit this without further preconditions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-75966",
+      "last_modified": "2026-09-09T04:19:55.697",
+      "products": [],
+      "published": "2026-09-09T04:19:55.697",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/podlove-podcasting-plugin-for-wordpress/tags/4.5.4/lib/modules/contributors/contributors.php#L25"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/podlove-podcasting-plugin-for-wordpress/tags/4.5.4/lib/modules/contributors/contributors.php#L490"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/podlove-podcasting-plugin-for-wordpress/tags/4.5.4/lib/modules/contributors/templates/contributor-table.twig#L59"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/podlove-podcasting-plugin-for-wordpress/tags/4.5.4/lib/template/twig_filter.php#L139"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/podlove-podcasting-plugin-for-wordpress/tags/4.5.5/lib/modules/contributors/contributors.php#L25"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/podlove-podcasting-plugin-for-wordpress/tags/4.5.5/lib/modules/contributors/contributors.php#L490"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/podlove-podcasting-plugin-for-wordpress/tags/4.5.5/lib/modules/contributors/templates/contributor-table.twig#L59"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/podlove-podcasting-plugin-for-wordpress/tags/4.5.5/lib/template/twig_filter.php#L139"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3671120%40podlove-podcasting-plugin-for-wordpress&new=3671120%40podlove-podcasting-plugin-for-wordpress"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/fc9253bc-feee-422f-aafb-1630f2d1ad2e?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-75971": {
     "added": "2026-08-26",
     "checks_done": 8,
@@ -222544,6 +223598,56 @@
       ]
     },
     "next_check": "2026-09-18"
+  },
+  "CVE-2026-76009": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "The Next-Cart Store to WooCommerce Migration plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 3.9.8 via the `NCWM_Kitconnect::run()` function. This is due to the plugin registering the `/wp-json/next_cart/v1/migration` REST route with `permission_callback` set to `__return_true` and relying on a hardcoded fallback value of `__token__` in `get_option('nextcart_token', '__token__')` when the `nextcart_token` option has not yet been written to the database. This makes it possible for unauthenticated attackers to bypass authentication to the migration endpoint by supplying the literal string `__token__` as the token, gaining access to privileged handlers that pass attacker-controlled SQL directly to `$wpdb->query()` and `$wpdb->get_results()` — enabling arbitrary SQL execution including administrator account creation — and pass an attacker-controlled path to `unlink()`, enabling arbitrary file deletion and full site takeover. The hardcoded fallback is reachable whenever the `nextcart_token` option has not yet been populated, which occurs after WP-CLI, network, or programmatic plugin activation without a subsequent authenticated `wp-admin` visit, as token generation is deferred to `admin_init` via `register_settings()`.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76009",
+      "last_modified": "2026-09-09T06:17:16.497",
+      "products": [],
+      "published": "2026-09-09T06:17:16.497",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/nextcart-woocommerce-migration/trunk/includes/carts/kitconnect-api.php#L120"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/nextcart-woocommerce-migration/trunk/includes/carts/kitconnect-api.php#L23"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/nextcart-woocommerce-migration/trunk/includes/carts/kitconnect-api.php#L336"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/nextcart-woocommerce-migration/trunk/includes/main.php#L123"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/nextcart-woocommerce-migration/trunk/includes/main.php#L40"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3686100%40nextcart-woocommerce-migration&new=3686100%40nextcart-woocommerce-migration"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/739b57d9-8066-4c2a-9419-f6cd9409433c?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-76048": {
     "added": "2026-08-19",
@@ -227077,6 +228181,52 @@
     },
     "next_check": "2026-09-19"
   },
+  "CVE-2026-76801": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The FireBox – WooCommerce Popup Builder, Exit Intent Popup, Email Optin & Cart Abandonment plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.1.10 via the value function. This is due to a trivially bypassable regex blacklist in Executer::allowedToRun() that fails to block WordPress core functions such as wp_insert_user, update_option, and file_put_contents, combined with no sanitization of PHP condition rule values stored via the firebox_meta REST endpoint. This makes it possible for authenticated attackers, with author-level access and above, to execute code on the server. On sites upgraded from a version prior to 3.1.10, the Migrator::preserveCampaignRoleAccess() function automatically grants the edit_fireboxes and publish_fireboxes capabilities to the Author role, lowering the effective entry point to Author-level access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76801",
+      "last_modified": "2026-09-09T03:17:24.943",
+      "products": [],
+      "published": "2026-09-09T03:17:24.943",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/firebox/tags/3.1.10/Inc/Core/FB/Meta.php#L411"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/firebox/tags/3.1.10/Inc/Core/Migrator.php#L606"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/firebox/tags/3.1.10/Inc/Framework/Inc/Base/Conditions/Conditions/PHP.php#L36"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/firebox/tags/3.1.10/Inc/Framework/Inc/Base/Executer.php#L231"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3666018%40firebox&new=3666018%40firebox"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/9c1d8ec3-de01-4496-8d8b-b9604f952b1e?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-76827": {
     "added": "2026-08-20",
     "checks_done": 8,
@@ -229268,6 +230418,90 @@
         {
           "tags": [],
           "url": "https://my.f5.com/manage/s/article/K000162601"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-77186": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The My Calendar – Accessible Event Manager plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'fallback' Shortcode Attribute in all versions up to, and including, 3.8.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The bypass relies on hex-encoded shortcode attribute payloads (e.g. \\x3cscript\\x3e), which wp_kses_post cannot strip on save because they appear as literal backslash sequences rather than real HTML tags; WordPress core's shortcode_parse_atts() then calls stripcslashes() at render time, decoding the escapes into real angle brackets before they reach the unescaped sink.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77186",
+      "last_modified": "2026-09-09T04:19:55.880",
+      "products": [],
+      "published": "2026-09-09T04:19:55.880",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/joedolson/my-calendar/commit/89bbf7314fac84cdb89e520e8b7b6d69eee8dd3c"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/my-calendar/trunk/my-calendar-shortcodes.php#L114"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/my-calendar/trunk/my-calendar-widgets.php#L272"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/my-calendar/trunk/my-calendar.php#L556"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/62c8fb1f-6cba-43cc-8aca-70812c29a63d?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-77187": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The My Calendar – Accessible Event Manager plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'before' and 'after' Shortcode Attributes in all versions up to, and including, 3.8.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77187",
+      "last_modified": "2026-09-09T04:19:56.057",
+      "products": [],
+      "published": "2026-09-09T04:19:56.057",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/joedolson/my-calendar/commit/89bbf7314fac84cdb89e520e8b7b6d69eee8dd3c"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/my-calendar/tags/3.8.0/my-calendar-events.php#L1102"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/my-calendar/tags/3.8.0/my-calendar-shortcodes.php#L358"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/my-calendar/tags/3.8.0/my-calendar.php#L563"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/8c8beca2-d02b-4379-99e9-8090ef84ca6d?source=cve"
         }
       ]
     },
@@ -233681,6 +234915,72 @@
       ]
     },
     "next_check": "2026-09-11"
+  },
+  "CVE-2026-7804": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Product Filter for WooCommerce by WBW plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'wpf_fid' parameter in all versions up to, and including, 3.4.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link. Exploitation requires the crafted request to target a page where a filter using the vulnerable recalculation output is present.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-7804",
+      "last_modified": "2026-09-09T04:20:11.387",
+      "products": [],
+      "published": "2026-09-09T04:20:11.387",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woo-product-filter/tags/3.1.3/classes/req.php#L57"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woo-product-filter/tags/3.1.3/modules/woofilters/mod.php#L3845"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woo-product-filter/tags/3.1.3/modules/woofilters/views/woofilters.php#L774"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woo-product-filter/tags/3.1.7/classes/req.php#L57"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woo-product-filter/tags/3.1.7/modules/woofilters/mod.php#L3845"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woo-product-filter/tags/3.1.7/modules/woofilters/views/woofilters.php#L774"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woo-product-filter/trunk/classes/req.php#L57"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woo-product-filter/trunk/modules/woofilters/mod.php#L3845"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woo-product-filter/trunk/modules/woofilters/views/woofilters.php#L774"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3686394%40woo-product-filter&new=3686394%40woo-product-filter"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/28e45ffc-ea55-42a4-97ea-4638f640b712?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
   },
   "CVE-2026-78050": {
     "added": "2026-08-23",
@@ -261856,6 +263156,92 @@
     },
     "next_check": "2026-09-16"
   },
+  "CVE-2026-83593": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The WPBot – AI ChatBot for Live Support, Lead Generation, AI Services plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'conversation' parameter in all versions up to, and including, 8.7.3 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The action is gated only by a nonce that is localized into every public-facing page via wp_localize_script, rendering the nonce check ineffective as an access control barrier for unauthenticated users.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-83593",
+      "last_modified": "2026-09-09T06:17:17.670",
+      "products": [],
+      "published": "2026-09-09T06:17:17.670",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.5.6/functions.php#L1922"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.5.6/includes/chat-sessions/js/admin.js#L86"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.5.6/includes/chat-sessions/wpbot-chat-sessions.php#L564"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.5.6/includes/chat-sessions/wpbot-chat-sessions.php#L566"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.5.6/includes/chat-sessions/wpbot-chat-sessions.php#L708"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.5.6/includes/chat-sessions/wpbot-chat-sessions.php#L866"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.5.6/qcld-wpwbot.php#L613"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.6.9/functions.php#L1922"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.6.9/includes/chat-sessions/js/admin.js#L86"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.6.9/includes/chat-sessions/wpbot-chat-sessions.php#L564"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.6.9/includes/chat-sessions/wpbot-chat-sessions.php#L566"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.6.9/includes/chat-sessions/wpbot-chat-sessions.php#L708"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.6.9/includes/chat-sessions/wpbot-chat-sessions.php#L866"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/chatbot/tags/8.6.9/qcld-wpwbot.php#L613"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3679725%40chatbot&new=3679725%40chatbot"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/710fb372-4b7e-43e3-86a7-417143536f43?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-83595": {
     "added": "2026-09-01",
     "checks_done": 7,
@@ -264693,6 +266079,68 @@
         {
           "tags": [],
           "url": "https://github.com/fastify/fast-uri/security/advisories/GHSA-qw65-cvwx-89v3"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-84293": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Repeater Fields for Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Repeated Multi-Input Sub-Field Values in all versions up to, and including, 3.0.4 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This vulnerability only affects multi-input sub-field types within a repeater (such as Name, Address, and Checkbox fields), as scalar single-input field values are escaped with esc_html() at the output stage in version 3.0.4.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84293",
+      "last_modified": "2026-09-09T04:20:27.027",
+      "products": [],
+      "published": "2026-09-09T04:20:27.027",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/repeater-for-gravity-forms/tags/2.4.6/fields/repeater_field.php#L401"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/repeater-for-gravity-forms/tags/2.4.6/fields/repeater_field.php#L474"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/repeater-for-gravity-forms/tags/2.4.6/fields/repeater_field.php#L543"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/repeater-for-gravity-forms/tags/2.4.6/fields/repeater_field.php#L549"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/repeater-for-gravity-forms/tags/3.0.4/fields/repeater_field.php#L401"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/repeater-for-gravity-forms/tags/3.0.4/fields/repeater_field.php#L474"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/repeater-for-gravity-forms/tags/3.0.4/fields/repeater_field.php#L543"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/repeater-for-gravity-forms/tags/3.0.4/fields/repeater_field.php#L549"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3677164%40repeater-for-gravity-forms&new=3677164%40repeater-for-gravity-forms"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/55f9bfd7-e77c-4072-a1de-36f3ac1ffb81?source=cve"
         }
       ]
     },
@@ -269226,6 +270674,30 @@
         {
           "tags": [],
           "url": "https://www.tenda.com.cn/"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-85117": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "The Contact Form 7 Captcha WordPress plugin before 0.1.9 runs the shortcode parser over the whole rendered Contact Form 7 form, including the values a visitor submitted, allowing unauthenticated users to execute arbitrary shortcodes registered on the site.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85117",
+      "last_modified": "2026-09-09T07:16:58.647",
+      "products": [],
+      "published": "2026-09-09T07:16:58.647",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/e791e4a6-5ec1-49c7-9448-1d83ec4f4905/"
         }
       ]
     },
@@ -283992,6 +285464,292 @@
     },
     "next_check": "2026-09-10"
   },
+  "CVE-2026-87021": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1336"
+      ],
+      "description": "Tanium addressed an unauthorized code execution vulnerability in Comply.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87021",
+      "last_modified": "2026-09-09T03:17:25.207",
+      "products": [],
+      "published": "2026-09-09T03:17:25.207",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-040"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87023": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Tanium addressed a path traversal vulnerability in Comply.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87023",
+      "last_modified": "2026-09-09T03:17:25.323",
+      "products": [],
+      "published": "2026-09-09T03:17:25.323",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-028"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87030": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Tanium addressed a path traversal vulnerability in Comply.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87030",
+      "last_modified": "2026-09-09T03:17:25.557",
+      "products": [],
+      "published": "2026-09-09T03:17:25.557",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-043"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87034": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Tanium addressed a SQL injection vulnerability in Comply.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87034",
+      "last_modified": "2026-09-09T03:17:25.897",
+      "products": [],
+      "published": "2026-09-09T03:17:25.897",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-042"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87036": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Tanium addressed an improper access controls vulnerability in Comply.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87036",
+      "last_modified": "2026-09-09T03:17:26.143",
+      "products": [],
+      "published": "2026-09-09T03:17:26.143",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-041"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87047": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "Tanium addressed an improper access controls vulnerability in Comply.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87047",
+      "last_modified": "2026-09-09T03:17:26.493",
+      "products": [],
+      "published": "2026-09-09T03:17:26.493",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-038"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87072": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Tanium addressed an improper access controls vulnerability in Comply.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87072",
+      "last_modified": "2026-09-09T03:17:26.723",
+      "products": [],
+      "published": "2026-09-09T03:17:26.723",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-030"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87073": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Tanium addressed an improper access controls vulnerability in Comply.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87073",
+      "last_modified": "2026-09-09T03:17:26.847",
+      "products": [],
+      "published": "2026-09-09T03:17:26.847",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-029"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87075": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "Tanium addressed an improper access controls vulnerability in Comply.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87075",
+      "last_modified": "2026-09-09T03:17:26.953",
+      "products": [],
+      "published": "2026-09-09T03:17:26.953",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-037"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87084": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Tanium addressed a server-side request forgery vulnerability in Enforce.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87084",
+      "last_modified": "2026-09-09T03:17:27.070",
+      "products": [],
+      "published": "2026-09-09T03:17:27.070",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-036"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87088": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "Tanium addressed an unauthorized code execution vulnerability in Enforce.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87088",
+      "last_modified": "2026-09-09T03:17:27.183",
+      "products": [],
+      "published": "2026-09-09T03:17:27.183",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.tanium.com/TAN-2026-022"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
   "CVE-2026-8709": {
     "added": "2026-08-06",
     "checks_done": 9,
@@ -284191,6 +285949,84 @@
         {
           "tags": [],
           "url": "https://gitlab.torproject.org/tpo/core/tor/-/raw/tor-0.4.9.12/ChangeLog"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87732": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.2,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-347"
+      ],
+      "description": "An issue was discovered in the mirage-crypto package before 2.2.0 for OCaml. The AES.GCM.authenticate_decrypt_into and Chacha20.authenticate_decrypt_into functions write the decrypted plaintext into a caller-provided buffer and only then compares the tag. On a forged tag, the functions returns false, but the destination buffer already holds the full plaintext.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87732",
+      "last_modified": "2026-09-09T05:18:20.277",
+      "products": [],
+      "published": "2026-09-09T05:18:20.277",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://osv.dev/vulnerability/OSEC-2026-12"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87733": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.2,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-295"
+      ],
+      "description": "An issue was discovered in the mirage-crypto-ec function before 2.2.0 for OCaml. The ECDSA functions {P256,P384,P521}.Dsa.pub_of_octets accept 0x00, the encoding of the point at infinity, as a public key. With that public key, signatures can be forged without a private key.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87733",
+      "last_modified": "2026-09-09T05:18:20.430",
+      "products": [],
+      "published": "2026-09-09T05:18:20.430",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://osv.dev/vulnerability/OSEC-2026-13"
+        }
+      ]
+    },
+    "next_check": "2026-09-10"
+  },
+  "CVE-2026-87734": {
+    "added": "2026-09-09",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-923"
+      ],
+      "description": "An issue was discovered in the utcp package before 0.0.6 for OCaml. Out-of-order segment reassembly allows remote denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87734",
+      "last_modified": "2026-09-09T05:18:20.577",
+      "products": [],
+      "published": "2026-09-09T05:18:20.577",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://osv.dev/vulnerability/OSEC-2026-11"
         }
       ]
     },
