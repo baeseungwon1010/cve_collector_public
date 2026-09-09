@@ -1,1 +1,107 @@
-{}
+{
+  "CVE-2018-1000164": {
+    "package": "PIP:gunicorn"
+  },
+  "CVE-2025-59057": {
+    "package": "NPM:@remix-run/react"
+  },
+  "CVE-2026-21884": {
+    "package": "NPM:@remix-run/react"
+  },
+  "CVE-2026-41855": {
+    "package": "MAVEN:org.springframework:spring-jms"
+  },
+  "CVE-2026-53668": {
+    "package": "NPM:react-router-dom"
+  },
+  "CVE-2026-60004": {
+    "package": "GO:gitea.dev"
+  },
+  "CVE-2026-62384": {
+    "package": "PIP:nltk"
+  },
+  "CVE-2026-63312": {
+    "package": "PIP:nltk"
+  },
+  "CVE-2026-65915": {
+    "package": "PIP:nltk"
+  },
+  "CVE-2026-67321": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-67322": {
+    "package": "PIP:gitpython"
+  },
+  "CVE-2026-67323": {
+    "package": "PIP:GitPython"
+  },
+  "CVE-2026-67325": {
+    "package": "PIP:GitPython"
+  },
+  "CVE-2026-68584": {
+    "package": "GO:github.com/siyuan-note/siyuan/kernel"
+  },
+  "CVE-2026-69112": {
+    "package": "PIP:accelerate"
+  },
+  "CVE-2026-69222": {
+    "package": "NPM:liquidjs"
+  },
+  "CVE-2026-70626": {
+    "package": "PIP:nltk"
+  },
+  "CVE-2026-71493": {
+    "package": "GO:github.com/infracost/infracost"
+  },
+  "CVE-2026-71494": {
+    "package": "GO:github.com/infracost/infracost"
+  },
+  "CVE-2026-72789": {
+    "package": "GO:github.com/siyuan-note/siyuan/kernel"
+  },
+  "CVE-2026-72925": {
+    "package": "RUST:swc_html_minifier"
+  },
+  "CVE-2026-73087": {
+    "package": "GO:github.com/amir20/dozzle"
+  },
+  "CVE-2026-73294": {
+    "package": "GO:github.com/semaphoreui/semaphore"
+  },
+  "CVE-2026-75595": {
+    "package": "MAVEN:io.netty:netty-handler"
+  },
+  "CVE-2026-75596": {
+    "package": "MAVEN:io.netty:netty-handler"
+  },
+  "CVE-2026-78675": {
+    "package": "PIP:GitPython"
+  },
+  "CVE-2026-78677": {
+    "package": "PIP:GitPython"
+  },
+  "CVE-2026-78679": {
+    "package": "PIP:GitPython"
+  },
+  "CVE-2026-78681": {
+    "package": "PIP:nltk"
+  },
+  "CVE-2026-78682": {
+    "package": "PIP:nltk"
+  },
+  "CVE-2026-78683": {
+    "package": "PIP:nltk"
+  },
+  "CVE-2026-79657": {
+    "package": "PIP:nltk"
+  },
+  "CVE-2026-79674": {
+    "package": "PIP:nltk"
+  },
+  "CVE-2026-79676": {
+    "package": "PIP:nltk"
+  },
+  "CVE-2026-85063": {
+    "package": "NPM:csv-parse"
+  }
+}
