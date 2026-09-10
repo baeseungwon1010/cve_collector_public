@@ -1,38 +1,44 @@
 {
-  "CVE-2026-37004": {
-    "package": "PIP:litellm"
+  "CVE-2024-9355": {
+    "package": "GO:github.com/golang-fips/openssl"
   },
-  "CVE-2026-77037": {
-    "package": "NPM:multer"
+  "CVE-2025-24890": {
+    "package": "RUST:gix-sec"
   },
-  "CVE-2026-77078": {
-    "package": "NPM:multer"
+  "CVE-2026-30922": {
+    "package": "PIP:pyasn1"
   },
-  "CVE-2026-81525": {
-    "package": "COMPOSER:mongodb/mongodb"
+  "CVE-2026-42151": {
+    "package": "GO:github.com/prometheus/prometheus"
   },
-  "CVE-2026-82333": {
-    "package": "NPM:multer"
+  "CVE-2026-55864": {
+    "package": "MAVEN:org.geonetwork-opensource:gn-web-app"
   },
-  "CVE-2026-84308": {
-    "package": "COMPOSER:phpseclib"
+  "CVE-2026-56317": {
+    "package": "NPM:nuxt"
   },
-  "CVE-2026-84361": {
-    "package": "COMPOSER:composer/composer"
+  "CVE-2026-56341": {
+    "package": "COMPOSER:wwbn/avideo"
   },
-  "CVE-2026-84365": {
-    "package": "NPM:hono"
+  "CVE-2026-59176": {
+    "package": "NPM:functype-mcp-server"
   },
-  "CVE-2026-84375": {
-    "package": "NPM:js-yaml"
+  "CVE-2026-59177": {
+    "package": "PIP:esphome-device-builder"
   },
-  "CVE-2026-84376": {
-    "package": "NPM:astro"
+  "CVE-2026-59179": {
+    "package": "NPM:@openhop/server"
   },
-  "CVE-2026-84445": {
-    "package": "GO:google.golang.org/grpc"
+  "CVE-2026-59185": {
+    "package": "GO:github.com/identrail/identrail"
   },
-  "CVE-2026-84452": {
-    "package": "PIP:winml-cli"
+  "CVE-2026-85730": {
+    "package": "NPM:smol-toml"
+  },
+  "CVE-2026-88000": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-88002": {
+    "package": "PIP:open-webui"
   }
 }
