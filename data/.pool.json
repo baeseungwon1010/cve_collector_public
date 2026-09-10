@@ -20901,6 +20901,45 @@
     },
     "next_check": "2026-09-17"
   },
+  "CVE-2020-13567": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Multiple SQL injection vulnerabilities exist in phpGACL 3.3.7. A specially crafted HTTP request can lead to a SQL injection. An attacker can send an HTTP request to trigger this vulnerability.",
+      "has_exploit_tag": true,
+      "id": "CVE-2020-13567",
+      "last_modified": "2026-06-17T02:53:20.910",
+      "products": [
+        "open-emr:openemr",
+        "phpgacl_project:phpgacl"
+      ],
+      "published": "2022-04-18T17:15:12.120",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1179"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2020-1179"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
   "CVE-2020-14032": {
     "added": "2026-09-06",
     "checks_done": 4,
@@ -26715,6 +26754,83 @@
     },
     "next_check": "2026-09-11"
   },
+  "CVE-2022-0785": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "The Daily Prayer Time WordPress plugin before 2022.03.01 does not sanitise and escape the month parameter before using it in a SQL statement via the get_monthly_timetable AJAX action (available to unauthenticated users), leading to an unauthenticated SQL injection",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-0785",
+      "last_modified": "2026-06-17T04:21:15.470",
+      "products": [
+        "daily_prayer_time_project:daily_prayer_time"
+      ],
+      "published": "2022-04-18T18:15:08.527",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://wpscan.com/vulnerability/e1e09f56-89a4-4d6f-907b-3fb2cb825255"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://wpscan.com/vulnerability/e1e09f56-89a4-4d6f-907b-3fb2cb825255"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2022-1020": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-352",
+        "CWE-862"
+      ],
+      "description": "The Product Table for WooCommerce (wooproducttable) WordPress plugin before 3.1.2 does not have authorisation and CSRF checks in the wpt_admin_update_notice_option AJAX action (available to both unauthenticated and authenticated users), as well as does not validate the callback parameter, allowing unauthenticated attackers to call arbitrary functions with either none or one user controlled argument",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-1020",
+      "last_modified": "2026-06-17T04:21:39.453",
+      "products": [
+        "codeastrology:woo_product_table"
+      ],
+      "published": "2022-04-18T18:15:08.740",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://wpscan.com/vulnerability/04fe89b3-8ad1-482f-a96d-759d1d3a0dd5"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://wpscan.com/vulnerability/04fe89b3-8ad1-482f-a96d-759d1d3a0dd5"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
   "CVE-2022-22642": {
     "added": "2026-09-10",
     "checks_done": 0,
@@ -27333,6 +27449,96 @@
             "Third Party Advisory"
           ],
           "url": "https://github.com/kabirkhyrul/HMS/discussions/12"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2022-26631": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Automatic Question Paper Generator v1.0 contains a Time-Based Blind SQL injection vulnerability via the id GET parameter.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-26631",
+      "last_modified": "2026-06-17T04:35:33.217",
+      "products": [
+        "automatic_question_paper_generator_project:automatic_question_paper_generator"
+      ],
+      "published": "2022-04-18T14:15:07.920",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/Cyb3rR3ap3r/CVE-2022-26631"
+        },
+        {
+          "tags": [
+            "Product",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.sourcecodester.com/php/15190/automatic-question-paper-generator-system-phpoop-free-source-code.html"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/Cyb3rR3ap3r/CVE-2022-26631"
+        },
+        {
+          "tags": [
+            "Product",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.sourcecodester.com/php/15190/automatic-question-paper-generator-system-phpoop-free-source-code.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2022-27423": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Chamilo LMS v1.11.13 was discovered to contain a SQL injection vulnerability via the blog_id parameter at /blog/blog.php.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-27423",
+      "last_modified": "2026-06-17T04:37:01.040",
+      "products": [
+        "chamilo:chamilo_lms"
+      ],
+      "published": "2022-04-15T20:15:12.157",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://support.chamilo.org/projects/1/wiki/Security_issues"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://support.chamilo.org/projects/1/wiki/Security_issues"
         }
       ]
     },
@@ -42395,6 +42601,36 @@
         {
           "tags": [],
           "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/7b2688ee-f416-4fce-b73a-864f31057146?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-15889": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Aruba HiSpeed Cache plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Post Content in all versions up to, and including, 3.0.14 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15889",
+      "last_modified": "2026-09-10T10:17:30.010",
+      "products": [],
+      "published": "2026-09-10T10:17:30.010",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3674227/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/59650bce-1b7c-4d3f-b4b0-594108510453?source=cve"
         }
       ]
     },
@@ -91940,6 +92176,110 @@
     },
     "next_check": "2026-09-11"
   },
+  "CVE-2026-42804": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "A stack-based buffer overflow vulnerability exists in the Bosch Sensortec BHI360 SensorAPI(C-Library) in versions up to and including commit d6b200416a.\r\n\r\nThe vulnerability is located within the FIFO parsing and debug logging subsystem inside the function bhi360_parse_debug_message() in bhi360_parse.c (lines 1852-1875). \r\n\r\nThe parser trusts the first payload byte of a debug frame as the message length (msg_length) and copies that many bytes into a fixed-size 17-byte stack buffer (debug_msg) via memcpy without performing any bounds checking.\r\n\r\nA locally or physically positioned attacker (e.g., via a malicious sensor, counterfeit hardware module, or a Man-in-the-Middle on the communication bus) can exploit this vulnerability by injecting a crafted debug frame with a length byte exceeding 16.\r\n\r\nThis corrupts adjacent stack data, including the saved return address.\r\n\r\nFurthermore, because the overflowed buffer is subsequently passed to a printf-style logging sink, the attacker can supply format string specifiers (e.g., %n) to execute arbitrary code on the host microcontroller/SoC or cause a reliable system crash (Denial of Service).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42804",
+      "last_modified": "2026-09-10T09:17:01.880",
+      "products": [],
+      "published": "2026-09-10T09:17:01.880",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://psirt.bosch.com/security-advisories/BOSCH-SA-223618.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-42805": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "A stack-based buffer overflow vulnerability exists in the Bosch Sensortec BHI385 SensorAPI (C library) within the debug message parser function bhi385_parse_debug_message (located in bhi385_parse.c). \r\n\r\nThe function parses FIFO events and extracts an 8-bit message length directly from the attacker-controlled event payload (callback_info->data_ptr[0]) without enforcing bounds checks or clamping the value.\r\n\r\nWhen copying the payload into a fixed-size stack buffer of 17 bytes (uint8_t debug_msg[17]) via memcpy, providing a length byte greater than 16 causes the function to write past the allocated stack boundary. \r\n\r\nThis memory corruption can be triggered by a malicious or compromised sensor or bus participant, leading to a firmware crash, Denial of Service (DoS), or potentially the execution of arbitrary code via adjacent stack data corruption.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42805",
+      "last_modified": "2026-09-10T09:17:02.013",
+      "products": [],
+      "published": "2026-09-10T09:17:02.013",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://psirt.bosch.com/security-advisories/BOSCH-SA-223618.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-42807": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-122"
+      ],
+      "description": "A heap-based buffer overflow vulnerability in the PC bridge protocol decoder of BoschSensortec COINES_SDK (versions 2.10 through 2.12.2) allows attackers to cause a denial of service (process crash) or potentially execute arbitrary code. \r\n\r\nThe bridge decoder ({{bridge_decoder.c}}) trusts the packet length field provided by the external device and forwards it to the host response queue ({{mqueue_add_data}}) without validating the bounds of the destination buffer. \r\n\r\nA malicious or compromised USB or Bluetooth Low Energy (BLE) peripheral can advertise a payload size up to ~3 KB, which exceeds the default queue slot size of 255 bytes. \r\n\r\nThis results in an unbounded heap overwrite ({{memcpy}}), corrupting adjacent heap metadata on the host system when processing the device's response.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42807",
+      "last_modified": "2026-09-10T09:17:02.250",
+      "products": [],
+      "published": "2026-09-10T09:17:02.250",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://psirt.bosch.com/security-advisories/BOSCH-SA-223618.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-42808": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-120"
+      ],
+      "description": "An issue was discovered in Bosch Sensortec COINES_SDK versions 2.0 through 2.11. \r\n\r\nThe host streaming API function {{coines_read_stream_sensor_data()}} fails to validate the boundaries of the caller-provided destination buffer.\r\n\r\nInternally, the stream processing mechanism in {{comm_intf_process_stream_response()}} discards the requested {{number_of_samples}} argument and copies the entirety of the streaming ring buffer's accumulated data into {{coines_stream_rsp_buf}}.\r\n\r\nSubsequently, {{coines_read_stream_sensor_data()}} unconditionally executes a {{memcpy}} of the ring buffer size into the caller-provided buffer without verifying if the destination memory allocation is large enough.\r\n\r\nA malicious or compromised hardware board connected via USB or BLE can exploit this by streaming a high volume of sensor samples, causing a heap or stack-based buffer overflow on the host desktop environment.\r\n\r\nThis can result in a Denial of Service (DoS) or potential arbitrary code execution on the host machine.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42808",
+      "last_modified": "2026-09-10T09:17:02.367",
+      "products": [],
+      "published": "2026-09-10T09:17:02.367",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://psirt.bosch.com/security-advisories/BOSCH-SA-223618.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
   "CVE-2026-42931": {
     "added": "2026-08-14",
     "checks_done": 8,
@@ -93426,6 +93766,30 @@
       ]
     },
     "next_check": "2026-11-04"
+  },
+  "CVE-2026-44950": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "fs_read_glyphs() in the libXfont2 font-server client (src/fc/fserve.c) copies each glyph's bitmap into a single buffer. Existing checks validates only that the source slice (position, length) lies within the source bitmap buffer. It does not check whether the running destination cursor has exceeded the allocation.\n\nA malicious font server can send overlapping source offsets -- for example 1000 glyphs each referencing {position:0, length:64} with nbytes=64. Each individual source range passes the existing validation, but the cumulative writes total 64000 bytes into a 64-byte destination buffer. This is a heap buffer overflow with attacker-controlled content.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-44950",
+      "last_modified": "2026-09-10T09:17:02.490",
+      "products": [],
+      "published": "2026-09-10T09:17:02.490",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.suse.com/show_bug.cgi?id=CVE-2026-44950"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
   },
   "CVE-2026-44964": {
     "added": "2026-08-08",
@@ -107714,6 +108078,52 @@
     },
     "next_check": "2026-11-05"
   },
+  "CVE-2026-5399": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Redux Framework plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Slider field in User Profile settings in versions up to and including 4.5.13.1. This is due to insufficient input sanitization in the user_meta_save() function (which only sanitizes array values, not scalar values) and improper output escaping in the Redux_Slider::render() method, which outputs slider values into unquoted HTML attributes. The vulnerability also exploits the fact that the clean_default() method only casts values to numeric types when they are empty or out of bounds, allowing malicious strings like '1 tabindex=0 autofocus onfocus=alert(1) x=' to pass validation through PHP's loose type comparison. This makes it possible for authenticated attackers, with Subscriber-level access and above, to inject arbitrary web scripts into their user profile that will execute whenever an Administrator navigates to view the attacker's profile page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-5399",
+      "last_modified": "2026-09-10T10:17:31.373",
+      "products": [],
+      "published": "2026-09-10T10:17:31.373",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/reduxframework/redux-framework/pull/4112/changes"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/redux-framework/tags/4.5.10/redux-core/inc/extensions/users/class-redux-extension-users.php#L1018"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/redux-framework/tags/4.5.10/redux-core/inc/fields/slider/class-redux-slider.php#L311"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/redux-framework/trunk/redux-core/inc/extensions/users/class-redux-extension-users.php#L1018"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/redux-framework/trunk/redux-core/inc/fields/slider/class-redux-slider.php#L311"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/31c554cf-eee9-45a8-8fb6-198978620204?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
   "CVE-2026-53992": {
     "added": "2026-08-06",
     "checks_done": 9,
@@ -119345,6 +119755,30 @@
       ]
     },
     "next_check": "2026-11-04"
+  },
+  "CVE-2026-59679": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "fs_read_glyphs() in the libXfont2 font-server client (src/fc/fserve.c) indexes the per-character encoding[] array using num_chars from the FS_QueryXBitmaps16 reply, but that array was allocated with a size derived from num_extents in the separate FS_QueryXExtents16 reply. The two CARD32 fields are never cross-checked.\nA malicious or compromised font server can send a small num_extents (e.g. 1) in the extents reply, then a large num_chars (e.g. 100000) in the bitmaps reply. This causes attacker-controlled out-of-bounds heap read and writes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-59679",
+      "last_modified": "2026-09-10T09:17:02.883",
+      "products": [],
+      "published": "2026-09-10T09:17:02.883",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.suse.com/show_bug.cgi?id=CVE-2026-59679"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
   },
   "CVE-2026-59680": {
     "added": "2026-09-01",
@@ -191390,6 +191824,32 @@
     },
     "next_check": "2026-09-21"
   },
+  "CVE-2026-7188": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Armiya Information Technologies Ltd. Co. Access Control System allows SQL Injection.\n\nThis issue affects Access Control System: before Versiyon 2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-7188",
+      "last_modified": "2026-09-10T08:16:57.893",
+      "products": [],
+      "published": "2026-09-10T08:16:57.893",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1061"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
   "CVE-2026-71904": {
     "added": "2026-08-25",
     "checks_done": 8,
@@ -212821,30 +213281,6 @@
       ]
     },
     "next_check": "2026-09-16"
-  },
-  "CVE-2026-73786": {
-    "added": "2026-09-10",
-    "checks_done": 0,
-    "cve": {
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [],
-      "description": "A vulnerability in the web-based management interface of CPPM could allow an unauthenticated remote attacker to conduct a Denial-of-Service (DoS) attack. Successful exploitation could allow an attacker to cause instability and degrade performance of the vulnerable CPPM server.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-73786",
-      "last_modified": "2026-09-09T20:20:33.493",
-      "products": [],
-      "published": "2026-09-09T20:20:33.493",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbnw05130en_us&docLocale=en_US"
-        }
-      ]
-    },
-    "next_check": "2026-09-11"
   },
   "CVE-2026-73787": {
     "added": "2026-09-10",
@@ -265880,6 +266316,32 @@
     },
     "next_check": "2026-09-15"
   },
+  "CVE-2026-8323": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-601"
+      ],
+      "description": "URL redirection to untrusted site ('open redirect') vulnerability in Armiya Information Technologies Ltd. Co. Access Control System allows Fake the Source of Data.\n\nThis issue affects Access Control System: before Versiyon 2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-8323",
+      "last_modified": "2026-09-10T09:17:06.250",
+      "products": [],
+      "published": "2026-09-10T09:17:06.250",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1061"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
   "CVE-2026-8325": {
     "added": "2026-08-07",
     "checks_done": 9,
@@ -267690,6 +268152,40 @@
         {
           "tags": [],
           "url": "https://wpscan.com/vulnerability/6abd5d49-af3a-4515-ba33-57b56a9fba4e/"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-84042": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "A flaw was found in crun. When crun is built with libkrun and a container is started rootful with passt networking (krun.use_passt), crun can execute attacker-controlled payload from the container image with host root privileges. The issue is a regression in crun 1.29. It affects crun >= 1.29",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84042",
+      "last_modified": "2026-09-10T09:17:03.260",
+      "products": [],
+      "published": "2026-09-10T09:17:03.260",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-84042"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2531222"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/containers/crun/"
         }
       ]
     },
@@ -272309,6 +272805,40 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/unlimited-elements-for-elementor/vulnerability/wordpress-unlimited-elements-for-elementor-free-widgets-addons-templates-plugin-2-0-17-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-84828": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-732"
+      ],
+      "description": "A flaw was found in PCS (Pacemaker Configuration System). A local attacker with membership in the 'haclient' group can exploit the 'pcs host auth --token' command to read the contents of arbitrary files on the filesystem, provided the files are shorter than 256 bytes. The file contents are read with root privileges by the pcsd daemon and can be exfiltrated by the attacker through subsequent cluster node communication. This allows disclosure of sensitive data such as API keys, tokens, or configuration secrets that would otherwise be inaccessible to the attacker.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84828",
+      "last_modified": "2026-09-10T12:16:33.837",
+      "products": [],
+      "published": "2026-09-10T12:16:33.837",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-84828"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2527320"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ClusterLabs/pcs/commit/9178b78d11baa70e700a5c0d9fc1c17f27d452fa"
         }
       ]
     },
@@ -290252,6 +290782,32 @@
     },
     "next_check": "2026-09-11"
   },
+  "CVE-2026-87803": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "An authorization bypass vulnerability exists in the Countly Server DBViewer due to flawed sub-pipeline detection in the aggregation stage sanitizer. The /o/db aggregation endpoint parses user-controlled aggregation JSON and passes it through a stage sanitizer that determines whether a nested array is a sub-pipeline by checking if every element contains a key present in a hardcoded KNOWN_STAGE_OPERATORS set. If any element contains an unrecognized stage key, such as the undocumented MongoDB-internal $_internalInhibitOptimization, the sanitizer misclassifies the entire branch as a generic array and skips stage-level stripping for all sibling stages. This allows a non-admin user with DBViewer read permission to inject forbidden operators like $lookup inside $facet sub-pipelines, performing cross-collection joins into restricted collections. This leads to unauthorized read access to sensitive data including password-reset tokens (prid), enabling account takeover.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87803",
+      "last_modified": "2026-09-10T10:17:32.610",
+      "products": [],
+      "published": "2026-09-10T10:17:32.610",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Countly/countly-server/pull/7868"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
   "CVE-2026-87806": {
     "added": "2026-09-09",
     "checks_done": 1,
@@ -291573,6 +292129,98 @@
     },
     "next_check": "2026-09-11"
   },
+  "CVE-2026-87961": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "ESP32-audioI2S versions 3.4.4 through 4.0.0 contain a heap-based out-of-bounds read vulnerability in the read_ID3_Header function due to a shadowed length parameter in ID3 synchronized-lyrics processing. Attackers can craft malicious MP3 files or HTTP audio streams with oversized frame size declarations to read past allocated buffer boundaries, causing device crashes or exposing adjacent heap memory.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87961",
+      "last_modified": "2026-09-10T11:17:07.613",
+      "products": [],
+      "published": "2026-09-10T11:17:07.613",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/schreibfaul1/ESP32-audioI2S"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/schreibfaul1/ESP32-audioI2S/blob/490ff729eca344f06581f3e9bda9cfba948fd5a1/src/Audio.cpp#L2526-L2531"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/schreibfaul1/ESP32-audioI2S/blob/490ff729eca344f06581f3e9bda9cfba948fd5a1/src/Audio.cpp#L2629-L2635"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/schreibfaul1/ESP32-audioI2S/blob/f01ad7923dcf3355eeca7fb99bf8a4d9945e7478/src/Audio.cpp#L2270-L2276"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/schreibfaul1/ESP32-audioI2S/commit/4dc4614b9dab2de7b342d682b1c18b109d75b677"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/schreibfaul1/ESP32-audioI2S/issues/1380"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/schreibfaul1/ESP32-audioI2S/pull/1381"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/esp32-audioi2s-3.4.4-through-4.0.0-heap-based-out-of-bounds-read-via-shadowed-length-parameter-in-read-id3-header"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-87962": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1284"
+      ],
+      "description": "t-digest versions 3.1 through 3.3 contain a denial of service vulnerability in MergingDigest.fromBytes that fails to validate length and capacity fields from serialized data. Attackers can supply crafted serialized digests with mismatched header fields to trigger ArrayIndexOutOfBoundsException or NegativeArraySizeException, aborting the parsing thread.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87962",
+      "last_modified": "2026-09-10T11:17:07.763",
+      "products": [],
+      "published": "2026-09-10T11:17:07.763",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/tdunning/t-digest"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tdunning/t-digest/blob/7905f3d2ad18e7d7176811147d1316a3e23d7061/core/src/main/java/com/tdunning/math/stats/MergingDigest.java"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tdunning/t-digest/issues/227"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/t-digest-3.1-through-3.3-denial-of-service-via-unvalidated-length-fields-in-mergingdigest-frombytes"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
   "CVE-2026-87995": {
     "added": "2026-09-10",
     "checks_done": 0,
@@ -291826,6 +292474,474 @@
     },
     "next_check": "2026-09-19"
   },
+  "CVE-2026-88268": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "GeoVision GV-LPC2211\nV1.13 contains an authenticated stack buffer overflow in SSVR fragment\nreassembly that allows a valid user to crash the SSVR service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88268",
+      "last_modified": "2026-09-10T09:17:03.650",
+      "products": [],
+      "published": "2026-09-10T09:17:03.650",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88269": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 allows a Guest user to retrieve persistent device configuration containing plaintext administrative and user credentials through SSVR.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88269",
+      "last_modified": "2026-09-10T09:17:03.770",
+      "products": [],
+      "published": "2026-09-10T09:17:03.770",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88270": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 allows a Guest user to enter SSVR firmware-upgrade mode and disrupt live services before any firmware image is validated.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88270",
+      "last_modified": "2026-09-10T09:17:03.883",
+      "products": [],
+      "published": "2026-09-10T09:17:03.883",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88271": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 allows a Guest user to overwrite device configuration and replace the administrator password through SSVR.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88271",
+      "last_modified": "2026-09-10T09:17:04.003",
+      "products": [],
+      "published": "2026-09-10T09:17:04.003",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88272": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 allows an administrator-controlled username containing shell metacharacters to be executed as arbitrary root commands when the stored username is later deleted.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88272",
+      "last_modified": "2026-09-10T09:17:04.117",
+      "products": [],
+      "published": "2026-09-10T09:17:04.117",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88273": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 allows an administrator-controlled PPPoE username to escape a sourced shell configuration assignment and execute arbitrary commands as root.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88273",
+      "last_modified": "2026-09-10T09:17:04.230",
+      "products": [],
+      "published": "2026-09-10T09:17:04.230",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88274": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 allows an administrator-controlled wireless SSID containing shell syntax to execute arbitrary commands as root.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88274",
+      "last_modified": "2026-09-10T09:17:04.343",
+      "products": [],
+      "published": "2026-09-10T09:17:04.343",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88275": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 allows an administrator-controlled WPA-PSK containing shell syntax to execute arbitrary commands as root when wireless configuration is applied.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88275",
+      "last_modified": "2026-09-10T09:17:04.450",
+      "products": [],
+      "published": "2026-09-10T09:17:04.450",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88276": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 allows administrator-controlled WEP key values containing shell syntax to execute arbitrary commands as root.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88276",
+      "last_modified": "2026-09-10T09:17:04.560",
+      "products": [],
+      "published": "2026-09-10T09:17:04.560",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88277": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 allows an authenticated ONVIF user to inject shell commands through ConsumerReference.Address and execute arbitrary commands as root.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88277",
+      "last_modified": "2026-09-10T09:17:04.673",
+      "products": [],
+      "published": "2026-09-10T09:17:04.673",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88278": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-294"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 fails to enforce WS-Security UsernameToken freshness or nonce reuse protection, allowing a captured PasswordDigest token to be replayed for subsequent ONVIF operations.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88278",
+      "last_modified": "2026-09-10T09:17:04.787",
+      "products": [],
+      "published": "2026-09-10T09:17:04.787",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88282": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 allows an administrator-controlled FTP username containing shell metacharacters to be executed as arbitrary root commands during a subsequent FTP-account update.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88282",
+      "last_modified": "2026-09-10T09:17:05.227",
+      "products": [],
+      "published": "2026-09-10T09:17:05.227",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88285": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 exposes a network-accessible PTZ control service without authentication, allowing remote clients to retrieve PTZ information and issue PTZ or raw serial commands.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88285",
+      "last_modified": "2026-09-10T09:17:05.563",
+      "products": [],
+      "published": "2026-09-10T09:17:05.563",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88286": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-400"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 improperly manages PTZ connection state, allowing an unauthenticated remote client to block the accept loop and prevent new PTZ connections.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88286",
+      "last_modified": "2026-09-10T09:17:05.673",
+      "products": [],
+      "published": "2026-09-10T09:17:05.673",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88287": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 fails to bound the number of Scopes tokens in unauthenticated ONVIF WS-Discovery Probe requests, allowing a remote attacker to corrupt stack control state and crash the discovery process.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88287",
+      "last_modified": "2026-09-10T09:17:05.787",
+      "products": [],
+      "published": "2026-09-10T09:17:05.787",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88288": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-36"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.13 fails to restrict the filename supplied to BKDownloadLink.cgi, allowing a remote user with valid web credentials to read arbitrary files accessible to the root-run web service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88288",
+      "last_modified": "2026-09-10T09:17:05.893",
+      "products": [],
+      "published": "2026-09-10T09:17:05.893",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88289": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.14 (260903) fails to validate attacker-controlled variable-length fields before copying them into fixed-size stack buffers in multiple VLSVR request handlers, allowing an unauthenticated remote attacker to crash the VLSVR service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88289",
+      "last_modified": "2026-09-10T09:17:06.017",
+      "products": [],
+      "published": "2026-09-10T09:17:06.017",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88290": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-400"
+      ],
+      "description": "GeoVision GV-LPC2211 V1.14 (260903) allows unauthenticated clients to declare unbounded VLSVR frame lengths and indefinitely delay blocking receives, allowing remote exhaustion of memory, connection, and worker resources.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88290",
+      "last_modified": "2026-09-10T09:17:06.133",
+      "products": [],
+      "published": "2026-09-10T09:17:06.133",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
   "CVE-2026-8862": {
     "added": "2026-09-04",
     "checks_done": 6,
@@ -291847,6 +292963,36 @@
         {
           "tags": [],
           "url": "https://www.ibm.com/support/pages/node/7284359"
+        }
+      ]
+    },
+    "next_check": "2026-09-11"
+  },
+  "CVE-2026-88770": {
+    "added": "2026-09-10",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-307"
+      ],
+      "description": "A flaw was found in the Device Authorization Grant flow of Keycloak, an identity and access management solution. The issue occurs because the token redemption process fails to check if a user account is currently locked due to brute-force protection. If an attacker has an active session for a locked account, they can complete the device login process and receive new security tokens. This allows the attacker to maintain access to the account even when it should be temporarily disabled to prevent unauthorized entry.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88770",
+      "last_modified": "2026-09-10T11:17:07.907",
+      "products": [],
+      "published": "2026-09-10T08:17:02.460",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-88770"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2531302"
         }
       ]
     },

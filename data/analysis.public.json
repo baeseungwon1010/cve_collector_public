@@ -1,1 +1,5 @@
-{}
+{
+  "CVE-2025-9566": {
+    "package": "GO:github.com/containers/podman/v4"
+  }
+}
