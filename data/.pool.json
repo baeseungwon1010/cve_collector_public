@@ -26799,6 +26799,54 @@
     },
     "next_check": "2026-09-12"
   },
+  "CVE-2021-45981": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-611"
+      ],
+      "description": "NetScout nGeniusONE 6.3.2 allows an XML External Entity (XXE) attack.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-45981",
+      "last_modified": "2026-06-17T04:14:21.583",
+      "products": [
+        "netscout:ngeniusone"
+      ],
+      "published": "2022-06-02T18:15:08.273",
+      "references": [
+        {
+          "tags": [
+            "Product"
+          ],
+          "url": "https://netscout.com"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.netscout.com/securityadvisories"
+        },
+        {
+          "tags": [
+            "Product"
+          ],
+          "url": "https://netscout.com"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.netscout.com/securityadvisories"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
   "CVE-2021-46024": {
     "added": "2026-09-09",
     "checks_done": 2,
@@ -28091,6 +28139,156 @@
             "Third Party Advisory"
           ],
           "url": "https://github.com/nu11secur1ty/CVE-nu11secur1ty/tree/main/vendors/acetech/2022/Home-Clean-Service-System"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2022-31990": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Badminton Center Management System v1.0 is vulnerable to SQL Injection via bcms/classes/Master.php?f=delete_product.",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-31990",
+      "last_modified": "2026-06-17T04:46:32.987",
+      "products": [
+        "badminton_center_management_system_project:badminton_center_management_system"
+      ],
+      "published": "2022-06-02T16:15:08.377",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/k0xx11/bug_report/blob/main/vendors/oretnom23/badminton-center-management-system/SQLi-6.md"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/k0xx11/bug_report/blob/main/vendors/oretnom23/badminton-center-management-system/SQLi-6.md"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2022-31991": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Badminton Center Management System v1.0 is vulnerable to SQL Injection via bcms/classes/Master.php?f=delete_court.",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-31991",
+      "last_modified": "2026-06-17T04:46:33.093",
+      "products": [
+        "badminton_center_management_system_project:badminton_center_management_system"
+      ],
+      "published": "2022-06-02T16:15:08.417",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/k0xx11/bug_report/blob/main/vendors/oretnom23/badminton-center-management-system/SQLi-5.md"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/k0xx11/bug_report/blob/main/vendors/oretnom23/badminton-center-management-system/SQLi-5.md"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2022-31993": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Badminton Center Management System v1.0 is vulnerable to SQL Injection via /bcms/classes/Master.php?f=delete_service.",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-31993",
+      "last_modified": "2026-06-17T04:46:33.310",
+      "products": [
+        "badminton_center_management_system_project:badminton_center_management_system"
+      ],
+      "published": "2022-06-02T16:15:08.503",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/k0xx11/bug_report/blob/main/vendors/oretnom23/badminton-center-management-system/SQLi-7.md"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/k0xx11/bug_report/blob/main/vendors/oretnom23/badminton-center-management-system/SQLi-7.md"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2022-32020": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "Car Rental Management System v1.0 is vulnerable to Arbitrary code execution via ip/car-rental-management-system/admin/ajax.php?action=save_settings.",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-32020",
+      "last_modified": "2026-06-17T04:46:35.820",
+      "products": [
+        "car_rental_management_system_project:car_rental_management_system"
+      ],
+      "published": "2022-06-02T16:15:09.107",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/k0xx11/bug_report/blob/main/vendors/campcodes.com/car-rental-management-system/RCE-2.md"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/k0xx11/bug_report/blob/main/vendors/campcodes.com/car-rental-management-system/RCE-2.md"
         }
       ]
     },
@@ -38403,6 +38601,84 @@
       ]
     },
     "next_check": "2026-11-04"
+  },
+  "CVE-2026-14559": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "The teddy-bear-customize-addon WordPress plugin through 1.0.5 does not verify a user's password before authenticating them, allowing unauthenticated attackers to log in as any registered user, including administrators, by supplying only that user's email address.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-14559",
+      "last_modified": "2026-09-11T11:16:53.310",
+      "products": [],
+      "published": "2026-09-11T07:16:45.877",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/90cbbed5-9662-4405-88b8-bd55854dccdf/"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-14560": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "The teddy-bear-customize-addon WordPress plugin through 1.0.5 does not properly validate uploaded files, relying on a client-supplied content type and preserving the original filename, allowing unauthenticated attackers to upload arbitrary PHP files and execute code on the server.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-14560",
+      "last_modified": "2026-09-11T11:16:53.473",
+      "products": [],
+      "published": "2026-09-11T07:16:45.980",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/aba51906-91dc-4e75-ad44-373fe128deee/"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-14563": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "The advanced-customized-prompts WordPress plugin through 1.0.1 does not verify the password before issuing an authenticated session for a supplied email address in an unauthenticated action, allowing unauthenticated attackers to log in as any registered user, including administrators, or to create arbitrary new accounts.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-14563",
+      "last_modified": "2026-09-11T11:16:53.777",
+      "products": [],
+      "published": "2026-09-11T07:16:46.177",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/7c7ad196-dff3-485f-9a50-8705bd796fb3/"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
   },
   "CVE-2026-14564": {
     "added": "2026-08-18",
@@ -51797,6 +52073,36 @@
       ]
     },
     "next_check": "2026-09-24"
+  },
+  "CVE-2026-17037": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Kirki – Freeform Page Builder, Website Builder & Customizer plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘comment’ parameter in all versions up to, and including, 6.2.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-17037",
+      "last_modified": "2026-09-11T11:16:54.243",
+      "products": [],
+      "published": "2026-09-11T10:16:51.330",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3636487/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/e578af07-90ec-4bd4-91ec-b793bbccf977?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
   },
   "CVE-2026-17040": {
     "added": "2026-08-21",
@@ -148406,6 +148712,68 @@
     },
     "next_check": "2026-11-04"
   },
+  "CVE-2026-6640": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Media Library Assistant plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mla_link_attributes' parameter in all versions up to, and including, 3.35 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-6640",
+      "last_modified": "2026-09-11T08:16:46.647",
+      "products": [],
+      "published": "2026-09-11T08:16:46.647",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/tags/3.34/includes/class-mla-shortcode-support.php#L270-L283"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/tags/3.34/includes/class-mla-shortcode-tag-cloud.php#L1041-L1046"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/tags/3.34/includes/class-mla-shortcode-tag-cloud.php#L1089-L1106"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/tags/3.34/includes/class-mla-shortcode-tag-cloud.php#L76-L95"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-shortcode-support.php#L270-L283"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-shortcode-tag-cloud.php#L1041-L1046"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-shortcode-tag-cloud.php#L1089-L1106"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-shortcode-tag-cloud.php#L76-L95"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3512155/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/ac0abf8e-6efd-4cf5-ad03-8442d892a35f?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
   "CVE-2026-66402": {
     "added": "2026-08-02",
     "checks_done": 9,
@@ -148560,6 +148928,60 @@
     },
     "next_check": "2026-11-09"
   },
+  "CVE-2026-6641": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Media Library Assistant plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mla_gallery' shortcode in versions up to and including 3.35. This is due to insufficient input sanitization and output escaping on the mla_link_href parameter when mla_output is set to 'paginate_links', where the _paginate_links() function processes the value through mla_process_shortcode_parameter() and _replace_query_parameter() without proper URL escaping, then outputs it directly in href attributes without applying esc_url(). This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-6641",
+      "last_modified": "2026-09-11T08:16:47.870",
+      "products": [],
+      "published": "2026-09-11T08:16:47.870",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/tags/3.34/includes/class-mla-shortcode-support.php#L2449"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/tags/3.34/includes/class-mla-shortcode-support.php#L2484"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/tags/3.34/includes/class-mla-shortcodes.php#L39"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-shortcode-support.php#L2449"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-shortcode-support.php#L2484"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-shortcodes.php#L39"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3512155/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/13602c35-a0f7-4651-af9a-0be9e581893a?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
   "CVE-2026-66414": {
     "added": "2026-07-31",
     "checks_done": 9,
@@ -148677,6 +149099,60 @@
       ]
     },
     "next_check": "2026-10-29"
+  },
+  "CVE-2026-6642": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Media Library Assistant plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the bulk edit preset export/import mechanism in versions up to and including 3.35. This is due to insufficient output escaping on preset field values when they are rendered in HTML attribute contexts in the mla_generate_bulk_edit_form_fieldsets() function and mla-bulk-edit-fieldsets.tpl template. While wp_kses() filtering is applied during preset export for users without unfiltered_html capability, this does not prevent attribute injection attacks since the malicious payload consists of quotes and HTML attributes rather than HTML tags. When preset values are retrieved and rendered, they are directly assigned to template variables without esc_attr() escaping and then inserted into input element value attributes via simple string replacement. This makes it possible for authenticated attackers, with Author-level access and above (upload_files capability), to inject arbitrary web scripts that execute when an administrator imports the poisoned preset and the targeted input field receives focus.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-6642",
+      "last_modified": "2026-09-11T08:16:48.007",
+      "products": [],
+      "published": "2026-09-11T08:16:48.007",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/tags/3.35/includes/class-mla-ajax.php#L395"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/tags/3.35/includes/class-mla-edit-media.php#L647-L651"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/tags/3.35/tpls/mla-bulk-edit-fieldsets.tpl#L70"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-ajax.php#L395"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/includes/class-mla-edit-media.php#L647-L651"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/media-library-assistant/trunk/tpls/mla-bulk-edit-fieldsets.tpl#L70"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3512155/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/6e45dc8a-b777-4a49-b1b1-c59ffa75f5b4?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
   },
   "CVE-2026-66420": {
     "added": "2026-07-31",
@@ -220268,6 +220744,32 @@
     },
     "next_check": "2026-09-15"
   },
+  "CVE-2026-74925": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The MultiVendorX  WordPress plugin before 5.0.16 does not restrict who can update its role and capability settings, allowing users holding its vendor role to grant that role administrator-level capabilities and take over the site.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-74925",
+      "last_modified": "2026-09-11T11:16:54.513",
+      "products": [],
+      "published": "2026-09-11T07:16:46.740",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/04d64797-751a-4cdd-a37d-70afbad5d784/"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
   "CVE-2026-74928": {
     "added": "2026-08-27",
     "checks_done": 8,
@@ -251968,6 +252470,52 @@
     },
     "next_check": "2026-09-16"
   },
+  "CVE-2026-80469": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-347"
+      ],
+      "description": "An attacker may achieve arbitrary code execution on a target system by uploading a malicious device driver package, bypassing driver verification mechanisms, and triggering the execution of\nattacker-controlled code. User interaction is required.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80469",
+      "last_modified": "2026-09-11T09:17:20.833",
+      "products": [],
+      "published": "2026-09-11T09:17:20.833",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        },
+        {
+          "tags": [],
+          "url": "https://www.first.org/cvss/calculator/3.1"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sick.com/.well-known/csaf/white/2026/sca-2026-0012.json"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sick.com/.well-known/csaf/white/2026/sca-2026-0012.pdf"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sick.com/media/docs/9/19/719/special_information_sick_operating_guidelines_cybersecurity_by_sick_en_im0106719.pdf"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sick.com/psirt"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
   "CVE-2026-80519": {
     "added": "2026-08-27",
     "checks_done": 8,
@@ -270573,6 +271121,58 @@
     },
     "next_check": "2026-09-12"
   },
+  "CVE-2026-83545": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The CoolClock WordPress plugin before 4.3.8 does not properly escape a custom skin setting before outputting it inside an inline script, allowing users with contributor-level access and above to inject arbitrary JavaScript that executes when the content is viewed.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-83545",
+      "last_modified": "2026-09-11T11:16:55.357",
+      "products": [],
+      "published": "2026-09-11T07:16:46.950",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/d331d834-08f7-46e2-859a-7b797213ad0b/"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-83546": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The CoolClock WordPress plugin before 4.3.8 does not properly escape a skin setting before outputting it within an HTML attribute, allowing users with contributor-level access and above to inject arbitrary web scripts that execute when the content is viewed.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-83546",
+      "last_modified": "2026-09-11T11:16:55.507",
+      "products": [],
+      "published": "2026-09-11T07:16:47.050",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/57fcdde1-1723-42e1-a6d0-16e63a532ac7/"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
   "CVE-2026-83547": {
     "added": "2026-09-03",
     "checks_done": 7,
@@ -278450,6 +279050,30 @@
     },
     "next_check": "2026-09-18"
   },
+  "CVE-2026-85116": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "The Simple CAPTCHA with Cloudflare Turnstile WordPress plugin from 1.2.2 before 1.42.3 runs the shortcode parser over the whole rendered Contact Form 7 form, including the values a visitor submitted, allowing unauthenticated users to execute arbitrary shortcodes registered on the site.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85116",
+      "last_modified": "2026-09-11T11:16:55.660",
+      "products": [],
+      "published": "2026-09-11T11:16:55.660",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/7bab04a6-59ef-4b4f-a374-ddc5a2a52b60/"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
   "CVE-2026-85117": {
     "added": "2026-09-09",
     "checks_done": 2,
@@ -284832,6 +285456,58 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/owl-documentprocessingtoolkit-server-side-request-forgery-via-url-fetching"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-85677": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Gutenverse News  WordPress plugin before 3.3.3 does not restrict the extra HTML it adds to WordPress's allowed elements to the context it is meant for, applying the same relaxed list to every sanitisation context including untrusted comments, allowing unauthenticated users to store JavaScript that will execute in the browser of any administrator who reviews the comment queue, and of any visitor to the post once the comment is approved.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85677",
+      "last_modified": "2026-09-11T11:16:55.777",
+      "products": [],
+      "published": "2026-09-11T07:16:47.147",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/80a2cc9f-4242-4ffb-a781-cffdceb84ab3/"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-85678": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The AI Builder  WordPress plugin before 2.7.8 does not sanitise custom JavaScript saved against a post before echoing it inside a script tag on the front end, allowing users with contributor level access and above to store arbitrary JavaScript that will execute in the browser of anyone who views the post, including the editor or administrator who reviews it.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85678",
+      "last_modified": "2026-09-11T11:16:55.930",
+      "products": [],
+      "published": "2026-09-11T07:16:47.247",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/d81ebdaa-4a06-48df-a471-c11ea7dc62f8/"
         }
       ]
     },
@@ -294060,6 +294736,32 @@
     },
     "next_check": "2026-09-12"
   },
+  "CVE-2026-86780": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Featured Image with URL WordPress plugin before 1.0.6 does not sanitise and escape a stored image attribute value before outputting it, which could allow users with a role as low as Contributor to perform Stored Cross-Site Scripting attacks that execute in the browser of any user viewing the affected post, including higher-privileged users such as Editors and Administrators.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86780",
+      "last_modified": "2026-09-11T11:16:56.997",
+      "products": [],
+      "published": "2026-09-11T07:16:47.450",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/7c5795a2-e0bd-41b6-a3a9-d80ff66799d6/"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
   "CVE-2026-86806": {
     "added": "2026-09-09",
     "checks_done": 2,
@@ -294230,6 +294932,32 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/399814/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-86812": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-284"
+      ],
+      "description": "The WPCafe  WordPress plugin before 3.0.18 does not correctly restrict access to a set of order-management REST endpoints because their permission callbacks return an incorrect type on failure, allowing unauthenticated users to disclose guest order information and to change the status of, or trash, any order.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86812",
+      "last_modified": "2026-09-11T10:16:52.843",
+      "products": [],
+      "published": "2026-09-11T07:16:47.737",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/fe8d76b2-6d57-49cc-9927-5231e1a26a41/"
         }
       ]
     },
@@ -294958,6 +295686,36 @@
     },
     "next_check": "2026-09-12"
   },
+  "CVE-2026-87727": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "a-blog cms Ver. 3.2.33 and earlier contains a path traversal vulnerability, which allows an unauthenticated attacker to read or delete arbitrary files on the affected product.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87727",
+      "last_modified": "2026-09-11T09:17:22.237",
+      "products": [],
+      "published": "2026-09-11T09:17:22.237",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://developer.a-blogcms.jp/blog/news/JVN-20829034.html"
+        },
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN20829034/"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
   "CVE-2026-87732": {
     "added": "2026-09-09",
     "checks_done": 2,
@@ -295077,6 +295835,37 @@
         {
           "tags": [],
           "url": "https://www.openwall.com/lists/oss-security/2026/08/27/7"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-87776": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-401",
+        "CWE-459"
+      ],
+      "description": "compression is a Node.js and Express compression middleware. In versions before 1.8.2, when a client aborts the connection while a compressed response is still being sent, the zlib stream created to compress that response is never destroyed, so each aborted compressed response leaks its native zlib memory. A remote unauthenticated attacker can repeatedly open requests and disconnect early, exhausting the available memory and crashing the server. All applications using compression are affected. The issue is fixed in compression 1.8.2, and users should upgrade to 1.8.2 or later.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87776",
+      "last_modified": "2026-09-11T12:16:52.530",
+      "products": [],
+      "published": "2026-09-11T12:16:52.530",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://cna.openjsf.org/security-advisories.html"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/expressjs/compression/security/advisories/GHSA-vc2v-76pw-4v95"
         }
       ]
     },
@@ -299887,6 +300676,84 @@
     },
     "next_check": "2026-09-12"
   },
+  "CVE-2026-89146": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-190",
+        "CWE-617"
+      ],
+      "description": "libp2p-rendezvous through 0.17.1 fails to validate registration TTL values in discovery responses, allowing attackers to trigger timer arithmetic overflow. A malicious rendezvous server can send a discovery response with an unbounded TTL value that causes the client node process to panic when computing the expiry timer.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89146",
+      "last_modified": "2026-09-11T11:16:57.867",
+      "products": [],
+      "published": "2026-09-11T11:16:57.867",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.rs/crate/libp2p-rendezvous/0.17.1/source/src/client.rs"
+        },
+        {
+          "tags": [],
+          "url": "https://gist.github.com/thesmartshadow/25ef03f7ebbd12118a9d27695c885989"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/libp2p/rust-libp2p"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/libp2p-rendezvous-through-0.17.1-denial-of-service-via-unbounded-registration-ttl-in-discovery-responses"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89147": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1088",
+        "CWE-400"
+      ],
+      "description": "Net-SNMP through 5.9.5.2 contains a denial of service vulnerability in the SMUX module where smux_accept() performs an unauthenticated blocking read without timeout on newly accepted connections. An unauthenticated remote client can connect to the SMUX listener and send no data, causing the single-threaded snmpd main loop to block indefinitely and suspend all SNMP processing.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89147",
+      "last_modified": "2026-09-11T11:16:58.040",
+      "products": [],
+      "published": "2026-09-11T11:16:58.040",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/thesmartshadow/001cea595e75fed6aaea7389666dc9eb"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/net-snmp/net-snmp"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/net-snmp/net-snmp/blob/v5.9.5.2/agent/mibgroup/smux/smux.c"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/net-snmp-through-5.9.5.2-denial-of-service-via-blocking-unauthenticated-smux-read"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
   "CVE-2026-89158": {
     "added": "2026-09-11",
     "checks_done": 0,
@@ -299942,6 +300809,666 @@
         {
           "tags": [],
           "url": "https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89174": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-307"
+      ],
+      "description": "Smart Video Intercom System developed by Kingdom Communication Associated has a Missing Brute-force Protection vulnerability. Unauthenticated remote attackers can gain access to valid accounts through a large number of login attempts.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89174",
+      "last_modified": "2026-09-11T08:16:48.377",
+      "products": [],
+      "published": "2026-09-11T08:16:48.377",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/en/cp-139-11199-38e1e-2.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/tw/cp-132-11198-b8bba-1.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89176": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "WeenyGenius, a computer lab management system developed by Howyar Technologies, has a Missing Authentication vulnerability. Unauthenticated attackers on the same network can easily spoof student or teacher endpoints. Impersonating a student can disrupt normal classroom operations, whereas impersonating a teacher can induce student computers to initiate connections, thereby gaining remote control over the student endpoints.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89176",
+      "last_modified": "2026-09-11T08:16:48.677",
+      "products": [],
+      "published": "2026-09-11T08:16:48.677",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/en/cp-139-11200-ffc3c-2.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/tw/cp-132-11201-658c0-1.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89177": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-757"
+      ],
+      "description": "WeenyGenius, a computer lab management system by Howyar Technologies, has a Use of Insecure Protocol vulnerability. Due to the reliance on ZMTP Null mode, unauthenticated attackers on the same network can capture packets to leak transmitted data, or perform replay attacks with forged commands to disrupt classroom operations.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89177",
+      "last_modified": "2026-09-11T08:16:48.813",
+      "products": [],
+      "published": "2026-09-11T08:16:48.813",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/en/cp-139-11200-ffc3c-2.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/tw/cp-132-11201-658c0-1.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89178": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-940"
+      ],
+      "description": "WeenyGenius, a computer lab management system by Howyar Technologies, has an Origin Validation Error vulnerability. Unauthenticated attackers on the same network can spoof the teacher workstation and send broadcast packets, causing student computers to attempt to establish a connection with the attacker.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89178",
+      "last_modified": "2026-09-11T08:16:48.947",
+      "products": [],
+      "published": "2026-09-11T08:16:48.947",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/en/cp-139-11200-ffc3c-2.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/tw/cp-132-11201-658c0-1.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89239": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a reflected cross-site scripting vulnerability in the showAlertMessage() function that inserts the raw Referer header into a JavaScript comment without encoding. Attackers can craft a Referer header containing */ to close the comment and inject arbitrary JavaScript that executes in the site origin for visitors arriving from the attacker-controlled page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89239",
+      "last_modified": "2026-09-11T12:16:53.327",
+      "products": [],
+      "published": "2026-09-11T12:16:53.327",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-3pp9-g99w-qw3j"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/wwbn-avideo-reflected-xss-via-referer-header-comment-breakout"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89240": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a reflected cross-site scripting vulnerability in plugin/Live/confirmLivePassword.php. The script interpolates the unauthenticated GET parameter u (which is not covered by $securityFilter) directly into an <img src=\"...\"> attribute without URL- or HTML-encoding. A remote attacker can craft a link containing a double-quote character in u (with a non-empty key parameter and no valid c parameter) to close the src attribute and inject an additional tag with an onerror handler, executing arbitrary JavaScript in the site's origin in the browser of any user, including an administrator, who opens the link. No patched version was available at the time of the advisory.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89240",
+      "last_modified": "2026-09-11T12:16:53.493",
+      "products": [],
+      "published": "2026-09-11T12:16:53.493",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-87qx-9wgx-954f"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/wwbn-avideo-reflected-xss-via-confirmlivepassword-php"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89241": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a reflected cross-site scripting vulnerability in confirmLivePassword.php that copies REQUEST_URI into a form action attribute without encoding. Attackers can craft a malicious URL with a quote character to break out of the action attribute and inject event handlers that execute in the victim's browser within the site origin.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89241",
+      "last_modified": "2026-09-11T12:16:53.650",
+      "products": [],
+      "published": "2026-09-11T12:16:53.650",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-fp9p-hrc9-8rr7"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/wwbn-avideo-reflected-xss-via-confirmlivepassword-php-2"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89242": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a server-side request forgery vulnerability in the _json_decode function that fetches remote URLs and local file paths without SSRF validation. Unauthenticated attackers can POST file paths or HTTP URLs to login.json.php to read local files or access internal services, with results parsed as login credentials.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89242",
+      "last_modified": "2026-09-11T12:16:53.803",
+      "products": [],
+      "published": "2026-09-11T12:16:53.803",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-wqwf-wmvx-53jh"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/wwbn-avideo-unauthenticated-ssrf-via-login-json-php"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89243": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in UserGroups::setGroup_name() that fails to sanitize group_name input. Administrators with canAdminUserGroups permission can inject malicious HTML and JavaScript that executes in the browser when other administrators access the user manager interface.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89243",
+      "last_modified": "2026-09-11T12:16:53.960",
+      "products": [],
+      "published": "2026-09-11T12:16:53.960",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-qm3h-2jrx-xmg6"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/wwbn-avideo-stored-xss-via-usergroups-setgroup-name"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89244": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a reflected cross-site scripting vulnerability in plugin/Gallery/view/Category.php when SubCategorys is enabled. The getBackURL parameter is echoed into an href attribute without HTML encoding, allowing attackers to inject malicious scripts that execute in visitors' browsers when they interact with the Back control.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89244",
+      "last_modified": "2026-09-11T12:16:54.117",
+      "products": [],
+      "published": "2026-09-11T12:16:54.117",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-j2r3-gr47-rgfm"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/wwbn-avideo-reflected-xss-via-gallery-category-getbackurl"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89245": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-352"
+      ],
+      "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a cross-site request forgery vulnerability in playlistRemove.php that allows attackers to delete playlists by skipping CSRF protection checks. Attackers can craft a malicious form that submits a POST request to playlistRemove.php, causing a victim's playlist to be deleted when they visit the attacker's page while logged in.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89245",
+      "last_modified": "2026-09-11T12:16:54.270",
+      "products": [],
+      "published": "2026-09-11T12:16:54.270",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-v7mf-qx22-m9x8"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/wwbn-avideo-cross-site-request-forgery-via-playlistremove-php"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89247": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-91"
+      ],
+      "description": "WWBN AVideo at commit c3edcc274c389816d434acadac07ee78eaf330c1 and earlier contains an XML injection vulnerability in plugin/AD_Server/VMAP.php, which is reachable without authentication when the AD_Server plugin is enabled. The script emits Content-Type: application/xml and writes the timeOffset and idTag values returned by AD_Server::getVMAPSFromRequest() directly into VMAP attributes without encoding. Those values originate from the base64- and JSON-decoded $_REQUEST['vmaps'] parameter, which is not covered by $securityFilter in objects/security.php. A remote attacker can craft a vmaps value (containing a non-empty VAST.campaing entry) and induce a user to open the resulting VMAP URL or a video page using it, injecting arbitrary <vmap:AdBreak> and <vmap:AdTagURI>/AdSource nodes into the generated XML. The player's IMA path (afterVideoJS -> PlayerSkins::setIMAADTag) then requests the attacker-supplied ad URLs, resulting in ad injection and cross-origin requests from the victim's playback session. The issue was unfixed at the time of reporting.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89247",
+      "last_modified": "2026-09-11T12:16:54.573",
+      "products": [],
+      "published": "2026-09-11T12:16:54.573",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-whh8-w65x-9fvx"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/wwbn-avideo-xml-injection-via-plugin-ad-server-vmap-php"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89249": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the YPTWallet plugin where user-supplied CryptoWallet values are base64-encoded but not HTML-escaped before storage in wallet_log.information. Administrators viewing pending withdrawal requests in pendingRequests.php execute the stored markup in their session, allowing attackers to perform administrative actions via same-origin fetch requests.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89249",
+      "last_modified": "2026-09-11T12:16:54.890",
+      "products": [],
+      "published": "2026-09-11T12:16:54.890",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-fvp5-q9jp-29mx"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-yptwallet-stored-xss-via-cryptowallet-configuration"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89250": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains an unauthenticated file read vulnerability in the getRecordedFile.php endpoint that streams recorded FLV files from the temporary directory. Attackers can request the endpoint with a known or guessed stream key to download recorded live video files without authentication or authorization checks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89250",
+      "last_modified": "2026-09-11T12:16:55.063",
+      "products": [],
+      "published": "2026-09-11T12:16:55.063",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-crcx-7mx7-jqfr"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/wwbn-avideo-unauthenticated-file-read-via-getrecordedfile-php"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89251": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-345"
+      ],
+      "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 fails to validate ad impressions in plugin/AD_Server/log.php, allowing logged-in users to submit arbitrary label values that trigger unverified wallet credits to campaign video owners. Attackers can repeatedly POST label=start requests to mint YPTWallet balance for any campaign video without proof an ad actually played.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89251",
+      "last_modified": "2026-09-11T12:16:55.223",
+      "products": [],
+      "published": "2026-09-11T12:16:55.223",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-cwrf-q9jv-44px"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-missing-authorization-via-ad-server-log-php-wallet-credit"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89252": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 fails to verify ownership in addLiveLink.php when updating LiveLinks, allowing authenticated users to modify other users' links. A canStream user can overwrite another user's LiveLink HLS source and metadata by supplying an existing linkId, redirecting viewers to attacker-controlled media.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89252",
+      "last_modified": "2026-09-11T12:16:55.377",
+      "products": [],
+      "published": "2026-09-11T12:16:55.377",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-m2c6-f5ww-j26v"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-missing-authorization-in-addlivelink-php-livelink-update"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89253": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the user 'donationLink' profile field. User::setDonationLink() (objects/user.php) stores the value and save() validates it only with filter_var(..., FILTER_VALIDATE_URL), which accepts strings such as http://evil.example/\"onmouseover=alert(document.domain)//, while getDonationLink() applies only strip_tags() and does not encode double quotes. plugin/CustomizeUser/actionButton.php echoes the value unencoded into an <a href=\"...\"> attribute, and that button is included from view/modeYoutubeBottom.php on the watch page when the CustomizeUser option allowDonationLink is enabled. An authenticated user who updates their own profile via objects/userUpdate.json.php can therefore break out of the href attribute and inject an event handler that executes JavaScript in the browser of any visitor—including an administrator—who views the attacker's videos and interacts with (for example, hovers over) the donation button. The issue was unfixed at the time of reporting.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89253",
+      "last_modified": "2026-09-11T12:16:55.533",
+      "products": [],
+      "published": "2026-09-11T12:16:55.533",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-34jx-r3p9-7pp2"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-stored-xss-via-donationlink-in-watch-page-button"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89254": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the CustomizeUser plugin where the field_name parameter is stored raw without sanitization. Administrators can inject malicious scripts via the add.json.php endpoint that execute when viewing extra info pages or profile forms that render the typeToHTML function.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89254",
+      "last_modified": "2026-09-11T12:16:55.690",
+      "products": [],
+      "published": "2026-09-11T12:16:55.690",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-7hj4-f9x4-gg7p"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-customizeuser-stored-xss-via-field-name-parameter"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89255": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the LoginControl plugin that fails to HTML-encode PGP public keys echoed into a textarea element. An authenticated attacker can inject malicious JavaScript by submitting a crafted public key, which executes in an administrator's session when viewing the user's profile tab.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89255",
+      "last_modified": "2026-09-11T12:16:55.850",
+      "products": [],
+      "published": "2026-09-11T12:16:55.850",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-gq4h-vw2w-9rx3"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-logincontrol-stored-xss-via-pgp-public-key"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89256": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the Bookmark plugin where chapter names are not encoded before being concatenated into public watch-page HTML. A video owner can inject malicious scripts via the bookmark name parameter, and every visitor of that video executes the payload in the AVideo origin.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89256",
+      "last_modified": "2026-09-11T12:16:56.003",
+      "products": [],
+      "published": "2026-09-11T12:16:56.003",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-jggq-mm5m-r5wv"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-bookmark-plugin-stored-xss-via-chapter-names"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89258": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-59"
+      ],
+      "description": "Hugo is a static site generator. In versions after v0.123.0 and before v0.165.0, symlinks in parent directories were not dropped during direct resource lookups, allowing path confinement to be bypassed. An attacker who can place — or who convinces a site author to place — a symlink inside a mounted directory (for example, in a locally vendored theme under themes/) can cause functions that perform direct lookups, such as resources.Get and os.ReadFile, to follow that symlink and read files outside the intended project boundaries, disclosing their contents in the built site. Themes mounted as Go modules fetched from GitHub have symlinks stripped on download and are not affected, and multi-directory walks (e.g. content/asset walking) are not affected. This issue is an incomplete-fix follow-up to GHSA-c3wq-j5vh-68rc and GHSA-fw87-fv5r-9fpw; it is fixed in v0.165.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89258",
+      "last_modified": "2026-09-11T12:16:56.310",
+      "products": [],
+      "published": "2026-09-11T12:16:56.310",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/gohugoio/hugo/security/advisories/GHSA-vrv5-r5rf-6v4j"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/hugo-before-0.165.0-symlink-confinement-bypass-via-resources-get"
+        }
+      ]
+    },
+    "next_check": "2026-09-12"
+  },
+  "CVE-2026-89259": {
+    "added": "2026-09-11",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-250"
+      ],
+      "description": "Hugo is a static site generator. From v0.161.0, Hugo executes Node tools under Node's permission model, but TailwindCSS — included in the default security.exec.allow list — requires a highly permissive configuration (--allow-addons, --allow-child-process, --allow-worker). As a result, the restrictions intended by the fix for GHSA-x597-9fr4-5857 could still be bypassed, allowing a Node tool invoked during a build to read and write files outside the project's working directory. Affected versions are those after v0.43; the issue was fixed in v0.165.0 by removing tailwindcss from the default security.exec.allow list. Users who do not use TailwindCSS, or who only build trusted sites, are not affected. As a workaround, users can define a restrictive security.exec.allow list in hugo.toml.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89259",
+      "last_modified": "2026-09-11T12:16:56.480",
+      "products": [],
+      "published": "2026-09-11T12:16:56.480",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/gohugoio/hugo/security/advisories/GHSA-vrm6-x8vp-mv2r"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/hugo-before-0.165.0-insufficient-permission-restriction-via-tailwindcss"
         }
       ]
     },
