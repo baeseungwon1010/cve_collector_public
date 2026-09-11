@@ -1,5 +1,59 @@
 {
-  "CVE-2025-9566": {
-    "package": "GO:github.com/containers/podman/v4"
+  "CVE-2026-12773": {
+    "package": "PIP:litellm"
+  },
+  "CVE-2026-49836": {
+    "package": "PIP:psd-tools"
+  },
+  "CVE-2026-59161": {
+    "package": "GO:github.com/xuri/excelize"
+  },
+  "CVE-2026-59162": {
+    "package": "GO:github.com/xuri/excelize"
+  },
+  "CVE-2026-59960": {
+    "package": "NPM:@argos-ci/core"
+  },
+  "CVE-2026-86073": {
+    "package": "NPM:n8n"
+  },
+  "CVE-2026-87014": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-87015": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-87016": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-87995": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-87996": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-87998": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-87999": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-88005": {
+    "package": "PIP:open-webui"
+  },
+  "CVE-2026-88011": {
+    "package": "GO:github.com/traefik/traefik/v3"
+  },
+  "CVE-2026-88056": {
+    "package": "NPM:@angular/platform-server"
+  },
+  "CVE-2026-88057": {
+    "package": "NPM:@angular/compiler"
+  },
+  "CVE-2026-88060": {
+    "package": "NPM:@angular/platform-server"
+  },
+  "CVE-2026-88062": {
+    "package": "NPM:omniroute"
   }
 }
