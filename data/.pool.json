@@ -28306,6 +28306,342 @@
     },
     "next_check": "2026-09-13"
   },
+  "CVE-2022-30270": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "The Motorola ACE1000 RTU through 2022-05-02 has default credentials. It exposes an SSH interface on port 22/TCP. This interface is used for remote maintenance and for SFTP file-transfer operations that are part of engineering software functionality. Access to this interface is controlled by 5 preconfigured accounts (root, abuilder, acelogin, cappl, ace), all of which come with default credentials. Although the ACE1000 documentation mentions the root, abuilder and acelogin accounts and instructs users to change the default credentials, the cappl and ace accounts remain undocumented and thus are unlikely to have their credentials changed.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-30270",
+      "last_modified": "2026-06-17T04:43:21.737",
+      "products": [
+        "motorola:ace1000",
+        "motorola:ace1000_firmware"
+      ],
+      "published": "2022-07-26T23:15:08.137",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-06"
+        },
+        {
+          "tags": [
+            "Not Applicable"
+          ],
+          "url": "https://www.forescout.com/blog/"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-06"
+        },
+        {
+          "tags": [
+            "Not Applicable"
+          ],
+          "url": "https://www.forescout.com/blog/"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
+  "CVE-2022-30271": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-259",
+        "CWE-798"
+      ],
+      "description": "The Motorola ACE1000 RTU through 2022-05-02 ships with a hardcoded SSH private key and initialization scripts (such as /etc/init.d/sshd_service) only generate a new key if no private-key file exists. Thus, this hardcoded key is likely to be used by default.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-30271",
+      "last_modified": "2026-06-17T04:43:22.783",
+      "products": [
+        "motorola:ace1000",
+        "motorola:ace1000_firmware"
+      ],
+      "published": "2022-07-26T23:15:08.177",
+      "references": [
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-06"
+        },
+        {
+          "tags": [
+            "Not Applicable"
+          ],
+          "url": "https://www.forescout.com/blog/"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-06"
+        },
+        {
+          "tags": [
+            "Not Applicable"
+          ],
+          "url": "https://www.forescout.com/blog/"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
+  "CVE-2022-30273": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-327",
+        "CWE-345"
+      ],
+      "description": "The Motorola MDLC protocol through 2022-05-02 mishandles message integrity. It supports three security modes: Plain, Legacy Encryption, and New Encryption. In Legacy Encryption mode, traffic is encrypted via the Tiny Encryption Algorithm (TEA) block-cipher in ECB mode. This mode of operation does not offer message integrity and offers reduced confidentiality above the block level, as demonstrated by an ECB Penguin attack against any block ciphers.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-30273",
+      "last_modified": "2026-06-17T04:43:23.417",
+      "products": [
+        "motorolasolutions:mdlc"
+      ],
+      "published": "2022-07-26T22:15:11.227",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-05"
+        },
+        {
+          "tags": [
+            "Not Applicable",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/blog/"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation"
+        },
+        {
+          "tags": [
+            "Mitigation",
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-05"
+        },
+        {
+          "tags": [
+            "Not Applicable",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/blog/"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
+  "CVE-2022-31206": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-347"
+      ],
+      "description": "The Omron SYSMAC Nx product family PLCs (NJ series, NY series, NX series, and PMAC series) through 2022-005-18 lack cryptographic authentication. These PLCs are programmed using the SYMAC Studio engineering software (which compiles IEC 61131-3 conformant POU code to native machine code for execution by the PLC's runtime). The resulting machine code is executed by a runtime, typically controlled by a real-time operating system. The logic that is downloaded to the PLC does not seem to be cryptographically authenticated, allowing an attacker to manipulate transmitted object code to the PLC and execute arbitrary machine code on the processor of the PLC's CPU module in the context of the runtime. In the case of at least the NJ series, an RTOS and hardware combination is used that would potentially allow for memory protection and privilege separation and thus limit the impact of code execution. However, it was not confirmed whether these sufficiently segment the runtime from the rest of the RTOS.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-31206",
+      "last_modified": "2026-06-17T04:45:07.197",
+      "products": [
+        "omron:nj101-1000",
+        "omron:nj101-1000_firmware",
+        "omron:nj101-1020",
+        "omron:nj101-1020_firmware",
+        "omron:nj101-9000",
+        "omron:nj101-9000_firmware",
+        "omron:nj101-9020",
+        "omron:nj101-9020_firmware",
+        "omron:nj301-1100",
+        "omron:nj301-1100_firmware",
+        "omron:nj301-1200",
+        "omron:nj301-1200_firmware",
+        "omron:nj501-1300",
+        "omron:nj501-1300_firmware",
+        "omron:nj501-1320",
+        "omron:nj501-1320_firmware",
+        "omron:nj501-1340",
+        "omron:nj501-1340_firmware",
+        "omron:nj501-1400",
+        "omron:nj501-1400_firmware",
+        "omron:nj501-1420",
+        "omron:nj501-1420_firmware",
+        "omron:nj501-1500",
+        "omron:nj501-1500_firmware",
+        "omron:nj501-1520",
+        "omron:nj501-1520_firmware",
+        "omron:nj501-4300",
+        "omron:nj501-4300_firmware",
+        "omron:nj501-4320",
+        "omron:nj501-4320_firmware",
+        "omron:nj501-4400",
+        "omron:nj501-4400_firmware",
+        "omron:nj501-4500",
+        "omron:nj501-4500_firmware",
+        "omron:nj501-5300",
+        "omron:nj501-5300-1",
+        "omron:nj501-5300-1_firmware",
+        "omron:nj501-5300_firmware",
+        "omron:nx701-1600",
+        "omron:nx701-1600_firmware",
+        "omron:nx701-1620",
+        "omron:nx701-1620_firmware",
+        "omron:nx701-1700",
+        "omron:nx701-1700_firmware",
+        "omron:nx701-1720",
+        "omron:nx701-1720_firmware",
+        "omron:nx701-z600",
+        "omron:nx701-z600_firmware",
+        "omron:nx701-z700",
+        "omron:nx701-z700_firmware"
+      ],
+      "published": "2022-07-26T22:15:11.400",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-02"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/blog/"
+        },
+        {
+          "tags": [
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-02"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/blog/"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
+  "CVE-2022-31207": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-347"
+      ],
+      "description": "The Omron SYSMAC Cx product family PLCs (CS series, CJ series, and CP series) through 2022-05-18 lack cryptographic authentication. They utilize the Omron FINS (9600/TCP) protocol for engineering purposes, including downloading projects and control logic to the PLC. This protocol has authentication flaws as reported in FSCT-2022-0057. Control logic is downloaded to PLC volatile memory using the FINS Program Area Read and Program Area Write commands or to non-volatile memory using other commands from where it can be loaded into volatile memory for execution. The logic that is loaded into and executed from the user program area exists in compiled object code form. Upon execution, these object codes are first passed to a dedicated ASIC that determines whether the object code is to be executed by the ASIC or the microprocessor. In the former case, the object code is interpreted by the ASIC whereas in the latter case the object code is passed to the microprocessor for object code interpretation by a ROM interpreter. In the abnormal case where the object code cannot be handled by either, an abnormal condition is triggered and the PLC is halted. The logic that is downloaded to the PLC does not seem to be cryptographically authenticated, thus allowing an attacker to manipulate transmitted object code to the PLC and either execute arbitrary object code commands on the ASIC or on the microprocessor interpreter.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-31207",
+      "last_modified": "2026-06-17T04:45:07.340",
+      "products": [
+        "omron:cp1w-cif41",
+        "omron:cp1w-cif41_firmware",
+        "omron:sysmac_cj2h",
+        "omron:sysmac_cj2h_firmware",
+        "omron:sysmac_cj2m",
+        "omron:sysmac_cj2m_firmware",
+        "omron:sysmac_cp1e",
+        "omron:sysmac_cp1e_firmware",
+        "omron:sysmac_cp1h",
+        "omron:sysmac_cp1h_firmware",
+        "omron:sysmac_cp1l",
+        "omron:sysmac_cp1l_firmware",
+        "omron:sysmac_cs1",
+        "omron:sysmac_cs1_firmware"
+      ],
+      "published": "2022-07-26T22:15:11.440",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-02"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/blog/"
+        },
+        {
+          "tags": [
+            "Third Party Advisory",
+            "US Government Resource"
+          ],
+          "url": "https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-02"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/blog/"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
   "CVE-2022-31374": {
     "added": "2026-09-12",
     "checks_done": 0,
@@ -46980,6 +47316,48 @@
       ]
     },
     "next_check": "2026-09-17"
+  },
+  "CVE-2026-16482": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "The rtMedia for WordPress, BuddyPress and bbPress plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'compare' parameter in all versions up to, and including, 4.7.11 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This is exploitable on any public page containing an rtMedia shortcode (e.g., [rtmedia_gallery]) when the rtmedia_shortcode GET parameter is set, because RTMediaQuery::query() merges $_REQUEST into the internal query while only validating top-level array keys, allowing the nested 'compare' subvalue to reach the vulnerable sink without authentication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-16482",
+      "last_modified": "2026-09-12T08:16:23.797",
+      "products": [],
+      "published": "2026-09-12T08:16:23.797",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/buddypress-media/tags/4.7.11/app/helper/RTMediaModel.php#L105"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/buddypress-media/tags/4.7.11/app/helper/RTMediaModel.php#L116"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/buddypress-media/tags/4.7.11/app/main/routers/query/RTMediaQuery.php#L611"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3652137/buddypress-media/tags/4.7.12/app/helper/db/RTDBModel.php"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/53d9b351-ba17-431a-b371-7dc1a87bd757?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
   },
   "CVE-2026-16494": {
     "added": "2026-08-13",
@@ -236644,6 +237022,52 @@
     },
     "next_check": "2026-09-13"
   },
+  "CVE-2026-77161": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "The Smart Marketing SMS and Newsletters Forms plugin for WordPress is vulnerable to generic SQL Injection via Parameter Name in all versions up to, and including, 5.1.24 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. Exploitation requires the plugin's sync feature to be enabled (options['enabled']) and get_option('egoi_mapping') to be truthy, both of which reflect ordinary configured states for the plugin's core contact mapping functionality.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77161",
+      "last_modified": "2026-09-12T08:16:24.103",
+      "products": [],
+      "published": "2026-09-12T08:16:24.103",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/smart-marketing-for-wp/trunk/admin/class-egoi-for-wp-listener.php#L132"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/smart-marketing-for-wp/trunk/admin/class-egoi-for-wp-listener.php#L183"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/smart-marketing-for-wp/trunk/includes/class-egoi-for-wp.php#L841"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/smart-marketing-for-wp/trunk/includes/class-egoi-for-wp.php#L908"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3663923%40smart-marketing-for-wp&new=3663923%40smart-marketing-for-wp"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/f14e3f20-b022-49f8-89b0-acca9b950cb8?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
   "CVE-2026-77176": {
     "added": "2026-08-21",
     "checks_done": 8,
@@ -242340,6 +242764,56 @@
     },
     "next_check": "2026-09-23"
   },
+  "CVE-2026-78159": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "The The Events Calendar plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 6.17.3 via the parse_array function. This is due to insufficient validation of the widget 'classes' map, allowing a plain-array payload to bypass the is_safe_widget_instance() object check and reach the callable-invocation sink in Element_Classes::parse_array(). This makes it possible for unauthenticated attackers to execute code on the server. Exploitation requires that the targeted site has comments enabled on tribe_events posts and that at least one comment containing a crafted wp:legacy-widget block has been submitted, as the attack chain is triggered when do_blocks() processes the single-event HTML including the comment area.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78159",
+      "last_modified": "2026-09-12T08:16:24.377",
+      "products": [],
+      "published": "2026-09-12T08:16:24.377",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/the-events-calendar/tags/6.17.3/common/src/Tribe/Utils/Element_Classes.php#L211"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/the-events-calendar/tags/6.17.3/src/Tribe/Views/V2/Template_Bootstrap.php#L214"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/the-events-calendar/tags/6.17.3/src/Tribe/Views/V2/Widgets/Service_Provider.php#L279"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/the-events-calendar/tags/6.17.3/src/views/v2/components/messages.php#L30"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3667866%40the-events-calendar&new=3667866%40the-events-calendar"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3667867%40the-events-calendar&new=3667867%40the-events-calendar"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/cc2ccfeb-6df6-4fee-96a5-94f8dd131f7c?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
   "CVE-2026-78160": {
     "added": "2026-08-24",
     "checks_done": 8,
@@ -242759,6 +243233,56 @@
         {
           "tags": [],
           "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/ee8e5848-8aa8-489a-9563-aefc0aa62dec?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
+  "CVE-2026-78175": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-502"
+      ],
+      "description": "The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 4.0.7 via the `withdraw_method_field` parameter of the `tutor_save_withdraw_account` AJAX handler. This is due to the handler lacking any capability or role check, relying solely on a nonce, while also passing attacker-supplied values through `esc_sql()`, which replaces every `%` character with a 66-byte HMAC placeholder token before the data is serialized and stored via `update_user_meta()`; when the meta is later retrieved, the placeholder is collapsed back to a single `%`, leaving serialized string length declarations 65 bytes greater than the actual content, and because array keys originate from entirely unescaped POST field names, `unserialize()` over-reads into attacker-controlled bytes, allowing injection of an arbitrary serialized object stream. This makes it possible for authenticated attackers, with subscriber-level access and above, to achieve remote code execution on the server by triggering the `GuzzleHttp\\Cookie\\FileCookieJar` POP chain, reachable via the `spl_autoload_register` loader in `TUTOR\\RestAPI` which loads the plugin's own bundled PayPal Composer autoloader, writing attacker-controlled content to an attacker-specified filename. This has an unauthenticated pathway when user registration is enabled, which is common for students and teachers to register, and it requires the monetization feature to be enabled.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78175",
+      "last_modified": "2026-09-12T08:16:24.507",
+      "products": [],
+      "published": "2026-09-12T08:16:24.507",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/tutor/tags/4.0.7/classes/RestAPI.php#L190"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/tutor/tags/4.0.7/classes/Withdraw.php#L204"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/tutor/tags/4.0.7/classes/Withdraw.php#L213"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/tutor/tags/4.0.7/classes/Withdraw.php#L217"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/tutor/tags/4.0.7/classes/Withdraw.php#L44"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3690454%40tutor&new=3690454%40tutor"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/d0077d56-11e7-4e74-abe0-63e81db67be3?source=cve"
         }
       ]
     },
@@ -251632,72 +252156,6 @@
       ]
     },
     "next_check": "2026-09-18"
-  },
-  "CVE-2026-80099": {
-    "added": "2026-09-09",
-    "checks_done": 3,
-    "cve": {
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-287"
-      ],
-      "description": "Several Newfold plugins are vulnerable to Authentication Bypass. The vulnerability exists because the plugins bundle the wp-module-data module. In the module, the `authenticate()` method — registered on the `rest_authentication_errors` filter and therefore evaluated for every unauthenticated REST API request — performs an HMAC-style Bearer token comparison that degenerates when `HiiveConnection::get_auth_token()` returns `false`: PHP coerces `strrev(false)` to `strrev('')`, collapsing the secret salt to the publicly known constant `hash('sha256', '') = e3b0c44...`, while all remaining hash inputs (HTTP method, request URL, raw request body, and the `X-Timestamp` header) remain fully attacker-controlled. This makes it possible for unauthenticated attackers to compute a valid Bearer token entirely offline, pass the token equality check, and have `wp_set_current_user()` invoked against the first administrator returned by `get_users(['role' => 'administrator'])`, granting full administrator-level access and enabling arbitrary REST API operations such as creating new administrator accounts and achieving complete site takeover. Vulnerable versions are WP Plugin Crazy Domains (<= 2.5.2), WP Plugin Web (<= 2.3.4), WP Plugin Hostgator (<= 3.1.0), WP Plugin Bluehost (<= 4.17.1). The affected module is vulnerable in versions up to, and including, 2.9.4.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-80099",
-      "last_modified": "2026-09-09T09:17:12.157",
-      "products": [],
-      "published": "2026-09-09T09:17:12.157",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/newfold-labs/wp-module-data/commit/9d913fd8fa12796c4d9c09081e4aeccfa5cb1301"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/newfold-labs/wp-plugin-bluehost/compare/4.19.0...4.19.1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/newfold-labs/wp-plugin-crazy-domains/compare/2.5.2...2.5.3"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/newfold-labs/wp-plugin-hostgator/compare/3.2.0...3.2.1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/newfold-labs/wp-plugin-web/compare/2.3.5...2.3.6"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/wp-module-data/trunk/includes/Data.php#L191"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/wp-module-data/trunk/includes/Data.php#L201"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/wp-module-data/trunk/includes/Data.php#L222"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/wp-module-data/trunk/includes/Data.php#L69"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/wp-module-data/trunk/includes/HiiveConnection.php#L406"
-        },
-        {
-          "tags": [],
-          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/3ee369c0-0d7c-4142-b3ba-a518288647ba?source=cve"
-        }
-      ]
-    },
-    "next_check": "2026-09-13"
   },
   "CVE-2026-80104": {
     "added": "2026-08-26",
@@ -281678,6 +282136,122 @@
     },
     "next_check": "2026-09-18"
   },
+  "CVE-2026-85198": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "The MPG – Multiple Page Generator, Bulk Landing Pages & Programmatic SEO plugin for WordPress is vulnerable to generic SQL Injection via URL Path in all versions up to, and including, 4.2.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. This is only exploitable when the [mpg_spintax] shortcode is rendered in site-wide content such as a footer or template part, as the vulnerable code path is only reached when the shortcode is active on the requested page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85198",
+      "last_modified": "2026-09-12T08:16:24.670",
+      "products": [],
+      "published": "2026-09-12T08:16:24.670",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/multiple-pages-generator-by-porthas/tags/4.1.7/controllers/HookController.php#L594"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/multiple-pages-generator-by-porthas/tags/4.1.7/controllers/SpintaxController.php#L66"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/multiple-pages-generator-by-porthas/tags/4.1.7/helpers/Helper.php#L215"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/multiple-pages-generator-by-porthas/tags/4.2.0/controllers/HookController.php#L594"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/multiple-pages-generator-by-porthas/tags/4.2.0/controllers/SpintaxController.php#L66"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/multiple-pages-generator-by-porthas/tags/4.2.0/helpers/Helper.php#L215"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3687328%40multiple-pages-generator-by-porthas&new=3687328%40multiple-pages-generator-by-porthas"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/677004db-d8ac-410c-89d9-ee841d643ef7?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
+  "CVE-2026-85200": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-98"
+      ],
+      "description": "The GEO my WP plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.5.5.3 via the gmw_posts_locator_ajax_info_window_loader function. This makes it possible for unauthenticated attackers to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included. In environments where PEAR is installed with register_argc_argv enabled, this file inclusion can be leveraged to write and execute arbitrary PHP code, achieving full remote code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85200",
+      "last_modified": "2026-09-12T08:16:24.810",
+      "products": [],
+      "published": "2026-09-12T08:16:24.810",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Fitoussi/geo-my-wp/commit/5a768bf1c6e44ded83a65be8789f3587515665ac"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5.1/includes/gmw-functions.php#L1945"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5.1/includes/gmw-functions.php#L1987"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5.1/plugins/posts-locator/includes/gmw-posts-locator-functions.php#L964"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5.1/plugins/posts-locator/includes/gmw-posts-locator-functions.php#L975"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5.3/includes/gmw-functions.php#L1945"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5.3/includes/gmw-functions.php#L1987"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5.3/plugins/posts-locator/includes/gmw-posts-locator-functions.php#L964"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/geo-my-wp/tags/4.5.5.3/plugins/posts-locator/includes/gmw-posts-locator-functions.php#L975"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/562712a8-a42e-4b36-9985-3c71698efdda?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
   "CVE-2026-85205": {
     "added": "2026-09-04",
     "checks_done": 7,
@@ -303435,6 +304009,48 @@
         {
           "tags": [],
           "url": "https://bugs.launchpad.net/ironic/+bug/2162816"
+        }
+      ]
+    },
+    "next_check": "2026-09-13"
+  },
+  "CVE-2026-90474": {
+    "added": "2026-09-12",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "MCPHub before 1.0.32 contains an authentication bypass vulnerability in its embedded OAuth 2.0 authorization server where client authentication is disabled by default and PKCE enforcement is optional. Attackers who obtain an authorization code through interception can redeem it for access tokens without providing a client secret or PKCE verifier, gaining access to victim accounts and their privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90474",
+      "last_modified": "2026-09-12T11:16:34.483",
+      "products": [],
+      "published": "2026-09-12T11:16:34.483",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/samanhappy/mcphub/blob/v1.0.31/src/services/oauthServerService.ts#L26-L38"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/samanhappy/mcphub/commit/e927620cd1a80e8691213b01eb8cd6ffa1a66e9f"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/samanhappy/mcphub/releases/tag/v1.0.32"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/samanhappy/mcphub/security/advisories/GHSA-3m7m-37xf-xp9x"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/mcphub-before-1.0.32-oauth-2.0-authentication-bypass"
         }
       ]
     },
