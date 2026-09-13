@@ -23336,6 +23336,42 @@
     },
     "next_check": "2026-09-14"
   },
+  "CVE-2021-0942": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "The path in this case is a little bit convoluted. The end result is that via an ioctl an untrusted app can control the ui32PageIndex offset in the expression:sPA.uiAddr = page_to_phys(psOSPageArrayData->pagearray[ui32PageIndex]);With the current PoC this crashes as an OOB read. However, given that the OOB read value is ending up as the address field of a struct I think i seems plausible that this could lead to an OOB write if the attacker is able to cause the OOB read to pull an interesting kernel address. Regardless if this is a read or write, it is a High severity issue in the kernel.Product: AndroidVersions: Android SoCAndroid ID: A-238904312",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-0942",
+      "last_modified": "2026-06-17T03:30:41.777",
+      "products": [
+        "google:android"
+      ],
+      "published": "2022-09-13T20:15:08.983",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/2022-09-01"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/2022-09-01"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
   "CVE-2021-20125": {
     "added": "2026-09-07",
     "checks_done": 6,
@@ -27228,6 +27264,110 @@
     },
     "next_check": "2026-09-14"
   },
+  "CVE-2022-20385": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1284"
+      ],
+      "description": "a function called 'nla_parse', do not check the len of para, it will check nla_type (which can be controlled by userspace) with 'maxtype' (in this case, it is GSCAN_MAX), then it access polciy array 'policy[type]', which OOB access happens.Product: AndroidVersions: Android SoCAndroid ID: A-238379819",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-20385",
+      "last_modified": "2026-06-17T04:24:11.407",
+      "products": [
+        "google:android"
+      ],
+      "published": "2022-09-13T20:15:09.087",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/2022-09-01"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/2022-09-01"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2022-20386": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "Summary:Product: AndroidVersions: Android SoCAndroid ID: A-238227328",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-20386",
+      "last_modified": "2026-06-17T04:24:11.503",
+      "products": [
+        "google:android"
+      ],
+      "published": "2022-09-13T20:15:09.130",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/2022-09-01"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/2022-09-01"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2022-20387": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "Summary:Product: AndroidVersions: Android SoCAndroid ID: A-238227324",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-20387",
+      "last_modified": "2026-06-17T04:24:11.600",
+      "products": [
+        "google:android"
+      ],
+      "published": "2022-09-13T20:15:09.170",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/2022-09-01"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://source.android.com/security/bulletin/2022-09-01"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
   "CVE-2022-22642": {
     "added": "2026-09-10",
     "checks_done": 3,
@@ -29505,6 +29645,70 @@
             "Third Party Advisory"
           ],
           "url": "https://github.com/Darry-lang1/vuln/tree/main/Tenda/AC1206/11"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2022-39206": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-610"
+      ],
+      "description": "Onedev is an open source, self-hosted Git Server with CI/CD and Kanban. When using Docker-based job executors, the Docker socket (e.g. /var/run/docker.sock on Linux) is mounted into each Docker step. Users that can define and trigger CI/CD jobs on a project could use this to control the Docker daemon on the host machine. This is a known dangerous pattern, as it can be used to break out of Docker containers and, in most cases, gain root privileges on the host system. This issue allows regular (non-admin) users to potentially take over the build infrastructure of a OneDev instance. Attackers need to have an account (or be able to register one) and need permission to create a project. Since code.onedev.io has the right preconditions for this to be exploited by remote attackers, it could have been used to hijack builds of OneDev itself, e.g. by injecting malware into the docker images that are built and pushed to Docker Hub. The impact is increased by this as described before. Users are advised to upgrade to 7.3.0 or higher. There are no known workarounds for this issue.",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-39206",
+      "last_modified": "2026-06-17T04:57:54.770",
+      "products": [
+        "onedev_project:onedev"
+      ],
+      "published": "2022-09-13T19:15:13.160",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://blog.sonarsource.com/onedev-remote-code-execution/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/commit/0052047a5b5095ac6a6b4a73a522d0272fec3a22"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/security/advisories/GHSA-gjq9-4xx9-cr3q"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://blog.sonarsource.com/onedev-remote-code-execution/"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/commit/0052047a5b5095ac6a6b4a73a522d0272fec3a22"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/theonedev/onedev/security/advisories/GHSA-gjq9-4xx9-cr3q"
         }
       ]
     },
@@ -252051,6 +252255,32 @@
     },
     "next_check": "2026-09-25"
   },
+  "CVE-2026-80071": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The User Registration & Membership  WordPress plugin before 5.2.8 does not properly restrict who may author a membership plan or validate the plan a user attaches to their own account, allowing authenticated users with Author-level access and above to assign themselves an arbitrary role and escalate their privileges to Administrator.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80071",
+      "last_modified": "2026-09-13T11:16:58.460",
+      "products": [],
+      "published": "2026-09-13T06:16:24.947",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/a4fbdeea-0d3b-466b-b4b6-4c4db277cd1d/"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
   "CVE-2026-80073": {
     "added": "2026-09-09",
     "checks_done": 4,
@@ -294174,6 +294404,32 @@
     },
     "next_check": "2026-09-14"
   },
+  "CVE-2026-86406": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The User Registration & Membership  WordPress plugin before 5.2.8 does not check the capability of the user making a membership purchase, and does not validate the payment method or the plan submitted with it, allowing any authenticated user such as a subscriber to be granted the WordPress role attached to a paid plan without paying for it. Where the site owner has mapped a plan to a privileged role, this leads to privilege escalation up to administrator.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86406",
+      "last_modified": "2026-09-13T11:16:58.793",
+      "products": [],
+      "published": "2026-09-13T06:16:25.157",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/0fb4ec40-3f92-4c7e-8877-8898b355d78d/"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
   "CVE-2026-86427": {
     "added": "2026-09-07",
     "checks_done": 6,
@@ -303311,6 +303567,32 @@
     },
     "next_check": "2026-09-14"
   },
+  "CVE-2026-89080": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "The Really Simple Security  WordPress plugin before 9.8.1 does not prevent an unauthenticated request from resetting an account's completed email two-factor enrolment, allowing an attacker who already knows the account's password to bypass the second factor and obtain that user's session, up to administrator.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89080",
+      "last_modified": "2026-09-13T11:16:59.650",
+      "products": [],
+      "published": "2026-09-13T06:16:25.637",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/49546064-5663-40f8-be7c-4f3faa31fa9a/"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
   "CVE-2026-89086": {
     "added": "2026-09-11",
     "checks_done": 2,
@@ -304921,6 +305203,558 @@
     },
     "next_check": "2026-09-14"
   },
+  "CVE-2026-90500": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "description": "A weakness has been identified in lenve vhr 1.0-SNAPSHOT. This vulnerability affects the function FastDFSUtils.upload of the file /hr/userface of the component Avatar Upload. This manipulation of the argument File causes unrestricted upload. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90500",
+      "last_modified": "2026-09-13T08:16:25.980",
+      "products": [],
+      "published": "2026-09-13T08:16:25.980",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ArrestX/vhr-advisories/blob/main/advisories/VHR-VULN-005-unrestricted-upload.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90500"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/892902"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403088"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403088/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90501": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266",
+        "CWE-269"
+      ],
+      "description": "A security vulnerability has been detected in lenve vhr 1.0-SNAPSHOT. This issue affects the function HrInfoController.updateHr of the file HrMapper.xml. Such manipulation of the argument Password leads to improper privilege management. The attack may be performed from remote. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90501",
+      "last_modified": "2026-09-13T08:16:27.017",
+      "products": [],
+      "published": "2026-09-13T08:16:27.017",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ArrestX/vhr-advisories/blob/main/advisories/VHR-VULN-001-mass-assignment-privesc.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90501"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/892904"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403089"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403089/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90504": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "description": "A vulnerability has been found in vvbbnn00 WARP-Clash-API up to c7bf2360073959861219b422e51ae86411051b46. The impacted element is the function authorized. The manipulation of the argument SECRET_KEY leads to missing authentication. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90504",
+      "last_modified": "2026-09-13T10:16:54.093",
+      "products": [],
+      "published": "2026-09-13T10:16:54.093",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/Galaxync/b90734d80bf32e8145e46fbc326d6729"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90504"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895263"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403092"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403092/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90507": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "description": "A vulnerability was identified in vvbbnn00 WARP-Clash-API up to c7bf2360073959861219b422e51ae86411051b46. Affected is the function get_surge_subscription of the file services/subscription.py of the component Subscription Handler. Such manipulation of the argument key leads to improper access controls. The attack may be launched remotely. The exploit is publicly available and might be used. This product operates on a rolling release basis, ensuring continuous delivery. Consequently, there are no version details for either affected or updated releases. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90507",
+      "last_modified": "2026-09-13T10:16:55.720",
+      "products": [],
+      "published": "2026-09-13T10:16:55.720",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/Galaxync/26062162d9cc27550795cdc100da2dcb"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90507"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/895270"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403095"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403095/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90509": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-259",
+        "CWE-798"
+      ],
+      "description": "A weakness has been identified in dromara orion-visor up to 2.5.7. Affected by this issue is the function ExposeApiAspect.beforeExposeApi of the file ExposeApiAspect.java. Executing a manipulation can lead to hard-coded credentials. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90509",
+      "last_modified": "2026-09-13T10:16:56.117",
+      "products": [],
+      "published": "2026-09-13T10:16:56.117",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/dromara/orion-visor/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/dromara/orion-visor/issues/170"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sumo166/CVE-apply/blob/main/dromara-orion-visor/ExposeApi%20Hardcoded%20Default%20Token%20Authentication%20Bypass%20(CWE-798)_en.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90509"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/911864"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403097"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403097/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90510": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-320",
+        "CWE-321"
+      ],
+      "description": "A security vulnerability has been detected in dromara orion-visor up to 2.5.7. This affects the function HostKeyServiceImpl.encryptKey of the file orion-visor-modules/orion-visor-module-asset/orion-visor-module-asset-service/src/main/java/org/dromara/visor/module/asset/service/impl/HostKeyServiceImpl.java. The manipulation leads to use of hard-coded cryptographic key\r . The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90510",
+      "last_modified": "2026-09-13T11:16:59.827",
+      "products": [],
+      "published": "2026-09-13T11:16:59.827",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/dromara/orion-visor/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/dromara/orion-visor/issues/171"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sumo166/CVE-apply/blob/main/dromara-orion-visor/Hardcoded%20AES%20Encryption%20Key%20Enables%20Decryption%20of%20SSH%20Private%20Keys%20and%20Host%20Passwords%20(CWE-321)_en.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90510"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/911865"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403098"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403098/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90511": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was detected in GongShengyue OnlineBooks up to dfc5eacc08d3b0396c266049548618f6fb9587ea. This vulnerability affects unknown code of the file src/cn/ylcto/book/servlet/BooksServlet.java of the component listSplit Interface. The manipulation of the argument column results in sql injection. The attack may be performed from remote. The exploit is now public and may be used. This product utilizes a rolling release system for continuous delivery, and as such, version information for affected or updated releases is not disclosed.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90511",
+      "last_modified": "2026-09-13T11:17:00.050",
+      "products": [],
+      "published": "2026-09-13T11:17:00.050",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/hhhh333/CVE/blob/main/OnlineBooks-sql.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90511"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/911884"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403099"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403099/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90513": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "description": "A flaw has been found in simalexan api-lambda-send-email-ses up to bda6869aa81371d1e872242e74fe7d953edb818d. This issue affects the function SES.sendEmail of the file template.yml of the component API Gateway Endpoint. This manipulation of the argument toEmails/ccEmails/replyToEmails/subject/message causes missing authentication. It is possible to initiate the attack remotely. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90513",
+      "last_modified": "2026-09-13T11:17:00.237",
+      "products": [],
+      "published": "2026-09-13T11:17:00.237",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/simalexan/api-lambda-send-email-ses/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/simalexan/api-lambda-send-email-ses/issues/9"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90513"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/911886"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403100"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403100/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90514": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability has been found in SourceCodester School Registration and Fee System 1.0. Impacted is an unknown function of the file /bilal/normal/save_stud.php. Such manipulation of the argument Status leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90514",
+      "last_modified": "2026-09-13T11:17:00.423",
+      "products": [],
+      "published": "2026-09-13T11:17:00.423",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/zuojiu567/cve/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90514"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/912050"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403101"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403101/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90515": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was determined in SourceCodester School Registration and Fee System 1.0. The impacted element is an unknown function of the file /bilal/normal/delete_stud.php. Executing a manipulation of the argument selector[] can lead to sql injection. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90515",
+      "last_modified": "2026-09-13T12:17:15.147",
+      "products": [],
+      "published": "2026-09-13T12:17:15.147",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/zuojiu567/cve/issues/2"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90515"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/912054"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403103"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403103/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90516": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was found in SourceCodester School Registration and Fee System 1.0. The affected element is an unknown function of the file /bilal/normal/pay_report.php. Performing a manipulation of the argument period results in sql injection. The attack can be initiated remotely. The exploit has been made public and could be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90516",
+      "last_modified": "2026-09-13T12:17:15.893",
+      "products": [],
+      "published": "2026-09-13T12:17:15.893",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/zuojiu567/cve/issues/3"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90516"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/912055"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403102"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403102/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90518": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "description": "A security flaw has been discovered in PHPGurukul Bank Locker Management System 1.0. This impacts an unknown function of the file sidebar.php. The manipulation of the argument UserType results in improper access controls. The attack may be launched remotely. The exploit has been released to the public and may be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90518",
+      "last_modified": "2026-09-13T12:17:16.237",
+      "products": [],
+      "published": "2026-09-13T12:17:16.237",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/wakakakaaaaha/vuln/issues/3"
+        },
+        {
+          "tags": [],
+          "url": "https://phpgurukul.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90518"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/912176"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403105"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403105/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
   "CVE-2026-90537": {
     "added": "2026-09-13",
     "checks_done": 0,
@@ -305271,6 +306105,94 @@
     },
     "next_check": "2026-09-14"
   },
+  "CVE-2026-90561": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Strapi versions 4.x through 4.26.2 and 5.x before 5.48.1 contain a stored cross-site scripting vulnerability in the content manager WYSIWYG preview component that fails to strip script tags from rich text. An Author-role user can store malicious script tags in rich text fields that execute in an Editor or Super Admin's session when the preview pane is expanded, enabling account takeover.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90561",
+      "last_modified": "2026-09-13T11:17:00.613",
+      "products": [],
+      "published": "2026-09-13T11:17:00.613",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/strapi/strapi"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/strapi/strapi/blob/v5.46.0/packages/core/content-manager/admin/src/pages/EditView/components/FormInputs/Wysiwyg/PreviewWysiwyg.tsx"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/strapi/strapi/commit/875752612c30f951546904a29469e51e17e0ac37"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/strapi/strapi/issues/26857"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/strapi-4-x-through-4.26.2-and-5-x-before-5.48.1-stored-xss-via-wysiwyg"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90562": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-331"
+      ],
+      "description": "LangBot before 4.10.11 generates password recovery keys with only 24 bits of entropy and applies no rate limiting to the unauthenticated reset-password endpoint. Remote attackers knowing the administrator email can exhaust the keyspace through concurrent requests to reset the admin password and gain account access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90562",
+      "last_modified": "2026-09-13T11:17:00.780",
+      "products": [],
+      "published": "2026-09-13T11:17:00.780",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/langbot-app/LangBot"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/langbot-app/LangBot/blob/v4.10.2/src/langbot/pkg/api/http/controller/groups/user.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/langbot-app/LangBot/blob/v4.10.2/src/langbot/pkg/core/stages/genkeys.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/langbot-app/LangBot/commit/267232c24f93c515d6fd3f7f81c0676066ab1ab8"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/langbot-app/LangBot/issues/2392"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/langbot-before-4.10.11-authentication-bypass-via-weak-recovery-key"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
   "CVE-2026-90616": {
     "added": "2026-09-13",
     "checks_done": 0,
@@ -305421,6 +306343,128 @@
     },
     "next_check": "2026-09-14"
   },
+  "CVE-2026-90767": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-93"
+      ],
+      "description": "Froxlor before 2.3.12 fails to properly validate multi-line SSH public keys in the SshKeys::add() endpoint, allowing customers to inject arbitrary lines into authorized_keys files. Attackers can inject malicious SSH key entries with option directives to gain persistent unauthorized access that survives key deletion and SSH access revocation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90767",
+      "last_modified": "2026-09-13T11:17:00.947",
+      "products": [],
+      "published": "2026-09-13T11:17:00.947",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/froxlor/Froxlor"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/froxlor/Froxlor/blob/2.3.10/lib/Froxlor/Api/Commands/SshKeys.php"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/froxlor/Froxlor/blob/2.3.10/lib/Froxlor/Cron/System/SshKeys.php"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/froxlor/Froxlor/security/advisories/GHSA-p3v3-74gc-jh5f"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/froxlor-before-2.3.12-ssh-key-injection-via-authorized-keys"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90768": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "CAPEv2 through commit 471ee4b fails to validate task ownership in REST API endpoints, allowing authenticated users to read and delete analyses submitted by other users. Attackers can enumerate all tasks in the system and delete arbitrary analyses by sending requests to task view and delete endpoints without ownership verification.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90768",
+      "last_modified": "2026-09-13T11:17:01.113",
+      "products": [],
+      "published": "2026-09-13T11:17:01.113",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kevoreilly/CAPEv2"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kevoreilly/CAPEv2/blob/1255b18/web/apiv2/views.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kevoreilly/CAPEv2/issues/3162"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/capev2-through-commit-471ee4b-rest-api-task-endpoints-missing-ownership-check"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90769": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Open Notebook before 1.11.0 fails to validate the URL parameter in POST /api/sources endpoint, allowing authenticated users to perform server-side requests to internal services. Attackers can supply arbitrary URLs to read cloud metadata, internal network services, and localhost-bound services through the application server's direct HTTP requests.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90769",
+      "last_modified": "2026-09-13T11:17:01.270",
+      "products": [],
+      "published": "2026-09-13T11:17:01.270",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/lfnovo/open-notebook"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/lfnovo/open-notebook/blob/8889087e317177d7b6e286342ab34e0c9c01d43e/api/routers/sources.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/lfnovo/open-notebook/commit/9045ea50196927eac7de647bb5b7009349236fb4"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/lfnovo/open-notebook/issues/1284"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/open-notebook-before-1.11.0-server-side-request-forgery-via-link-source"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
   "CVE-2026-9077": {
     "added": "2026-08-06",
     "checks_done": 9,
@@ -305446,6 +306490,404 @@
       ]
     },
     "next_check": "2026-11-04"
+  },
+  "CVE-2026-90770": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "Spug through 3.4.0 contains a remote code execution vulnerability in the ping_check function that interpolates user-supplied monitor addresses directly into shell commands without validation. Authenticated users with monitor permissions can inject shell metacharacters via the /monitor/run_test/ endpoint to execute arbitrary commands as the Spug process user.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90770",
+      "last_modified": "2026-09-13T11:17:01.453",
+      "products": [],
+      "published": "2026-09-13T11:17:01.453",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/openspug/spug"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/openspug/spug/blob/v3.4.0/spug_api/apps/monitor/executors.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/openspug/spug/blob/v3.4.0/spug_api/apps/monitor/views.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/openspug/spug/commit/97aebf133e1f9cbb35ccebadab1faedfdfe93f42"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/openspug/spug/issues/741"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/spug-through-3.4.0-remote-code-execution-via-ping-check"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90772": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Amundsen frontend through 4.3.0 renders table, dashboard, and feature descriptions with dangerouslySetInnerHTML without HTML sanitization in ResourceListItem components. Attackers can inject malicious markup like img elements with onerror handlers into descriptions via the metadata service or Elasticsearch, executing JavaScript in every user's browser that views search results.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90772",
+      "last_modified": "2026-09-13T11:17:01.780",
+      "products": [],
+      "published": "2026-09-13T11:17:01.780",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/amundsen-io/amundsen"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/amundsen-io/amundsen/blob/frontend-4.3.0/frontend/amundsen_application/static/js/components/ResourceListItem/TableListItem/index.tsx"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/amundsen-io/amundsen/issues/2362"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/amundsen-frontend-through-4.3.0-stored-xss-via-description"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90774": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "rustypaste before 0.18.1 validates the destination path before applying the optional custom filename HTTP header, allowing attackers to bypass directory-escape checks. Attackers can supply path traversal sequences in the filename header to write files outside the configured upload directory to arbitrary locations.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90774",
+      "last_modified": "2026-09-13T11:17:02.163",
+      "products": [],
+      "published": "2026-09-13T11:17:02.163",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/orhun/rustypaste"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/orhun/rustypaste/blob/v0.18.0/src/paste.rs"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/orhun/rustypaste/commit/ac05d552596af4a8429d80f30d11f67117ce02c8"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/orhun/rustypaste/issues/622"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/rustypaste-before-0.18.1-path-traversal-via-filename-header"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90775": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "PostGIS address_standardizer through 3.7.0 fails to validate the Weight parameter from caller-supplied rules tables before using it as an array index. Attackers can craft malicious rule rows with out-of-range Weight values to trigger out-of-bounds reads in the load_value array, causing the PostgreSQL backend process to crash and terminate all cluster sessions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90775",
+      "last_modified": "2026-09-13T12:17:16.400",
+      "products": [],
+      "published": "2026-09-13T12:17:16.400",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/postgis/address_standardizer"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/postgis/address_standardizer/blob/e987949e0fccff6a0e7a6d3f86814d5c7a01f481/NEWS.md"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/postgis/address_standardizer/blob/v3.7.0/src/analyze.c#L860"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/postgis/address_standardizer/blob/v3.7.0/src/gamma.c#L301-L311"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/postgis/address_standardizer/commit/a5cb4b1360a040973092f13b1af97a718e7e104a"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/postgis/address_standardizer/commit/e987949e0fccff6a0e7a6d3f86814d5c7a01f481"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/postgis/address_standardizer/pull/6"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/postgis-address-standardizer-through-3.7.0-out-of-bounds-read-via-unvalidated-rule-weight"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90776": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-407"
+      ],
+      "description": "Nodemailer versions 9.1.0 through 10.0.4 contain a quadratic time complexity vulnerability in the addressparser component when parsing email addresses with RFC 5322 comments. Attackers can craft malicious email headers with comment-separated atoms to consume excessive CPU and block the Node.js event loop for several seconds, causing denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90776",
+      "last_modified": "2026-09-13T12:17:16.547",
+      "products": [],
+      "published": "2026-09-13T12:17:16.547",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/nodemailer/nodemailer"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/nodemailer/nodemailer/blob/v10.0.4/src/addressparser/index.ts#L251"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/nodemailer/nodemailer/commit/c07f17518d25aca8ab2ad66968dcbca538c24b89"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/nodemailer/nodemailer/releases/tag/v10.0.5"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-prgh-xp8r-p3m5"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/nodemailer-9.1.0-through-10.0.4-denial-of-service-via-quadratic-address-parsing"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90777": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-502"
+      ],
+      "description": "ESPnet before 202609 deserializes pretrained model checkpoints using torch.load with weights_only=False, allowing arbitrary code execution from attacker-supplied files. Attackers can craft malicious checkpoint files that execute code during deserialization when loaded through the initialization or fine-tuning path.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90777",
+      "last_modified": "2026-09-13T12:17:16.690",
+      "products": [],
+      "published": "2026-09-13T12:17:16.690",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/espnet/espnet"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/espnet/espnet/blob/v.202511/espnet2/torch_utils/load_pretrained_model.py#L99"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/espnet/espnet/commit/91ca045fc179f29bc7b7fe05cd852aea65310003"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/espnet/espnet/releases/tag/v.202609"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/espnet/espnet/security/advisories/GHSA-64f6-3gqc-r926"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/espnet-before-202609-remote-code-execution-via-unsafe-deserialization"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90778": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-120"
+      ],
+      "description": "SIPp through 3.7.7 contains a buffer overflow vulnerability in get_peer_tag() function when processing SIP To headers with tag parameters of 2049 bytes or more. Unauthenticated remote attackers can send crafted SIP messages with oversized tag parameters to overflow the static buffer and crash the process.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90778",
+      "last_modified": "2026-09-13T12:17:16.837",
+      "products": [],
+      "published": "2026-09-13T12:17:16.837",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp/blob/v3.7.7/src/sip_parser.cpp#L76-L113"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp/commit/ddf22d1a54e0396b2e18ebaf4cf5a3fa860e5da4"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp/pull/879"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/sipp-through-3.7.7-buffer-overflow-via-sip-to-header-tag"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90779": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "SIPp through 3.7.7 contains a stack buffer overflow vulnerability in createAuthHeader() when processing SIP authentication challenges with oversized algorithm parameters. A malicious SIP server can send a crafted 401 or 407 challenge to corrupt the stack and crash the client process.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90779",
+      "last_modified": "2026-09-13T12:17:16.960",
+      "products": [],
+      "published": "2026-09-13T12:17:16.960",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp/blob/v3.7.7/src/auth.cpp#L183-L192"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp/commit/1d4a5622bea34d0b5cdff333e6b5734608e30af7"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp/pull/880"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/sipp-through-3.7.7-stack-buffer-overflow-via-createauthheader-algorithm-parameter"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
+  },
+  "CVE-2026-90780": {
+    "added": "2026-09-13",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-120"
+      ],
+      "description": "SIPp through 3.7.7 contains a buffer overflow vulnerability in the get_header() function in src/sip_parser.cpp when processing SIP messages with header content exceeding 20,490 bytes. Unauthenticated remote attackers can send crafted SIP messages with oversized headers to overflow the static buffer and crash the process.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90780",
+      "last_modified": "2026-09-13T12:17:17.093",
+      "products": [],
+      "published": "2026-09-13T12:17:17.093",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp/blob/v3.7.7/src/sip_parser.cpp#L164-L227"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp/commit/8ddfb43359703e665041a955543e07f504f80232"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/SIPp/sipp/pull/881"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/sipp-through-3.7.7-buffer-overflow-via-oversized-sip-header-content"
+        }
+      ]
+    },
+    "next_check": "2026-09-14"
   },
   "CVE-2026-9081": {
     "added": "2026-08-06",
