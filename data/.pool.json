@@ -28449,6 +28449,83 @@
     },
     "next_check": "2026-09-15"
   },
+  "CVE-2022-27510": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-288"
+      ],
+      "description": "Unauthorized access to Gateway user capabilities \n",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-27510",
+      "last_modified": "2026-06-17T04:37:09.107",
+      "products": [
+        "citrix:application_delivery_controller",
+        "citrix:application_delivery_controller_firmware",
+        "citrix:gateway"
+      ],
+      "published": "2022-11-08T22:15:13.020",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.citrix.com/article/CTX463706/citrix-gateway-and-citrix-adc-security-bulletin-for-cve202227510-cve202227513-and-cve202227516"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.citrix.com/article/CTX463706/citrix-gateway-and-citrix-adc-security-bulletin-for-cve202227510-cve202227513-and-cve202227516"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2022-27513": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-345"
+      ],
+      "description": "Remote desktop takeover via phishing  \n",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-27513",
+      "last_modified": "2026-06-17T04:37:09.430",
+      "products": [
+        "citrix:application_delivery_controller",
+        "citrix:application_delivery_controller_firmware",
+        "citrix:gateway"
+      ],
+      "published": "2022-11-08T22:15:13.313",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.citrix.com/article/CTX463706/citrix-gateway-and-citrix-adc-security-bulletin-for-cve202227510-cve202227513-and-cve202227516"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://support.citrix.com/article/CTX463706/citrix-gateway-and-citrix-adc-security-bulletin-for-cve202227510-cve202227513-and-cve202227516"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
   "CVE-2022-27624": {
     "added": "2026-09-14",
     "checks_done": 0,
@@ -28522,6 +28599,42 @@
             "Vendor Advisory"
           ],
           "url": "https://www.synology.com/security/advisory/Synology_SA_22_17"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2022-27858": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1236"
+      ],
+      "description": "CSV Injection vulnerability in Activity Log Team Activity Log <= 2.8.3 on WordPress.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-27858",
+      "last_modified": "2026-06-17T04:37:38.770",
+      "products": [
+        "activity_log_project:activity_log"
+      ],
+      "published": "2022-11-08T19:15:11.103",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://patchstack.com/database/vulnerability/aryo-activity-log/wordpress-activity-log-plugin-2-8-3-csv-injection-vulnerability?_s_id=cve"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://patchstack.com/database/vulnerability/aryo-activity-log/wordpress-activity-log-plugin-2-8-3-csv-injection-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -29555,6 +29668,421 @@
     },
     "next_check": "2026-09-15"
   },
+  "CVE-2022-33321": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-319"
+      ],
+      "description": "Cleartext Transmission of Sensitive Information vulnerability due to the use of Basic Authentication for HTTP connections in Mitsubishi Electric consumer electronics products (PHOTOVOLTAIC COLOR MONITOR ECO-GUIDE, HEMS adapter, Wi-Fi Interface, Air Conditioning, Induction hob, Mitsubishi Electric HEMS Energy Measurement Unit, Refrigerator, Remote control with Wi-Fi Interface, BATHROOM THERMO VENTILATOR, Rice cooker, Mitsubishi Electric HEMS control adapter, Energy Recovery Ventilator, Smart Switch, Ventilating Fan, Range hood fan, Energy Measurement Unit and Air Purifier) allows a remote unauthenticated attacker to disclose information in the products or cause a denial of service (DoS) condition as a result by sniffing credential information (username and password).\nThe wide range of models/versions of Mitsubishi Electric consumer electronics products are affected by this vulnerability.\nAs for the affected product models/versions, see the Mitsubishi Electric's advisory which is listed in [References] section.\n\n",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-33321",
+      "last_modified": "2026-06-17T04:49:06.233",
+      "products": [
+        "mitsubishielectric:ma-ew85s-e",
+        "mitsubishielectric:ma-ew85s-e_firmware",
+        "mitsubishielectric:ma-ew85s-uk",
+        "mitsubishielectric:ma-ew85s-uk_firmware",
+        "mitsubishielectric:mac-507if-e",
+        "mitsubishielectric:mac-507if-e_firmware",
+        "mitsubishielectric:mac-557if-e",
+        "mitsubishielectric:mac-557if-e1",
+        "mitsubishielectric:mac-557if-e1_firmware",
+        "mitsubishielectric:mac-557if-e_firmware",
+        "mitsubishielectric:mac-558if-e",
+        "mitsubishielectric:mac-558if-e1",
+        "mitsubishielectric:mac-558if-e1_firmware",
+        "mitsubishielectric:mac-558if-e_firmware",
+        "mitsubishielectric:mac-559if-e",
+        "mitsubishielectric:mac-559if-e1",
+        "mitsubishielectric:mac-559if-e1_firmware",
+        "mitsubishielectric:mac-559if-e_firmware",
+        "mitsubishielectric:mac-566ifb-e",
+        "mitsubishielectric:mac-566ifb-e_firmware",
+        "mitsubishielectric:mac-567ifb-e",
+        "mitsubishielectric:mac-567ifb-e_firmware",
+        "mitsubishielectric:mac-567ifb2-e",
+        "mitsubishielectric:mac-567ifb2-e_firmware",
+        "mitsubishielectric:mac-568if-e",
+        "mitsubishielectric:mac-568if-e_firmware",
+        "mitsubishielectric:mac-568ifb-e",
+        "mitsubishielectric:mac-568ifb-e_firmware",
+        "mitsubishielectric:mac-568ifb2-e",
+        "mitsubishielectric:mac-568ifb2-e_firmware",
+        "mitsubishielectric:mac-568ifb3-e",
+        "mitsubishielectric:mac-568ifb3-e_firmware",
+        "mitsubishielectric:mac-576if-e1",
+        "mitsubishielectric:mac-576if-e1_firmware",
+        "mitsubishielectric:mac-587if-e",
+        "mitsubishielectric:mac-587if-e_firmware",
+        "mitsubishielectric:mac-587if2-e",
+        "mitsubishielectric:mac-587if2-e_firmware",
+        "mitsubishielectric:mac-588if-e",
+        "mitsubishielectric:mac-588if-e_firmware",
+        "mitsubishielectric:mfz-gxt50\\/60\\/73vfk",
+        "mitsubishielectric:mfz-gxt50\\/60\\/73vfk_firmware",
+        "mitsubishielectric:mfz-xt50\\/60vfk",
+        "mitsubishielectric:mfz-xt50\\/60vfk_firmware",
+        "mitsubishielectric:msxy-fp05\\/07\\/10\\/13\\/18\\/20\\/24vgk-sg1",
+        "mitsubishielectric:msxy-fp05\\/07\\/10\\/13\\/18\\/20\\/24vgk-sg1_firmware",
+        "mitsubishielectric:msy-gp10\\/13\\/15\\/18\\/20\\/24vfk-sg1",
+        "mitsubishielectric:msy-gp10\\/13\\/15\\/18\\/20\\/24vfk-sg1_firmware",
+        "mitsubishielectric:msz-ap15\\/20\\/25\\/35\\/42\\/50\\/60\\/71vgk-e2",
+        "mitsubishielectric:msz-ap15\\/20\\/25\\/35\\/42\\/50\\/60\\/71vgk-e2_firmware",
+        "mitsubishielectric:msz-ap15\\/20\\/25\\/35\\/42\\/50\\/60\\/71vgk-er2",
+        "mitsubishielectric:msz-ap15\\/20\\/25\\/35\\/42\\/50\\/60\\/71vgk-er2_firmware",
+        "mitsubishielectric:msz-ap15\\/20\\/25\\/35\\/42\\/50\\/60\\/71vgk-et2",
+        "mitsubishielectric:msz-ap15\\/20\\/25\\/35\\/42\\/50\\/60\\/71vgk-et2_firmware",
+        "mitsubishielectric:msz-ap22\\/25\\/35\\/42\\/50\\/60\\/71\\/80vgkd-a2",
+        "mitsubishielectric:msz-ap22\\/25\\/35\\/42\\/50\\/60\\/71\\/80vgkd-a2_firmware",
+        "mitsubishielectric:msz-ap22\\/25\\/35\\/42\\/50\\/61\\/70\\/80vgkd-a1",
+        "mitsubishielectric:msz-ap22\\/25\\/35\\/42\\/50\\/61\\/70\\/80vgkd-a1_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50\\/60\\/71vgk-e3",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50\\/60\\/71vgk-e3_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50\\/60\\/71vgk-er3",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50\\/60\\/71vgk-er3_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50\\/60\\/71vgk-et3",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50\\/60\\/71vgk-et3_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-e1",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-e1_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-e6",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-e6_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-e7",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-e7_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-e8",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-e8_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-en1",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-en1_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-en2",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-en2_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-en3",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-en3_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-er1",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-er1_firmware",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-et1",
+        "mitsubishielectric:msz-ap25\\/35\\/42\\/50vgk-et1_firmware",
+        "mitsubishielectric:msz-ap60\\/71vgk-e1",
+        "mitsubishielectric:msz-ap60\\/71vgk-e1_firmware",
+        "mitsubishielectric:msz-ap60\\/71vgk-er1",
+        "mitsubishielectric:msz-ap60\\/71vgk-er1_firmware",
+        "mitsubishielectric:msz-ap60\\/71vgk-et1",
+        "mitsubishielectric:msz-ap60\\/71vgk-et1_firmware",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgk-e1",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgk-e1_firmware",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgk-e6",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgk-e6_firmware",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgk-er1",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgk-er1_firmware",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgk-et1",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgk-et1_firmware",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgk-sc1",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgk-sc1_firmware",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgkp-e6",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgkp-e6_firmware",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgkp-er1",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgkp-er1_firmware",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgkp-et1",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgkp-et1_firmware",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgkp-sc1",
+        "mitsubishielectric:msz-ay25\\/35\\/42\\/50vgkp-sc1_firmware",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-e1",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-e1_firmware",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-e2",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-e2_firmware",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-e3",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-e3_firmware",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-er1",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-er1_firmware",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-er2",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-er2_firmware",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-et1",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-et1_firmware",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-et2",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-et2_firmware",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-et3",
+        "mitsubishielectric:msz-bt20\\/25\\/35\\/50vgk-et3_firmware",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgkb-e1",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgkb-e1_firmware",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgkb-e2",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgkb-e2_firmware",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgks-e1",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgks-e1_firmware",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgks-e2",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgks-e2_firmware",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgkw-e1",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgkw-e1_firmware",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgkw-e2",
+        "mitsubishielectric:msz-ef18\\/22\\/25\\/35\\/42\\/50vgkw-e2_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkb-a1",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkb-a1_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkb-er1",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkb-er1_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkb-er2",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkb-er2_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkb-et1",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkb-et1_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkb-et2",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkb-et2_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgks-a1",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgks-a1_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgks-er1",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgks-er1_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgks-er2",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgks-er2_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgks-et1",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgks-et1_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgks-et2",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgks-et2_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkw-a1",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkw-a1_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkw-er1",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkw-er1_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkw-er2",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkw-er2_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkw-et1",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkw-et1_firmware",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkw-et2",
+        "mitsubishielectric:msz-ef22\\/25\\/35\\/42\\/50vgkw-et2_firmware",
+        "mitsubishielectric:msz-exa09\\/12vak",
+        "mitsubishielectric:msz-exa09\\/12vak_firmware",
+        "mitsubishielectric:msz-eza09\\/12vak",
+        "mitsubishielectric:msz-eza09\\/12vak_firmware",
+        "mitsubishielectric:msz-ft20\\/25vfk",
+        "mitsubishielectric:msz-ft20\\/25vfk_firmware",
+        "mitsubishielectric:msz-ft25\\/35\\/50vgk-e1",
+        "mitsubishielectric:msz-ft25\\/35\\/50vgk-e1_firmware",
+        "mitsubishielectric:msz-ft25\\/35\\/50vgk-e2",
+        "mitsubishielectric:msz-ft25\\/35\\/50vgk-e2_firmware",
+        "mitsubishielectric:msz-ft25\\/35\\/50vgk-et1",
+        "mitsubishielectric:msz-ft25\\/35\\/50vgk-et1_firmware",
+        "mitsubishielectric:msz-ft25\\/35\\/50vgk-sc1",
+        "mitsubishielectric:msz-ft25\\/35\\/50vgk-sc1_firmware",
+        "mitsubishielectric:msz-ft25\\/35\\/50vgk-sc2",
+        "mitsubishielectric:msz-ft25\\/35\\/50vgk-sc2_firmware",
+        "mitsubishielectric:msz-fx20\\/25vfk",
+        "mitsubishielectric:msz-fx20\\/25vfk_firmware",
+        "mitsubishielectric:msz-gzt09\\/12\\/18vak",
+        "mitsubishielectric:msz-gzt09\\/12\\/18vak_firmware",
+        "mitsubishielectric:msz-gzy09\\/12\\/18vfk",
+        "mitsubishielectric:msz-gzy09\\/12\\/18vfk_firmware",
+        "mitsubishielectric:msz-hr25\\/35\\/42\\/50\\/60\\/71vfk-e1",
+        "mitsubishielectric:msz-hr25\\/35\\/42\\/50\\/60\\/71vfk-e1_firmware",
+        "mitsubishielectric:msz-hr25\\/35\\/42\\/50\\/60\\/71vfk-er1",
+        "mitsubishielectric:msz-hr25\\/35\\/42\\/50\\/60\\/71vfk-er1_firmware",
+        "mitsubishielectric:msz-hr25\\/35\\/42\\/50\\/60\\/71vfk-et1",
+        "mitsubishielectric:msz-hr25\\/35\\/42\\/50\\/60\\/71vfk-et1_firmware",
+        "mitsubishielectric:msz-hr25\\/35\\/42\\/50vfk-e6",
+        "mitsubishielectric:msz-hr25\\/35\\/42\\/50vfk-e6_firmware",
+        "mitsubishielectric:msz-ky09\\/12\\/18vfk",
+        "mitsubishielectric:msz-ky09\\/12\\/18vfk_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2b-e1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2b-e1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2b-e2",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2b-e2_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2b-e3",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2b-e3_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2b-et1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2b-et1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2r-e1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2r-e1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2r-e2",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2r-e2_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2r-e3",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2r-e3_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2r-et1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2r-et1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2v-e1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2v-e1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2v-e2",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2v-e2_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2v-e3",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2v-e3_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2v-et1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2v-et1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-e1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-e1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-e2",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-e2_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-e3",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-e3_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-er1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-er1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-er2",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-er2_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-et1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-et1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-et2",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vg2w-et2_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vgb-e1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vgb-e1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vgr-e1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vgr-e1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vgv-e1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vgv-e1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vgw-e1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50\\/60vgw-e1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50vg2b-en1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50vg2b-en1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50vg2r-en1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50vg2r-en1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50vg2v-en1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50vg2v-en1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50vg2w-en1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50vg2w-en1_firmware",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50vg2w-sc1",
+        "mitsubishielectric:msz-ln18\\/25\\/35\\/50vg2w-sc1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-a1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-a1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-a2",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-a2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-er1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-er1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-er2",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-er2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-er3",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-er3_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-et2",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-et2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-et3",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2b-et3_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-a1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-a1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-a2",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-a2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-er1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-er1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-er2",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-er2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-er3",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-er3_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-et2",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-et2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-et3",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2r-et3_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-a1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-a1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-a2",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-a2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-er1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-er1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-er2",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-er2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-er3",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-er3_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-et2",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-et2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-et3",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2v-et3_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2w-er3",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2w-er3_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2w-et3",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vg2w-et3_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgb-a1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgb-a1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgb-er1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgb-er1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgr-a1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgr-a1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgr-er1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgr-er1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgv-a1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgv-a1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgv-er1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgv-er1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgw-er1",
+        "mitsubishielectric:msz-ln25\\/35\\/50\\/60vgw-er1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2b-en2",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2b-en2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2b-sc1",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2b-sc1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2r-en2",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2r-en2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2r-sc1",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2r-sc1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2v-en2",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2v-en2_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2v-sc1",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2v-sc1_firmware",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2w-en2",
+        "mitsubishielectric:msz-ln25\\/35\\/50vg2w-en2_firmware",
+        "mitsubishielectric:msz-rw25\\/35\\/50vg-e1",
+        "mitsubishielectric:msz-rw25\\/35\\/50vg-e1_firmware",
+        "mitsubishielectric:msz-rw25\\/35\\/50vg-er1",
+        "mitsubishielectric:msz-rw25\\/35\\/50vg-er1_firmware",
+        "mitsubishielectric:msz-rw25\\/35\\/50vg-et1",
+        "mitsubishielectric:msz-rw25\\/35\\/50vg-et1_firmware",
+        "mitsubishielectric:msz-rw25\\/35\\/50vg-sc1",
+        "mitsubishielectric:msz-rw25\\/35\\/50vg-sc1_firmware",
+        "mitsubishielectric:msz-wx18\\/20\\/25vfk",
+        "mitsubishielectric:msz-wx18\\/20\\/25vfk_firmware",
+        "mitsubishielectric:msz-zt09\\/12\\/18vak",
+        "mitsubishielectric:msz-zt09\\/12\\/18vak_firmware",
+        "mitsubishielectric:msz-zy09\\/12\\/18vfk",
+        "mitsubishielectric:msz-zy09\\/12\\/18vfk_firmware",
+        "mitsubishielectric:pac-wf010-e",
+        "mitsubishielectric:pac-wf010-e_firmware",
+        "mitsubishielectric:pac-whs01wf-e",
+        "mitsubishielectric:pac-whs01wf-e_firmware",
+        "mitsubishielectric:s-mac-002if",
+        "mitsubishielectric:s-mac-002if_firmware",
+        "mitsubishielectric:s-mac-702if-b",
+        "mitsubishielectric:s-mac-702if-b_firmware",
+        "mitsubishielectric:s-mac-702if-f",
+        "mitsubishielectric:s-mac-702if-f_firmware",
+        "mitsubishielectric:s-mac-702if-z",
+        "mitsubishielectric:s-mac-702if-z_firmware",
+        "mitsubishielectric:s-mac-905if",
+        "mitsubishielectric:s-mac-905if_firmware",
+        "mitsubishielectric:s-mac-906if",
+        "mitsubishielectric:s-mac-906if_firmware"
+      ],
+      "published": "2022-11-08T20:15:10.080",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://jvn.jp/vu/JVNVU96767562/index.html"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.mitsubishielectric.co.jp/psirt/vulnerability/pdf/2022-010.pdf"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-010_en.pdf"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://jvn.jp/vu/JVNVU96767562/index.html"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.mitsubishielectric.co.jp/psirt/vulnerability/pdf/2022-010.pdf"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-010_en.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
   "CVE-2022-35535": {
     "added": "2026-09-13",
     "checks_done": 1,
@@ -30231,6 +30759,44 @@
         {
           "tags": [],
           "url": "https://github.com/FRRouting/frr/compare/frr-8.4...frr-8.5"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2022-44457": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-294"
+      ],
+      "description": "A vulnerability has been identified in Mendix SAML (Mendix 7 compatible) (All versions < V1.17.0), Mendix SAML (Mendix 7 compatible) (All versions >= V1.17.0 < V1.17.2), Mendix SAML (Mendix 8 compatible) (All versions < V2.3.0), Mendix SAML (Mendix 8 compatible) (All versions >= V2.3.0 < V2.3.2), Mendix SAML (Mendix 9 compatible, New Track) (All versions < V3.3.1), Mendix SAML (Mendix 9 compatible, New Track) (All versions >= V3.3.1 < V3.3.5), Mendix SAML (Mendix 9 compatible, Upgrade Track) (All versions < V3.3.0), Mendix SAML (Mendix 9 compatible, Upgrade Track) (All versions >= V3.3.0 < V3.3.4). Affected versions of the module insufficiently protect from packet capture replay, only when the not recommended, non default configuration option `'Allow Idp Initiated Authentication'` is enabled. This CVE entry describes the incomplete fix for CVE-2022-37011 in a specific non default configuration.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-44457",
+      "last_modified": "2026-06-17T05:08:24.010",
+      "products": [
+        "mendix:saml"
+      ],
+      "published": "2022-11-08T11:15:12.257",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-638652.pdf"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Vendor Advisory"
+          ],
+          "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-638652.pdf"
         }
       ]
     },
@@ -32022,6 +32588,36 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/league-commonmark-before-2.6.0-denial-of-service-via-quadratic-complexity"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2024-58383": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-732"
+      ],
+      "description": "Froxlor before 2.2.0 (affected up to and including 2.2.0-rc3) generates /etc/pure-ftpd/db/mysql.conf with mode 0644 via the XML configuration templates in lib/configfiles/, even though the file contains the Froxlor SQL user's password. On systems where the parent directories are world readable (the default on Debian 12), any unprivileged local user able to execute commands or code on the host — including virtual users without SSH access who can upload PHP/CGI scripts — can read the file and obtain the Froxlor database credentials. Database access can then be leveraged to alter an administrator's password hash and TOTP seed, log in as a Froxlor administrator, and ultimately gain root privileges. Only instances configured to use pure-ftpd are affected.",
+      "has_exploit_tag": false,
+      "id": "CVE-2024-58383",
+      "last_modified": "2026-09-14T13:17:15.150",
+      "products": [],
+      "published": "2026-09-14T13:17:15.150",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/froxlor/froxlor/security/advisories/GHSA-34qg-65m4-f23m"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/froxlor-before-2.2.0-insecure-file-permissions-mysql-conf"
         }
       ]
     },
@@ -45729,6 +46325,32 @@
       ]
     },
     "next_check": "2026-09-27"
+  },
+  "CVE-2026-15814": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-409"
+      ],
+      "description": "Mattermost versions 11.9.x <= 11.9.0, 11.8.x <= 11.8.4, 11.7.x <= 11.7.7, 10.11.x <= 10.11.22 fail to limit the amount of memory allocated when decoding uploaded image files which allows an authenticated user to cause excessive server memory consumption and potential denial of service via uploading a specially crafted image as a profile picture, channel file attachment, team icon, or custom brand image. Mattermost Advisory ID: MMSA-2026-00719",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15814",
+      "last_modified": "2026-09-14T12:17:38.347",
+      "products": [],
+      "published": "2026-09-14T11:17:03.697",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://mattermost.com/security-updates"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
   },
   "CVE-2026-15816": {
     "added": "2026-08-08",
@@ -108729,6 +109351,32 @@
       ]
     },
     "next_check": "2026-10-29"
+  },
+  "CVE-2026-5132": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-409"
+      ],
+      "description": "Mattermost versions 11.9.x <= 11.9.0, 11.8.x <= 11.8.4, 11.7.x <= 11.7.7, 10.11.x <= 10.11.22 fail to limit size of unpacked SDP messages compressed with zlib, which allows attacker to deny service or crash server via sending many SDP messages that unpack to large size.. Mattermost Advisory ID: MMSA-2026-00643",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-5132",
+      "last_modified": "2026-09-14T12:17:43.687",
+      "products": [],
+      "published": "2026-09-14T11:17:04.140",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://mattermost.com/security-updates"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
   },
   "CVE-2026-5134": {
     "added": "2026-08-07",
@@ -211272,6 +211920,32 @@
     },
     "next_check": "2026-09-18"
   },
+  "CVE-2026-73195": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-116"
+      ],
+      "description": "Improper Encoding or Escaping of Output vulnerability in Apache Syncope.\n\n\n\nAuthenticated users can store a spreadsheet formula payload in one of their own plain attributes. When such users are included in a CSV export and the generated CSV file is opened by a spreadsheet application, the formula may be executed.\n\n\n\n\n\nThis issue affects Apache Syncope: from 3.0.0-M0 through 3.0.16, from 4.0.0-M0 Through 4.0.7, from 4.1.0-M0 through 4.1.2.\n\nUsers are recommended to upgrade to version 4.0.8 / 4.1.3, which fix this issue.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73195",
+      "last_modified": "2026-09-14T14:17:08.597",
+      "products": [],
+      "published": "2026-09-14T14:17:08.597",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/lg1opo92y789v259folgvmg6n28l42cj"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
   "CVE-2026-73197": {
     "added": "2026-08-21",
     "checks_done": 8,
@@ -303119,6 +303793,32 @@
     },
     "next_check": "2026-09-19"
   },
+  "CVE-2026-8821": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Mattermost versions 11.9.x <= 11.9.0, 11.8.x <= 11.8.4, 11.7.x <= 11.7.7, 10.11.x <= 10.11.22 fail to validate channel member-management permission during playbook run creation, allowing an authenticated channel member to add an arbitrary user to a restricted channel via the run owner field.. Mattermost Advisory ID: MMSA-2026-00677",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-8821",
+      "last_modified": "2026-09-14T12:17:50.563",
+      "products": [],
+      "published": "2026-09-14T11:17:06.153",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://mattermost.com/security-updates"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
   "CVE-2026-88268": {
     "added": "2026-09-10",
     "checks_done": 4,
@@ -305758,6 +306458,36 @@
         {
           "tags": [],
           "url": "https://www.twcert.org.tw/tw/cp-132-11201-658c0-1.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-89180": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "EFence developed by Thinking Software Technology has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read database contents.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89180",
+      "last_modified": "2026-09-14T12:17:50.447",
+      "products": [],
+      "published": "2026-09-14T11:17:05.860",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/en/cp-139-11203-26db2-2.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/tw/cp-132-11202-48c1b-1.html"
         }
       ]
     },
@@ -310061,6 +310791,639 @@
     },
     "next_check": "2026-09-15"
   },
+  "CVE-2026-90699": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A weakness has been identified in D-Link DWR-M920 1.1.7. This issue affects the function sub_41E60C of the file /boafrm/formPinManageSetup. This manipulation of the argument newPin causes os command injection. The attack can be initiated remotely. The exploit has been made available to the public and could be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90699",
+      "last_modified": "2026-09-14T11:17:06.590",
+      "products": [],
+      "published": "2026-09-14T09:17:02.530",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/H3rmesk1t/vulnerability-paper/issues/9"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90699"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/916259"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403232"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403232/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.dlink.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90700": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security vulnerability has been detected in itsourcecode Sales and Inventory System 1.0. Impacted is an unknown function of the file /pages/pro_edit1.php. Such manipulation of the argument prodcode leads to sql injection. The attack can be launched remotely. The exploit has been disclosed publicly and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90700",
+      "last_modified": "2026-09-14T09:17:02.720",
+      "products": [],
+      "published": "2026-09-14T09:17:02.720",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/rooboot501/CVE-project/blob/main/sql/sql.md"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90700"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/916262"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403233"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403233/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90701": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was detected in subhajitkhan online-clinic-management-system up to e9ee77a8827a1446220fa07ee693dc4d9a29a578. The affected element is an unknown function of the file listdoctor.php. Performing a manipulation of the argument searchtext results in sql injection. The attack may be initiated remotely. The exploit is now public and may be used. This product uses a rolling release model to deliver continuous updates. As a result, specific version information for affected or updated releases is not available. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90701",
+      "last_modified": "2026-09-14T10:17:05.233",
+      "products": [],
+      "published": "2026-09-14T10:17:05.233",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/subhajitkhan/online-clinic-management-system/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/subhajitkhan/online-clinic-management-system/issues/2"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90701"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/916306"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403234"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403234/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90702": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A flaw has been found in D-Link DWR-M921 1.1.52. Impacted is the function system of the file /boafrm/formDiskFormat. This manipulation of the argument partition causes os command injection. The attack may be initiated remotely. The exploit has been published and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90702",
+      "last_modified": "2026-09-14T10:17:05.447",
+      "products": [],
+      "published": "2026-09-14T10:17:05.447",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/H3rmesk1t/1f7efbf4584ce13222e8b0c669e7784a"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90702"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/917692"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403244"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403244/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.dlink.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90703": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A vulnerability has been found in D-Link DWR-M921 1.1.52. The affected element is the function system of the file /boafrm/formDiskCreateShare. Such manipulation of the argument folderpath leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90703",
+      "last_modified": "2026-09-14T10:17:05.610",
+      "products": [],
+      "published": "2026-09-14T10:17:05.610",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/H3rmesk1t/24a09e799cd873abde6a2a806a030568"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90703"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/917695"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403245"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403245/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.dlink.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90704": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.6,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "description": "A vulnerability was found in D-Link DWR-M921 1.1.52. The impacted element is the function system of the file /boafrm/formDiskPartition. Performing a manipulation of the argument devicename results in command injection. Remote exploitation of the attack is possible. The exploit has been made public and could be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90704",
+      "last_modified": "2026-09-14T12:17:50.677",
+      "products": [],
+      "published": "2026-09-14T10:17:05.767",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/H3rmesk1t/2052767b9fb397e311c17383a0e19021"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90704"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/917696"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403246"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403246/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.dlink.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90705": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.6,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A vulnerability was determined in D-Link DWR-M921 1.1.52. This affects the function formsysCmd of the file /boafrm/formsysCmd of the component Boa Dispatch Table. Executing a manipulation of the argument sysCmd can lead to os command injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90705",
+      "last_modified": "2026-09-14T11:17:06.740",
+      "products": [],
+      "published": "2026-09-14T11:17:06.740",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/H3rmesk1t/42bca7c81530b8419811ddcbd39b3b56"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90705"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/917697"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403247"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403247/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.dlink.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90706": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.6,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A vulnerability was identified in D-Link DWR-M921 1.1.52. This impacts the function formWsc of the file /boafrm/formWsc. The manipulation of the argument targetAPSsid leads to os command injection. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90706",
+      "last_modified": "2026-09-14T11:17:06.930",
+      "products": [],
+      "published": "2026-09-14T11:17:06.930",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/H3rmesk1t/f2d1f9115192b7af18699a8214a5b7ad"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90706"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/917698"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403248"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403248/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.dlink.com/"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90707": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-416"
+      ],
+      "description": "A security flaw has been discovered in Open5GS up to 2.7.x. Affected is the function amf_nnrf_try_old_amf_discovery_fallback of the file src/amf/nnrf-handler.c of the component Old AMF Discovery Fallback. The manipulation of the argument discovery_option results in use after free. The attack may be performed from remote. The patch is identified as ddd683a35f8aaac2b7b9884a24cd53bddfc65238. Applying a patch is advised to resolve this issue.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90707",
+      "last_modified": "2026-09-14T11:17:07.103",
+      "products": [],
+      "published": "2026-09-14T11:17:07.103",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/open5gs/open5gs/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/open5gs/open5gs/commit/ddd683a35f8aaac2b7b9884a24cd53bddfc65238"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/open5gs/open5gs/pull/4698"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90707"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/918267"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403249"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403249/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90708": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A weakness has been identified in Yot CMS up to 3.3.1. Affected by this vulnerability is the function Login of the file global.php of the component Cookie Handler. This manipulation of the argument yot3_user/yot3_pass causes sql injection. It is possible to initiate the attack remotely. The exploit has been made available to the public and could be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90708",
+      "last_modified": "2026-09-14T11:17:07.313",
+      "products": [],
+      "published": "2026-09-14T11:17:07.313",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/dddwmr/CVE/blob/main/YOT%20III%20cookie%20auto-login%20SQL%20injection%20enables%20forged%20administrator%20sessions%20.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90708"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/918272"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403250"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403250/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90710": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "A vulnerability was determined in taisan tarzan-cms 1.0.0. This issue affects the function openConnection of the file com/tarzan/cms/modules/admin/service/biz/ThemeService.java of the component Theme Download Function. Executing a manipulation of the argument httpUrl can lead to server-side request forgery. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90710",
+      "last_modified": "2026-09-14T12:17:51.043",
+      "products": [],
+      "published": "2026-09-14T12:17:51.043",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gitee.com/taisan/tarzan-cms/"
+        },
+        {
+          "tags": [],
+          "url": "https://gitee.com/taisan/tarzan-cms/issues/IK768M"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90710"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/918522"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403265"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403265/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90714": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119"
+      ],
+      "description": "A weakness has been identified in marcobambini Gravity up to 0.9.7. The impacted element is an unknown function of the file src/utils/gravity_json.c of the component JSON parser. This manipulation causes memory corruption. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks. Upgrading to version 0.9.8 is sufficient to resolve this issue. Patch name: 9b337c3eae5833c3956bed1fc01c21c14fd443f2. It is suggested to upgrade the affected component.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90714",
+      "last_modified": "2026-09-14T13:19:29.887",
+      "products": [],
+      "published": "2026-09-14T13:19:29.887",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/marcobambini/gravity/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/marcobambini/gravity/issues/448"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/marcobambini/gravity/pull/451"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/marcobambini/gravity/releases/tag/0.9.8"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sthagen/marcobambini-gravity/commit/9b337c3eae5833c3956bed1fc01c21c14fd443f2"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90714"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/919185"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403268"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403268/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90715": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-189",
+        "CWE-190"
+      ],
+      "description": "A security vulnerability has been detected in marcobambini Gravity up to 0.9.7. This affects an unknown function of the file src/utils/gravity_json.c of the component udp json-parser. Such manipulation leads to integer overflow. The attack may be performed from remote. The exploit has been disclosed publicly and may be used. Upgrading to version 0.9.8 mitigates this issue. The name of the patch is 9b337c3eae5833c3956bed1fc01c21c14fd443f2. Upgrading the affected component is recommended.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90715",
+      "last_modified": "2026-09-14T13:19:30.080",
+      "products": [],
+      "published": "2026-09-14T13:19:30.080",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/marcobambini/gravity/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/marcobambini/gravity/issues/447"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/marcobambini/gravity/pull/451"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/marcobambini/gravity/releases/tag/0.9.8"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sthagen/marcobambini-gravity/commit/9b337c3eae5833c3956bed1fc01c21c14fd443f2"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90715"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/919189"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403269"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403269/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
   "CVE-2026-90767": {
     "added": "2026-09-13",
     "checks_done": 1,
@@ -310645,6 +312008,53 @@
     },
     "next_check": "2026-09-15"
   },
+  "CVE-2026-90787": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266",
+        "CWE-269"
+      ],
+      "description": "A vulnerability was identified in Soarkey StudentManagement up to e08f7f1d5015af407aa4cca0ada3dea189b4937e. Affected is the function RegisterServlet.doPost of the file code/WebContent/register.html of the component Registration Workflow. Such manipulation of the argument level leads to improper privilege management. The attack can be launched remotely. The exploit is publicly available and might be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90787",
+      "last_modified": "2026-09-14T14:17:19.530",
+      "products": [],
+      "published": "2026-09-14T14:17:19.530",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Soarkey/StudentManagement/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/Soarkey/StudentManagement/issues/35"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-90787"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/919259"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403293"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/403293/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
   "CVE-2026-9081": {
     "added": "2026-08-06",
     "checks_done": 9,
@@ -310670,6 +312080,477 @@
       ]
     },
     "next_check": "2026-11-04"
+  },
+  "CVE-2026-90894": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269",
+        "CWE-78",
+        "CWE-88"
+      ],
+      "description": "Parallels Desktop runs prl_disp_service as root. Local clients reach it on the world-writable socket /var/run/prl_disp_service.socket. PrlSrv_LoginLocal accepts peer credentials. No Parallels signature. No admin group.\n\n\n\nAfter login, PrlSrv_InstallAppliance lets you pick the appliance folder (sVmParentPath). The daemon unpacks with one string, tar -xf \"%1\" -C \"%2\", then Qt QProcess::splitCommand chops that string into words. A quote in the folder name closes early. The leftover text becomes extra tar flags. macOS tar --use-compress-program= runs the named program as root.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90894",
+      "last_modified": "2026-09-14T11:17:07.997",
+      "products": [],
+      "published": "2026-09-14T10:17:06.133",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://kb.parallels.com/en/131168"
+        },
+        {
+          "tags": [],
+          "url": "https://www.parallels.com/products/desktop/"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90898": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-284",
+        "CWE-306"
+      ],
+      "description": "Bifrost registers MCP clients through its management API. A stdio client is a command plus args. Bifrost starts that program in the gateway the moment the client is added. No MCP handshake required.\n\n\n\nThe default is governance.auth_config.is_enabled=false. Auth off means every caller is a local admin. One unauthenticated POST /api/mcp/client is enough to run a program as the Bifrost process user (appuser on the official image).\n\n\n\n transports/v2.1.0 refuses an unauthenticated stdio registration with 403. transports/v2.0.0 still allows it.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90898",
+      "last_modified": "2026-09-14T12:17:51.657",
+      "products": [],
+      "published": "2026-09-14T11:17:08.237",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/maximhq/bifrost"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/maximhq/bifrost/commit/12e170352bd25eab1ae9ba16611f1797d1fd8fdc"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/maximhq/bifrost/pull/6757"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/maximhq/bifrost/releases/tag/transports/v2.1.0"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90919": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-502"
+      ],
+      "description": "LightLLM through 1.2.0 contains a remote code execution vulnerability in the Config Server's unauthenticated /visual_register WebSocket endpoint that passes the first client frame directly to pickle.loads(). Attackers can reach the Config Server port and send a malicious serialized payload with a __reduce__ method to execute arbitrary code with Config Server process privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90919",
+      "last_modified": "2026-09-14T12:17:51.807",
+      "products": [],
+      "published": "2026-09-14T12:17:51.807",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ModelTC/LightLLM/blob/v1.2.0/lightllm/server/config_server/api_http.py#L79-L86"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ModelTC/LightLLM/issues/1563"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ModelTC/lightllm"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/lightllm-through-1.2.0-unauthenticated-remote-code-execution-via-config-server-pickle-deserialization"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90927": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-400"
+      ],
+      "description": "filebrowser through 2.63.23 fails to limit WebSocket message size in the /api/command handler before checking permissions, allowing authenticated users to buffer arbitrarily large messages. Attackers can send oversized WebSocket messages to exhaust server heap memory and cause denial of service regardless of EnableExec setting or Execute permission.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90927",
+      "last_modified": "2026-09-14T13:19:30.710",
+      "products": [],
+      "published": "2026-09-14T13:19:30.710",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-39cx-23x9-5c8p"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/filebrowser-through-2.63.23-denial-of-service-via-unbounded-websocket-message"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90928": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-400"
+      ],
+      "description": "File Browser through 2.63.23 contains a memory exhaustion vulnerability in the subtitle conversion endpoint that loads entire subtitle files into memory without size limits. Authenticated attackers with download permission can request conversion of large .srt, .ass, or .ssa files and exhaust server memory through concurrent requests, causing denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90928",
+      "last_modified": "2026-09-14T14:17:19.880",
+      "products": [],
+      "published": "2026-09-14T13:19:30.870",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-448h-jr2h-3vhp"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/file-browser-through-2.63.23-memory-exhaustion-via-subtitle-endpoint"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-448h-jr2h-3vhp"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90929": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "File Browser versions >= 2.5.0 and <= 2.63.23 contain an incorrect authorization flaw in the direct-upload endpoint (resourcePostHandler in http/resource.go). Unlike the TUS upload handler, the direct-upload handler does not reject a target that is an existing directory; a POST with ?override=true aimed at a directory fails inside writeFile (a directory cannot be opened for writing) and the failure-cleanup path then calls Fs.RemoveAll on the request path, recursively deleting the entire tree. This cleanup is gated by neither the Perm.Delete permission nor the checkDescendants rule walk applied by the delete and patch handlers, so an authenticated non-administrator holding only the default Create and Modify permissions can delete directories they are not authorized to delete, including rule-denied files within them. Deletion remains confined to the user's scope because ScopedFs.RemoveAll still enforces the scope guard. The faulty cleanup was introduced in v2.5.0; no patched version is available.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90929",
+      "last_modified": "2026-09-14T13:19:31.030",
+      "products": [],
+      "published": "2026-09-14T13:19:31.030",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-c4fr-5f24-4wrj"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/file-browser-2.5.0-directory-deletion-via-upload-failure-cleanup"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90930": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-59"
+      ],
+      "description": "File Browser through 2.63.23 applies path rules to the requested lexical path but resolves symbolic links without reapplying rules to the target, allowing authenticated users to bypass deny rules. Attackers can read and overwrite rule-denied files by accessing them through in-scope symbolic link aliases that resolve to denied paths.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90930",
+      "last_modified": "2026-09-14T13:19:31.190",
+      "products": [],
+      "published": "2026-09-14T13:19:31.190",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-7w29-q235-57m9"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/file-browser-through-2.63.23-path-traversal-via-symlink-alias"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90932": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-73"
+      ],
+      "description": "LaraDashboard versions 0.9.2 through 1.2.2 contain a path traversal vulnerability in the core-upgrade backup handling. CoreUpgradeController and BackupService (e.g. BackupService::deleteBackup()) concatenate the user-supplied backup_file/filename value directly onto the backup directory path without normalisation, without applying basename(), and without verifying that the resolved path remains inside storage/app/core-backups; the corresponding form requests only validate the value as a bounded string. An authenticated user holding only the delegated settings.edit permission (not Superadmin) can supply ../ traversal sequences to delete arbitrary files reachable on the host filesystem, including outside the application tree, or to restore a ZIP archive from an arbitrary on-disk location, writing arbitrary files into the application directories and achieving remote code execution. Note: the advisory states the vulnerable concatenation was introduced in the v0.9.7 release line. No patched version was available at the time of publication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90932",
+      "last_modified": "2026-09-14T13:19:31.523",
+      "products": [],
+      "published": "2026-09-14T13:19:31.523",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/security/advisories/GHSA-g48h-h5pc-396j"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/laradashboard-0.9.2-through-1.2.2-path-traversal-rce"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90933": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "laradashboard through 1.2.2 contains a missing authorization vulnerability in the Local License API endpoints that allows any authenticated user to read, overwrite, and delete premium module license keys. Attackers with low-privileged accounts can access GET /api/admin/licenses/show, POST /api/admin/licenses/store, and POST /api/admin/licenses/remove endpoints to disclose confidential license keys, inject attacker-controlled values, or delete stored licenses entirely.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90933",
+      "last_modified": "2026-09-14T14:17:19.997",
+      "products": [],
+      "published": "2026-09-14T13:19:31.680",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/security/advisories/GHSA-j4m5-rrc4-5qv6"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/laradashboard-through-1.2.2-missing-authorization-via-license-api"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/laradashboard/laradashboard/security/advisories/GHSA-j4m5-rrc4-5qv6"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90937": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-93"
+      ],
+      "description": "froxlor versions before 2.2.5 fail to validate newline characters in subdomain redirect URLs, allowing authenticated customers to inject arbitrary nginx or Apache configuration directives. Attackers can supply URLs containing literal newlines that are written verbatim into vhost config files during cron rebuild, enabling web server configuration corruption, denial of service, or hijacking of HTTP responses across hosted domains.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90937",
+      "last_modified": "2026-09-14T13:19:32.277",
+      "products": [],
+      "published": "2026-09-14T13:19:32.277",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/froxlor/froxlor/security/advisories/GHSA-c3p2-mj7v-5mrc"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/froxlor-before-2.2.5-nginx-apache-configuration-injection-via-subdomain-redirect-url"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90938": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "LangBot's plugin runtime (pip package langbot_plugin) through 0.4.17 starts a debug WebSocket server on 0.0.0.0:5401 (/plugin/ws) whose authentication is gated on plugin_debug_key, which defaults to an empty string and is never set by the upstream repository, Docker image, or docker-compose (which additionally publishes port 5401 to the host); the key check is therefore skipped entirely. Any remote attacker able to reach the port can register an arbitrary \"debug plugin\" without credentials. Because events are broadcast to all initialized plugins without filtering, the attacker's plugin receives the full context of every IM message event (including private chats, message chains, and user/sender IDs in plaintext) and can inject forged replies, send messages as any configured bot, enumerate bot UUIDs, invoke configured LLM models, read knowledge-base contents, and register malicious tools that feed every user's LLM pipeline. Registering with \"prod_mode\": true causes later legitimate installations of a plugin with the same author/name to be rejected, resulting in persistent denial of service. No patched version was available at the time of publication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90938",
+      "last_modified": "2026-09-14T14:17:20.117",
+      "products": [],
+      "published": "2026-09-14T13:19:32.430",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/langbot-app/LangBot/security/advisories/GHSA-m7qm-2mjr-2h4q"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/langbot-through-0.4.17-unauthenticated-plugin-registration-via-websocket"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90939": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "novel-plus through 5.3.3 contains an information disclosure vulnerability in the /sys/user/list endpoint that lacks proper permission annotations. Authenticated attackers can retrieve password hashes and personal data including email addresses and phone numbers for users within their data scope, enabling offline hash cracking and account takeover.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90939",
+      "last_modified": "2026-09-14T14:17:20.240",
+      "products": [],
+      "published": "2026-09-14T14:17:20.240",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/201206030/novel-plus"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/201206030/novel-plus/blob/d63c3ee394657046ebd469e263532a350a60e930/novel-admin/src/main/java/com/java2nb/system/controller/SysUserController.java"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/201206030/novel-plus/blob/d63c3ee394657046ebd469e263532a350a60e930/novel-admin/src/main/resources/mybatis/system/UserMapper.xml"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/201206030/novel-plus/releases/tag/v5.3.3"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/LinYuanyi1/cve-request-poc/blob/master/novel-plus/poc-03-user-list-password-hash-disclosure.py"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/novel-plus-through-5.3.3-missing-authorization-on-the-admin-sys-user-list-endpoint"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90948": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "A flaw was found in GIMP's ICO file loader. When processing an ICO file containing an embedded PNG image, an integer overflow can occur during the calculation of the required buffer size. This leads to an undersized buffer being allocated, causing a heap-based buffer overflow when the decoded pixel data is written. A remote attacker could exploit this by crafting a malicious ICO file, which, when opened, could lead to arbitrary code execution or a crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90948",
+      "last_modified": "2026-09-14T14:17:20.693",
+      "products": [],
+      "published": "2026-09-14T14:17:20.693",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-90948"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2533008"
+        },
+        {
+          "tags": [],
+          "url": "https://gitlab.gnome.org/GNOME/gimp/-/work_items/16742"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
+  },
+  "CVE-2026-90949": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "A flaw was found in GIMP's PSP (Paint Shop Pro) file loader. When processing a compressed selection channel, a heap-based buffer overflow can occur due to a mismatch between the allocated buffer size and the amount of data decompressed. A remote attacker could exploit this vulnerability by crafting a malicious PSP file. Opening this file in GIMP could lead to a crash or arbitrary code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90949",
+      "last_modified": "2026-09-14T14:17:20.840",
+      "products": [],
+      "published": "2026-09-14T14:17:20.840",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-90949"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2533013"
+        },
+        {
+          "tags": [],
+          "url": "https://gitlab.gnome.org/GNOME/gimp/-/work_items/16753"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
   },
   "CVE-2026-9130": {
     "added": "2026-08-06",
@@ -311649,6 +313530,32 @@
       ]
     },
     "next_check": "2026-09-17"
+  },
+  "CVE-2026-9812": {
+    "added": "2026-09-14",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "Mattermost versions 11.9.x <= 11.9.0, 11.8.x <= 11.8.4, 11.7.x <= 11.7.7, 10.11.x <= 10.11.22 fail to validate that a property field belongs to the specified run before updating its value which allows an authenticated user with run property-management access to crash the Playbooks plugin via a REST request referencing a property field that belongs to a different run. Mattermost Advisory ID: MMSA-2026-00684",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-9812",
+      "last_modified": "2026-09-14T12:17:51.960",
+      "products": [],
+      "published": "2026-09-14T11:17:08.393",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://mattermost.com/security-updates"
+        }
+      ]
+    },
+    "next_check": "2026-09-15"
   },
   "CVE-2026-9816": {
     "added": "2026-08-18",
