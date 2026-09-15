@@ -1,11 +1,1 @@
-{
-  "CVE-2026-44913": {
-    "package": "MAVEN:org.apache.nifi:nifi-cdc-mysql-processors"
-  },
-  "CVE-2026-56668": {
-    "package": "GO:github.com/zitadel/zitadel"
-  },
-  "CVE-2026-59178": {
-    "package": "PIP:esphome-device-builder"
-  }
-}
+{}
