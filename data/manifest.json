@@ -3293,15 +3293,6 @@
     "poc_source": "nvd_exploit_tag",
     "published": "2026-08-12T20:17:47.953"
   },
-  "CVE-2026-63310": {
-    "cvss_score": 7.1,
-    "cvss_severity": "HIGH",
-    "kev": false,
-    "poc_confirmed_date": "2026-09-01",
-    "poc_published_date": null,
-    "poc_source": "nvd_exploit_tag",
-    "published": "2026-08-22T15:16:19.100"
-  },
   "CVE-2026-63312": {
     "cvss_score": 7.5,
     "cvss_severity": "HIGH",
