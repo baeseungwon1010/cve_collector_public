@@ -1,1 +1,5 @@
-{}
+{
+  "CVE-2025-67505": {
+    "package": "MAVEN:com.okta.sdk:okta-sdk-root"
+  }
+}

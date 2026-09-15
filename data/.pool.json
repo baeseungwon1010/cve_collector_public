@@ -9042,6 +9042,90 @@
     },
     "next_check": "2026-09-16"
   },
+  "CVE-2017-20160": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-235"
+      ],
+      "description": "A vulnerability was found in flitto express-param up to 0.x. It has been classified as critical. This affects an unknown part of the file lib/fetchParams.js. The manipulation leads to improper handling of extra parameters. It is possible to initiate the attack remotely. Upgrading to version 1.0.0 is able to address this issue. The identifier of the patch is db94f7391ad0a16dcfcba8b9be1af385b25c42db. It is recommended to upgrade the affected component. The identifier VDB-217149 was assigned to this vulnerability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2017-20160",
+      "last_modified": "2026-06-17T01:15:18.150",
+      "products": [
+        "flitto:express-param"
+      ],
+      "published": "2022-12-31T20:15:08.693",
+      "references": [
+        {
+          "tags": [
+            "Patch"
+          ],
+          "url": "https://github.com/flitto/express-param/commit/db94f7391ad0a16dcfcba8b9be1af385b25c42db"
+        },
+        {
+          "tags": [
+            "Patch"
+          ],
+          "url": "https://github.com/flitto/express-param/pull/19"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/flitto/express-param/releases/tag/1.0.0"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://vuldb.com/?ctiid.217149"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://vuldb.com/?id.217149"
+        },
+        {
+          "tags": [
+            "Patch"
+          ],
+          "url": "https://github.com/flitto/express-param/commit/db94f7391ad0a16dcfcba8b9be1af385b25c42db"
+        },
+        {
+          "tags": [
+            "Patch"
+          ],
+          "url": "https://github.com/flitto/express-param/pull/19"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/flitto/express-param/releases/tag/1.0.0"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://vuldb.com/?ctiid.217149"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://vuldb.com/?id.217149"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
   "CVE-2017-20241": {
     "added": "2026-08-05",
     "checks_done": 9,
@@ -30323,6 +30407,46 @@
     },
     "next_check": "2026-09-16"
   },
+  "CVE-2022-34322": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Multiple XSS issues were discovered in Sage Enterprise Intelligence 2021 R1.1 that allow an attacker to execute JavaScript code in the context of users' browsers. The attacker needs to be authenticated to reach the vulnerable features. An issue is present in the Notify Users About Modification menu and the Notifications feature. A user can send malicious notifications and execute JavaScript code in the browser of every user who has enabled notifications. This is a stored XSS, and can lead to privilege escalation in the context of the application. (Another issue is present in the Favorites tab. The name of a favorite or a folder of favorites is interpreted as HTML, and can thus embed JavaScript code, which is executed when displayed. This is a self-XSS.)",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-34322",
+      "last_modified": "2026-06-17T04:50:06.853",
+      "products": [
+        "sage:sage_enterprise_intelligence"
+      ],
+      "published": "2023-01-01T08:15:10.007",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Technical Description",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.synacktiv.com/sites/default/files/2022-12/sage_sei_multiple_xss.pdf"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Technical Description",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.synacktiv.com/sites/default/files/2022-12/sage_sei_multiple_xss.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
   "CVE-2022-35535": {
     "added": "2026-09-13",
     "checks_done": 2,
@@ -31202,6 +31326,181 @@
             "Vendor Advisory"
           ],
           "url": "https://iterm2.com/downloads.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2022-48198": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-668"
+      ],
+      "description": "The ntpd_driver component before 1.3.0 and 2.x before 2.2.0 for Robot Operating System (ROS) allows attackers, who control the source code of a different node in the same ROS application, to change a robot's behavior. This occurs because a topic name depends on the attacker-controlled time_ref_topic parameter.",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-48198",
+      "last_modified": "2026-06-17T05:14:46.060",
+      "products": [
+        "ntpd_driver_project:ntpd_driver",
+        "openrobotics:robot_operating_system"
+      ],
+      "published": "2023-01-01T07:15:10.187",
+      "references": [
+        {
+          "tags": [
+            "Release Notes",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/vooon/ntpd_driver/compare/1.2.0...1.3.0"
+        },
+        {
+          "tags": [
+            "Release Notes",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/vooon/ntpd_driver/compare/2.1.0...2.2.0"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/vooon/ntpd_driver/issues/9"
+        },
+        {
+          "tags": [
+            "Release Notes",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/vooon/ntpd_driver/compare/1.2.0...1.3.0"
+        },
+        {
+          "tags": [
+            "Release Notes",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/vooon/ntpd_driver/compare/2.1.0...2.2.0"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/vooon/ntpd_driver/issues/9"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2022-4865": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1.",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-4865",
+      "last_modified": "2026-06-17T05:22:03.583",
+      "products": [
+        "usememos:memos"
+      ],
+      "published": "2022-12-31T09:15:08.213",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/usememos/memos/commit/7670c9536000bb32c6345d4906a91268dcddd5fc"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://huntr.dev/bounties/cd8765a2-bf28-4019-8647-882ccf63b2be"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/usememos/memos/commit/7670c9536000bb32c6345d4906a91268dcddd5fc"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://huntr.dev/bounties/cd8765a2-bf28-4019-8647-882ccf63b2be"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2022-4866": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Cross-site Scripting (XSS) - Stored in GitHub repository usememos/memos prior to 0.9.1.",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-4866",
+      "last_modified": "2026-06-17T05:22:03.727",
+      "products": [
+        "usememos:memos"
+      ],
+      "published": "2022-12-31T09:15:11.837",
+      "references": [
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/usememos/memos/commit/7670c9536000bb32c6345d4906a91268dcddd5fc"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://huntr.dev/bounties/39c04778-6228-4f07-bdd4-ab17f246dbff"
+        },
+        {
+          "tags": [
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/usememos/memos/commit/7670c9536000bb32c6345d4906a91268dcddd5fc"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://huntr.dev/bounties/39c04778-6228-4f07-bdd4-ab17f246dbff"
         }
       ]
     },
@@ -59583,6 +59882,32 @@
     },
     "next_check": "2026-10-31"
   },
+  "CVE-2026-1758": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-384"
+      ],
+      "description": "Session fixation vulnerability in Secomea GateManager (webserver module) allows Session Fixation.\n\nThis issue affects GateManager: 11.5;0, 11.4.625515072:0.\n\n\n\nFixed in Version 11.6 or 11.4.626194074 and above",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-1758",
+      "last_modified": "2026-09-15T11:17:07.587",
+      "products": [],
+      "published": "2026-09-15T11:17:07.587",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.secomea.com/support/cybersecurity-advisory/"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
   "CVE-2026-17580": {
     "added": "2026-08-02",
     "checks_done": 9,
@@ -59710,6 +60035,32 @@
         {
           "tags": [],
           "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/cf3efda0-8609-4a75-a00b-735b49ef260b?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-1759": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-280"
+      ],
+      "description": "Improper handling of insufficient permissions or privileges vulnerability in Secomea GateManager allows Privilege Escalation.\n\nThis issue affects GateManager: 11.5;0, 11.4.625515072:0.\n\n\n\nFixed in Version 11.6 or 11.4.626194074 and above",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-1759",
+      "last_modified": "2026-09-15T11:17:08.660",
+      "products": [],
+      "published": "2026-09-15T11:17:08.660",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.secomea.com/support/cybersecurity-advisory/"
         }
       ]
     },
@@ -82518,6 +82869,32 @@
     },
     "next_check": "2026-09-16"
   },
+  "CVE-2026-19515": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "The WSO2 Integrator MI VS Code extension fails to properly sanitize or validate user-supplied input when processing Micro Integrator projects opened from untrusted sources. This allows a crafted project to inject and execute arbitrary operating system commands through the unit test execution flow.\n\nSuccessful exploitation of this vulnerability could lead to the execution of arbitrary OS commands on the system where the VS Code extension is running. The extent of the impact is dependent on the privileges of the user account under which VS Code is operating. Exploitation requires the user to grant workspace trust to the malicious project and subsequently trigger the unit test execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19515",
+      "last_modified": "2026-09-15T10:17:02.960",
+      "products": [],
+      "published": "2026-09-15T10:17:02.960",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2026-5854/"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
   "CVE-2026-19517": {
     "added": "2026-08-12",
     "checks_done": 9,
@@ -100467,6 +100844,41 @@
       ]
     },
     "next_check": "2026-09-25"
+  },
+  "CVE-2026-45048": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-200",
+        "CWE-285"
+      ],
+      "description": "Open Access Management (OpenAM) is an access management solution. Prior to 16.1.1, SessionRequestHandler in the session management endpoint does not enforce ownership or privilege checks when a low-privileged authenticated user queries session information in deployments using stateful session storage. A requester who knows a target identity identifier can retrieve another user's active session credentials, including credentials for a more privileged account, and use them to hijack that session. This issue is fixed in version 16.1.1.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-45048",
+      "last_modified": "2026-09-15T10:17:03.993",
+      "products": [],
+      "published": "2026-09-15T10:17:03.993",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/OpenIdentityPlatform/OpenAM/commit/f775b42236b3cb94e3a02a19f4a4f4f5cc0b91c4"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/OpenIdentityPlatform/OpenAM/releases/tag/16.1.1"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-vvhj-w2jq-263q"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
   },
   "CVE-2026-45100": {
     "added": "2026-08-05",
@@ -125157,6 +125569,42 @@
     },
     "next_check": "2026-11-10"
   },
+  "CVE-2026-57112": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306",
+        "CWE-346",
+        "CWE-862"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. From praisonaiagents 0.6.0 until 1.6.59 and PraisonAI 3.10.0 until 4.6.59, ToolsMCPServer.run_sse() in src/praisonai-agents/praisonaiagents/mcp/mcp_server.py mounts SseServerTransport on the legacy /sse and /messages/ endpoints without default Host, Origin, or authentication enforcement. A malicious website can use DNS rebinding against a reachable local or internal SSE server, supply attacker-controlled Host and Origin headers, enumerate registered tools, and invoke them with the server user's privileges. The Streamable HTTP transport rejects the same hostile Origin, which isolates the flaw to the legacy SSE wrapper. An initial remediation was released in praisonaiagents 1.6.59 and PraisonAI 4.6.59.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57112",
+      "last_modified": "2026-09-15T11:17:10.290",
+      "products": [],
+      "published": "2026-09-15T11:17:10.290",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/2adfe7e8323f6deec66925cf15a885b6238895e9"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.59"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-vmf9-xx9w-86wx"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
   "CVE-2026-57115": {
     "added": "2026-09-15",
     "checks_done": 0,
@@ -125636,6 +126084,324 @@
     },
     "next_check": "2026-09-16"
   },
+  "CVE-2026-57133": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-693",
+        "CWE-78",
+        "CWE-863"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. From 1.5.1 until 1.7.2, the shell() helper exported from src/praisonai-ts/src/tools/utility-tools.ts checks only the first whitespace-delimited token against safeCommands and then passes the complete original string to child_process.exec(). A string that starts with an allowed read-only command can append a second non-allowlisted command through shell syntax, allowing arbitrary command execution with the PraisonAI process privileges. This issue is fixed in version 1.7.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57133",
+      "last_modified": "2026-09-15T11:17:10.437",
+      "products": [],
+      "published": "2026-09-15T11:17:10.437",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/6b4b59fbe71a74983626c7a0cf7e10c47cd004f9"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.62"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-5jv7-2mjm-h6qj"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-57134": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-288",
+        "CWE-863"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. From 1.5.1 until 1.7.2, MCPSecurity.evaluatePolicy() in src/praisonai-ts/src/mcp/security.ts invokes the configured credential validator only when AuthMethod is api-key or bearer. Basic and OAuth policies accept any non-empty Authorization header without calling auth.validate(), then return an authenticated result, allowing callers with invalid credentials to access MCP tools and resources protected by those policies. This issue is fixed in version 1.7.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57134",
+      "last_modified": "2026-09-15T11:17:10.583",
+      "products": [],
+      "published": "2026-09-15T11:17:10.583",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/709a0387853709a5e2f2c34680fa64cada252c27"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.60"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-4qq2-2j2x-x62c"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-57135": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-653",
+        "CWE-693"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. From 1.2.3 until 1.7.2, SandboxExecutor network-isolated mode in src/praisonai-ts/src/cli/features/sandbox-executor.ts uses buildEnv() only to inject invalid http_proxy and https_proxy environment variables and does not establish an operating-system network boundary. Programs that ignore those proxy variables can open sockets directly, allowing supposedly isolated commands to reach localhost, internal services, cloud metadata, or external hosts and potentially exfiltrate data. An initial remediation was released in version 1.7.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57135",
+      "last_modified": "2026-09-15T11:17:10.733",
+      "products": [],
+      "published": "2026-09-15T11:17:10.733",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/709a0387853709a5e2f2c34680fa64cada252c27"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.60"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-gqmf-56h7-rrpf"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-57136": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-693",
+        "CWE-78",
+        "CWE-863"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. From 1.2.3 until 1.7.2, CommandValidator in src/praisonai-ts/src/cli/features/sandbox-executor.ts validates only the first whitespace-delimited executable against allowedCommands, then SandboxExecutor passes the complete command string to sh -c. A command beginning with an allowed executable can append a non-allowlisted command through shell metacharacters, causing arbitrary commands to run with the PraisonAI process privileges. This issue is fixed in version 1.7.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57136",
+      "last_modified": "2026-09-15T11:17:10.883",
+      "products": [],
+      "published": "2026-09-15T11:17:10.883",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/709a0387853709a5e2f2c34680fa64cada252c27"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.60"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-vjv9-7m7j-h833"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-57137": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-693",
+        "CWE-862",
+        "CWE-863"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. From 1.4.0 until 1.7.2, createAgentLoop() in src/praisonai-ts/src/ai/agent-loop.ts passes executable tools to generateText() before invoking the onToolCall approval callback. Because the wrapped AI SDK executes tool handlers during generation, a callback that returns false records tool_rejected only after the denied tool has already produced side effects and populated toolResults. Applications using onToolCall as a human or policy approval boundary can therefore execute rejected file, command, API, or data-modifying operations. This issue is fixed in version 1.7.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57137",
+      "last_modified": "2026-09-15T11:17:11.030",
+      "products": [],
+      "published": "2026-09-15T11:17:11.030",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/6b4b59fbe71a74983626c7a0cf7e10c47cd004f9"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.62"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-h2w2-v7j6-xqm4"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-57138": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-184",
+        "CWE-693"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. From 1.4.0 until 1.7.2, codeMode in src/praisonai-ts/src/tools/builtins/code-mode.ts executes untrusted JavaScript with new Function() inside with(sandbox) and relies on a small source-code blocklist plus shadowed process and require properties. Code can use ({}).constructor.constructor to recover the real Function constructor, obtain process and process.mainModule.require, and reach host filesystem and subprocess APIs despite the advertised sandbox. Attackers who control codeMode input can read secrets, modify files, execute commands, or exhaust the host process. This issue is fixed in version 1.7.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57138",
+      "last_modified": "2026-09-15T11:17:11.180",
+      "products": [],
+      "published": "2026-09-15T11:17:11.180",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/709a0387853709a5e2f2c34680fa64cada252c27"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.60"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-vmmj-pfw7-fjwp"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-57139": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1188",
+        "CWE-306",
+        "CWE-862"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. From 1.5.0 until 1.7.2, MCPServer.startHttp() in src/praisonai-ts/src/mcp/server.ts binds without a host restriction and forwards every HTTP POST request to handleRequest() without authentication or authorization. Any network client that can reach the port can call tools/list, tools/call, resources/read, or prompts/get, causing registered handlers to run with server-side credentials and process privileges or disclose registered data. An initial remediation was released in version 1.7.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57139",
+      "last_modified": "2026-09-15T11:17:11.327",
+      "products": [],
+      "published": "2026-09-15T11:17:11.327",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/709a0387853709a5e2f2c34680fa64cada252c27"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.60"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-j4f3-55x4-r6q2"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-57140": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. From 1.6.0 until 1.7.2, AgentOS in src/praisonai-ts/src/os/agentos.ts uses the 0.0.0.0 default from src/praisonai-ts/src/os/config.ts and registers GET /api/agents and POST /api/chat without authentication middleware. A remote caller who can reach the service can obtain agent names, roles, and instruction prefixes and can invoke a selected agent, potentially reaching its tools, memory, external APIs, credentials, and workflow state. An initial remediation was released in version 1.7.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57140",
+      "last_modified": "2026-09-15T11:17:11.473",
+      "products": [],
+      "published": "2026-09-15T11:17:11.473",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/709a0387853709a5e2f2c34680fa64cada252c27"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.60"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-9752-mhqh-h34f"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-57141": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. Prior to 1.7.2, the codeMode tool in src/praisonai-ts/src/tools/builtins/code-mode.ts executes model-generated JavaScript with new Function() and with(sandbox), while a regular-expression blocklist can be bypassed with Function('return this')() to recover the global object and by constructing the child_process module name dynamically. An attacker who can influence the code argument can access host process capabilities, read or write files, obtain environment credentials, and execute operating-system commands with the PraisonAI process privileges. This issue is fixed in version 1.7.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57141",
+      "last_modified": "2026-09-15T11:17:11.617",
+      "products": [],
+      "published": "2026-09-15T11:17:11.617",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/709a0387853709a5e2f2c34680fa64cada252c27"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.60"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-p69m-4f92-2v84"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
   "CVE-2026-57145": {
     "added": "2026-09-15",
     "checks_done": 0,
@@ -125665,6 +126431,85 @@
         {
           "tags": [],
           "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-29w3-p9w9-wc47"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-57147": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1188",
+        "CWE-798"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. Prior to 0.1.6, praisonai_platform/services/auth_service.py assigns the public dev-secret-change-me value to JWT_SECRET when PLATFORM_JWT_SECRET is unset, and its production guard does not run when PLATFORM_ENV is also unset because that setting defaults to dev. A remote unauthenticated attacker can mint an HS256 token with an arbitrary sub and email, and the platform's AuthService._verify_token() and get_current_user dependency accept the forged identity for protected API routes. This vulnerability is fixed in praisonai-platform 0.1.6.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57147",
+      "last_modified": "2026-09-15T11:17:11.760",
+      "products": [],
+      "published": "2026-09-15T11:17:11.760",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/e0fb8e7dd1ee6759c18ed07f436c21dbd9c20747"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/pull/1793"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.51"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-cwj8-7gp2-ggcw"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-57148": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1188",
+        "CWE-287",
+        "CWE-798"
+      ],
+      "description": "PraisonAI is a multi-agent teams system. Prior to 0.1.6, praisonai_platform/services/auth_service.py falls back to the public dev-secret-change-me HS256 signing key when PLATFORM_JWT_SECRET is unset, while the startup and token-issuance guards are disabled because PLATFORM_ENV also defaults to dev. An unauthenticated attacker can sign a JWT containing an attacker-chosen sub value, and AuthService._verify_token() accepts it as an authenticated identity, enabling user or workspace-owner impersonation when a target identifier is known. This vulnerability is fixed in praisonai-platform 0.1.6.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57148",
+      "last_modified": "2026-09-15T11:17:11.910",
+      "products": [],
+      "published": "2026-09-15T11:17:11.910",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/commit/e0fb8e7dd1ee6759c18ed07f436c21dbd9c20747"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/pull/1793"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.51"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-f38v-77qj-h4jq"
         }
       ]
     },
@@ -139917,6 +140762,40 @@
     },
     "next_check": "2026-10-29"
   },
+  "CVE-2026-62280": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Open Access Management (OpenAM) is an access management solution. From 13.0.0 until 16.1.2, the OAuth2 authorize endpoint's display=wap consent page reflects request-derived values through ConsentRequiredResource and wap/authorize.ftl without HTML escaping. An attacker can induce a user with an active OpenAM session to follow a crafted authorization link and execute JavaScript in the OpenAM origin, enabling session or cookie theft, CSRF-token disclosure, and actions with the victim's privileges. At least one registered OAuth2 client is required, but the attacker does not need to control that client. This issue is fixed in version 16.1.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-62280",
+      "last_modified": "2026-09-15T10:17:05.957",
+      "products": [],
+      "published": "2026-09-15T10:17:05.957",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/OpenIdentityPlatform/OpenAM/commit/98cee2dfe701c2e16e5bcee34e6fd9d913925118"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/OpenIdentityPlatform/OpenAM/releases/tag/16.1.2"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-vqxv-6xrh-49cp"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
   "CVE-2026-62283": {
     "added": "2026-08-22",
     "checks_done": 8,
@@ -140152,6 +141031,41 @@
       ]
     },
     "next_check": "2026-09-26"
+  },
+  "CVE-2026-62379": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-470",
+        "CWE-94"
+      ],
+      "description": "Open Access Management (OpenAM) is an access management solution. Prior to 16.1.2, the pre-authentication /authservice PLL endpoint accepts a CustomCallback XML element whose className value selects an arbitrary Java class for AuthXMLUtils to load and instantiate without verifying that it implements DSAMECallbackInterface. Default configurations expose the endpoint without authentication, allowing attacker-controlled class initialization and unsafe deserialization of a serialized Subject value to execute code in the server process. Enabling sunRemoteAuthSecurityEnabled does not prevent the vulnerable parsing and instantiation because its check occurs later. This issue is fixed in version 16.1.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-62379",
+      "last_modified": "2026-09-15T10:17:06.107",
+      "products": [],
+      "published": "2026-09-15T10:17:06.107",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/OpenIdentityPlatform/OpenAM/commit/edcf968cad91a78b932dba4ad559ef94cbf35f5a"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/OpenIdentityPlatform/OpenAM/releases/tag/16.1.2"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/OpenIdentityPlatform/OpenAM/security/advisories/GHSA-wg5r-wc3x-39vc"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
   },
   "CVE-2026-62381": {
     "added": "2026-08-23",
@@ -232417,6 +233331,48 @@
     },
     "next_check": "2026-09-18"
   },
+  "CVE-2026-75092": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-250"
+      ],
+      "description": "A privilege escalation flaw was found in the scan_mysql actor of leapp-upgrade-el9toel10 (provided by leapp-repository). During RHEL 9 to RHEL 10 upgrades, the actor runs:\nmysqld --validate-config --log-error-verbosity=2 directly as root in the Leapp actor context, bypassing the packaged MySQL systemd unit that normally starts the daemon as User=mysql.\n\nA process compromised as the mysql OS identity can write a version-2 persisted configuration (mysqld-auto.cnf) and a malicious shared object into /var/lib/mysql (a directory owned by mysql). That persisted map can set plugin_dir to /var/lib/mysql and early_plugin_load (or related loader options such as plugin_load / plugin_load_add) so MySQL loads the attacker-controlled object during configuration validation. Plugin loading can reach dlopen() before MySQL’s runtime-user check and before plugin-symbol validation.\n\nWhen an administrator subsequently runs the documented Leapp preupgrade or upgrade workflow, attacker-controlled code can execute as UID 0 with a full capability set in an unconfined SELinux domain (unconfined_t). The attack does not require write access to the default system plugin path under /usr; redirecting plugin_dir via mysql-owned persisted state is sufficient. Ordinary SQL privileges alone (including highly privileged SQL accounts) are not a sufficient startpoint — OS-level execution as the mysql service identity is required, plus later administrator invocation of Leapp.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-75092",
+      "last_modified": "2026-09-15T09:16:43.727",
+      "products": [],
+      "published": "2026-09-15T09:16:43.727",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-75092"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2517499"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/oamg/leapp-repository"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/oamg/leapp-repository/commit/3e4cafffc8de1600a66519b326a407f37b665356"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/oamg/leapp-repository/pull/1343"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
   "CVE-2026-75094": {
     "added": "2026-08-18",
     "checks_done": 8,
@@ -248570,6 +249526,36 @@
     },
     "next_check": "2026-09-19"
   },
+  "CVE-2026-77853": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in FF-RFI079I4 and FF-RFI078I4. A user who can log in to the product's M-Plane (NETCONF) may execute arbitrary OS commands.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77853",
+      "last_modified": "2026-09-15T09:16:44.067",
+      "products": [],
+      "published": "2026-09-15T09:16:44.067",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://5g.liteon.com/security/flexfi/"
+        },
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN02049764/"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
   "CVE-2026-77886": {
     "added": "2026-09-09",
     "checks_done": 6,
@@ -261647,6 +262633,36 @@
       ]
     },
     "next_check": "2026-09-26"
+  },
+  "CVE-2026-80217": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-912"
+      ],
+      "description": "Hidden functionality issue exists in FF-RFI079I4 and FF-RFI078I4, which may allow a user who can log in via SSH and access the enable mode on the product to execute arbitrary OS commands.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80217",
+      "last_modified": "2026-09-15T09:16:44.233",
+      "products": [],
+      "published": "2026-09-15T09:16:44.233",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://5g.liteon.com/security/flexfi/"
+        },
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN02049764/"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
   },
   "CVE-2026-80219": {
     "added": "2026-09-08",
@@ -321766,6 +322782,40 @@
     },
     "next_check": "2026-09-16"
   },
+  "CVE-2026-91786": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "A flaw was found in GNOME Shell. When processing icons from a remote search provider via D-Bus, the system fails to validate the icon's declared dimensions against the actual data buffer size. A malicious or compromised remote search provider could exploit this by providing oversized icon dimensions, leading to an out-of-bounds read. This can cause the GNOME Shell process to crash, disrupting the user's session, and potentially disclose sensitive information from adjacent memory.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91786",
+      "last_modified": "2026-09-15T11:17:12.580",
+      "products": [],
+      "published": "2026-09-15T11:17:12.580",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-91786"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2533606"
+        },
+        {
+          "tags": [],
+          "url": "https://gitlab.gnome.org/GNOME/gnome-shell/-/issues/9365"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
   "CVE-2026-9186": {
     "added": "2026-09-05",
     "checks_done": 7,
@@ -321843,6 +322893,178 @@
       ]
     },
     "next_check": "2026-11-04"
+  },
+  "CVE-2026-91922": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Steedos Platform through 3.0.15-beta.47 contains a reflected cross-site scripting vulnerability in the anonymous /api/page/render endpoint that fails to properly escape query parameters in inline script elements. Attackers can craft malicious links with script-terminating sequences in the schemaApi or data parameters to execute arbitrary JavaScript in victim sessions and steal X-Auth-Token credentials.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91922",
+      "last_modified": "2026-09-15T11:17:12.737",
+      "products": [],
+      "published": "2026-09-15T11:17:12.737",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/steedos/steedos-platform"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/steedos/steedos-platform/blob/044423a3f326d86cf17f0e45adcbd44d2d3b06dd/services/service-pages/main/default/routes/page_render.router.js"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/steedos/steedos-platform/blob/044423a3f326d86cf17f0e45adcbd44d2d3b06dd/services/service-pages/main/default/routes/page_view.ejs"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/steedos/steedos-platform/issues/8354"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/steedos-platform-through-3.0.15-beta.47-reflected-xss-via-page-render"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-91923": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "KubeSphere through 4.1.3 contains a server-side request forgery vulnerability in the git credential verification endpoint that accepts unvalidated caller-supplied URLs without allowlist restrictions. Authenticated attackers can supply arbitrary URLs to reach internal services and exfiltrate basic-auth credentials from Secrets in any namespace by leveraging the endpoint's error response handling.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91923",
+      "last_modified": "2026-09-15T11:17:12.897",
+      "products": [],
+      "published": "2026-09-15T11:17:12.897",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kubesphere/kubesphere"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kubesphere/kubesphere/blob/3ef3a6bc98b790480577e87fbc75bee5b3438862/config/ks-core/templates/globalroles.yaml"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kubesphere/kubesphere/blob/3ef3a6bc98b790480577e87fbc75bee5b3438862/pkg/kapis/resources/v1alpha2/handler.go"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kubesphere/kubesphere/blob/3ef3a6bc98b790480577e87fbc75bee5b3438862/pkg/models/git/git.go"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kubesphere/kubesphere/issues/6653"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/kubesphere-through-4.1.3-ssrf-via-git-credential-verification-endpoint"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-91924": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "pgweb through 0.17.0 leaves the POST /api/connect endpoint unguarded when connect-backend authorization is configured, allowing attackers to supply arbitrary database connection strings. Attackers can bypass the resource-to-database mapping by providing a custom session identifier and connection URL to access unauthorized databases and internal services.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91924",
+      "last_modified": "2026-09-15T11:17:13.053",
+      "products": [],
+      "published": "2026-09-15T11:17:13.053",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/sosedoff/pgweb"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sosedoff/pgweb/blob/6b0b0244d1aefd6971999b03481eeeaa4ec7cf55/pkg/api/api.go"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sosedoff/pgweb/blob/6b0b0244d1aefd6971999b03481eeeaa4ec7cf55/pkg/api/routes.go"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sosedoff/pgweb/issues/869"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pgweb-through-0.17.0-missing-authorization-on-direct-connect-endpoint"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-91925": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1336"
+      ],
+      "description": "Polyaxon through 2.16.4 renders operation specification fields with an unsandboxed Jinja2 environment during server-side run preparation, allowing authenticated users to execute arbitrary code. Attackers can submit runs with Jinja2 payloads in queue, namespace, conditions, presets, or dependencies fields to execute operating system commands in the scheduler process context, exposing database credentials and service tokens.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91925",
+      "last_modified": "2026-09-15T11:17:13.220",
+      "products": [],
+      "published": "2026-09-15T11:17:13.220",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/polyaxon/cli/blob/bfea04a0bf93886f69a3195954204d9d010b55aa/cli/polyaxon/_polyaxonfile/specs/libs/engine.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/polyaxon/cli/blob/bfea04a0bf93886f69a3195954204d9d010b55aa/cli/polyaxon/_polyaxonfile/specs/sections.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/polyaxon/polyaxon"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/polyaxon/polyaxon/issues/1540"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/polyaxon-through-2.16.4-server-side-template-injection-via-unsandboxed-jinja2-engine"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
   },
   "CVE-2026-9193": {
     "added": "2026-08-06",
@@ -321922,6 +323144,186 @@
       ]
     },
     "next_check": "2026-11-04"
+  },
+  "CVE-2026-91994": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Semaphore UI through 2.19.12 exempts GET and HEAD requests from project resource permission checks in GetMustCanMiddleware. Attackers with guest or task_runner roles can read all project environments including plaintext secrets, credentials, and passwords via GET requests to the environment endpoint.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91994",
+      "last_modified": "2026-09-15T12:17:54.793",
+      "products": [],
+      "published": "2026-09-15T12:17:54.793",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/semaphoreui/semaphore"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/semaphoreui/semaphore/blob/v2.19.12/api/projects/project.go#L89-L106"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/semaphoreui/semaphore/blob/v2.19.12/api/router.go#L308-L329"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/semaphoreui/semaphore/issues/4150"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/semaphore-ui-through-2.19.12-missing-authorization-on-get-and-head-requests"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-91995": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-620"
+      ],
+      "description": "pig before 4.1.0 contains an authentication bypass vulnerability in the /register/password endpoint where password verification results are discarded, allowing any value as the current password. Remote attackers can submit a username with an incorrect current password to overwrite any account credential including the admin account and gain full administrative control.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91995",
+      "last_modified": "2026-09-15T12:17:54.943",
+      "products": [],
+      "published": "2026-09-15T12:17:54.943",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/geo-chen/oss/blob/main/pig.md"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pig-mesh/pig"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pig-mesh/pig/blob/v4.0.0/pig-upms/pig-upms-biz/src/main/java/com/pig4cloud/pig/admin/controller/SysRegisterController.java#L21-L53"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pig-mesh/pig/blob/v4.0.0/pig-upms/pig-upms-biz/src/main/java/com/pig4cloud/pig/admin/service/impl/SysUserServiceImpl.java#L650-L669"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pig-mesh/pig/commit/ce958668f399110b97b3f1fcc5f517ff9bcfd535"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pig-mesh/pig/issues/1249"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/pig-before-4.1.0-unverified-password-change-via-register-password"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-91996": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "lamp-cloud through 5.10.0 whitelists the path pattern /*/anno/** for anonymous access, allowing unauthenticated attackers to read the server's full JVM system property map. Attackers can send POST requests to /defGenProject/anno/getProperties to retrieve sensitive information including JVM classpath, filesystem paths, operating system details, and startup secrets.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91996",
+      "last_modified": "2026-09-15T12:17:55.093",
+      "products": [],
+      "published": "2026-09-15T12:17:55.093",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/dromara/lamp-cloud"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/dromara/lamp-cloud/blob/bdc1a406eb0f6291e9f6dbad9cbccd67bc6a37b6/lamp-generator/lamp-generator-controller/src/main/java/top/tangyh/lamp/generator/controller/DefGenProjectController.java#L61-L64"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/dromara/lamp-cloud/blob/bdc1a406eb0f6291e9f6dbad9cbccd67bc6a37b6/lamp-public/lamp-common/src/main/java/top/tangyh/lamp/common/properties/IgnoreProperties.java#L88"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/geo-chen/oss/blob/main/lamp-cloud.md"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/lamp-cloud-through-5.10.0-missing-authentication-for-jvm-properties-endpoint"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
+  },
+  "CVE-2026-91998": {
+    "added": "2026-09-15",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "Casdoor through 4.4.0 contains an authorization bypass vulnerability in the /api/mcp endpoint that allows attackers with any application's clientId and clientSecret to gain unrestricted access to user administration across all organizations. Attackers can enumerate user records including password salts and email addresses, create administrator accounts, modify existing users, and delete them in any organization by supplying legitimate credentials from a single application.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91998",
+      "last_modified": "2026-09-15T12:17:55.407",
+      "products": [],
+      "published": "2026-09-15T12:17:55.407",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/casdoor/casdoor"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/casdoor/casdoor/blob/v4.4.0/authz/authz.go#L174-L176"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/casdoor/casdoor/blob/v4.4.0/mcpself/user.go"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/casdoor/casdoor/blob/v4.4.0/routers/base.go#L122-L154"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/geo-chen/oss/blob/main/casdoor.md#finding-2-application-credential-authorization-bypass-in-apimcp-enables-unrestricted-cross-organization-user-administration"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/casdoor-through-4.4.0-cross-organization-user-administration-via-api-mcp"
+        }
+      ]
+    },
+    "next_check": "2026-09-16"
   },
   "CVE-2026-9201": {
     "added": "2026-08-06",
