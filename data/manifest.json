@@ -989,6 +989,15 @@
     "poc_source": "github_search",
     "published": "2017-04-27T14:59:00.233"
   },
+  "CVE-2017-3078": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": "2017-06-26",
+    "poc_source": "github_search",
+    "published": "2017-06-20T17:29:00.267"
+  },
   "CVE-2018-0101": {
     "cvss_score": 10.0,
     "cvss_severity": "CRITICAL",
@@ -1411,6 +1420,15 @@
     "poc_published_date": "2022-10-12",
     "poc_source": "github_search",
     "published": "2022-09-06T22:15:09.207"
+  },
+  "CVE-2022-37298": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": "2022-10-13",
+    "poc_source": "github_search",
+    "published": "2022-10-20T11:15:10.380"
   },
   "CVE-2022-45808": {
     "cvss_score": 9.9,
@@ -2735,6 +2753,15 @@
     "poc_source": "github_search",
     "published": "2026-08-13T14:16:57.177"
   },
+  "CVE-2026-31278": {
+    "cvss_score": 7.7,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": "2026-03-25",
+    "poc_source": "github_search",
+    "published": "2026-09-14T02:17:14.080"
+  },
   "CVE-2026-32475": {
     "cvss_score": 9.0,
     "cvss_severity": "CRITICAL",
@@ -3715,6 +3742,15 @@
     "poc_published_date": null,
     "poc_source": "nvd_exploit_tag",
     "published": "2026-08-03T17:16:45.953"
+  },
+  "CVE-2026-69328": {
+    "cvss_score": 7.8,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": "2026-09-15",
+    "poc_source": "github_search",
+    "published": "2026-09-08T18:18:50.447"
   },
   "CVE-2026-69414": {
     "cvss_score": 7.8,
@@ -4877,6 +4913,15 @@
     "poc_source": "github_search",
     "published": "2026-09-04T18:18:07.153"
   },
+  "CVE-2026-86259": {
+    "cvss_score": 7.5,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": "2026-09-14",
+    "poc_source": "github_search",
+    "published": "2026-09-06T13:17:10.963"
+  },
   "CVE-2026-86431": {
     "cvss_score": 7.2,
     "cvss_severity": "HIGH",
@@ -4895,6 +4940,96 @@
     "poc_source": "github_search",
     "published": "2026-09-09T10:22:33.803"
   },
+  "CVE-2026-86741": {
+    "cvss_score": 8.5,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": null,
+    "poc_source": "nvd_exploit_tag",
+    "published": "2026-09-09T14:17:22.680"
+  },
+  "CVE-2026-86742": {
+    "cvss_score": 6.5,
+    "cvss_severity": "MEDIUM",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": null,
+    "poc_source": "nvd_exploit_tag",
+    "published": "2026-09-09T14:17:22.820"
+  },
+  "CVE-2026-86745": {
+    "cvss_score": 6.5,
+    "cvss_severity": "MEDIUM",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": null,
+    "poc_source": "nvd_exploit_tag",
+    "published": "2026-09-09T14:17:23.277"
+  },
+  "CVE-2026-86746": {
+    "cvss_score": 6.4,
+    "cvss_severity": "MEDIUM",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": null,
+    "poc_source": "nvd_exploit_tag",
+    "published": "2026-09-09T14:17:23.420"
+  },
+  "CVE-2026-86748": {
+    "cvss_score": 6.1,
+    "cvss_severity": "MEDIUM",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": null,
+    "poc_source": "nvd_exploit_tag",
+    "published": "2026-09-09T14:17:23.710"
+  },
+  "CVE-2026-86749": {
+    "cvss_score": 6.3,
+    "cvss_severity": "MEDIUM",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": null,
+    "poc_source": "nvd_exploit_tag",
+    "published": "2026-09-09T14:17:23.880"
+  },
+  "CVE-2026-86750": {
+    "cvss_score": 7.7,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": null,
+    "poc_source": "nvd_exploit_tag",
+    "published": "2026-09-09T14:17:24.030"
+  },
+  "CVE-2026-86751": {
+    "cvss_score": 8.5,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": null,
+    "poc_source": "nvd_exploit_tag",
+    "published": "2026-09-09T14:17:24.170"
+  },
+  "CVE-2026-88000": {
+    "cvss_score": 6.5,
+    "cvss_severity": "MEDIUM",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": null,
+    "poc_source": "nvd_exploit_tag",
+    "published": "2026-09-09T22:18:48.777"
+  },
+  "CVE-2026-88002": {
+    "cvss_score": 6.5,
+    "cvss_severity": "MEDIUM",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": null,
+    "poc_source": "nvd_exploit_tag",
+    "published": "2026-09-09T22:18:49.080"
+  },
   "CVE-2026-88861": {
     "cvss_score": 8.3,
     "cvss_severity": "HIGH",
@@ -4903,6 +5038,15 @@
     "poc_published_date": "2026-09-11",
     "poc_source": "github_search",
     "published": "2026-09-10T14:17:11.673"
+  },
+  "CVE-2026-88899": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-15",
+    "poc_published_date": "2026-09-14",
+    "poc_source": "github_search",
+    "published": "2026-09-10T16:18:12.120"
   },
   "CVE-2026-89012": {
     "cvss_score": 6.5,
