@@ -1,5 +1,41 @@
 {
-  "CVE-2025-67505": {
-    "package": "MAVEN:com.okta.sdk:okta-sdk-root"
+  "CVE-2026-61544": {
+    "package": "RUST:libp2p-quic"
+  },
+  "CVE-2026-61559": {
+    "package": "NPM:@zereight/mcp-gitlab"
+  },
+  "CVE-2026-61568": {
+    "package": "NPM:@zereight/mcp-gitlab"
+  },
+  "CVE-2026-69202": {
+    "package": "MAVEN:org.http4s:http4s-ember-core_3"
+  },
+  "CVE-2026-69203": {
+    "package": "MAVEN:org.http4s:http4s-ember-core_3"
+  },
+  "CVE-2026-69204": {
+    "package": "MAVEN:org.http4s:http4s-ember-core_3"
+  },
+  "CVE-2026-69205": {
+    "package": "MAVEN:org.http4s:http4s-ember-core_3"
+  },
+  "CVE-2026-69208": {
+    "package": "MAVEN:org.http4s:http4s-ember-server_3"
+  },
+  "CVE-2026-69213": {
+    "package": "MAVEN:org.http4s:http4s-ember-core_2.13"
+  },
+  "CVE-2026-69214": {
+    "package": "MAVEN:org.http4s:http4s-client_3"
+  },
+  "CVE-2026-69215": {
+    "package": "MAVEN:org.http4s:http4s-client_3"
+  },
+  "CVE-2026-69218": {
+    "package": "MAVEN:org.http4s:http4s-ember-core_3"
+  },
+  "CVE-2026-88975": {
+    "package": "MAVEN:org.http4s:http4s-ember-core_3"
   }
 }
