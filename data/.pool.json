@@ -25195,6 +25195,84 @@
     },
     "next_check": "2026-09-23"
   },
+  "CVE-2021-31577": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "In Boa, there is a possible escalation of privilege due to a missing permission check. This could lead to remote escalation of privilege from a proximal attacker with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: A20210008; Issue ID: OSBNB00123241.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-31577",
+      "last_modified": "2026-06-17T03:52:01.703",
+      "products": [
+        "mediatek:en7528",
+        "mediatek:en7528_firmware",
+        "mediatek:en7580",
+        "mediatek:en7580_firmware"
+      ],
+      "published": "2023-02-06T22:15:09.420",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://corp.mediatek.com/product-security-acknowledgements"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://corp.mediatek.com/product-security-acknowledgements"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2021-31578": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "In Boa, there is a possible escalation of privilege due to a stack buffer overflow. This could lead to remote escalation of privilege from a proximal attacker with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: A20210008; Issue ID: OSBNB00123241.",
+      "has_exploit_tag": false,
+      "id": "CVE-2021-31578",
+      "last_modified": "2026-06-17T03:52:01.803",
+      "products": [
+        "mediatek:en7528",
+        "mediatek:en7528_firmware",
+        "mediatek:en7580",
+        "mediatek:en7580_firmware"
+      ],
+      "published": "2023-02-06T22:15:09.470",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://corp.mediatek.com/product-security-acknowledgements"
+        },
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://corp.mediatek.com/product-security-acknowledgements"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
   "CVE-2021-31650": {
     "added": "2026-09-15",
     "checks_done": 1,
@@ -29730,6 +29808,42 @@
     },
     "next_check": "2026-09-17"
   },
+  "CVE-2022-31249": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in wrangler of SUSE Rancher allows remote attackers to inject commands in the underlying host via crafted commands passed to Wrangler. This issue affects: SUSE Rancher wrangler version 0.7.3 and prior versions; wrangler version 0.8.4 and prior versions; wrangler version 1.0.0 and prior versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-31249",
+      "last_modified": "2026-06-17T04:45:13.037",
+      "products": [
+        "suse:wrangler"
+      ],
+      "published": "2023-02-07T13:15:09.537",
+      "references": [
+        {
+          "tags": [
+            "Issue Tracking"
+          ],
+          "url": "https://bugzilla.suse.com/show_bug.cgi?id=1200299"
+        },
+        {
+          "tags": [
+            "Issue Tracking"
+          ],
+          "url": "https://bugzilla.suse.com/show_bug.cgi?id=1200299"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
   "CVE-2022-31374": {
     "added": "2026-09-12",
     "checks_done": 4,
@@ -30130,6 +30244,48 @@
             "Third Party Advisory"
           ],
           "url": "https://github.com/k0xx11/bug_report/blob/main/vendors/campcodes.com/car-rental-management-system/RCE-2.md"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2022-3229": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-285",
+        "CWE-306"
+      ],
+      "description": "Because the web management interface for Unified Intents' Unified Remote solution does not itself require authentication, a remote, unauthenticated attacker can change or disable authentication requirements for the Unified Remote protocol, and leverage this now-unauthenticated access to run code of the attacker's choosing.",
+      "has_exploit_tag": true,
+      "id": "CVE-2022-3229",
+      "last_modified": "2026-06-17T04:59:06.947",
+      "products": [
+        "microsoft:windows",
+        "unifiedremote:unified_remote"
+      ],
+      "published": "2023-02-06T23:15:09.713",
+      "references": [
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch"
+          ],
+          "url": "https://github.com/rapid7/metasploit-framework/pull/16989"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch"
+          ],
+          "url": "https://github.com/rapid7/metasploit-framework/pull/16989"
         }
       ]
     },
@@ -32278,6 +32434,53 @@
         {
           "tags": [],
           "url": "https://www.amd.com/en/resources/product-security/bulletin/amd-sb-7009.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2023-23333": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77"
+      ],
+      "description": "There is a command injection vulnerability in SolarView Compact through 6.00, attackers can execute commands by bypassing internal restrictions through downloader.php.",
+      "has_exploit_tag": true,
+      "id": "CVE-2023-23333",
+      "last_modified": "2026-06-17T05:36:54.643",
+      "products": [
+        "contec:solarview_compact",
+        "contec:solarview_compact_firmware"
+      ],
+      "published": "2023-02-06T22:15:09.630",
+      "references": [
+        {
+          "tags": [],
+          "url": "http://packetstormsecurity.com/files/174537/SolarView-Compact-6.00-Remote-Command-Execution.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/Timorlover/CVE-2023-23333"
+        },
+        {
+          "tags": [],
+          "url": "http://packetstormsecurity.com/files/174537/SolarView-Compact-6.00-Remote-Command-Execution.html"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://github.com/Timorlover/CVE-2023-23333"
         }
       ]
     },
@@ -92808,6 +93011,32 @@
     },
     "next_check": "2026-09-17"
   },
+  "CVE-2026-2380": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-256"
+      ],
+      "description": "On affected platforms running Arista EOS with OpenConfig-related services (i.e., gNMI, gNSI, RESTCONF and NETCONF), sensitive requests and responses may be unintentionally logged. These may be stored on the local EOS device or recorded on remote accounting servers. Note that gRPC-based streaming via Streaming Telemetry Agent to CloudVision is not affected by this vulnerability.\n\nExamples of sensitive information include:\n- Sensitive CLI commands (e.g., \"username bob secret myPass\")\n- Sensitive OpenConfig YANG leafs (e.g., \"system/aaa/global/tacacs/config/secret-key\")\n\nThis issue was discovered internally by Arista, and the company is not aware of any malicious exploitation of this vulnerability in customer networks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-2380",
+      "last_modified": "2026-09-16T11:16:41.723",
+      "products": [],
+      "published": "2026-09-16T09:17:04.483",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24724-security-advisory-0168"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
   "CVE-2026-23855": {
     "added": "2026-09-10",
     "checks_done": 6,
@@ -94426,6 +94655,686 @@
       ]
     },
     "next_check": "2026-11-12"
+  },
+  "CVE-2026-27546": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-288"
+      ],
+      "description": "An unauthenticated remote attacker can exploit an authentication bypass in the _account_log function to log in as an admin, even when accounts are properly configured.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27546",
+      "last_modified": "2026-09-16T08:16:36.850",
+      "products": [],
+      "published": "2026-09-16T08:16:36.850",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27547": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/ajax/get_iodd_menu_info endpoint using valid user or operator credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27547",
+      "last_modified": "2026-09-16T08:16:37.027",
+      "products": [],
+      "published": "2026-09-16T08:16:37.027",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27548": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/ajax/get_iodd_port_info endpoint using user or operator credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27548",
+      "last_modified": "2026-09-16T08:16:37.180",
+      "products": [],
+      "published": "2026-09-16T08:16:37.180",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27549": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/attached_devices_tab/do_upload endpoint using operator credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27549",
+      "last_modified": "2026-09-16T08:16:37.333",
+      "products": [],
+      "published": "2026-09-16T08:16:37.333",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27550": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the Field_Shadow_Password class using operator credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27550",
+      "last_modified": "2026-09-16T08:16:37.487",
+      "products": [],
+      "published": "2026-09-16T08:16:37.487",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27551": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/ajax/parameterManage endpoint using user credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27551",
+      "last_modified": "2026-09-16T08:16:37.640",
+      "products": [],
+      "published": "2026-09-16T08:16:37.640",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27552": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "A low-privileged remote attacker can exploit improper authorization in the /index.php/attached_devices_tab/do_upload endpoint to upload IODD files to the device, potentially altering device behavior or causing system crashes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27552",
+      "last_modified": "2026-09-16T08:16:37.793",
+      "products": [],
+      "published": "2026-09-16T08:16:37.793",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27553": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-497"
+      ],
+      "description": "A low-privileged remote attacker can manipulate the schema path parameter in the /index.php/diagnostics_tab/ajax_diag_table_rows endpoint using a valid user cookie allowing disclosure of all user password hashes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27553",
+      "last_modified": "2026-09-16T08:16:37.950",
+      "products": [],
+      "published": "2026-09-16T08:16:37.950",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27554": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/ajax/save_iodd_parameters endpoint using operator credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27554",
+      "last_modified": "2026-09-16T08:16:38.063",
+      "products": [],
+      "published": "2026-09-16T08:16:38.063",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27555": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-98"
+      ],
+      "description": "A low-privileged remote attacker can exploit a local file inclusion vulnerability in the /index.php/ajax/get_iodd_port_info endpoint using a valid user cookie allowing execution of arbitrary PHP code on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27555",
+      "last_modified": "2026-09-16T08:16:38.213",
+      "products": [],
+      "published": "2026-09-16T08:16:38.213",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27556": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-98"
+      ],
+      "description": "A low-privileged remote attacker can exploit a local file inclusion vulnerability in the /index.php/ajax/save_iodd_parameters endpoint using a valid operator cookie allowing execution of arbitrary PHP code on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27556",
+      "last_modified": "2026-09-16T08:16:38.370",
+      "products": [],
+      "published": "2026-09-16T08:16:38.370",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27557": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-35"
+      ],
+      "description": "An unauthenticated remote attacker can exploit a path traversal vulnerability in the /index.php/view_uploaded_iodd_file endpoint allowing the SSH server's private keys to be read.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27557",
+      "last_modified": "2026-09-16T08:16:38.520",
+      "products": [],
+      "published": "2026-09-16T08:16:38.520",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27558": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/attached_devices_tab/ajax_remove_uploaded_iodd_files endpoint using operator credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27558",
+      "last_modified": "2026-09-16T08:16:38.673",
+      "products": [],
+      "published": "2026-09-16T08:16:38.673",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27559": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /api/status/data endpoint by sending a crafted GET request with user credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27559",
+      "last_modified": "2026-09-16T08:16:38.827",
+      "products": [],
+      "published": "2026-09-16T08:16:38.827",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27560": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A high-privileged remote attacker can exploit a command injection vulnerability in the /api/status/data endpoint by sending a crafted DELETE request with admin credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27560",
+      "last_modified": "2026-09-16T08:16:38.977",
+      "products": [],
+      "published": "2026-09-16T08:16:38.977",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27561": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A high-privileged remote attacker can exploit a command injection vulnerability in the /api/iodd/config endpoint by sending a crafted GET request with admin credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27561",
+      "last_modified": "2026-09-16T08:16:39.133",
+      "products": [],
+      "published": "2026-09-16T08:16:39.133",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27562": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A high-privileged remote attacker can exploit a command injection vulnerability in the /api/iodd/config endpoint by sending a crafted PUT request with admin credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27562",
+      "last_modified": "2026-09-16T08:16:39.283",
+      "products": [],
+      "published": "2026-09-16T08:16:39.283",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27563": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A high-privileged remote attacker can exploit a command injection vulnerability in the /api/datastorage/data endpoint by sending a crafted GET request with admin credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27563",
+      "last_modified": "2026-09-16T08:16:39.437",
+      "products": [],
+      "published": "2026-09-16T08:16:39.437",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27564": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "A high-privileged remote attacker can exploit a command injection vulnerability in the /api/datastorage/data endpoint by sending a PUT request with admin credentials allowing execution of commands with root privileges on the device.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27564",
+      "last_modified": "2026-09-16T08:16:39.583",
+      "products": [],
+      "published": "2026-09-16T08:16:39.583",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-27565": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "An unauthenticated remote attacker can upload a malicious IODD file that places and executes a shell script with root privileges. The shell script remains active even after a reboot.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-27565",
+      "last_modified": "2026-09-16T08:16:39.740",
+      "products": [],
+      "published": "2026-09-16T08:16:39.740",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-014/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-027/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-028/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
   },
   "CVE-2026-27852": {
     "added": "2026-08-28",
@@ -227376,6 +228285,59 @@
     },
     "next_check": "2026-11-11"
   },
+  "CVE-2026-73435": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-345"
+      ],
+      "description": "On affected platforms running Arista EOS with Open Shortest Path First version 2 (OSPFv2) configured, a specially crafted OSPFv2 packet from an unauthenticated attacker on the same broadcast segment, with OSPFv2 authentication configured can cause adjacency flapping and packet loss. The disruption can affect routing across the broader OSPF domain.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73435",
+      "last_modified": "2026-09-16T11:16:42.040",
+      "products": [],
+      "published": "2026-09-16T10:16:51.363",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24727-security-advisory-0171"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-73436": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125",
+        "CWE-1284"
+      ],
+      "description": "On affected platforms running Arista EOS with OSPFv2 and OSPFv2 segment routing configured, a specially crafted OSPFv2 packet from an adjacent OSPF neighbor may cause OSPF to restart unexpectedly.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73436",
+      "last_modified": "2026-09-16T11:16:42.190",
+      "products": [],
+      "published": "2026-09-16T10:16:51.550",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24727-security-advisory-0171"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
   "CVE-2026-73437": {
     "added": "2026-09-16",
     "checks_done": 0,
@@ -227397,6 +228359,32 @@
         {
           "tags": [],
           "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24712-security-advisory-0156"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-73439": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-842"
+      ],
+      "description": "On affected platforms running Arista EOS, if OpenConfig is configured and running a gNMI server on the system, and if gNSI Pathz is configured and a gNSI Pathz policy is present on the system, then gNMI may fail to correctly enforce the rules in this policy if both a group rule and a user rule for the same path is present in the policy. Under certain conditions, this can lead to an authenticated user gaining unauthorized permission to read or write gNMI paths that the Pathz policy is intended to restrict.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73439",
+      "last_modified": "2026-09-16T09:17:04.687",
+      "products": [],
+      "published": "2026-09-16T09:17:04.687",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24720-security-advisory-0164"
         }
       ]
     },
@@ -227480,6 +228468,84 @@
     },
     "next_check": "2026-09-17"
   },
+  "CVE-2026-73453": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "An unauthenticated P4Runtime (Programming Protocol-Independent Packet Processors Runtime) client can achieve arbitrary code execution under certain conditions on affected platforms running Arista EOS configured with P4Runtime. P4Runtime is disabled by default in Arista EOS. By crafting a malicious packet during the initiation of a P4Runtime session, an attacker can obtain complete administrative control over the compromised switch.\n\nThis issue was discovered internally by Arista, and the company is not aware of any malicious exploitation of this vulnerability in customer networks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73453",
+      "last_modified": "2026-09-16T11:16:42.867",
+      "products": [],
+      "published": "2026-09-16T10:16:52.043",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24730-security-advisory-0174"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-73454": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77"
+      ],
+      "description": "On affected platforms running Arista EOS with gRPC Network Security Interface (gNSI) Credentialz configured, a specially crafted request can cause unintended modifications to the target account's properties. This may result in the account being assigned elevated privileges or access beyond what an administrator intended.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73454",
+      "last_modified": "2026-09-16T09:17:05.020",
+      "products": [],
+      "published": "2026-09-16T09:17:05.020",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24721-security-advisory-0165"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-73455": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-130"
+      ],
+      "description": "On affected platforms running Arista EOS with Open Shortest Path First version 3 (OSPFv3) configured, a specially crafted packet can cause the OSPFv3 agent to restart unexpectedly.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73455",
+      "last_modified": "2026-09-16T10:16:52.243",
+      "products": [],
+      "published": "2026-09-16T10:16:52.243",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24729-security-advisory-0173"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
   "CVE-2026-73458": {
     "added": "2026-09-16",
     "checks_done": 0,
@@ -227558,6 +228624,58 @@
     },
     "next_check": "2026-09-17"
   },
+  "CVE-2026-73461": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "On affected EOS platforms with AAA-based gRPC authorization enabled for OpenConfig, gRPC requests of an authenticated user to OpenConfig may use the wrong privilege level, resulting in an authorization using the wrong AAA method list. This does not impact non-gRPC OpenConfig requests such as NETCONF.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73461",
+      "last_modified": "2026-09-16T09:17:05.147",
+      "products": [],
+      "published": "2026-09-16T09:17:05.147",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24719-security-advisory-0163"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-73464": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "On affected platforms running Arista EOS with gRPC Network Management Interface (gNMI) enabled, a specially crafted request could allow a malicious authenticated client with gRPC Network Management Interface (gNMI) access to execute arbitrary code with root privileges on the switch.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73464",
+      "last_modified": "2026-09-16T09:17:05.463",
+      "products": [],
+      "published": "2026-09-16T09:17:05.463",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24722-security-advisory-0166"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
   "CVE-2026-73465": {
     "added": "2026-09-16",
     "checks_done": 0,
@@ -227631,6 +228749,32 @@
         {
           "tags": [],
           "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24709-security-advisory-0153"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-73468": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-670"
+      ],
+      "description": "A specially crafted packet can cause the premature expiry of multicast forwarding state on affected interfaces, potentially resulting in temporary multicast traffic loss during the affected period.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73468",
+      "last_modified": "2026-09-16T10:16:52.383",
+      "products": [],
+      "published": "2026-09-16T10:16:52.383",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24731-security-advisory-0175"
         }
       ]
     },
@@ -254150,6 +255294,32 @@
     },
     "next_check": "2026-10-01"
   },
+  "CVE-2026-77190": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "On affected platforms running Arista EOS, an unauthenticated attacker who is network-adjacent to the switch and able to connect to a device with PIM Sparse Mode and MLAG configured, can send malformed messages that cause the Pimsm agent to terminate unexpectedly. The Pimsm agent is automatically restarted, but repeated attacks can cause the agent to restart continuously, resulting in a sustained denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77190",
+      "last_modified": "2026-09-16T10:16:53.030",
+      "products": [],
+      "published": "2026-09-16T10:16:53.030",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24733-security-advisory-0177"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
   "CVE-2026-77219": {
     "added": "2026-08-22",
     "checks_done": 8,
@@ -261169,6 +262339,32 @@
         {
           "tags": [],
           "url": "https://www.wartsila.com/services-catalogue/engine-services-4-stroke/wartsila-ics-patch-deployment#contact"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-78227": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "NLnet Labs Unbound 1.22.0 up to and including 1.26.1, has a use-after-free vulnerability when compiled for DNS-over-QUIC support with '--with-libngtcp2'. Each DoQ stream owns an output buffer that holds the DNS response. ngtcp2's retransmission buffer keeps a shallow pointer into the output buffer for as long as a STREAM frame may be resent. On a client RESET_STREAM, the output buffer is freed but ngtcp2 still holds the matching retransmission entries. The next PTO timeout makes ngtcp2 re-encode the STREAM frame and copy from the freed buffer. A malicious actor that can query Unbound over DoQ and that withholds ACKs, sends RESET_STREAM, and waits for PTO, reaches this use-after-free with no privilege. This leads to retransmissions against freed memory and eventually an abnormal server exit under a 20-query spray.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78227",
+      "last_modified": "2026-09-16T09:17:05.987",
+      "products": [],
+      "published": "2026-09-16T09:17:05.987",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2026-78227.txt"
         }
       ]
     },
@@ -277221,6 +278417,32 @@
       ]
     },
     "next_check": "2026-09-26"
+  },
+  "CVE-2026-81634": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-122"
+      ],
+      "description": "In NLnet Labs Unbound up to and including 1.26.0, a 255 length query name with a large TCP response can lead to a heap buffer overflow during the RRSet canonicalisation routine. This is caused by missing to add the first owner name into the buffer length check. A malicious actor operating a malicious name server or tampering with an incoming response to Unbound (canonicalisation happens before DNSSEC validation), can trigger the vulnerability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81634",
+      "last_modified": "2026-09-16T09:17:06.210",
+      "products": [],
+      "published": "2026-09-16T09:17:06.210",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2026-81634.txt"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
   },
   "CVE-2026-81640": {
     "added": "2026-09-10",
@@ -305726,6 +306948,36 @@
     },
     "next_check": "2026-09-17"
   },
+  "CVE-2026-84408": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-782"
+      ],
+      "description": "QND contains an improper access control vulnerability in a named pipe, which may allow a local attacker who is logged in to a Windows PC where the affected product's client is installed to execute arbitrary commands with SYSTEM privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84408",
+      "last_modified": "2026-09-16T08:16:40.060",
+      "products": [],
+      "published": "2026-09-16T08:16:40.060",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN95825631/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.qualitysoft.com/product/qnd_vulnerabilities_2026/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
   "CVE-2026-84423": {
     "added": "2026-09-02",
     "checks_done": 8,
@@ -318060,6 +319312,32 @@
       ]
     },
     "next_check": "2026-09-19"
+  },
+  "CVE-2026-86106": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "An unauthenticated actor with network access to the private HA interconnect may trigger sensitive HA peer functions without verification. This could result in elevated command execution on Edge units where HA is enabled.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86106",
+      "last_modified": "2026-09-16T11:16:43.783",
+      "products": [],
+      "published": "2026-09-16T11:16:43.783",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24735-security-advisory-0179"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
   },
   "CVE-2026-86108": {
     "added": "2026-09-16",
@@ -333245,6 +334523,36 @@
     },
     "next_check": "2026-09-17"
   },
+  "CVE-2026-88263": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.0",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "XikeStor Layer3 switches miss authentication for downloading configuration data. Unauthenticated attacker may retrieve the configuration data containing network configurations and passwords to operate the affected product improperly or to exploit the affected product as a jump host.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-88263",
+      "last_modified": "2026-09-16T08:16:40.303",
+      "products": [],
+      "published": "2026-09-16T08:16:40.303",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://jvn.jp/en/jp/JVN45281119/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.xikestor.com/security-advisory/"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
   "CVE-2026-88268": {
     "added": "2026-09-10",
     "checks_done": 6,
@@ -336371,6 +337679,32 @@
         {
           "tags": [],
           "url": "https://www.twcert.org.tw/tw/cp-132-11202-48c1b-1.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-89207": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1287"
+      ],
+      "description": "A vulnerability has been identified in WTV676-HB6035 Web Interface (All versions < V3.94), WTV776-HB6035 Web Interface (All versions < V4.17). Affected devices do not properly validate input received from backend services.\r\nThis could allow an unauthenticated remote attacker to force the device into protection mode, which results in losing remote connectivity functions (Web Access).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89207",
+      "last_modified": "2026-09-16T08:16:40.440",
+      "products": [],
+      "published": "2026-09-16T08:16:40.440",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://cert-portal.siemens.com/productcert/html/ssa-823812.html"
         }
       ]
     },
@@ -349624,6 +350958,316 @@
         {
           "tags": [],
           "url": "https://access.redhat.com/security/cve/CVE-2026-92358"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-92456": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "yshop-crm through 2.1.3 fails to enforce authorization on the saveRedisSet and getRedisSet endpoints in CrmCustomerController, allowing any authenticated back-office user to read and modify installation-wide lead-allocation and customer auto-recycling policy. Attackers can invoke these endpoints to manipulate shared Redis keys controlling customer auto-recycling behavior, causing mass customer data deletion, disabling lead recycling, or blocking customer creation across the deployment.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92456",
+      "last_modified": "2026-09-16T12:17:06.900",
+      "products": [],
+      "published": "2026-09-16T12:17:06.900",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/LinYuanyi1/cve-request-poc/blob/master/yshop-crm/C04_crm_customer_save_redis_set.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/pom.xml#L30"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/controller/admin/crmcustomer/CrmCustomerController.java#L136"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/job/CustomerAutoJob.java#L34"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/service/crmcustomer/CrmCustomerServiceImpl.java#L160"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yshop-crm-through-2.1.3-missing-authorization-via-crm-customer-rule-configuration-endpoints"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-92457": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "yshop-crm through 2.1.3 contains a missing authorization vulnerability in the CrmInvoiceController issueInvoice endpoint that allows authenticated back-office users to issue arbitrary invoices. Attackers can call the PUT /admin-api/crm/invoice/issue endpoint without required permissions to modify invoice status, inflate contract invoiced amounts with attacker-chosen values, and trigger invoice emails to arbitrary addresses.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92457",
+      "last_modified": "2026-09-16T12:17:07.047",
+      "products": [],
+      "published": "2026-09-16T12:17:07.047",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/LinYuanyi1/cve-request-poc/blob/master/yshop-crm/C03_crm_invoice_issue.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/pom.xml#L30"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/controller/admin/crminvoice/CrmInvoiceController.java#L80"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/service/crminvoice/CrmInvoiceServiceImpl.java#L317"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yshop-crm-through-2.1.3-missing-authorization-via-crminvoicecontroller-issueinvoice"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-92459": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "yshop-crm through 2.1.3 contains a missing authorization vulnerability in the CrmCluesController receiveCustomer endpoint that allows authenticated back-office users to claim sales leads without proper permission checks. Attackers can invoke the lead-claim endpoint to reassign leads from other employees to themselves by overwriting the ownerUserId field, with no access logging or quota validation to prevent bulk lead theft.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92459",
+      "last_modified": "2026-09-16T12:17:07.330",
+      "products": [],
+      "published": "2026-09-16T12:17:07.330",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/LinYuanyi1/cve-request-poc/blob/master/yshop-crm/C06_crm_clues_receive.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/pom.xml#L30"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/controller/admin/crmclues/CrmCluesController.java#L80"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/service/crmclues/CrmCluesServiceImpl.java#L113"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yshop-crm-through-2.1.3-missing-authorization-via-crm-lead-claim-endpoint"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-92460": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "yshop-crm through 2.1.3 fails to enforce authorization on the GET /admin-api/crm/operatelog/page endpoint, allowing any authenticated back-office user to access the installation-wide audit trail. Attackers can query the operation log to retrieve operator names, display nicknames, client IP addresses, User-Agent strings, request URLs, action details, and customer identifiers without proper permission checks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92460",
+      "last_modified": "2026-09-16T12:17:07.480",
+      "products": [],
+      "published": "2026-09-16T12:17:07.480",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/LinYuanyi1/cve-request-poc/blob/master/yshop-crm/C07_crm_operatelog_page.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/pom.xml#L30"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/controller/admin/crmoperatelog/CrmOperatelogController.java#L33"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/dal/mysql/crmoperatelog/CrmOperatelogMapper.java#L18"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yshop-crm-through-2.1.3-missing-authorization-via-crm-operation-log-listing"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-92462": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "yshop-crm through 2.1.3 fails to enforce authorization checks on the CrmFlowController deleteFlowStep endpoint, allowing any authenticated back-office user to delete arbitrary approval workflow steps. Attackers can invoke the DELETE /admin-api/crm/flow/delete-step endpoint without required permissions to remove approval steps that control contract, receivable, and invoice finalization processes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92462",
+      "last_modified": "2026-09-16T12:17:07.777",
+      "products": [],
+      "published": "2026-09-16T12:17:07.777",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/LinYuanyi1/cve-request-poc/blob/master/yshop-crm/C09_crm_flow_delete_step.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/pom.xml#L30"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/controller/admin/crmflow/CrmFlowController.java#L102"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-crm/yshop-module-crm-biz/src/main/java/co/yixiang/yshop/module/crm/service/crmflow/CrmFlowServiceImpl.java#L230"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yshop-crm-through-2.1.3-missing-authorization-via-crmflowcontroller-deleteflowstep"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-92463": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "yshop-crm through 2.1.3 contains an authorization failure in the GET /admin-api/system/user/page endpoint where the @PreAuthorize annotation is commented out, allowing authenticated back-office users without system:user:list permission to enumerate all users. Attackers with valid back-office credentials and a role with data scope ALL can retrieve the complete user directory including login names, nicknames, departments, email addresses, mobile numbers, and last login information.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92463",
+      "last_modified": "2026-09-16T12:17:07.920",
+      "products": [],
+      "published": "2026-09-16T12:17:07.920",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/LinYuanyi1/cve-request-poc/blob/master/yshop-crm/C10_system_user_page_enum.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/pom.xml#L30"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-framework/yshop-spring-boot-starter-biz-data-permission/src/main/java/co/yixiang/yshop/framework/datapermission/core/rule/dept/DeptDataPermissionRule.java#L115"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-system/yshop-module-system-biz/src/main/java/co/yixiang/yshop/module/system/controller/admin/user/UserController.java#L92"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/guchengwuyue/yshop-crm/blob/5f5810a0e1e4ab0828523ec299bf973c2f9065d7/yshop-crm/yshop-module-system/yshop-module-system-biz/src/main/java/co/yixiang/yshop/module/system/service/user/AdminUserServiceImpl.java#L251"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yshop-crm-through-2.1.3-missing-authorization-via-disabled-annotation-on-system-user-listing"
+        }
+      ]
+    },
+    "next_check": "2026-09-17"
+  },
+  "CVE-2026-92465": {
+    "added": "2026-09-16",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Themeum WP Mega Menu allows Blind SQL Injection.\n\nThis issue affects WP Mega Menu: from n/a through 1.4.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92465",
+      "last_modified": "2026-09-16T12:17:08.073",
+      "products": [],
+      "published": "2026-09-16T12:17:08.073",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wp-megamenu/vulnerability/wordpress-wp-mega-menu-plugin-1-4-2-sql-injection-vulnerability?_s_id=cve"
         }
       ]
     },
