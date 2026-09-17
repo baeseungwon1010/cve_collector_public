@@ -1,5 +1,1 @@
-{
-  "CVE-2024-9355": {
-    "package": "GO:github.com/golang-fips/openssl"
-  }
-}
+{}

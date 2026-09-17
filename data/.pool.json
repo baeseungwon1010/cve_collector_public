@@ -32589,6 +32589,60 @@
     },
     "next_check": "2026-09-18"
   },
+  "CVE-2023-1712": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-547"
+      ],
+      "description": "Use of Hard-coded, Security-relevant Constants in GitHub repository deepset-ai/haystack prior to 0.1.30.",
+      "has_exploit_tag": true,
+      "id": "CVE-2023-1712",
+      "last_modified": "2026-06-17T05:28:35.750",
+      "products": [
+        "deepset:haystack"
+      ],
+      "published": "2023-03-30T10:15:07.217",
+      "references": [
+        {
+          "tags": [
+            "Patch"
+          ],
+          "url": "https://github.com/deepset-ai/haystack/commit/5fc84904f198de661d5b933fde756aa922bf09f1"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://huntr.dev/bounties/9a6b1fb4-ec9b-4cfa-af1e-9ce304924829"
+        },
+        {
+          "tags": [
+            "Patch"
+          ],
+          "url": "https://github.com/deepset-ai/haystack/commit/5fc84904f198de661d5b933fde756aa922bf09f1"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Issue Tracking",
+            "Patch",
+            "Third Party Advisory"
+          ],
+          "url": "https://huntr.dev/bounties/9a6b1fb4-ec9b-4cfa-af1e-9ce304924829"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
   "CVE-2023-20511": {
     "added": "2026-09-01",
     "checks_done": 8,
@@ -33154,6 +33208,177 @@
         {
           "tags": [],
           "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/YQ4ZGY5MDDHBEOQTD4IIA2RFID3ATPXA/"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2023-28502": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-120",
+        "CWE-787"
+      ],
+      "description": "Rocket Software UniData versions prior to 8.2.4 build 3003 and UniVerse versions prior to 11.3.5 build 1001 or 12.2.1 build 2002 suffer from a stack-based buffer overflow in the \"udadmin\" service that can lead to remote code execution as the root user.",
+      "has_exploit_tag": false,
+      "id": "CVE-2023-28502",
+      "last_modified": "2026-06-17T05:47:53.383",
+      "products": [
+        "linux:linux_kernel",
+        "rocketsoftware:unidata",
+        "rocketsoftware:universe"
+      ],
+      "published": "2023-03-29T21:15:08.080",
+      "references": [
+        {
+          "tags": [],
+          "url": "http://packetstormsecurity.com/files/171853/Rocket-Software-Unidata-8.2.4-Build-3003-Buffer-Overflow.html"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.rapid7.com/blog/post/2023/03/29/multiple-vulnerabilities-in-rocket-software-unirpc-server-fixed/"
+        },
+        {
+          "tags": [],
+          "url": "http://packetstormsecurity.com/files/171853/Rocket-Software-Unidata-8.2.4-Build-3003-Buffer-Overflow.html"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.rapid7.com/blog/post/2023/03/29/multiple-vulnerabilities-in-rocket-software-unirpc-server-fixed/"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2023-28503": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-798"
+      ],
+      "description": "Rocket Software UniData versions prior to 8.2.4 build 3003 and UniVerse versions prior to 11.3.5 build 1001 or 12.2.1 build 2002 suffer from an authentication bypass vulnerability, where a special username with a deterministic password can be leveraged to bypass authentication checks and execute OS commands as the root user.",
+      "has_exploit_tag": false,
+      "id": "CVE-2023-28503",
+      "last_modified": "2026-06-17T05:47:53.547",
+      "products": [
+        "linux:linux_kernel",
+        "rocketsoftware:unidata",
+        "rocketsoftware:universe"
+      ],
+      "published": "2023-03-29T21:15:08.123",
+      "references": [
+        {
+          "tags": [],
+          "url": "http://packetstormsecurity.com/files/171854/Rocket-Software-Unidata-udadmin_server-Authentication-Bypass.html"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.rapid7.com/blog/post/2023/03/29/multiple-vulnerabilities-in-rocket-software-unirpc-server-fixed/"
+        },
+        {
+          "tags": [],
+          "url": "http://packetstormsecurity.com/files/171854/Rocket-Software-Unidata-udadmin_server-Authentication-Bypass.html"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.rapid7.com/blog/post/2023/03/29/multiple-vulnerabilities-in-rocket-software-unirpc-server-fixed/"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2023-28504": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-120",
+        "CWE-787"
+      ],
+      "description": "Rocket Software UniData versions prior to 8.2.4 build 3003 and UniVerse versions prior to 11.3.5 build 1001 or 12.2.1 build 2002 suffer from a stack-based buffer overflow that can lead to remote code execution as the root user.",
+      "has_exploit_tag": false,
+      "id": "CVE-2023-28504",
+      "last_modified": "2026-06-17T05:47:53.727",
+      "products": [
+        "linux:linux_kernel",
+        "rocketsoftware:unidata",
+        "rocketsoftware:universe"
+      ],
+      "published": "2023-03-29T21:15:08.170",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.rapid7.com/blog/post/2023/03/29/multiple-vulnerabilities-in-rocket-software-unirpc-server-fixed/"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.rapid7.com/blog/post/2023/03/29/multiple-vulnerabilities-in-rocket-software-unirpc-server-fixed/"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2023-28507": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-400"
+      ],
+      "description": "Rocket Software UniData versions prior to 8.2.4 build 3003 and UniVerse versions prior to 11.3.5 build 1001 or 12.2.1 build 2002 suffer from a memory-exhaustion issue, where a decompression routine will allocate increasing amounts of memory until all system memory is exhausted and the forked process crashes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2023-28507",
+      "last_modified": "2026-06-17T05:47:54.267",
+      "products": [
+        "linux:linux_kernel",
+        "rocketsoftware:unidata",
+        "rocketsoftware:universe"
+      ],
+      "published": "2023-03-29T21:15:08.307",
+      "references": [
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.rapid7.com/blog/post/2023/03/29/multiple-vulnerabilities-in-rocket-software-unirpc-server-fixed/"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://www.rapid7.com/blog/post/2023/03/29/multiple-vulnerabilities-in-rocket-software-unirpc-server-fixed/"
         }
       ]
     },
@@ -166287,6 +166512,32 @@
     },
     "next_check": "2026-11-12"
   },
+  "CVE-2026-66269": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-470"
+      ],
+      "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Protection mechanism bypass.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-66269",
+      "last_modified": "2026-09-17T11:17:02.693",
+      "products": [],
+      "published": "2026-09-17T11:17:02.693",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-us/000506586/dsa-2026-403-security-update-for-dell-openmanage-server-administrator-omsa-network-access-vulnerabilitiesv"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
   "CVE-2026-6627": {
     "added": "2026-08-06",
     "checks_done": 9,
@@ -253618,36 +253869,6 @@
     },
     "next_check": "2026-11-04"
   },
-  "CVE-2026-76460": {
-    "added": "2026-09-17",
-    "checks_done": 0,
-    "cve": {
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-648"
-      ],
-      "description": "A vulnerability in an API of Cisco Identity Services Engine (ISE) could allow an unauthenticated, remote attacker to bypass authentication.\r\n\r\nThis vulnerability is due to insufficient authentication control on an API endpoint. An attacker could exploit this vulnerability by sending a crafted request to an affected API endpoint. A successful exploit could allow the attacker to gain unauthorized access to the affected device by bypassing the web-based management interface.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-76460",
-      "last_modified": "2026-09-16T21:17:21.430",
-      "products": [],
-      "published": "2026-09-16T21:17:21.430",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5"
-        },
-        {
-          "tags": [],
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-76460"
-        }
-      ]
-    },
-    "next_check": "2026-09-18"
-  },
   "CVE-2026-76560": {
     "added": "2026-09-08",
     "checks_done": 7,
@@ -267640,6 +267861,34 @@
     },
     "next_check": "2026-09-24"
   },
+  "CVE-2026-78428": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "For users authenticated through SAML or OpenID Connect (OIDC), this vulnerability can result in one user receiving another user's authenticated session when multiple SSO login attempts occur concurrently",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-78428",
+      "last_modified": "2026-09-17T10:17:03.760",
+      "products": [],
+      "published": "2026-09-17T10:17:03.760",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.suse.com/show_bug.cgi?id=1279937"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/neuvector/neuvector/security/advisories/GHSA-c6rx-pmvf-m3jx"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
   "CVE-2026-78434": {
     "added": "2026-08-25",
     "checks_done": 8,
@@ -281198,6 +281447,32 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-81440": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-798"
+      ],
+      "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Use of Hard-coded Credentials vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81440",
+      "last_modified": "2026-09-17T12:18:27.210",
+      "products": [],
+      "published": "2026-09-17T12:18:27.210",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-us/000506586/dsa-2026-403-security-update-for-dell-openmanage-server-administrator-omsa-network-access-vulnerabilitiesv"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
   "CVE-2026-81467": {
     "added": "2026-09-11",
     "checks_done": 6,
@@ -281245,6 +281520,162 @@
         {
           "tags": [],
           "url": "https://www.dell.com/support/kbdoc/en-us/000502746/dsa-2026-389-security-update-for-dell-thinos-10-for-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-81474": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-122"
+      ],
+      "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Heap-based Buffer Overflow vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81474",
+      "last_modified": "2026-09-17T11:17:03.077",
+      "products": [],
+      "published": "2026-09-17T11:17:03.077",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-us/000506586/dsa-2026-403-security-update-for-dell-openmanage-server-administrator-omsa-network-access-vulnerabilitiesv"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-81475": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Missing Authentication for Critical Function vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Remote execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81475",
+      "last_modified": "2026-09-17T12:18:27.457",
+      "products": [],
+      "published": "2026-09-17T12:18:27.457",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-us/000506586/dsa-2026-403-security-update-for-dell-openmanage-server-administrator-omsa-network-access-vulnerabilitiesv"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-81476": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Remote execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81476",
+      "last_modified": "2026-09-17T12:18:27.580",
+      "products": [],
+      "published": "2026-09-17T12:18:27.580",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-us/000506586/dsa-2026-403-security-update-for-dell-openmanage-server-administrator-omsa-network-access-vulnerabilitiesv"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-81477": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-122"
+      ],
+      "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Heap-based Buffer Overflow vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81477",
+      "last_modified": "2026-09-17T12:18:27.710",
+      "products": [],
+      "published": "2026-09-17T12:18:27.710",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-us/000506586/dsa-2026-403-security-update-for-dell-openmanage-server-administrator-omsa-network-access-vulnerabilitiesv"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-81478": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-321"
+      ],
+      "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Use of Hard-coded Cryptographic Key vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Unauthorized access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81478",
+      "last_modified": "2026-09-17T12:18:27.830",
+      "products": [],
+      "published": "2026-09-17T12:18:27.830",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-us/000506586/dsa-2026-403-security-update-for-dell-openmanage-server-administrator-omsa-network-access-vulnerabilitiesv"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-81480": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Stack-based Buffer Overflow vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-81480",
+      "last_modified": "2026-09-17T12:18:28.080",
+      "products": [],
+      "published": "2026-09-17T12:18:28.080",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-us/000506586/dsa-2026-403-security-update-for-dell-openmanage-server-administrator-omsa-network-access-vulnerabilitiesv"
         }
       ]
     },
@@ -353476,6 +353907,58 @@
     },
     "next_check": "2026-09-18"
   },
+  "CVE-2026-90822": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "FatPipe MPVPN, WARP, and IPVPN appliances running the end-of-life firmware version 10.1.2r60p100 contain an OS command injection vulnerability in the xtremed daemon. An unauthenticated remote attacker with access to the affected management interface can submit crafted input to the AuthFormServlet endpoint, causing authentication data to be processed by a shell and allowing arbitrary commands to execute as root.\n\nThe affected management interface is disabled by default and must be affirmatively enabled by the customer before the endpoint becomes reachable. FatPipe recommends restricting management access to trusted administrative networks and using WAN access control lists to limit access to trusted sources.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90822",
+      "last_modified": "2026-09-17T12:18:28.713",
+      "products": [],
+      "published": "2026-09-17T12:18:28.713",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.securifera.com/advisories/"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-90823": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "FatPipe MPVPN, WARP, and IPVPN appliances running the end-of-life firmware version 10.1.2r60p100 contain a stack-based buffer overflow in /usr/sbin/auth_user_pass. An unauthenticated remote attacker with access to the affected management interface can submit a crafted authentication request that reaches an unchecked copy into a fixed-size stack buffer, potentially allowing arbitrary code execution as root.\n\nThe affected management interface is disabled by default and must be affirmatively enabled by the customer before the endpoint becomes reachable. FatPipe recommends restricting management access to trusted administrative networks and using WAN access control lists to limit access to trusted sources.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90823",
+      "last_modified": "2026-09-17T12:18:28.843",
+      "products": [],
+      "published": "2026-09-17T12:18:28.843",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.securifera.com/advisories/"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
   "CVE-2026-90840": {
     "added": "2026-09-15",
     "checks_done": 2,
@@ -365191,6 +365674,266 @@
         {
           "tags": [],
           "url": "https://www.geovision.com.tw/cyber_security.php"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-92860": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "A security flaw has been discovered in rcourtman Pulse up to 6.0.4/6.1.0-rc.4. Affected by this issue is the function fmt.Sprintf of the file /api/security/quick-setup of the component Quick Security Setup Handler. The manipulation of the argument Username results in improper input validation. The attack may be performed from remote. Upgrading the affected component is advised.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92860",
+      "last_modified": "2026-09-17T12:18:29.927",
+      "products": [],
+      "published": "2026-09-17T12:18:29.927",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/rcourtman/Pulse/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/rcourtman/Pulse/releases/tag/v6.1.0"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/rcourtman/Pulse/security/advisories/GHSA-rr3f-jjrr-3qxv"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-92860"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/941807"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/406309"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/406309/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-92903": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Improper input validation in Snowflake CLI versions prior to 3.27.0 allowed unsanitized user-controlled values to be interpolated into SQL strings that are executed as multi-statement queries. An attacker who is able to supply a malicious project configuration file or craft command-line input can cause Snowflake CLI to execute attacker-controlled SQL statements in the context of the victim's Snowflake session and active role. Successful exploitation requires either write or pull-request access to a project repository whose CI/CD pipeline runs Snowflake CLI under an elevated service account role, or the ability to supply untrusted input to CLI-wrapping automation. Impact is limited by the privileges held by the configured Snowflake role at execution time. The fix is available in Snowflake CLI version 3.27.0, which also addresses several additional security findings. Users must manually upgrade.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92903",
+      "last_modified": "2026-09-17T11:17:03.460",
+      "products": [],
+      "published": "2026-09-17T11:17:03.460",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/snowflakedb/snowflake-cli/releases/tag/v3.27.0"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-92912": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-330"
+      ],
+      "description": "AVideo through c3edcc274c389816d434acadac07ee78eaf330c1 uses cryptographically weak uniqid() values for RTMP publish keys in LiveTransmition, reducing key entropy to approximately one million possibilities per creation second. Attackers who know the channel creation time can brute-force the five-digit microsecond component to forge valid stream keys and broadcast content as the channel owner.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92912",
+      "last_modified": "2026-09-17T12:18:30.123",
+      "products": [],
+      "published": "2026-09-17T12:18:30.123",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-h983-2mcw-672j"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-cryptographically-weak-prng-via-uniqid-stream-key"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-92913": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-330"
+      ],
+      "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 uses a cryptographically weak pseudo-random number generator when creating account activation / login pairing codes. getRandomCode() in objects/functions.php derives the code entirely from uniqid() (sprintf('%08x%05x', seconds, microseconds)) with a single non-CSPRNG rand() character used only as padding, reducing the code space to roughly 36 x 10^6 (~2^25) values for a known generation second. Because plugin/API/set.json.php?APIName=login_code can be called without authentication, it also serves as an oracle for the server's exact microtime. An unauthenticated remote attacker who guesses a valid, unexpired code (codes expire after 10 minutes) can redeem it at plugin/API/get.json.php?APIName=login_code to obtain the target account's email address and a User::getUserHash(users_id, '+1 year') value, a credential accepted in place of the account password for one year, resulting in account takeover. No patched version is available.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92913",
+      "last_modified": "2026-09-17T12:18:30.290",
+      "products": [],
+      "published": "2026-09-17T12:18:30.290",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-v65f-hc7x-wj62"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-weak-prng-activation-code-authentication-bypass"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-v65f-hc7x-wj62"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-92914": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "AVideo LoginControl contains an authentication bypass vulnerability in the PGP second factor verification that compares challenge responses using loose equality against an uninitialized session variable. Attackers with a victim's password can bypass the second factor by sending a parameter-less GET request to verifyChallenge.json.php, which evaluates null == null and marks authentication complete.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92914",
+      "last_modified": "2026-09-17T12:18:30.440",
+      "products": [],
+      "published": "2026-09-17T12:18:30.440",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-mvmf-jqg6-qhjf"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/avideo-logincontrol-pgp-second-factor-authentication-bypass"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-92915": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-770"
+      ],
+      "description": "WWBN AVideo through commit e01e41ecc (no patched version available) contains a broken access control flaw in objects/userVerifyEmail.php. The script disables the login requirement ($global['ignoreUserMustBeLoggedIn'] = 1), takes users_id directly from the query string, and calls User::sendVerificationLink() with no session requirement, no CSRF/global token, no relationship check between caller and target, and no enforceRateLimit() call. The only intended throttle is keyed to the caller's own session, so cookie-less requests are never limited. An unauthenticated remote attacker can therefore cause an arbitrary number of verification emails to be sent to any account ID, and can enumerate accounts and their verification status from the three distinct JSON responses (\"Verification Sent\", \"Already verified\", \"Unknown error\"). In addition, createVerificationCode() invokes $user->setRecoverPass() and saves the user, so each anonymous request writes a live password-recovery token onto the targeted account; that token is embedded in base64 in the verification link emailed to the account owner and is accepted by objects/userRecoverPassSave.json.php as the credential for setting a new password.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92915",
+      "last_modified": "2026-09-17T12:18:30.573",
+      "products": [],
+      "published": "2026-09-17T12:18:30.573",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/WWBN/AVideo/security/advisories/GHSA-rg4h-fcmm-8w26"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/wwbn-avideo-userverifyemail-php-unauthenticated-access-control"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-92916": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-200"
+      ],
+      "description": "Grav is a flat-file CMS. In Grav 1.7.0 through 1.7.53.2 and 2.0.0 through 2.0.21, when the debugger is enabled (system.debugger.enabled: true, which is not the default), the Clockwork profiler endpoint is exposed without authentication: InitializeProcessor::handleDebuggerRequest() intercepts any path containing /__clockwork/ during bootstrap and passes it to Debugger::debuggerRequest(), which performs no user lookup, IP restriction, or Clockwork authenticator check, and also supports anonymous pagination over the entire stored history. With the shipped censored: false default, each stored record contains raw request cookies (including Grav's session cookie, whose value is the PHP session id, allowing an attacker to resume another user's session, including an authenticated admin's), the full parsed request body (Grav's login form posts data[username]/data[password], so passwords are stored in plaintext because Clockwork's password filter only inspects top-level keys), and the site's entire system and plugin configuration, including operator-saved secrets such as SMTP credentials, third-party API keys, and licence keys. Authorization and X-API-Token headers are stored even when censored: true. On Grav 2.0, setting provider: debugbar does not avoid the issue because Grav forces the Clockwork provider for requests preferring a JSON response. The issue is fixed in 1.7.53.4 and 2.0.22, which restrict /__clockwork/ to server-local requests or requests presenting the new system.debugger.token secret and strip cookies and credential headers from stored records. Workarounds include setting debugger.enabled: false or blocking /__clockwork/ at the web server or CDN.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92916",
+      "last_modified": "2026-09-17T12:18:30.830",
+      "products": [],
+      "published": "2026-09-17T12:18:30.710",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/getgrav/grav/security/advisories/GHSA-q3ff-cj6v-rr5g"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/grav-through-2.0.21-unauthenticated-information-disclosure-via-clockwork"
+        }
+      ]
+    },
+    "next_check": "2026-09-18"
+  },
+  "CVE-2026-92917": {
+    "added": "2026-09-17",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-200"
+      ],
+      "description": "Grav is a flat-file CMS. In versions 2.0.0-rc.1 through 2.0.21, the Twig content sandbox fails to restrict the dump and serialize filters (print_r, vardump, json_encode, yaml_encode, string): GravExtension::assertSandboxDumpSafe() determines sandbox state by calling SandboxExtension::isSandboxed() without a Source argument, which reports only the global sandbox flag that Grav never enables, so the guard added in GHSA-mc5q-6hpj-rp7j never executes. As a result, an authenticated user with page-edit rights can render {{ config|print_r }} in page content with Twig processing enabled and dump Grav's entire merged configuration — print_r reflects the real Config object held in a private property of the SandboxConfig facade, bypassing its path redaction — exposing plugin secrets such as SMTP credentials, API tokens, webhook secrets and cache backend passwords. Grav 1.7 is not affected because it ships no Twig content sandbox. The issue is fixed in 2.0.22, where the affected filters are registered with Twig's needs_is_sandboxed flag.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92917",
+      "last_modified": "2026-09-17T12:18:31.017",
+      "products": [],
+      "published": "2026-09-17T12:18:30.907",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/getgrav/grav/security/advisories/GHSA-rfr9-7h4p-gx2x"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/grav-2.0.0-rc.1-through-2.0.21-configuration-disclosure-via-print-r"
         }
       ]
     },
