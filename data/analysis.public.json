@@ -1,1 +1,32 @@
-{}
+{
+  "CVE-2024-39896": {
+    "package": "NPM:directus"
+  },
+  "CVE-2026-57173": {
+    "package": "PIP:vllm"
+  },
+  "CVE-2026-59879": {
+    "package": "NPM:immutable"
+  },
+  "CVE-2026-59965": {
+    "package": "NPM:@jhb.software/payload-alt-text-plugin"
+  },
+  "CVE-2026-61560": {
+    "package": "NPM:@zereight/mcp-gitlab"
+  },
+  "CVE-2026-63127": {
+    "package": "RUST:rmcp"
+  },
+  "CVE-2026-63128": {
+    "package": "RUST:rmcp"
+  },
+  "CVE-2026-63671": {
+    "package": "NPM:@nuxtjs/mdc"
+  },
+  "CVE-2026-68904": {
+    "package": "NPM:node-opcua"
+  },
+  "CVE-2026-81192": {
+    "package": "NUGET:OpenTelemetry.Resources.Host"
+  }
+}
