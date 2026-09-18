@@ -1,1 +1,116 @@
-{}
+{
+  "CVE-2026-59823": {
+    "package": "PIP:litellm"
+  },
+  "CVE-2026-61793": {
+    "package": "NPM:nuxt-og-image"
+  },
+  "CVE-2026-62672": {
+    "package": "COMPOSER:getgrav/grav"
+  },
+  "CVE-2026-62949": {
+    "package": "PIP:asyncssh"
+  },
+  "CVE-2026-63126": {
+    "package": "MAVEN:com.squareup.wire:wire-runtime"
+  },
+  "CVE-2026-63459": {
+    "package": "NPM:@vendure/dashboard"
+  },
+  "CVE-2026-63460": {
+    "package": "NPM:vendure/core"
+  },
+  "CVE-2026-63472": {
+    "package": "NPM:@vendure/core"
+  },
+  "CVE-2026-63506": {
+    "package": "NPM:next-tinacms-azure"
+  },
+  "CVE-2026-64684": {
+    "package": "RUST:rmcp"
+  },
+  "CVE-2026-65608": {
+    "package": "COMPOSER:getgrav/grav"
+  },
+  "CVE-2026-69089": {
+    "package": "COMPOSER:getgrav/grav"
+  },
+  "CVE-2026-69147": {
+    "package": "PIP:vllm"
+  },
+  "CVE-2026-69197": {
+    "package": "NUGET:Umbraco.Cms"
+  },
+  "CVE-2026-71485": {
+    "package": "GO:github.com/centrifugal/centrifugo"
+  },
+  "CVE-2026-71538": {
+    "package": "NPM:@cyclonedx/cyclonedx-npm"
+  },
+  "CVE-2026-75513": {
+    "package": "NUGET:Marten"
+  },
+  "CVE-2026-75516": {
+    "package": "MAVEN:com.rabbitmq:amqp-client"
+  },
+  "CVE-2026-76825": {
+    "package": "PIP:RestrictedPython"
+  },
+  "CVE-2026-77360": {
+    "package": "NPM:@orpc/server"
+  },
+  "CVE-2026-77401": {
+    "package": "PIP:AccessControl"
+  },
+  "CVE-2026-77403": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-77404": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-77405": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-77406": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-77407": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-77408": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-77410": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-77411": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-77412": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-82410": {
+    "package": "GO:github.com/pocketbase/pocketbase"
+  },
+  "CVE-2026-85078": {
+    "package": "PIP:sanic"
+  },
+  "CVE-2026-85715": {
+    "package": "NPM:exifreader"
+  },
+  "CVE-2026-85717": {
+    "package": "MAVEN:org.asynchttpclient:async-http-client"
+  },
+  "CVE-2026-85721": {
+    "package": "MAVEN:org.asynchttpclient:async-http-client"
+  },
+  "CVE-2026-85731": {
+    "package": "GO:oras.land/oras-go/v2"
+  },
+  "CVE-2026-85756": {
+    "package": "NUGET:SSH.NET"
+  },
+  "CVE-2026-86043": {
+    "package": "GO:github.com/zalando/skipper"
+  }
+}
