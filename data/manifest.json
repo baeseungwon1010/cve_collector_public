@@ -5741,6 +5741,15 @@
     "poc_source": "github_search",
     "published": "2026-09-12T03:16:30.473"
   },
+  "CVE-2026-85721": {
+    "cvss_score": 7.5,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-17T16:18:16.430"
+  },
   "CVE-2026-85769": {
     "cvss_score": 6.5,
     "cvss_severity": "MEDIUM",
