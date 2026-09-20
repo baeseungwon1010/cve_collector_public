@@ -1727,6 +1727,15 @@
     "poc_source": "github_search",
     "published": "2023-12-20T19:15:08.740"
   },
+  "CVE-2023-30990": {
+    "cvss_score": 8.6,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2025-08-29",
+    "poc_source": "github_search",
+    "published": "2023-07-04T00:15:09.927"
+  },
   "CVE-2023-34992": {
     "cvss_score": 10.0,
     "cvss_severity": "CRITICAL",
@@ -1735,6 +1744,15 @@
     "poc_published_date": "2024-05-17",
     "poc_source": "github_search",
     "published": "2023-10-10T17:15:11.607"
+  },
+  "CVE-2023-38632": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2023-07-21",
+    "poc_source": "github_search",
+    "published": "2023-07-21T02:15:09.840"
   },
   "CVE-2023-40029": {
     "cvss_score": 9.9,
@@ -2429,6 +2447,15 @@
     "poc_source": "github_search",
     "published": "2026-09-14T22:16:56.950"
   },
+  "CVE-2026-13447": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-05T06:17:09.403"
+  },
   "CVE-2026-13716": {
     "cvss_score": 9.1,
     "cvss_severity": "CRITICAL",
@@ -2708,6 +2735,15 @@
     "poc_source": "github_search",
     "published": "2026-08-28T22:16:46.867"
   },
+  "CVE-2026-18937": {
+    "cvss_score": 9.0,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-08-19T06:17:38.847"
+  },
   "CVE-2026-18953": {
     "cvss_score": 8.6,
     "cvss_severity": "HIGH",
@@ -2905,6 +2941,15 @@
     "poc_published_date": "2026-09-03",
     "poc_source": "github_search",
     "published": "2026-08-25T12:16:23.783"
+  },
+  "CVE-2026-19952": {
+    "cvss_score": 7.5,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-01T05:17:09.747"
   },
   "CVE-2026-20127": {
     "cvss_score": 10.0,
@@ -4922,6 +4967,15 @@
     "poc_source": "github_search",
     "published": "2026-09-07T21:17:30.863"
   },
+  "CVE-2026-75816": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-06T03:17:16.607"
+  },
   "CVE-2026-75827": {
     "cvss_score": 8.8,
     "cvss_severity": "HIGH",
@@ -5219,6 +5273,15 @@
     "poc_source": "nvd_exploit_tag",
     "published": "2026-08-23T10:16:28.757"
   },
+  "CVE-2026-78159": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-12T08:16:24.377"
+  },
   "CVE-2026-78465": {
     "cvss_score": 7.0,
     "cvss_severity": "HIGH",
@@ -5299,6 +5362,15 @@
     "poc_published_date": null,
     "poc_source": "nvd_exploit_tag",
     "published": "2026-08-25T02:16:53.033"
+  },
+  "CVE-2026-79294": {
+    "cvss_score": 6.1,
+    "cvss_severity": "MEDIUM",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-11",
+    "poc_source": "github_search",
+    "published": "2026-09-18T14:18:48.077"
   },
   "CVE-2026-79513": {
     "cvss_score": 6.5,
@@ -5407,6 +5479,24 @@
     "poc_published_date": "2026-09-17",
     "poc_source": "github_search",
     "published": "2026-09-02T06:17:18.487"
+  },
+  "CVE-2026-81294": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-02T12:17:12.783"
+  },
+  "CVE-2026-81648": {
+    "cvss_score": 10.0,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-13T21:17:01.930"
   },
   "CVE-2026-81722": {
     "cvss_score": 7.5,
@@ -5524,6 +5614,15 @@
     "poc_published_date": "2026-09-08",
     "poc_source": "github_search",
     "published": "2026-09-01T22:17:13.290"
+  },
+  "CVE-2026-84434": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-19T03:17:15.573"
   },
   "CVE-2026-84645": {
     "cvss_score": 8.8,
@@ -6074,6 +6173,15 @@
     "poc_source": "nvd_exploit_tag",
     "published": "2026-09-10T18:18:16.243"
   },
+  "CVE-2026-89274": {
+    "cvss_score": 9.1,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-19T03:17:16.587"
+  },
   "CVE-2026-9055": {
     "cvss_score": 9.8,
     "cvss_severity": "CRITICAL",
@@ -6101,6 +6209,15 @@
     "poc_source": "github_search",
     "published": "2026-09-16T14:17:13.947"
   },
+  "CVE-2026-92229": {
+    "cvss_score": 9.1,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-19T03:17:17.040"
+  },
   "CVE-2026-92805": {
     "cvss_score": 9.8,
     "cvss_severity": "CRITICAL",
@@ -6127,5 +6244,14 @@
     "poc_published_date": "2026-09-18",
     "poc_source": "github_search",
     "published": "2026-09-18T00:17:49.693"
+  },
+  "CVE-2026-93659": {
+    "cvss_score": 8.7,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-20",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-18T15:17:22.510"
   }
 }
