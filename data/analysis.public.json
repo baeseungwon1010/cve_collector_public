@@ -1,5 +1,5 @@
 {
-  "CVE-2026-54526": {
-    "package": "GO:github.com/argoproj/argo-workflows"
+  "CVE-2025-66455": {
+    "package": "PIP:lmdeploy"
   }
 }
