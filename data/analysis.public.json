@@ -1,1 +1,5 @@
-{}
+{
+  "CVE-2026-54526": {
+    "package": "GO:github.com/argoproj/argo-workflows"
+  }
+}

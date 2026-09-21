@@ -1241,6 +1241,33 @@
     "poc_source": "github_search",
     "published": "2017-06-05T11:29:00.183"
   },
+  "CVE-2017-9544": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-21",
+    "poc_published_date": "2019-01-02",
+    "poc_source": "github_search",
+    "published": "2017-06-12T06:29:00.557"
+  },
+  "CVE-2017-9769": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-21",
+    "poc_published_date": "2020-11-03",
+    "poc_source": "github_search",
+    "published": "2017-08-02T19:29:01.100"
+  },
+  "CVE-2017-9791": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": true,
+    "poc_confirmed_date": "2026-09-21",
+    "poc_published_date": "2017-07-07",
+    "poc_source": "github_search",
+    "published": "2017-07-10T16:29:00.277"
+  },
   "CVE-2018-0101": {
     "cvss_score": 10.0,
     "cvss_severity": "CRITICAL",
@@ -4517,6 +4544,15 @@
     "poc_source": "github_search",
     "published": "2026-08-05T08:16:43.367"
   },
+  "CVE-2026-71217": {
+    "cvss_score": 7.5,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-21",
+    "poc_published_date": "2026-09-20",
+    "poc_source": "github_search",
+    "published": "2026-08-11T09:17:14.057"
+  },
   "CVE-2026-71225": {
     "cvss_score": 6.5,
     "cvss_severity": "MEDIUM",
@@ -6289,5 +6325,23 @@
     "poc_published_date": "2026-09-19",
     "poc_source": "github_search",
     "published": "2026-09-18T15:17:22.510"
+  },
+  "CVE-2026-93958": {
+    "cvss_score": 9.1,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-21",
+    "poc_published_date": "2026-09-20",
+    "poc_source": "github_search",
+    "published": "2026-09-20T02:16:53.307"
+  },
+  "CVE-2026-94036": {
+    "cvss_score": 8.8,
+    "cvss_severity": "HIGH",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-21",
+    "poc_published_date": "2026-09-19",
+    "poc_source": "github_search",
+    "published": "2026-09-20T16:16:55.490"
   }
 }
