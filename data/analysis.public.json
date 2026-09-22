@@ -1,1 +1,32 @@
-{}
+{
+  "CVE-2024-9355": {
+    "package": "GO:github.com/golang-fips/openssl"
+  },
+  "CVE-2025-66455": {
+    "package": "PIP:lmdeploy"
+  },
+  "CVE-2026-12249": {
+    "package": "GO:github.com/ubuntu/adsys"
+  },
+  "CVE-2026-42127": {
+    "package": "GO:github.com/grafana/grafana"
+  },
+  "CVE-2026-42129": {
+    "package": "GO:github.com/grafana/grafana"
+  },
+  "CVE-2026-56104": {
+    "package": "PIP:chainlit"
+  },
+  "CVE-2026-61628": {
+    "package": "GO:github.com/lucasdillmann/nginx-ignition"
+  },
+  "CVE-2026-61629": {
+    "package": "GO:github.com/lucasdillmann/nginx-ignition"
+  },
+  "CVE-2026-61687": {
+    "package": "GO:hatchet"
+  },
+  "CVE-2026-9029": {
+    "package": "GO:github.com/grafana/grafana"
+  }
+}
