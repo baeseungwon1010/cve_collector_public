@@ -1367,6 +1367,24 @@
     "poc_source": "github_search",
     "published": "2018-05-04T03:29:00.287"
   },
+  "CVE-2018-11510": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-22",
+    "poc_published_date": "2018-06-18",
+    "poc_source": "github_search",
+    "published": "2018-06-28T14:29:00.260"
+  },
+  "CVE-2018-1160": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-22",
+    "poc_published_date": "2020-05-12",
+    "poc_source": "github_search",
+    "published": "2018-12-20T21:29:00.477"
+  },
   "CVE-2018-16462": {
     "cvss_score": 10.0,
     "cvss_severity": "CRITICAL",
@@ -2591,6 +2609,15 @@
     "poc_source": "github_search",
     "published": "2026-09-14T22:16:56.950"
   },
+  "CVE-2026-13355": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-22",
+    "poc_published_date": "2026-09-22",
+    "poc_source": "github_search",
+    "published": "2026-09-22T05:16:54.960"
+  },
   "CVE-2026-13447": {
     "cvss_score": 9.8,
     "cvss_severity": "CRITICAL",
@@ -3013,6 +3040,15 @@
     "poc_published_date": "2026-08-17",
     "poc_source": "github_search",
     "published": "2026-08-17T20:16:41.910"
+  },
+  "CVE-2026-19658": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-22",
+    "poc_published_date": "2026-09-22",
+    "poc_source": "github_search",
+    "published": "2026-09-22T05:16:55.167"
   },
   "CVE-2026-19679": {
     "cvss_score": 8.8,
@@ -6442,6 +6478,15 @@
     "poc_published_date": "2026-09-19",
     "poc_source": "github_search",
     "published": "2026-09-19T03:17:17.040"
+  },
+  "CVE-2026-92701": {
+    "cvss_score": 9.1,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-22",
+    "poc_published_date": "2026-07-06",
+    "poc_source": "github_search",
+    "published": "2026-09-18T18:18:16.103"
   },
   "CVE-2026-92805": {
     "cvss_score": 9.8,
