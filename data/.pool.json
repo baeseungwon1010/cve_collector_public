@@ -95,78 +95,6 @@
     },
     "next_check": "2026-10-29"
   },
-  "CVE-2000-0944": {
-    "added": "2026-07-31",
-    "checks_done": 9,
-    "cve": {
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-522"
-      ],
-      "description": "CGI Script Center News Update 1.1 does not properly validate the original news administration password during a password change operation, which allows remote attackers to modify the password without knowing the original password.",
-      "has_exploit_tag": true,
-      "id": "CVE-2000-0944",
-      "last_modified": "2026-06-16T21:52:49.477",
-      "products": [
-        "cgi:script_center_news_update"
-      ],
-      "published": "2000-12-19T05:00:00.000",
-      "references": [
-        {
-          "tags": [
-            "Broken Link",
-            "Vendor Advisory"
-          ],
-          "url": "http://archives.neohapsis.com/archives/bugtraq/2000-10/0402.html"
-        },
-        {
-          "tags": [
-            "Broken Link",
-            "Exploit",
-            "Third Party Advisory",
-            "VDB Entry",
-            "Vendor Advisory"
-          ],
-          "url": "http://www.securityfocus.com/bid/1881"
-        },
-        {
-          "tags": [
-            "Third Party Advisory",
-            "VDB Entry"
-          ],
-          "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/5433"
-        },
-        {
-          "tags": [
-            "Broken Link",
-            "Vendor Advisory"
-          ],
-          "url": "http://archives.neohapsis.com/archives/bugtraq/2000-10/0402.html"
-        },
-        {
-          "tags": [
-            "Broken Link",
-            "Exploit",
-            "Third Party Advisory",
-            "VDB Entry",
-            "Vendor Advisory"
-          ],
-          "url": "http://www.securityfocus.com/bid/1881"
-        },
-        {
-          "tags": [
-            "Third Party Advisory",
-            "VDB Entry"
-          ],
-          "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/5433"
-        }
-      ]
-    },
-    "next_check": "2026-10-29"
-  },
   "CVE-2000-1218": {
     "added": "2026-07-31",
     "checks_done": 9,
@@ -33340,6 +33268,32 @@
     },
     "next_check": "2026-11-06"
   },
+  "CVE-2022-4997": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "The jet-form-builder-stripe-gateway WordPress plugin before 1.1.0 does not sanitise and escape a payment token before using it in a SQL statement, allowing unauthenticated users to extract arbitrary data from the database, including password hashes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2022-4997",
+      "last_modified": "2026-09-23T11:17:08.480",
+      "products": [],
+      "published": "2026-09-23T06:16:59.060",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/368c38af-66c3-4500-ad50-87ada3abecd1/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2022-50997": {
     "added": "2026-08-12",
     "checks_done": 9,
@@ -36863,6 +36817,302 @@
     },
     "next_check": "2026-09-24"
   },
+  "CVE-2023-38317": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "An issue was discovered in OpenNDS before 10.1.3. It fails to sanitize the network interface name entry in the configuration file, allowing attackers that have direct or indirect access to this file to execute arbitrary OS commands.",
+      "has_exploit_tag": true,
+      "id": "CVE-2023-38317",
+      "last_modified": "2026-06-17T06:09:53.693",
+      "products": [
+        "opennds:opennds"
+      ],
+      "published": "2024-01-26T05:15:11.553",
+      "references": [
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/blob/master/ChangeLog"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/releases/tag/v10.1.3"
+        },
+        {
+          "tags": [
+            "Product"
+          ],
+          "url": "https://openwrt.org/docs/guide-user/services/captive-portal/opennds"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/resources/sierra21-vulnerabilities"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/blob/master/ChangeLog"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/releases/tag/v10.1.3"
+        },
+        {
+          "tags": [
+            "Product"
+          ],
+          "url": "https://openwrt.org/docs/guide-user/services/captive-portal/opennds"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/resources/sierra21-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2023-38318": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "An issue was discovered in OpenNDS before 10.1.3. It fails to sanitize the gateway FQDN entry in the configuration file, allowing attackers that have direct or indirect access to this file to execute arbitrary OS commands.",
+      "has_exploit_tag": true,
+      "id": "CVE-2023-38318",
+      "last_modified": "2026-06-17T06:09:53.897",
+      "products": [
+        "opennds:opennds"
+      ],
+      "published": "2024-01-26T05:15:11.970",
+      "references": [
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/blob/master/ChangeLog"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/releases/tag/v10.1.3"
+        },
+        {
+          "tags": [
+            "Product"
+          ],
+          "url": "https://openwrt.org/docs/guide-user/services/captive-portal/opennds"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/resources/sierra21-vulnerabilities"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/blob/master/ChangeLog"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/releases/tag/v10.1.3"
+        },
+        {
+          "tags": [
+            "Product"
+          ],
+          "url": "https://openwrt.org/docs/guide-user/services/captive-portal/opennds"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/resources/sierra21-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2023-38319": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "An issue was discovered in OpenNDS before 10.1.3. It fails to sanitize the FAS key entry in the configuration file, allowing attackers that have direct or indirect access to this file to execute arbitrary OS commands.",
+      "has_exploit_tag": true,
+      "id": "CVE-2023-38319",
+      "last_modified": "2026-06-17T06:09:54.080",
+      "products": [
+        "opennds:opennds"
+      ],
+      "published": "2024-01-26T05:15:12.063",
+      "references": [
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/blob/master/ChangeLog"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/releases/tag/v10.1.3"
+        },
+        {
+          "tags": [
+            "Product"
+          ],
+          "url": "https://openwrt.org/docs/guide-user/services/captive-portal/opennds"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/resources/sierra21-vulnerabilities"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/blob/master/ChangeLog"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/releases/tag/v10.1.3"
+        },
+        {
+          "tags": [
+            "Product"
+          ],
+          "url": "https://openwrt.org/docs/guide-user/services/captive-portal/opennds"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/resources/sierra21-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2023-38323": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "An issue was discovered in OpenNDS before 10.1.3. It fails to sanitize the status path script entry in the configuration file, allowing attackers that have direct or indirect access to this file to execute arbitrary OS commands.",
+      "has_exploit_tag": true,
+      "id": "CVE-2023-38323",
+      "last_modified": "2026-06-17T06:09:54.697",
+      "products": [
+        "opennds:opennds"
+      ],
+      "published": "2024-01-26T05:15:12.130",
+      "references": [
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/blob/master/ChangeLog"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/releases/tag/v10.1.3"
+        },
+        {
+          "tags": [
+            "Product"
+          ],
+          "url": "https://openwrt.org/docs/guide-user/services/captive-portal/opennds"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/resources/sierra21-vulnerabilities"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/blob/master/ChangeLog"
+        },
+        {
+          "tags": [
+            "Release Notes"
+          ],
+          "url": "https://github.com/openNDS/openNDS/releases/tag/v10.1.3"
+        },
+        {
+          "tags": [
+            "Product"
+          ],
+          "url": "https://openwrt.org/docs/guide-user/services/captive-portal/opennds"
+        },
+        {
+          "tags": [
+            "Exploit",
+            "Third Party Advisory"
+          ],
+          "url": "https://www.forescout.com/resources/sierra21-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2023-38734": {
     "added": "2026-09-20",
     "checks_done": 3,
@@ -39003,6 +39253,66 @@
     },
     "next_check": "2026-09-24"
   },
+  "CVE-2024-0933": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "A vulnerability was found in Niushop B2B2C V5 and classified as critical. Affected by this issue is some unknown functionality of the file \\app\\model\\Upload.php. The manipulation leads to unrestricted upload. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-252140. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2024-0933",
+      "last_modified": "2026-06-17T06:54:35.900",
+      "products": [
+        "niushop:b2b2c_multi-business"
+      ],
+      "published": "2024-01-26T17:15:11.340",
+      "references": [
+        {
+          "tags": [
+            "Permissions Required"
+          ],
+          "url": "https://docs.qq.com/doc/DYnNWeHdTVXZqZURH"
+        },
+        {
+          "tags": [
+            "Permissions Required"
+          ],
+          "url": "https://vuldb.com/?ctiid.252140"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://vuldb.com/?id.252140"
+        },
+        {
+          "tags": [
+            "Permissions Required"
+          ],
+          "url": "https://docs.qq.com/doc/DYnNWeHdTVXZqZURH"
+        },
+        {
+          "tags": [
+            "Permissions Required"
+          ],
+          "url": "https://vuldb.com/?ctiid.252140"
+        },
+        {
+          "tags": [
+            "Third Party Advisory"
+          ],
+          "url": "https://vuldb.com/?id.252140"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2024-11080": {
     "added": "2026-09-05",
     "checks_done": 8,
@@ -40519,6 +40829,32 @@
       ]
     },
     "next_check": "2026-11-19"
+  },
+  "CVE-2025-15696": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Real3D Flipbook  WordPress plugin before 5.4 does not sanitize or escape several flipbook editor fields before rendering them back in the admin editor, allowing users with the Author role and above to inject arbitrary web scripts that execute in the browser of any user who later opens the affected flipbook for editing, including administrators.",
+      "has_exploit_tag": false,
+      "id": "CVE-2025-15696",
+      "last_modified": "2026-09-23T11:17:09.653",
+      "products": [],
+      "published": "2026-09-23T06:17:00.710",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/7b454d8e-e2cd-4990-a72d-339b8065d359/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
   },
   "CVE-2025-24890": {
     "added": "2026-09-15",
@@ -45939,6 +46275,32 @@
     },
     "next_check": "2026-11-13"
   },
+  "CVE-2026-12370": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1336"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager, NetFlow Analyzer, and Network Configuration Manager versions 12.8.667 and below were vulnerable to a Server-Side Template Injection vulnerability in Configlet processing, which could lead to Remote Code Execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-12370",
+      "last_modified": "2026-09-23T13:17:26.177",
+      "products": [],
+      "published": "2026-09-23T12:17:05.373",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-12370.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-12384": {
     "added": "2026-09-18",
     "checks_done": 5,
@@ -50589,6 +50951,32 @@
     },
     "next_check": "2026-10-29"
   },
+  "CVE-2026-14321": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-400"
+      ],
+      "description": "The divi-dash WordPress plugin before 1.0.7 does not validate the source of the client IP address it uses for rate limiting and banning, allowing unauthenticated attackers to spoof arbitrary IP addresses in order to bypass rate limiting, ban chosen addresses from the feature, and grow a stored option without bound, resulting in denial of service.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-14321",
+      "last_modified": "2026-09-23T11:17:09.823",
+      "products": [],
+      "published": "2026-09-23T06:17:00.850",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/6f56b800-c8f6-4cd9-a137-c05b718db201/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-14323": {
     "added": "2026-09-18",
     "checks_done": 5,
@@ -52570,6 +52958,32 @@
     },
     "next_check": "2026-11-09"
   },
+  "CVE-2026-14913": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager and Firewall Analyzer versions 12.8.669 and below were vulnerable to an SQL Injection vulnerability in Rule Management Search Reports.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-14913",
+      "last_modified": "2026-09-23T13:17:27.290",
+      "products": [],
+      "published": "2026-09-23T12:17:05.507",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-14913.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-14923": {
     "added": "2026-07-31",
     "checks_done": 9,
@@ -53430,6 +53844,36 @@
         {
           "tags": [],
           "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/fe1e8c38-345a-4529-81ba-188a8dc58503?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-15027": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "CGServiSign developed by Changing has a OS Command Injection vulnerability. Unauthenticated remote attackers can induce victims to visit a malicious web page and inject arbitrary OS commands through the local service interface, resulting in command execution on the victim's local computer.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15027",
+      "last_modified": "2026-09-23T09:17:07.657",
+      "products": [],
+      "published": "2026-09-23T09:17:07.657",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/en/cp-139-11214-89281-2.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.twcert.org.tw/tw/cp-132-11213-28a81-1.html"
         }
       ]
     },
@@ -54586,6 +55030,32 @@
       ]
     },
     "next_check": "2026-10-04"
+  },
+  "CVE-2026-15358": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-428"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager and Network Configuration Manager versions before 12.8.671 were vulnerable to an unauthorized Path Traversal vulnerability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15358",
+      "last_modified": "2026-09-23T12:17:05.630",
+      "products": [],
+      "published": "2026-09-23T12:17:05.630",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-15358.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
   },
   "CVE-2026-15359": {
     "added": "2026-08-08",
@@ -59895,6 +60365,32 @@
       ]
     },
     "next_check": "2026-11-06"
+  },
+  "CVE-2026-16264": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "The Newsletters WordPress plugin before 4.18.1 does not perform an ownership check on some of its subscriber management actions, and issues a management session to unauthenticated visitors on request, allowing attackers to read any subscriber's personal data and overwrite any subscriber's record including their email address.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-16264",
+      "last_modified": "2026-09-23T11:17:09.977",
+      "products": [],
+      "published": "2026-09-23T06:17:00.963",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/0dd1de2d-e9bb-4c42-a78b-2643d43dfed6/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
   },
   "CVE-2026-16268": {
     "added": "2026-08-07",
@@ -94686,6 +95182,32 @@
     },
     "next_check": "2026-11-11"
   },
+  "CVE-2026-19599": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager MSP versions 12.8.709 and below were vulnerable to a Remote Code Execution vulnerability in the Notification Profile module.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19599",
+      "last_modified": "2026-09-23T13:17:27.400",
+      "products": [],
+      "published": "2026-09-23T13:17:27.400",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-19599.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-19611": {
     "added": "2026-08-21",
     "checks_done": 9,
@@ -109234,6 +109756,32 @@
     },
     "next_check": "2026-09-27"
   },
+  "CVE-2026-31377": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "An Improper Authentication vulnerability in the Apache Doris Frontend (FE) meta service allows an unauthenticated remote attacker to access internal metadata service endpoints.\n\n\n\nThe affected endpoints relied on client-supplied node information for authentication without providing sufficient authentication of the requesting party. Under certain network configurations, a remote attacker may be able to bypass the intended access control and access internal FE metadata interfaces, potentially exposing sensitive cluster information.\n\n\n\nThis issue affects Apache Doris: from 2.0.0 through 2.0.*, from 2.1.0 through 2.1.*, from 3.0.0 through 3.0.*, from 3.1.0 through 3.1.*, from 4.0.0 before 4.0.8, and from 4.1.0 before 4.1.4. Versions 1.2.x and earlier are not affected by this header-trust vulnerability.\n\n\n\n\nUsers are recommended to upgrade to a fixed release (4.0.8 or 4.1.4), which fixes the issue.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-31377",
+      "last_modified": "2026-09-23T09:17:08.380",
+      "products": [],
+      "published": "2026-09-23T09:17:08.380",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/rf4ocqmzxvnwnxpsooj2lkzjl68b1m9q"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-3141": {
     "added": "2026-08-06",
     "checks_done": 9,
@@ -113550,6 +114098,32 @@
         {
           "tags": [],
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2464122"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-42801": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-476"
+      ],
+      "description": "NULL pointer dereference vulnerability in ASR Crane，Falcon on Linux (as_rrc module) allows Pointer Manipulation.\n\nThis vulnerability is associated with program file 3g.mod/lib/src/urrsir.c.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42801",
+      "last_modified": "2026-09-23T09:17:08.727",
+      "products": [],
+      "published": "2026-09-23T09:17:08.727",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.asrmicro.com/en/goods/psirt?cid=45"
         }
       ]
     },
@@ -265187,6 +265761,32 @@
     },
     "next_check": "2026-09-26"
   },
+  "CVE-2026-75799": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "The YAHMAN Add-ons WordPress plugin before 0.9.31 does not validate the type of the remote files it caches in a publicly accessible directory, allowing unauthenticated attackers to write arbitrary PHP files on the server and achieve RCE when the relevant feature is enabled.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-75799",
+      "last_modified": "2026-09-23T11:17:11.110",
+      "products": [],
+      "published": "2026-09-23T06:17:01.710",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/b12397e7-5d9b-42bf-bd31-5d3401bc4600/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-75807": {
     "added": "2026-08-30",
     "checks_done": 8,
@@ -265288,6 +265888,32 @@
       ]
     },
     "next_check": "2026-09-27"
+  },
+  "CVE-2026-75825": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager versions 12.8.710 and below with the Application Manager Plugin enabled were vulnerable to an Authentication Bypass vulnerability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-75825",
+      "last_modified": "2026-09-23T13:17:28.557",
+      "products": [],
+      "published": "2026-09-23T13:17:28.557",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-75825.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
   },
   "CVE-2026-75828": {
     "added": "2026-08-19",
@@ -275925,6 +276551,84 @@
     },
     "next_check": "2026-10-08"
   },
+  "CVE-2026-76978": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager and Firewall Analyzer versions 12.8.709 and below were vulnerable to a Command Injection vulnerability in the Diagnose Settings feature.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76978",
+      "last_modified": "2026-09-23T13:17:29.153",
+      "products": [],
+      "published": "2026-09-23T13:17:29.153",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-76978.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-76979": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-91"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager and Firewall Analyzer versions 12.8.709 and below were vulnerable to an XML Injection vulnerability in the Rule Tracking Compare Policies feature.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76979",
+      "last_modified": "2026-09-23T13:17:29.273",
+      "products": [],
+      "published": "2026-09-23T13:17:29.273",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-76979.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-76980": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-20"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager and Firewall Analyzer versions 12.8.709 and below were vulnerable to a Data Exposure vulnerability in the Firewall Analyzer syslog collector.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76980",
+      "last_modified": "2026-09-23T13:17:29.393",
+      "products": [],
+      "published": "2026-09-23T13:17:29.393",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-76980.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-76986": {
     "added": "2026-08-31",
     "checks_done": 8,
@@ -276892,6 +277596,32 @@
       ]
     },
     "next_check": "2026-10-09"
+  },
+  "CVE-2026-77112": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Server-Side request forgery (SSRF) vulnerability in Global IT Informatics Technology Services Inc. Weoll allows Server Side Request Forgery.\n\nThis issue affects Weoll: before 3.2.45.44.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77112",
+      "last_modified": "2026-09-23T13:17:29.680",
+      "products": [],
+      "published": "2026-09-23T13:17:29.680",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1160"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
   },
   "CVE-2026-77115": {
     "added": "2026-08-24",
@@ -281841,6 +282571,32 @@
       ]
     },
     "next_check": "2026-11-20"
+  },
+  "CVE-2026-77791": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-400"
+      ],
+      "description": "Uncontrolled Resource Consumption vulnerability in Apache Tomcat during sending of WebSocket close message enabled a DoS attack.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M5 through 11.0.25, from 10.1.8 through 10.1.59, from 9.0.74 through 9.0.121.\n\n\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: from 8.5.88 through 8.5.100. Other unsupported versions may also be affected.\n\n\n\n\nUsers are recommended to upgrade to version 11.0.26, 10.1.60 or 9.0.122, which fix the issue.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77791",
+      "last_modified": "2026-09-23T13:17:29.853",
+      "products": [],
+      "published": "2026-09-23T12:17:06.927",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/mb1pjjooqytrl6hbvbt3rw1lqwlon4cz"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
   },
   "CVE-2026-77792": {
     "added": "2026-09-02",
@@ -297047,6 +297803,32 @@
         {
           "tags": [],
           "url": "https://kb.isc.org/docs/cve-2026-80274"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-80342": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "The Payment Plugins for PayPal WooCommerce WordPress plugin before 2.0.27 does not verify that a PayPal order supplied in a payment request belongs to the WooCommerce order being paid unless that PayPal order has already been completed, allowing unauthenticated attackers to have another buyer's approved but uncaptured payment captured against an order of their own.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80342",
+      "last_modified": "2026-09-23T11:17:11.577",
+      "products": [],
+      "published": "2026-09-23T06:17:02.040",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/5c3eea0d-7f7f-48e5-8f78-c553b3fdeabf/"
         }
       ]
     },
@@ -317797,6 +318579,32 @@
     },
     "next_check": "2026-10-01"
   },
+  "CVE-2026-82843": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "The WP OAuth Server ( Login with WordPress ) WordPress plugin before 6.4.0 does not bind the OpenID Connect identity assertion it issues to the authorization grant being exchanged, returning instead the assertion belonging to whichever user authenticated most recently, which allows users with the Subscriber role and above to obtain a validly signed identity assertion for another user, including an administrator, and authenticate as them at any application that uses the site for single sign-on.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82843",
+      "last_modified": "2026-09-23T11:17:12.070",
+      "products": [],
+      "published": "2026-09-23T06:17:02.363",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/45bc7096-5d04-4fe6-a332-31aed507a3a0/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-82854": {
     "added": "2026-08-31",
     "checks_done": 8,
@@ -332722,6 +333530,32 @@
     },
     "next_check": "2026-09-24"
   },
+  "CVE-2026-84098": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "The Directorist: AI-Powered Business Directory, Listings & Classified Ads WordPress plugin before 8.9.5 does not properly verify a listing's ownership before deleting it, allowing authenticated attackers with Subscriber-level access and above to delete arbitrary listings, including ones belonging to other users.\n\nThis is an incomplete fix of CVE-2023-1889 / CVE-2023-35052: a separate, unaddressed listing-deletion path allows the same impact, from at least version 3.1.0 through the current release.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84098",
+      "last_modified": "2026-09-23T11:17:12.917",
+      "products": [],
+      "published": "2026-09-23T06:17:03.070",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/b5f83718-84ff-49e4-9ad7-395cc0ab494b/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-84105": {
     "added": "2026-09-19",
     "checks_done": 4,
@@ -337394,6 +338228,84 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-84787": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-250"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager and Firewall Analyzer versions 12.8.710 and below were vulnerable to a Privilege Escalation vulnerability that allowed an authenticated low-privilege user to gain Administrator privileges through Report Profile import.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84787",
+      "last_modified": "2026-09-23T13:17:30.760",
+      "products": [],
+      "published": "2026-09-23T12:17:07.857",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-84787.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-84789": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager and Firewall Analyzer versions 12.8.710 and below were vulnerable to a Broken Access Control vulnerability that allowed an authenticated low-privilege user to create alert notifications for firewalls outside their assigned scope.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84789",
+      "last_modified": "2026-09-23T13:17:30.873",
+      "products": [],
+      "published": "2026-09-23T12:17:07.983",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-84789.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-84791": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "ZohoCorp ManageEngine OpManager and Firewall Analyzer versions 12.8.710 and below were vulnerable to a Broken Access Control vulnerability that allowed an authenticated low-privilege user to modify Change Management report schedule configurations for firewalls outside their assigned scope.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84791",
+      "last_modified": "2026-09-23T12:17:08.110",
+      "products": [],
+      "published": "2026-09-23T12:17:08.110",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.manageengine.com/itom/advisory/cve-2026-84791.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-84794": {
     "added": "2026-09-02",
     "checks_done": 8,
@@ -339014,6 +339926,32 @@
         {
           "tags": [],
           "url": "https://github.com/reactphp/http/security/advisories/GHSA-x424-64qh-5j54"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-85006": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The HappyAddons for Elementor  WordPress plugin before 3.50.0 does not escape an icon value on one of its button widgets before outputting it inside an HTML attribute, allowing users with Contributor-level access and above to inject event-handler attributes that execute JavaScript in the browser of anyone who views the page, including higher-privileged users reviewing the content, even though such users do not hold the unfiltered_html capability.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85006",
+      "last_modified": "2026-09-23T11:17:13.823",
+      "products": [],
+      "published": "2026-09-23T06:17:03.703",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/50319e24-8ae8-40b8-9106-ed881359700e/"
         }
       ]
     },
@@ -355824,6 +356762,58 @@
     },
     "next_check": "2026-10-09"
   },
+  "CVE-2026-86601": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74"
+      ],
+      "description": "The WP Recipe Maker WordPress plugin before 10.8.2 does not remove shortcodes from comment content before expanding it while building a page's structured metadata, allowing unauthenticated users to have arbitrary shortcodes executed server side and to read the content of unpublished recipes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86601",
+      "last_modified": "2026-09-23T11:17:13.970",
+      "products": [],
+      "published": "2026-09-23T11:17:13.970",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/be6b1fb1-222d-4563-8a19-41bed1960001/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-86608": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-400"
+      ],
+      "description": "The WP Recipe Maker WordPress plugin before 10.8.2 does not have any authorisation check in one of its REST routes, nor does it bound what that route stores, allowing unauthenticated users to write unlimited data into any user's metadata and to permanently prevent that account, including an administrator's, from loading.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86608",
+      "last_modified": "2026-09-23T11:17:14.570",
+      "products": [],
+      "published": "2026-09-23T06:17:04.030",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/d7f0f9dd-4180-4210-9c48-dae67e8f5d8e/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-86665": {
     "added": "2026-09-09",
     "checks_done": 8,
@@ -357235,6 +358225,32 @@
         {
           "tags": [],
           "url": "https://staging.prod.website.marketing.aws.dev/security/security-bulletins/2026-113-aws/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-86842": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "The Real3D Flipbook  WordPress plugin before 5.4 does not perform capability checks on several of its authenticated flipbook management actions, allowing users with Author-level access and above to delete other users' flipbook content and overwrite administrator-only global settings, which can be leveraged to store JavaScript that executes in the context of any visitor or administrator viewing the site.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86842",
+      "last_modified": "2026-09-23T11:17:15.010",
+      "products": [],
+      "published": "2026-09-23T06:17:04.343",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/b98713d1-e618-4728-baea-f26015e24b60/"
         }
       ]
     },
@@ -382852,6 +383868,58 @@
     },
     "next_check": "2026-09-24"
   },
+  "CVE-2026-91024": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "The Booking Manager  WordPress plugin before 2.1.21 does not sanitize and escape values taken from a fetched external iCalendar feed before using them in a SQL query, allowing authenticated users with Author-level access and above to perform SQL injection attacks by importing a feed they control.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91024",
+      "last_modified": "2026-09-23T11:17:17.200",
+      "products": [],
+      "published": "2026-09-23T06:17:05.417",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/a5472152-0b96-4fc6-af90-2f1b01811237/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91073": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Subscribe Forms  WordPress plugin before 1.6.3 does not sanitise and escape one of its form settings before outputting it in a page, allowing authenticated users with the Author role and above to perform Stored Cross-Site Scripting attacks that execute in the browser of any visitor who views a page embedding the form, including logged-out visitors and administrators.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91073",
+      "last_modified": "2026-09-23T11:17:17.497",
+      "products": [],
+      "published": "2026-09-23T06:17:05.630",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/50d0d5b6-2204-4af3-92d5-75085ce2f176/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-91079": {
     "added": "2026-09-15",
     "checks_done": 7,
@@ -384495,6 +385563,760 @@
       ]
     },
     "next_check": "2026-09-29"
+  },
+  "CVE-2026-91789": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "Foxit PDF Editor/Reader’s U3D/GIF texture decoding path contained insufficient validation of image dimensions and related size information. Under certain conditions, this could lead to an incorrectly sized memory allocation and a subsequent out-of-bounds write during pixel processing, potentially resulting in remote code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91789",
+      "last_modified": "2026-09-23T08:17:10.753",
+      "products": [],
+      "published": "2026-09-23T08:17:10.753",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91790": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "When rendering the page image, Foxit PDF Editor/Reader fails to perform validation on image objects whose optional content attributes are malformed. As a result, the program may access an already-freed internal data structure, triggering a crash due to UAF.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91790",
+      "last_modified": "2026-09-23T08:17:10.873",
+      "products": [],
+      "published": "2026-09-23T08:17:10.873",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91791": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "When processing a specially crafted PDF file, Foxit PDF Editor/Reader may encounter a reentrant execution condition involving JavaScript triggered by page-visibility events. This can cause the application to access a released page-view object while calculating annotation boundaries, resulting in an invalid memory read and application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91791",
+      "last_modified": "2026-09-23T08:17:10.987",
+      "products": [],
+      "published": "2026-09-23T08:17:10.987",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91792": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "When processing a specially crafted PDF, Foxit PDF Editor/Reader may perform reentrant zoom and layout operations through page- and annotation-related JavaScript actions. This can cause the application to access page objects after they have been released, resulting in a use-after-free condition and an application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91792",
+      "last_modified": "2026-09-23T08:17:11.110",
+      "products": [],
+      "published": "2026-09-23T08:17:11.110",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91793": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "When opening a specially crafted PDF, Foxit PDF Editor/Reader executes scripts that modify annotation rich-text attributes containing malformed font data. During subsequent annotation appearance reconstruction, it accesses an object after it has been released, resulting in a use-after-free condition and an application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91793",
+      "last_modified": "2026-09-23T08:17:11.223",
+      "products": [],
+      "published": "2026-09-23T08:17:11.223",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91794": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "An out-of-bounds write vulnerability exists in the PDF rendering process of Foxit PDF Editor/Reader due to insufficient consistency and boundary validation when processing malformed color space data, which may cause the program to crash and potentially lead to remote code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91794",
+      "last_modified": "2026-09-23T08:17:11.337",
+      "products": [],
+      "published": "2026-09-23T08:17:11.337",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91795": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-822"
+      ],
+      "description": "Foxit PDF Editor/Reader's FileOpen plugin did not adequately validate certain encryption metadata in specially crafted PDF files. This could leave an internal pointer in an invalid state, resulting in chained read and write access violations and potentially enabling arbitrary code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91795",
+      "last_modified": "2026-09-23T08:17:11.453",
+      "products": [],
+      "published": "2026-09-23T08:17:11.453",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91796": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-693"
+      ],
+      "description": "The interface of Foxit PDF Editor/Reader lacks the permission verification for secure reading mode, which allows specially crafted PDFs to trigger external SMB authentication without any security prompts and thereby leak the hash of the user's credentials.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91796",
+      "last_modified": "2026-09-23T08:17:11.570",
+      "products": [],
+      "published": "2026-09-23T08:17:11.570",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91797": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-73"
+      ],
+      "description": "Foxit PDF Editor/Reader failed to validate the directory traversal path in the attachment file name, resulting in malicious attachments being able to be written to directories outside the expected secure area when the PDF is opened.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91797",
+      "last_modified": "2026-09-23T08:17:11.683",
+      "products": [],
+      "published": "2026-09-23T08:17:11.683",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91798": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-732"
+      ],
+      "description": "A local privilege escalation vulnerability exists in the update daemon of Foxit PDF Editor/Reader due to an insecure permission configuration that allows the configuration file to be modified by regular users, which may lead to arbitrary script execution with higher privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91798",
+      "last_modified": "2026-09-23T08:17:11.793",
+      "products": [],
+      "published": "2026-09-23T08:17:11.793",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91799": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "A use-after-free vulnerability exists in Foxit PDF Editor/Reader’s handling of JavaScript array objects. A specially crafted PDF may cause the application to access a released object during array processing, potentially resulting in application crashes or arbitrary code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91799",
+      "last_modified": "2026-09-23T08:17:11.907",
+      "products": [],
+      "published": "2026-09-23T08:17:11.907",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91800": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-732"
+      ],
+      "description": "A local privilege escalation vulnerability exists in the installer of Foxit PDF Editor for macOS due to insufficient validation of a user-modifiable configuration value during high-privilege upgrades. A local attacker could exploit this issue to execute arbitrary commands with root privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91800",
+      "last_modified": "2026-09-23T08:17:12.023",
+      "products": [],
+      "published": "2026-09-23T08:17:12.023",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91801": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "A path traversal vulnerability exists in Foxit PDF Editor/Reader's handling of embedded PDF resources. Insufficient validation of resource file paths may allow files to be written outside their intended locations, potentially enabling arbitrary code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91801",
+      "last_modified": "2026-09-23T08:17:12.133",
+      "products": [],
+      "published": "2026-09-23T08:17:12.133",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91802": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "A heap-based out-of-bounds write vulnerability exists in Foxit PDF Editor/Reader’s WebP image decoding due to improper handling of bitmap stride and target buffer formats. Successful exploitation could result in an application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91802",
+      "last_modified": "2026-09-23T08:17:12.247",
+      "products": [],
+      "published": "2026-09-23T08:17:12.247",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91803": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-427"
+      ],
+      "description": "A local privilege escalation vulnerability exists in the updater of Foxit PDF Editor/Reader due to unsafe loading of dynamic-link libraries from a user-writable directory during high-privilege operations. A local attacker could exploit this issue to execute code with elevated privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91803",
+      "last_modified": "2026-09-23T08:17:12.363",
+      "products": [],
+      "published": "2026-09-23T08:17:12.363",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91804": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "A heap-based out-of-bounds write vulnerability exists in Foxit PDF Editor/Reader’s rendering of Circle annotations with malformed Cloudy appearance streams in specially crafted PDF files. Insufficient validation of the appearance geometry can result in memory corruption and application crashes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91804",
+      "last_modified": "2026-09-23T08:17:12.477",
+      "products": [],
+      "published": "2026-09-23T08:17:12.477",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91805": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "A use-after-free vulnerability exists in Foxit PDF Editor/Reader’s PDF page-tree handling. A specially crafted PDF can trigger page-structure changes during rendering, causing the application to access released page objects and resulting in memory corruption and an application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91805",
+      "last_modified": "2026-09-23T08:17:12.583",
+      "products": [],
+      "published": "2026-09-23T08:17:12.583",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91806": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "A use-after-free vulnerability exists in Foxit PDF Editor/Reader’s handling of PDF form fields. Embedded JavaScript may access form-field references after the corresponding fields have been released, resulting in an application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91806",
+      "last_modified": "2026-09-23T08:17:12.693",
+      "products": [],
+      "published": "2026-09-23T08:17:12.693",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91807": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "A heap-based out-of-bounds read vulnerability exists in Foxit PDF Editor/Reader’s handling of malformed image soft-mask data. Insufficient validation of the soft-mask data attribute during image parsing may cause an arithmetic underflow, resulting in an out-of-bounds read and application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91807",
+      "last_modified": "2026-09-23T08:17:12.807",
+      "products": [],
+      "published": "2026-09-23T08:17:12.807",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91808": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "A heap-based out-of-bounds read vulnerability exists in Foxit PDF Editor Reader’s handling of PDF image objects with inconsistent compression metadata. Insufficient validation during image decoding may result in an undersized buffer and an out-of-bounds read during rendering, causing an application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91808",
+      "last_modified": "2026-09-23T08:17:12.930",
+      "products": [],
+      "published": "2026-09-23T08:17:12.930",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91809": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "A use-after-free vulnerability exists in Foxit PDF Editor/Reader’s handling of malformed PDF form fields. Improper validation during field-name traversal may cause the application to access a released object, resulting in an application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91809",
+      "last_modified": "2026-09-23T08:17:13.070",
+      "products": [],
+      "published": "2026-09-23T08:17:13.070",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91810": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "A heap-based out-of-bounds read vulnerability exists in Foxit PDF Editor/Reader’s handling of malformed PDF image masks. Inconsistent image metadata may cause incorrect alpha-channel processing during rendering, resulting in an out-of-bounds read and application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91810",
+      "last_modified": "2026-09-23T08:17:13.190",
+      "products": [],
+      "published": "2026-09-23T08:17:13.190",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91811": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "A heap-based out-of-bounds write vulnerability exists in Foxit PDF Editor/Reader’s PRC parser due to insufficient validation of vertex indices in triangular fan texture meshes. Successful exploitation could result in memory corruption and an application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91811",
+      "last_modified": "2026-09-23T08:17:13.307",
+      "products": [],
+      "published": "2026-09-23T08:17:13.307",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91812": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-295"
+      ],
+      "description": "A vulnerability in Foxit PDF Editor/Reader’s update mechanism allows man-in-the-middle attackers to bypass certificate validation and package integrity checks, potentially enabling arbitrary code execution with system privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91812",
+      "last_modified": "2026-09-23T08:17:13.423",
+      "products": [],
+      "published": "2026-09-23T08:17:13.423",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91813": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-367"
+      ],
+      "description": "A vulnerability in Foxit PDF Editor/Reader’s update mechanism allows an update package to be replaced between download and high-privilege extraction due to insufficient file locking and integrity validation. This could enable local attackers to execute arbitrary code with elevated privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91813",
+      "last_modified": "2026-09-23T08:17:13.550",
+      "products": [],
+      "published": "2026-09-23T08:17:13.550",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91815": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "Foxit PDF Editor/Reader does not perform sufficient verification of the JPEG2000 image metadata in the PDF file, which leads to out-of-bounds write in the heap buffer during decoding, potentially causing the program to crash and introducing the risk of arbitrary code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91815",
+      "last_modified": "2026-09-23T08:17:13.790",
+      "products": [],
+      "published": "2026-09-23T08:17:13.790",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91816": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "A use-after-free vulnerability exists in Foxit PDF Editor/Reader’s handling of PDF annotations. Reentrant annotation deletion triggered by embedded JavaScript can cause the application to access an annotation object after it has been released, resulting in a use-after-free condition and application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91816",
+      "last_modified": "2026-09-23T08:17:13.900",
+      "products": [],
+      "published": "2026-09-23T08:17:13.900",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91817": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "A heap-based out-of-bounds read vulnerability exists in Foxit PDF Editor/Reader’s handling of wide strings in embedded PDF JavaScript. Insufficient validation of string-deletion ranges can cause an integer underflow, resulting in an out-of-bounds read and application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91817",
+      "last_modified": "2026-09-23T08:17:14.010",
+      "products": [],
+      "published": "2026-09-23T08:17:14.010",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-91818": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "A use-after-free vulnerability exists in Foxit PDF Editor/Reader’s JavaScript handling of PDF annotations. Reentrant page-event processing during annotation enumeration may release the associated page object, which is subsequently accessed, resulting in an application crash.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91818",
+      "last_modified": "2026-09-23T08:17:14.123",
+      "products": [],
+      "published": "2026-09-23T08:17:14.123",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.foxit.com/support/security-bulletins.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
   },
   "CVE-2026-91827": {
     "added": "2026-09-22",
@@ -396401,6 +398223,48 @@
     },
     "next_check": "2026-09-25"
   },
+  "CVE-2026-93368": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "The Rename wp-login.php to anything you want plugin for WordPress is vulnerable to time-based SQL Injection via 'log' (Username) Parameter in all versions up to, and including, 2.0.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database. WordPress core applies wp_unslash() to the 'log' POST value before dispatching the wp_login_failed action, stripping magic-quotes backslash escaping and allowing a raw single quote to reach the plugin's handler unimpeded.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-93368",
+      "last_modified": "2026-09-23T09:17:09.247",
+      "products": [],
+      "published": "2026-09-23T09:17:09.247",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/rename-wp-loginphp-to-anything-you-want/tags/2.0.1/init.php#L217"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/rename-wp-loginphp-to-anything-you-want/tags/2.0.1/init.php#L388"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/rename-wp-loginphp-to-anything-you-want/tags/2.0.1/init.php#L398"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/rename-wp-loginphp-to-anything-you-want/tags/2.0.1/init.php#L421"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/89a07c47-b57c-49de-9f7c-a2bb29e3fecc?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-93371": {
     "added": "2026-09-18",
     "checks_done": 5,
@@ -397106,6 +398970,32 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/407423/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-93508": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "The WC Fields Factory WordPress plugin before 4.1.11 does not properly restrict access to its field-management AJAX action, allowing authenticated users with Subscriber-level access and above to create, modify and delete arbitrary post meta on any post, including WooCommerce products, regardless of ownership, and to manipulate stored pricing rules on a product to reduce its checkout price.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-93508",
+      "last_modified": "2026-09-23T11:17:17.950",
+      "products": [],
+      "published": "2026-09-23T06:17:05.950",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/a927f6d6-90d8-4b91-aed4-f5f53d2b5c64/"
         }
       ]
     },
@@ -402209,36 +404099,6 @@
     },
     "next_check": "2026-09-24"
   },
-  "CVE-2026-94127": {
-    "added": "2026-09-23",
-    "checks_done": 0,
-    "cve": {
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-122"
-      ],
-      "description": "When a BIG-IP APM access policy and an OAuth profile are configured on a virtual server, specific malicious traffic can lead to remote code execution (RCE). This vulnerability is only present when BIG-IP APM is configured as an OAuth Authorization Server. Deployments using APM strictly as an OAuth Client / Resource Server (without OAuth authorization server profiles configured) are not affected by this vulnerability.\n\nImpact:\nThis vulnerability allows an unauthenticated attacker to perform remote code execution. The BIG-IP system in Appliance mode is also vulnerable. This is a data plane issue; there is no control plane exposure.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-94127",
-      "last_modified": "2026-09-23T01:16:31.760",
-      "products": [],
-      "published": "2026-09-22T15:17:24.313",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://my.f5.com/manage/s/article/K000162605"
-        },
-        {
-          "tags": [],
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-94127"
-        }
-      ]
-    },
-    "next_check": "2026-09-24"
-  },
   "CVE-2026-94138": {
     "added": "2026-09-21",
     "checks_done": 2,
@@ -404213,6 +406073,66 @@
     },
     "next_check": "2026-09-24"
   },
+  "CVE-2026-95626": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Tauri's Content Security Policy hardening, which injects a random nonce to restrict script execution, provides zero protection when an application includes data: or blob: in its script-src directive. Per the CSP Level 3 specification, these scheme sources remain active even when a nonce is present, allowing arbitrary script execution without knowing the nonce.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-95626",
+      "last_modified": "2026-09-23T10:17:08.677",
+      "products": [],
+      "published": "2026-09-23T10:17:08.677",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/tauri-apps/tauri"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tauri-apps/tauri/security/advisories/GHSA-6vxm-x265-58qf"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-95627": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-732"
+      ],
+      "description": "When a Tauri application uses the dialog plugin's file or folder picker, an attacker with JavaScript execution (XSS) can force the scope expansion to be recursive, granting read/write access to an entire directory tree after a single user click on a normal-looking OS file dialog. The user has no indication that recursive access was granted, and the expanded scope cannot be revoked for the lifetime of the application.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-95627",
+      "last_modified": "2026-09-23T10:17:08.810",
+      "products": [],
+      "published": "2026-09-23T10:17:08.810",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/tauri-apps/plugins-workspace"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tauri-apps/plugins-workspace/security/advisories/GHSA-vw89-89jm-wmqc"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
   "CVE-2026-95653": {
     "added": "2026-09-23",
     "checks_done": 0,
@@ -405505,6 +407425,207 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/clipbucket-v5-before-5.5.3-182-sql-injection-via-search-result-php"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-96442": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "A code execution flaw was found in Emacs, affecting versions prior to 31.2. The Flymake mode using language backends other than Lisp would execute arbitrary code from the edited file while performing syntax checking. Viewing or editing untrusted files using Emacs could lead to arbitrary code execution with the privileges of the user running Emacs.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96442",
+      "last_modified": "2026-09-23T11:17:18.550",
+      "products": [],
+      "published": "2026-09-23T11:17:18.550",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-96442"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2537347"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/emacs-mirror/emacs/commit/135e6f63f08fee3d374fa1a5187bce941a2d3e3c"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/emacs-mirror/emacs/commit/abc802ee2eb0b1663349ddf22a461f8e54a383fb"
+        },
+        {
+          "tags": [],
+          "url": "https://www.openwall.com/lists/oss-security/2026/09/14/1"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-96445": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "A flaw was found in the Conditional OTP authenticator of Keycloak, an identity and access management solution. The issue occurs when the system evaluates specific HTTP headers to determine if a one-time password (OTP) should be skipped, but fails to verify if those headers came from a trusted source. This could allow an attacker who already has a user's password to bypass the second-factor authentication by providing a specially crafted header in their request.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96445",
+      "last_modified": "2026-09-23T12:17:08.773",
+      "products": [],
+      "published": "2026-09-23T12:17:08.773",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-96445"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2539280"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-96454": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862",
+        "CWE-923"
+      ],
+      "description": "Pake turns a website into a desktop application built on Tauri. Every application it generates inherits two settings from the upstream template, and together they hand native functionality to untrusted web content.\n\n\n\nThe first is in src-tauri/capabilities/default.json, which grants IPC access with \"remote\": { \"urls\": [\"https://*.*\"] }. That wildcard tells Tauri to accept IPC from any HTTPS origin, not just the site the application was built to wrap. The second is \"withGlobalTauri\": true in src-tauri/tauri.conf.json, which puts window.__TAURI__.core.invoke() in reach of ordinary page JavaScript.\n\n\n\nTauri's access control list only checks plugin commands, the ones prefixed with plugin:. Commands the application registers itself through generate_handler!, known as app commands, are never checked against the ACL. So once an origin holds IPC access, it can call every app command with nothing else standing in the way. Pake registers download_file as an app command, and it does not appear in the permissions list because it does not need to.\n\n\n\nThe practical effect is that any script running on any HTTPS page inside a Pake application can invoke the application's native commands. That includes third-party script the wrapped site loads on its own, such as analytics, advertising, or a compromised CDN. Anyone distributing their own Pake application gets the same access without asking for it. Chained with the path traversal in download_file that is tracked separately as CVE-2026-82635, this reaches arbitrary file write and persistent code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96454",
+      "last_modified": "2026-09-23T10:17:09.070",
+      "products": [],
+      "published": "2026-09-23T10:17:09.070",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/tw93/Pake"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tw93/Pake/blob/main/src-tauri/capabilities/default.json"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tw93/Pake/blob/main/src-tauri/tauri.conf.json"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tw93/Pake/releases/tag/V3.17.0"
+        },
+        {
+          "tags": [],
+          "url": "https://v2.tauri.app/security/capabilities/"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-96455": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306",
+        "CWE-494"
+      ],
+      "description": "The Reachy Mini daemon exposes an HTTP API for managing the robot. Its app installation endpoint, POST /apps/install in src/reachy_mini/daemon/app/routers/apps.py, has no authentication. The handler's only dependency is Depends(get_app_manager), which just hands back the manager object from application state, so nothing in the chain ever checks a credential.\n\n\n\nThe endpoint takes an AppInfo body naming a Hugging Face Space. The daemon downloads that Space and installs it as a Python package through install_package in src/reachy_mini/apps/sources/local_common_venv.py, using uv or pip. Installing a Python package runs the package's own build and setup code, so whoever chooses the Space chooses what code the robot runs. Anyone can publish a public Hugging Face Space, so this is not a meaningful restriction on the attacker.\n\n\n\nHow far this reaches depends on the model. In _resolve_bind_host in src/reachy_mini/daemon/app/main.py the daemon binds 0.0.0.0 when it runs as the wireless version and 127.0.0.1 otherwise, with the vendor's own comment explaining that the robot has to be reachable on the LAN. On a wireless unit, then, any host on the same network can install and run code on the robot without credentials.\n\n\n\nOne related change has already shipped but does not fix this. Version 1.8.2 replaced the wildcard CORS policy with an allow list of localhost and Tauri origins. That closes the browser drive-by route, where a web page the victim visits silently calls the endpoint in the background. It has no effect on this issue: CORS is enforced by browsers and governs whether script may read a response, while a direct HTTP request from another machine on the network involves no browser, no preflight and no CORS check at all.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96455",
+      "last_modified": "2026-09-23T11:17:18.690",
+      "products": [],
+      "published": "2026-09-23T11:17:18.690",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pollen-robotics/reachy_mini"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pollen-robotics/reachy_mini/blob/main/src/reachy_mini/daemon/app/main.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pollen-robotics/reachy_mini/blob/main/src/reachy_mini/daemon/app/routers/apps.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pollen-robotics/reachy_mini/pull/1207"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pollen-robotics/reachy_mini/releases/tag/v1.11.0"
+        }
+      ]
+    },
+    "next_check": "2026-09-24"
+  },
+  "CVE-2026-96456": {
+    "added": "2026-09-23",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-362"
+      ],
+      "description": "The Reachy Mini Bluetooth service asks a connecting device for a PIN before it will accept commands. The check protects the session but not the caller, so an attacker in Bluetooth range can ride along on someone else's successful authentication.\n\n\n\nThe authenticated state is kept in a single shared flag on the service instance rather than per device. BlueZ passes the calling device's identity to the characteristic write handler in the options argument, but WriteValue(self, value, options) in src/reachy_mini/daemon/app/services/bluetooth/bluetooth_service.py ignores options entirely. The handler therefore has no idea which device sent a given write, and it cannot tell the authenticated one from any other.\n\n\n\nOnce any device completes the PIN exchange, the flag is set and every nearby device can send CMD_ commands until it resets. An attacker simply waits within radio range for a legitimate user to authenticate, then writes commands into the same window. No PIN is ever guessed or brute-forced.\n\n\n\nThis is the second step of a three-step chain that JFrog documented against the robot. The first is the unrestricted file upload in the media sounds API, tracked as CVE-2026-55419, which places an attacker-controlled script on the filesystem. This issue then provides command access over Bluetooth. The third is the Bluetooth command handler path traversal, tracked as CVE-2026-62661, which runs that script as root.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96456",
+      "last_modified": "2026-09-23T11:17:18.843",
+      "products": [],
+      "published": "2026-09-23T11:17:18.843",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/pollen-robotics/reachy_mini"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pollen-robotics/reachy_mini/blob/main/src/reachy_mini/daemon/app/services/bluetooth/bluetooth_service.py"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/pollen-robotics/reachy_mini/security/advisories/GHSA-993g-hgjh-whmf"
+        },
+        {
+          "tags": [],
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-55419"
+        },
+        {
+          "tags": [],
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-62661"
         }
       ]
     },
