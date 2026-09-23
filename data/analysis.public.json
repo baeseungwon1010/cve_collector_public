@@ -1,113 +1,86 @@
 {
-  "CVE-2026-56681": {
-    "package": "NPM:9router"
+  "CVE-2026-33626": {
+    "package": "PIP:lmdeploy"
   },
-  "CVE-2026-58268": {
-    "package": "GO:github.com/emiago/sipgo"
+  "CVE-2026-62182": {
+    "package": "GO:github.com/kubeedge/kubeedge"
   },
-  "CVE-2026-58269": {
-    "package": "NPM:@sync-in/server"
+  "CVE-2026-62369": {
+    "package": "GO:github.com/kubeedge/kubeedge"
   },
-  "CVE-2026-58270": {
-    "package": "NPM:@sync-in/server"
+  "CVE-2026-62370": {
+    "package": "GO:github.com/kubeedge/kubeedge"
   },
-  "CVE-2026-58271": {
-    "package": "NPM:@sync-in/server"
+  "CVE-2026-62371": {
+    "package": "GO:github.com/kubeedge/kubeedge"
   },
-  "CVE-2026-59168": {
-    "package": "GO:github.com/tomwright/dasel/v3"
+  "CVE-2026-63131": {
+    "package": "GO:github.com/openbao/openbao"
   },
-  "CVE-2026-59991": {
-    "package": "PIP:psd-tools"
+  "CVE-2026-63132": {
+    "package": "GO:github.com/openbao/openbao"
   },
-  "CVE-2026-61570": {
-    "package": "PIP:mpxj"
+  "CVE-2026-71543": {
+    "package": "GO:github.com/openbao/openbao"
   },
-  "CVE-2026-61647": {
-    "package": "NPM:@roomi-fields/notebooklm-mcp"
+  "CVE-2026-76819": {
+    "package": "GO:github.com/projectdiscovery/nuclei/v3"
   },
-  "CVE-2026-61670": {
-    "package": "RUST:microsandbox"
+  "CVE-2026-77244": {
+    "package": "PIP:mcp-atlassian"
   },
-  "CVE-2026-62282": {
-    "package": "PIP:opencve"
+  "CVE-2026-77247": {
+    "package": "PIP:mcp-atlassian"
   },
-  "CVE-2026-62866": {
-    "package": "GO:github.com/tomwright/dasel/v3"
+  "CVE-2026-77250": {
+    "package": "PIP:mcp-atlassian"
   },
-  "CVE-2026-62985": {
-    "package": "NPM:request-filtering-agent"
+  "CVE-2026-77258": {
+    "package": "PIP:mcp-atlassian"
   },
-  "CVE-2026-63116": {
-    "package": "NPM:@deepstream/server"
+  "CVE-2026-77271": {
+    "package": "PIP:mcp-atlassian"
   },
-  "CVE-2026-63342": {
-    "package": "GO:github.com/hatchet-dev/hatchet"
+  "CVE-2026-77274": {
+    "package": "PIP:mcp-atlassian"
   },
-  "CVE-2026-63627": {
-    "package": "NPM:mppx"
+  "CVE-2026-77285": {
+    "package": "GO:github.com/openbao/openbao"
   },
-  "CVE-2026-63628": {
-    "package": "NPM:mppx"
-  },
-  "CVE-2026-69190": {
-    "package": "MAVEN:org.graylog2:graylog2-server"
-  },
-  "CVE-2026-75510": {
-    "package": "NPM:@novu/js"
-  },
-  "CVE-2026-76909": {
+  "CVE-2026-77426": {
     "package": "NPM:unleash-server"
   },
-  "CVE-2026-76910": {
-    "package": "NPM:unleash-server"
+  "CVE-2026-77560": {
+    "package": "GO:github.com/tinyauthapp/tinyauth"
   },
-  "CVE-2026-77243": {
-    "package": "PIP:mcp-atlassian"
+  "CVE-2026-77582": {
+    "package": "GO:github.com/tinyauthapp/tinyauth"
   },
-  "CVE-2026-77246": {
-    "package": "PIP:mcp-atlassian"
+  "CVE-2026-77633": {
+    "package": "GO:github.com/cloudreve/Cloudreve/v4"
   },
-  "CVE-2026-77248": {
-    "package": "PIP:mcp-atlassian"
+  "CVE-2026-79913": {
+    "package": "GO:github.com/cloudreve/Cloudreve/v4"
   },
-  "CVE-2026-77251": {
-    "package": "PIP:mcp-atlassian"
+  "CVE-2026-83805": {
+    "package": "PIP:nautobot"
   },
-  "CVE-2026-77253": {
-    "package": "PIP:mcp-atlassian"
+  "CVE-2026-85734": {
+    "package": "PIP:lightrag-hku"
   },
-  "CVE-2026-77255": {
-    "package": "PIP:mcp-atlassian"
+  "CVE-2026-85740": {
+    "package": "PIP:lightrag-hku"
   },
-  "CVE-2026-77257": {
-    "package": "PIP:mcp-atlassian"
+  "CVE-2026-86062": {
+    "package": "PIP:lightrag-hku"
   },
-  "CVE-2026-77259": {
-    "package": "PIP:mcp-atlassian"
+  "CVE-2026-88010": {
+    "package": "GO:Traefik"
   },
-  "CVE-2026-77260": {
-    "package": "PIP:mcp-atlassian"
+  "CVE-2026-91130": {
+    "package": "PIP:homeassistant"
   },
-  "CVE-2026-77261": {
-    "package": "PIP:mcp-atlassian"
-  },
-  "CVE-2026-77262": {
-    "package": "PIP:mcp-atlassian"
-  },
-  "CVE-2026-77266": {
-    "package": "PIP:mcp-atlassian"
-  },
-  "CVE-2026-77267": {
-    "package": "PIP:mcp-atlassian"
-  },
-  "CVE-2026-77269": {
-    "package": "PIP:mcp-atlassian"
-  },
-  "CVE-2026-77270": {
-    "package": "PIP:mcp-atlassian"
-  },
-  "CVE-2026-77322": {
-    "package": "GO:github.com/emiago/sipgo"
+  "CVE-2026-94462": {
+    "package": "RUBYGEMS:spree_api"
   }
 }
