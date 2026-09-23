@@ -1,1 +1,113 @@
-{}
+{
+  "CVE-2026-56681": {
+    "package": "NPM:9router"
+  },
+  "CVE-2026-58268": {
+    "package": "GO:github.com/emiago/sipgo"
+  },
+  "CVE-2026-58269": {
+    "package": "NPM:@sync-in/server"
+  },
+  "CVE-2026-58270": {
+    "package": "NPM:@sync-in/server"
+  },
+  "CVE-2026-58271": {
+    "package": "NPM:@sync-in/server"
+  },
+  "CVE-2026-59168": {
+    "package": "GO:github.com/tomwright/dasel/v3"
+  },
+  "CVE-2026-59991": {
+    "package": "PIP:psd-tools"
+  },
+  "CVE-2026-61570": {
+    "package": "PIP:mpxj"
+  },
+  "CVE-2026-61647": {
+    "package": "NPM:@roomi-fields/notebooklm-mcp"
+  },
+  "CVE-2026-61670": {
+    "package": "RUST:microsandbox"
+  },
+  "CVE-2026-62282": {
+    "package": "PIP:opencve"
+  },
+  "CVE-2026-62866": {
+    "package": "GO:github.com/tomwright/dasel/v3"
+  },
+  "CVE-2026-62985": {
+    "package": "NPM:request-filtering-agent"
+  },
+  "CVE-2026-63116": {
+    "package": "NPM:@deepstream/server"
+  },
+  "CVE-2026-63342": {
+    "package": "GO:github.com/hatchet-dev/hatchet"
+  },
+  "CVE-2026-63627": {
+    "package": "NPM:mppx"
+  },
+  "CVE-2026-63628": {
+    "package": "NPM:mppx"
+  },
+  "CVE-2026-69190": {
+    "package": "MAVEN:org.graylog2:graylog2-server"
+  },
+  "CVE-2026-75510": {
+    "package": "NPM:@novu/js"
+  },
+  "CVE-2026-76909": {
+    "package": "NPM:unleash-server"
+  },
+  "CVE-2026-76910": {
+    "package": "NPM:unleash-server"
+  },
+  "CVE-2026-77243": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77246": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77248": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77251": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77253": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77255": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77257": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77259": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77260": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77261": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77262": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77266": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77267": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77269": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77270": {
+    "package": "PIP:mcp-atlassian"
+  },
+  "CVE-2026-77322": {
+    "package": "GO:github.com/emiago/sipgo"
+  }
+}
