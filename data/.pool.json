@@ -421043,6 +421043,40 @@
     },
     "next_check": "2026-09-26"
   },
+  "CVE-2026-97875": {
+    "added": "2026-09-25",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-350"
+      ],
+      "description": "Rojo's \"rojo serve\" HTTP API (default port 34872) has no Host/Origin header validation, making it vulnerable to DNS rebinding. A malicious webpage can read all project source, write malicious code to files on disk, and launch local programs via opener::open() with no user interaction beyond visiting the page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-97875",
+      "last_modified": "2026-09-25T11:17:16.470",
+      "products": [],
+      "published": "2026-09-25T11:17:16.470",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/rojo-rbx/rojo/pull/1270"
+        },
+        {
+          "tags": [],
+          "url": "https://osv.dev/vulnerability/RUSTSEC-2026-0279"
+        },
+        {
+          "tags": [],
+          "url": "https://rustsec.org/advisories/RUSTSEC-2026-0279.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-26"
+  },
   "CVE-2026-9812": {
     "added": "2026-09-14",
     "checks_done": 7,
