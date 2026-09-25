@@ -1,1 +1,116 @@
-{}
+{
+  "CVE-2020-10571": {
+    "package": "PIP:psd-tools"
+  },
+  "CVE-2022-0577": {
+    "package": "PIP:scrapy"
+  },
+  "CVE-2022-23064": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2024-38355": {
+    "package": "NPM:socket.io"
+  },
+  "CVE-2025-14813": {
+    "package": "MAVEN:org.bouncycastle:bcprov-jdk15on"
+  },
+  "CVE-2025-59953": {
+    "package": "PIP:lmdeploy"
+  },
+  "CVE-2025-71329": {
+    "package": "NPM:image-size"
+  },
+  "CVE-2025-71330": {
+    "package": "NPM:image-size"
+  },
+  "CVE-2026-10609": {
+    "package": "GO:github.com/openshift/cluster-logging-operator"
+  },
+  "CVE-2026-12957": {
+    "package": "NPM:@aws/lsp-codewhisperer"
+  },
+  "CVE-2026-12958": {
+    "package": "NPM:@aws/lsp-codewhisperer"
+  },
+  "CVE-2026-26318": {
+    "package": "NPM:systeminformation"
+  },
+  "CVE-2026-41862": {
+    "package": "MAVEN:org.springframework.statemachine:spring-statemachine-kryo"
+  },
+  "CVE-2026-54148": {
+    "package": "MAVEN:org.http4k:http4k-security-digest"
+  },
+  "CVE-2026-55423": {
+    "package": "PIP:langflow"
+  },
+  "CVE-2026-56120": {
+    "package": "MAVEN:io.openremote:openremote-manager"
+  },
+  "CVE-2026-56657": {
+    "package": "GO:gitea.dev"
+  },
+  "CVE-2026-56736": {
+    "package": "COMPOSER:phpmyfaq/phpmyfaq"
+  },
+  "CVE-2026-56737": {
+    "package": "COMPOSER:phpmyfaq/phpmyfaq"
+  },
+  "CVE-2026-56738": {
+    "package": "COMPOSER:thorsten/phpmyfaq"
+  },
+  "CVE-2026-58314": {
+    "package": "GO:code.gitea.io/gitea"
+  },
+  "CVE-2026-58659": {
+    "package": "PIP:lightning"
+  },
+  "CVE-2026-59167": {
+    "package": "NPM:suneditor"
+  },
+  "CVE-2026-59765": {
+    "package": "GO:gitea.dev"
+  },
+  "CVE-2026-61604": {
+    "package": "GO:github.com/ixofoundation/ixo-blockchain"
+  },
+  "CVE-2026-61732": {
+    "package": "PIP:decepticon-sdk"
+  },
+  "CVE-2026-62368": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-63493": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-63498": {
+    "package": "COMPOSER:snipe/snipe-it"
+  },
+  "CVE-2026-67322": {
+    "package": "PIP:GitPython"
+  },
+  "CVE-2026-69248": {
+    "package": "PIP:cryptography"
+  },
+  "CVE-2026-69249": {
+    "package": "PIP:cryptography"
+  },
+  "CVE-2026-79752": {
+    "package": "COMPOSER:cakephp/database"
+  },
+  "CVE-2026-84939": {
+    "package": "MAVEN:org.freemarker:freemarker"
+  },
+  "CVE-2026-85056": {
+    "package": "GO:github.com/zitadel/zitadel"
+  },
+  "CVE-2026-85057": {
+    "package": "GO:github.com/zitadel/zitadel"
+  },
+  "CVE-2026-9073": {
+    "package": "PIP:foreman-mcp-server"
+  },
+  "CVE-2026-92164": {
+    "package": "PIP:streamlink"
+  }
+}
