@@ -48962,48 +48962,31 @@
     },
     "next_check": "2026-09-28"
   },
-  "CVE-2026-100740": {
+  "CVE-2026-100741": {
     "added": "2026-09-27",
     "checks_done": 0,
     "cve": {
-      "cvss_score": 9.9,
+      "cvss_score": 9.8,
       "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
       "cvss_version": "3.1",
       "cwe_ids": [
-        "CWE-119",
-        "CWE-787"
+        "CWE-95"
       ],
-      "description": "A vulnerability was detected in D-Link DIR-895L A1_102b07. Impacted is the function tunnel_set_params of the file tunnel.c of the component L2TP Control Channel Parser. Performing a manipulation results in out-of-bounds write. The attack may be initiated remotely. The exploit is now public and may be used.",
+      "description": "Eval injection in the JScript event-script dispatcher in Progressive Robot Ltd's hMailServer, versions 6.0.0 through 6.3.3 on Windows, allows a remote, unauthenticated attacker to run arbitrary JScript inside the hMailServer service process, with the privileges of the service account, via a password containing a backslash followed by an apostrophe, sent in any logon (SMTP AUTH, POP3, IMAP) that names an existing, active account. Exploitation requires a non-default configuration: event scripting enabled (off by default), the script language set to JScript (the default is VBScript), and an OnClientValidatePassword handler defined in the event script. The server wrote event values into the handler call as JScript string literals, escaping the apostrophe but not the backslash, so such a value closes the literal and the rest of it is parsed as script. The same flaw is reachable by a remote POP3 server through the message UID it returns, where an OnExternalAccountDownload handler is defined, and by a remote SMTP server through the error reply it rejects a delivery with, where an OnDeliveryFailed handler is defined. Before 6.2.25 the injected script can create any COM object, and from 6.2.25 it can with the default ScriptAllowedObjects value of '*'; WScript.Shell among them gives command execution as the service account. VBScript event scripts and the Linux builds of Progressive Robot Ltd's hMailServer are not affected.",
       "has_exploit_tag": false,
-      "id": "CVE-2026-100740",
-      "last_modified": "2026-09-27T01:17:17.810",
+      "id": "CVE-2026-100741",
+      "last_modified": "2026-09-27T08:16:26.813",
       "products": [],
-      "published": "2026-09-27T01:17:17.810",
+      "published": "2026-09-27T08:16:26.813",
       "references": [
         {
           "tags": [],
-          "url": "https://tzh00203.notion.site/D-Link-DIR-895L-L2TP-Host-Name-AVP-Out-of-Bounds-Write-33cb5c52018a8061b139cacc39d58fff"
+          "url": "https://gitlab.com/Progressiverobot/hmailserver/-/commit/5a3de9001d6c5e833662ada8e44ce10d42d76b1a"
         },
         {
           "tags": [],
-          "url": "https://vuldb.com/cve/CVE-2026-100740"
-        },
-        {
-          "tags": [],
-          "url": "https://vuldb.com/submit/906303"
-        },
-        {
-          "tags": [],
-          "url": "https://vuldb.com/vuln/410614"
-        },
-        {
-          "tags": [],
-          "url": "https://vuldb.com/vuln/410614/cti"
-        },
-        {
-          "tags": [],
-          "url": "https://www.dlink.com/"
+          "url": "https://gitlab.com/Progressiverobot/hmailserver/-/releases/v6.3.4"
         }
       ]
     },
@@ -49106,6 +49089,65 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/410616/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-28"
+  },
+  "CVE-2026-100746": {
+    "added": "2026-09-27",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "description": "A vulnerability was found in coollabsio Coolify up to 4.1.0. This affects the function Github::redirect of the file /webhooks/source/github/redirect of the component GitHub App Setup Handler. The manipulation of the argument state results in missing authentication. The attack can be executed remotely. The exploit has been made public and could be used. Upgrading to version 4.1.1 mitigates this issue. The patch is identified as fc89e357feed5180ed1ab5eb9cb330578f025539. The affected component should be upgraded.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100746",
+      "last_modified": "2026-09-27T04:16:34.570",
+      "products": [],
+      "published": "2026-09-27T04:16:34.570",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/coollabsio/coolify/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/coollabsio/coolify/commit/fc89e357feed5180ed1ab5eb9cb330578f025539"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/coollabsio/coolify/pull/10362"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/coollabsio/coolify/releases/tag/v4.1.1"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/lakshayyverma/CVE-Discovery/blob/main/coolify-unauth-secret-overwrite-github-app-redirect.7z"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-100746"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/897404"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410617"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410617/cti"
         }
       ]
     },
@@ -372887,36 +372929,6 @@
       ]
     },
     "next_check": "2026-10-01"
-  },
-  "CVE-2026-8712": {
-    "added": "2026-09-02",
-    "checks_done": 8,
-    "cve": {
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-918"
-      ],
-      "description": "Wyoming before 1.10.2 contains a server-side request forgery vulnerability that allows unauthenticated attackers with network access to force outbound connections to arbitrary targets by supplying a malicious `uri` query parameter to the HTTP API. Attackers can pass arbitrary `tcp://` or `unix://` URIs to affected endpoints including /api/info, /api/speech-to-text, and /api/text-to-speech to override the server-configured backend and redirect connections to attacker-chosen hosts.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-8712",
-      "last_modified": "2026-09-01T19:17:31.180",
-      "products": [],
-      "published": "2026-09-01T19:17:31.180",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/OHF-Voice/wyoming/releases/tag/v1.10.2"
-        },
-        {
-          "tags": [],
-          "url": "https://www.vulncheck.com/advisories/wyoming-ssrf-via-uri-query-parameter"
-        }
-      ]
-    },
-    "next_check": "2026-10-02"
   },
   "CVE-2026-87121": {
     "added": "2026-09-23",
