@@ -1,1 +1,5 @@
-{}
+{
+  "CVE-2024-38819": {
+    "package": "MAVEN:org.springframework:spring-webmvc"
+  }
+}
