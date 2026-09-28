@@ -50910,6 +50910,543 @@
     },
     "next_check": "2026-09-29"
   },
+  "CVE-2026-100902": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-404"
+      ],
+      "description": "A vulnerability was determined in Barco ClickShare CX-20 Gen2 up to 02.26.00.0007. Affected by this issue is some unknown functionality of the file /wallpaper of the component Wallpaper Upload. This manipulation of the argument wallpaper causes denial of service. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100902",
+      "last_modified": "2026-09-28T04:16:56.207",
+      "products": [],
+      "published": "2026-09-28T04:16:56.207",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/0xWKZER/-security-disclosures/blob/main/Barco001.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-100902"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/919384"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410852"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410852/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-100908": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "description": "A vulnerability has been found in Eyeplus 57.0.0.0308. This affects an unknown function of the component p2pcam HTTP Parser. Such manipulation leads to stack-based buffer overflow. The attack may be performed from remote. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100908",
+      "last_modified": "2026-09-28T05:16:29.877",
+      "products": [],
+      "published": "2026-09-28T05:16:29.877",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/devjanger/iot-advisories/blob/main/EYEPLUS-8001-Long-URI-DoS.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-100908"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/919787"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410859"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410859/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-100909": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "A vulnerability was found in OctoberCMS up to 4.1.19/4.2.25/4.3.4. The impacted element is the function getSourcePathForResize of the file modules/system/classes/ResizeImages.php. The manipulation of the argument realSourcePath results in server-side request forgery. The attack may be performed from remote. The exploit has been made public and could be used. Upgrading to version 4.3.5 and 4.4.0 is sufficient to resolve this issue. The patch is identified as 0e9736aa2c6d6bd3d60ff6ef9e0b4d32ce387f58. The affected component should be upgraded.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100909",
+      "last_modified": "2026-09-28T05:16:30.067",
+      "products": [],
+      "published": "2026-09-28T05:16:30.067",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/0xGenesi/CVE/blob/main/October_CMS_Stream_Wrapper_Injection.md"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/octobercms/october/commit/0e9736aa2c6d6bd3d60ff6ef9e0b4d32ce387f58"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/octobercms/october/releases/tag/v4.3.5"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/octobercms/october/security/advisories/GHSA-2xmm-m4wv-3fjh"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-100909"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/919993"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410869"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410869/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-101000": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862",
+        "CWE-863"
+      ],
+      "description": "A vulnerability was determined in Netcore NBR100V2 1.3.240614.030928. This affects the function uci.apply of the file /usr/share/rpcd/acl.d/unauthenticated.json of the component ACL Handler. This manipulation of the argument section causes missing authorization. It is possible to initiate the attack remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-101000",
+      "last_modified": "2026-09-28T05:16:30.270",
+      "products": [],
+      "published": "2026-09-28T05:16:30.270",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/netcore_NBR100V2_V1.3.240614.030928%20Router/netcore_nbr100v2_uci_config_tamper.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-101000"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/919999"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410870"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410870/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-101001": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A vulnerability was identified in Netcore NBR200V2 1.3.241127.071246. This impacts the function eval of the file /www/cgi-bin/network_tools of the component Web Management Interface. Such manipulation of the argument QUERY_STRING leads to os command injection. It is possible to launch the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-101001",
+      "last_modified": "2026-09-28T05:16:30.570",
+      "products": [],
+      "published": "2026-09-28T05:16:30.570",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/netcore_NBR200V2_V1.3.241127.071246%20Router/Netcore_NBR200V2_network_tools_command_injection.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-101001"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/920178"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410871"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410871/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-101002": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A security flaw has been discovered in Netcore NBR200V2 1.3.241127.071246. Affected is the function system of the file /usr/bin/network_tools of the component Tools Ping Handler. Performing a manipulation of the argument url results in os command injection. The attack can be initiated remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-101002",
+      "last_modified": "2026-09-28T06:16:29.783",
+      "products": [],
+      "published": "2026-09-28T06:16:29.783",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/senxitoyshuyi-ui/HACKALL/blob/main/netcore_NBR200V2_V1.3.241127.071246%20Router/Netcore_NBR200V2_tools_ping_command_injection.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-101002"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/920180"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410872"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410872/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-101005": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "A vulnerability was detected in October CMS up to 4.3.4. This affects the function validateExternalImageHost of the file System/Classes/ResizeImages.php of the component SSRF Protection. The manipulation results in server-side request forgery. The attack may be launched remotely. The exploit is now public and may be used. Upgrading to version 4.3.5 is able to mitigate this issue. You should upgrade the affected component.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-101005",
+      "last_modified": "2026-09-28T07:17:19.827",
+      "products": [],
+      "published": "2026-09-28T07:17:19.827",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/0xGenesi/CVE/blob/main/October_CMS_SSRF_IPv6_Mapped_IPv4_Bypass.md"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/octobercms/october/releases/tag/v4.3.5"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/octobercms/october/security/advisories/GHSA-j2j7-7m99-6226"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-101005"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/922294"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410875"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410875/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.cybersecurity-help.cz/vdb/vulns/149488/"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-101007": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A vulnerability has been found in aaPanel BaoTa up to 11.8.0. This issue affects the function InputSql of the file class/database.py of the component Database Backup Handler. Such manipulation of the argument Password leads to os command injection. The attack can be executed remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-101007",
+      "last_modified": "2026-09-28T07:17:20.197",
+      "products": [],
+      "published": "2026-09-28T07:17:20.197",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/zuesdevil/42ac3ee7ab5554b31784da14f175e029"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-101007"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/922302"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410877"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410877/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-101008": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-77"
+      ],
+      "description": "A vulnerability was found in aaPanel BaoTa up to 11.8.0. Impacted is the function merge_split_file of the file /www/server/panel/class/files.py of the component File Merge Handler. Performing a manipulation of the argument split_file_path results in command injection. The attack is possible to be carried out remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-101008",
+      "last_modified": "2026-09-28T07:17:20.403",
+      "products": [],
+      "published": "2026-09-28T07:17:20.403",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/zuesdevil/56b73463ffe3390f670a5c031764a134"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-101008"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/922338"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410878"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410878/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-101009": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "description": "A vulnerability was determined in aaPanel BaoTa up to 11.8.0. The affected element is the function panelTask.bt_task._unzip of the file /www/server/panel/class/panelTask.py of the component Unzip Handler. Executing a manipulation of the argument Password can lead to os command injection. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-101009",
+      "last_modified": "2026-09-28T07:17:20.573",
+      "products": [],
+      "published": "2026-09-28T07:17:20.573",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/zuesdevil/ba0b8aa9f7516ea0e57b173146ce5408"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-101009"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/922625"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410879"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410879/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-101012": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A weakness has been identified in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. This impacts an unknown function of the file makeresult.php. This manipulation of the argument makeid causes sql injection. The attack can be initiated remotely. The exploit has been made available to the public and could be used for attacks. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-101012",
+      "last_modified": "2026-09-28T08:16:37.147",
+      "products": [],
+      "published": "2026-09-28T08:16:37.147",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/vinniboy021-blip/Advisory/blob/main/makeresult-sqli.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-101012"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/915506"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410882"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410882/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-101013": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security vulnerability has been detected in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. Affected is an unknown function of the file updateresultdetails.php. Such manipulation of the argument editid leads to sql injection. The attack can be launched remotely. The exploit has been disclosed publicly and may be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-101013",
+      "last_modified": "2026-09-28T08:16:37.313",
+      "products": [],
+      "published": "2026-09-28T08:16:37.313",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/vinniboy021-blip/Advisory/blob/main/updateresultdetails-sqli.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-101013"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/915507"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410883"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/410883/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
   "CVE-2026-101032": {
     "added": "2026-09-28",
     "checks_done": 0,
@@ -326214,6 +326751,340 @@
     },
     "next_check": "2026-11-27"
   },
+  "CVE-2026-82348": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "Authorization Bypass Through User-Controlled Key in Apache Roller 6.1.5 allows an authenticated user with authoring rights on one weblog to read, modify, or delete resources belonging to another weblog through unscoped identifier-based lookups. This affects multi-user installations where users are intended to be isolated between weblogs; no optional feature or non-default configuration is required. A user with administrator rights on their weblog can also overwrite another weblog's Velocity template, whose content is evaluated when the victim weblog renders. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which scopes authoring resource lookups to the acting weblog.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82348",
+      "last_modified": "2026-09-28T08:16:40.990",
+      "products": [],
+      "published": "2026-09-28T08:16:40.990",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/162"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/3h7zk8dhbt8fj5zdt8cjghx0b807wgy1"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-82375": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Server-Side Request Forgery (SSRF) in Apache Roller 6.1.5 allows an authenticated user with entry-editing rights on a weblog to cause outbound HTTP requests to attacker-chosen destinations through legacy outbound Trackback and entry enclosure handling. The Trackback control is hidden in the standard UI, but its action remains directly reachable; the enclosure path is relevant only when an author supplies an enclosure URL. No non-default server configuration is required, and the default empty Trackback allow-list permits all destinations. Requests can reach loopback and private-network addresses, while enclosure handling exposes response status, content type, and length. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which removes the outbound trackback action and stops dereferencing enclosure URLs.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82375",
+      "last_modified": "2026-09-28T08:16:41.170",
+      "products": [],
+      "published": "2026-09-28T08:16:41.170",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/163"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/175"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/0p7kc0rjcpj3rf00cp96zfkfrz0ns4ny"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-82376": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-611"
+      ],
+      "description": "Improper Restriction of XML External Entity Reference in Apache Roller 6.1.5 allows a user with entry-editing rights on a weblog to cause the server to parse an attacker-influenced trackback response with an XML parser that does not disable external entity resolution, leading to disclosure of files readable by the Roller process. The Trackback control is hidden in the standard UI, but its action remains directly reachable, and no non-default server configuration is required. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which removes the outbound trackback response parser.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82376",
+      "last_modified": "2026-09-28T08:16:41.293",
+      "products": [],
+      "published": "2026-09-28T08:16:41.293",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/163"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/dxqmd3873q87h06xpjjc9lnvp4jblz0l"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-82377": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Missing Authorization in Apache Roller 6.1.5 allows an authenticated user to read, modify, or delete weblog content belonging to other weblogs through the legacy XML-RPC Blogger and MetaWeblog APIs, because the handlers authenticate the caller but do not verify the caller's permission on the weblog or entry actually affected. Only installations that enable the non-default global XML-RPC setting are affected; the per-weblog API flag defaults to enabled for UI-created weblogs. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which applies an explicit per-method permission check, or to keep the XML-RPC feature disabled.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82377",
+      "last_modified": "2026-09-28T08:16:41.417",
+      "products": [],
+      "published": "2026-09-28T08:16:41.417",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/164"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/phxx56n0w6jjqzto2my3ot8hto0qjvn8"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-82378": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "Incorrect Authorization in the OAuth 1.0a authorization endpoint of Apache Roller 6.1.5 allows an unauthenticated remote attacker who learns an outstanding request token for a configured site-wide consumer to bind that token to an arbitrary user account, including an administrator, by submitting an unsigned authorization request. The endpoint derives the authorizing identity from a request-supplied value rather than the authenticated session. Only installations that configure an OAuth 1.0a site-wide consumer are affected, and exploitation requires knowledge of one of its outstanding request tokens. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which binds authorization to the logged-in session.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82378",
+      "last_modified": "2026-09-28T08:16:41.540",
+      "products": [],
+      "published": "2026-09-28T08:16:41.540",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/165"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/fq512gy70zj9yx8v4c4zm54x43wqb04b"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-82379": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-294"
+      ],
+      "description": "Authentication Bypass by Capture-replay in Apache Roller 6.1.5 allows an attacker who captures a valid WSSE digest authentication header to replay it and gain the victim's AtomPub authority, because the authentication does not enforce nonce uniqueness or timestamp freshness. Only installations that enable the non-default AtomPub API with WSSE authentication and plaintext-compatible password storage are affected. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which removes WSSE as an AtomPub authentication method; existing installations configured for WSSE fail closed until an administrator explicitly selects a supported authentication method.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82379",
+      "last_modified": "2026-09-28T08:16:41.663",
+      "products": [],
+      "published": "2026-09-28T08:16:41.663",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/166"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/bg5r225c3z4148z6kf7s3fwwgrs2lx02"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-82380": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-352"
+      ],
+      "description": "Cross-Site Request Forgery (CSRF) in Apache Roller 6.1.5 allows a remote attacker to cause a logged-in user to perform state-changing actions under the victim's authority, because the CSRF validation filters accept a request that does not submit the required salt token, validating instead against a value the server itself generated for the request. No optional feature or non-default configuration is required; any logged-in author or administrator is affected when induced to visit a crafted page. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which validates only the submitted salt and applies the same check to multipart forms.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82380",
+      "last_modified": "2026-09-28T08:16:41.787",
+      "products": [],
+      "published": "2026-09-28T08:16:41.787",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/167"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/db5zl0wrf2c888qwkqmxymddfjc594q8"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-82382": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in Apache Roller 6.1.5 allows a remote attacker to perform reflected cross-site scripting against a visitor to a weblog using the bundled frontpage theme, by supplying a crafted blog-directory parameter that the directory page reflects without proper escaping. This affects only weblogs that use the bundled frontpage theme, and a victim must follow a crafted link for the script to execute. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which validates and contextually escapes the reflected parameter.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82382",
+      "last_modified": "2026-09-28T08:16:42.037",
+      "products": [],
+      "published": "2026-09-28T08:16:42.037",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/169"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/mt01qhjq701o3v7kddgskn2ryb6l6y2x"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-82383": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "Missing Authentication for Critical Function in Apache Roller 6.1.5 allows an unauthenticated remote attacker to persistently change a site-global configuration value (the frontpage weblog selection) on any installed instance, because the setup action remains anonymously reachable after installation and persists configuration without an authorization check. No optional feature or non-default configuration is required; the result can redirect or break the site's public frontpage, with administrative recovery available. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which restricts the write to global administrators.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82383",
+      "last_modified": "2026-09-28T08:16:42.153",
+      "products": [],
+      "published": "2026-09-28T08:16:42.153",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/170"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/7oof135zr05zfkslj9s6m5o0brll47dz"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-82385": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-200"
+      ],
+      "description": "Exposure of Sensitive Information to an Unauthorized Actor in Apache Roller 6.1.5 allows a weblog administrator to read files on the application classpath, including Roller configuration files containing secrets, by authoring a Velocity template that uses an include directive to load a classpath resource outside the theme namespace. Roller treats weblog administrators as untrusted and enables a Velocity sandbox, but the include and parse directives are not confined by it. No non-default configuration is required; this affects any weblog whose administrator can author templates. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which confines includes to the active theme and removes classpath resource loading from weblog rendering.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82385",
+      "last_modified": "2026-09-28T08:16:42.403",
+      "products": [],
+      "published": "2026-09-28T08:16:42.403",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/172"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/wfy8jrwf4xk6r8xgd4rosnxwjwdn4znx"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
+  "CVE-2026-82386": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-611"
+      ],
+      "description": "Improper Restriction of XML External Entity Reference in Apache Roller 6.1.5 allows a weblog administrator to read files readable by the Roller process and reach internal network addresses by importing a crafted OPML document, because the bookmark import parser does not disable external entity resolution. No non-default configuration is required; the import is reached through the administrator bookmark-import action. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which uses a hardened parser that disables external entities and document type declarations.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82386",
+      "last_modified": "2026-09-28T08:16:42.527",
+      "products": [],
+      "published": "2026-09-28T08:16:42.527",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/173"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/mrtstv8odj7l9mcrto445lftrcpw0sxl"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
   "CVE-2026-82392": {
     "added": "2026-09-01",
     "checks_done": 8,
@@ -328650,6 +329521,36 @@
       ]
     },
     "next_check": "2026-09-30"
+  },
+  "CVE-2026-82546": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in Apache Roller 6.1.5 allows an unauthenticated remote attacker to store a crafted comment-author URL through the incoming Trackback endpoint when a published entry accepts comments and Trackbacks. The shipped Trackback, verification and moderation defaults allow the value to be approved and rendered as an active link; a visitor who clicks the link executes script in the weblog's origin. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which removes incoming Trackback support and suppresses non-HTTP(S) comment-author links. Users unable to upgrade should disable Trackbacks and remove untrusted Trackback comments.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82546",
+      "last_modified": "2026-09-28T08:16:42.763",
+      "products": [],
+      "published": "2026-09-28T08:16:42.763",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/178"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/ddrykzvs67zpmzwsbqyfjmlydboln8x1"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
   },
   "CVE-2026-82547": {
     "added": "2026-08-31",
@@ -352045,6 +352946,30 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-84744": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "The WPForms Lite WordPress plugin from 1.5.0.1 to 2.0.2 does not remove shortcode delimiters from submitted field values before writing them back into the rendered form, allowing unauthenticated users to execute arbitrary shortcodes registered on the site and read the details of attachments belonging to non-public posts.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84744",
+      "last_modified": "2026-09-28T07:17:20.827",
+      "products": [],
+      "published": "2026-09-28T07:17:20.827",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/99c4a9fc-114e-4d39-80aa-0e9544125794/"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
   "CVE-2026-84752": {
     "added": "2026-09-04",
     "checks_done": 8,
@@ -364505,44 +365430,6 @@
       ]
     },
     "next_check": "2026-10-09"
-  },
-  "CVE-2026-85984": {
-    "added": "2026-09-27",
-    "checks_done": 1,
-    "cve": {
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-287"
-      ],
-      "description": "The miniOrange OTP Login, Verification and SMS Notifications plugin for WordPress is vulnerable to Authentication Bypass via the mo_wp_login_intent parameter in all versions up to, and including, 5.5.5. This is due to a missing password-intent guard in the skip_pass_fallback-enabled configuration branch of the mo_by_pass_login() function, which treats administrator role membership alone as sufficient authentication whenever the unauthenticated, unverified POST parameter mo_wp_login_intent is submitted with the value otp, causing mo_get_user() to skip wp_authenticate_username_password() and resolve a WP_User purely from a username lookup. This makes it possible for unauthenticated attackers to log in as any existing administrator account by supplying only a known username and an empty password alongside mo_wp_login_intent=otp, with no password or OTP verification required. Exploitation is conditional on a site administrator having simultaneously enabled the following plugin options: WP Login OTP, Login with Only OTP, Allow Users to Login with Username and Password, and Admin OTP Bypass.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-85984",
-      "last_modified": "2026-09-26T23:16:38.380",
-      "products": [],
-      "published": "2026-09-26T18:16:31.010",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/miniorange-otp-verification/tags/5.5.5/includes/js/loginform.js#L176"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/miniorange-otp-verification/tags/5.5.5/views/forms/mowploginform.php#L134"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/changeset/3687601/miniorange-otp-verification"
-        },
-        {
-          "tags": [],
-          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/2895f0c2-41b6-4b11-9865-3bded4402aa9?source=cve"
-        }
-      ]
-    },
-    "next_check": "2026-09-29"
   },
   "CVE-2026-85995": {
     "added": "2026-09-23",
@@ -401029,6 +401916,36 @@
     },
     "next_check": "2026-10-03"
   },
+  "CVE-2026-91204": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in Apache Roller 6.1.5 allows an anonymous remote attacker to store a comment containing a javascript: URI link that survives HTML comment formatting and can execute script in the browser of a visitor who clicks it. This affects only sites that enable HTML in comments (users.comments.htmlenabled=true) together with the HTMLSubset comment formatter; comment moderation, where enabled, delays publication. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which restricts restored links to http, https and mailto URIs.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91204",
+      "last_modified": "2026-09-28T08:16:42.887",
+      "products": [],
+      "published": "2026-09-28T08:16:42.887",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/190"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/4qzp8m0438056l5t6m6719ob79gx72lz"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
+  },
   "CVE-2026-91205": {
     "added": "2026-09-19",
     "checks_done": 7,
@@ -401058,6 +401975,36 @@
       ]
     },
     "next_check": "2026-10-03"
+  },
+  "CVE-2026-91206": {
+    "added": "2026-09-28",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in Apache Roller 6.1.5 allows a remote attacker to perform reflected cross-site scripting through the optional LDAP comment authenticator, which writes request parameter values into its HTML form without escaping. This affects only sites configured to use LdapCommentAuthenticator, and a victim whose session has already loaded the authenticator form must follow a crafted link. Users are recommended to upgrade to Apache Roller 6.1.6 or later, which escapes the reflected values.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91206",
+      "last_modified": "2026-09-28T08:16:43.013",
+      "products": [],
+      "published": "2026-09-28T08:16:43.013",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/apache/roller/pull/191"
+        },
+        {
+          "tags": [],
+          "url": "https://lists.apache.org/thread/tljwqdttq8tgg6hr8sxlcnwpxl6pch4s"
+        }
+      ]
+    },
+    "next_check": "2026-09-29"
   },
   "CVE-2026-9130": {
     "added": "2026-08-06",

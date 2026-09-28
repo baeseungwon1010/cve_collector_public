@@ -1871,6 +1871,24 @@
     "poc_source": "github_search",
     "published": "2019-05-13T14:29:01.207"
   },
+  "CVE-2018-20062": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": true,
+    "poc_confirmed_date": "2026-09-28",
+    "poc_published_date": "2019-03-17",
+    "poc_source": "github_search",
+    "published": "2018-12-11T18:29:00.197"
+  },
+  "CVE-2018-20148": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-28",
+    "poc_published_date": "2021-11-16",
+    "poc_source": "github_search",
+    "published": "2018-12-14T20:29:00.390"
+  },
   "CVE-2018-20162": {
     "cvss_score": 9.9,
     "cvss_severity": "CRITICAL",
@@ -1879,6 +1897,15 @@
     "poc_published_date": "2019-02-14",
     "poc_source": "github_search",
     "published": "2019-03-21T16:00:34.280"
+  },
+  "CVE-2018-20433": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-28",
+    "poc_published_date": "2020-12-13",
+    "poc_source": "github_search",
+    "published": "2018-12-24T13:29:00.210"
   },
   "CVE-2018-21268": {
     "cvss_score": 10.0,
@@ -6470,6 +6497,15 @@
     "poc_source": "github_search",
     "published": "2026-08-28T20:20:21.293"
   },
+  "CVE-2026-82384": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-28",
+    "poc_published_date": "2026-09-28",
+    "poc_source": "github_search",
+    "published": "2026-09-28T08:16:42.273"
+  },
   "CVE-2026-82539": {
     "cvss_score": 9.1,
     "cvss_severity": "CRITICAL",
@@ -6694,6 +6730,15 @@
     "poc_published_date": "2026-09-04",
     "poc_source": "github_search",
     "published": "2026-09-04T18:18:07.153"
+  },
+  "CVE-2026-85984": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-28",
+    "poc_published_date": "2026-09-28",
+    "poc_source": "github_search",
+    "published": "2026-09-26T18:16:31.010"
   },
   "CVE-2026-86143": {
     "cvss_score": 6.9,
