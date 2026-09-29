@@ -49166,6 +49166,108 @@
     },
     "next_check": "2026-09-30"
   },
+  "CVE-2026-100761": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Privilege escalation due to use-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100761",
+      "last_modified": "2026-09-29T14:17:16.550",
+      "products": [],
+      "published": "2026-09-29T13:17:40.390",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2059020"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-100764": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119"
+      ],
+      "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100764",
+      "last_modified": "2026-09-29T14:17:16.730",
+      "products": [],
+      "published": "2026-09-29T13:17:40.640",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2061290"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-100782": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119"
+      ],
+      "description": "Privilege escalation due to incorrect boundary conditions in the Graphics component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100782",
+      "last_modified": "2026-09-29T14:17:16.910",
+      "products": [],
+      "published": "2026-09-29T13:17:43.137",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2068456"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-98/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-99/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-10079": {
     "added": "2026-07-31",
     "checks_done": 9,
@@ -49196,6 +49298,48 @@
     },
     "next_check": "2026-10-29"
   },
+  "CVE-2026-100797": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Privilege escalation due to use-after-free in the Graphics: WebRender component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100797",
+      "last_modified": "2026-09-29T14:17:17.070",
+      "products": [],
+      "published": "2026-09-29T13:17:44.760",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2050542"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-98/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-99/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-10080": {
     "added": "2026-08-18",
     "checks_done": 9,
@@ -49221,6 +49365,332 @@
       ]
     },
     "next_check": "2026-11-16"
+  },
+  "CVE-2026-100801": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "Privilege escalation in the DLL Services component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100801",
+      "last_modified": "2026-09-29T14:17:17.223",
+      "products": [],
+      "published": "2026-09-29T13:17:45.180",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2057112"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-99/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-100807": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "Privilege escalation in the DOM: Service Workers component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100807",
+      "last_modified": "2026-09-29T14:17:17.393",
+      "products": [],
+      "published": "2026-09-29T13:17:45.803",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2062740"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-99/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-100818": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Sandbox escape due to use-after-free in the Widget: Gtk component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100818",
+      "last_modified": "2026-09-29T14:17:17.550",
+      "products": [],
+      "published": "2026-09-29T13:17:47.037",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2069399"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-99/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-100820": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "Privilege escalation in the Address Bar component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100820",
+      "last_modified": "2026-09-29T14:17:17.710",
+      "products": [],
+      "published": "2026-09-29T13:17:47.300",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2071645"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-99/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-100824": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "Privilege escalation in the Places component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100824",
+      "last_modified": "2026-09-29T14:17:17.890",
+      "products": [],
+      "published": "2026-09-29T13:17:47.700",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2054767"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-100825": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Use-after-free in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100825",
+      "last_modified": "2026-09-29T14:17:18.047",
+      "products": [],
+      "published": "2026-09-29T13:17:47.803",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2057465"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-100826": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-770"
+      ],
+      "description": "Denial-of-service in the Storage: StorageManager component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100826",
+      "last_modified": "2026-09-29T14:17:18.197",
+      "products": [],
+      "published": "2026-09-29T13:17:47.903",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2059222"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-100831": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Use-after-free in the DOM: UI Events & Focus Handling component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100831",
+      "last_modified": "2026-09-29T14:17:18.357",
+      "products": [],
+      "published": "2026-09-29T13:17:48.350",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2067172"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-97/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-100832": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100832",
+      "last_modified": "2026-09-29T14:17:18.523",
+      "products": [],
+      "published": "2026-09-29T13:17:48.453",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2072467"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-100/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-98/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.mozilla.org/security/advisories/mfsa2026-99/"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
   },
   "CVE-2026-100833": {
     "added": "2026-09-27",
@@ -55220,6 +55690,44 @@
     },
     "next_check": "2026-09-30"
   },
+  "CVE-2026-102360": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "A missing bounds check in the binary decoder in lib0, versions 0.2.1-0.2.117 and earlier and 1.0.0-rc.32 and earlier, lets any unauthenticated remote peer read adjacent process memory and receive it back. `readUint8Array` never compares the wire-supplied length against the decoder's own view, so one over-long length prefix returns whatever the host process allocated next: other tenants' document content, personal data, and live bearer session tokens**, recovered in full and at will. An attacker who can supply bytes to a lib0 decoder which means any peer that can open a socket, including before authentication reads adjacent process memory and, where the consumer echoes, stores or re-serves the decoded value, receives it back. This is patched in version 0.2.118 and 1.0.0-rc.33.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102360",
+      "last_modified": "2026-09-29T14:17:20.117",
+      "products": [],
+      "published": "2026-09-29T14:17:20.117",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/dmonad/lib0/commit/425f28dc82c8df1b6f7e1ab20ea1a0a15a3c355f"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/dmonad/lib0/commit/c4c9db0b41346a33aff31a51f1f09c3a17757f10"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/dmonad/lib0/security/advisories/GHSA-r5c8-rf4w-qrq8"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/dmonad/lib0/security/advisories/GHSA-r5c8-rf4w-qrq8"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-102361": {
     "added": "2026-09-29",
     "checks_done": 0,
@@ -55448,6 +55956,36 @@
     },
     "next_check": "2026-09-30"
   },
+  "CVE-2026-102437": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "OS Command Injection in internal/gitcmd (git diff filter.clean/smudge invocation) in esengine DeepSeek-Reasonix (Reasonix Studio) allows a local attacker who controls repository content (.gitattributes + .git/config) to execute arbitrary commands via the desktop app's workspace-changes diff viewer.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102437",
+      "last_modified": "2026-09-29T14:17:20.290",
+      "products": [],
+      "published": "2026-09-29T13:17:50.493",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/esengine/DeepSeek-Reasonix"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/esengine/DeepSeek-Reasonix/security/advisories/GHSA-grg2-7gc6-36m6"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-1025": {
     "added": "2026-09-19",
     "checks_done": 7,
@@ -55473,6 +56011,36 @@
       ]
     },
     "next_check": "2026-10-03"
+  },
+  "CVE-2026-102521": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-125"
+      ],
+      "description": "The decoder in `readFromDataView` in lib0 before 0.2.119 can be tricked into reading more than it should from a buffer. The vulnerability allows reading past the decoders' view, thus exposing adjacent process memory. This can be anything that is currently in the head, for example credentials or logs. This is similar to but different from GHSA-r5c8-rf4w-qrq8.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102521",
+      "last_modified": "2026-09-29T14:17:20.393",
+      "products": [],
+      "published": "2026-09-29T14:17:20.393",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/dmonad/lib0/commit/49383f2716283b90059dbfe01e110c0ab7ef5592"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/dmonad/lib0/security/advisories/GHSA-g75x-89c3-rvmr"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
   },
   "CVE-2026-1031": {
     "added": "2026-09-19",
@@ -161076,44 +161644,6 @@
         {
           "tags": [],
           "url": "https://redmine.openinfosecfoundation.org/issues/8525"
-        }
-      ]
-    },
-    "next_check": "2026-10-03"
-  },
-  "CVE-2026-57228": {
-    "added": "2026-09-19",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 8.2,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-125"
-      ],
-      "description": "Suricata is a network Intrusion Detection System, Intrusion Prevention System and Network Security Monitoring engine. From 7.0.13 until 7.0.17, the SMTP MIME quoted-printable decoder in src/util-decode-mime.c can read one byte past a heap buffer when a quoted-printable escape sequence is split across traffic chunks and the following chunk contains exactly one byte. Crafted SMTP traffic can trigger the out-of-bounds read and crash Suricata when decode-quoted-printable MIME decoding is enabled. This issue is fixed in version 7.0.17.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-57228",
-      "last_modified": "2026-09-18T21:17:01.367",
-      "products": [],
-      "published": "2026-09-18T21:17:01.367",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/OISF/suricata/commit/19880f9d5bbe2b8f8e8867a577848dce2b532c86"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/OISF/suricata/releases/tag/suricata-7.0.17"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/OISF/suricata/security/advisories/GHSA-qxm4-q7vx-7xj4"
-        },
-        {
-          "tags": [],
-          "url": "https://redmine.openinfosecfoundation.org/issues/8608"
         }
       ]
     },
@@ -267041,6 +267571,84 @@
     },
     "next_check": "2026-09-30"
   },
+  "CVE-2026-73594": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-295"
+      ],
+      "description": "Dell Secure Connect Gateway (SCG) Policy Manager, versions prior to 5.34.00.16, Versions prior to 5.36, contains an Improper Certificate Validation vulnerability. An unauthenticated attacker with adjacent network access could potentially exploit this vulnerability, leading to Information disclosure, Information tampering, and Protection mechanism bypass.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73594",
+      "last_modified": "2026-09-29T12:17:11.290",
+      "products": [],
+      "published": "2026-09-29T12:17:11.290",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-ca/000503592/dsa-2026-385-security-update-for-dell-secure-connect-gateway-policy-manager-multiple-vulnerabilities?msockid=3021cac2195069ed3194ddad186a68f9"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-73597": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-352"
+      ],
+      "description": "Dell Secure Connect Gateway (SCG) Policy Manager, versions prior to 5.34.00.16, contains a Cross-Site Request Forgery (CSRF) vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Information disclosure, Information tampering, Launch of phishing attacks, and Protection mechanism bypass.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73597",
+      "last_modified": "2026-09-29T12:17:11.687",
+      "products": [],
+      "published": "2026-09-29T12:17:11.687",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-ca/000503592/dsa-2026-385-security-update-for-dell-secure-connect-gateway-policy-manager-multiple-vulnerabilities?msockid=3021cac2195069ed3194ddad186a68f9"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-73598": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-732"
+      ],
+      "description": "Dell Secure Connect Gateway (SCG) Policy Manager, versions prior to 5.34.00.16, contains an Incorrect Permission Assignment for Critical Resource vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-73598",
+      "last_modified": "2026-09-29T13:17:51.123",
+      "products": [],
+      "published": "2026-09-29T13:17:51.123",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.dell.com/support/kbdoc/en-ca/000503592/dsa-2026-385-security-update-for-dell-secure-connect-gateway-policy-manager-multiple-vulnerabilities?msockid=3021cac2195069ed3194ddad186a68f9"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-73600": {
     "added": "2026-09-04",
     "checks_done": 8,
@@ -290455,6 +291063,58 @@
     },
     "next_check": "2026-09-30"
   },
+  "CVE-2026-76718": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "A potential security vulnerability in HPE OneView can be exploited to allow remote session hijacking or other unauthorized actions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76718",
+      "last_modified": "2026-09-29T10:17:11.773",
+      "products": [],
+      "published": "2026-09-29T10:17:11.773",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbgn05140en_us&docLocale=en_US"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-76719": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "A security vulnerability in HPE OneView may be exploited remotely to perform session hijacking, data theft or other unauthorized actions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-76719",
+      "last_modified": "2026-09-29T12:17:11.820",
+      "products": [],
+      "published": "2026-09-29T10:17:11.920",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbgn05140en_us&docLocale=en_US"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-76759": {
     "added": "2026-09-03",
     "checks_done": 8,
@@ -294934,164 +295594,6 @@
     },
     "next_check": "2026-09-30"
   },
-  "CVE-2026-77250": {
-    "added": "2026-09-23",
-    "checks_done": 6,
-    "cve": {
-      "cvss_score": 6.1,
-      "cvss_severity": "MEDIUM",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-312"
-      ],
-      "description": "MCP Atlassian is a Model Context Protocol (MCP) server for Atlassian products (Confluence and Jira). Prior to 0.22.0, OAuthConfig writes a plaintext fallback file containing access and refresh tokens under the user's .mcp-atlassian directory using process-default permissions. On systems with a permissive umask, same-group or other local users and processes can read the persisted tokens and reuse the associated Atlassian access. The advisory traces the vulnerable input and processing flow through OAuthConfig._save_tokens, ~/.mcp-atlassian/oauth-<client_id>.json, access_token, and refresh_token, which identify the affected entry points, controls, and code paths. This issue is fixed in version 0.22.0.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-77250",
-      "last_modified": "2026-09-22T19:16:49.427",
-      "products": [],
-      "published": "2026-09-22T18:17:17.720",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/commit/b041733473f95119dd539542a43c280737a8e460"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/pull/1448"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/releases/tag/v0.22.0"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/security/advisories/GHSA-g5xv-mhgm-v5f6"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/security/advisories/GHSA-g5xv-mhgm-v5f6"
-        }
-      ]
-    },
-    "next_check": "2026-09-30"
-  },
-  "CVE-2026-77255": {
-    "added": "2026-09-23",
-    "checks_done": 6,
-    "cve": {
-      "cvss_score": 8.6,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-22",
-        "CWE-441"
-      ],
-      "description": "MCP Atlassian is a Model Context Protocol (MCP) server for Atlassian products (Confluence and Jira). Prior to 0.22.0, the Jira update_issue attachments argument is converted into local paths and routed to the attachment upload implementation without workspace validation. A caller can make the MCP server read arbitrary local files and attach them to a Jira issue, using the server as a confused deputy to exfiltrate the contents. The advisory traces the vulnerable input and processing flow through jira update_issue, attachments, upload_attachment, and file_path, which identify the affected entry points, controls, and code paths. This issue is fixed in version 0.22.0.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-77255",
-      "last_modified": "2026-09-22T19:16:49.850",
-      "products": [],
-      "published": "2026-09-22T19:16:49.850",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/commit/b041733473f95119dd539542a43c280737a8e460"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/pull/1448"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/releases/tag/v0.22.0"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/security/advisories/GHSA-2xj6-xx86-cwwc"
-        }
-      ]
-    },
-    "next_check": "2026-09-30"
-  },
-  "CVE-2026-77258": {
-    "added": "2026-09-23",
-    "checks_done": 6,
-    "cve": {
-      "cvss_score": 7.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-22"
-      ],
-      "description": "MCP Atlassian is a Model Context Protocol (MCP) server for Atlassian products (Confluence and Jira). Prior to 0.22.0, upload_attachment in src/mcp_atlassian/confluence/attachments.py accepts a caller-controlled file_path and opens the selected server-local file without restricting it to the workspace. A permitted Confluence MCP caller can upload the file as an attachment and disclose data readable by the server process. This issue is fixed in version 0.22.0.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-77258",
-      "last_modified": "2026-09-22T18:17:18.193",
-      "products": [],
-      "published": "2026-09-22T18:17:18.193",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/commit/b041733473f95119dd539542a43c280737a8e460"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/pull/1448"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/releases/tag/v0.22.0"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/security/advisories/GHSA-93xw-j965-9mx3"
-        }
-      ]
-    },
-    "next_check": "2026-09-30"
-  },
-  "CVE-2026-77259": {
-    "added": "2026-09-23",
-    "checks_done": 6,
-    "cve": {
-      "cvss_score": 7.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-22",
-        "CWE-552"
-      ],
-      "description": "MCP Atlassian is a Model Context Protocol (MCP) server for Atlassian products (Confluence and Jira). Prior to 0.22.0, confluence_upload_attachment opens a caller-selected server-local file without checking that the resolved path remains in the workspace. A caller can upload environment files, credentials, or other readable host data to a Confluence page and retrieve it through Atlassian. The advisory traces the vulnerable input and processing flow through confluence_upload_attachment, file_path, and open(file_path, \"rb\"), which identify the affected entry points, controls, and code paths. This issue is fixed in version 0.22.0.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-77259",
-      "last_modified": "2026-09-22T19:16:50.327",
-      "products": [],
-      "published": "2026-09-22T19:16:50.327",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/commit/b041733473f95119dd539542a43c280737a8e460"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/pull/1448"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/releases/tag/v0.22.0"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/security/advisories/GHSA-6cr4-ccf3-x7h4"
-        }
-      ]
-    },
-    "next_check": "2026-09-30"
-  },
   "CVE-2026-7726": {
     "added": "2026-08-06",
     "checks_done": 9,
@@ -295221,44 +295723,6 @@
       ]
     },
     "next_check": "2026-11-20"
-  },
-  "CVE-2026-77269": {
-    "added": "2026-09-23",
-    "checks_done": 6,
-    "cve": {
-      "cvss_score": 6.5,
-      "cvss_severity": "MEDIUM",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-22"
-      ],
-      "description": "MCP Atlassian is a Model Context Protocol (MCP) server for Atlassian products (Confluence and Jira). Prior to 0.22.0, the remediation for CVE-2026-27825 protects download destinations but does not constrain source paths used by attachment uploads. A caller can provide an absolute or traversal file_path and cause the server to upload the selected local file. The advisory traces the vulnerable input and processing flow through upload_attachment, file_path, and CVE-2026-27825, which identify the affected entry points, controls, and code paths. This issue is fixed in version 0.22.0.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-77269",
-      "last_modified": "2026-09-22T19:16:50.920",
-      "products": [],
-      "published": "2026-09-22T19:16:50.920",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/commit/b041733473f95119dd539542a43c280737a8e460"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/pull/1448"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/releases/tag/v0.22.0"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/sooperset/mcp-atlassian/security/advisories/GHSA-h7wj-5v37-59r2"
-        }
-      ]
-    },
-    "next_check": "2026-09-30"
   },
   "CVE-2026-77281": {
     "added": "2026-09-18",
@@ -317818,6 +318282,58 @@
     },
     "next_check": "2026-11-25"
   },
+  "CVE-2026-8066": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-23"
+      ],
+      "description": "A directory traversal vulnerability in the file upload functionality of Hitachi Energy RTU500 end-of-life versions allows an unauthenticated attacker to write or overwrite arbitrary files on the device file system. Depending on the files affected, successful exploitation could result in unauthorized modification of device data or disruption of the device’s intended operation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-8066",
+      "last_modified": "2026-09-29T13:17:53.230",
+      "products": [],
+      "published": "2026-09-29T10:17:13.250",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://publisher.hitachienergy.com/preview?DocumentID=8DBD000251&LanguageCode=en&DocumentPartId=&Action=Launch"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-8067": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "An improper authorization vulnerability in the end-of-life versions of RTU500’s web application allows an authenticated user to trigger the RTU500 to reboot through the reset endpoint. Successful exploitation could cause temporary device unavailability and disruption of its intended operation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-8067",
+      "last_modified": "2026-09-29T13:17:53.330",
+      "products": [],
+      "published": "2026-09-29T10:17:13.397",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://publisher.hitachienergy.com/preview?DocumentID=8DBD000251&LanguageCode=en&DocumentPartId=&Action=Launch"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-81019": {
     "added": "2026-08-28",
     "checks_done": 9,
@@ -338385,6 +338901,32 @@
     },
     "next_check": "2026-10-01"
   },
+  "CVE-2026-82973": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-93"
+      ],
+      "description": "Improper neutralization of CRLF sequences in IMAP command construction in psyb0t/docker-mailbox before 0.4.13 allows a remote unauthenticated attacker, when bearer-token authentication is not configured, to inject additional IMAP commands into an authenticated upstream mailbox connection via crafted folder, UID, or search values.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82973",
+      "last_modified": "2026-09-29T13:17:52.963",
+      "products": [],
+      "published": "2026-09-29T13:17:52.963",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gitlab.com/psyb0t/docker-mailbox/-/commit/90e6b492d42e011d0ba2c825795b33d054ee6636"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-82980": {
     "added": "2026-09-18",
     "checks_done": 7,
@@ -356632,6 +357174,40 @@
       ]
     },
     "next_check": "2026-10-02"
+  },
+  "CVE-2026-84739": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 13.11 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authenticated user to execute arbitrary JavaScript in the context of another user's browser session due to improper sanitization of path components in the merge request diff viewer.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84739",
+      "last_modified": "2026-09-29T10:17:12.820",
+      "products": [],
+      "published": "2026-09-29T10:17:12.820",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-1-released/"
+        },
+        {
+          "tags": [],
+          "url": "https://gitlab.com/gitlab-org/gitlab/-/work_items/627316"
+        },
+        {
+          "tags": [],
+          "url": "https://hackerone.com/reports/3938482"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
   },
   "CVE-2026-84744": {
     "added": "2026-09-28",
@@ -375447,6 +376023,32 @@
     },
     "next_check": "2026-10-08"
   },
+  "CVE-2026-86450": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-201"
+      ],
+      "description": "Insertion of sensitive information into sent data vulnerability in Parla Auto Automotive Trading Limited Company DetaWix Mobile Web Portal allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects DetaWix Mobile Web Portal: before v1.0.19.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86450",
+      "last_modified": "2026-09-29T14:17:21.763",
+      "products": [],
+      "published": "2026-09-29T14:17:21.763",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1210"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-86473": {
     "added": "2026-09-22",
     "checks_done": 7,
@@ -383442,6 +384044,32 @@
       ]
     },
     "next_check": "2026-10-02"
+  },
+  "CVE-2026-87748": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Missing Authorization vulnerability in Interprobe Information Technologies Inc. Qorela DC allows Privilege Abuse.\n\nThis issue affects Qorela DC: from 1.6.1-RC29 before v1.6.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87748",
+      "last_modified": "2026-09-29T12:17:12.527",
+      "products": [],
+      "published": "2026-09-29T12:17:12.527",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1209"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
   },
   "CVE-2026-87752": {
     "added": "2026-09-28",
@@ -429981,6 +430609,66 @@
     },
     "next_check": "2026-09-30"
   },
+  "CVE-2026-95387": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-122"
+      ],
+      "description": "SPDY protocol dissector crash in 4.6.0 to 4.6.8 and 4.4.0 to 4.4.18 allows denial of service",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-95387",
+      "last_modified": "2026-09-29T10:17:14.713",
+      "products": [],
+      "published": "2026-09-29T10:17:14.713",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gitlab.com/wireshark/wireshark/-/work_items/21487"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wireshark.org/security/wnpa-sec-2026-97.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-95389": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-122"
+      ],
+      "description": "SCTP protocol dissector crash in 4.6.0 to 4.6.8 and 4.4.0 to 4.4.18 allows denial of service",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-95389",
+      "last_modified": "2026-09-29T10:17:15.010",
+      "products": [],
+      "published": "2026-09-29T10:17:15.010",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gitlab.com/wireshark/wireshark/-/work_items/21481"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wireshark.org/security/wnpa-sec-2026-93.html"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-9548": {
     "added": "2026-08-28",
     "checks_done": 9,
@@ -430256,6 +430944,36 @@
         {
           "tags": [],
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2470977"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-95520": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "A heap-based buffer overflow flaw was found in rpm. Parsing a symlink entry in an untrusted RPM package whose declared RPMTAG_LONGFILESIZES value is 0xFFFFFFFFFFFFFFFF causes an integer overflow in iterReadArchiveNext() that shrinks a buffer allocation to one byte, after which the payload's independently-controlled cpio filesize field is used to write attacker-controlled data past the end of that allocation. This is reachable via rpm2cpio, rpm2archive, and rpm -qlvp on an  untrusted package.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-95520",
+      "last_modified": "2026-09-29T14:17:21.903",
+      "products": [],
+      "published": "2026-09-29T12:17:12.650",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-95520"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2537809"
         }
       ]
     },
