@@ -54387,6 +54387,176 @@
     },
     "next_check": "2026-09-30"
   },
+  "CVE-2026-102245": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "description": "A weakness has been identified in MODSetter SurfSense up to 2.0.3. The affected element is an unknown function of the file surfsense_backend/app/routes/circleback_webhook_route.py of the component circleback Endpoint. Executing a manipulation can lead to missing authentication. The attack can be launched remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102245",
+      "last_modified": "2026-09-29T04:17:52.653",
+      "products": [],
+      "published": "2026-09-29T04:17:52.653",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/DReazer/1e476832e48bcdb2b4f732689dfeac0c"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-102245"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/933653"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/411143"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/411143/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-102247": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-250"
+      ],
+      "description": "A vulnerability was detected in FastAdmin 1.6.1.20250430/1.6.5.20260602. This affects an unknown function of the file application/database.php of the component Database Management. The manipulation results in execution with unnecessary privileges. The attack may be launched remotely. The exploit is now public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102247",
+      "last_modified": "2026-09-29T04:17:54.110",
+      "products": [],
+      "published": "2026-09-29T04:17:54.110",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/baguette168/CVE/issues/2"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-102247"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/933377"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/411145"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/411145/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-102248": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "A vulnerability was identified in Rebuild up to 4.4.7/4.5.0-beta5. This affects an unknown part of the file /user/login of the component Login Endpoint. The manipulation leads to improper authentication. It is possible to initiate the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102248",
+      "last_modified": "2026-09-29T04:17:54.570",
+      "products": [],
+      "published": "2026-09-29T04:17:54.570",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ASantsSec/CVE/issues/25"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-102248"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/933708"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/411150"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/411150/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-102249": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862",
+        "CWE-863"
+      ],
+      "description": "A security flaw has been discovered in REBUILD up to 4.4.11. This vulnerability affects unknown code of the file /commons/file-editor-save. The manipulation of the argument url/fileKey results in missing authorization. It is possible to launch the attack remotely. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102249",
+      "last_modified": "2026-09-29T04:17:54.917",
+      "products": [],
+      "published": "2026-09-29T04:17:54.917",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ASantsSec/CVE/issues/26"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-102249"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/933733"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/411151"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/411151/cti"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-102266": {
     "added": "2026-09-29",
     "checks_done": 0,
@@ -54752,6 +54922,49 @@
         {
           "tags": [],
           "url": "https://github.com/nestjs/nest/security/advisories/GHSA-m8vh-jmq9-5rjg"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-102293": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266",
+        "CWE-285"
+      ],
+      "description": "A vulnerability was identified in realjerrytang tacomall 1.0.0. Impacted is the function OrgStaffServiceImpl.add of the file ApiMaApplication.java of the component api-admin Backend. The manipulation of the argument isAdmin/jobId leads to improper authorization. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102293",
+      "last_modified": "2026-09-29T06:16:58.543",
+      "products": [],
+      "published": "2026-09-29T06:16:58.543",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/fangtang7/CVE/blob/main/tacomall/create.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-102293"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/941875"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/411186"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/411186/cti"
         }
       ]
     },
@@ -55192,6 +55405,44 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/gestsup-before-3.2.62-stored-xss-via-double-decoded-email-subject-in-oauth-imap-connector"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-102422": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "shell-quote's `quote()` function emits a `{ comment }` token as `#` followed by its text, which comments out the rest of the shell line, including the opening quote of any later string token. A line terminator (\\n, \\r, U+2028, U+2029) in that later string therefore ends the comment, and the rest of the string is parsed as shell input: `quote(['echo', 'ok', { comment: 'x' }, 'a\\nid;#'])` runs `id` in sh, bash, dash, ksh and zsh. `parse()` emits a comment token for a `#` in the middle of a word (for example `http://example.com/#frag`), so callers that combine `parse()` output with another untrusted string, such as `quote(parse(untrustedCommand).concat(untrustedArg))`, are affected. The fix for CVE-2026-9277 rejected line terminators in the comment's own text, but not in the tokens after it. Fixed in 1.11.0: `quote()` throws a `TypeError` when a string after a `{ comment }` token contains a line terminator.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102422",
+      "last_modified": "2026-09-29T04:17:55.707",
+      "products": [],
+      "published": "2026-09-29T04:17:55.707",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ljharb/shell-quote"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ljharb/shell-quote/commit/6002b2ed90c6b83095eb272b6b0adaf3a172b0bc"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ljharb/shell-quote/security/advisories/GHSA-pqg4-j6r4-53mv"
+        },
+        {
+          "tags": [],
+          "url": "https://www.npmjs.com/package/shell-quote"
         }
       ]
     },
@@ -352248,6 +352499,32 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-84154": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "A Code Injection vulnerability affecting GEOVIA Geospatial Data Manager from Release 3DEXPERIENCE R2024x through Release 3DEXPERIENCE R2026x could allow an attacker to execute arbitrary code on the server.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84154",
+      "last_modified": "2026-09-29T08:17:21.297",
+      "products": [],
+      "published": "2026-09-29T08:17:21.297",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.3ds.com/trust-center/security/security-advisories/cve-2026-84154"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
   "CVE-2026-84179": {
     "added": "2026-09-15",
     "checks_done": 8,
@@ -370573,6 +370850,32 @@
       ]
     },
     "next_check": "2026-10-06"
+  },
+  "CVE-2026-86158": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "Missing authentication in the local .NET backend (Fiddler.WebUi) of Progress Software Fiddler Everywhere 8.0.2 allows a local unauthenticated attacker to mint OAuth tokens and read the machine-in-the-middle root certificate through an unauthenticated localhost HTTP and SignalR RPC channel.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-86158",
+      "last_modified": "2026-09-29T07:16:35.520",
+      "products": [],
+      "published": "2026-09-29T07:16:35.520",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.telerik.com/fiddler/fiddler-everywhere/documentation/knowledge-base/kb-security-exposed-dangerous-method-or-function-cve-2026-aaaaa"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
   },
   "CVE-2026-86159": {
     "added": "2026-09-06",
@@ -434255,6 +434558,40 @@
         {
           "tags": [],
           "url": "https://github.com/flatpak/flatpak/security/advisories/GHSA-5p67-xh8x-rq54"
+        }
+      ]
+    },
+    "next_check": "2026-09-30"
+  },
+  "CVE-2026-97024": {
+    "added": "2026-09-29",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-61"
+      ],
+      "description": "A path traversal vulnerability in Flatpak's handling of the files/etc directory during app deployment allows a malicious Flatpak app to cause certain host system files (such as passwd, group, machine-id, or resolv.conf) to be emptied or replaced with a symlink when the app is installed or upgraded. In system-wide installations, the write is performed as root.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-97024",
+      "last_modified": "2026-09-29T04:18:02.397",
+      "products": [],
+      "published": "2026-09-29T04:18:02.397",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-97024"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2542625"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/flatpak/flatpak/security/advisories/GHSA-8xgq-v545-vgvf"
         }
       ]
     },
