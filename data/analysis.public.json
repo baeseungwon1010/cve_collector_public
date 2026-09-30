@@ -1,77 +1,23 @@
 {
-  "CVE-2022-39135": {
-    "package": "MAVEN:org.apache.calcite:calcite-core"
+  "CVE-2026-101894": {
+    "package": "NPM:decompress"
   },
-  "CVE-2026-102266": {
-    "package": "PIP:PyJWT"
+  "CVE-2026-101911": {
+    "package": "NPM:ip-address"
   },
-  "CVE-2026-102267": {
-    "package": "PIP:PyJWT"
+  "CVE-2026-101912": {
+    "package": "NPM:ip-address"
   },
-  "CVE-2026-102268": {
-    "package": "PIP:PyJWT"
+  "CVE-2026-102276": {
+    "package": "NPM:brace-expansion"
   },
-  "CVE-2026-102271": {
-    "package": "PIP:pyjwt"
+  "CVE-2026-102278": {
+    "package": "NPM:brace-expansion"
   },
-  "CVE-2026-102272": {
-    "package": "PIP:PyJWT"
+  "CVE-2026-102281": {
+    "package": "NPM:@nestjs/microservices"
   },
-  "CVE-2026-102273": {
-    "package": "PIP:PyJWT"
-  },
-  "CVE-2026-102282": {
-    "package": "NPM:adm-zip"
-  },
-  "CVE-2026-102672": {
-    "package": "NPM:electron"
-  },
-  "CVE-2026-102673": {
-    "package": "NPM:electron"
-  },
-  "CVE-2026-102674": {
-    "package": "NPM:electron"
-  },
-  "CVE-2026-102675": {
-    "package": "NPM:electron"
-  },
-  "CVE-2026-102676": {
-    "package": "NPM:electron"
-  },
-  "CVE-2026-102677": {
-    "package": "NPM:electron"
-  },
-  "CVE-2026-19534": {
-    "package": "NPM:undici"
-  },
-  "CVE-2026-49264": {
-    "package": "PIP:oauthlib"
-  },
-  "CVE-2026-49265": {
-    "package": "PIP:oauthlib"
-  },
-  "CVE-2026-65954": {
-    "package": "COMPOSER:phpcsstandards/phpcsutils"
-  },
-  "CVE-2026-76844": {
-    "package": "NPM:webpack-dev-middleware"
-  },
-  "CVE-2026-81869": {
-    "package": "GO:go.opentelemetry.io/otel/sdk"
-  },
-  "CVE-2026-81872": {
-    "package": "GO:go.opentelemetry.io/otel/sdk/log"
-  },
-  "CVE-2026-84308": {
-    "package": "COMPOSER:phpseclib/phpseclib"
-  },
-  "CVE-2026-84933": {
-    "package": "NPM:undici"
-  },
-  "CVE-2026-84961": {
-    "package": "NPM:undici"
-  },
-  "CVE-2026-85152": {
-    "package": "NPM:undici"
+  "CVE-2026-102599": {
+    "package": "NPM:engine.io"
   }
 }

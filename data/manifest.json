@@ -2015,6 +2015,15 @@
     "poc_source": "github_search",
     "published": "2018-08-17T13:29:00.250"
   },
+  "CVE-2018-3786": {
+    "cvss_score": 9.8,
+    "cvss_severity": "CRITICAL",
+    "kev": false,
+    "poc_confirmed_date": "2026-09-30",
+    "poc_published_date": "2020-05-19",
+    "poc_source": "github_search",
+    "published": "2018-08-24T20:29:00.230"
+  },
   "CVE-2018-9059": {
     "cvss_score": 9.8,
     "cvss_severity": "CRITICAL",
