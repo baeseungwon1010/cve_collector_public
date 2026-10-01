@@ -42277,6 +42277,32 @@
     },
     "next_check": "2026-11-23"
   },
+  "CVE-2025-41753": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "The object name of a dynamically created BACnet File Object is interpreted as a file path without sufficient validation. Because relative paths are not limited to the intended directory, an unauthenticated remote attacker can traverse outside of it and read or overwrite arbitrary files on the device, which may lead to full system compromise.",
+      "has_exploit_tag": false,
+      "id": "CVE-2025-41753",
+      "last_modified": "2026-10-01T07:16:32.473",
+      "products": [],
+      "published": "2026-10-01T07:16:32.473",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2025-102/"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2025-41769": {
     "added": "2026-08-13",
     "checks_done": 9,
@@ -44160,6 +44186,48 @@
         {
           "tags": [],
           "url": "https://git.kernel.org/stable/c/f65f45dfa1e6e2eaa9e11c8b8ce8857799cb189d"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-100179": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Calculated Fields Form – AI Form Builder for WordPress – Contact, Payment, Quote, Quiz & More plugin for WordPress is vulnerable to Reflected DOM-Based Cross-Site Scripting via the 'x (any URL parameter consumed by the form's calculated equation)' parameter in all versions up to, and including, 5.5.1.3 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link. Exploitation requires the target site to have a public form configured with a Select2-enabled dropdown whose choices are populated via a calculated equation that pipes a URL parameter through GETURLPARAMETER() into setChoices({texts:[...]}); given that configuration, exploitation requires only a single crafted link.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-100179",
+      "last_modified": "2026-10-01T09:17:06.227",
+      "products": [],
+      "published": "2026-10-01T09:17:06.227",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/calculated-fields-form/tags/5.5.1.2/js/fields-public/08_fbuilder.fdropdown.js#L240"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/calculated-fields-form/tags/5.5.1.2/js/fields-public/08_fbuilder.fdropdown.js#L84"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/calculated-fields-form/tags/5.5.1.2/js/modules/08_url/public/01_url.js"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3713574%40calculated-fields-form&new=3713574%40calculated-fields-form"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/215a9f92-e922-4fa3-a4ac-83af788f4e55?source=cve"
         }
       ]
     },
@@ -56963,6 +57031,56 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-101925": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The bbp style pack plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'display_name (via /wp-admin/profile.php) + bbp_reply_content (via bbPress reply form)' parameter in all versions up to, and including, 6.4.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Successful exploitation requires the attacker to wrap their crafted reply in a &lt;pre&gt; block, which prevents WordPress's wpautop/wptexturize processors from converting straight double quotes in the stored display name into typographic curly-quote entities that would otherwise neutralize the attribute-injection.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-101925",
+      "last_modified": "2026-10-01T09:17:07.563",
+      "products": [],
+      "published": "2026-10-01T09:17:07.563",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bbp-style-pack/tags/6.4.8/includes/functions_quote.php#L223"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bbp-style-pack/tags/6.4.8/includes/functions_quote.php#L244"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bbp-style-pack/tags/6.4.8/includes/functions_quote.php#L249"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bbp-style-pack/tags/6.4.8/includes/functions_quote.php#L275"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bbp-style-pack/tags/6.4.8/includes/functions_quote.php#L83"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3719484%40bbp-style-pack&new=3719484%40bbp-style-pack"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/31c9b86b-c971-4a0b-95ef-10bc7781e93f?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-10195": {
     "added": "2026-09-02",
     "checks_done": 8,
@@ -64498,6 +64616,36 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-103431": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-150"
+      ],
+      "description": "colmux in collectl before 4.3.20.2 does not sanitize ANSI/VT100 terminal escape sequences in data received from remote collectl instances before displaying it, allowing a local user on a monitored host to inject escape sequences into the terminal of an operator running colmux, via a crafted process name (argv[0]).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103431",
+      "last_modified": "2026-10-01T09:17:07.717",
+      "products": [],
+      "published": "2026-10-01T09:17:07.717",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-103431"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2543974"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-103432": {
     "added": "2026-10-01",
     "checks_done": 0,
@@ -64779,6 +64927,342 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/412342/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103534": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266",
+        "CWE-284"
+      ],
+      "description": "A vulnerability was determined in David-Crty databasement up to 1.7.1. Affected is the function SnapshotPolicy.viewAny/SnapshotPolicy.view of the file /api/v1/snapshots of the component Snapshot Model. This manipulation causes improper access controls. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. Upgrading to version 1.7.2 is able to address this issue. The affected component should be upgraded.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103534",
+      "last_modified": "2026-10-01T04:18:04.753",
+      "products": [],
+      "published": "2026-10-01T04:18:04.380",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/David-Crty/databasement/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/David-Crty/databasement/releases/tag/v1.7.2"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/David-Crty/databasement/security/advisories/GHSA-vx6q-v2gv-5fhv"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-103534"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/957818"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412346"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412346/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103536": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "description": "A vulnerability was identified in ZongXR Supermarket 1.0.0.0. Affected by this vulnerability is the function OrderController.addOrder of the file order/src/main/java/com/supermarket/order/controller/OrderController.java of the component save Endpoint. Such manipulation of the argument userId leads to missing authentication. The attack can be executed remotely. The exploit is publicly available and might be used. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103536",
+      "last_modified": "2026-10-01T05:17:06.783",
+      "products": [],
+      "published": "2026-10-01T05:17:06.783",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ZongXR/SuperMarket/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ZongXR/SuperMarket/issues/32"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-103536"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/957824"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412347"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412347/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103538": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287",
+        "CWE-306"
+      ],
+      "description": "A security flaw has been discovered in ZongXR SuperMarket 1.0.0.0. Affected by this issue is the function OrderController.deleteOrder of the file order/src/main/java/com/supermarket/order/controller/OrderController.java of the component Order Deletion Endpoint. Performing a manipulation of the argument orderId results in missing authentication. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103538",
+      "last_modified": "2026-10-01T05:17:08.450",
+      "products": [],
+      "published": "2026-10-01T05:17:08.450",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ZongXR/SuperMarket/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/ZongXR/SuperMarket/issues/31"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-103538"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/957825"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412348"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412348/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103540": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1336",
+        "CWE-791"
+      ],
+      "description": "A security vulnerability has been detected in formtools.org Form Tools up to 3.1.1. This vulnerability affects the function Clients::updateClientSettingsTab of the file global/code/Clients.class.php of the component Client Settings. The manipulation of the argument page_titles leads to improper neutralization of special elements used in a template engine. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103540",
+      "last_modified": "2026-10-01T06:17:04.393",
+      "products": [],
+      "published": "2026-10-01T06:17:04.393",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/formtools/core/issues/956"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/wawyw/cve_report/blob/main/formtools_1.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-103540"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/957845"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412350"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412350/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103541": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-284",
+        "CWE-434"
+      ],
+      "description": "A vulnerability was detected in formtools.org Form Tools up to 3.1.1. This issue affects the function Files::uploadFile of the file global/code/actions.php of the component Ajax Handler. The manipulation results in unrestricted upload. It is possible to launch the attack remotely. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103541",
+      "last_modified": "2026-10-01T06:17:05.630",
+      "products": [],
+      "published": "2026-10-01T06:17:05.630",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/formtools/core/issues/957"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/wawyw/cve_report/blob/main/formtools_2.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-103541"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/957902"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412351"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412351/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103543": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability has been found in itsourcecode Leave Management System 1.0. The affected element is an unknown function of the file /module/leavetype/controller.php. Such manipulation of the argument LEAVTID leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103543",
+      "last_modified": "2026-10-01T06:17:07.620",
+      "products": [],
+      "published": "2026-10-01T06:17:07.620",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ltranquility/submit_repository/issues/17"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-103543"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/957952"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412353"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412353/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103544": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-488"
+      ],
+      "description": "A vulnerability was found in datadrivenconstruction OpenConstructionERP up to 14.8.1. The impacted element is an unknown function of the file backend/app/modules/ai/ai_client.py of the component Al Provider Configuration Handler. Performing a manipulation results in exposure of data element to wrong session. The attack may be initiated remotely. The exploit has been made public and could be used. Upgrading to version 15.0.0 is sufficient to resolve this issue. It is suggested to upgrade the affected component.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103544",
+      "last_modified": "2026-10-01T07:16:33.900",
+      "products": [],
+      "published": "2026-10-01T07:16:33.900",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/datadrivenconstruction/OpenConstructionERP/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/datadrivenconstruction/OpenConstructionERP/releases/tag/v15.0.0"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/datadrivenconstruction/OpenConstructionERP/security/advisories/GHSA-wfpw-cv5v-64j5"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-103544"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/957984"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412354"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412354/cti"
         }
       ]
     },
@@ -75588,6 +76072,52 @@
     },
     "next_check": "2026-10-09"
   },
+  "CVE-2026-14995": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Autoptimize plugin for WordPress is vulnerable to Stored Cross-Site Scripting via REQUEST_URI Path in all versions up to, and including, 3.1.15.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Exploitation requires the Critical CSS feature to be active with a valid API key configured, as this is the precondition for unauthenticated frontend requests to trigger queue entries via ao_ccss_enqueue().",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-14995",
+      "last_modified": "2026-10-01T09:17:08.967",
+      "products": [],
+      "published": "2026-10-01T09:17:08.967",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/autoptimize/tags/3.1.15.1/classes/autoptimizeCriticalCSSEnqueue.php#L218"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/autoptimize/tags/3.1.15.1/classes/autoptimizeCriticalCSSEnqueue.php#L57"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/autoptimize/tags/3.1.15.1/classes/critcss-inc/admin_settings_queue.js.php#L125"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/autoptimize/tags/3.1.15.1/classes/critcss-inc/admin_settings_queue.php#L82"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3713884%40autoptimize&new=3713884%40autoptimize"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/1704cffa-75ed-415e-864f-de7ff8eea8dc?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-15001": {
     "added": "2026-08-15",
     "checks_done": 9,
@@ -80630,6 +81160,36 @@
     },
     "next_check": "2026-11-28"
   },
+  "CVE-2026-15983": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-73"
+      ],
+      "description": "The Super Forms – Drag & Drop Form Builder plugin for WordPress is vulnerable to Arbitrary File/Directory Deletion in all versions up to, and including, 6.3.316. This is due to the `super_save_form` AJAX handler performing no capability check — allowing Subscriber-level authenticated users to create or modify Super Forms and enable the `file_upload_submission_delete` setting — combined with the `super_submit_form` handler's `submit_form` function passing the attacker-controlled `files[].subdir` value from `$_POST['data']` directly into `SUPER_Common::delete_dir()` without sanitization, and a trivially bypassed `ABSPATH` guard that a `subdir` value of `wp-config.php` defeats because `dirname(realpath(ABSPATH . $subdir))` resolves to the WordPress root while the naive `ABSPATH !== $dir` string check fails to match due to a trailing-slash mismatch. This makes it possible for authenticated attackers, with Subscriber-level access and above, to recursively delete arbitrary files and directories on the server, up to and including the entire WordPress installation, resulting in full site takedown and potential remote code execution if critical files such as `wp-config.php` are removed and the site is subsequently re-installed by another party.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15983",
+      "last_modified": "2026-10-01T09:17:09.223",
+      "products": [],
+      "published": "2026-10-01T09:17:09.223",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/RensTillmann/super-forms/pull/205"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/25704473-1200-49df-aa16-9a9558bb4844?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-15984": {
     "added": "2026-09-05",
     "checks_done": 8,
@@ -80739,6 +81299,36 @@
       ]
     },
     "next_check": "2026-10-31"
+  },
+  "CVE-2026-15989": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The Super Forms – Drag & Drop Form Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 6.3.316. This is due to the Register & Login add-on's before_email_success_msg() function whitelisting the client-submitted 'role' key and copying it into the user-data array that is passed directly to wp_insert_user(), without validating the submitted role against the administrator-configured register_user_role, without an allow-list, and without any current_user_can() capability check. This makes it possible for unauthenticated attackers to register a new account with the Administrator role by injecting role=administrator into the data submitted to any published Super Forms registration form (register_login_action='register').",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15989",
+      "last_modified": "2026-10-01T08:16:51.233",
+      "products": [],
+      "published": "2026-10-01T08:16:51.233",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/RensTillmann/super-forms/pull/205"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/7eb62d35-3f0e-4733-8f7f-723d0f25b710?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
   },
   "CVE-2026-15990": {
     "added": "2026-08-27",
@@ -120618,6 +121208,80 @@
     },
     "next_check": "2026-11-30"
   },
+  "CVE-2026-19807": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The ByteCoreStack – MCP Connector for AI Tools plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.2.3 This is due to the `wp_update_user_meta` MCP tool in `execute_tool` gating writes solely with `current_user_can('edit_user', $uid)` — a check that WordPress core's `map_meta_cap` resolves to the `read` primitive when the target user ID matches the caller's own — while enforcing an incomplete meta key blocklist that covers only `user_pass`, `user_activation_key`, and `session_tokens`, leaving the `wp_capabilities` and `wp_user_level` meta keys entirely unprotected. This makes it possible for authenticated attackers with Subscriber-level access and above to elevate their privileges to Administrator by issuing a `wp_update_user_meta` call over the MCP JSON-RPC endpoint with `key=wp_capabilities` and an arbitrary role array such as `{'administrator': true}` targeting their own user ID, causing WordPress to load that account as an Administrator on the next request.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19807",
+      "last_modified": "2026-10-01T08:16:51.390",
+      "products": [],
+      "published": "2026-10-01T08:16:51.390",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bcs-mcp-manager/tags/1.1.0/includes/MCP/Server.php#L2042"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bcs-mcp-manager/tags/1.1.0/includes/MCP/Server.php#L2044"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bcs-mcp-manager/tags/1.1.0/includes/MCP/Server.php#L2046"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bcs-mcp-manager/tags/1.1.0/includes/MCP/Server.php#L332"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bcs-mcp-manager/tags/1.1.0/includes/OAuth/Server.php#L122"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bcs-mcp-manager/tags/1.2.0/includes/MCP/Server.php#L2042"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bcs-mcp-manager/tags/1.2.0/includes/MCP/Server.php#L2044"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bcs-mcp-manager/tags/1.2.0/includes/MCP/Server.php#L2046"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bcs-mcp-manager/tags/1.2.0/includes/MCP/Server.php#L332"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/bcs-mcp-manager/tags/1.2.0/includes/OAuth/Server.php#L122"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3711908/bcs-mcp-manager/trunk/includes/MCP/Server.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3711909%40bcs-mcp-manager%2Ftags%2F1.2.4&old=3711721%40bcs-mcp-manager%2Ftags%2F1.2.3"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/ac09bf3e-49cf-4f11-92ba-d1fbf6f587d7?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-19811": {
     "added": "2026-08-15",
     "checks_done": 9,
@@ -122015,6 +122679,60 @@
       ]
     },
     "next_check": "2026-11-14"
+  },
+  "CVE-2026-19902": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Ad Inserter – Ad Manager & AdSense Ads plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the Referer header in all versions up to, and including, 2.8.18 due to insufficient input sanitization and output escaping on the '{search-query}' dynamic tag. When an ad block's code contains that tag, replace_ai_tags() reads $_SERVER['HTTP_REFERER'] and tests it with the regex /[\\.\\/](google|yahoo|bing|ask)\\.[a-z\\.]{2,5}[\\/]/i. The leading [\\.\\/] class matches a literal slash, so any referrer merely containing a segment such as '/google.com/' passes as a search-engine referral; the plugin then percent-decodes the referring query with parse_str() and substitutes the resulting 'q' (or 'p') value into the block via preg_replace() with no escaping. This makes it possible for unauthenticated attackers to execute arbitrary JavaScript in the context of the site for any visitor, including a signed-in administrator, by luring them to an attacker-controlled page that frames or links to any ordinary post. Exploitation requires the site to have an ad block whose code uses the '{search-query}' tag with automatic insertion enabled — a documented plugin feature used as intended.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19902",
+      "last_modified": "2026-10-01T08:16:51.580",
+      "products": [],
+      "published": "2026-10-01T08:16:51.580",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ad-inserter/tags/2.8.18/ad-inserter.php#L13018"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ad-inserter/tags/2.8.18/ad-inserter.php#L13022"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ad-inserter/tags/2.8.18/ad-inserter.php#L13025"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ad-inserter/tags/2.8.18/ad-inserter.php#L13093"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ad-inserter/tags/2.8.18/class.php#L3297"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3709957/ad-inserter/trunk/ad-inserter.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3709970%40ad-inserter%2Ftags%2F2.8.19&old=3624916%40ad-inserter%2Ftags%2F2.8.18"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/5d632cce-40a9-4969-b213-8370ae75287e?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
   },
   "CVE-2026-19905": {
     "added": "2026-08-16",
@@ -218687,6 +219405,32 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-67075": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "HCL Digital Experience is affected by improper input sanitation.  This can result in HTML injection which could be leveraged in content spoofing from a trusted domain. Apply HCL Digital Experience 9.5 CF238 or later to address this.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-67075",
+      "last_modified": "2026-10-01T06:17:08.940",
+      "products": [],
+      "published": "2026-10-01T06:17:08.940",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0133995"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-67100": {
     "added": "2026-09-18",
     "checks_done": 7,
@@ -297389,6 +298133,80 @@
     },
     "next_check": "2026-10-11"
   },
+  "CVE-2026-75957": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "The Ultimate Multisite – WordPress Multisite SaaS & WaaS Platform plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 2.15.0 via the `checkout_form` parameter of the `login_customer_after_checkout` function. This is due to the publicly accessible `wu_ajax_nopriv_wu_validate_form` AJAX handler accepting a freely obtainable checkout nonce, and the `checkout_form=wu-finish-checkout` parameter causing `get_validation_rules()` to discard all validation rules while `finish_checkout_form_fields()` returns an empty step list — forcing `is_last_step()` to return true and routing the request directly into full order processing — after which `maybe_create_customer()` resolves the attacker-supplied `email_address` to an existing WordPress user ID without any authentication or ownership verification, and `login_customer_after_checkout()` calls `wp_set_auth_cookie()` for that user ID via a passwordless code path. This makes it possible for unauthenticated attackers to log in as any existing WordPress user — including a Network Super Admin — simply by knowing their email address. Exploitation requires that the targeted user account has no pre-existing Ultimate Multisite customer record; accounts such as a Network Super Admin on a fresh Multisite install, or any administrator or editor added before Ultimate Multisite was configured, satisfy this condition and are therefore exploitable.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-75957",
+      "last_modified": "2026-10-01T08:16:52.763",
+      "products": [],
+      "published": "2026-10-01T08:16:52.763",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-multisite/tags/2.14.2/inc/checkout/class-checkout.php#L1223"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-multisite/tags/2.14.2/inc/checkout/class-checkout.php#L208"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-multisite/tags/2.14.2/inc/checkout/class-checkout.php#L2489"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-multisite/tags/2.14.2/inc/checkout/class-checkout.php#L2700"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-multisite/tags/2.14.2/inc/models/class-checkout-form.php#L1352"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-multisite/tags/2.15.0/inc/checkout/class-checkout.php#L1223"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-multisite/tags/2.15.0/inc/checkout/class-checkout.php#L208"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-multisite/tags/2.15.0/inc/checkout/class-checkout.php#L2489"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-multisite/tags/2.15.0/inc/checkout/class-checkout.php#L2700"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-multisite/tags/2.15.0/inc/models/class-checkout-form.php#L1352"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3653622/ultimate-multisite/trunk/inc/checkout/class-checkout.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3653623%40ultimate-multisite%2Ftags%2F2.15.1&old=3634394%40ultimate-multisite%2Ftags%2F2.15.0"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/66cb8c6f-d405-4115-a626-040e9b5b1e62?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-75960": {
     "added": "2026-08-27",
     "checks_done": 9,
@@ -328808,6 +329626,58 @@
     },
     "next_check": "2026-10-17"
   },
+  "CVE-2026-80275": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-425"
+      ],
+      "description": "Comelit Multi-User Gateway for VIP System (model 1456B) firmware versions 2.9.1 and 2.10.0 fail to enforce server-side authorization on an administrative password-change function. An authenticated user level can invoke this function to overwrite the installer (administrator) account password.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80275",
+      "last_modified": "2026-10-01T06:17:09.720",
+      "products": [],
+      "published": "2026-10-01T06:17:09.720",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://pro.comelitgroup.com/en-us/product/1456B"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-80276": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "Comelit Multi-User Gateway for VIP System (model 1456B) firmware versions 2.9.1 and 2.10.0 expose a network-accessible management interface that does not require authentication. Through this interface, sensitive device configuration data - including the Remote Configuration Password - can be read in cleartext by a remote, unauthenticated attacker.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80276",
+      "last_modified": "2026-10-01T06:17:10.430",
+      "products": [],
+      "published": "2026-10-01T06:17:10.430",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://pro.comelitgroup.com/en-us/product/1456B"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-80338": {
     "added": "2026-09-24",
     "checks_done": 7,
@@ -350821,6 +351691,162 @@
       ]
     },
     "next_check": "2026-11-30"
+  },
+  "CVE-2026-82824": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-35"
+      ],
+      "description": "Hitachi Coding Software Suite contains a vulnerability related to Path Traversal vulnerability that allows an attacker to access, create, modify, or delete files.\n\n\nThis issue affects Hitachi Coding Software Suite: through 3.3.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82824",
+      "last_modified": "2026-10-01T05:17:10.270",
+      "products": [],
+      "published": "2026-10-01T05:17:10.270",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.hitachi-ies.com/common/documents/vulnerability/hcss/Hitachi_Coding_Software_Suite_Public_statement_20260925_EN.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-82825": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "Hitachi Coding Software Suite contains a vulnerability related to Missing Authentication for Critical Function. This allows an unauthenticated attacker to invoke a critical API, potentially leading to unauthorized retrieval or alteration of sensitive information, or unauthorized manipulation.\n\n\nThis issue affects Hitachi Coding Software Suite: through 3.3.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82825",
+      "last_modified": "2026-10-01T05:17:10.443",
+      "products": [],
+      "published": "2026-10-01T05:17:10.443",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.hitachi-ies.com/common/documents/vulnerability/hcss/Hitachi_Coding_Software_Suite_Public_statement_20260925_EN.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-82826": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-319"
+      ],
+      "description": "Hitachi Coding Software Suite contains a vulnerability related to the Cleartext Transmission of Sensitive Information which allows an attacker to eavesdrop on with authentication credentials and sensitive data in transit.\n\n\nThis issue affects Hitachi Coding Software Suite: through 3.3.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82826",
+      "last_modified": "2026-10-01T05:17:10.633",
+      "products": [],
+      "published": "2026-10-01T05:17:10.633",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.hitachi-ies.com/common/documents/vulnerability/hcss/Hitachi_Coding_Software_Suite_Public_statement_20260925_EN.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-82827": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-321"
+      ],
+      "description": "Hitachi Coding Software Suite contains a vulnerability related to Use of Hard-coded Cryptographic Key. The Hardcoding of JWT signing secret key allows an attacker to generate unauthorized Bearer tokens and exploit administrative functions.\n\n\nThis issue affects Hitachi Coding Software Suite: through 3.3.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82827",
+      "last_modified": "2026-10-01T05:17:10.780",
+      "products": [],
+      "published": "2026-10-01T05:17:10.780",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.hitachi-ies.com/common/documents/vulnerability/hcss/Hitachi_Coding_Software_Suite_Public_statement_20260925_EN.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-82828": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "Hitachi Coding Software Suite contains an Incorrect Authorization vulnerability that allows an unprivileged user to perform administrator-level operations.\n\n\nThis issue affects Hitachi Coding Software Suite: through 3.3.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82828",
+      "last_modified": "2026-10-01T05:17:10.937",
+      "products": [],
+      "published": "2026-10-01T05:17:10.937",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.hitachi-ies.com/common/documents/vulnerability/hcss/Hitachi_Coding_Software_Suite_Public_statement_20260925_EN.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-82829": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-912"
+      ],
+      "description": "Hitachi Coding Software Suite contains a vulnerability related to Hidden Functionality vulnerability which allows an attacker to gain unauthorized access by exploiting hidden accounts or hard coded credentials.\n\n\nThis issue affects Hitachi Coding Software Suite: through 3.3.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82829",
+      "last_modified": "2026-10-01T05:17:11.090",
+      "products": [],
+      "published": "2026-10-01T05:17:11.090",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.hitachi-ies.com/common/documents/vulnerability/hcss/Hitachi_Coding_Software_Suite_Public_statement_20260925_EN.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
   },
   "CVE-2026-82832": {
     "added": "2026-09-19",
@@ -376446,6 +377472,52 @@
     },
     "next_check": "2026-10-16"
   },
+  "CVE-2026-85235": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Forminator Forms – Contact Form, Payment Form & Custom Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Rich-Text Textarea Field in all versions up to, and including, 1.57.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Successful exploitation requires an administrator to open the stored submission entry in the Forminator Entries view and interact with the planted link, at which point WordPress core's jQuery-based click handler on `.contextual-help-tabs a` evaluates the entity-decoded href as HTML, firing the attacker's payload in the administrator's authenticated wp-admin session.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85235",
+      "last_modified": "2026-10-01T09:17:09.400",
+      "products": [],
+      "published": "2026-10-01T09:17:09.400",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/forminator/tags/1.57.1/admin/views/custom-form/entries/content-details.php#L213"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/forminator/tags/1.57.1/library/abstracts/abstract-class-front-action.php#L127"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/forminator/tags/1.57.1/library/fields/textarea.php#L405"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/forminator/tags/1.57.1/library/helpers/helper-forms.php#L1295"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3700709%40forminator%2Ftags%2F1.57.2.1&old=3668424%40forminator%2Ftags%2F1.57.2"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/2ff3d390-ad00-4233-ab25-f1afb679300e?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-85241": {
     "added": "2026-09-04",
     "checks_done": 8,
@@ -381935,6 +383007,60 @@
       ]
     },
     "next_check": "2026-10-11"
+  },
+  "CVE-2026-85679": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Extendify plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'styles.blocks' Block Type Key in all versions up to, and including, 3.1.6 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is possible because registerIncoming() is hooked on rest_request_before_callbacks and runs before WordPress evaluates the route's permission_callback, meaning any unauthenticated POST, PUT, or PATCH request to a /wp/v2/global-styles route can trigger the vulnerable code path.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85679",
+      "last_modified": "2026-10-01T06:17:11.577",
+      "products": [],
+      "published": "2026-10-01T06:17:11.577",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/extendify/tags/3.1.6/app/Shared/Services/BlockStyleVariations.php#L29"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/extendify/tags/3.1.6/app/Shared/Services/BlockStyleVariations.php#L37"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/extendify/tags/3.1.6/app/Shared/Services/BlockStyleVariations.php#L62"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/extendify/tags/3.1.6/app/Shared/Services/BlockStyleVariations.php#L75"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/extendify/tags/3.1.6/bootstrap.php#L112"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3688833/extendify/trunk/app/Shared/Services/BlockStyleVariations.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3688833%40extendify%2Ftags%2F3.2.0&old=3669317%40extendify%2Ftags%2F3.1.6"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/38024680-2d99-4af0-b805-6fd718a1d338?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
   },
   "CVE-2026-85682": {
     "added": "2026-09-24",
@@ -404453,6 +405579,44 @@
     },
     "next_check": "2026-10-11"
   },
+  "CVE-2026-89047": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Social Media Share Buttons & Social Sharing Icons plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via URL in all versions up to, and including, 3.0.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Exploitation requires the victim to be on a mobile user-agent and to click the WeChat share icon, though once the dialog opens, script execution is automatic and requires no further user interaction.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89047",
+      "last_modified": "2026-10-01T08:16:53.187",
+      "products": [],
+      "published": "2026-10-01T08:16:53.187",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-social-media-icons/tags/3.0.1/js/custom.js#L420"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ultimate-social-media-icons/tags/3.0.1/libs/sfsi_widget.php#L1671"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3702016%40ultimate-social-media-icons&new=3702016%40ultimate-social-media-icons"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/0fae3a9b-5f9a-441b-9ac9-55f24e342187?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-89049": {
     "added": "2026-09-11",
     "checks_done": 8,
@@ -406660,6 +407824,60 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-89424": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Duplicate Post plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'noti_token' parameter in all versions up to, and including, 1.5.6 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This requires that the site owner has enabled the plugin's User Level Permissions for the Subscriber role, as this grants access to the i_saw_this_noti AJAX branch needed to deliver the payload.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89424",
+      "last_modified": "2026-10-01T09:17:09.570",
+      "products": [],
+      "published": "2026-10-01T09:17:09.570",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/copy-delete-posts/tags/1.5.6/menu/notifications.php#L53"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/copy-delete-posts/tags/1.5.6/menu/notifications.php#L84"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/copy-delete-posts/tags/1.5.6/post/handler.php#L15"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/copy-delete-posts/tags/1.5.6/post/handler.php#L1598"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/copy-delete-posts/tags/1.5.6/post/handler.php#L1601"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3709767/copy-delete-posts/trunk/menu/notifications.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3709767%40copy-delete-posts%2Ftags%2F1.5.7&old=3652254%40copy-delete-posts%2Ftags%2F1.5.6"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/c475c51e-f01d-4698-822f-5b8df999bf6d?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-89425": {
     "added": "2026-09-23",
     "checks_done": 7,
@@ -406748,6 +407966,52 @@
         {
           "tags": [],
           "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/ee5df686-7bf8-42cc-9356-92570bd02355?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-89427": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Ad Inserter – Ad Manager & AdSense Ads plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via 's' Search Parameter in all versions up to, and including, 2.8.18 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link. Exploitation requires that a site administrator has configured at least one Ad Inserter block using the {title} or {short-title} placeholder with that block enabled for search pages, which is a standard, documented plugin feature.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89427",
+      "last_modified": "2026-10-01T09:17:09.753",
+      "products": [],
+      "published": "2026-10-01T09:17:09.753",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ad-inserter/tags/2.8.18/ad-inserter.php#L12903"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ad-inserter/tags/2.8.18/ad-inserter.php#L13012"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ad-inserter/tags/2.8.18/ad-inserter.php#L13081"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3709957/ad-inserter/trunk/ad-inserter.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3709970%40ad-inserter%2Ftags%2F2.8.19&old=3624916%40ad-inserter%2Ftags%2F2.8.18"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/c01f98a4-c349-4cb2-b09a-5cbadfcad830?source=cve"
         }
       ]
     },
@@ -419514,6 +420778,60 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-90992": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Redux Framework plugin for WordPress is vulnerable to Stored Cross-Site Scripting via User Meta Merge via 'user-mediaurl' Media Field in all versions up to, and including, 4.5.14 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is exploitable by Subscriber-level users who can store a payload in user meta fields such as the biography, session_tokens (via a crafted User-Agent at login), or persisted_preferences (via the REST API), which are then promoted to the site-wide redux_demo option when a media URL repair is triggered on the demo panel.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-90992",
+      "last_modified": "2026-10-01T09:17:09.927",
+      "products": [],
+      "published": "2026-10-01T09:17:09.927",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/redux-framework/tags/4.5.14/redux-core/assets/js/vendor/jsonview.js#L136"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/redux-framework/tags/4.5.14/redux-core/inc/classes/class-redux-options-constructor.php#L189"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/redux-framework/tags/4.5.14/redux-core/inc/classes/class-redux-options-constructor.php#L632"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/redux-framework/tags/4.5.14/redux-core/inc/extensions/users/class-redux-extension-users.php#L365"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/redux-framework/tags/4.5.14/redux-core/inc/extensions/users/class-redux-users-api.php#L558"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3705066/redux-framework/trunk/redux-core/assets/js/vendor/jsonview.js"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3705066%40redux-framework%2Ftags%2F4.5.15&old=3688279%40redux-framework%2Ftags%2F4.5.14"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/2274a464-4eeb-4c8a-b138-44fef6b4a3a5?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-90997": {
     "added": "2026-09-18",
     "checks_done": 7,
@@ -420086,6 +421404,52 @@
       ]
     },
     "next_check": "2026-10-15"
+  },
+  "CVE-2026-91109": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "The Simply Schedule Appointments plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.6.12.31 via the 'complete_group' parameter due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with subscriber-level access and above, to disclose every co-booker's private per-appointment id_token (exposed as public_token) alongside their PII (name and email address), then use each leaked token to read, overwrite arbitrary appointment meta on, or cancel the co-booker's appointment via the same REST controller. Exploitation requires the attacker to possess a valid id_token for any single appointment within the targeted group booking.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91109",
+      "last_modified": "2026-10-01T04:18:21.557",
+      "products": [],
+      "published": "2026-10-01T04:18:21.557",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/class-appointment-model.php#L1966"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/class-appointment-model.php#L2315"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/class-appointment-model.php#L3160"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/class-db-model.php#L348"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3709365/simply-schedule-appointments/trunk/includes/class-appointment-model.php"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/d1cd3de2-16ca-4f95-ad6f-47cfbe00c959?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
   },
   "CVE-2026-91119": {
     "added": "2026-09-25",
@@ -426713,6 +428077,110 @@
       ]
     },
     "next_check": "2026-10-06"
+  },
+  "CVE-2026-92244": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The PDF Invoices & Packing Slips for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Billing First Name / Last Name / Company Fields in all versions up to, and including, 5.16.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The payload survives initial storage because WooCommerce's sanitize_text_field() and wc_clean() do not strip entity-encoded strings containing no literal '<' character, allowing unauthenticated guest-checkout orders to plant the malicious content.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92244",
+      "last_modified": "2026-10-01T09:17:10.087",
+      "products": [],
+      "published": "2026-10-01T09:17:10.087",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woocommerce-pdf-invoices-packing-slips/tags/5.16.1/assets/js/admin-script.js#L766"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woocommerce-pdf-invoices-packing-slips/tags/5.16.1/includes/Settings.php#L409"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woocommerce-pdf-invoices-packing-slips/tags/5.16.1/includes/Settings.php#L470"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/woocommerce-pdf-invoices-packing-slips/tags/5.16.1/wpo-ips-functions.php#L658"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3707106%40woocommerce-pdf-invoices-packing-slips%2Ftags%2F5.16.2&old=3658456%40woocommerce-pdf-invoices-packing-slips%2Ftags%2F5.16.1"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/2ec3bd67-6e4b-46b6-8027-feeea149f3a4?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-92245": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "The Simply Schedule Appointments plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.6.12.32 via the 'recursive' parameter. This makes it possible for unauthenticated attackers to extract customer PII — including names, email addresses, phone numbers, and custom form field data — stored in appointment records, as well as per-appointment public_token values. The leaked per-appointment public_token values also enable unauthenticated attackers to delete arbitrary appointments via the DELETE /wp-json/ssa/v1/appointments/{id} endpoint, which accepts the token as sole authorization.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92245",
+      "last_modified": "2026-10-01T04:18:21.727",
+      "products": [],
+      "published": "2026-10-01T04:18:21.727",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/class-appointment-model.php#L2310"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/class-appointment-type-model.php#L961"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/class-bootstrap.php#L151"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/class-db-model.php#L348"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/lib/td-util/class-td-api-model.php#L140"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/lib/td-util/class-td-api-model.php#L387"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/simply-schedule-appointments/tags/1.6.12.27/includes/lib/td-util/class-td-api-model.php#L510"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3709365/simply-schedule-appointments/trunk/includes/class-appointment-type-model.php"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/1984f80e-06ec-4d7f-9a75-e05e7b73b57c?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
   },
   "CVE-2026-92248": {
     "added": "2026-09-16",
@@ -439464,6 +440932,52 @@
     },
     "next_check": "2026-10-03"
   },
+  "CVE-2026-93882": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "The LearnPress – WordPress LMS Plugin for Create and Sell Online Courses plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions up to, and including, 4.4.8 via the CourseMaterialTemplate::render_material_items() callback exposed on the public lp-ajax-handle (load_content_via_ajax) endpoint. The endpoint is explicitly listed in the AbstractAjax no-nonce allowlist and performs no capability check, and the render_material_items() handler decides authorization against one attacker-supplied identifier (course_id) while fetching the returned material rows via a second, independently attacker-supplied identifier (item_id) with no check that the lesson belongs to the authorized course. This makes it possible for unauthenticated attackers to read and download course-material files (uploaded and external file paths/URLs) belonging to lessons in paid or enrollment-required courses, provided any single course on the site has 'No Required Enroll' enabled and owns at least one material file.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-93882",
+      "last_modified": "2026-10-01T08:16:53.330",
+      "products": [],
+      "published": "2026-10-01T08:16:53.330",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/learnpress/tags/4.4.7/inc/Ajax/AbstractAjax.php#L31"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/learnpress/tags/4.4.7/inc/Ajax/LoadContentViaAjax.php#L25"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/learnpress/tags/4.4.7/inc/Databases/class-lp-material-db.php#L92"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/learnpress/tags/4.4.7/inc/TemplateHooks/Course/CourseMaterialTemplate.php#L113"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/learnpress/tags/4.4.7/inc/TemplateHooks/Course/CourseMaterialTemplate.php#L143"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/1f35f646-1bd6-4785-bdc2-c815644b2b2d?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-93897": {
     "added": "2026-09-25",
     "checks_done": 6,
@@ -448476,6 +449990,52 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-95687": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The WPC Shop as a Customer for WooCommerce plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 2.0.0 This is due to the plugin not properly validating the target user's role prior to issuing a new authentication session, allowing an authenticated attacker to log in as any WordPress Administrator by directly supplying an Administrator's user ID to the wpcsa_login endpoint and receiving a full Administrator session cookie without supplying the Administrator's password. This makes it possible for authenticated attackers to perform a direct session takeover, gaining full Administrator-level access to the site.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-95687",
+      "last_modified": "2026-10-01T09:17:10.273",
+      "products": [],
+      "published": "2026-10-01T09:17:10.273",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wpc-shop-as-customer/tags/1.3.6/wpc-shop-as-customer.php#L228"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wpc-shop-as-customer/tags/1.3.6/wpc-shop-as-customer.php#L253"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wpc-shop-as-customer/tags/1.3.6/wpc-shop-as-customer.php#L96"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3708414/wpc-shop-as-customer/trunk/wpc-shop-as-customer.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3708414%40wpc-shop-as-customer%2Ftags%2F2.0.1&old=3708360%40wpc-shop-as-customer%2Ftags%2F2.0.0"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/539cdee3-78bc-42a2-9c34-0f7d46f95d16?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-95699": {
     "added": "2026-09-25",
     "checks_done": 6,
@@ -449599,6 +451159,56 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-96268": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Awesome Support – WordPress HelpDesk & Support Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'gdpr-data' parameter in all versions up to, and including, 6.4.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is exploitable by Subscriber-level users against other accounts because the AJAX handlers accept an arbitrary gdpr-user ID without verifying it belongs to the requester, and the required wpas-gdpr-nonce is emitted via wp_localize_script to every logged-in user on frontend plugin pages and on /wp-admin/profile.php.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96268",
+      "last_modified": "2026-10-01T09:17:10.433",
+      "products": [],
+      "published": "2026-10-01T09:17:10.433",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/awesome-support/tags/6.4.0/includes/functions-general.php#L2190"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/awesome-support/tags/6.4.0/includes/functions-user.php#L1538"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/awesome-support/tags/6.4.0/includes/gdpr-integration/gdpr-privacy-options.php#L1111"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/awesome-support/tags/6.4.0/includes/gdpr-integration/gdpr-privacy-options.php#L1186"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/awesome-support/tags/6.4.0/includes/gdpr-integration/gdpr-user-profile.php#L250"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3719753%40awesome-support&new=3719753%40awesome-support"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/617afd4e-107a-48ad-9e3e-1771874796ff?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-96271": {
     "added": "2026-09-23",
     "checks_done": 7,
@@ -450090,32 +451700,6 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/bookly-responsive-appointment-booking-tool/vulnerability/wordpress-bookly-plugin-28-2-broken-access-control-vulnerability?_s_id=cve"
-        }
-      ]
-    },
-    "next_check": "2026-10-02"
-  },
-  "CVE-2026-96349": {
-    "added": "2026-09-30",
-    "checks_done": 1,
-    "cve": {
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-94"
-      ],
-      "description": "Unauthenticated Remote Code Execution (RCE) in SiteSkite <= 2.1.8 versions.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-96349",
-      "last_modified": "2026-09-30T14:18:09.253",
-      "products": [],
-      "published": "2026-09-30T13:17:29.967",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://patchstack.com/database/wordpress/plugin/siteskite/vulnerability/wordpress-siteskite-plugin-2-1-8-remote-code-execution-rce-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -450647,6 +452231,76 @@
     },
     "next_check": "2026-10-08"
   },
+  "CVE-2026-96561": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The AI Engine – The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including, 3.8.0 This is due to a chain of missing input neutralization and output escaping across the /mwai-ui/v1/chats/submit REST endpoint, the PHP error-log parser (MeowKit_MWAI_Helpers::php_error_logs), the Advisor task (Meow_MWAI_Modules_Advisor::run_advisor), and the Advisor dashboard widget (advisor_metabox): the server-parameter denylist in chat_submit strips only exact key names such as 'model' while convert_keys() later canonicalizes 'model_' back to 'model', allowing an unauthenticated caller to place an attacker-controlled string (including CR/LF) into $query->model; final_checks() throws an Exception whose message embeds that raw string, and the non-streaming, non-admin catch branch writes it to the PHP error log unmodified — creating a forged log line that the plugin's own parser subsequently returns as recent PHP-error content; run_advisor() then appends that content verbatim to the AI prompt (indirect prompt injection — CWE-1427), the returned JSON is stored in the mwai_advisor_data option with no schema validation or HTML sanitization, and advisor_metabox() concatenates the resulting 'title' and 'description' values directly into the WordPress dashboard widget without esc_html(), wp_kses(), or equivalent escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever an administrator accesses the WordPress dashboard.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96561",
+      "last_modified": "2026-10-01T04:18:22.110",
+      "products": [],
+      "published": "2026-10-01T04:18:22.110",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.0/classes/engines/core.php#L533"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.0/classes/modules/advisor.php#L156"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.0/classes/modules/advisor.php#L162"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.0/classes/modules/advisor.php#L216"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.0/classes/modules/chatbot.php#L122"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.0/classes/modules/chatbot.php#L299"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.0/classes/modules/chatbot.php#L597"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.0/classes/query/base.php#L360"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.0/classes/rest.php#L464"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/ai-engine/tags/3.8.0/common/helpers.php#L251"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?old_path=%2Fai-engine%2Ftags%2F3.8.0&new_path=%2Fai-engine%2Ftags%2F3.8.1"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/910e51da-6ee2-45d5-837b-7fea80f79390?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-96568": {
     "added": "2026-09-25",
     "checks_done": 6,
@@ -450692,6 +452346,56 @@
         {
           "tags": [],
           "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/61322037-ecd0-4db2-997f-9ef943116396?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-96573": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Appointment Hour Booking – Booking Calendar plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via Booking Form Single-Line Field via Schedule Calendar List Renderer in all versions up to, and including, 1.5.97 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Exploitation requires the 'list_readmore_numberofwords' Other Parameters setting to be configured with a positive integer value; the default value of 0 bypasses the decode-and-truncate branch entirely and is not exploitable through this sink.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96573",
+      "last_modified": "2026-10-01T09:17:10.647",
+      "products": [],
+      "published": "2026-10-01T09:17:10.647",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/appointment-hour-booking/tags/1.5.97/classes/cp-base-class.inc.php#L81"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/appointment-hour-booking/tags/1.5.97/cp-main-class.inc.php#L1473"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/appointment-hour-booking/tags/1.5.97/cp-main-class.inc.php#L1609"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/appointment-hour-booking/tags/1.5.97/cp-main-class.inc.php#L1745"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/appointment-hour-booking/tags/1.5.97/mv/js/jquery.calendar.js"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&old=3718725%40appointment-hour-booking&new=3718725%40appointment-hour-booking"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/3044e60f-b930-42db-ba5d-656e71b84226?source=cve"
         }
       ]
     },
@@ -452171,6 +453875,80 @@
       ]
     },
     "next_check": "2026-10-08"
+  },
+  "CVE-2026-96813": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Form Maker by 10Web – Mobile-Friendly Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Mark on Map Longitude/Latitude Fields in all versions up to, and including, 1.15.47 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96813",
+      "last_modified": "2026-10-01T09:17:10.837",
+      "products": [],
+      "published": "2026-10-01T09:17:10.837",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.44/admin/controllers/FormMakerMapEditinPopup.php#L31"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.44/admin/views/FMMapEditinPopup.php#L35"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.44/admin/views/Submissions_fm.php#L626"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.44/framework/WDW_FM_Library.php#L366"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.44/frontend/models/form_maker.php#L1651"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.47/admin/controllers/FormMakerMapEditinPopup.php#L31"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.47/admin/views/FMMapEditinPopup.php#L35"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.47/admin/views/Submissions_fm.php#L626"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.47/framework/WDW_FM_Library.php#L366"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/form-maker/tags/1.15.47/frontend/models/form_maker.php#L1651"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3716587/form-maker/trunk/admin/views/FMMapEditinPopup.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3716589%40form-maker%2Ftags%2F1.15.48&old=3686568%40form-maker%2Ftags%2F1.15.47"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/87fa5b87-1b32-4d00-8b43-fd51416d3099?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
   },
   "CVE-2026-96814": {
     "added": "2026-09-30",
@@ -454592,7 +456370,7 @@
   },
   "CVE-2026-97293": {
     "added": "2026-09-30",
-    "checks_done": 0,
+    "checks_done": 1,
     "cve": {
       "cvss_score": 8.5,
       "cvss_severity": "HIGH",
@@ -454614,11 +456392,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97298": {
     "added": "2026-09-30",
-    "checks_done": 0,
+    "checks_done": 1,
     "cve": {
       "cvss_score": 6.5,
       "cvss_severity": "MEDIUM",
@@ -454640,11 +456418,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97301": {
     "added": "2026-09-30",
-    "checks_done": 0,
+    "checks_done": 1,
     "cve": {
       "cvss_score": 6.5,
       "cvss_severity": "MEDIUM",
@@ -454666,11 +456444,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97320": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 6.3,
       "cvss_severity": "MEDIUM",
@@ -454704,11 +456482,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97321": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 6.3,
       "cvss_severity": "MEDIUM",
@@ -454747,11 +456525,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97323": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 6.3,
       "cvss_severity": "MEDIUM",
@@ -454789,11 +456567,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97324": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
@@ -454828,11 +456606,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97326": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
@@ -454870,11 +456648,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97335": {
     "added": "2026-09-28",
-    "checks_done": 2,
+    "checks_done": 3,
     "cve": {
       "cvss_score": 7.7,
       "cvss_severity": "HIGH",
@@ -454896,11 +456674,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97359": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
@@ -454926,11 +456704,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97360": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
@@ -454956,11 +456734,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97362": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -454986,11 +456764,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97365": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 6.3,
       "cvss_severity": "MEDIUM",
@@ -455032,11 +456810,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97366": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 6.3,
       "cvss_severity": "MEDIUM",
@@ -455075,11 +456853,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97368": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 6.3,
       "cvss_severity": "MEDIUM",
@@ -455118,7 +456896,7 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-9745": {
     "added": "2026-09-04",
@@ -455148,7 +456926,7 @@
   },
   "CVE-2026-97523": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -455180,11 +456958,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97524": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -455216,11 +456994,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97525": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.2,
       "cvss_severity": "HIGH",
@@ -455248,11 +457026,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97527": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
@@ -455280,11 +457058,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97528": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
@@ -455312,11 +457090,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97531": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -455344,11 +457122,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97536": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -455376,11 +457154,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97548": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -455408,11 +457186,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97555": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
@@ -455444,11 +457222,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97557": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -455480,11 +457258,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97562": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -455516,11 +457294,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97570": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.1,
       "cvss_severity": "HIGH",
@@ -455544,11 +457322,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97573": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.1,
       "cvss_severity": "HIGH",
@@ -455580,11 +457358,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97575": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -455616,11 +457394,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97576": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -455652,11 +457430,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97577": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -455688,11 +457466,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97578": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -455724,11 +457502,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97579": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -455760,11 +457538,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97580": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -455788,11 +457566,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97583": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -455824,11 +457602,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97584": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -455860,11 +457638,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97589": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -455892,11 +457670,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97594": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -455924,11 +457702,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97595": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -455960,11 +457738,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97602": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -455996,11 +457774,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97608": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -456032,11 +457810,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97609": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -456064,11 +457842,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97611": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -456100,11 +457878,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97612": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -456136,11 +457914,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97646": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
@@ -456183,7 +457961,49 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-97661": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Business Essentials for Contact Form 7 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'gateway' Form Field in all versions up to, and including, 1.2.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Exploitation requires the Payments module to be enabled and a form to be configured to accept both PayPal and Stripe as payment gateways.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-97661",
+      "last_modified": "2026-10-01T09:17:11.043",
+      "products": [],
+      "published": "2026-10-01T09:17:11.043",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/cf7-redirect-thank-you-page/tags/1.2.1/includes/modules/payments/cpt.php#L313"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/cf7-redirect-thank-you-page/tags/1.2.1/includes/modules/payments/functions.php#L15"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/cf7-redirect-thank-you-page/tags/1.2.1/includes/modules/payments/redirect_methods.php#L205"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3713721/cf7-redirect-thank-you-page"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/e6a60043-a060-472b-9b43-e82a4d2420b0?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
   },
   "CVE-2026-9767": {
     "added": "2026-08-17",
@@ -456318,7 +458138,7 @@
   },
   "CVE-2026-97730": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 8.5,
       "cvss_severity": "HIGH",
@@ -456352,11 +458172,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97731": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 7.1,
       "cvss_severity": "HIGH",
@@ -456382,11 +458202,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97735": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 8.0,
       "cvss_severity": "HIGH",
@@ -456412,11 +458232,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97737": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 7.4,
       "cvss_severity": "HIGH",
@@ -456446,11 +458266,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97818": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 8.6,
       "cvss_severity": "HIGH",
@@ -456476,11 +458296,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97846": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 6.8,
       "cvss_severity": "MEDIUM",
@@ -456506,11 +458326,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97865": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
@@ -456565,11 +458385,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97871": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
@@ -456612,11 +458432,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97875": {
     "added": "2026-09-25",
-    "checks_done": 5,
+    "checks_done": 6,
     "cve": {
       "cvss_score": 8.1,
       "cvss_severity": "HIGH",
@@ -456646,11 +458466,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97877": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
@@ -456689,11 +458509,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97878": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
@@ -456732,11 +458552,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97882": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
@@ -456775,11 +458595,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97883": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
@@ -456818,11 +458638,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97884": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 6.3,
       "cvss_severity": "MEDIUM",
@@ -456861,11 +458681,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97885": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
@@ -456904,11 +458724,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97886": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 6.3,
       "cvss_severity": "MEDIUM",
@@ -456947,11 +458767,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97895": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 6.3,
       "cvss_severity": "MEDIUM",
@@ -457010,11 +458830,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97903": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457042,11 +458862,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97910": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457078,11 +458898,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97911": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457106,11 +458926,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97926": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -457142,11 +458962,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97931": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -457178,11 +458998,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97937": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457206,11 +459026,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97940": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457242,11 +459062,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97941": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457270,11 +459090,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97953": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -457306,11 +459126,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97957": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
@@ -457342,11 +459162,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97971": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457370,11 +459190,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97990": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -457406,11 +459226,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-97991": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457442,11 +459262,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98002": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457470,11 +459290,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98017": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457506,11 +459326,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98023": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457542,11 +459362,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98027": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -457578,11 +459398,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98029": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -457614,11 +459434,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98030": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -457650,11 +459470,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98041": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -457686,11 +459506,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98050": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -457718,11 +459538,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98052": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457754,11 +459574,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98056": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -457790,11 +459610,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98069": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.1,
       "cvss_severity": "HIGH",
@@ -457826,11 +459646,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98070": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.1,
       "cvss_severity": "HIGH",
@@ -457862,11 +459682,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98073": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -457894,11 +459714,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98083": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -457930,11 +459750,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98096": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.4,
       "cvss_severity": "HIGH",
@@ -457966,11 +459786,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98108": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
@@ -458002,11 +459822,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98112": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -458030,11 +459850,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98115": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
@@ -458058,11 +459878,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98116": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -458094,7 +459914,7 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-9812": {
     "added": "2026-09-14",
@@ -458124,7 +459944,7 @@
   },
   "CVE-2026-98122": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -458156,11 +459976,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98130": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 8.1,
       "cvss_severity": "HIGH",
@@ -458192,11 +460012,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98143": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -458220,11 +460040,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98150": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -458248,11 +460068,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98154": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.0,
       "cvss_severity": "HIGH",
@@ -458284,11 +460104,11 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-98156": {
     "added": "2026-09-26",
-    "checks_done": 4,
+    "checks_done": 5,
     "cve": {
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
@@ -458316,7 +460136,7 @@
         }
       ]
     },
-    "next_check": "2026-10-01"
+    "next_check": "2026-10-02"
   },
   "CVE-2026-9816": {
     "added": "2026-08-18",
