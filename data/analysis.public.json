@@ -1,1 +1,107 @@
-{}
+{
+  "CVE-2026-101896": {
+    "package": "NPM:@angular/router"
+  },
+  "CVE-2026-101898": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101899": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101900": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101901": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101902": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101903": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101904": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101905": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101906": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101907": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101908": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101909": {
+    "package": "NPM:axios"
+  },
+  "CVE-2026-101916": {
+    "package": "NPM:@grpc/grpc-js"
+  },
+  "CVE-2026-102820": {
+    "package": "RUST:pageant"
+  },
+  "CVE-2026-102821": {
+    "package": "RUST:russh"
+  },
+  "CVE-2026-102823": {
+    "package": "RUST:russh"
+  },
+  "CVE-2026-102983": {
+    "package": "NPM:@astrojs/netlify"
+  },
+  "CVE-2026-102984": {
+    "package": "NPM:@astrojs/node"
+  },
+  "CVE-2026-15307": {
+    "package": "PIP:Django"
+  },
+  "CVE-2026-53500": {
+    "package": "PIP:thumbor"
+  },
+  "CVE-2026-53501": {
+    "package": "PIP:thumbor"
+  },
+  "CVE-2026-68770": {
+    "package": "PIP:sentence-transformers"
+  },
+  "CVE-2026-80047": {
+    "package": "PIP:transformers"
+  },
+  "CVE-2026-84377": {
+    "package": "PIP:litellm"
+  },
+  "CVE-2026-84428": {
+    "package": "NPM:fastify"
+  },
+  "CVE-2026-84469": {
+    "package": "NPM:fastify"
+  },
+  "CVE-2026-87817": {
+    "package": "PIP:gitpython"
+  },
+  "CVE-2026-87819": {
+    "package": "PIP:GitPython"
+  },
+  "CVE-2026-91776": {
+    "package": "MAVEN:tools.jackson.core:jackson-databind"
+  },
+  "CVE-2026-91777": {
+    "package": "MAVEN:com.fasterxml.jackson.core:jackson-databind"
+  },
+  "CVE-2026-97687": {
+    "package": "PIP:urllib3"
+  },
+  "CVE-2026-97688": {
+    "package": "PIP:urllib3"
+  },
+  "CVE-2026-97689": {
+    "package": "PIP:urllib3"
+  },
+  "CVE-2026-97711": {
+    "package": "NPM:serialize-javascript"
+  }
+}
