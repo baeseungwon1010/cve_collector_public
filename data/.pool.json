@@ -60509,6 +60509,32 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-102379": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in VillaTheme BuildKit – Product Builder for WooCommerce – Custom PC Builder woo-product-builder allows Blind SQL Injection.This issue affects BuildKit – Product Builder for WooCommerce – Custom PC Builder: from n/a through 1.0.28.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102379",
+      "last_modified": "2026-10-01T14:34:35.357",
+      "products": [],
+      "published": "2026-10-01T13:17:07.297",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/woo-product-builder/vulnerability/wordpress-buildkit-product-builder-for-woocommerce-custom-pc-builder-plugin-1-0-28-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-102385": {
     "added": "2026-09-30",
     "checks_done": 1,
@@ -60608,6 +60634,32 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/woo-extra-product-options/vulnerability/wordpress-extra-product-options-for-woocommerce-custom-product-addons-and-fields-plugin-3-3-8-php-object-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-102394": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WPDeveloper Essential Addons for Elementor essential-addons-for-elementor-lite allows Stored XSS.This issue affects Essential Addons for Elementor: from n/a through 6.8.4.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102394",
+      "last_modified": "2026-10-01T14:34:35.357",
+      "products": [],
+      "published": "2026-10-01T13:17:07.827",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/essential-addons-for-elementor-lite/vulnerability/wordpress-essential-addons-for-elementor-plugin-6-8-4-cross-site-scripting-xss-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -63616,6 +63668,110 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-103063": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Wpmet ElementsKit Elementor addons Lite elementskit-lite allows Stored XSS.This issue affects ElementsKit Elementor addons Lite: from n/a through 4.0.6.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103063",
+      "last_modified": "2026-10-01T14:34:35.357",
+      "products": [],
+      "published": "2026-10-01T13:17:07.960",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/elementskit-lite/vulnerability/wordpress-elementskit-elementor-addons-lite-plugin-4-0-6-cross-site-scripting-xss-vulnerability-2?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103064": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Wpmet ElementsKit Elementor addons Lite elementskit-lite allows Stored XSS.This issue affects ElementsKit Elementor addons Lite: from n/a through 4.0.6.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103064",
+      "last_modified": "2026-10-01T14:34:35.357",
+      "products": [],
+      "published": "2026-10-01T13:17:08.090",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/elementskit-lite/vulnerability/wordpress-elementskit-elementor-addons-lite-plugin-4-0-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103067": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-352"
+      ],
+      "description": "Cross-Site Request Forgery (CSRF) vulnerability in Memberful Memberful - Membership Plugin memberful-wp allows Cross Site Request Forgery.This issue affects Memberful - Membership Plugin: from n/a through 1.81.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103067",
+      "last_modified": "2026-10-01T14:34:35.357",
+      "products": [],
+      "published": "2026-10-01T13:17:08.223",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/memberful-wp/vulnerability/wordpress-memberful-membership-plugin-plugin-1-81-0-cross-site-request-forgery-csrf-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103082": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Server-Side Request Forgery (SSRF) vulnerability in LA-Studio LA-Studio Element Kit for Elementor lastudio-element-kit allows Server Side Request Forgery.This issue affects LA-Studio Element Kit for Elementor: from n/a through 1.6.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103082",
+      "last_modified": "2026-10-01T12:40:28.083",
+      "products": [],
+      "published": "2026-10-01T11:17:17.343",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/lastudio-element-kit/vulnerability/wordpress-la-studio-element-kit-for-elementor-plugin-1-6-2-server-side-request-forgery-ssrf-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-103088": {
     "added": "2026-09-30",
     "checks_done": 1,
@@ -64482,6 +64638,588 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-103244": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "ground-station versions before 0.8.0 contain an authentication bypass vulnerability in the setup.restore command that allows unauthenticated attackers to execute arbitrary SQL during first-run setup mode. Attackers can invoke setup.restore via Socket.IO to plant admin users and forged session tokens, then authenticate as administrator without credentials for complete application takeover.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103244",
+      "last_modified": "2026-10-01T14:17:20.737",
+      "products": [],
+      "published": "2026-10-01T11:17:17.503",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/sgoudelis/ground-station/commit/940df2128e57fa779d0ddee2d9726bd829fc61e1"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sgoudelis/ground-station/security/advisories/GHSA-3mqj-q84c-crjq"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ground-station-before-0.8.0-authentication-bypass-via-setup-restore"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sgoudelis/ground-station/security/advisories/GHSA-3mqj-q84c-crjq"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103246": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "n8n versions before 2.39.6 and 2.40.0 before 2.40.1 fail to validate credential ownership during inline agent node-tool introspection. Attackers can reference arbitrary credential IDs to decrypt and exfiltrate plaintext secrets to attacker-controlled hosts without ownership verification.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103246",
+      "last_modified": "2026-10-01T11:17:18.013",
+      "products": [],
+      "published": "2026-10-01T11:17:17.887",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-9rhv-fhr8-7q5r"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-2.39.6-and-2.40-x-before-2.40.1-credential-disclosure-via-node-tool-introspection"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103247": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "n8n versions before 1.123.80 contain a credential tampering vulnerability where duplicate node IDs bypass the workflow credential tamper guard. Attackers with editor access to shared workflows can exploit mismatched node ID and name matching to retain victim credentials and redirect secrets to attacker-controlled hosts.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103247",
+      "last_modified": "2026-10-01T11:17:18.207",
+      "products": [],
+      "published": "2026-10-01T11:17:18.070",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-7gjv-rcf8-x5qc"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-1.123.80-credential-tampering-via-duplicate-node-ids"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103248": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a filter injection vulnerability in the Supabase node's Filters (String) mode that fails to escape field values. Attackers can inject filter expressions from untrusted input to read all table rows, update all records, or delete entire tables in a single request.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103248",
+      "last_modified": "2026-10-01T14:17:20.880",
+      "products": [],
+      "published": "2026-10-01T11:17:18.257",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-xrqg-3xcp-h45x"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-1.123.80-2.39.6-and-2.40.1-postgrest-filter-injection-via-supabase"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103249": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a stored DOM cross-site scripting vulnerability in Resource Locator parameter dropdown link handling. Workflow authors can inject malicious script URLs that execute arbitrary JavaScript in the editor origin when other users open the node dropdown and click the external-link icon, with the payload persisting across workflow imports and shares.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103249",
+      "last_modified": "2026-10-01T11:17:18.667",
+      "products": [],
+      "published": "2026-10-01T11:17:18.430",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c2wp-6fgc-xjq4"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-1.123.80-2.39.6-and-2.40.1-stored-dom-xss-via-resource-locator"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103250": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-943"
+      ],
+      "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a NoSQL injection vulnerability in the MongoDB Chat Memory node that fails to validate the sessionId parameter. Unauthenticated attackers can supply MongoDB query operators in the sessionId field to access conversation histories from other users and perform unauthorized write and delete operations.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103250",
+      "last_modified": "2026-10-01T11:17:18.920",
+      "products": [],
+      "published": "2026-10-01T11:17:18.777",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-w24g-6454-7w7f"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-1.123.80-2.39.6-and-2.40.1-nosql-injection-via-mongodb-chat-memory"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103251": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a validation bypass vulnerability in the community package installation handler for queue mode deployments. Attackers with Redis write access can bypass name validation, permission checks, checksum verification, and npm safety checks to install arbitrary npm packages across all cluster instances without authentication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103251",
+      "last_modified": "2026-10-01T11:17:19.103",
+      "products": [],
+      "published": "2026-10-01T11:17:18.973",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-fmmv-p585-7c8x"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-1.123.80-2.39.6-and-2.40.1-package-install-validation-bypass-via-pubsub"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103252": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain an authorization bypass vulnerability in the credential test endpoint that resolves project-scoped variables without validating caller access. Attackers can specify an arbitrary project ID in the request body to interpolate sensitive variables into credential test requests sent to attacker-controlled hosts for exfiltration.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103252",
+      "last_modified": "2026-10-01T14:17:21.020",
+      "products": [],
+      "published": "2026-10-01T11:17:19.160",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-7gvh-q9w3-wqqx"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-1.123.80-2.39.6-and-2.40.1-information-disclosure-via-credential-test-endpoint"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103253": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain an SQL injection vulnerability in the Oracle Database node's Delete Table Drop operation. Attackers can inject single quotes in the table or schema fields to append arbitrary SQL statements and execute DDL or DML commands against the connected database with the credential's privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103253",
+      "last_modified": "2026-10-01T11:17:19.480",
+      "products": [],
+      "published": "2026-10-01T11:17:19.343",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-4wf3-rgqr-xcp3"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-1.123.80-2.39.6-and-2.40.1-sql-injection-via-oracle-database-drop-table"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103254": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a path traversal vulnerability in signed resume URL generation for Send-and-Wait approvals. Attackers with workflow creation permissions can mint valid approval URLs for gates in projects they cannot access by exploiting unresolved traversal sequences in caller-controlled node IDs, enabling cross-project approval forgery.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103254",
+      "last_modified": "2026-10-01T11:17:19.660",
+      "products": [],
+      "published": "2026-10-01T11:17:19.537",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-597w-c3jh-g8fg"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-1.123.80-2.39.6-and-2.40.1-path-traversal-via-resume-url-generation"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103255": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-73"
+      ],
+      "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a path traversal vulnerability in the Supabase node where the tableId parameter is inserted into request paths without validation. Attackers can exploit workflows binding tableId to untrusted input to traverse to Auth and Storage APIs using the administrative serviceRole key, bypassing Row Level Security and enabling unauthorized data access and modification.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103255",
+      "last_modified": "2026-10-01T11:17:19.860",
+      "products": [],
+      "published": "2026-10-01T11:17:19.717",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-rqch-9jrh-cr8w"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-1.123.80-2.39.6-and-2.40.1-path-traversal-and-query-injection-via-supabase"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103256": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-522"
+      ],
+      "description": "n8n versions before 2.39.6 and 2.40.0 before 2.40.1 contain a credentials leak vulnerability in the Wekan and Baserow username-and-password credentials that sends unencrypted passwords to unvalidated hosts. Attackers with credential update permissions can modify the host field to receive account passwords at arbitrary hosts, bypassing domain validation controls.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103256",
+      "last_modified": "2026-10-01T14:17:22.170",
+      "products": [],
+      "published": "2026-10-01T11:17:19.913",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-gx6g-2hm7-c4xf"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-2.39.6-and-2.40-x-before-2.40.1-credentials-leak-via-preauthentication-hook"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103257": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a path traversal vulnerability in the n8n node that fails to validate resource identifiers. Attackers can craft malicious resource IDs to redirect API calls to unintended resources, allowing unauthorized access to workflows, executions, and credential secrets within the API key's scope.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103257",
+      "last_modified": "2026-10-01T11:17:20.240",
+      "products": [],
+      "published": "2026-10-01T11:17:20.100",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-89p4-6h98-c7xm"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-1.123.80-2.39.6-and-2.40.1-path-traversal-via-n8n-node"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103258": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-943"
+      ],
+      "description": "n8n versions before 2.39.6 and 2.40.0 before 2.40.1 contain an unescaped parameter interpolation vulnerability in SendGrid, Freshservice, and ServiceNow nodes that allows attackers to bypass filters by breaking out of query literals. Attackers can exploit this by binding vulnerable node parameters to untrusted external input to widen single-record lookups into match-all queries, exposing bulk data including contact lists, tickets, and directory entries.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103258",
+      "last_modified": "2026-10-01T11:17:20.420",
+      "products": [],
+      "published": "2026-10-01T11:17:20.293",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-5pg9-2vqx-r6jm"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-2.39.6-and-2.40-x-before-2.40.1-filter-bypass-via-parameter-interpolation"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103259": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "n8n versions before 2.39.6 and 2.40.0 before 2.40.1 contain a session token leakage vulnerability in the Dynamic Credentials authorize and revoke endpoints. Attackers with resolver registration capability can capture collaborators' session tokens by setting a fallback resolver to an attacker-controlled endpoint during the account connection flow, enabling unauthorized credential access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103259",
+      "last_modified": "2026-10-01T11:17:20.610",
+      "products": [],
+      "published": "2026-10-01T11:17:20.473",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-rx55-8qhx-4hwx"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/n8n-before-2.39.6-and-2.40-x-before-2.40.1-session-token-leak-via-dynamic-credentials"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103262": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-409"
+      ],
+      "description": "Tornado versions before 6.5.9 contain an unbounded memory accumulation vulnerability in CurlAsyncHTTPClient that allows remote attackers to cause denial of service by sending a compressed response. Attackers can send a gzip-encoded decompression bomb that accumulates in memory without size limits, causing the application process to be killed by out-of-memory conditions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103262",
+      "last_modified": "2026-10-01T11:17:21.177",
+      "products": [],
+      "published": "2026-10-01T11:17:21.050",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/tornadoweb/tornado/commit/e412435febba4569c552c5c9054f1bf92bd171a9"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tornadoweb/tornado/security/advisories/GHSA-chx6-46f5-w4vp"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/tornado-before-6.5.9-denial-of-service-via-curlasynchttpclient"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103264": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "Fleet versions before 4.87.0 contain an authentication bypass vulnerability in the device API that accepts hostnames and hardware serials as authentication tokens in addition to device UUIDs. Unauthenticated attackers who know or guess these non-secret identifiers can authenticate as iOS/iPadOS hosts to read device data and trigger device-scoped actions including software installation and MDM migration.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103264",
+      "last_modified": "2026-10-01T14:17:22.453",
+      "products": [],
+      "published": "2026-10-01T11:17:21.410",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/fleetdm/fleet/security/advisories/GHSA-vrc8-2wcx-327f"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/fleet-before-4.87.0-authentication-bypass-via-device-identifiers"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103266": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "Ghost versions 5.2.0 through versions prior to 6.62.0 allow a remote attacker, without authentication, to abuse the Stripe Checkout flow to attach a paid subscription to an existing member, modify that member's name, and inject content into newsletters sent to the member. Depending on the recipient's email client, the injected content may be rendered, resulting in HTML injection or cross-site scripting (XSS).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103266",
+      "last_modified": "2026-10-01T11:17:21.737",
+      "products": [],
+      "published": "2026-10-01T11:17:21.737",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-qppx-rw6v-xjqf"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-5.2.0-before-6.62.0-unauthenticated-stripe-checkout-account-modification"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103268": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Ghost versions before 6.62.0 contain an authentication bypass vulnerability that allows suspended staff users to reactivate their accounts through self-service password reset. Attackers with suspended staff credentials can perform password reset operations to regain active account access and restore their original privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103268",
+      "last_modified": "2026-10-01T14:17:22.587",
+      "products": [],
+      "published": "2026-10-01T11:17:22.073",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-q734-xjgc-vpj9"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-1.0.0-before-6.62.0-suspension-bypass-via-password-reset"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-103270": {
     "added": "2026-10-01",
     "checks_done": 0,
@@ -64523,6 +65261,414 @@
         {
           "tags": [],
           "url": "https://github.com/ModelTC/LightLLM/issues/1609"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103271": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "Ghost versions from 4.0.0 before 6.63.0 contain a content API vulnerability that allows unauthenticated visitors to access gated post content. Attackers can bypass content restrictions by directly querying the content API to retrieve restricted posts without authentication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103271",
+      "last_modified": "2026-10-01T11:17:22.407",
+      "products": [],
+      "published": "2026-10-01T11:17:22.407",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-rcx7-6m7p-xw5c"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-4.0.0-before-6.63.0-restricted-content-bypass"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103272": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-203"
+      ],
+      "description": "Ghost versions from 2.10.0 before 6.63.0 contain a staff enumeration vulnerability in the content API that allows unauthenticated attackers to leak user data. Attackers can observe discrepancies in API metadata responses to enumerate staff members and extract sensitive information without authentication.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103272",
+      "last_modified": "2026-10-01T11:17:22.563",
+      "products": [],
+      "published": "2026-10-01T11:17:22.563",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-ffmj-3ppp-cj4r"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-2.10.0-before-6.63.0-staff-enumeration-via-content-api"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103277": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Ghost versions from 2.5.0 before 6.34.0 contain an untrusted script execution vulnerability in the oEmbed preview feature that fails to sandbox externally hosted scripts. Attackers can craft malicious oEmbed content to execute scripts in the context of a staff user's admin session, potentially compromising administrative access.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103277",
+      "last_modified": "2026-10-01T14:17:22.997",
+      "products": [],
+      "published": "2026-10-01T11:17:23.403",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-8vhf-xxpj-4qrg"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-2.5.0-before-6.34.0-untrusted-script-execution-via-oembed"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103278": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-23"
+      ],
+      "description": "Ghost versions 5.8.0 before 6.34.0 contain an input validation vulnerability in the admin iframe that allows attackers to take over staff user accounts. Attackers with content publishing privileges can craft malicious pages that, when visited by active staff users, enable account takeover through improper input validation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103278",
+      "last_modified": "2026-10-01T11:17:23.567",
+      "products": [],
+      "published": "2026-10-01T11:17:23.567",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-5pxf-whwv-g54g"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-5.8.0-before-6.34.0-staff-account-takeover-via-admin-iframe"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103279": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-613"
+      ],
+      "description": "Ghost versions from 3.10.0 before 6.34.0 fail to fully invalidate all sessions after a password change. Attackers with a stolen session cookie can maintain access to user accounts even after the associated user changes their password.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103279",
+      "last_modified": "2026-10-01T11:17:23.743",
+      "products": [],
+      "published": "2026-10-01T11:17:23.743",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-v9vj-6fq5-99xj"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-3.10.0-before-6.34.0-session-invalidation-bypass"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103283": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-613"
+      ],
+      "description": "Ghost versions 6.20.0 before 6.57.1 contain a session handling vulnerability that allows authenticated staff users to log in as any other staff user with only the password, bypassing two-factor authentication. Attackers with valid staff credentials can exploit improper session management to impersonate other staff members and gain unauthorized access to administrative functions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103283",
+      "last_modified": "2026-10-01T11:17:24.397",
+      "products": [],
+      "published": "2026-10-01T11:17:24.397",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-q55r-w7fh-rmh6"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-6.20.0-before-6.57.1-authentication-bypass-via-session-handling"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103286": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Ghost versions from 2.21.0 before 6.56.0 contain a privilege escalation vulnerability in the notifications system that allows low-privilege staff users to escalate to higher-privilege staff roles. Attackers with low-privilege staff access can exploit the notifications system to gain elevated privileges without proper authorization checks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103286",
+      "last_modified": "2026-10-01T11:17:24.880",
+      "products": [],
+      "published": "2026-10-01T11:17:24.880",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-pv24-pfvg-vr83"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-2.21.0-before-6.56.0-privilege-escalation-via-notifications"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103288": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "Ghost, an open-source publishing platform, contains an input validation flaw in its comment like feature in versions from 5.9.0 before 6.44.1. An authenticated member can delete comment likes or dislikes belonging to other users that they are not authorized to delete, resulting in an authorization bypass and unauthorized modification of comment engagement data.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103288",
+      "last_modified": "2026-10-01T14:17:23.710",
+      "products": [],
+      "published": "2026-10-01T11:17:25.200",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-qrh6-cwg3-343x"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-5.9.0-before-6.44.1-authorization-bypass-via-comment-like"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103289": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-943"
+      ],
+      "description": "Ghost from 5.9.0 before 6.44.1 contains an input validation issue in the comments feature that allows authenticated members to access comments they are not authorized to view, resulting in disclosure of restricted comment data.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103289",
+      "last_modified": "2026-10-01T14:17:23.850",
+      "products": [],
+      "published": "2026-10-01T11:17:25.360",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-6q6j-f24j-p477"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-5.9.0-before-6.44.1-authorization-bypass-via-comments"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103291": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Ghost versions from 3.20.2 before 6.51.0 contain a server-side request forgery vulnerability in image dimension refetching that allows authenticated staff users to trigger outbound HTTP requests to arbitrary URLs. Attackers can point image cards at attacker-controlled hosts or internal network endpoints to access metadata services and internal resources unavailable from the public internet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103291",
+      "last_modified": "2026-10-01T11:17:25.680",
+      "products": [],
+      "published": "2026-10-01T11:17:25.680",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-rrq6-9r3c-7w26"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-3.20.2-before-6.51.0-ssrf-via-image-size-fetch"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103292": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Ghost versions from 0.5.3 through versions prior to 6.50.0 fail to sanitize the data placed in the JSON-LD HTML tag emitted by the {{ghost_head}} helper. An authenticated user with limited privileges can inject unescaped content that is rendered as script in the published page, potentially leading to compromise of a staff user's admin session when that user views the affected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103292",
+      "last_modified": "2026-10-01T14:17:23.990",
+      "products": [],
+      "published": "2026-10-01T11:17:25.847",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-mp9q-4q6m-44f5"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-0.5.3-before-6.50.0-cross-site-scripting-via-ghost-head"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103338": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Unlimited Elements Unlimited Elements For Elementor (Free Widgets, Addons, Templates) unlimited-elements-for-elementor allows Blind SQL Injection.This issue affects Unlimited Elements For Elementor (Free Widgets, Addons, Templates): from n/a through 2.0.20.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103338",
+      "last_modified": "2026-10-01T14:34:35.357",
+      "products": [],
+      "published": "2026-10-01T13:17:08.350",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/unlimited-elements-for-elementor/vulnerability/wordpress-unlimited-elements-for-elementor-free-widgets-addons-templates-plugin-2-0-20-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103339": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Wpmet Metform metform allows Stored XSS.This issue affects Metform: from n/a through 4.3.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103339",
+      "last_modified": "2026-10-01T14:34:35.357",
+      "products": [],
+      "published": "2026-10-01T13:17:08.477",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/metform/vulnerability/wordpress-metform-plugin-4-3-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103343": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WP ManageNinja LLC FluentForm fluentform allows Stored XSS.This issue affects FluentForm: from n/a through 6.2.14.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103343",
+      "last_modified": "2026-10-01T14:34:35.357",
+      "products": [],
+      "published": "2026-10-01T13:17:08.883",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/fluentform/vulnerability/wordpress-fluentform-plugin-6-2-14-cross-site-scripting-xss-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -64877,6 +66023,178 @@
         {
           "tags": [],
           "url": "https://www.vulncheck.com/advisories/yii2-starter-kit-through-4.2.0-debug-and-gii-module-exposure"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103488": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "In JetBrains YouTrack before 2026.2.19422 missing authorisation allowed authenticated users to add themselves to project teams and access restricted issues",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103488",
+      "last_modified": "2026-10-01T14:17:24.857",
+      "products": [],
+      "published": "2026-10-01T10:17:12.487",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103490": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "In JetBrains YouTrack before 2026.2.19422 privilege escalation was possible via user group links",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103490",
+      "last_modified": "2026-10-01T14:17:25.170",
+      "products": [],
+      "published": "2026-10-01T10:17:14.420",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103491": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "In JetBrains YouTrack before 2026.2.19422 iDOR in the issue activities API allowed reading restricted issues",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103491",
+      "last_modified": "2026-10-01T14:28:17.527",
+      "products": [
+        "jetbrains:youtrack"
+      ],
+      "published": "2026-10-01T10:17:14.540",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103492": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-835"
+      ],
+      "description": "In JetBrains YouTrack before 2026.2.19422 doS attack was possible via crafted PSD attachments",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103492",
+      "last_modified": "2026-10-01T14:19:33.430",
+      "products": [
+        "jetbrains:youtrack"
+      ],
+      "published": "2026-10-01T10:17:14.657",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103493": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "In JetBrains YouTrack before 2026.2.19422 stored XSS via Mermaid and LaTeX content was possible",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103493",
+      "last_modified": "2026-10-01T14:25:35.693",
+      "products": [
+        "jetbrains:youtrack"
+      ],
+      "published": "2026-10-01T10:17:14.780",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103494": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.6,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "In JetBrains YouTrack before 2026.2.19422 privilege escalation was possible via user group membership changes",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103494",
+      "last_modified": "2026-10-01T14:25:42.097",
+      "products": [
+        "jetbrains:youtrack"
+      ],
+      "published": "2026-10-01T10:17:14.900",
+      "references": [
+        {
+          "tags": [
+            "Vendor Advisory"
+          ],
+          "url": "https://www.jetbrains.com/privacy-security/issues-fixed/"
         }
       ]
     },
@@ -65356,6 +66674,40 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-103679": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "A flaw was found in tnef. A remote attacker could exploit this vulnerability by providing a specially crafted Transport Neutral Encapsulation Format (TNEF) file containing multiple message bodies. During extraction, improper memory management triggers a use-after-free and double-free condition, causing the application to crash and resulting in a Denial of Service (DoS).",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103679",
+      "last_modified": "2026-10-01T13:02:09.610",
+      "products": [],
+      "published": "2026-10-01T12:17:15.683",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-103679"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2544477"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/verdammelt/tnef"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-1037": {
     "added": "2026-09-19",
     "checks_done": 7,
@@ -65381,6 +66733,70 @@
       ]
     },
     "next_check": "2026-10-03"
+  },
+  "CVE-2026-103757": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Budibase through 3.41.0 contains a server-side request forgery vulnerability in AI table generation because the uploadUrl function in packages/server/src/utilities/fileUtils.ts uses raw node-fetch instead of fetchWithBlacklist. Authenticated builder users can send a prompt to POST /api/ai/tables that places an internal URL in an attachment column, causing the server to fetch it and return a presigned object-storage URL containing the response, such as cloud metadata credentials.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103757",
+      "last_modified": "2026-10-01T14:17:28.720",
+      "products": [],
+      "published": "2026-10-01T11:17:26.177",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Budibase/budibase/security/advisories/GHSA-3c52-v5v2-3r56"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/budibase-before-3.41.0-ssrf-via-uploadurl-in-ai-table-generation"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/Budibase/budibase/security/advisories/GHSA-3c52-v5v2-3r56"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-103758": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "Obot 0.21.1 through 0.24.1 contains an authorization bypass vulnerability that allows authenticated users to reach MCP servers because the checkUI deny list omits the /mcp-connect-composite/ route. Basic-role users with a composite MCP ID can proxy requests through mcpGateway.Proxy to invoke tools on MCP servers restricted by Access Control Rules.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103758",
+      "last_modified": "2026-10-01T11:17:26.360",
+      "products": [],
+      "published": "2026-10-01T11:17:26.360",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/obot-platform/obot/security/advisories/GHSA-6fwv-3h4c-37j9"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/obot-0.21.1-through-0.24.1-authorization-bypass-via-mcp-connect-composite-route"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
   },
   "CVE-2026-10524": {
     "added": "2026-08-07",
@@ -192727,6 +194143,58 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-62059": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Ultimate Member Ultimate Member ultimate-member allows Blind SQL Injection.This issue affects Ultimate Member: from n/a through 2.13.1.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-62059",
+      "last_modified": "2026-10-01T14:34:35.357",
+      "products": [],
+      "published": "2026-10-01T13:17:10.010",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/ultimate-member/vulnerability/wordpress-ultimate-member-plugin-2-13-1-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-62060": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in captivateaudio Captivate Sync captivatesync-trade allows Blind SQL Injection.This issue affects Captivate Sync: from n/a through 3.3.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-62060",
+      "last_modified": "2026-10-01T14:34:35.357",
+      "products": [],
+      "published": "2026-10-01T13:17:10.140",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/captivatesync-trade/vulnerability/wordpress-captivate-sync-plugin-3-3-2-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-62078": {
     "added": "2026-09-30",
     "checks_done": 1,
@@ -212353,6 +213821,32 @@
       ]
     },
     "next_check": "2026-11-25"
+  },
+  "CVE-2026-66246": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-250"
+      ],
+      "description": "iControl is affected by a Broken Access Control vulnerability, which could allow an attacker to exploit missing authentication checks or insecure direct object references (IDOR), enabling privilege escalation and the unauthorized modification or deletion of sensitive application data.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-66246",
+      "last_modified": "2026-10-01T14:17:29.770",
+      "products": [],
+      "published": "2026-10-01T14:17:29.770",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://support.hcl-software.com/csm?id=kb_article&sysparm_article=KB0133940"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
   },
   "CVE-2026-66256": {
     "added": "2026-08-14",
@@ -326033,6 +327527,32 @@
     },
     "next_check": "2026-11-24"
   },
+  "CVE-2026-79901": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-338"
+      ],
+      "description": "In deployments using BoKS keytab management, affected versions of boks_keytabmd generate Active Directory service-account passwords from a predictable pseudo-random sequence seeded with the current Unix timestamp. An attacker who knows the service principal and can estimate the password-change time can reproduce a limited candidate set and verify candidates offline.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79901",
+      "last_modified": "2026-10-01T14:17:30.883",
+      "products": [],
+      "published": "2026-10-01T14:17:30.883",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.fortra.com/security/advisories/product-security/fi-2026-012"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-79906": {
     "added": "2026-09-23",
     "checks_done": 7,
@@ -364216,6 +365736,36 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/wc-multivendor-marketplace/vulnerability/wordpress-wcfm-marketplace-plugin-3-8-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-83589": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-601"
+      ],
+      "description": "A flaw was found in oauth-proxy. The application fails to properly validate the destination redirect parameter (`rd`) during post-login redirection. A remote attacker can exploit this vulnerability by enticing a user to follow a specially crafted link, resulting in the user being redirected to an arbitrary external website after authenticating. This open redirect can be leveraged to conduct phishing attacks or credential theft.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-83589",
+      "last_modified": "2026-10-01T12:41:25.413",
+      "products": [],
+      "published": "2026-10-01T10:17:17.217",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-83589"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2518379"
         }
       ]
     },
@@ -427583,6 +429133,64 @@
     },
     "next_check": "2026-10-17"
   },
+  "CVE-2026-92144": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Forminator Forms – Contact Form, Payment Form & Custom Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'postdata-1[post-custom]' Parameter in all versions up to, and including, 1.57.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The required form submission nonce is freely obtainable by unauthenticated users via the publicly accessible wp_ajax_nopriv_forminator_get_nonce endpoint, making the full attack chain exploitable without any authentication or prior account.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92144",
+      "last_modified": "2026-10-01T12:40:28.083",
+      "products": [],
+      "published": "2026-10-01T10:17:17.370",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/forminator/tags/1.57.2/library/abstracts/abstract-class-front-action.php#L127"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/forminator/tags/1.57.2/library/abstracts/abstract-class-front-action.php#L973"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/forminator/tags/1.57.2/library/class-core.php#L690"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/forminator/tags/1.57.2/library/class-core.php#L756"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/forminator/tags/1.57.2/library/fields/postdata.php#L1012"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/forminator/tags/1.57.2/library/modules/custom-forms/front/front-action.php#L3528"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3700690/forminator/trunk/library/abstracts/abstract-class-front-action.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3700709%40forminator%2Ftags%2F1.57.2.1&old=3668424%40forminator%2Ftags%2F1.57.2"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/f6f320d2-fd24-47b5-804d-31e3afdc31ba?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-9215": {
     "added": "2026-09-09",
     "checks_done": 8,
@@ -451090,6 +452698,64 @@
     },
     "next_check": "2026-10-02"
   },
+  "CVE-2026-96256": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Gutenberg Essential Blocks – Page Builder for Gutenberg Blocks & Patterns plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Google Map block's 'marker' attribute in versions up to, and including, 6.4.5 This is due to insufficient input sanitization and output escaping on marker title/content values, which are stored as JSON and then decoded and concatenated directly into raw HTML by the frontend script's InfoWindow content builder. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96256",
+      "last_modified": "2026-10-01T12:40:28.083",
+      "products": [],
+      "published": "2026-10-01T10:17:17.613",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/essential-blocks/tags/6.3.0/assets/blocks/google-map/frontend.js#L1"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/essential-blocks/tags/6.3.0/includes/Blocks/GoogleMap.php#L82"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/essential-blocks/tags/6.3.0/src/blocks/google-map/src/save.js#L35"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/essential-blocks/tags/6.4.5/assets/blocks/google-map/frontend.js#L1"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/essential-blocks/tags/6.4.5/includes/Blocks/GoogleMap.php#L82"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/essential-blocks/tags/6.4.5/src/blocks/google-map/src/save.js#L35"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3715353/essential-blocks/trunk/assets/blocks/google-map/frontend.js"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3715353%40essential-blocks%2Ftags%2F6.4.6&old=3706819%40essential-blocks%2Ftags%2F6.4.5"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/606f25d9-f8c7-416a-8bb8-0cc57901ff5a?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
   "CVE-2026-96257": {
     "added": "2026-09-23",
     "checks_done": 7,
@@ -452396,6 +454062,36 @@
         {
           "tags": [],
           "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/3044e60f-b930-42db-ba5d-656e71b84226?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-02"
+  },
+  "CVE-2026-96577": {
+    "added": "2026-10-01",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "A flaw was found in oc-mirror. During mirroring operations, the embedded local cache registry binds to all network interfaces without authentication or encryption instead of restricting access to the local system. An unauthenticated attacker on an adjacent network can connect to the exposed service to push tampered container images, delete cached images, or access mirrored content.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-96577",
+      "last_modified": "2026-10-01T12:41:25.413",
+      "products": [],
+      "published": "2026-10-01T10:17:17.760",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-96577"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2523077"
         }
       ]
     },

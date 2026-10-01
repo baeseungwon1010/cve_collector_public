@@ -1,26 +1,38 @@
 {
-  "CVE-2026-102930": {
+  "CVE-2026-102925": {
     "package": "PIP:virtualenv"
   },
-  "CVE-2026-102938": {
+  "CVE-2026-102937": {
     "package": "PIP:virtualenv"
   },
-  "CVE-2026-103001": {
-    "package": "PIP:PyJWT"
+  "CVE-2026-102990": {
+    "package": "NPM:basic-ftp"
   },
-  "CVE-2026-53433": {
-    "package": "GO:github.com/junegunn/fzf"
+  "CVE-2026-102992": {
+    "package": "NPM:piscina"
   },
-  "CVE-2026-55149": {
-    "package": "GO:github.com/vouch/vouch-proxy"
+  "CVE-2026-102993": {
+    "package": "PIP:pypdf"
   },
-  "CVE-2026-59960": {
-    "package": "NPM:@argos-ci/core"
+  "CVE-2026-102994": {
+    "package": "PIP:pypdf"
   },
-  "CVE-2026-76169": {
-    "package": "NPM:fastify"
+  "CVE-2026-102995": {
+    "package": "PIP:pypdf"
   },
-  "CVE-2026-84504": {
-    "package": "NPM:fastify"
+  "CVE-2026-102996": {
+    "package": "PIP:pypdf"
+  },
+  "CVE-2026-102997": {
+    "package": "PIP:pypdf"
+  },
+  "CVE-2026-102998": {
+    "package": "PIP:pypdf"
+  },
+  "CVE-2026-102999": {
+    "package": "PIP:pypdf"
+  },
+  "CVE-2026-103000": {
+    "package": "PIP:pypdf"
   }
 }
