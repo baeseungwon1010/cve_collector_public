@@ -7325,15 +7325,6 @@
     "poc_source": "nvd_exploit_tag",
     "published": "2026-09-03T13:06:20.277"
   },
-  "CVE-2026-85612": {
-    "cvss_score": 7.5,
-    "cvss_severity": "HIGH",
-    "kev": false,
-    "poc_confirmed_date": "2026-09-12",
-    "poc_published_date": "2026-09-11",
-    "poc_source": "github_search",
-    "published": "2026-09-04T12:17:24.727"
-  },
   "CVE-2026-85616": {
     "cvss_score": 8.5,
     "cvss_severity": "HIGH",
