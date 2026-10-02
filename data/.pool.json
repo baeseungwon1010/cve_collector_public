@@ -59432,40 +59432,6 @@
     },
     "next_check": "2026-10-03"
   },
-  "CVE-2026-102268": {
-    "added": "2026-09-29",
-    "checks_done": 3,
-    "cve": {
-      "cvss_score": 9.1,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-347"
-      ],
-      "description": "PyJWT is a Python implementation of JSON Web Token standards. Prior to 2.14.0, is_pem_format in jwt/utils.py is affected because is_pem_format does not recognize every PEM representation accepted by the cryptography loader. This occurs when an application mixes HMAC and asymmetric algorithms and supplies a mutated public-key PEM as raw key bytes. As a result, HMACAlgorithm.prepare_key treats the unrecognized asymmetric public key as an HMAC secret. Consequently, an attacker who knows the public key can forge authenticated HMAC tokens. This issue is fixed in version 2.14.0.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-102268",
-      "last_modified": "2026-09-28T21:17:14.600",
-      "products": [],
-      "published": "2026-09-28T21:17:14.600",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/jpadilla/pyjwt/commit/8b4e233a22206b34ec1186e912e75c0b2396ac07"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/jpadilla/pyjwt/releases/tag/2.14.0"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/jpadilla/pyjwt/security/advisories/GHSA-ffc3-869f-jxw9"
-        }
-      ]
-    },
-    "next_check": "2026-10-03"
-  },
   "CVE-2026-102271": {
     "added": "2026-09-29",
     "checks_done": 3,
@@ -62709,6 +62675,58 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/411471/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-102797": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Server-Side Request Forgery (SSRF) vulnerability in ThemeREX Group ThemeREX Addons trx_addons allows Server Side Request Forgery.This issue affects ThemeREX Addons: from n/a through 2.46.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102797",
+      "last_modified": "2026-10-02T14:17:07.710",
+      "products": [],
+      "published": "2026-10-02T13:17:22.730",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/trx_addons/vulnerability/wordpress-themerex-addons-plugin-2-46-0-server-side-request-forgery-ssrf-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-102798": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ThemeREX Group ThemeREX Addons trx_addons allows Stored XSS.This issue affects ThemeREX Addons: from n/a through 2.46.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102798",
+      "last_modified": "2026-10-02T14:17:07.827",
+      "products": [],
+      "published": "2026-10-02T13:17:22.883",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/trx_addons/vulnerability/wordpress-themerex-addons-plugin-2-46-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -67919,61 +67937,6 @@
     },
     "next_check": "2026-10-03"
   },
-  "CVE-2026-103922": {
-    "added": "2026-10-02",
-    "checks_done": 0,
-    "cve": {
-      "cvss_score": 9.3,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-346",
-        "CWE-441"
-      ],
-      "description": "Capacitor is a cross-platform native runtime for web applications. From 6.0.0 until 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1, the Android and iOS WebView navigation guard validates a target URL's host and scheme but not its path, allowing a victim who activates an untrusted link to navigate a frame to /_capacitor_http_interceptor_. The native proxy can fetch an attacker-selected URL and return the response as a document at the application's own origin, allowing script in that response to access same-origin storage, cookies, and registered Capacitor plugin capabilities. Applications remain affected when CapacitorHttp is disabled because affected releases serve the proxy path regardless of that setting. This issue is fixed in versions 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-103922",
-      "last_modified": "2026-10-01T19:17:18.760",
-      "products": [],
-      "published": "2026-10-01T18:17:12.840",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/ionic-team/capacitor/commit/430356a91e1419fc66862dc09835081aa501677e"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/ionic-team/capacitor/commit/80b6c5e81d062e1e158914040f49e044d95b7ccb"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/ionic-team/capacitor/commit/85ccc44151fdd5ae5e0d806d875766ef4b84ad5d"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/ionic-team/capacitor/commit/af9a287fef45f0ac68ce640cb42fed2d06b0f1b4"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/ionic-team/capacitor/commit/d5e3170ba0ff155fc542b7e6d16cff5201406540"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/ionic-team/capacitor/commit/ee586ae680887ba99d066616f976db149542d922"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/ionic-team/capacitor/releases/tag/8.5.1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/ionic-team/capacitor/security/advisories/GHSA-rvm3-566m-v7fv"
-        }
-      ]
-    },
-    "next_check": "2026-10-03"
-  },
   "CVE-2026-104018": {
     "added": "2026-10-02",
     "checks_done": 0,
@@ -68361,6 +68324,1388 @@
         {
           "tags": [],
           "url": "https://github.com/uhop/stream-json/security/advisories/GHSA-hqr4-qq8f-hg3x"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104410": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "SiYuan before 3.8.5 contains an information disclosure vulnerability that allows publish readers to read password-protected and publish-disabled database rows via the /api/export/preview endpoint. Attackers can request an export preview of a public document embedding a database view to obtain protected rows' primary-key text and cell values.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104410",
+      "last_modified": "2026-10-02T12:17:10.640",
+      "products": [],
+      "published": "2026-10-02T12:17:10.520",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-778g-gq49-fxxj"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/siyuan-before-3.8.5-information-disclosure-via-api-export-preview"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104411": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Ghost from 6.22.1 before 6.64.0 contains a stored cross-site scripting vulnerability that allows staff users to host scripts by uploading files served with extension-derived content types on the default local storage adapter. Attackers can upload script-bearing files to the site's domain to compromise other staff users' admin sessions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104411",
+      "last_modified": "2026-10-02T12:17:10.690",
+      "products": [],
+      "published": "2026-10-02T12:17:10.690",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-gfjp-2p8f-94qv"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-6.22.1-before-6.64.0-stored-xss-via-local-storage-file-uploads"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104413": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Ghost from 5.94.0 before 6.64.0 contains a stored cross-site scripting vulnerability that allows staff users, including Contributors, to host arbitrary HTML by abusing bookmark card image fetching. Attackers can create bookmark cards that store non-image files from external websites as icons or thumbnails to compromise other staff users' admin sessions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104413",
+      "last_modified": "2026-10-02T12:17:10.980",
+      "products": [],
+      "published": "2026-10-02T12:17:10.980",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-347q-26qq-h2p6"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-5.94.0-before-6.64.0-stored-xss-via-bookmark-card-images"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104414": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Ghost from 2.5.0 before 6.64.0 contains a stored cross-site scripting vulnerability that allows attackers to inject untrusted scripts into post content via oEmbed photo responses. Attackers can host malicious oEmbed photo responses so that embedding their URL stores scripts that run in the Ghost editor, published site, and newsletter emails, compromising staff admin sessions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104414",
+      "last_modified": "2026-10-02T12:17:11.127",
+      "products": [],
+      "published": "2026-10-02T12:17:11.127",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-v3xr-g6p2-fvgv"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-from-2.5.0-before-6.64.0-stored-xss-via-oembed-photo-responses"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104416": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-203"
+      ],
+      "description": "Ghost from 4.39.0 before 6.64.0 contains an information disclosure vulnerability in the Admin API that allows staff users to view secret tokens of pending staff invites. Staff users with invite viewing permission can accept pending invites for higher-privileged roles to escalate their privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104416",
+      "last_modified": "2026-10-02T12:17:11.420",
+      "products": [],
+      "published": "2026-10-02T12:17:11.420",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-v6q3-xqxm-6f5v"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-4.39.0-before-6.64.0-invite-token-disclosure-via-admin-api"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104418": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Ghost from 6.10.3 before 6.64.0 contains a remote code execution vulnerability that allows authenticated administrators to run code by abusing theme translation file loading. Attackers with administrator access can upload a crafted theme containing malicious translation files to execute arbitrary code on the Ghost server.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104418",
+      "last_modified": "2026-10-02T12:17:11.710",
+      "products": [],
+      "published": "2026-10-02T12:17:11.710",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-jj74-hc2q-xrvm"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/ghost-from-6.10.3-before-6.64.0-rce-via-theme-translation-files"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104422": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-345"
+      ],
+      "description": "The block sync download path in Zebra (zebrad) before 6.3.0 reads a block's height from its unvalidated coinbase scriptSig and drops blocks that appear too far behind the tip before consensus validation, without penalizing the supplying peer. Because V5 transaction IDs exclude the scriptSig, a malicious peer can repeatedly serve a canonical block whose coinbase claims height 1 while keeping the requested hash, delaying the node's discovery of the newest block.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104422",
+      "last_modified": "2026-10-02T12:17:12.283",
+      "products": [],
+      "published": "2026-10-02T12:17:12.283",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-g95h-hw6g-pvgv"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/zebra-before-6.3.0-block-sync-denial-of-service-via-coinbase-scriptsig-rewrite"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104423": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-405"
+      ],
+      "description": "Zebra (zebrad) before 6.2.1 contains an asymmetric resource consumption vulnerability that allows unauthenticated peers to stall block verification by pushing V6 mempool transactions with invalid Halo2 proofs. Attackers can flood the shared unprioritized Halo2 verification queue with zero-fee transactions carrying zero-filled Orchard and Ironwood proofs, causing nodes to fall behind the chain tip.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104423",
+      "last_modified": "2026-10-02T12:17:12.433",
+      "products": [],
+      "published": "2026-10-02T12:17:12.433",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-2p4c-3q4q-p463"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/zebra-before-6.2.1-denial-of-service-via-uncapped-v6-shielded-proof-verification"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104430": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-628"
+      ],
+      "description": "Zebra zebrad 4.5.0 and zebra-script 7.0.0 count P2SH redeem script signature operations in legacy mode rather than zcashd's accurate P2SH mode, overcounting CHECKMULTISIG preceded by OP_1 through OP_16 as 20 sigops and causing a consensus divergence. Remote attackers can broadcast P2SH spends using low-threshold multisig redeem scripts so that a block zcashd accepts exceeds Zebra's inflated MAX_BLOCK_SIGOPS count, causing Zebra nodes to reject it and stall off the chain.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104430",
+      "last_modified": "2026-10-02T12:17:13.467",
+      "products": [],
+      "published": "2026-10-02T12:17:13.467",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-2prc-cj5x-4443"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/zebra-4.5.0-consensus-split-via-p2sh-sigop-overcount"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104431": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-405"
+      ],
+      "description": "Zebra before 6.0.0 contains a denial of service vulnerability that allows unauthenticated peers to stall Tokio workers by submitting mempool transactions requiring expensive synchronous script verification. Attackers can send non-standard high-sigop P2SH transactions that reach CachedFfiTransaction::is_valid() before standardness checks, saturating the verifier buffer and rendering the node unresponsive.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104431",
+      "last_modified": "2026-10-02T12:17:13.610",
+      "products": [],
+      "published": "2026-10-02T12:17:13.610",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-84j3-rw4c-gqmj"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/zebra-before-6.0.0-denial-of-service-via-synchronous-script-ffi-verification"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104434": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-617"
+      ],
+      "description": "ZcashFoundation Zebra zebra-rpc before 8.0.0 and zebrad before 4.5.0 contain a reachable assertion in the z_listunifiedreceivers RPC handler, which calls expect() on Sapling receiver parsing that fails for Unified Addresses carrying invalid Jubjub points. Authenticated RPC clients can submit such an address to abort the zebrad process, repeatably keeping the node offline.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104434",
+      "last_modified": "2026-10-02T12:17:13.917",
+      "products": [],
+      "published": "2026-10-02T12:17:13.917",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-c8w6-x74f-vmg3"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/zebra-before-8.0.0-denial-of-service-via-z-listunifiedreceivers-rpc"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104435": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-347"
+      ],
+      "description": "Zebra zebrad 4.4.0 and zebra-script 6.0.0 fail to enforce a ZIP-244 consensus rule, accepting V5 transparent inputs signed with SIGHASH_SINGLE that lack a corresponding output. Attackers can broadcast crafted V5 transactions with more inputs than outputs that Zebra accepts but zcashd rejects, causing a network consensus split.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104435",
+      "last_modified": "2026-10-02T12:17:14.063",
+      "products": [],
+      "published": "2026-10-02T12:17:14.063",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-pvmv-cwg8-v6c8"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/zebra-4.4.0-consensus-divergence-via-v5-sighash-single-without-output"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104437": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-347"
+      ],
+      "description": "Zebra before 4.4.0 contains a consensus divergence vulnerability in V5 transparent signature verification, computing a ZIP-244 digest for SIGHASH_SINGLE inputs lacking corresponding outputs instead of failing. Attackers can craft V5 transactions with fewer outputs than inputs that Zebra accepts and templates via getblocktemplate, producing blocks zcashd rejects.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104437",
+      "last_modified": "2026-10-02T12:17:14.357",
+      "products": [],
+      "published": "2026-10-02T12:17:14.357",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-cwfq-rfcr-8hmp"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/zebra-before-4.4.0-consensus-split-via-sighash-single-missing-output-handling"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104443": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "YesWiki before 4.6.7 contains an empty-filter scope bypass in the triples delete API that allows any authenticated user to delete or forge arbitrary semantic triples regardless of ownership. Attackers can send an empty filter to the triples delete endpoint to remove the admins-group membership triple, emptying the admin group and causing a site-wide authorization lockout.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104443",
+      "last_modified": "2026-10-02T14:17:08.213",
+      "products": [],
+      "published": "2026-10-02T12:17:15.323",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-9j7h-ccj2-jxv6"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-scope-bypass-via-triples-delete-api"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-9j7h-ccj2-jxv6"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104444": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "YesWiki before 4.6.7 contains an authorization bypass vulnerability in the comments API editComment route that allows authenticated low-privilege users to overwrite arbitrary pages or comments by supplying their own page as the pagetag field. Attackers can send a POST request to the api/comments endpoint targeting a victim tag, bypassing per-page write ACLs to replace content and reparent existing pages or comments.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104444",
+      "last_modified": "2026-10-02T12:17:15.607",
+      "products": [],
+      "published": "2026-10-02T12:17:15.490",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-894w-63wr-8x5r"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-authorization-bypass-via-comments-api-editcomment"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104445": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-290"
+      ],
+      "description": "YesWiki before 4.6.7 contains an authentication bypass vulnerability in the ActivityPub inbox that fails to bind the verified HTTP signature signer to the activity actor. Unauthenticated attackers with any ActivityPub keypair can send signed Delete or Update activities referencing a mirrored entry's sourceUrl to delete or overwrite other actors' federated entries.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104445",
+      "last_modified": "2026-10-02T12:17:15.770",
+      "products": [],
+      "published": "2026-10-02T12:17:15.657",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-rm6r-grfg-4v78"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-authentication-bypass-via-activitypub-inbox-actor-spoofing"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104446": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "YesWiki before 4.6.7 contains an authentication bypass in the contact mail AJAX handler that allows unauthenticated attackers to send email through the wiki's SMTP server. Attackers can POST an XMLHttpRequest to the mail handler without field or type parameters, supplying arbitrary recipient, sender, subject and body for spam and phishing.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104446",
+      "last_modified": "2026-10-02T12:17:15.933",
+      "products": [],
+      "published": "2026-10-02T12:17:15.817",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-36fx-49jj-57rw"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-unauthenticated-open-mail-relay-via-contact-mail-handler"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104447": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-352"
+      ],
+      "description": "YesWiki before 4.6.7 contains a cross-site request forgery vulnerability in the autoupdate UpdateAction that allows attackers to delete installed packages via unprotected GET requests. Attackers can lure a logged-in administrator to a crafted link with action=delete and a package parameter to remove extensions like bazar, breaking core site functionality.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104447",
+      "last_modified": "2026-10-02T14:17:08.343",
+      "products": [],
+      "published": "2026-10-02T12:17:15.990",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-jp5c-grgj-624x"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-csrf-package-deletion-via-autoupdate-updateaction"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-jp5c-grgj-624x"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104448": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-352"
+      ],
+      "description": "YesWiki before 4.6.7 contains a cross-site request forgery vulnerability in the ajaxdeletepage handler, which permanently deletes a page on any GET request carrying a jsonp_callback parameter without checking a CSRF token. Attackers can lure a logged-in administrator or page owner to a crafted link to delete arbitrary pages along with their ACLs, links, triples, comments and referrers.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104448",
+      "last_modified": "2026-10-02T12:17:16.280",
+      "products": [],
+      "published": "2026-10-02T12:17:16.163",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-hqmg-843g-pp28"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-csrf-page-deletion-via-ajaxdeletepage-handler"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104449": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "YesWiki before 4.6.7 contains an access control vulnerability allowing unauthenticated attackers to overwrite any existing wiki page, including pages whose write ACL restricts editing, via the Bazar entry-creation flow. Attackers can submit a crafted entry with an attacker-controlled id_fiche matching an existing page, overwriting its body for mass defacement and content destruction.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104449",
+      "last_modified": "2026-10-02T12:17:16.433",
+      "products": [],
+      "published": "2026-10-02T12:17:16.320",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-4388-phmh-jrw8"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-unauthenticated-page-overwrite-via-bazar-id-fiche"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104450": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "YesWiki before 4.6.7 contains a missing authorization flaw in the pointimage action (tools/attach/actions/pointimage.php), which saves content to an attacker-chosen page with write ACL checks bypassed. Unauthenticated attackers can POST pagetag, title, and description fields to any page rendering {{pointimage}} to append raw HTML or JavaScript to any wiki page, including pages whose write ACL restricts editing, causing stored cross-site scripting in viewers' and administrators' browsers.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104450",
+      "last_modified": "2026-10-02T12:17:16.627",
+      "products": [],
+      "published": "2026-10-02T12:17:16.483",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-7547-q56p-h99v"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-acl-bypass-and-stored-xss-via-pointimage-action"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104456": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "YesWiki before 4.6.7 contains a second-order SQL injection vulnerability in AclService::updateRequestWithACL, where a stored username is concatenated unescaped into a read-ACL LIKE clause. Attackers can self-register an account name containing a double-quote payload, then load non-admin ACL-filtered listings to read database contents and bypass read ACLs.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104456",
+      "last_modified": "2026-10-02T12:17:17.607",
+      "products": [],
+      "published": "2026-10-02T12:17:17.490",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-6rw5-62xf-q5xp"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-second-order-sql-injection-via-acl-username"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104457": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "YesWiki before 4.6.7 contains an SQL injection vulnerability in the Bazar filtertags action, which wraps unescaped filterN attribute tokens in quotes and concatenates them into a raw tags.value IN (...) clause. Unauthenticated attackers on default installs can save filtertags markup in a page with a trailing-backslash token that breaks quote parity under MySQL backslash escaping. This lets them inject a five-column UNION subquery to read arbitrary table data such as password hashes.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104457",
+      "last_modified": "2026-10-02T12:17:17.767",
+      "products": [],
+      "published": "2026-10-02T12:17:17.653",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-p87r-f4x4-8r4g"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-sql-injection-via-filtertags-filtern-parameter"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104458": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "YesWiki before 4.6.7 contains a server-side request forgery vulnerability in validateKeyIdUrl() that allows unauthenticated attackers to bypass the SSRF guard using 6to4, NAT64, or IPv4-compatible IPv6 addresses. Attackers can send a crafted Signature keyId to the public actor inbox route to reach cloud metadata, loopback services, or internal hosts.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104458",
+      "last_modified": "2026-10-02T12:17:17.927",
+      "products": [],
+      "published": "2026-10-02T12:17:17.813",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-85f2-5r47-2pwm"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-ssrf-guard-bypass-via-ipv6-transition-addresses"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104459": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "YesWiki before 4.6.7 contains a server-side request forgery vulnerability in WebfingerService that allows unauthenticated attackers to trigger HTTPS requests to internal hosts. Attackers can POST a crafted actor_handle with a numeric host and port to the abonnements view to probe internal HTTPS services and ports.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104459",
+      "last_modified": "2026-10-02T14:17:08.793",
+      "products": [],
+      "published": "2026-10-02T12:17:17.973",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-x4mq-qxvc-g82j"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-ssrf-via-activitypub-webfinger-actor-handle"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-x4mq-qxvc-g82j"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104460": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "YesWiki before 4.6.7 contains a blind SQL injection vulnerability in the {{newtextsearch}} action because Bazar list option ids are concatenated into SQL REGEXP/LIKE clauses in actions/newtextsearch.php without escaping. Anonymous attackers can plant a malicious option id in an anonymously editable Bazar list and use search requests as a boolean oracle to read arbitrary database data, including admin password hashes from the yeswiki_users table.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104460",
+      "last_modified": "2026-10-02T12:17:18.253",
+      "products": [],
+      "published": "2026-10-02T12:17:18.140",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-4333-x9p4-8xj7"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-unauthenticated-blind-sql-injection-via-newtextsearch"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104462": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "YesWiki before 4.6.7 contains an SQL injection vulnerability in the Bazar nuagetag action, which concatenates the unescaped tags attribute into a raw SQL IN clause. Attackers with page-write access (unauthenticated on default installs) can embed a nuagetag tag ending in a backslash to break quote parity and inject a UNION subquery, exfiltrating password hashes and arbitrary table data.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104462",
+      "last_modified": "2026-10-02T12:17:18.587",
+      "products": [],
+      "published": "2026-10-02T12:17:18.467",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-p9rm-p6pp-8m8c"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-sql-injection-via-nuagetag-tags-parameter"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104463": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "YesWiki before 4.6.7 contains a server-side request forgery vulnerability that allows unauthenticated attackers to trigger server requests by sending signed Follow activities to the public forms actor inbox route. Attackers sign requests with their own keyId while supplying internal actor URLs in the body, reaching internal hosts or cloud metadata via blind GET and POST requests.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104463",
+      "last_modified": "2026-10-02T14:17:09.010",
+      "products": [],
+      "published": "2026-10-02T12:17:18.643",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-x623-wwf6-f6wp"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-unauthenticated-ssrf-via-activitypub-inbox"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-x623-wwf6-f6wp"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104464": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "YesWiki before 4.6.7 contains a server-side request forgery vulnerability that allows unauthenticated attackers to make server-side GET requests by supplying an unvalidated actor URL to the Bazar abonnements sync action. Attackers can target internal hosts or cloud metadata endpoints and chain attacker-controlled outbox first/next links, with fetched responses stored as readable Bazar entries.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104464",
+      "last_modified": "2026-10-02T12:17:19.007",
+      "products": [],
+      "published": "2026-10-02T12:17:18.873",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-wcjp-v62j-p5xm"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-ssrf-via-bazar-abonnements-sync-actor-parameter"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104465": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "YesWiki before 4.6.7 contains a reflected cross-site scripting vulnerability that allows unauthenticated attackers to inject scripts via the field parameter of the mail handler. Attackers can craft links whose field value breaks out of the ajax-mail-form action attribute to execute JavaScript in victims' browsers.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104465",
+      "last_modified": "2026-10-02T12:17:19.167",
+      "products": [],
+      "published": "2026-10-02T12:17:19.050",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-2fc6-rvp3-fgfj"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-reflected-xss-via-field-parameter-in-mail-handler"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104467": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "YesWiki before 4.6.7 contains an authorization bypass vulnerability in ApiService::isAuthorized() that allows unauthenticated attackers to call admin-only API routes when public API mode is enabled. Attackers can send requests to endpoints like api/ci/update_config and api/archives to overwrite configuration and list, download, or delete backup archives.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104467",
+      "last_modified": "2026-10-02T12:17:19.490",
+      "products": [],
+      "published": "2026-10-02T12:17:19.373",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-v527-6r4j-j2w2"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-authorization-bypass-via-public-api-mode"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104469": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.8,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-384"
+      ],
+      "description": "YesWiki before 4.6.7 contains a session fixation vulnerability that allows attackers to hijack authenticated sessions because login does not regenerate the PHP session ID. Attackers who set or learn a victim's pre-authentication YesWiki-* session cookie can reuse it after login to access private content and perform actions with the victim's privileges.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104469",
+      "last_modified": "2026-10-02T12:17:19.823",
+      "products": [],
+      "published": "2026-10-02T12:17:19.703",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-7fvc-v2hp-5pwh"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-session-fixation-via-login-in-authcontroller-php"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104470": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "YesWiki before 4.6.7 contains a server-side request forgery vulnerability in the Bazar valeur action that allows page editors to make the server fetch arbitrary URLs. Attackers can supply loopback or internal URLs in the url parameter to probe internal services and inject unescaped remote HTML that executes scripts in viewers' browsers.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104470",
+      "last_modified": "2026-10-02T12:17:19.990",
+      "products": [],
+      "published": "2026-10-02T12:17:19.870",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-6rvf-7pwm-6j44"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-ssrf-and-xss-via-bazar-valeur-action"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104471": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "YesWiki before 4.6.7 contains an unrestricted file upload vulnerability that allows authenticated admins to write remote files into the web-accessible files/ directory via Bazar CSV import preview. Attackers can import a CSV whose file or image field references a remote .php URL, which is saved without extension checks and executed as server-side code.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104471",
+      "last_modified": "2026-10-02T14:17:09.137",
+      "products": [],
+      "published": "2026-10-02T12:17:20.037",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-v3gq-c7c6-mxw3"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-unrestricted-file-upload-via-bazar-csv-import"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-v3gq-c7c6-mxw3"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104472": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "YesWiki before 4.6.7 contains a missing authorization vulnerability in the attachment download handler that allows unauthenticated attackers to bypass page read ACLs. Attackers can request the download handler with a known page tag and file parameter to retrieve confidential attachments from read-restricted pages.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104472",
+      "last_modified": "2026-10-02T12:17:20.317",
+      "products": [],
+      "published": "2026-10-02T12:17:20.197",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-7cj2-9pgf-vcw2"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-missing-authorization-via-attachment-download-handler"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104473": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "YesWiki before 4.5.3 contains multiple reflected cross-site scripting vulnerabilities that allow remote attackers to inject JavaScript through unsanitized parameters such as incomingurl, id, file, tags, and template. Attackers can lure authenticated or unauthenticated users into opening crafted links to hijack sessions and trigger authenticated requests against backend functionality.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104473",
+      "last_modified": "2026-10-02T12:17:20.483",
+      "products": [],
+      "published": "2026-10-02T12:17:20.367",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-5724-x3rh-5qqq"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/yeswiki-before-4.5.3-multiple-reflected-xss-via-bazar-and-listpages"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104606": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A security flaw has been discovered in itsourcecode Online Admission System Project 1.0. The impacted element is an unknown function of the file confirm.php. The manipulation of the argument ID results in sql injection. The attack may be launched remotely. The exploit has been released to the public and may be used for attacks.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104606",
+      "last_modified": "2026-10-02T13:18:55.613",
+      "products": [],
+      "published": "2026-10-02T11:17:26.037",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ylc2024/cve/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://itsourcecode.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-104606"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/961903"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412915"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412915/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104609": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A weakness has been identified in onetwothreeneth HospitalManagementSystem up to 9ef91ed6007314b6473110ed699dff76d158f61d. This affects the function get of the file edit_accounts.php. This manipulation of the argument user_id/patient_id/physician_id/discounts_id/services_id causes sql injection. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for attacks. This product follows a rolling release approach for continuous delivery, so version details for affected or updated releases are not provided. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104609",
+      "last_modified": "2026-10-02T13:18:55.613",
+      "products": [],
+      "published": "2026-10-02T12:17:20.533",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/onetwothreeneth/HospitalManagementSystem/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/onetwothreeneth/HospitalManagementSystem/issues/4"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-104609"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/962468"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412916"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412916/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104610": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "description": "A security vulnerability has been detected in Tenda HG7, HG9 and HG10 300001138_en_xpon. This impacts the function boaGetVar of the file /boaform/formLoopBack of the component Boa Web Server. Such manipulation of the argument Ethtype leads to stack-based buffer overflow. The attack can be executed remotely. The exploit has been disclosed publicly and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104610",
+      "last_modified": "2026-10-02T14:17:09.267",
+      "products": [],
+      "published": "2026-10-02T13:17:44.450",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Expl0rer-Ct/CVE/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-104610"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/962541"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412917"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412917/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.tenda.com.cn/"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104611": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "description": "A vulnerability was detected in Tenda AC9 15.03.02.13. Affected is an unknown function of the file /goform/fast_setting_internet_set of the component POST Request Handler. Performing a manipulation of the argument netWanType results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit is now public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104611",
+      "last_modified": "2026-10-02T14:17:09.660",
+      "products": [],
+      "published": "2026-10-02T13:17:44.640",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/ZaneBoden/CVEs/blob/main/Tenda-AC9-fast_setting_internet_set.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-104611"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/962720"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412918"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412918/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.tenda.com.cn/"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104613": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was determined in CodeAstro Simple Pharmacy Management System 1.0. This vulnerability affects unknown code of the file /SimplePharmacy-PHP/product/view.php. This manipulation of the argument ID causes sql injection. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104613",
+      "last_modified": "2026-10-02T14:17:09.807",
+      "products": [],
+      "published": "2026-10-02T14:17:09.807",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://codeastro.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/yihaofuweng/cve/issues/72"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-104613"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/963459"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412922"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412922/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-104614": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was identified in CodeAstro Simple Pharmacy Management System 1.0. This issue affects some unknown processing of the file /SimplePharmacy-PHP/product/delete.php. Such manipulation of the argument ID leads to sql injection. The attack can be launched remotely. The exploit is publicly available and might be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104614",
+      "last_modified": "2026-10-02T14:17:09.990",
+      "products": [],
+      "published": "2026-10-02T14:17:09.990",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://codeastro.com/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/yihaofuweng/cve/issues/73"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-104614"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/963475"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412923"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/412923/cti"
         }
       ]
     },
@@ -122500,6 +123845,40 @@
       ]
     },
     "next_check": "2026-10-09"
+  },
+  "CVE-2026-19652": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-269"
+      ],
+      "description": "The Divi Membership plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 2.2.0. This is due to the `dmem_form_submit_handler()` function determining the new user's role by iterating all WordPress roles and calling `password_verify()` against an attacker-controlled bcrypt hash supplied in the `form_id` POST parameter, with no validation or whitelist of allowed roles. This makes it possible for unauthenticated attackers to register a new account with the administrator role by submitting a locally computed bcrypt hash of `administrator` as `form_id`, and when `auto_login=on` is submitted, be immediately authenticated as that administrator in the same request, resulting in full site takeover. Exploitation requires a WordPress nonce, but that nonce is publicly emitted on any page rendering the Divi Membership registration form and is therefore obtainable by any unauthenticated visitor.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19652",
+      "last_modified": "2026-10-02T14:17:10.483",
+      "products": [],
+      "published": "2026-10-02T14:17:10.483",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://diviengine.com/divi-membership-changelog/"
+        },
+        {
+          "tags": [],
+          "url": "https://diviengine.com/product/divi-membership/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/81d46c7a-dfe4-4991-99cc-66e5c6d3e3c8?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
   },
   "CVE-2026-19653": {
     "added": "2026-08-20",
@@ -206842,36 +208221,6 @@
       ]
     },
     "next_check": "2026-10-29"
-  },
-  "CVE-2026-63292": {
-    "added": "2026-10-02",
-    "checks_done": 0,
-    "cve": {
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-121"
-      ],
-      "description": "Stack-based buffer overflow in mod_vhost_alias in Apache Software Foundation Apache HTTP Server through 2.4.68 on all platforms allows a remote client to cause a denial of service or potentially execute arbitrary code via an HTTP request with a Host header exceeding 8192 bytes when VirtualDocumentRoot uses a hostname format specifier and LimitRequestFieldSize is raised above the default.\n\nUsers are recommended to upgrade to version 2.4.69, which fixes this issue.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-63292",
-      "last_modified": "2026-10-01T21:17:23.610",
-      "products": [],
-      "published": "2026-10-01T17:17:29.803",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://httpd.apache.org/security/vulnerabilities_24.html"
-        },
-        {
-          "tags": [],
-          "url": "http://www.openwall.com/lists/oss-security/2026/10/01/24"
-        }
-      ]
-    },
-    "next_check": "2026-10-03"
   },
   "CVE-2026-63325": {
     "added": "2026-09-17",
@@ -334139,6 +335488,32 @@
     },
     "next_check": "2026-10-03"
   },
+  "CVE-2026-80298": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in HAVELSAN Inc. Sef - AI Chatbot Platform allows SQL Injection.\n\nThis issue affects Sef - AI Chatbot Platform: before 2.1.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80298",
+      "last_modified": "2026-10-02T10:17:08.567",
+      "products": [],
+      "published": "2026-10-02T10:17:08.567",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1241"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
   "CVE-2026-80338": {
     "added": "2026-09-24",
     "checks_done": 7,
@@ -334878,6 +336253,32 @@
         {
           "tags": [],
           "url": "https://www.ibm.com/support/pages/node/7288040"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-80443": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-295"
+      ],
+      "description": "Improper certificate validation vulnerability in HAVELSAN Inc. Sef - AI Chatbot Platform allows Adversary in the Middle (AiTM).\n\nThis issue affects Sef - AI Chatbot Platform: before 2.1.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-80443",
+      "last_modified": "2026-10-02T14:17:10.960",
+      "products": [],
+      "published": "2026-10-02T09:16:44.823",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1241"
         }
       ]
     },
@@ -381647,6 +383048,32 @@
     },
     "next_check": "2026-10-04"
   },
+  "CVE-2026-85209": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Missing Authorization vulnerability in AVEZ Electronics Communication Training and Consultancy Trade Inc. Learning Management System (LMS) allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects Learning Management System (LMS): through 2026-09-18.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85209",
+      "last_modified": "2026-10-02T13:17:59.100",
+      "products": [],
+      "published": "2026-10-02T13:17:59.100",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1242"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
   "CVE-2026-85211": {
     "added": "2026-09-04",
     "checks_done": 8,
@@ -381810,6 +383237,32 @@
       ]
     },
     "next_check": "2026-10-04"
+  },
+  "CVE-2026-85215": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in GG Soft Software Services Inc. Paperwork allows SQL Injection.\n\nThis issue affects Paperwork: through 2026-09-09.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85215",
+      "last_modified": "2026-10-02T14:17:11.327",
+      "products": [],
+      "published": "2026-10-02T14:17:11.327",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1244"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
   },
   "CVE-2026-85217": {
     "added": "2026-09-11",
@@ -384984,6 +386437,44 @@
       ]
     },
     "next_check": "2026-10-08"
+  },
+  "CVE-2026-85492": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The All in One SEO – AI SEO Plugin to Boost SEO Rankings & Traffic (Schema, Local SEO, Sitemap & SEO Insights) plugin for WordPress is vulnerable to DOM-Based Cross-Site Scripting via URL Pathname in all versions up to, and including, 5.0.1.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user visits a crafted URL. Exploitation requires the victim to hold the aioseo_manage_seo capability and to open the SEO Preview panel in the WordPress admin toolbar while visiting a page with a malicious payload embedded in the URL pathname.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85492",
+      "last_modified": "2026-10-02T13:18:55.613",
+      "products": [],
+      "published": "2026-10-02T10:17:08.707",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/all-in-one-seo-pack/tags/5.0.1.1/dist/Lite/assets/js/GoogleSearchPreview.8286359f.js#L1"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/all-in-one-seo-pack/tags/5.0.1.1/dist/Lite/assets/js/app-core.36551fe5.js#L1"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3709882%40all-in-one-seo-pack%2Ftags%2F5.0.2&old=3670552%40all-in-one-seo-pack%2Ftags%2F5.0.1.1"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/5d4da592-3e8a-401d-b461-1770db9de654?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
   },
   "CVE-2026-85496": {
     "added": "2026-09-25",
@@ -405075,6 +406566,52 @@
         {
           "tags": [],
           "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/ee4f837a-d0b5-48df-8c96-2a294985612e?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
+  "CVE-2026-87920": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The W3 Total Cache plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Comment Content via Output-Buffer Regex Rewrite in all versions up to, and including, 2.10.6 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This vulnerability is only exploitable when the 'Remove query strings from static resources' option is enabled in W3 Total Cache, as mutate_url() must strip the '?' delimiter and everything following it — including the closing quote of the outer attribute — to break the attribute boundary.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-87920",
+      "last_modified": "2026-10-02T13:18:55.613",
+      "products": [],
+      "published": "2026-10-02T10:17:08.857",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/w3-total-cache/tags/2.10.6/BrowserCache_Plugin.php#L208"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/w3-total-cache/tags/2.10.6/BrowserCache_Plugin.php#L259"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/w3-total-cache/tags/2.10.6/BrowserCache_Plugin.php#L336"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3723494/w3-total-cache/trunk/BrowserCache_Plugin.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3723494%40w3-total-cache%2Ftags%2F2.10.7&old=3681561%40w3-total-cache%2Ftags%2F2.10.6"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/34bd7c32-f4c5-4015-909a-e4730f35494b?source=cve"
         }
       ]
     },
@@ -445935,6 +447472,36 @@
     },
     "next_check": "2026-10-03"
   },
+  "CVE-2026-93875": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The JetAppointment plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'friendlyTime' parameter in all versions up to, and including, 2.5.2.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The injected payload is stored in the wp_jet_appointments_meta table via the unauthenticated jet_engine_form_booking_submit endpoint and executes in the administrator's browser when the appointment details popup is opened in the WordPress admin panel.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-93875",
+      "last_modified": "2026-10-02T14:17:11.850",
+      "products": [],
+      "published": "2026-10-02T14:17:11.850",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://crocoblock.com/changelog/?plugin=jet-appointments-booking"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/758f9402-33f4-40a6-a021-bf689d3b4a1b?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
   "CVE-2026-93880": {
     "added": "2026-10-02",
     "checks_done": 0,
@@ -450643,6 +452210,52 @@
     },
     "next_check": "2026-10-09"
   },
+  "CVE-2026-94422": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-290"
+      ],
+      "description": "An incorrect implementation of message filtering in xdg-dbus-proxy versions before 0.1.9 allows an attacker to bypass the intended message filtering on the D-Bus session bus by setting a reply serial number on non-reply messages. A malicious or compromised Flatpak app could use this to achieve arbitrary code execution outside its sandbox. xdg-dbus-proxy was designed to be part of the sandbox boundary for Flatpak, but it is released as a separate project and is sometimes used by other app frameworks such as Firejail.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-94422",
+      "last_modified": "2026-10-02T14:17:12.003",
+      "products": [],
+      "published": "2026-10-02T14:17:12.003",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-94422"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2542235"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/flatpak/xdg-dbus-proxy/commit/e4465a0dfe96da3b39929a30a1ac3a22b16223e3"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/flatpak/xdg-dbus-proxy/commit/e5702fca4dba9600721921fbca2dbc39dc5ca400"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/flatpak/xdg-dbus-proxy/commit/fc027f759316fb2a6c45648200b6f100202eb84e"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/flatpak/xdg-dbus-proxy/security/advisories/GHSA-2cgv-pwcq-wvpq"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
   "CVE-2026-94424": {
     "added": "2026-09-22",
     "checks_done": 7,
@@ -453699,36 +455312,6 @@
         {
           "tags": [],
           "url": "https://issues.chromium.org/issues/534997484"
-        }
-      ]
-    },
-    "next_check": "2026-10-03"
-  },
-  "CVE-2026-95373": {
-    "added": "2026-09-30",
-    "checks_done": 2,
-    "cve": {
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-416"
-      ],
-      "description": "Use after free in DevTools in Google Chrome prior to 154.0.8037.57 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-95373",
-      "last_modified": "2026-09-29T19:17:38.307",
-      "products": [],
-      "published": "2026-09-29T18:17:31.250",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_0856730748.html"
-        },
-        {
-          "tags": [],
-          "url": "https://issues.chromium.org/issues/553130481"
         }
       ]
     },
@@ -464160,6 +465743,68 @@
     },
     "next_check": "2026-10-09"
   },
+  "CVE-2026-97652": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The WP Statistics – Simple, privacy-friendly Google Analytics alternative plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via REQUEST_URI Query-Parameter Key in all versions up to, and including, 14.16.14 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-97652",
+      "last_modified": "2026-10-02T13:18:55.613",
+      "products": [],
+      "published": "2026-10-02T10:17:10.163",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/wp-statistics/wp-statistics/pull/1148"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.14/assets/dev/javascript/filters/generator.js#L383"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.14/assets/dev/javascript/filters/generator.js#L392"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.14/src/Abstracts/MultiViewPage.php#L82"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.14/src/Service/Admin/Referrals/ReferralsPage.php#L258"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.14/src/Service/Admin/Referrals/ReferralsPage.php#L283"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/wp-statistics/tags/14.16.14/src/Service/Admin/Referrals/ReferralsPage.php#L310"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3722421/wp-statistics/trunk/src/Service/Admin/Referrals/ReferralsPage.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3722421%40wp-statistics%2Ftags%2F14.16.15&old=3702973%40wp-statistics%2Ftags%2F14.16.14"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/8f1d2fe2-816b-46ee-8ab5-ae9936ac9ded?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
+  },
   "CVE-2026-97661": {
     "added": "2026-10-01",
     "checks_done": 1,
@@ -464741,6 +466386,36 @@
       ]
     },
     "next_check": "2026-10-09"
+  },
+  "CVE-2026-97876": {
+    "added": "2026-10-02",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-822"
+      ],
+      "description": "A local attacker with control over GRUB's configuration can bypass lockdown restrictions when booting with Secure Boot and load an unsigned GRUB module, while GRUB continues to report lockdown is enabled.\n\n\n\n\nThe vulnerability is caused by insufficient validation of the MMIO base address passed to the GRUB serial command. GRUB does not validate that the base address corresponds to a UART device, rather than being an arbitrary memory address. This allows an attacker to trick GRUB into writing non-arbitrary data at an attacker-controlled address, including resetting the grub_file_verifiers list in a way that disables the subsequent verification of loaded modules.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-97876",
+      "last_modified": "2026-10-02T11:17:39.727",
+      "products": [],
+      "published": "2026-10-02T11:17:39.727",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gitlab.freedesktop.org/gnu-grub/grub/-/commit/26beaa3b2720fefdc4d04c1ae209b776fe6848d6"
+        },
+        {
+          "tags": [],
+          "url": "https://www.openwall.com/lists/oss-security/2026/09/13/5"
+        }
+      ]
+    },
+    "next_check": "2026-10-03"
   },
   "CVE-2026-97877": {
     "added": "2026-09-26",
