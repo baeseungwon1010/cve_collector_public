@@ -68046,36 +68046,6 @@
     },
     "next_check": "2026-10-04"
   },
-  "CVE-2026-103648": {
-    "added": "2026-10-03",
-    "checks_done": 0,
-    "cve": {
-      "cvss_score": 9.1,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-22"
-      ],
-      "description": "Path traversal in image-downloader 4.3.0 allows an attacker who can control the download URL to cause downloaded response data to be written outside the configured destination directory.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-103648",
-      "last_modified": "2026-10-02T18:44:11.270",
-      "products": [],
-      "published": "2026-10-02T16:16:44.370",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://gitlab.com/demsking/image-downloader/-/commit/fb4454304276e2439fb19b98836b3ba903b3aaea"
-        },
-        {
-          "tags": [],
-          "url": "https://gitlab.com/demsking/image-downloader/-/work_items/32"
-        }
-      ]
-    },
-    "next_check": "2026-10-04"
-  },
   "CVE-2026-103679": {
     "added": "2026-10-01",
     "checks_done": 2,
@@ -71087,6 +71057,52 @@
     },
     "next_check": "2026-10-04"
   },
+  "CVE-2026-104983": {
+    "added": "2026-10-03",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "A vulnerability has been found in Linux Mint Xreader up to 4.6.9. Impacted is the function g_file_get_child of the file shell/ev-window.c of the component PDF Attachment Saving Handler. Such manipulation of the argument attachment leads to path traversal. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. One of the project maintainers closed this issue as \"completed\", because \"EPUB support was removed from Xreader and reimplemented in Xepub\". Code analysis indicates that this might be a misunderstanding of the situation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104983",
+      "last_modified": "2026-10-03T11:17:33.473",
+      "products": [],
+      "published": "2026-10-03T11:17:33.473",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/rodtvs/63a34e7b20a9f97a1a7167a8a1db49c2"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/linuxmint/xreader/issues/714"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-104983"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/964349"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413199"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413199/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-04"
+  },
   "CVE-2026-104988": {
     "added": "2026-10-03",
     "checks_done": 0,
@@ -71180,6 +71196,44 @@
         {
           "tags": [],
           "url": "https://github.com/C4illin/ConvertX/security/advisories/GHSA-m4hh-rqmf-c8hw"
+        }
+      ]
+    },
+    "next_check": "2026-10-04"
+  },
+  "CVE-2026-105105": {
+    "added": "2026-10-03",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "CWE-306: Missing Authentication for Critical Function in the ait.core.server telemetry and command broker (ait-server) in NASA-AMMOS AIT-Core through 3.1.1 allows an unauthenticated remote attacker with network access to the ZeroMQ message bus to inject spacecraft command data, exfiltrate command and telemetry traffic, inject forged telemetry, or disrupt the command and telemetry bus. The ait-server ZeroMQ broker binds its XSUB and XPUB sockets to all network interfaces by default without authentication or transport security. An attacker able to reach TCP port 5559 can publish messages onto internal topics, including the __commands__ command topic. With the shipped default configuration, command messages are forwarded through command_stream and emitted on the command-uplink UDP path. An attacker able to reach TCP port 5560 can subscribe to command and telemetry traffic on the ground bus. AIT-Core 3.1.2 changes the default ZeroMQ bind addresses to loopback.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105105",
+      "last_modified": "2026-10-03T12:16:57.183",
+      "products": [],
+      "published": "2026-10-03T12:16:57.183",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Mothra-1"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/NASA-AMMOS/AIT-Core/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/NASA-AMMOS/AIT-Core/security/advisories/GHSA-ccw5-g774-3683"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/advisories/GHSA-3j6g-pxmx-58qg"
         }
       ]
     },
@@ -428825,32 +428879,6 @@
       ]
     },
     "next_check": "2026-10-09"
-  },
-  "CVE-2026-90970": {
-    "added": "2026-10-03",
-    "checks_done": 0,
-    "cve": {
-      "cvss_score": 9.9,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-1336"
-      ],
-      "description": "GitLab has remediated a vulnerability in the GitLab AI Gateway component affecting all versions of the AI Gateway from 18.1.6 before 19.2.4, 19.3 before 19.3.2, and 19.4 before 19.4.1 that, under certain conditions, could have allowed an authenticated user with Duo Agent Platform access to escape the prompt template sandbox via a specially crafted flow configuration, resulting in arbitrary command execution on the AI Gateway.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-90970",
-      "last_modified": "2026-10-02T18:44:11.270",
-      "products": [],
-      "published": "2026-10-02T15:17:12.550",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://gitlab.com/gitlab-org/gitlab/-/work_items/628842"
-        }
-      ]
-    },
-    "next_check": "2026-10-04"
   },
   "CVE-2026-90978": {
     "added": "2026-09-18",
