@@ -1,56 +1,56 @@
 {
-  "CVE-2023-46589": {
-    "package": "MAVEN:org.apache.tomcat:tomcat-coyote"
+  "CVE-2025-71405": {
+    "package": "GO:github.com/go-chi/chi/v5"
   },
-  "CVE-2025-1750": {
-    "package": "PIP:llama-index-vector-stores-duckdb"
+  "CVE-2026-10032": {
+    "package": "NPM:@a2ui/web_core"
   },
-  "CVE-2026-0603": {
-    "package": "MAVEN:org.hibernate:hibernate-core"
+  "CVE-2026-104861": {
+    "package": "NPM:probe-image-size"
   },
-  "CVE-2026-104855": {
-    "package": "RUST:wasmtime"
+  "CVE-2026-19481": {
+    "package": "NPM:@fastify/busboy"
   },
-  "CVE-2026-12252": {
-    "package": "PIP:nltk"
+  "CVE-2026-19484": {
+    "package": "NPM:@fastify/busboy"
   },
-  "CVE-2026-18140": {
-    "package": "RUST:aws-smithy-json"
+  "CVE-2026-58076": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-30405": {
-    "package": "GO:github.com/osrg/gobgp/v4"
+  "CVE-2026-59244": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-49119": {
-    "package": "PIP:gradio"
+  "CVE-2026-65017": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-58167": {
-    "package": "GO:github.com/ccfos/nightingale/v6"
+  "CVE-2026-67260": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-58168": {
-    "package": "PIP:deeptutor"
+  "CVE-2026-67587": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-59707": {
-    "package": "GO:github.com/mudler/LocalAI"
+  "CVE-2026-68494": {
+    "package": "MAVEN:tools.jackson.core:jackson-core"
   },
-  "CVE-2026-59944": {
-    "package": "COMPOSER:composer/composer"
+  "CVE-2026-68871": {
+    "package": "PIP:apache-airflow-providers-yandex"
   },
-  "CVE-2026-61586": {
-    "package": "MAVEN:eu.copernik:copernik-xml-factory"
+  "CVE-2026-68968": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-64849": {
-    "package": "PIP:mlflow"
+  "CVE-2026-68969": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-66007": {
-    "package": "PIP:datasets"
+  "CVE-2026-68970": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-66010": {
-    "package": "NPM:dompurify"
+  "CVE-2026-68971": {
+    "package": "PIP:apache-airflow"
   },
-  "CVE-2026-74802": {
+  "CVE-2026-71416": {
+    "package": "PIP:headroom-ai"
+  },
+  "CVE-2026-74904": {
     "package": "GO:github.com/siyuan-note/siyuan/kernel"
-  },
-  "CVE-2026-96780": {
-    "package": "NPM:figlet"
   }
 }
