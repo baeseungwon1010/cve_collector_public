@@ -71464,6 +71464,75 @@
     },
     "next_check": "2026-10-06"
   },
+  "CVE-2026-104890": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "Kunstmaan CMS is an open source content management system based on the Symfony framework. Prior to 7.3.2, src/Kunstmaan/MediaBundle/Helper/File/FileHandler.php performs the blacklisted_extensions check case-sensitively in FileHandler::getFilePath and lowercases the stored extension afterward. An authenticated backend user with media access can upload a mixed-case executable extension such as PHP that bypasses the check and is stored in the web-accessible media directory with an executable lowercase extension. The default blacklist also omits several server-executable extension types, allowing the same code-execution impact where the web server executes uploaded files. This issue is fixed in version 7.3.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104890",
+      "last_modified": "2026-10-05T16:17:06.270",
+      "products": [],
+      "published": "2026-10-05T16:17:06.270",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/Kunstmaan/KunstmaanBundlesCMS/commit/1bbdfdeac8e7e91506b1a9271360b9b68d7690d3"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/Kunstmaan/KunstmaanBundlesCMS/releases/tag/7.3.2"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/Kunstmaan/KunstmaanBundlesCMS/security/advisories/GHSA-p279-5wcv-45vq"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
+  "CVE-2026-104891": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-290",
+        "CWE-863"
+      ],
+      "description": "mppx-condition-gate provides conditional free-access wrappers for mppx payment methods. Prior to @insumermodel/mppx-condition-gate 3.0.0 and @insumermodel/mppx-token-gate 1.0.4, the packages read a wallet address from the client-supplied credential.source, checked whether that public address met configured on-chain conditions, and returned a successful free-access receipt without invoking the wrapped payment verifier or proving that the caller controlled the wallet. An unauthenticated attacker could name any qualifying wallet and obtain content that should require payment, and cached grants could be reused for the configured cache lifetime. The corrected packages prevent free-access authorization unless payer control has been established. These issues are fixed in @insumermodel/mppx-condition-gate 3.0.0 and @insumermodel/mppx-token-gate 1.0.4.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104891",
+      "last_modified": "2026-10-05T16:17:06.447",
+      "products": [],
+      "published": "2026-10-05T16:17:06.447",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/insumerapi/mppx-condition-gate/commit/b1d9935a57ba6d32da49eead1bfb459ad0cd55ab"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/insumerapi/mppx-condition-gate/commit/ec43a2fcd443a0fa102b6d4203abed2b785bd954"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/insumerapi/mppx-condition-gate/security/advisories/GHSA-jg6q-3qfh-r9f8"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
   "CVE-2026-104983": {
     "added": "2026-10-03",
     "checks_done": 2,
@@ -72248,49 +72317,6 @@
         {
           "tags": [],
           "url": "https://vuldb.com/vuln/413350/cti"
-        },
-        {
-          "tags": [],
-          "url": "https://www.ahsay.com/en/support/help-centre/release-notes/cbs/v10.3.4"
-        }
-      ]
-    },
-    "next_check": "2026-10-06"
-  },
-  "CVE-2026-105134": {
-    "added": "2026-10-04",
-    "checks_done": 1,
-    "cve": {
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-77",
-        "CWE-78"
-      ],
-      "description": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 10.3.4 is able to resolve this issue. Upgrading the affected component is advised.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-105134",
-      "last_modified": "2026-10-04T07:16:33.480",
-      "products": [],
-      "published": "2026-10-04T07:16:33.480",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://vuldb.com/cve/CVE-2026-105134"
-        },
-        {
-          "tags": [],
-          "url": "https://vuldb.com/submit/942743"
-        },
-        {
-          "tags": [],
-          "url": "https://vuldb.com/vuln/413351"
-        },
-        {
-          "tags": [],
-          "url": "https://vuldb.com/vuln/413351/cti"
         },
         {
           "tags": [],
@@ -74589,6 +74615,192 @@
     },
     "next_check": "2026-10-06"
   },
+  "CVE-2026-105285": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "description": "A security vulnerability has been detected in Totolink A3002MU 1.0.0-B20230403.1455. This affects an unknown function of the file /boafrm/formIpQoS of the component QoS Rule Handler. The manipulation of the argument addQos/comment/entry_name leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105285",
+      "last_modified": "2026-10-05T13:16:52.460",
+      "products": [],
+      "published": "2026-10-05T10:16:38.520",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/H3rmesk1t/b68352b011bc2825adc85cf336c25dfb"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105285"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/977224"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413466"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413466/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.totolink.net/"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
+  "CVE-2026-105286": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "A vulnerability was detected in Totolink A3002MU 1.0.0-B20230403.1455. This impacts the function sub_44B250 of the file /boafrm/formUploadFile of the component File Upload Handler. The manipulation of the argument filename results in path traversal. The attack can be executed remotely. The exploit is now public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105286",
+      "last_modified": "2026-10-05T10:16:41.247",
+      "products": [],
+      "published": "2026-10-05T10:16:41.247",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://gist.github.com/H3rmesk1t/b107cde70392e0aff26e8219bae1a181"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105286"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/977225"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413467"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413467/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.totolink.net/"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
+  "CVE-2026-105287": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A flaw has been found in feelec-yishu feelcrm-os 1.0.0. Affected is an unknown function of the file App/Feelcrm/Crm/Controller/AjaxRequestController.class.php of the component getMemberByGroups Endpoint. This manipulation of the argument groups[] causes sql injection. The attack is possible to be carried out remotely. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105287",
+      "last_modified": "2026-10-05T12:17:09.180",
+      "products": [],
+      "published": "2026-10-05T10:16:41.490",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/feelec-yishu/feelcrm-os/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/feelec-yishu/feelcrm-os/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105287"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/977517"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413468"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413468/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
+  "CVE-2026-105290": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "A vulnerability was determined in feelec-yishu feelcrm-os 1.0.0. This affects an unknown part of the file App/Feelcrm/Index/Controller/GoogleController.class.php of the component getCurlData Endpoint. Executing a manipulation of the argument url can lead to server-side request forgery. It is possible to launch the attack remotely. The exploit has been publicly disclosed and may be utilized. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105290",
+      "last_modified": "2026-10-05T11:16:46.807",
+      "products": [],
+      "published": "2026-10-05T11:16:46.807",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/feelec-yishu/feelcrm-os/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/feelec-yishu/feelcrm-os/issues/4"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105290"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/977520"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413471"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413471/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
   "CVE-2026-105293": {
     "added": "2026-10-05",
     "checks_done": 0,
@@ -74745,39 +74957,95 @@
     },
     "next_check": "2026-10-06"
   },
-  "CVE-2026-105314": {
+  "CVE-2026-105307": {
     "added": "2026-10-05",
     "checks_done": 0,
     "cve": {
-      "cvss_score": 7.5,
+      "cvss_score": 7.3,
       "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
       "cvss_version": "3.1",
       "cwe_ids": [
-        "CWE-24"
+        "CWE-287",
+        "CWE-306"
       ],
-      "description": "Papermerge 3.5.3 allows remote code execution by a standard user via directory traversal in a /api/documents/upload call. A Python .pth file can be written to site-packages, and its code is executed upon the next start of the Python interpreter.",
+      "description": "A vulnerability was detected in Casdoor up to 3.161.1. Affected is the function ApiFilter of the file routers/authz_filter.go of the component API Endpoint. Performing a manipulation results in missing authentication. The attack can be initiated remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
       "has_exploit_tag": false,
-      "id": "CVE-2026-105314",
-      "last_modified": "2026-10-05T08:17:15.797",
+      "id": "CVE-2026-105307",
+      "last_modified": "2026-10-05T16:17:12.323",
       "products": [],
-      "published": "2026-10-05T08:17:15.797",
+      "published": "2026-10-05T12:17:09.380",
       "references": [
         {
           "tags": [],
-          "url": "https://github.com/kashishtopi/cve-pocs/blob/main/papermerge-core-arbitrary-file-write-rce/HR-papermerge-core-path-traversal-rce.pdf"
+          "url": "https://vuldb.com/cve/CVE-2026-105307"
         },
         {
           "tags": [],
-          "url": "https://github.com/kashishtopi/cve-pocs/tree/main/papermerge-core-arbitrary-file-write-rce"
+          "url": "https://vuldb.com/submit/951430"
         },
         {
           "tags": [],
-          "url": "https://github.com/papermerge/papermerge-core/blob/master/papermerge/core/features/document/router.py"
+          "url": "https://vuldb.com/vuln/413512"
         },
         {
           "tags": [],
-          "url": "https://github.com/papermerge/papermerge-core/blob/master/papermerge/core/pathlib.py"
+          "url": "https://vuldb.com/vuln/413512/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
+  "CVE-2026-105329": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-94"
+      ],
+      "description": "A vulnerability was determined in TallCMS up to 4.8.0. This affects an unknown function of the file packages/tallcms/cms/src/Filament/Pages/ThemeManager.php of the component PluginManager. Executing a manipulation can lead to code injection. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized. This patch is called fdc18f4c6a36134f8986ca1d7e4e97092e3deb93. It is best practice to apply a patch to resolve this issue.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105329",
+      "last_modified": "2026-10-05T16:17:12.460",
+      "products": [],
+      "published": "2026-10-05T16:17:12.460",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/beegoodit/tallcms/commit/fdc18f4c6a36134f8986ca1d7e4e97092e3deb93"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tallcms/tallcms/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tallcms/tallcms/issues/122"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/tallcms/tallcms/pull/124"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105329"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/979800"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413543"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413543/cti"
         }
       ]
     },
@@ -290729,119 +290997,6 @@
     },
     "next_check": "2026-11-12"
   },
-  "CVE-2026-73512": {
-    "added": "2026-09-22",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-416"
-      ],
-      "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.36.10, 1.37.6, 1.38.4, and 1.39.1, Envoy's HttpDatagramHandler caches the current RequestDecoder when Capsule Protocol is enabled. Stream recreation, including an internal redirect, replaces the ActiveStream and updates EnvoyQuicServerStream but does not update the handler's cached pointer. A subsequent HTTP/3 datagram can call decodeData through the freed decoder, causing invalid virtual dispatch and a process crash. The relevant scope boundary is that hTTP/3 datagrams and Capsule Protocol must be enabled, and the request must enter a stream-recreation path such as an internal redirect. This issue is fixed in versions 1.36.10, 1.37.6, 1.38.4, and 1.39.1.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-73512",
-      "last_modified": "2026-09-21T20:17:27.647",
-      "products": [],
-      "published": "2026-09-21T20:17:27.647",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/29dbaae4a9971011e2f1948acfaf383296e901ea"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/85495163fdc67364a5258bfe478c34a44f6428b4"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/c0e46dabc3ac286bbe608e9274776555911aadb9"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/f2417eec2ff49abe243d484ded916fbc2faca38d"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.36.10"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.37.6"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.38.4"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-r6j2-mrm5-72mg"
-        }
-      ]
-    },
-    "next_check": "2026-10-06"
-  },
-  "CVE-2026-73513": {
-    "added": "2026-09-22",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-20",
-        "CWE-416"
-      ],
-      "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.36.10, 1.37.6, 1.38.4, and 1.39.1, Envoy's optional oghttp2 upstream HTTP/2 codec accepts a response trailer HEADERS frame without END_STREAM. Envoy completes and deferred-deletes the ActiveRequest while oghttp2 keeps the stream open, leaving ClientStreamImpl with a dangling response_decoder_ reference. A later frame on the stream can dispatch through the freed object and crash the process. The relevant scope boundary is that the default nghttp2 codec rejects the malformed trailers, and the trigger is upstream-only with oghttp2 enabled. This issue is fixed in versions 1.36.10, 1.37.6, 1.38.4, and 1.39.1.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-73513",
-      "last_modified": "2026-09-21T20:17:27.820",
-      "products": [],
-      "published": "2026-09-21T20:17:27.820",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/0d33268d7d8cdc5c8ffef462e0cceefa56156b72"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/3df69eeee220d6a4088cfdd3be79b55e2e6d3514"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/c4610b6c85d72ed01e014c2a1aba2934a2b774e9"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/e6963c6b64cd62aa8e078ef17c76052b6e33e82b"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.37.6"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.38.4"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-jjmm-fw8p-crpw"
-        }
-      ]
-    },
-    "next_check": "2026-10-06"
-  },
   "CVE-2026-73514": {
     "added": "2026-08-14",
     "checks_done": 9,
@@ -291156,68 +291311,6 @@
     },
     "next_check": "2026-11-12"
   },
-  "CVE-2026-73546": {
-    "added": "2026-09-22",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 7.4,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-79"
-      ],
-      "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.36.10, 1.37.6, 1.38.4, and 1.39.1, Envoy's /stats?format=html admin endpoint uses StatsHtmlRender, which sanitizes string statistic values but emits statistic names without HTML encoding. A data-plane component such as grpc_stats with stats_for_all_methods enabled can incorporate attacker-controlled path segments into cached dynamic statistic names. When an operator views the HTML stats page, the stored name can execute script with the admin interface's origin and issue privileged same-origin requests. The relevant scope boundary is that the admin interface must be browser-accessible and an enabled component must persist attacker-influenced text in statistic names. This issue is fixed in versions 1.36.10, 1.37.6, 1.38.4, and 1.39.1.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-73546",
-      "last_modified": "2026-09-21T21:17:09.360",
-      "products": [],
-      "published": "2026-09-21T20:17:28.040",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/11d34660ca0322eb125d045a564d9d87f016397f"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/884d30c56b835d5801733ae1dc38c94a08de23e8"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/9484e17c34353662f9bfd30c74f61fa8c9ee7b83"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/ab63a0e52b5a28472f2ff865b6464ae4004f7593"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.36.10"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.37.6"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.38.4"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-pv9h-4fxf-7vrg"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-pv9h-4fxf-7vrg"
-        }
-      ]
-    },
-    "next_check": "2026-10-06"
-  },
   "CVE-2026-73547": {
     "added": "2026-09-22",
     "checks_done": 7,
@@ -291272,238 +291365,6 @@
         {
           "tags": [],
           "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-87ph-jqwm-pg6r"
-        }
-      ]
-    },
-    "next_check": "2026-10-06"
-  },
-  "CVE-2026-73548": {
-    "added": "2026-09-22",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-444"
-      ],
-      "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.36.10, 1.37.6, 1.38.4, and 1.39.1, Envoy forwards data for a configured non-WebSocket HTTP upgrade before the upstream accepts the upgrade. An unauthenticated HTTP/2 client can place a complete HTTP/1.1 request in extended CONNECT data; Envoy downgrades the request, writes the data unframed to a keep-alive HTTP/1.1 upstream, and returns the socket to the shared pool while the smuggled response remains queued. A different downstream client can then receive the attacker's response. The relevant scope boundary is that webSocket upgrades, plain CONNECT, disabled backend keep-alive, per-downstream pools, and max_requests_per_connection set to 1 are not affected by the demonstrated path. This issue is fixed in versions 1.36.10, 1.37.6, 1.38.4, and 1.39.1.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-73548",
-      "last_modified": "2026-09-21T20:17:28.397",
-      "products": [],
-      "published": "2026-09-21T20:17:28.397",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/309855626966cff176155c821043ed3b44671361"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/3c7998545a9c9fb3933a4bc1907d92f0e752bc2b"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/4633b8cce3d15b8734eefe232e30c12b0140b91c"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/bd6711f2617658e28dfa3df3dace6bfe3cfc0766"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.36.10"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.37.6"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.38.4"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-3vhp-c83q-jqc2"
-        }
-      ]
-    },
-    "next_check": "2026-10-06"
-  },
-  "CVE-2026-73550": {
-    "added": "2026-09-22",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-401"
-      ],
-      "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.36.10, 1.37.6, 1.38.4, and 1.39.1, Envoy copies every decoded HTTP/2 Host header value before discarding it when :authority is already present. The discarded value bypasses saveHeader, so its bytes and count are not charged against request header limits. An unauthenticated client can use HPACK indexing to submit many references to a large Host value across a bounded number of streams, forcing extreme header-copy allocation and causing the proxy to be out-of-memory killed. The relevant scope boundary is that the demonstrated amplification uses HTTP/2 HPACK and the duplicate Host discard behavior. This issue is fixed in versions 1.36.10, 1.37.6, 1.38.4, and 1.39.1.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-73550",
-      "last_modified": "2026-09-21T20:17:28.733",
-      "products": [],
-      "published": "2026-09-21T20:17:28.733",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/0910997f70e91d2d20c329bb507bfce44ce01f80"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/1fec994c868df008cdd4ae285aab58a196fd31f2"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/3fd0ffee7ac87adf3bc6e421656bb96310512300"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/fc75d8e35b0d11acbae18b63a0bd96e32e84f61b"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.36.10"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.37.6"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.38.4"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-qgf6-qvhw-4hvh"
-        }
-      ]
-    },
-    "next_check": "2026-10-06"
-  },
-  "CVE-2026-73552": {
-    "added": "2026-09-22",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-20"
-      ],
-      "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.36.10, 1.37.6, 1.38.4, and 1.39.1, Envoy HTTP RBAC accepts RFC-valid opaque header bytes but evaluates safe_regex values with RE2's UTF-8 subject semantics. A downstream client can preserve a prohibited marker and add an unrelated obs-text octet, causing RE2::FullMatch to return false and a negative RBAC policy to treat the invalid subject as an ordinary no-match. A byte-oriented route matcher can still observe the marker, allowing the request to reach a route intended to be denied. The relevant scope boundary is that plain positive ALLOW regexes normally fail closed, and exact, prefix, suffix, and contains matchers are not shown to have this subject-domain failure. This issue is fixed in versions 1.36.10, 1.37.6, 1.38.4, and 1.39.1.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-73552",
-      "last_modified": "2026-09-21T20:17:28.900",
-      "products": [],
-      "published": "2026-09-21T20:17:28.900",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/5650cb9770d4420ec2bcbed8b90be06f564ecc07"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/7d1dee5dda66434d84437cc5c85153aa03955e26"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/c2b9a19dc081f03be6a9b4ca932673e5e7a33d18"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/f3726765f3a12ddc76dcb52c0b79bec3d95ced1c"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.36.10"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.37.6"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.38.4"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-23xh-2qxr-3xv8"
-        }
-      ]
-    },
-    "next_check": "2026-10-06"
-  },
-  "CVE-2026-73553": {
-    "added": "2026-09-22",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-436"
-      ],
-      "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.36.10, 1.37.6, 1.38.4, and 1.39.1, When ignore_path_parameters_in_path_matching is enabled, Envoy's router strips the semicolon suffix before matching but the RBAC url_path matcher evaluates the raw path. A downstream request such as /admin;x can therefore miss a DENY rule for /admin while the router still selects the protected /admin backend. The inconsistent canonicalization allows an unauthenticated client to bypass path-based authorization. The relevant scope boundary is that the route option and a path-based RBAC rule must both be present, and the protected route must match after stripping. This issue is fixed in versions 1.36.10, 1.37.6, 1.38.4, and 1.39.1.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-73553",
-      "last_modified": "2026-09-21T21:17:09.637",
-      "products": [],
-      "published": "2026-09-21T21:17:09.637",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/0be4a0302ea94a894e470817c2edfbd5ed90d273"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/6a703a375a20e3bf98140ee5f5522c614adee7b6"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/b6ec9b66cc33a415e2fa81a6fa8363cac4772dd1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/commit/e6d5fe885409ebb335ed3934a167f0bcfea471f2"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.36.10"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.37.6"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.38.4"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.1"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-77x5-xqjg-hprq"
         }
       ]
     },
@@ -324662,6 +324523,84 @@
     },
     "next_check": "2026-11-25"
   },
+  "CVE-2026-77802": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-444"
+      ],
+      "description": "In Progress® Telerik® Fiddler® Classic for Windows, versions prior to v6.0.20262.10021, HTTP request smuggling is possible in the proxy request forwarding component. Requests containing multiple Content-Length headers with conflicting values are forwarded verbatim to the origin server, while Fiddler frames the request body using only the first Content-Length value. A local threat actor with low privileges who is able to send requests through the same Fiddler proxy instance as another user can exploit this desynchronization against a non-RFC-9110-compliant origin server that keeps the connection alive to smuggle an additional request. Because Fiddler returns the server connection to its pipe pool after reading only the first response, the unread smuggled response remains buffered on the socket and is served to the next session that reuses that connection, allowing the attacker to poison responses delivered to other users and to obtain responses intended for them.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77802",
+      "last_modified": "2026-10-05T13:16:54.293",
+      "products": [],
+      "published": "2026-10-05T13:16:54.293",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.telerik.com/fiddler/knowledge-base/kb-security-http-request-smuggling-cve-2026-77802"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
+  "CVE-2026-77804": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.6,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-367"
+      ],
+      "description": "In Progress® Telerik® Fiddler® Classic for Windows, versions prior to v6.0.20262.10021, a time-of-check time-of-use (TOCTOU) race condition exists in the installation of the HTTPS interception root certificate into the Local Computer certificate store. Fiddler writes the certificate to a temporary file in a user-writable location and then launches the external TrustCert helper application, which elevates and imports the certificate from that file. A local threat actor with low privileges who replaces the temporary file between the time it is written and the time the elevated helper reads it can cause an attacker-supplied root certificate to be installed in the Local Computer Trusted Root Certification Authorities store, enabling subsequent interception and modification of TLS-protected traffic on the machine. Successful exploitation requires the user to initiate the certificate trust operation and approve the elevation prompt.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77804",
+      "last_modified": "2026-10-05T13:16:54.590",
+      "products": [],
+      "published": "2026-10-05T13:16:54.590",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.telerik.com/fiddler/knowledge-base/kb-security-root-certificate-installation-toctou-cve-2026-77804"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
+  "CVE-2026-77805": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-347"
+      ],
+      "description": "In Progress® Telerik® Fiddler® Classic for Windows, versions prior to v6.0.20262.10021, the integrity check applied to the external helper tools launched by the application is insufficient. Before executing a helper tool, the application only verifies that the file carries a valid Authenticode signature whose certificate subject name matches a broad allow list of publisher name fragments, rather than verifying that the file is the specific executable shipped with that version of the product. A local threat actor with low privileges who replaces one of these helper executables with any other validly signed binary from an allow-listed publisher can cause the substituted binary to be executed by the application, including with Administrator privileges for the tools that request elevation, resulting in privilege escalation and execution of unintended code. Successful exploitation requires the user to launch the affected external tool and to approve the elevation prompt without noticing that it refers to a different executable.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-77805",
+      "last_modified": "2026-10-05T16:17:16.293",
+      "products": [],
+      "published": "2026-10-05T13:16:54.740",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.telerik.com/fiddler/knowledge-base/kb-security-weak-executable-signature-verification-cve-2026-77805"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
   "CVE-2026-77807": {
     "added": "2026-09-11",
     "checks_done": 8,
@@ -336923,6 +336862,32 @@
       ]
     },
     "next_check": "2026-11-24"
+  },
+  "CVE-2026-79820": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "A remote user validation failure vulnerability exists in HPE Integrated Lights-Out (iLO) 7 firmware.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-79820",
+      "last_modified": "2026-10-05T16:17:16.563",
+      "products": [],
+      "published": "2026-10-05T15:17:22.290",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbhf05163en_us&docLocale=en_US"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
   },
   "CVE-2026-79845": {
     "added": "2026-08-26",
@@ -417015,6 +416980,33 @@
     },
     "next_check": "2026-10-18"
   },
+  "CVE-2026-89039": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22",
+        "CWE-424"
+      ],
+      "description": "The convert_playwright_script prompt in the k6 MCP server accepts a file path as its playwright_script argument. Paths given in the documented '@'-prefixed form are restricted to the server's current working directory, but a bare path is resolved by a separate undocumented code path that applies no such restriction. A caller able to invoke the prompt can therefore read any file readable by the user running the server, including files outside the working directory, and receives the file contents in the prompt response. A leading '~' is expanded to the user's home directory, so credential files such as SSH private keys are directly addressable. The working-directory restriction is additionally bypassable through a symbolic link inside the working directory that points outside it, because the path is not canonicalized before the restriction is applied. All releases from v0.3.0 onward are affected; releases v0.3.0 and v0.4.0 apply no restriction to either form.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89039",
+      "last_modified": "2026-10-05T16:17:17.347",
+      "products": [],
+      "published": "2026-10-05T15:17:23.130",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://grafana.com/security/security-advisories/cve-2026-89039"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
+  },
   "CVE-2026-89040": {
     "added": "2026-09-16",
     "checks_done": 8,
@@ -446379,6 +446371,32 @@
       ]
     },
     "next_check": "2026-10-07"
+  },
+  "CVE-2026-92931": {
+    "added": "2026-10-05",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "CWE-918: Server-Side Request Forgery in the Progress @progress/sitefinity-nextjs-sdk npm package versions 15.1.8326 through 15.4.8637 may allow a remote attacker to make server-side requests to an attacker-controlled host, potentially exposing sensitive information.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-92931",
+      "last_modified": "2026-10-05T16:17:17.743",
+      "products": [],
+      "published": "2026-10-05T14:17:21.323",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://community.progress.com/s/article/Sitefinity-Critical-Security-Advisory-for-Addressing-Security-Vulnerabilities-in-Next-js-September-2026"
+        }
+      ]
+    },
+    "next_check": "2026-10-06"
   },
   "CVE-2026-92934": {
     "added": "2026-09-18",

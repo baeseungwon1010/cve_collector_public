@@ -1,1 +1,8 @@
-{}
+{
+  "CVE-2026-25521": {
+    "package": "NPM:locutus"
+  },
+  "CVE-2026-33228": {
+    "package": "NPM:flatted"
+  }
+}
