@@ -1,107 +1,14 @@
 {
-  "CVE-2026-100721": {
-    "package": "NPM:vm2"
+  "CVE-2025-9784": {
+    "package": "MAVEN:io.undertow:undertow-core"
   },
-  "CVE-2026-100722": {
-    "package": "NPM:vm2"
+  "CVE-2026-0603": {
+    "package": "MAVEN:org.hibernate:hibernate-core"
   },
-  "CVE-2026-100723": {
-    "package": "NPM:vm2"
+  "CVE-2026-102422": {
+    "package": "NPM:shell-quote"
   },
-  "CVE-2026-102275": {
-    "package": "PIP:PyJWT"
-  },
-  "CVE-2026-102598": {
-    "package": "PIP:Werkzeug"
-  },
-  "CVE-2026-102600": {
-    "package": "NPM:@socket.io/cluster-engine"
-  },
-  "CVE-2026-102826": {
-    "package": "NPM:simple-git"
-  },
-  "CVE-2026-102827": {
-    "package": "NPM:simple-git"
-  },
-  "CVE-2026-102828": {
-    "package": "NPM:simple-git"
-  },
-  "CVE-2026-102829": {
-    "package": "NPM:@simple-git/argv-parser"
-  },
-  "CVE-2026-102991": {
-    "package": "PIP:Mako"
-  },
-  "CVE-2026-103921": {
-    "package": "NPM:@graphql-tools/executor-legacy-ws"
-  },
-  "CVE-2026-103923": {
-    "package": "NPM:katex"
-  },
-  "CVE-2026-104843": {
-    "package": "RUST:uv"
-  },
-  "CVE-2026-104845": {
-    "package": "NPM:seroval"
-  },
-  "CVE-2026-104846": {
-    "package": "NPM:seroval"
-  },
-  "CVE-2026-104852": {
-    "package": "NPM:@graphql-tools/utils"
-  },
-  "CVE-2026-104853": {
-    "package": "NPM:nx"
-  },
-  "CVE-2026-104854": {
-    "package": "NPM:nx"
-  },
-  "CVE-2026-104859": {
-    "package": "NPM:@nx/docker"
-  },
-  "CVE-2026-105753": {
-    "package": "PIP:vllm"
-  },
-  "CVE-2026-105754": {
-    "package": "PIP:vllm"
-  },
-  "CVE-2026-105756": {
-    "package": "PIP:vllm"
-  },
-  "CVE-2026-105757": {
-    "package": "PIP:vllm"
-  },
-  "CVE-2026-105782": {
-    "package": "PIP:Scrapy"
-  },
-  "CVE-2026-47884": {
-    "package": "MAVEN:org.springframework:spring-webmvc"
-  },
-  "CVE-2026-87776": {
-    "package": "NPM:compression"
-  },
-  "CVE-2026-88023": {
-    "package": "COMPOSER:mongodb/mongodb"
-  },
-  "CVE-2026-88029": {
-    "package": "PIP:pymongo"
-  },
-  "CVE-2026-90711": {
-    "package": "NPM:proxy-addr"
-  },
-  "CVE-2026-90776": {
-    "package": "NPM:nodemailer"
-  },
-  "CVE-2026-92599": {
-    "package": "NPM:joi"
-  },
-  "CVE-2026-93749": {
-    "package": "NPM:source-map-js"
-  },
-  "CVE-2026-96748": {
-    "package": "PIP:pymongo"
-  },
-  "CVE-2026-96749": {
-    "package": "PIP:pymongo"
+  "CVE-2026-10561": {
+    "package": "PIP:langflow"
   }
 }

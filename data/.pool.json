@@ -57977,64 +57977,6 @@
     },
     "next_check": "2026-12-01"
   },
-  "CVE-2026-10196": {
-    "added": "2026-09-06",
-    "checks_done": 9,
-    "cve": {
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-502"
-      ],
-      "description": "The Mail Mint – Email Marketing, Newsletter, Email Automation & WooCommerce Emails plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.31.0 via deserialization of untrusted input in the 'handle_form_submission' function. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to execute code on the server. The vulnerability was partially patched in version 1.23.1.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-10196",
-      "last_modified": "2026-09-05T12:16:46.790",
-      "products": [],
-      "published": "2026-09-05T12:16:46.790",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/mail-mint/tags/1.21.0/app/API/Actions/Frontend/FormAction.php#L59"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/mail-mint/tags/1.21.0/app/Database/models/ContactModel.php#L460"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/mail-mint/tags/1.21.0/vendor/posthog/posthog-php/lib/Consumer/ForkCurl.php#L96"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/mail-mint/trunk/app/API/Actions/Frontend/FormAction.php#L59"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/mail-mint/trunk/app/Database/models/ContactModel.php#L460"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/browser/mail-mint/trunk/vendor/posthog/posthog-php/lib/Consumer/ForkCurl.php#L96"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/changeset/3545065/"
-        },
-        {
-          "tags": [],
-          "url": "https://plugins.trac.wordpress.org/changeset/3675453/"
-        },
-        {
-          "tags": [],
-          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/76c073d9-9572-43e4-82eb-49adf678535b?source=cve"
-        }
-      ]
-    },
-    "next_check": "2026-12-05"
-  },
   "CVE-2026-102004": {
     "added": "2026-09-29",
     "checks_done": 7,
@@ -73237,40 +73179,6 @@
     },
     "next_check": "2026-10-07"
   },
-  "CVE-2026-105080": {
-    "added": "2026-10-03",
-    "checks_done": 3,
-    "cve": {
-      "cvss_score": 9.9,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-829"
-      ],
-      "description": "In ConvertX before 0.19.0, converters/calibre.ts does not block recipe files, and instead passes them to the ebook-convert program from Calibre. This affects executable code in a .recipe or .downloaded_recipe file.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-105080",
-      "last_modified": "2026-10-03T01:17:23.650",
-      "products": [],
-      "published": "2026-10-03T01:17:23.650",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/C4illin/ConvertX/commit/0ca17dad7fa65e2e34823b59b95dd00bb1066b66"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/C4illin/ConvertX/releases/tag/v0.19.0"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/C4illin/ConvertX/security/advisories/GHSA-m4hh-rqmf-c8hw"
-        }
-      ]
-    },
-    "next_check": "2026-10-07"
-  },
   "CVE-2026-105086": {
     "added": "2026-10-05",
     "checks_done": 1,
@@ -79431,6 +79339,45 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-105788": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78",
+        "CWE-88"
+      ],
+      "description": "Microsoft UFO is an open-source framework for intelligent automation across devices and platforms. Prior to 3.0.10, the type_text and launch_app tools in ufo/client/mcp/http_servers/mobile_mcp_server.py pass the authenticated caller-controlled text and package_name parameters into adb shell command argument positions without comprehensive validation. The adb client joins those arguments into a remote command string that the Android shell reparses, allowing shell metacharacters to execute additional commands on an authorized connected device as the Android shell user. Exploitation requires a valid Mobile MCP API key and a reachable device authorized for ADB, and it does not establish host operating-system execution, Android root execution, or access beyond the Android shell-user privileges. This issue is fixed in version 3.0.10.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105788",
+      "last_modified": "2026-10-06T14:17:40.077",
+      "products": [],
+      "published": "2026-10-06T14:17:40.077",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/microsoft/UFO/commit/214443218bf4a3b8de798fd44e7fd770afefee83"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/microsoft/UFO/commit/a538791043327a0c33731d5be428867a5fd71794"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/microsoft/UFO/releases/tag/v3.0.10"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/microsoft/UFO/security/advisories/GHSA-6ppj-5886-4f26"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-10579": {
     "added": "2026-08-12",
     "checks_done": 9,
@@ -79468,6 +79415,44 @@
       ]
     },
     "next_check": "2026-11-10"
+  },
+  "CVE-2026-105790": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Microsoft UFO is an open-source framework for intelligent automation across devices and platforms. Prior to 3.0.9, authenticated device registration through /api/devices can supply a permitted attacker-controlled WebSocket endpoint while aip/transport/websocket.py applies pinned_addresses only to the initial destination. The pinned websockets.connect() client follows cross-origin redirects and opens a new TCP connection before Galaxy performs its post-handshake peer-IP validation, allowing WebSocket upgrade requests to internal hosts reachable from the server. The confirmed impact is the internal connection and handshake request, and does not establish arbitrary HTTP methods, response-body disclosure, a completed AIP session, or cloud metadata access. This issue is fixed in version 3.0.9.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105790",
+      "last_modified": "2026-10-06T14:17:40.490",
+      "products": [],
+      "published": "2026-10-06T14:17:40.490",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/microsoft/UFO/commit/f31fb5ef7d07b7825a03fe34b88f1f21cb5cfd35"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/microsoft/UFO/releases/tag/v3.0.9"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/microsoft/UFO/security/advisories/GHSA-3pgm-xw75-hq27"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/microsoft/UFO/security/advisories/GHSA-3pgm-xw75-hq27"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-105807": {
     "added": "2026-10-06",
@@ -79554,6 +79539,280 @@
     },
     "next_check": "2026-11-23"
   },
+  "CVE-2026-105834": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Rundeck before 6.2.0 contains a path traversal vulnerability that allows users holding only the project configure ACL to read arbitrary server files by setting resources.source.N.config.file to any absolute path. Attackers can retrieve file contents through editProjectNodeSourceFile or the apiSourceGetContent endpoint to obtain database passwords, LDAP bind credentials, and other projects' data.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105834",
+      "last_modified": "2026-10-06T13:16:46.597",
+      "products": [],
+      "published": "2026-10-06T13:16:46.597",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/rundeck/rundeck"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/rundeck/rundeck/blob/v6.1.0/core/src/main/java/com/dtolabs/rundeck/core/resources/FileResourceModelSource.java"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/rundeck/rundeck/commit/5ec3d0ad2ef19c2bf8f206f27d693ba8bf3337a4"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/rundeck/rundeck/commit/a462982aa22bf350c9e121d213283ffaa7994b4e"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/rundeck/rundeck/pull/10437"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/rundeck/rundeck/releases/tag/v6.2.0"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/rundeck-before-6.2.0-arbitrary-file-read-via-file-resource-model-source"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105835": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-307"
+      ],
+      "description": "PLANKA 2.2.0 through 2.2.1 fails to limit incorrect TOTP codes submitted to POST /api/access-tokens/verify-totp, allowing attackers to brute force two-factor authentication codes. Attackers who know a user's password can reuse the ten-minute pending token to guess six-digit codes until one succeeds, obtaining a full access token.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105835",
+      "last_modified": "2026-10-06T13:16:46.760",
+      "products": [],
+      "published": "2026-10-06T13:16:46.760",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/plankanban/planka"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/plankanban/planka/blob/v2.2.1/server/api/controllers/access-tokens/verify-totp.js"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/plankanban/planka/commit/de4d7688317829e2a0b665fe9dbf39eaf127b6f9"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/planka-2.2.0-through-2.2.1-totp-brute-force-via-verify-totp-endpoint"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105837": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-190"
+      ],
+      "description": "libmikmod before 3.3.14 contains an integer overflow vulnerability in DSM_Load() in load_dsm.c that allows attackers to trigger heap buffer overflow via crafted track counts. Attackers can supply a DSM module whose numchn and numpat product wraps a 16-bit value, overwriting heap memory to cause crashes or potential code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105837",
+      "last_modified": "2026-10-06T14:17:40.763",
+      "products": [],
+      "published": "2026-10-06T14:17:40.763",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/sezero/mikmod"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sezero/mikmod/blob/libmikmod-3.3.13/libmikmod/loaders/load_dsm.c#L273"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sezero/mikmod/blob/libmikmod-3.3.14/libmikmod/NEWS"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sezero/mikmod/commit/a125eabbd086f311496ae46d08aaebcad0a1c426"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/libmikmod-before-3.3.14-heap-buffer-overflow-via-dsm-loader-integer-overflow"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105839": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-190"
+      ],
+      "description": "libmikmod before 3.3.14 contains an integer overflow in the Oktalyzer loader OKT_doPBOD() that allows attackers to cause heap buffer overflow via crafted track counts. Attackers can supply an OKT module whose SLEN chunk wraps the 16-bit numtrk value, causing PBOD writes past allocated track pointers for crashes or code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105839",
+      "last_modified": "2026-10-06T14:17:41.133",
+      "products": [],
+      "published": "2026-10-06T14:17:41.133",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/sezero/mikmod"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sezero/mikmod/blob/libmikmod-3.3.13/libmikmod/loaders/load_okt.c#L286"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sezero/mikmod/blob/libmikmod-3.3.14/libmikmod/NEWS"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/sezero/mikmod/commit/097b69281fad6ba38a553569e6f55dbfdd71dc2a"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/libmikmod-before-3.3.14-heap-buffer-overflow-via-okt-loader-okt-dopbod"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105840": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "lrzsz before 0.13.0 contains a path traversal vulnerability in the lrz receive utility's restricted mode that allows malicious ZMODEM senders to write files outside the current directory using absolute pathnames. Because checkpath() in src/lrz.c only rejects '../' sequences unless built with --enable-pubdir, attackers can send files named with absolute paths to overwrite any file writable by the receiving user.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105840",
+      "last_modified": "2026-10-06T14:17:41.300",
+      "products": [],
+      "published": "2026-10-06T14:17:41.300",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://ohse.de/uwe/software/lrzsz.html"
+        },
+        {
+          "tags": [],
+          "url": "https://ohse.de/uwe/software/lrzsz/NEWS-0.13.0.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/lrzsz-before-0.13.0-path-traversal-via-lrz-restricted-mode-checkpath"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105841": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "lrzsz before 0.13.0 contains an OS command injection vulnerability in the lrz receive utility's pipe mode that allows remote senders to execute commands by supplying crafted filenames. When lrz runs under a suffixed name such as lrztar, procheader() in src/lrz.c passes the unescaped ZMODEM/YMODEM filename to popen(), so shell metacharacters execute as the receiving user.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105841",
+      "last_modified": "2026-10-06T14:17:41.460",
+      "products": [],
+      "published": "2026-10-06T14:17:41.460",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://ohse.de/uwe/software/lrzsz.html"
+        },
+        {
+          "tags": [],
+          "url": "https://ohse.de/uwe/software/lrzsz/NEWS-0.13.0.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/lrzsz-before-0.13.0-os-command-injection-via-lrz-pipe-mode"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105842": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.4,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-122"
+      ],
+      "description": "lrzsz before 0.13.0 contains a heap-based buffer overflow vulnerability in procheader() of the lrz receive utility when copying overlong sender-supplied filenames into Pathname. Malicious ZMODEM senders can supply filenames up to 8192 bytes, overflowing the buffer via sprintf() in pipe mode or strcpy() to corrupt heap memory and crash lrz.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105842",
+      "last_modified": "2026-10-06T14:17:41.620",
+      "products": [],
+      "published": "2026-10-06T14:17:41.620",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://ohse.de/uwe/software/lrzsz.html"
+        },
+        {
+          "tags": [],
+          "url": "https://ohse.de/uwe/software/lrzsz/NEWS-0.13.0.html"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/lrzsz-before-0.13.0-heap-buffer-overflow-via-lrz-procheader-pathname"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-105879": {
     "added": "2026-10-06",
     "checks_done": 0,
@@ -79575,6 +79834,147 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/jet-elements/vulnerability/wordpress-jetelements-for-elementor-plugin-2-9-2-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105918": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability has been found in Kusalkasilva Learning-Management-System up to ffeb873f8803f1e9664384ff75000c7da45466d2. Impacted is the function mysql_error of the file login.php of the component Login Endpoint. The manipulation of the argument username/password leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105918",
+      "last_modified": "2026-10-06T12:16:47.287",
+      "products": [],
+      "published": "2026-10-06T12:16:47.287",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/KusalkaSilva/Learning-Management-System/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/KusalkaSilva/Learning-Management-System/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105918"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/992654"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413892"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413892/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105919": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was found in Kusalkasilva Learning-Management-System up to ffeb873f8803f1e9664384ff75000c7da45466d2. The affected element is the function mysql_query of the file admin/login.php of the component Administrator Login Endpoint. The manipulation of the argument username/password results in sql injection. The attack can be launched remotely. The exploit has been made public and could be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105919",
+      "last_modified": "2026-10-06T13:16:47.120",
+      "products": [],
+      "published": "2026-10-06T13:16:47.120",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/KusalkaSilva/Learning-Management-System/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/KusalkaSilva/Learning-Management-System/issues/2"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105919"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/992655"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413893"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413893/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105920": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was determined in Kusalkasilva Learning-Management-System up to ffeb873f8803f1e9664384ff75000c7da45466d2. The impacted element is an unknown function of the file student_signup.php of the component Student Registration Endpoint. This manipulation causes sql injection. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized. This product uses a rolling release model to deliver continuous updates. As a result, specific version information for affected or updated releases is not available. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105920",
+      "last_modified": "2026-10-06T14:17:41.873",
+      "products": [],
+      "published": "2026-10-06T14:17:41.873",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/KusalkaSilva/Learning-Management-System/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/KusalkaSilva/Learning-Management-System/issues/3"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105920"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/992656"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413894"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413894/cti"
         }
       ]
     },
@@ -79610,6 +80010,44 @@
     },
     "next_check": "2026-11-07"
   },
+  "CVE-2026-105985": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-1336"
+      ],
+      "description": "Craft CMS 5.10.13.2 contains an authenticated remote code execution vulnerability in the Control Panel action app/render-components.\n\n\n\nAny authenticated user with basic Control Panel access can submit request-controlled component classes and property overrides. By first overriding an EntryType object’s uiLabelFormat and then rendering an Entry that resolves the same request-cached entry type, an attacker can cause arbitrary Twig supplied in the request to be evaluated by renderObjectTemplate().\n\n\n\nThis render path is not sandboxed. A Twig string callable can therefore reach PHP functions such as system(), resulting in operating-system command execution with the privileges of the PHP/web-server process.\n\n\n\nThe issue was reproduced with an active non-admin Craft Team user with no optional permissions enabled. No access to entry-editing, Settings, utility, user-management, project-config, filesystem, Kubernetes, or environment variables was required.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105985",
+      "last_modified": "2026-10-06T11:17:16.857",
+      "products": [],
+      "published": "2026-10-06T11:17:16.857",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/craftcms/cms"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/craftcms/cms/releases/tag/5.11.0"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/craftcms/cms/security/advisories/GHSA-g48f-wc2q-4rrv"
+        },
+        {
+          "tags": [],
+          "url": "https://www.hckrt.com/hacktivity/HCKRT-PVWH7W"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-10599": {
     "added": "2026-08-07",
     "checks_done": 9,
@@ -79633,6 +80071,200 @@
       ]
     },
     "next_check": "2026-11-05"
+  },
+  "CVE-2026-106037": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "Mooncake through 0.3.13.post1 contains a missing authentication vulnerability in the Store REST service, which binds to 0.0.0.0 without authentication on any route. Unauthenticated attackers can call routes such as /api/get, /api/put, /api/remove_all and /api/mount to read cached KV data with user prompts, inject or delete objects, and mount attacker-described segments.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-106037",
+      "last_modified": "2026-10-06T14:17:42.257",
+      "products": [],
+      "published": "2026-10-06T14:17:42.257",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/blob/719735896c86b56fabec6cf3e825fb2ea640597a/mooncake-wheel/mooncake/mooncake_store_service.py#L240-L282"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/issues/4476"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/mooncake-through-0.3.13-post1-missing-authentication-in-store-rest-service"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-106038": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "Mooncake Store master through 0.3.13.post1 contains a missing authentication vulnerability that allows unauthenticated attackers to force-delete any object via Remove, RemoveByRegex, RemoveAll and BatchRemove on the coro_rpc port. Attackers can send forged requests with the force flag set to bypass lease checks, wipe keys matching any regex, or clear the entire store, causing cache loss and request failures.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-106038",
+      "last_modified": "2026-10-06T14:17:42.420",
+      "products": [],
+      "published": "2026-10-06T14:17:42.420",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/blob/719735896c86b56fabec6cf3e825fb2ea640597a/mooncake-store/src/master_service.cpp#L6416-L6478"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/issues/4474"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/mooncake-store-through-0.3.13-post1-unauthenticated-object-deletion-via-remove-rpcs"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-106039": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Mooncake Store master through 0.3.13.post1 contains a missing authorization vulnerability that allows unauthenticated attackers to create, steal, and falsely complete replication tasks via the coro_rpc port. Attackers can invoke CreateCopyTask, CreateMoveTask, FetchTasks, and MarkTaskToComplete with victim client UUIDs disclosed by QueryTask to hijack task queues and record replication that never occurred.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-106039",
+      "last_modified": "2026-10-06T14:17:43.660",
+      "products": [],
+      "published": "2026-10-06T14:17:43.660",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/blob/719735896c86b56fabec6cf3e825fb2ea640597a/mooncake-store/src/master_service.cpp#L12060-L12120"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/blob/719735896c86b56fabec6cf3e825fb2ea640597a/mooncake-store/src/task_manager.cpp#L113-L135"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/issues/4475"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/mooncake-store-through-0.3.13-post1-missing-authorization-in-replication-task-rpc"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-106040": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Mooncake Store master through 0.3.13.post1 contains a missing authorization vulnerability that allows unauthenticated attackers to erase any object's disk replica via EvictDiskReplica and BatchEvictDiskReplica. Attackers reaching the coro_rpc master port can evict DISK replicas across all tenants, deleting objects whose only remaining replica is on disk.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-106040",
+      "last_modified": "2026-10-06T14:17:43.833",
+      "products": [],
+      "published": "2026-10-06T14:17:43.833",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/blob/719735896c86b56fabec6cf3e825fb2ea640597a/mooncake-store/src/master_service.cpp#L5507-L5515"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/issues/4478"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/mooncake-store-through-0.3.13-post1-missing-authorization-via-evictdiskreplica-rpc"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-106041": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Mooncake Store master through 0.3.13.post1 contains a missing authorization vulnerability that allows unauthenticated attackers to inject completed LOCAL_DISK replicas through the NotifyOffloadSuccess RPC. Attackers can mount a local disk segment with a self-chosen client UUID, then attach replicas pointing at attacker-controlled endpoints to serve poisoned disk-tier reads and fake key existence.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-106041",
+      "last_modified": "2026-10-06T14:17:43.983",
+      "products": [],
+      "published": "2026-10-06T14:17:43.983",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/blob/719735896c86b56fabec6cf3e825fb2ea640597a/mooncake-store/src/master_service.cpp#L7365-L7431"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kvcache-ai/Mooncake/issues/4479"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/mooncake-store-through-0.3.13-post1-missing-authorization-via-notifyoffloadsuccess-rpc"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-10695": {
     "added": "2026-07-31",
@@ -82587,6 +83219,32 @@
         {
           "tags": [],
           "url": "https://www.manageengine.com/itom/advisory/cve-2026-12370.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-12380": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.1,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Akıllı Ticaret Software Technologies Ltd. Co. E-Commerce Pack allows Reflected XSS.\n\nThis issue affects E-Commerce Pack: through 2026-10-06. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-12380",
+      "last_modified": "2026-10-06T14:17:44.150",
+      "products": [],
+      "published": "2026-10-06T14:17:44.150",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1256"
         }
       ]
     },
@@ -366891,6 +367549,56 @@
     },
     "next_check": "2026-12-03"
   },
+  "CVE-2026-82531": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "Smarty before 4.5.8 and 5.x before 5.8.5 contains a code injection vulnerability where the top-level nocache_hash is never restored during extends:/multi-component template inheritance, leaving it null. Attackers can supply assigned data containing a forged SmartyNocache marker that is copied verbatim into the regenerated PHP cache file, executing arbitrary PHP on include for remote code execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82531",
+      "last_modified": "2026-10-06T13:16:50.180",
+      "products": [],
+      "published": "2026-10-06T13:16:50.180",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/smarty-php/smarty/commit/1cba51cb813563eb61d963c83d28cd59f26b858d"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/smarty-php/smarty/commit/c0fdd4824aca4f67e814b50703cfee1dfde41414"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/smarty-php/smarty/releases/tag/v4.5.8"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/smarty-php/smarty/releases/tag/v5.8.5"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/smarty-php/smarty/security/advisories/GHSA-3w63-v7pm-cq9x"
+        },
+        {
+          "tags": [],
+          "url": "https://www.vulncheck.com/advisories/smarty-before-4.5.8-and-5-x-before-5.8.5-php-code-injection-via-extends-inheritance-cache"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/smarty-php/smarty/security/advisories/GHSA-3w63-v7pm-cq9x"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-82533": {
     "added": "2026-09-09",
     "checks_done": 8,
@@ -393006,6 +393714,32 @@
     },
     "next_check": "2026-12-02"
   },
+  "CVE-2026-84854": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "In the WibuKey driver for Windows below Version 6.72, insufficient validation of user input when calculating the size of a kernel buffer could cause small amounts of data to be written outside the intended kernel buffer. This can lead to a system crash. Under unfavorable circumstances, adjacent kernel memory may be modified.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-84854",
+      "last_modified": "2026-10-06T12:16:50.587",
+      "products": [],
+      "published": "2026-10-06T10:16:54.230",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://cdn.wibu.com/fileadmin/wibu_downloads/security_advisories/AdvisoryWIBU-100065.pdf"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-84858": {
     "added": "2026-09-17",
     "checks_done": 8,
@@ -400275,6 +401009,32 @@
       ]
     },
     "next_check": "2026-12-04"
+  },
+  "CVE-2026-85523": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in Felisify Information Technologies Industry and Trade Inc. SambaBox allows OS Command Injection.\n\nThis issue affects SambaBox: before 5.4.1.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-85523",
+      "last_modified": "2026-10-06T14:17:47.240",
+      "products": [],
+      "published": "2026-10-06T14:17:47.240",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1258"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-85525": {
     "added": "2026-09-04",
@@ -441337,6 +442097,36 @@
     },
     "next_check": "2026-10-09"
   },
+  "CVE-2026-91140": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-78"
+      ],
+      "description": "An OS command injection vulnerability in the shell-based temporary-file cleanup instructions in Progress Software Autonomous REST Connector GenAI Agents ARCGenAI-Generator version 2.0 allows an attacker who supplies a crafted Swagger/OpenAPI document to execute arbitrary commands on a developer's machine when a user invokes the generator.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-91140",
+      "last_modified": "2026-10-06T14:17:48.407",
+      "products": [],
+      "published": "2026-10-06T14:17:48.407",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://community.progress.com/s/article/Progress-DataDirect-Critical-Security-Alert-Bulletin-September-2026-CVE-2026-91140"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/progress/datadirect-arc-ai-model-gen/commit/7ede6d96eb033d647ffdcabf8d8069c098293575"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-91143": {
     "added": "2026-09-15",
     "checks_done": 8,
@@ -478574,32 +479364,6 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/icegram/vulnerability/wordpress-icegram-plugin-3-1-31-php-object-injection-vulnerability?_s_id=cve"
-        }
-      ]
-    },
-    "next_check": "2026-10-07"
-  },
-  "CVE-2026-97286": {
-    "added": "2026-09-30",
-    "checks_done": 6,
-    "cve": {
-      "cvss_score": 6.5,
-      "cvss_severity": "MEDIUM",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-79"
-      ],
-      "description": "Contributor Cross Site Scripting (XSS) in Strong Testimonials <= 3.3.11 versions.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-97286",
-      "last_modified": "2026-09-30T14:18:17.683",
-      "products": [],
-      "published": "2026-09-30T13:17:38.813",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://patchstack.com/database/wordpress/plugin/strong-testimonials/vulnerability/wordpress-strong-testimonials-plugin-3-3-11-cross-site-scripting-xss-vulnerability?_s_id=cve"
         }
       ]
     },
