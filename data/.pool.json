@@ -61544,6 +61544,32 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-102387": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-497"
+      ],
+      "description": "Unauthenticated Sensitive Data Exposure in Xserver Migrator <= 1.6.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102387",
+      "last_modified": "2026-10-06T09:17:37.463",
+      "products": [],
+      "published": "2026-10-06T09:17:37.463",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/xserver-migrator/vulnerability/wordpress-xserver-migrator-plugin-1-6-6-sensitive-data-exposure-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-102391": {
     "added": "2026-10-01",
     "checks_done": 5,
@@ -64607,6 +64633,32 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-102915": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Subscriber Broken Access Control in WPO365 <= 44.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102915",
+      "last_modified": "2026-10-06T09:17:37.617",
+      "products": [],
+      "published": "2026-10-06T09:17:37.617",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wpo365-login/vulnerability/wordpress-wpo365-plugin-44-1-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-102925": {
     "added": "2026-09-30",
     "checks_done": 6,
@@ -67436,6 +67488,32 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-103346": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Tomlister Payflex Payment Gateway payflex-payment-gateway allows Reflected XSS.This issue affects Payflex Payment Gateway: from n/a through 2.7.1.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103346",
+      "last_modified": "2026-10-06T09:17:37.760",
+      "products": [],
+      "published": "2026-10-06T09:17:37.760",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/payflex-payment-gateway/vulnerability/wordpress-payflex-payment-gateway-plugin-2-7-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-103348": {
     "added": "2026-10-06",
     "checks_done": 0,
@@ -69949,6 +70027,32 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-104385": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-201"
+      ],
+      "description": "Unauthenticated Sensitive Data Exposure in Groundhogg <= 4.8.3 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104385",
+      "last_modified": "2026-10-06T09:17:37.917",
+      "products": [],
+      "published": "2026-10-06T09:17:37.917",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/groundhogg/vulnerability/wordpress-groundhogg-plugin-4-8-3-sensitive-data-exposure-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-104386": {
     "added": "2026-10-05",
     "checks_done": 1,
@@ -69975,6 +70079,32 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-104387": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in PowerPress Podcasting <= 11.17.9 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104387",
+      "last_modified": "2026-10-06T09:17:38.077",
+      "products": [],
+      "published": "2026-10-06T09:17:38.077",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/powerpress/vulnerability/wordpress-powerpress-podcasting-plugin-11-17-9-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-104389": {
     "added": "2026-10-05",
     "checks_done": 1,
@@ -69996,6 +70126,58 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/sirv/vulnerability/wordpress-sirv-plugin-8-2-5-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-104394": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Charitable <= 1.8.12.3 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104394",
+      "last_modified": "2026-10-06T09:17:38.230",
+      "products": [],
+      "published": "2026-10-06T09:17:38.230",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/charitable/vulnerability/wordpress-charitable-plugin-1-8-12-3-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-104395": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in picu <= 3.10.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104395",
+      "last_modified": "2026-10-06T09:17:38.570",
+      "products": [],
+      "published": "2026-10-06T09:17:38.570",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/picu/vulnerability/wordpress-picu-plugin-3-10-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -70074,6 +70256,58 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/give/vulnerability/wordpress-givewp-plugin-4-17-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-104405": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Unauthenticated Privilege Escalation in GiveWP <= 4.17.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104405",
+      "last_modified": "2026-10-06T09:17:39.013",
+      "products": [],
+      "published": "2026-10-06T09:17:39.013",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/give/vulnerability/wordpress-givewp-plugin-4-17-0-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-104406": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in picu <= 3.10.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104406",
+      "last_modified": "2026-10-06T09:17:39.163",
+      "products": [],
+      "published": "2026-10-06T09:17:39.163",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/picu/vulnerability/wordpress-picu-plugin-3-10-1-broken-access-control-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -71777,6 +72011,58 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-104670": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in LearnPress <= 4.4.9 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104670",
+      "last_modified": "2026-10-06T09:17:39.317",
+      "products": [],
+      "published": "2026-10-06T09:17:39.317",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/learnpress/vulnerability/wordpress-learnpress-plugin-4-4-9-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-104672": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in GiveWP <= 4.17.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104672",
+      "last_modified": "2026-10-06T09:17:39.483",
+      "products": [],
+      "published": "2026-10-06T09:17:39.483",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/give/vulnerability/wordpress-givewp-plugin-4-17-0-cross-site-scripting-xss-vulnerability-2?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-104673": {
     "added": "2026-10-05",
     "checks_done": 1,
@@ -71798,6 +72084,84 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/mp3-music-player-by-sonaar/vulnerability/wordpress-mp3-audio-player-for-music-radio-podcast-by-sonaar-plugin-5-14-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-104747": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-502"
+      ],
+      "description": "Unauthenticated PHP Object Injection in Haaken <= 1.5 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104747",
+      "last_modified": "2026-10-06T09:17:39.643",
+      "products": [],
+      "published": "2026-10-06T09:17:39.643",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/theme/haaken/vulnerability/wordpress-haaken-theme-1-5-php-object-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-104757": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Editor Privilege Escalation in Import and export users and customers <= 2.5.5 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104757",
+      "last_modified": "2026-10-06T09:17:39.810",
+      "products": [],
+      "published": "2026-10-06T09:17:39.810",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/import-users-from-csv-with-meta/vulnerability/wordpress-import-and-export-users-and-customers-plugin-2-5-5-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-104814": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Form Block <= 1.8.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-104814",
+      "last_modified": "2026-10-06T09:17:39.973",
+      "products": [],
+      "published": "2026-10-06T09:17:39.973",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/form-block/vulnerability/wordpress-form-block-plugin-1-8-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -72025,44 +72389,6 @@
         {
           "tags": [],
           "url": "https://github.com/insumerapi/mppx-condition-gate/security/advisories/GHSA-jg6q-3qfh-r9f8"
-        }
-      ]
-    },
-    "next_check": "2026-10-07"
-  },
-  "CVE-2026-104905": {
-    "added": "2026-10-06",
-    "checks_done": 0,
-    "cve": {
-      "cvss_score": 8.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-502"
-      ],
-      "description": "FacturaScripts before version 2026.7 contains a PHP object injection vulnerability in WidgetSelect::processFormData() that allows authenticated attackers to trigger unserialize() on raw POST data without an allowed_classes filter for multiple-select fields. Attackers can submit a serialized XLSXWriter object as the field value to invoke its __destruct() method, deleting arbitrary attacker-specified files such as config.php or backup data, resulting in denial of service and potential application reinstall hijack.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-104905",
-      "last_modified": "2026-10-05T19:17:15.163",
-      "products": [],
-      "published": "2026-10-05T18:17:31.623",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/NeoRazorX/facturascripts/releases/tag/v2026.7"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/NeoRazorX/facturascripts/security/advisories/GHSA-p89j-gj6f-fh6g"
-        },
-        {
-          "tags": [],
-          "url": "https://www.vulncheck.com/advisories/facturascripts-php-object-injection-via-widgetselect"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/NeoRazorX/facturascripts/security/advisories/GHSA-p89j-gj6f-fh6g"
         }
       ]
     },
@@ -72677,6 +73003,58 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-105058": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Subscriber Privilege Escalation in WP User Profiles <= 2.7.3 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105058",
+      "last_modified": "2026-10-06T09:17:40.293",
+      "products": [],
+      "published": "2026-10-06T09:17:40.293",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wp-user-profiles/vulnerability/wordpress-wp-user-profiles-plugin-2-7-3-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105059": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Subscriber Broken Access Control in Delete All Comments of wordpress <= 7.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105059",
+      "last_modified": "2026-10-06T09:17:40.440",
+      "products": [],
+      "published": "2026-10-06T09:17:40.440",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/delete-all-comments-of-website/vulnerability/wordpress-delete-all-comments-of-wordpress-plugin-7-1-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-105060": {
     "added": "2026-10-05",
     "checks_done": 1,
@@ -72698,6 +73076,32 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/logo-showcase/vulnerability/wordpress-logo-showcase-plugin-4-0-4-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105061": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in WP Mailster <= 1.9.0.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105061",
+      "last_modified": "2026-10-06T09:17:40.597",
+      "products": [],
+      "published": "2026-10-06T09:17:40.597",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wp-mailster/vulnerability/wordpress-wp-mailster-plugin-1-9-0-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -72750,6 +73154,84 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/qr-redirector/vulnerability/wordpress-qr-redirector-plugin-2-0-5-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105070": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Unauthenticated Privilege Escalation in Salon booking system <= 10.31.7 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105070",
+      "last_modified": "2026-10-06T09:17:40.743",
+      "products": [],
+      "published": "2026-10-06T09:17:40.743",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/salon-booking-system/vulnerability/wordpress-salon-booking-system-plugin-10-31-7-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105071": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-201"
+      ],
+      "description": "Unauthenticated Sensitive Data Exposure in SiteVault – Backup, Restore, Migration &amp; Cloning <= 1.5.17 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105071",
+      "last_modified": "2026-10-06T09:17:40.893",
+      "products": [],
+      "published": "2026-10-06T09:17:40.893",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/sitevault-backup-restore-migration/vulnerability/wordpress-sitevault-backup-restore-migration-cloning-plugin-1-5-17-sensitive-data-exposure-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105072": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in FluentBooking Pro < 2.5.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105072",
+      "last_modified": "2026-10-06T06:16:59.313",
+      "products": [],
+      "published": "2026-10-06T06:16:59.313",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/fluent-booking-pro/vulnerability/wordpress-fluentbooking-pro-plugin-2-5-0-broken-access-control-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -75996,6 +76478,32 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-105317": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Subscriber SQL Injection in Paid Member Subscriptions <= 3.1.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105317",
+      "last_modified": "2026-10-06T09:17:41.043",
+      "products": [],
+      "published": "2026-10-06T09:17:41.043",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/paid-member-subscriptions/vulnerability/wordpress-paid-member-subscriptions-plugin-3-1-1-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-105329": {
     "added": "2026-10-05",
     "checks_done": 1,
@@ -78143,6 +78651,82 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-105701": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "The ACPT (Premium) plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.0.66 via the render function. This is due to missing capability check on the REST API form creation endpoint and unsandboxed Twig environment rendering email templates. This makes it possible for authenticated attackers, with subscriber-level access and above, to execute code on the server. The exploit requires the attacker to first create a form with malicious email_settings via the REST API endpoint, then trigger form submission to execute the injected Twig expressions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105701",
+      "last_modified": "2026-10-06T07:16:56.207",
+      "products": [],
+      "published": "2026-10-06T07:16:56.207",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://acpt.io/changelog/"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/9cd544ed-493e-4d4a-9eb8-ea83c47f3857?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105704": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-287"
+      ],
+      "description": "A vulnerability was identified in SourceCodester Drug Recommendation System 1.0. This affects an unknown function of the component Auth Guard. Such manipulation of the argument user_id leads to improper authentication. The attack can be executed remotely. The exploit is publicly available and might be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105704",
+      "last_modified": "2026-10-06T05:16:37.663",
+      "products": [],
+      "published": "2026-10-06T05:16:37.663",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/hackliu/Vulnerability-Reports/blob/master/Drug-Recommender-Web-App/VULN-02-Broken-Access-Control.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105704"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/992051"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413697"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413697/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-105740": {
     "added": "2026-10-06",
     "checks_done": 0,
@@ -78676,6 +79260,100 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-105776": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A flaw has been found in bhagya3929 Employee-Movement-Tracking-and-Monitoring-Website-for-IOCL up to ae783195ba7e0390d3b3bfaddd99944b7e9735a4. Affected by this vulnerability is an unknown functionality of the file /admin_transaction.php. This manipulation of the argument Username causes sql injection. It is possible to initiate the attack remotely. The exploit has been published and may be used. This product is using a rolling release to provide continious delivery. Therefore, no version details for affected nor updated releases are available. The project was informed of the problem early through an issue report but has not responded yet.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105776",
+      "last_modified": "2026-10-06T07:16:56.357",
+      "products": [],
+      "published": "2026-10-06T07:16:56.357",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/bhagya3929/Employee-Movement-Tracking-and-Monitoring-Website-for-IOCL/"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/bhagya3929/Employee-Movement-Tracking-and-Monitoring-Website-for-IOCL/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105776"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/992496"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413810"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413810/cti"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-105778": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-119",
+        "CWE-121"
+      ],
+      "description": "A vulnerability has been found in Tenda AC5 02.03.01.111_multi. Affected by this issue is some unknown functionality of the file /goform/setWifi of the component Wifi Handler. Such manipulation of the argument wifiPwd leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105778",
+      "last_modified": "2026-10-06T07:16:56.547",
+      "products": [],
+      "published": "2026-10-06T07:16:56.547",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/raisecnull/Tenda-AC5v3-BOF/blob/main/blog.md"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105778"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/992587"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413811"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413811/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.tenda.com.cn/"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-105782": {
     "added": "2026-10-06",
     "checks_done": 0,
@@ -78791,6 +79469,53 @@
     },
     "next_check": "2026-11-10"
   },
+  "CVE-2026-105807": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-74",
+        "CWE-89"
+      ],
+      "description": "A vulnerability was found in SourceCodester Simple Student Information System 1.0. This affects an unknown part of the file searchquery.php. Performing a manipulation results in sql injection. The attack can be initiated remotely.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105807",
+      "last_modified": "2026-10-06T08:16:36.840",
+      "products": [],
+      "published": "2026-10-06T08:16:36.840",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/lshhhhh318/cve/issues/1"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/cve/CVE-2026-105807"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/submit/992606"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413812"
+        },
+        {
+          "tags": [],
+          "url": "https://vuldb.com/vuln/413812/cti"
+        },
+        {
+          "tags": [],
+          "url": "https://www.sourcecodester.com/"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-10582": {
     "added": "2026-08-25",
     "checks_done": 9,
@@ -78828,6 +79553,32 @@
       ]
     },
     "next_check": "2026-11-23"
+  },
+  "CVE-2026-105879": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Crocoblock JetElements For Elementor jet-elements allows Stored XSS.This issue affects JetElements For Elementor: from n/a through 2.9.2.2.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-105879",
+      "last_modified": "2026-10-06T09:17:41.620",
+      "products": [],
+      "published": "2026-10-06T09:17:41.620",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/jet-elements/vulnerability/wordpress-jetelements-for-elementor-plugin-2-9-2-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-10595": {
     "added": "2026-08-09",
@@ -143076,6 +143827,32 @@
     },
     "next_check": "2026-10-17"
   },
+  "CVE-2026-25263": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.6,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:L/I:H/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "Memory corruption while processing IOCTL command called from user space to the kernel with invalid parameters.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25263",
+      "last_modified": "2026-10-06T07:16:56.747",
+      "products": [],
+      "published": "2026-10-06T07:16:56.747",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-25264": {
     "added": "2026-09-22",
     "checks_done": 8,
@@ -143127,6 +143904,162 @@
       ]
     },
     "next_check": "2026-10-22"
+  },
+  "CVE-2026-25267": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Memory corruption when non-secure loader rewrites page tables before secure memory initialization.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25267",
+      "last_modified": "2026-10-06T07:16:56.997",
+      "products": [],
+      "published": "2026-10-06T07:16:56.997",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-25269": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.7,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "Memory corruption when processing camera requests with excessive batch and IO buffer configurations exceeds allocated memory size.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25269",
+      "last_modified": "2026-10-06T07:16:57.207",
+      "products": [],
+      "published": "2026-10-06T07:16:57.207",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-25270": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.7,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "Memory corruption when processing command buffer requests with invalid length parameters in the Android Camera driver.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25270",
+      "last_modified": "2026-10-06T07:16:57.367",
+      "products": [],
+      "published": "2026-10-06T07:16:57.367",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-25272": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.7,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "Memory Corruption when processing camera CRE driver operations with improper handling of buffer limits during hardware update preparation.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25272",
+      "last_modified": "2026-10-06T07:16:57.490",
+      "products": [],
+      "published": "2026-10-06T07:16:57.490",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-25273": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.7,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-787"
+      ],
+      "description": "Memory Corruption when processing camera operations due to out-of-bounds write during driver updates.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25273",
+      "last_modified": "2026-10-06T07:16:57.647",
+      "products": [],
+      "published": "2026-10-06T07:16:57.647",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-25274": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.7,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Memory Corruption when processing concurrent DMA buffer allocation and deallocation commands without proper synchronization.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25274",
+      "last_modified": "2026-10-06T07:16:57.770",
+      "products": [],
+      "published": "2026-10-06T07:16:57.770",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-25275": {
     "added": "2026-09-17",
@@ -143388,6 +144321,32 @@
     },
     "next_check": "2026-10-17"
   },
+  "CVE-2026-25291": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Memory corruption when performing concurrent operations on shared memory page lists due to lack of proper synchronization mechanisms.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25291",
+      "last_modified": "2026-10-06T07:16:57.893",
+      "products": [],
+      "published": "2026-10-06T07:16:57.893",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-25292": {
     "added": "2026-08-05",
     "checks_done": 9,
@@ -143440,6 +144399,32 @@
     },
     "next_check": "2026-10-17"
   },
+  "CVE-2026-25302": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-347"
+      ],
+      "description": "Cryptographic Issue when processing non-ELF partitions, authentication and signature checks are bypassed, allowing unsigned or corrupted images to be mounted and processed.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25302",
+      "last_modified": "2026-10-06T07:16:58.040",
+      "products": [],
+      "published": "2026-10-06T07:16:58.040",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-25403": {
     "added": "2026-08-07",
     "checks_done": 9,
@@ -143465,6 +144450,58 @@
       ]
     },
     "next_check": "2026-11-05"
+  },
+  "CVE-2026-25433": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Subscriber Broken Access Control in WP2LEADS <= 3.5.7 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25433",
+      "last_modified": "2026-10-06T09:17:41.777",
+      "products": [],
+      "published": "2026-10-06T09:17:41.777",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wp2leads/vulnerability/wordpress-wp2leads-plugin-3-5-7-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-25434": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Subscriber SQL Injection in WP2LEADS <= 3.5.7 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-25434",
+      "last_modified": "2026-10-06T09:17:41.930",
+      "products": [],
+      "published": "2026-10-06T09:17:41.930",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wp2leads/vulnerability/wordpress-wp2leads-plugin-3-5-7-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-25652": {
     "added": "2026-08-12",
@@ -148344,6 +149381,32 @@
     },
     "next_check": "2026-11-23"
   },
+  "CVE-2026-32557": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Unauthenticated SQL Injection in WooCommerce Appointments <= 5.3.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32557",
+      "last_modified": "2026-10-06T09:17:42.080",
+      "products": [],
+      "published": "2026-10-06T09:17:42.080",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/woocommerce-appointments/vulnerability/wordpress-woocommerce-appointments-plugin-5-3-2-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-32558": {
     "added": "2026-08-25",
     "checks_done": 9,
@@ -148525,6 +149588,370 @@
       ]
     },
     "next_check": "2026-11-25"
+  },
+  "CVE-2026-32568": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "Subscriber Remote Code Execution (RCE) in WooCommerce Designer Pro <= 1.9.33 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32568",
+      "last_modified": "2026-10-06T09:17:42.230",
+      "products": [],
+      "published": "2026-10-06T09:17:42.230",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wc-designer-pro/vulnerability/wordpress-woocommerce-designer-pro-plugin-1-9-33-remote-code-execution-rce-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32569": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in WP Media folder <= 6.2.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32569",
+      "last_modified": "2026-10-06T09:17:42.397",
+      "products": [],
+      "published": "2026-10-06T09:17:42.397",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wp-media-folder/vulnerability/wordpress-wp-media-folder-plugin-6-2-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32570": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Progressify - Progressive Web App (PWA) <= 1.6.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32570",
+      "last_modified": "2026-10-06T09:17:42.550",
+      "products": [],
+      "published": "2026-10-06T09:17:42.550",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/daftplug-progressify/vulnerability/wordpress-progressify-progressive-web-app-pwa-plugin-1-6-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32571": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Subscriber Cross Site Scripting (XSS) in Ohio Extra <= 3.6.8 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32571",
+      "last_modified": "2026-10-06T09:17:42.703",
+      "products": [],
+      "published": "2026-10-06T09:17:42.703",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/ohio-extra/vulnerability/wordpress-ohio-extra-plugin-3-6-8-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32572": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in WP User Frontend Pro <= 4.2.13 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32572",
+      "last_modified": "2026-10-06T09:17:42.847",
+      "products": [],
+      "published": "2026-10-06T09:17:42.847",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wp-user-frontend-pro/vulnerability/wordpress-wp-user-frontend-pro-plugin-4-2-13-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32574": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Smart Forms <= 2.6.104 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32574",
+      "last_modified": "2026-10-06T09:17:43.000",
+      "products": [],
+      "published": "2026-10-06T09:17:43.000",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/smart-forms/vulnerability/wordpress-smart-forms-plugin-2-6-104-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32575": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in SUMO Affiliates Pro <= 11.7.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32575",
+      "last_modified": "2026-10-06T09:17:43.150",
+      "products": [],
+      "published": "2026-10-06T09:17:43.150",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/affs/vulnerability/wordpress-sumo-affiliates-pro-plugin-11-7-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32576": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "Customer Insecure Direct Object References (IDOR) in Faktur Pro for WooCommerce <= 3.2.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32576",
+      "last_modified": "2026-10-06T06:17:00.500",
+      "products": [],
+      "published": "2026-10-06T06:17:00.500",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/woorechnung/vulnerability/wordpress-faktur-pro-for-woocommerce-plugin-3-2-0-insecure-direct-object-references-idor-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32577": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Frontend File Manager <= 23.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32577",
+      "last_modified": "2026-10-06T09:17:43.297",
+      "products": [],
+      "published": "2026-10-06T09:17:43.297",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/nmedia-user-file-uploader/vulnerability/wordpress-frontend-file-manager-plugin-23-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32578": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Subscriber Broken Access Control in ECPay Ecommerce for WooCommerce <= 1.1.2606090 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32578",
+      "last_modified": "2026-10-06T09:17:43.460",
+      "products": [],
+      "published": "2026-10-06T09:17:43.460",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/ecpay-ecommerce-for-woocommerce/vulnerability/wordpress-ecpay-ecommerce-for-woocommerce-plugin-1-1-2606090-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32579": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "Unauthenticated Arbitrary File Upload in Kognetiks Chatbot for WordPress <= 2.4.9 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32579",
+      "last_modified": "2026-10-06T09:17:43.613",
+      "products": [],
+      "published": "2026-10-06T09:17:43.613",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/chatbot-chatgpt/vulnerability/wordpress-kognetiks-chatbot-for-wordpress-plugin-2-4-8-arbitrary-file-upload-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32580": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Unauthenticated SQL Injection in WooCommerce Lottery <= 2.2.9 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32580",
+      "last_modified": "2026-10-06T09:17:43.780",
+      "products": [],
+      "published": "2026-10-06T09:17:43.780",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wc-lottery/vulnerability/wordpress-woocommerce-lottery-plugin-2-2-9-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32581": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Subscriber SQL Injection in Mooberry Book Manager 4.16.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32581",
+      "last_modified": "2026-10-06T09:17:43.930",
+      "products": [],
+      "published": "2026-10-06T09:17:43.930",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/mooberry-book-manager/vulnerability/wordpress-mooberry-book-manager-plugin-4-16-2-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-32582": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Contributor Broken Access Control in IATO MCP <= 1.11.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-32582",
+      "last_modified": "2026-10-06T06:17:00.660",
+      "products": [],
+      "published": "2026-10-06T06:17:00.660",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/iato-mcp/vulnerability/wordpress-iato-mcp-plugin-1-11-0-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-32585": {
     "added": "2026-10-03",
@@ -150482,6 +151909,1514 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-39719": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Unauthenticated Server Side Request Forgery (SSRF) in PDF Smart Viewer for Elementor <= 1.0.4 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39719",
+      "last_modified": "2026-10-06T09:17:44.077",
+      "products": [],
+      "published": "2026-10-06T09:17:44.077",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/pdf-smart-viewer-for-elementor/vulnerability/wordpress-pdf-smart-viewer-for-elementor-plugin-1-0-4-server-side-request-forgery-ssrf-vulnerability-2?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39720": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Mapster WP Maps <= 2.0.4 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39720",
+      "last_modified": "2026-10-06T09:17:44.227",
+      "products": [],
+      "published": "2026-10-06T09:17:44.227",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/mapster-wp-maps/vulnerability/wordpress-mapster-wp-maps-plugin-2-0-4-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39722": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in WPLMS  <= 4.972 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39722",
+      "last_modified": "2026-10-06T09:17:44.380",
+      "products": [],
+      "published": "2026-10-06T09:17:44.380",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/theme/wplms/vulnerability/wordpress-wplms-theme-4-972-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39723": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in Morning for WooCommerce <= 2.4.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39723",
+      "last_modified": "2026-10-06T06:17:00.947",
+      "products": [],
+      "published": "2026-10-06T06:17:00.947",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wc-gateway-greeninvoice/vulnerability/wordpress-morning-for-woocommerce-plugin-2-4-1-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39724": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in HTTP Requests Manager <= 1.3.11 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39724",
+      "last_modified": "2026-10-06T09:17:44.533",
+      "products": [],
+      "published": "2026-10-06T09:17:44.533",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/http-requests-manager/vulnerability/wordpress-http-requests-manager-plugin-1-3-11-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39725": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "Contributor Remote Code Execution (RCE) in Content Visibility for Divi Builder <= 5.03 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39725",
+      "last_modified": "2026-10-06T09:17:44.683",
+      "products": [],
+      "published": "2026-10-06T09:17:44.683",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/content-visibility-for-divi-builder/vulnerability/wordpress-content-visibility-for-divi-builder-plugin-5-03-remote-code-execution-rce-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39726": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Lumise Product Designer <= 2.1.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39726",
+      "last_modified": "2026-10-06T09:17:44.833",
+      "products": [],
+      "published": "2026-10-06T09:17:44.833",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/lumise/vulnerability/wordpress-lumise-product-designer-plugin-2-1-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39727": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Subscriber Cross Site Scripting (XSS) in WC Fields Factory <= 4.1.12 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39727",
+      "last_modified": "2026-10-06T09:17:44.987",
+      "products": [],
+      "published": "2026-10-06T09:17:44.987",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wc-fields-factory/vulnerability/wordpress-wc-fields-factory-plugin-4-1-12-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39728": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-918"
+      ],
+      "description": "Unauthenticated Server Side Request Forgery (SSRF) in Instapage Plugin <= 3.7.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39728",
+      "last_modified": "2026-10-06T09:17:45.140",
+      "products": [],
+      "published": "2026-10-06T09:17:45.140",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/instapage/vulnerability/wordpress-instapage-plugin-plugin-3-7-2-server-side-request-forgery-ssrf-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39729": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-201"
+      ],
+      "description": "Unauthenticated Sensitive Data Exposure in Edwiser Bridge <= 4.3.4 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39729",
+      "last_modified": "2026-10-06T09:17:45.287",
+      "products": [],
+      "published": "2026-10-06T09:17:45.287",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/edwiser-bridge/vulnerability/wordpress-edwiser-bridge-plugin-4-3-4-sensitive-data-exposure-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39730": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Subscriber Broken Access Control in Wise Chat <= 3.4.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39730",
+      "last_modified": "2026-10-06T09:17:45.433",
+      "products": [],
+      "published": "2026-10-06T09:17:45.433",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wise-chat/vulnerability/wordpress-wise-chat-plugin-3-4-1-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39731": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Database for CF7 <= 1.2.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39731",
+      "last_modified": "2026-10-06T09:17:45.583",
+      "products": [],
+      "published": "2026-10-06T09:17:45.583",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/database-for-cf7/vulnerability/wordpress-database-for-cf7-plugin-1-2-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39745": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Contact Form to DB by BestWebSoft <= 1.7.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39745",
+      "last_modified": "2026-10-06T09:17:45.730",
+      "products": [],
+      "published": "2026-10-06T09:17:45.730",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/contact-form-to-db/vulnerability/wordpress-contact-form-to-db-by-bestwebsoft-plugin-1-7-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39746": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Unauthenticated SQL Injection in Booknetic <= 4.8.5 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39746",
+      "last_modified": "2026-10-06T09:17:45.883",
+      "products": [],
+      "published": "2026-10-06T09:17:45.883",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/booknetic/vulnerability/wordpress-booknetic-plugin-4-8-5-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39747": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Subscriber SQL Injection in Woffice <= 5.4.35 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39747",
+      "last_modified": "2026-10-06T09:17:46.033",
+      "products": [],
+      "published": "2026-10-06T09:17:46.033",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/theme/woffice/vulnerability/wordpress-woffice-theme-5-4-35-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39748": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in EduMall <= 4.5.3 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39748",
+      "last_modified": "2026-10-06T09:17:46.180",
+      "products": [],
+      "published": "2026-10-06T09:17:46.180",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/theme/edumall/vulnerability/wordpress-edumall-theme-4-5-3-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39749": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Subscriber Broken Access Control in App for Cloudflare® <= 1.10.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39749",
+      "last_modified": "2026-10-06T09:17:46.333",
+      "products": [],
+      "published": "2026-10-06T09:17:46.333",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/app-for-cf/vulnerability/wordpress-app-for-cloudflare-plugin-1-10-1-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39750": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in StoreGrowth: Smart Sales Booster for WooCommerce | BOGO, Upsells, Direct Checkout, Quick View, Side Cart <= 2.0.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39750",
+      "last_modified": "2026-10-06T09:17:46.487",
+      "products": [],
+      "published": "2026-10-06T09:17:46.487",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/storegrowth-sales-booster/vulnerability/wordpress-storegrowth-smart-sales-booster-for-woocommerce-bogo-upsells-direct-checkout-quick-view-side-cart-plugin-2-0-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39751": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in PayPlug for WooCommerce (Official) <= 3.1.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39751",
+      "last_modified": "2026-10-06T09:17:46.640",
+      "products": [],
+      "published": "2026-10-06T09:17:46.640",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/payplug/vulnerability/wordpress-payplug-for-woocommerce-official-plugin-3-1-0-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39752": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Contributor Arbitrary File Deletion in Jobs for WordPress <= 2.8.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39752",
+      "last_modified": "2026-10-06T09:17:46.790",
+      "products": [],
+      "published": "2026-10-06T09:17:46.790",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/job-postings/vulnerability/wordpress-jobs-for-wordpress-plugin-2-8-2-arbitrary-file-deletion-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39753": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Unauthenticated Privilege Escalation in Taskbot <= 6.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39753",
+      "last_modified": "2026-10-06T09:17:46.940",
+      "products": [],
+      "published": "2026-10-06T09:17:46.940",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/taskbot/vulnerability/wordpress-taskbot-plugin-6-6-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39754": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Contributor Arbitrary File Download in Piotnet Addons For Elementor <= 7.1.71 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39754",
+      "last_modified": "2026-10-06T09:17:47.087",
+      "products": [],
+      "published": "2026-10-06T09:17:47.087",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/piotnet-addons-for-elementor/vulnerability/wordpress-piotnet-addons-for-elementor-plugin-7-1-71-arbitrary-file-download-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39755": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "Subscriber Arbitrary File Upload in WP Duplicate <= 1.1.11 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39755",
+      "last_modified": "2026-10-06T09:17:47.237",
+      "products": [],
+      "published": "2026-10-06T09:17:47.237",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/local-sync/vulnerability/wordpress-wp-duplicate-plugin-1-1-11-arbitrary-file-upload-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39756": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-639"
+      ],
+      "description": "Unauthenticated Insecure Direct Object References (IDOR) in Wappointment <= 2.7.7 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39756",
+      "last_modified": "2026-10-06T09:17:47.387",
+      "products": [],
+      "published": "2026-10-06T09:17:47.387",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wappointment/vulnerability/wordpress-wappointment-plugin-2-7-7-insecure-direct-object-references-idor-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39757": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "Subscriber Arbitrary File Upload in Taskbot <= 6.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39757",
+      "last_modified": "2026-10-06T09:17:47.553",
+      "products": [],
+      "published": "2026-10-06T09:17:47.553",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/taskbot/vulnerability/wordpress-taskbot-plugin-6-6-arbitrary-file-upload-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39758": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Midtrans-WooCommerce <= 2.32.3 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39758",
+      "last_modified": "2026-10-06T09:17:47.707",
+      "products": [],
+      "published": "2026-10-06T09:17:47.707",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/midtrans-woocommerce/vulnerability/wordpress-midtrans-woocommerce-plugin-2-32-3-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39759": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "Employer / Sales Representative Arbitrary File Upload in Workreap Core <= 3.4.5 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39759",
+      "last_modified": "2026-10-06T09:17:47.853",
+      "products": [],
+      "published": "2026-10-06T09:17:47.853",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/workreap_core/vulnerability/wordpress-workreap-core-plugin-3-4-5-arbitrary-file-upload-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39760": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Real 3D FlipBook <= 5.5 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39760",
+      "last_modified": "2026-10-06T06:17:01.087",
+      "products": [],
+      "published": "2026-10-06T06:17:01.087",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/real3d-flipbook-lite/vulnerability/wordpress-real-3d-flipbook-plugin-5-5-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39761": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Unauthenticated Privilege Escalation in Meta Box AIO <= 3.7.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39761",
+      "last_modified": "2026-10-06T09:17:48.010",
+      "products": [],
+      "published": "2026-10-06T09:17:48.010",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/meta-box-aio/vulnerability/wordpress-meta-box-aio-plugin-3-7-1-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39762": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in Autoship Cloud for WooCommerce Subscription Products <= 2.17.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39762",
+      "last_modified": "2026-10-06T09:17:48.160",
+      "products": [],
+      "published": "2026-10-06T09:17:48.160",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/autoship-cloud/vulnerability/wordpress-autoship-cloud-for-woocommerce-subscription-products-plugin-2-17-0-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39764": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Unauthenticated SQL Injection in Radius Booking — Booking Calendar for Appointments &amp; Services <= 1.0.19 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39764",
+      "last_modified": "2026-10-06T09:17:48.310",
+      "products": [],
+      "published": "2026-10-06T09:17:48.310",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/radius-booking/vulnerability/wordpress-radius-booking-booking-calendar-for-appointments-services-plugin-1-0-19-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39765": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Shop Manager Privilege Escalation in Challan <= 3.7.88 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39765",
+      "last_modified": "2026-10-06T09:17:48.457",
+      "products": [],
+      "published": "2026-10-06T09:17:48.457",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/webappick-pdf-invoice-for-woocommerce/vulnerability/wordpress-challan-plugin-3-7-88-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39766": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in ARForms <= 7.1.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39766",
+      "last_modified": "2026-10-06T09:17:48.610",
+      "products": [],
+      "published": "2026-10-06T09:17:48.610",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/arforms/vulnerability/wordpress-arforms-plugin-7-1-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39767": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-770"
+      ],
+      "description": "Subscriber Denial of Service Attack in WPBase Cache <= 5.5.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39767",
+      "last_modified": "2026-10-06T09:17:48.763",
+      "products": [],
+      "published": "2026-10-06T09:17:48.763",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wpbase-cache/vulnerability/wordpress-wpbase-cache-plugin-5-5-6-denial-of-service-attack-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39768": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Security & Malware scan by CleanTalk <= 2.189 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39768",
+      "last_modified": "2026-10-06T09:17:49.080",
+      "products": [],
+      "published": "2026-10-06T09:17:49.080",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/security-malware-firewall/vulnerability/wordpress-security-malware-scan-by-cleantalk-plugin-2-189-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39769": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-288"
+      ],
+      "description": "Unauthenticated Broken Authentication in Graphina <= 3.1.12 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39769",
+      "last_modified": "2026-10-06T09:17:49.280",
+      "products": [],
+      "published": "2026-10-06T09:17:49.280",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/graphina-elementor-charts-and-graphs/vulnerability/wordpress-graphina-plugin-3-1-12-broken-authentication-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39770": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "Unauthenticated Arbitrary File Upload in Doctreat <= 1.7.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39770",
+      "last_modified": "2026-10-06T09:17:49.427",
+      "products": [],
+      "published": "2026-10-06T09:17:49.427",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/theme/doctreat/vulnerability/wordpress-doctreat-theme-1-7-0-arbitrary-file-upload-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39771": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Subscriber SQL Injection in Buddyboss Platform <= 3.1.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39771",
+      "last_modified": "2026-10-06T09:17:49.590",
+      "products": [],
+      "published": "2026-10-06T09:17:49.590",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/buddyboss-platform/vulnerability/wordpress-buddyboss-platform-plugin-3-1-0-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39773": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Unauthenticated Privilege Escalation in Doctreat Core <= 1.7.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39773",
+      "last_modified": "2026-10-06T09:17:49.900",
+      "products": [],
+      "published": "2026-10-06T09:17:49.900",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/doctreat_core/vulnerability/wordpress-doctreat-core-plugin-1-7-0-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39774": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Unauthenticated Privilege Escalation in Tourfic Pro <= 1.17.3 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39774",
+      "last_modified": "2026-10-06T09:17:50.053",
+      "products": [],
+      "published": "2026-10-06T09:17:50.053",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/tourfic-pro/vulnerability/wordpress-tourfic-pro-plugin-1-17-3-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39775": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Subscriber Privilege Escalation in JobZilla - Job Board WordPress Theme <= 2.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39775",
+      "last_modified": "2026-10-06T09:17:50.200",
+      "products": [],
+      "published": "2026-10-06T09:17:50.200",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/theme/jobzilla/vulnerability/wordpress-jobzilla-job-board-wordpress-theme-theme-2-2-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39776": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-94"
+      ],
+      "description": "Editor Remote Code Execution (RCE) in Tabs <= 2.5 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39776",
+      "last_modified": "2026-10-06T09:17:50.347",
+      "products": [],
+      "published": "2026-10-06T09:17:50.347",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/tabs-responsive/vulnerability/wordpress-tabs-plugin-2-5-remote-code-execution-rce-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39778": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Ansar Import – One Click Starter Sites – for Elementor &amp; Themes <= 2.1.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39778",
+      "last_modified": "2026-10-06T09:17:50.503",
+      "products": [],
+      "published": "2026-10-06T09:17:50.503",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/ansar-import/vulnerability/wordpress-ansar-import-one-click-starter-sites-for-elementor-themes-plugin-2-1-2-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39780": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Youzify <= 1.3.7 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39780",
+      "last_modified": "2026-10-06T09:17:50.647",
+      "products": [],
+      "published": "2026-10-06T09:17:50.647",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/youzify/vulnerability/wordpress-youzify-plugin-1-3-7-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39781": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Document Gallery <= 5.1.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39781",
+      "last_modified": "2026-10-06T09:17:50.793",
+      "products": [],
+      "published": "2026-10-06T09:17:50.793",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/document-gallery/vulnerability/wordpress-document-gallery-plugin-5-1-1-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39784": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Hotel Booking <= 3.8 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39784",
+      "last_modified": "2026-10-06T09:17:50.940",
+      "products": [],
+      "published": "2026-10-06T09:17:50.940",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/nd-booking/vulnerability/wordpress-hotel-booking-plugin-3-8-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39785": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Unauthenticated SQL Injection in Gmedia Photo Gallery <= 1.25.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39785",
+      "last_modified": "2026-10-06T09:17:51.100",
+      "products": [],
+      "published": "2026-10-06T09:17:51.100",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/grand-media/vulnerability/wordpress-gmedia-photo-gallery-plugin-1-25-1-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39787": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in 10Web Social Photo Feed <= 1.4.35 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39787",
+      "last_modified": "2026-10-06T09:17:51.267",
+      "products": [],
+      "published": "2026-10-06T09:17:51.267",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wd-instagram-feed/vulnerability/wordpress-10web-social-photo-feed-plugin-1-4-35-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39788": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Subscriber Cross Site Scripting (XSS) in Front End PM <= 11.4.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39788",
+      "last_modified": "2026-10-06T09:17:51.627",
+      "products": [],
+      "published": "2026-10-06T09:17:51.627",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/front-end-pm/vulnerability/wordpress-front-end-pm-plugin-11-4-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39789": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in Fluent Affiliate Pro <= 1.6.4 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39789",
+      "last_modified": "2026-10-06T06:17:01.227",
+      "products": [],
+      "published": "2026-10-06T06:17:01.227",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/fluent-affiliate-pro/vulnerability/wordpress-fluent-affiliate-pro-plugin-1-6-4-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39790": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in VikRentCar <= 1.4.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39790",
+      "last_modified": "2026-10-06T09:17:51.777",
+      "products": [],
+      "published": "2026-10-06T09:17:51.777",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/vikrentcar/vulnerability/wordpress-vikrentcar-plugin-1-4-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39792": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-22"
+      ],
+      "description": "Unauthenticated Arbitrary File Deletion in Simple File List <= 6.3.11 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39792",
+      "last_modified": "2026-10-06T09:17:52.080",
+      "products": [],
+      "published": "2026-10-06T09:17:52.080",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/simple-file-list/vulnerability/wordpress-simple-file-list-plugin-6-3-11-arbitrary-file-deletion-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39793": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-288"
+      ],
+      "description": "Subscriber Broken Authentication in Simple JWT Login 4.0.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39793",
+      "last_modified": "2026-10-06T09:17:52.237",
+      "products": [],
+      "published": "2026-10-06T09:17:52.237",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/simple-jwt-login/vulnerability/wordpress-simple-jwt-login-plugin-4-0-0-broken-authentication-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39794": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in WooCommerce Multivendor Marketplace – REST API <= 1.6.3 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39794",
+      "last_modified": "2026-10-06T09:17:52.387",
+      "products": [],
+      "published": "2026-10-06T09:17:52.387",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wcfm-marketplace-rest-api/vulnerability/wordpress-woocommerce-multivendor-marketplace-rest-api-plugin-1-6-3-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39795": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Unauthenticated SQL Injection in SendPress Newsletters <= 1.26.1.20 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39795",
+      "last_modified": "2026-10-06T09:17:52.540",
+      "products": [],
+      "published": "2026-10-06T09:17:52.540",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/sendpress/vulnerability/wordpress-sendpress-newsletters-plugin-1-26-1-20-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39796": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in Advanced Posts Listing – Show Post List Easily <= 1.0.8 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39796",
+      "last_modified": "2026-10-06T09:17:52.697",
+      "products": [],
+      "published": "2026-10-06T09:17:52.697",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/advanced-posts-listing/vulnerability/wordpress-advanced-posts-listing-show-post-list-easily-plugin-1-0-8-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39797": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-502"
+      ],
+      "description": "Unauthenticated PHP Object Injection in GDPR Framework By Data443 <= 2.5.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39797",
+      "last_modified": "2026-10-06T09:17:52.843",
+      "products": [],
+      "published": "2026-10-06T09:17:52.843",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/gdpr-framework/vulnerability/wordpress-gdpr-framework-by-data443-plugin-2-5-0-php-object-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-39798": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Settings Change in TrueBooker <= 1.2.9 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-39798",
+      "last_modified": "2026-10-06T09:17:52.990",
+      "products": [],
+      "published": "2026-10-06T09:17:52.990",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/truebooker-appointment-booking/vulnerability/wordpress-truebooker-plugin-1-2-9-settings-change-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-39909": {
     "added": "2026-08-22",
     "checks_done": 9,
@@ -151180,6 +154115,58 @@
     },
     "next_check": "2026-11-02"
   },
+  "CVE-2026-40806": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Blog, Posts and Category Filter for Elementor <= 2.1.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-40806",
+      "last_modified": "2026-10-06T09:17:53.140",
+      "products": [],
+      "published": "2026-10-06T09:17:53.140",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/blog-posts-and-category-for-elementor/vulnerability/wordpress-blog-posts-and-category-filter-for-elementor-plugin-2-1-0-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-40807": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in CF7 Views &#8211; Complete Entry Management for Contact Form 7 <= 3.2.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-40807",
+      "last_modified": "2026-10-06T09:17:53.287",
+      "products": [],
+      "published": "2026-10-06T09:17:53.287",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/cf7-views/vulnerability/wordpress-cf7-views-complete-entry-management-for-contact-form-7-plugin-3-2-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-40877": {
     "added": "2026-08-25",
     "checks_done": 9,
@@ -151480,6 +154467,188 @@
       ]
     },
     "next_check": "2026-11-02"
+  },
+  "CVE-2026-41555": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Unauthenticated SQL Injection in Newsletter Subscription Form – User Subscriptions Form, Capture Email <= 1.5.9 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-41555",
+      "last_modified": "2026-10-06T09:17:53.433",
+      "products": [],
+      "published": "2026-10-06T09:17:53.433",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/newsletter-subscription-form/vulnerability/wordpress-newsletter-subscription-form-user-subscriptions-form-capture-email-plugin-1-5-9-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-41558": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-290"
+      ],
+      "description": "Subscriber Bypass Vulnerability in WP Migration Plugin DB & Files – WP Synchro <= 1.16.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-41558",
+      "last_modified": "2026-10-06T06:17:01.370",
+      "products": [],
+      "published": "2026-10-06T06:17:01.370",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wpsynchro/vulnerability/wordpress-wp-migration-plugin-db-files-wp-synchro-plugin-1-16-1-2fa-bypass-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-41559": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-201"
+      ],
+      "description": "Unauthenticated Sensitive Data Exposure in SafeSnap – Verified WordPress Backup &amp; Restore <= 2.1.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-41559",
+      "last_modified": "2026-10-06T09:17:53.583",
+      "products": [],
+      "published": "2026-10-06T09:17:53.583",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/safesnap/vulnerability/wordpress-safesnap-verified-wordpress-backup-restore-plugin-2-1-2-sensitive-data-exposure-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-41560": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in WXD Backup Lite <= 1.0.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-41560",
+      "last_modified": "2026-10-06T09:17:53.730",
+      "products": [],
+      "published": "2026-10-06T09:17:53.730",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wxd-backup-lite/vulnerability/wordpress-wxd-backup-lite-plugin-1-0-2-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-41561": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-201"
+      ],
+      "description": "Unauthenticated Sensitive Data Exposure in Museder RestoreOne <= 2.7.276 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-41561",
+      "last_modified": "2026-10-06T09:17:53.873",
+      "products": [],
+      "published": "2026-10-06T09:17:53.873",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/museder-restoreone/vulnerability/wordpress-museder-restoreone-plugin-2-7-276-sensitive-data-exposure-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-41562": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-201"
+      ],
+      "description": "Unauthenticated Sensitive Data Exposure in Norvis Backup <= 1.1.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-41562",
+      "last_modified": "2026-10-06T09:17:54.023",
+      "products": [],
+      "published": "2026-10-06T09:17:54.023",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/norvis-backup/vulnerability/wordpress-norvis-backup-plugin-1-1-0-sensitive-data-exposure-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-41563": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-201"
+      ],
+      "description": "Unauthenticated Sensitive Data Exposure in Sitemovr <= 1.0.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-41563",
+      "last_modified": "2026-10-06T06:17:01.530",
+      "products": [],
+      "published": "2026-10-06T06:17:01.530",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/sitemovr/vulnerability/wordpress-sitemovr-plugin-1-0-1-sensitive-data-exposure-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-41703": {
     "added": "2026-07-31",
@@ -151863,6 +155032,162 @@
     },
     "next_check": "2026-11-26"
   },
+  "CVE-2026-42413": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-201"
+      ],
+      "description": "Unauthenticated Sensitive Data Exposure in Snapshotify &#8211; All-in-One Backup &amp; Restore &amp; Migrate <= 1.3.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42413",
+      "last_modified": "2026-10-06T09:17:54.170",
+      "products": [],
+      "published": "2026-10-06T09:17:54.170",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/snapshotify/vulnerability/wordpress-snapshotify-all-in-one-backup-restore-migrate-plugin-1-3-2-sensitive-data-exposure-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-42414": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Subscriber SQL Injection in ListingPro <= 2.9.12 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42414",
+      "last_modified": "2026-10-06T09:17:54.320",
+      "products": [],
+      "published": "2026-10-06T09:17:54.320",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/listingpro-plugin/vulnerability/wordpress-listingpro-plugin-2-9-12-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-42415": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Unauthenticated SQL Injection in Porto Theme - Functionality <= 3.9.3 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42415",
+      "last_modified": "2026-10-06T09:17:54.463",
+      "products": [],
+      "published": "2026-10-06T09:17:54.463",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/porto-functionality/vulnerability/wordpress-porto-theme-functionality-plugin-3-9-3-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-42416": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Subscriber SQL Injection in UDesign Core <= 4.15.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42416",
+      "last_modified": "2026-10-06T09:17:54.610",
+      "products": [],
+      "published": "2026-10-06T09:17:54.610",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/u-design-core/vulnerability/wordpress-udesign-core-plugin-4-15-0-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-42417": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-89"
+      ],
+      "description": "Unauthenticated SQL Injection in ARMember Premium <= 7.8 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42417",
+      "last_modified": "2026-10-06T09:17:54.757",
+      "products": [],
+      "published": "2026-10-06T09:17:54.757",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/armember/vulnerability/wordpress-armember-premium-plugin-7-8-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-42418": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Social Rocket <= 1.3.5 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42418",
+      "last_modified": "2026-10-06T09:17:54.900",
+      "products": [],
+      "published": "2026-10-06T09:17:54.900",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/social-rocket/vulnerability/wordpress-social-rocket-plugin-1-3-5-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-4246": {
     "added": "2026-08-28",
     "checks_done": 9,
@@ -151908,6 +155233,136 @@
       ]
     },
     "next_check": "2026-11-26"
+  },
+  "CVE-2026-42634": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Video Background Block – Use video as background in the section. <= 2.0.3 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42634",
+      "last_modified": "2026-10-06T09:17:55.047",
+      "products": [],
+      "published": "2026-10-06T09:17:55.047",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/video-background-block/vulnerability/wordpress-video-background-block-use-video-as-background-in-the-section-plugin-2-0-3-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-42635": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in WooCommerce Simple Auctions <= 3.0.10 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42635",
+      "last_modified": "2026-10-06T09:17:55.193",
+      "products": [],
+      "published": "2026-10-06T09:17:55.193",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/woocommerce-simple-auctions/vulnerability/wordpress-woocommerce-simple-auctions-plugin-3-0-10-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-42636": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in WP Cookie Notice for GDPR, CCPA & ePrivacy Consent <= 4.4.6 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42636",
+      "last_modified": "2026-10-06T09:17:55.333",
+      "products": [],
+      "published": "2026-10-06T09:17:55.333",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/gdpr-cookie-consent/vulnerability/wordpress-wp-cookie-notice-for-gdpr-ccpa-eprivacy-consent-plugin-4-4-6-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-42637": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Settings Change in PayPlug for WooCommerce (Official) <= 3.1.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42637",
+      "last_modified": "2026-10-06T09:17:55.480",
+      "products": [],
+      "published": "2026-10-06T09:17:55.480",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/payplug/vulnerability/wordpress-payplug-for-woocommerce-official-plugin-3-1-0-settings-change-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-42638": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in Easy Digital Downloads <= 3.7.1 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-42638",
+      "last_modified": "2026-10-06T09:17:55.627",
+      "products": [],
+      "published": "2026-10-06T09:17:55.627",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/easy-digital-downloads/vulnerability/wordpress-easy-digital-downloads-plugin-3-7-1-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-42700": {
     "added": "2026-10-06",
@@ -162639,6 +166094,58 @@
       ]
     },
     "next_check": "2026-11-06"
+  },
+  "CVE-2026-48197": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Incorrect Privilege Assignment vulnerability in PublishPress PublishPress Capabilities capability-manager-enhanced allows Privilege Escalation.This issue affects PublishPress Capabilities: from n/a through 2.45.0.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-48197",
+      "last_modified": "2026-10-06T09:17:55.777",
+      "products": [],
+      "published": "2026-10-06T09:17:55.777",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/capability-manager-enhanced/vulnerability/wordpress-publishpress-capabilities-plugin-2-45-0-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-48199": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in Sermon'e <= 1.0.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-48199",
+      "last_modified": "2026-10-06T09:17:55.930",
+      "products": [],
+      "published": "2026-10-06T09:17:55.930",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/sermone/vulnerability/wordpress-sermon-e-plugin-1-0-2-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-48273": {
     "added": "2026-09-09",
@@ -189980,6 +193487,162 @@
     },
     "next_check": "2026-11-22"
   },
+  "CVE-2026-57537": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Memory Corruption when accessing and modifying geographic mapping data concurrently without proper synchronization.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57537",
+      "last_modified": "2026-10-06T07:16:58.300",
+      "products": [],
+      "published": "2026-10-06T07:16:58.300",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-57545": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-822"
+      ],
+      "description": "Memory corruption when processing draw objects of incorrect type during graphics command list execution.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57545",
+      "last_modified": "2026-10-06T07:16:58.437",
+      "products": [],
+      "published": "2026-10-06T07:16:58.437",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-57546": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-126"
+      ],
+      "description": "Transient DOS when processing a continuous receive command with a zero-sized global configuration override.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57546",
+      "last_modified": "2026-10-06T07:16:58.630",
+      "products": [],
+      "published": "2026-10-06T07:16:58.630",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-57554": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Memory Corruption when asynchronous threads access shared performance counter data simultaneously during FastRPC invocations.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57554",
+      "last_modified": "2026-10-06T07:16:58.760",
+      "products": [],
+      "published": "2026-10-06T07:16:58.760",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-57555": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Memory Corruption when executing system service routines due to improper handling of user input buffers.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57555",
+      "last_modified": "2026-10-06T07:16:58.980",
+      "products": [],
+      "published": "2026-10-06T07:16:58.980",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-57559": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "description": "Memory corruption while processing service requests.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-57559",
+      "last_modified": "2026-10-06T07:16:59.123",
+      "products": [],
+      "published": "2026-10-06T07:16:59.123",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://docs.qualcomm.com/product/publicresources/securitybulletin/october-2026-bulletin.html"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-57570": {
     "added": "2026-09-15",
     "checks_done": 8,
@@ -207674,6 +211337,32 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/wp-file-upload/vulnerability/wordpress-wordpress-file-upload-plugin-5-1-10-sql-injection-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-62072": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Subscriber Broken Access Control in Progress Planner <= 1.10.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-62072",
+      "last_modified": "2026-10-06T09:17:56.500",
+      "products": [],
+      "published": "2026-10-06T09:17:56.500",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/progress-planner/vulnerability/wordpress-progress-planner-plugin-1-10-0-broken-access-control-vulnerability?_s_id=cve"
         }
       ]
     },
@@ -230387,6 +234076,32 @@
       ]
     },
     "next_check": "2026-11-23"
+  },
+  "CVE-2026-66588": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in The7 <= 14.2.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-66588",
+      "last_modified": "2026-10-06T09:17:56.660",
+      "products": [],
+      "published": "2026-10-06T09:17:56.660",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/theme/dt-the7/vulnerability/wordpress-the7-theme-14-2-2-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-66590": {
     "added": "2026-08-21",
@@ -313169,6 +316884,60 @@
       ]
     },
     "next_check": "2026-11-25"
+  },
+  "CVE-2026-75962": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Post SMTP – Complete Email Deliverability and SMTP Solution with Email Logs, Alerts, Backup SMTP & Mobile App plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'user_email' parameter in all versions up to, and including, 4.0.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is exploitable without authentication on WordPress Multisite installations with public registration enabled, as WordPress accepts email addresses containing numeric HTML character references that Post SMTP's stricter validator rejects, persisting the attacker-controlled address verbatim to the email log via the failed-send exception message.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-75962",
+      "last_modified": "2026-10-06T06:17:01.687",
+      "products": [],
+      "published": "2026-10-06T06:17:01.687",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/post-smtp/tags/3.9.5/Postman/Postman-Email-Log/PostmanEmailLogService.php#L215"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/post-smtp/tags/3.9.5/Postman/Postman-Mail/PostmanEmailAddress.php#L63"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/post-smtp/tags/3.9.5/Postman/PostmanEmailLogs.php#L538"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/post-smtp/tags/3.9.5/Postman/PostmanWpMail.php#L374"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/post-smtp/tags/3.9.5/script/postman-email-logs.js#L711"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3711068/post-smtp/trunk/Postman/Postman-Email-Log/PostmanEmailLogService.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3711079%40post-smtp%2Ftags%2F4.0.2&old=3664536%40post-smtp%2Ftags%2F4.0.1"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/accac3da-0318-4e79-a163-ed9ff2af692b?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-75963": {
     "added": "2026-08-21",
@@ -462044,6 +465813,32 @@
     },
     "next_check": "2026-10-12"
   },
+  "CVE-2026-94293": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-306"
+      ],
+      "description": "An unauthenticated remote attacker can modify Asset Administration Shell submodel data via PATCH requests and can read all data exposed by the GET endpoints.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-94293",
+      "last_modified": "2026-10-06T07:17:00.193",
+      "products": [],
+      "published": "2026-10-06T07:17:00.193",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://www.certvde.com/en/advisories/VDE-2026-108/"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-94301": {
     "added": "2026-09-22",
     "checks_done": 8,
@@ -464485,6 +468280,32 @@
     },
     "next_check": "2026-10-07"
   },
+  "CVE-2026-94675": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "Unauthenticated Cross Site Scripting (XSS) in Fluent Forms Pro Add On Pack <= 6.2.13 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-94675",
+      "last_modified": "2026-10-06T09:17:57.047",
+      "products": [],
+      "published": "2026-10-06T09:17:57.047",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/fluentformpro/vulnerability/wordpress-fluent-forms-pro-add-on-pack-plugin-6-2-13-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-94677": {
     "added": "2026-09-30",
     "checks_done": 6,
@@ -466541,6 +470362,32 @@
     },
     "next_check": "2026-10-08"
   },
+  "CVE-2026-95526": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-862"
+      ],
+      "description": "Unauthenticated Broken Access Control in BEAR <= 1.2.2 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-95526",
+      "last_modified": "2026-10-06T09:17:57.430",
+      "products": [],
+      "published": "2026-10-06T09:17:57.430",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/woo-bulk-editor/vulnerability/wordpress-bear-plugin-1-2-2-broken-access-control-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
   "CVE-2026-95527": {
     "added": "2026-09-24",
     "checks_done": 7,
@@ -466800,6 +470647,32 @@
       ]
     },
     "next_check": "2026-10-08"
+  },
+  "CVE-2026-95594": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-266"
+      ],
+      "description": "Unauthenticated Privilege Escalation in SMS Alert Order Notifications <= 4.0.0 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-95594",
+      "last_modified": "2026-10-06T09:17:57.577",
+      "products": [],
+      "published": "2026-10-06T09:17:57.577",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/sms-alert/vulnerability/wordpress-sms-alert-order-notifications-plugin-4-0-0-privilege-escalation-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
   },
   "CVE-2026-95601": {
     "added": "2026-09-24",
@@ -474961,6 +478834,32 @@
         {
           "tags": [],
           "url": "https://patchstack.com/database/wordpress/plugin/king-addons/vulnerability/wordpress-king-addons-for-elementor-plugin-51-1-86-cross-site-scripting-xss-vulnerability?_s_id=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-07"
+  },
+  "CVE-2026-97300": {
+    "added": "2026-10-06",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-799"
+      ],
+      "description": "Unauthenticated Broken Access Control in WP Event Solution <= 4.1.25 versions.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-97300",
+      "last_modified": "2026-10-06T06:17:02.110",
+      "products": [],
+      "published": "2026-10-06T06:17:02.110",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://patchstack.com/database/wordpress/plugin/wp-event-solution/vulnerability/wordpress-wp-event-solution-plugin-4-1-25-broken-access-control-vulnerability-2?_s_id=cve"
         }
       ]
     },

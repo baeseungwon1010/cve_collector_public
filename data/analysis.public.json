@@ -1,86 +1,107 @@
 {
-  "CVE-2026-103918": {
-    "package": "NPM:@orpc/zod"
-  },
-  "CVE-2026-103922": {
-    "package": "NPM:@capacitor/ios"
-  },
-  "CVE-2026-104182": {
-    "package": "NPM:stream-json"
-  },
-  "CVE-2026-104847": {
-    "package": "NPM:prosemirror-view"
-  },
-  "CVE-2026-104848": {
-    "package": "NPM:tinypool"
-  },
-  "CVE-2026-104849": {
-    "package": "NPM:tinypool"
-  },
-  "CVE-2026-104851": {
-    "package": "PIP:fsspec"
-  },
-  "CVE-2026-104871": {
-    "package": "NPM:@angular/ssr"
-  },
-  "CVE-2026-104873": {
-    "package": "PIP:langgraph-sdk"
-  },
-  "CVE-2026-105751": {
-    "package": "PIP:docling"
-  },
-  "CVE-2026-2611": {
-    "package": "PIP:mlflow"
-  },
-  "CVE-2026-32773": {
-    "package": "MAVEN:org.apache.spark:spark-core_2.13"
-  },
-  "CVE-2026-33454": {
-    "package": "MAVEN:org.apache.camel:camel-mail"
-  },
-  "CVE-2026-40453": {
-    "package": "MAVEN:org.apache.camel:camel-sjms"
-  },
-  "CVE-2026-51886": {
-    "package": "PIP:langflow"
-  },
-  "CVE-2026-75140": {
-    "package": "MAVEN:org.jsoup:jsoup"
-  },
-  "CVE-2026-7700": {
-    "package": "PIP:langflow"
-  },
-  "CVE-2026-8505": {
-    "package": "PIP:langflow"
-  },
-  "CVE-2026-9205": {
-    "package": "PIP:langflow"
-  },
-  "CVE-2026-92934": {
+  "CVE-2026-100721": {
     "package": "NPM:vm2"
   },
-  "CVE-2026-92942": {
+  "CVE-2026-100722": {
     "package": "NPM:vm2"
   },
-  "CVE-2026-92946": {
+  "CVE-2026-100723": {
     "package": "NPM:vm2"
   },
-  "CVE-2026-92947": {
-    "package": "NPM:vm2"
+  "CVE-2026-102275": {
+    "package": "PIP:PyJWT"
   },
-  "CVE-2026-92953": {
-    "package": "NPM:vm2"
+  "CVE-2026-102598": {
+    "package": "PIP:Werkzeug"
   },
-  "CVE-2026-92954": {
-    "package": "NPM:vm2"
+  "CVE-2026-102600": {
+    "package": "NPM:@socket.io/cluster-engine"
   },
-  "CVE-2026-92955": {
-    "package": "NPM:vm2"
+  "CVE-2026-102826": {
+    "package": "NPM:simple-git"
   },
-  "CVE-2026-92956": {
-    "package": "NPM:vm2"
+  "CVE-2026-102827": {
+    "package": "NPM:simple-git"
   },
-  "CVE-2026-92959": {
-    "package": "NPM:vm2"
+  "CVE-2026-102828": {
+    "package": "NPM:simple-git"
+  },
+  "CVE-2026-102829": {
+    "package": "NPM:@simple-git/argv-parser"
+  },
+  "CVE-2026-102991": {
+    "package": "PIP:Mako"
+  },
+  "CVE-2026-103921": {
+    "package": "NPM:@graphql-tools/executor-legacy-ws"
+  },
+  "CVE-2026-103923": {
+    "package": "NPM:katex"
+  },
+  "CVE-2026-104843": {
+    "package": "RUST:uv"
+  },
+  "CVE-2026-104845": {
+    "package": "NPM:seroval"
+  },
+  "CVE-2026-104846": {
+    "package": "NPM:seroval"
+  },
+  "CVE-2026-104852": {
+    "package": "NPM:@graphql-tools/utils"
+  },
+  "CVE-2026-104853": {
+    "package": "NPM:nx"
+  },
+  "CVE-2026-104854": {
+    "package": "NPM:nx"
+  },
+  "CVE-2026-104859": {
+    "package": "NPM:@nx/docker"
+  },
+  "CVE-2026-105753": {
+    "package": "PIP:vllm"
+  },
+  "CVE-2026-105754": {
+    "package": "PIP:vllm"
+  },
+  "CVE-2026-105756": {
+    "package": "PIP:vllm"
+  },
+  "CVE-2026-105757": {
+    "package": "PIP:vllm"
+  },
+  "CVE-2026-105782": {
+    "package": "PIP:Scrapy"
+  },
+  "CVE-2026-47884": {
+    "package": "MAVEN:org.springframework:spring-webmvc"
+  },
+  "CVE-2026-87776": {
+    "package": "NPM:compression"
+  },
+  "CVE-2026-88023": {
+    "package": "COMPOSER:mongodb/mongodb"
+  },
+  "CVE-2026-88029": {
+    "package": "PIP:pymongo"
+  },
+  "CVE-2026-90711": {
+    "package": "NPM:proxy-addr"
+  },
+  "CVE-2026-90776": {
+    "package": "NPM:nodemailer"
+  },
+  "CVE-2026-92599": {
+    "package": "NPM:joi"
+  },
+  "CVE-2026-93749": {
+    "package": "NPM:source-map-js"
+  },
+  "CVE-2026-96748": {
+    "package": "PIP:pymongo"
+  },
+  "CVE-2026-96749": {
+    "package": "PIP:pymongo"
   }
 }
