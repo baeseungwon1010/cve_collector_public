@@ -1,8 +1,86 @@
 {
-  "CVE-2026-25521": {
-    "package": "NPM:locutus"
+  "CVE-2026-103918": {
+    "package": "NPM:@orpc/zod"
   },
-  "CVE-2026-33228": {
-    "package": "NPM:flatted"
+  "CVE-2026-103922": {
+    "package": "NPM:@capacitor/ios"
+  },
+  "CVE-2026-104182": {
+    "package": "NPM:stream-json"
+  },
+  "CVE-2026-104847": {
+    "package": "NPM:prosemirror-view"
+  },
+  "CVE-2026-104848": {
+    "package": "NPM:tinypool"
+  },
+  "CVE-2026-104849": {
+    "package": "NPM:tinypool"
+  },
+  "CVE-2026-104851": {
+    "package": "PIP:fsspec"
+  },
+  "CVE-2026-104871": {
+    "package": "NPM:@angular/ssr"
+  },
+  "CVE-2026-104873": {
+    "package": "PIP:langgraph-sdk"
+  },
+  "CVE-2026-105751": {
+    "package": "PIP:docling"
+  },
+  "CVE-2026-2611": {
+    "package": "PIP:mlflow"
+  },
+  "CVE-2026-32773": {
+    "package": "MAVEN:org.apache.spark:spark-core_2.13"
+  },
+  "CVE-2026-33454": {
+    "package": "MAVEN:org.apache.camel:camel-mail"
+  },
+  "CVE-2026-40453": {
+    "package": "MAVEN:org.apache.camel:camel-sjms"
+  },
+  "CVE-2026-51886": {
+    "package": "PIP:langflow"
+  },
+  "CVE-2026-75140": {
+    "package": "MAVEN:org.jsoup:jsoup"
+  },
+  "CVE-2026-7700": {
+    "package": "PIP:langflow"
+  },
+  "CVE-2026-8505": {
+    "package": "PIP:langflow"
+  },
+  "CVE-2026-9205": {
+    "package": "PIP:langflow"
+  },
+  "CVE-2026-92934": {
+    "package": "NPM:vm2"
+  },
+  "CVE-2026-92942": {
+    "package": "NPM:vm2"
+  },
+  "CVE-2026-92946": {
+    "package": "NPM:vm2"
+  },
+  "CVE-2026-92947": {
+    "package": "NPM:vm2"
+  },
+  "CVE-2026-92953": {
+    "package": "NPM:vm2"
+  },
+  "CVE-2026-92954": {
+    "package": "NPM:vm2"
+  },
+  "CVE-2026-92955": {
+    "package": "NPM:vm2"
+  },
+  "CVE-2026-92956": {
+    "package": "NPM:vm2"
+  },
+  "CVE-2026-92959": {
+    "package": "NPM:vm2"
   }
 }
