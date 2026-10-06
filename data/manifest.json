@@ -4616,15 +4616,6 @@
     "poc_source": "github_search",
     "published": "2026-02-25T23:16:20.853"
   },
-  "CVE-2026-27577": {
-    "cvss_score": 9.9,
-    "cvss_severity": "CRITICAL",
-    "kev": false,
-    "poc_confirmed_date": "2026-09-05",
-    "poc_published_date": "2026-07-28",
-    "poc_source": "github_search",
-    "published": "2026-02-25T23:16:21.387"
-  },
   "CVE-2026-28001": {
     "cvss_score": 9.3,
     "cvss_severity": "CRITICAL",
