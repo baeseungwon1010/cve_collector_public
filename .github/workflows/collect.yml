@@ -1,10 +1,12 @@
 name: Collect CVE data
 
 on:
+  # 2026-09-19 Actions 무료 한도(월 2,000분) 소진 사고 이후 하루 3회에서 1회로 되돌림 +
+  # verify 비용을 --verify-batch-size로 고정(2026-10-01, 영구조치). 이 저장소는 그 조치를
+  # 못 받고 하루 3회+전체verify 그대로 돌다가 2026-10-07 push 실패를 계기로 뒤늦게 동일하게
+  # 맞춤. 스케줄을 다시 늘리고 싶으면 이 사고 경위부터 다시 읽을 것.
   schedule:
     - cron: "0 0 * * *"  # 매일 00:00 UTC (KST 09:00)
-    - cron: "0 3 * * *"  # 매일 03:00 UTC (KST 12:00)
-    - cron: "0 8 * * *"  # 매일 08:00 UTC (KST 17:00)
   workflow_dispatch:
     inputs:
       days:
@@ -22,9 +24,6 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    # GitHub Search API 30회/분이 병목이라 재검사 건수 x 2.2초가 그대로 실행 시간이 된다.
-    # 재검사 스케줄이 11단계로 촘촘해지면서 정상 실행이 60분대가 됐고, 스케줄 변경 직후
-    # 한 번은 밀린 후보가 몰려 그보다 길어진다. --max-github-checks(1800) 가 실질 상한.
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
@@ -57,33 +56,31 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "chore: update CVE data ($(date -u +%Y-%m-%d))"
-            # 하루 3회로 실행 빈도가 늘고 사람이 세션 중 수시로 push하면서
-            # non-fast-forward 충돌이 나기 시작함(2026-08-31 최초 관측). 커밋 자체는
-            # 이미 로컬에 있으니 rebase 재시도로 흡수한다.
+            # 2026-10-07: 재시도 로직이 origin/master를 하드코딩해서 이 저장소의 실제
+            # 기본브랜치(main)와 안 맞아 재시도가 즉시 fatal로 죽던 버그 수정 (push가
+            # GitHub측 일시 500에러로 거부됐을 때 재시도 자체가 불가능했던 원인).
             for i in 1 2 3 4 5; do
               if git push; then
                 break
               fi
               echo "push rejected, retrying with rebase ($i/5)"
-              git fetch origin master
-              git rebase origin/master
+              git fetch origin main
+              git rebase origin/main
               sleep $((i * 5))
             done
           fi
 
-      # 아카이브에 잘못된 PoC 근거가 섞였는지 확인한다. GitHub 검색이 정확 일치가
-      # 아니라 짧은 시퀀스 번호의 CVE가 긴 CVE에 잡아먹힌 적이 있어(아카이브 23% 오염),
-      # 사람이 눈으로 발견하기 전에 CI가 잡도록 둔다. --purge-bad로 실제 제거까지
-      # 자동화했다(2026-09-02, CVE-2026-24301 — 승격 근거였던 저장소가 나중에 삭제돼
-      # verify가 매 실행마다 잡던 걸 사람이 수동 정리한 뒤 추가). manifest/연간·study md만
-      # 지우고 analysis.json은 사람이 손댄 값이 있으면 절대 안 건드리므로 안전하다.
-      - name: Verify archive integrity
+      # 매번 전체 재검사 대신 .state.json의 verify_scan_index 커서로 300건씩만 순환검사해
+      # 회당 비용을 아카이브 크기와 무관하게 고정한다(2026-10-01 영구조치). 아래 if 조건은
+      # cron이 다시 여러 개로 늘어나도 verify가 하루 한 번만 돌도록 막는 안전장치다.
+      - name: Verify archive integrity (daily only)
+        if: github.event.schedule == '0 0 * * *' || github.event_name == 'workflow_dispatch'
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd scripts
-          python collect.py --verify --purge-bad
+          python collect.py --verify --purge-bad --verify-batch-size 300
 
       - name: Commit purge changes
         if: always()
@@ -100,8 +97,8 @@ jobs:
                 break
               fi
               echo "push rejected, retrying with rebase ($i/5)"
-              git fetch origin master
-              git rebase origin/master
+              git fetch origin main
+              git rebase origin/main
               sleep $((i * 5))
             done
           fi

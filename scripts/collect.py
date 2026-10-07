@@ -309,17 +309,32 @@ def sync_analysis(manifest: dict) -> tuple[int, dict]:
     return added, analysis
 
 
-def audit_archive(manifest: dict, gh_token: str | None, nvd_api_key: str | None) -> tuple[list, list, dict]:
+def audit_archive(manifest: dict, gh_token: str | None, nvd_api_key: str | None,
+                   batch_size: int | None = None, cursor: int = 0) -> tuple[list, list, dict, int]:
     """아카이브 각 항목의 PoC 근거를 현재 소스 기준으로 다시 확인한다 (쓰기 없음).
 
     GitHub 검색은 정확 일치가 아니라서 짧은 시퀀스 번호의 CVE가 긴 CVE에 잡아먹힌다
     (CVE-2026-3141 → CVE-2026-31413). 실제로 아카이브의 23%가 이렇게 오염된 적이
     있어서, 사람이 눈으로 발견하기 전에 잡아내려고 둔 검사다.
 
-    반환: (문제 항목, 확인 불가 항목, {cve_id: 유효 repos})
+    batch_size를 주면 전체 대신 cursor부터 batch_size건만 순환 검사해(끝에 닿으면
+    처음으로) 회당 비용을 아카이브 크기와 무관하게 고정한다 — 2026-09-19 GitHub
+    Actions 무료 한도 소진 사고 이후의 영구 조치(private 저장소에서 먼저 적용).
+
+    반환: (문제 항목, 확인 불가 항목, {cve_id: 유효 repos}, next_cursor)
     """
+    all_ids = sorted(manifest)
+    if batch_size is not None and batch_size < len(all_ids):
+        n = len(all_ids)
+        cursor = cursor % n
+        target_ids = [all_ids[(cursor + i) % n] for i in range(batch_size)]
+        next_cursor = (cursor + batch_size) % n
+    else:
+        target_ids = all_ids
+        next_cursor = 0
+
     bad, unknown, evidence = [], [], {}
-    for cve_id in sorted(manifest):
+    for cve_id in target_ids:
         entry = manifest[cve_id]
         source = entry.get("poc_source")
 
@@ -355,7 +370,7 @@ def audit_archive(manifest: dict, gh_token: str | None, nvd_api_key: str | None)
         else:
             unknown.append((cve_id, f"알 수 없는 poc_source: {source!r}"))
 
-    return bad, unknown, evidence
+    return bad, unknown, evidence, next_cursor
 
 
 def rerender_archive(manifest: dict, evidence: dict, kev_map: dict,
@@ -642,6 +657,12 @@ def main() -> None:
     parser.add_argument("--max-github-checks", type=int, default=1800, help="한 실행당 GitHub 검색 호출 상한 (rate limit 안전장치)")
     parser.add_argument("--verify", action="store_true",
                         help="아카이브 PoC 근거를 재확인만 하고 종료 (쓰기 없음). 문제 발견 시 종료코드 1")
+    parser.add_argument("--verify-batch-size", type=int, default=None,
+                        help="--verify가 한 번에 검사할 건수 상한. 지정하면 .state.json의 "
+                             "verify_scan_index 커서로 아카이브를 순환 검사해(끝에 닿으면 처음으로) "
+                             "회당 비용을 아카이브 크기와 무관하게 고정한다 — 2026-09-19 GitHub Actions "
+                             "무료 한도(월 2,000분) 소진 사고 이후의 영구 조치. 지정 안 하면(기본값) "
+                             "기존처럼 매번 전체를 검사한다(로컬 수동 전체 재확인용).")
     parser.add_argument("--rerender", action="store_true",
                         help="아카이브 파일을 현재 소스/포맷으로 다시 생성. --verify와 함께 쓰면 오매칭 정리 후 재생성")
     parser.add_argument("--purge-bad", action="store_true",
@@ -655,14 +676,24 @@ def main() -> None:
 
     if args.verify or args.rerender:
         manifest = manifest_store.load()
-        print(f"[verify] 아카이브 {len(manifest)}건 검사 중...", file=sys.stderr)
-        bad, unknown, evidence = audit_archive(manifest, gh_token, nvd_api_key)
+        state_data = state.load()
+        cursor = state_data.get("verify_scan_index", 0)
+        batch_note = f", 배치 {args.verify_batch_size}건(cursor={cursor})" if args.verify_batch_size else ""
+        print(f"[verify] 아카이브 {len(manifest)}건 검사 중{batch_note}...", file=sys.stderr)
+        bad, unknown, evidence, next_cursor = audit_archive(
+            manifest, gh_token, nvd_api_key,
+            batch_size=args.verify_batch_size, cursor=cursor,
+        )
+        if args.verify_batch_size:
+            state_data["verify_scan_index"] = next_cursor
+            state.save(state_data)
 
         for cve_id, why in bad:
             print(f"  [문제] {cve_id}: {why}", file=sys.stderr)
         for cve_id, why in unknown:
             print(f"  [확인불가] {cve_id}: {why}", file=sys.stderr)
-        print(f"[verify] 정상 {len(manifest)-len(bad)-len(unknown)} / 문제 {len(bad)} / 확인불가 {len(unknown)}",
+        checked = min(args.verify_batch_size, len(manifest)) if args.verify_batch_size else len(manifest)
+        print(f"[verify] 검사 {checked}건 중 정상 {checked-len(bad)-len(unknown)} / 문제 {len(bad)} / 확인불가 {len(unknown)}",
               file=sys.stderr)
 
         purged: list[str] = []
