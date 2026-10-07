@@ -60121,6 +60121,72 @@
     },
     "next_check": "2026-10-08"
   },
+  "CVE-2026-102173": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The Kirki – Freeform Page Builder, Website Builder & Customizer plugin for WordPress is vulnerable to Stored Cross-Site Scripting via registration metadata in all versions up to, and including, 6.3.1 This is due to insufficient escaping in `ExceptionalElements::image_element()`, which concatenates a user-meta value straight into an `<img src=\"…\">` attribute. This makes it possible for unauthenticated attackers to inject arbitrary web scripts that execute whenever a user accesses a page rendering a Kirki users collection whose image element is bound to one of the nine registration meta fields. Requires public user registration to be enabled and a published page carrying a `kirki-register` element, which prints the required element nonce into the public markup.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-102173",
+      "last_modified": "2026-10-07T06:16:33.217",
+      "products": [],
+      "published": "2026-10-07T06:16:33.217",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/kirki/tags/6.3.1/ComponentLibrary/controller/CompLibFormHandler.php#L361"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/kirki/tags/6.3.1/ComponentLibrary/controller/CompLibFormHandler.php#L389"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/kirki/tags/6.3.1/ComponentLibrary/controller/CompLibFormHandler.php#L76"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/kirki/tags/6.3.1/ComponentLibrary/controller/ElementGenerator.php#L259"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/kirki/tags/6.3.1/includes/Frontend/Preview/ExceptionalElements.php#L1079"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/kirki/tags/6.3.1/includes/Frontend/Preview/ExceptionalElements.php#L1184"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/kirki/tags/6.3.1/includes/Frontend/Preview/Utils.php#L308"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/kirki/tags/6.3.1/includes/HelperFunctions.php#L1151"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3718900/kirki/trunk/includes/Frontend/Preview/ExceptionalElements.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3718900%40kirki%2Ftags%2F6.3.2&old=3697265%40kirki%2Ftags%2F6.3.1"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/368001e9-3806-41d5-902e-0facf7fb31ff?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
+  },
   "CVE-2026-102240": {
     "added": "2026-09-29",
     "checks_done": 7,
@@ -62311,44 +62377,6 @@
       ]
     },
     "next_check": "2026-10-08"
-  },
-  "CVE-2026-102422": {
-    "added": "2026-09-29",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 8.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-78"
-      ],
-      "description": "shell-quote's `quote()` function emits a `{ comment }` token as `#` followed by its text, which comments out the rest of the shell line, including the opening quote of any later string token. A line terminator (\\n, \\r, U+2028, U+2029) in that later string therefore ends the comment, and the rest of the string is parsed as shell input: `quote(['echo', 'ok', { comment: 'x' }, 'a\\nid;#'])` runs `id` in sh, bash, dash, ksh and zsh. `parse()` emits a comment token for a `#` in the middle of a word (for example `http://example.com/#frag`), so callers that combine `parse()` output with another untrusted string, such as `quote(parse(untrustedCommand).concat(untrustedArg))`, are affected. The fix for CVE-2026-9277 rejected line terminators in the comment's own text, but not in the tokens after it. Fixed in 1.11.0: `quote()` throws a `TypeError` when a string after a `{ comment }` token contains a line terminator.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-102422",
-      "last_modified": "2026-09-29T04:17:55.707",
-      "products": [],
-      "published": "2026-09-29T04:17:55.707",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/ljharb/shell-quote"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/ljharb/shell-quote/commit/6002b2ed90c6b83095eb272b6b0adaf3a172b0bc"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/ljharb/shell-quote/security/advisories/GHSA-pqg4-j6r4-53mv"
-        },
-        {
-          "tags": [],
-          "url": "https://www.npmjs.com/package/shell-quote"
-        }
-      ]
-    },
-    "next_check": "2026-10-13"
   },
   "CVE-2026-102437": {
     "added": "2026-09-29",
@@ -69900,6 +69928,66 @@
         {
           "tags": [],
           "url": "https://www.dell.com/support/kbdoc/en-us/000502471/dsa-2026-378-security-update-for-dell-command-configure-for-multiple-vulnerabilities"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
+  },
+  "CVE-2026-103868": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-488"
+      ],
+      "description": "A flaw was found in pulp-container when it authenticates to an upstream registry. Basic and bearer credentials from one remote are reused for later downloads in the same worker. A user who can sync a container remote, and can point that remote at a server they control, receives the username, password, or bearer token stored for a different remote, and can reuse that credential at the upstream registry. Content stored in Pulp is not changed, and the service is not stopped.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103868",
+      "last_modified": "2026-10-07T08:16:56.840",
+      "products": [],
+      "published": "2026-10-07T06:16:35.000",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-103868"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2544601"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
+  },
+  "CVE-2026-103869": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-488"
+      ],
+      "description": "A flaw was found in pulp-ansible's bearer-token refresh for collection remotes. The access token is kept in one module-level variable and reused for every token download in that worker. A user who can sync an Ansible remote that uses token refresh, and can point that remote at a server they control, receives an access token obtained for a different remote, and can reuse it at the service that issued it. Content stored in Pulp is not changed, and the service is not stopped.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-103869",
+      "last_modified": "2026-10-07T08:16:56.940",
+      "products": [],
+      "published": "2026-10-07T06:16:35.207",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-103869"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2544603"
         }
       ]
     },
@@ -86010,6 +86098,36 @@
     },
     "next_check": "2026-11-03"
   },
+  "CVE-2026-107121": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 6.5,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-319"
+      ],
+      "description": "A flaw was found in the SMTP email configuration handling of the keycloak-services component. When the STARTTLS option is enabled, Keycloak fails to strictly enforce an encrypted connection, allowing it to fall back to unencrypted communication if the encryption request is tampered with. An attacker who can intercept network traffic can exploit this to capture sensitive email credentials and message content in plain text.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-107121",
+      "last_modified": "2026-10-07T08:16:57.053",
+      "products": [],
+      "published": "2026-10-07T08:16:57.053",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://access.redhat.com/security/cve/CVE-2026-107121"
+        },
+        {
+          "tags": [],
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2547296"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
+  },
   "CVE-2026-10734": {
     "added": "2026-08-17",
     "checks_done": 9,
@@ -101181,6 +101299,37 @@
       ]
     },
     "next_check": "2026-10-15"
+  },
+  "CVE-2026-15894": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121",
+        "CWE-787"
+      ],
+      "description": "The Bluetooth Mesh On-Demand Private Proxy solicitation handler in subsys/bluetooth/mesh/solicitation.c copies a received Solicitation PDU into a fixed 17-byte stack buffer without bounding the source length. In sol_pdu_decrypt(), out is allocated as NET_BUF_SIMPLE(17) and then filled with net_buf_simple_add_mem(out, in->data, in->len); net_buf_simple_add() guards its tailroom only with __ASSERT_NO_MSG, which is compiled out in production builds, so when in->len > 17 the underlying memcpy writes attacker-controlled bytes past the 17-byte stack buffer. The copy occurs before any decryption or authentication, so no key material is required to trigger it.\n\nThe oversized length arises because the mesh scan callback in subsys/bluetooth/mesh/adv.c calls net_buf_simple_restore() before dispatching to bt_mesh_sol_recv(), leaving buf->len covering the entire remaining advertising payload rather than just the Solicitation Service Data. After the parser locates the Service Data AD and consumes the Identification Type byte, the remaining buf->len is the 17-octet Network PDU plus any trailing advertising bytes, and prior to this fix there was no maximum-length check (only a minimum). An attacker can therefore append extra AD structures or padding after the Solicitation Service Data to make buf->len exceed 17.\n\nbt_mesh_scan_cb() is registered directly as the BLE scan callback, so buf is raw, unauthenticated advertising data received over the air. Any device in radio range can send a non-connectable advertisement carrying a crafted mesh Proxy Solicitation to a node that has CONFIG_BT_MESH_OD_PRIV_PROXY_SRV enabled and is currently eligible to be solicited (GATT proxy disabled, On-Demand Private Proxy enabled), with no pairing, bonding, or provisioning. The result is an attacker-controlled stack overwrite — plausibly leading to remote code execution and at minimum a reliable remote denial of service. The fix trims buf->len to the spec-fixed 17 octets (dropping the PDU if fewer remain) before decryption.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-15894",
+      "last_modified": "2026-10-07T09:17:05.157",
+      "products": [],
+      "published": "2026-10-07T09:17:05.157",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/zephyrproject-rtos/zephyr/commit/4416ad13677259d180f35ce44338578694e48184"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-x37p-38wq-cgwj"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
   },
   "CVE-2026-15896": {
     "added": "2026-10-02",
@@ -135717,6 +135866,37 @@
         {
           "tags": [],
           "url": "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-pcrr-29j7-8w57"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
+  },
+  "CVE-2026-19186": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-191",
+        "CWE-787"
+      ],
+      "description": "ieee802154_decipher_data_frame() in subsys/net/l2/ieee802154/ieee802154_frame.c computed payload_len = net_pkt_get_len(pkt) - ll_hdr_len - authtag_len without first checking that the received frame is at least ll_hdr_len + authtag_len bytes long. All three variables are uint8_t, so a frame whose payload is shorter than the configured authentication tag makes the subtraction wrap around to a large value (up to 255).\n\nThe wrapped length is passed unchanged to ieee802154_decrypt_auth() and on to the CCM operation as cipher_pkt.in_len/out_buf_max, with apkt->tag pointing at frame + ll_hdr_len + payload_len. Because the receive buffer is allocated to the exact length of the frame received from the radio driver, the crypto layer then reads several hundred bytes past the end of the packet buffer and writes the same number of decrypted bytes back over it in place. The frame's authentication tag is only verified after this processing has taken place, so no key material, association or prior authentication is needed — a single crafted short frame from any device in radio range is sufficient. Frame validation in ieee802154_validate_frame() does not prevent it: a data frame is accepted with a one-byte payload.\n\nThe result is an out-of-bounds read and an out-of-bounds write of up to roughly 240 bytes into the adjacent network-buffer pool, corrupting other packets or allocator metadata and typically faulting the target. The out-of-bounds content is not attacker-chosen (it is ciphertext XOR keystream over out-of-bounds memory) and the frame is dropped when tag verification fails, so the primary impact is memory corruption and denial of service rather than information disclosure.\n\nExposure is limited to configurations that enable the experimental CONFIG_NET_L2_IEEE802154_SECURITY option, select a crypto device via CONFIG_NET_L2_IEEE802154_SECURITY_CRYPTO_DEV_NAME, and have established a security session with a level other than IEEE802154_SECURITY_LEVEL_NONE; with security disabled or at level NONE the tag length is zero and no underflow occurs. The fix rejects frames shorter than ll_hdr_len + authtag_len before the subtraction, and adds the matching guard on the transmit side in ieee802154_create_data_frame().",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-19186",
+      "last_modified": "2026-10-07T09:17:05.290",
+      "products": [],
+      "published": "2026-10-07T09:17:05.290",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/zephyrproject-rtos/zephyr/commit/6d721de13a6026808f75578ecfee95a3592d5264"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-6x64-rwq6-j8x3"
         }
       ]
     },
@@ -205096,6 +205276,58 @@
       ]
     },
     "next_check": "2026-11-26"
+  },
+  "CVE-2026-59346": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-190"
+      ],
+      "description": "VMware Workstation and Fusion contain an integer-overflow vulnerability. A malicious actor with local administrative privileges on a virtual machine with VMXNET3 virtual network adapter may exploit this issue to execute code on the host.\n\nAffected versions:\n- VMware Workstation: 25H2, 26H1 (fixed in 26H1u1)\n- VMware Fusion: 25H2, 26H1 (fixed in 26H1u1)",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-59346",
+      "last_modified": "2026-10-07T06:16:35.543",
+      "products": [],
+      "published": "2026-10-07T06:16:35.543",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/security-advisories/0/38288"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
+  },
+  "CVE-2026-59347": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-121"
+      ],
+      "description": "VMware Workstation and Fusion contain a stack-based buffer-overflow vulnerability in HGFS. A malicious actor with local administrative privileges on a virtual machine may exploit this issue to execute code as the virtual machine's VMX process running on the host.\n\nAffected versions:\n- VMware Workstation: 25H2, 26H1 (fixed in 26H1u1)\n- VMware Fusion: 25H2, 26H1 (fixed in 26H1u1)",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-59347",
+      "last_modified": "2026-10-07T06:16:35.700",
+      "products": [],
+      "published": "2026-10-07T06:16:35.700",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/security-advisories/0/38288"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
   },
   "CVE-2026-59354": {
     "added": "2026-08-27",
@@ -369983,6 +370215,54 @@
     },
     "next_check": "2026-10-08"
   },
+  "CVE-2026-82211": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "The Nexi XPay Build WordPress plugin through 7.6.2 does not verify the payment result supplied to several of its unauthenticated routes, allowing attackers to mark arbitrary orders as paid or failed, to cancel them, and to obtain order keys which expose guest buyers' details.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82211",
+      "last_modified": "2026-10-07T07:17:01.373",
+      "products": [],
+      "published": "2026-10-07T07:17:01.373",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/c1ab38b4-2445-4a56-a47e-aab2b8e8de1e/"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
+  },
+  "CVE-2026-82212": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [],
+      "description": "The Nexi XPay Build WordPress plugin through 7.6.2 does not correctly validate the security token on its payment notification route, accepting the request when the target order has no stored token, which allows unauthenticated attackers to mark arbitrary orders as paid, or to mark genuinely paid orders as failed.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-82212",
+      "last_modified": "2026-10-07T07:17:01.493",
+      "products": [],
+      "published": "2026-10-07T07:17:01.493",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://wpscan.com/vulnerability/66df6adb-336c-4660-9a63-5e6e550a2edb/"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
+  },
   "CVE-2026-82217": {
     "added": "2026-08-31",
     "checks_done": 9,
@@ -374561,56 +374841,6 @@
       ]
     },
     "next_check": "2026-12-03"
-  },
-  "CVE-2026-82531": {
-    "added": "2026-10-06",
-    "checks_done": 1,
-    "cve": {
-      "cvss_score": 8.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-94"
-      ],
-      "description": "Smarty before 4.5.8 and 5.x before 5.8.5 contains a code injection vulnerability where the top-level nocache_hash is never restored during extends:/multi-component template inheritance, leaving it null. Attackers can supply assigned data containing a forged SmartyNocache marker that is copied verbatim into the regenerated PHP cache file, executing arbitrary PHP on include for remote code execution.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-82531",
-      "last_modified": "2026-10-06T13:16:50.180",
-      "products": [],
-      "published": "2026-10-06T13:16:50.180",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/smarty-php/smarty/commit/1cba51cb813563eb61d963c83d28cd59f26b858d"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/smarty-php/smarty/commit/c0fdd4824aca4f67e814b50703cfee1dfde41414"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/smarty-php/smarty/releases/tag/v4.5.8"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/smarty-php/smarty/releases/tag/v5.8.5"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/smarty-php/smarty/security/advisories/GHSA-3w63-v7pm-cq9x"
-        },
-        {
-          "tags": [],
-          "url": "https://www.vulncheck.com/advisories/smarty-before-4.5.8-and-5-x-before-5.8.5-php-code-injection-via-extends-inheritance-cache"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/smarty-php/smarty/security/advisories/GHSA-3w63-v7pm-cq9x"
-        }
-      ]
-    },
-    "next_check": "2026-10-08"
   },
   "CVE-2026-82533": {
     "added": "2026-09-09",
@@ -402502,32 +402732,6 @@
       ]
     },
     "next_check": "2026-12-03"
-  },
-  "CVE-2026-85102": {
-    "added": "2026-09-10",
-    "checks_done": 8,
-    "cve": {
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-295"
-      ],
-      "description": "Improper certificate trust validation during VPN negotiation in Check Point Quantum Security Gateway may allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-85102",
-      "last_modified": "2026-09-09T16:17:13.180",
-      "products": [],
-      "published": "2026-09-09T13:20:43.793",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://support.checkpoint.com/results/sk/sk1000117"
-        }
-      ]
-    },
-    "next_check": "2026-10-10"
   },
   "CVE-2026-85103": {
     "added": "2026-09-10",
@@ -435332,6 +435536,60 @@
     },
     "next_check": "2026-10-18"
   },
+  "CVE-2026-89417": {
+    "added": "2026-10-07",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-79"
+      ],
+      "description": "The OMGF | GDPR/DSGVO Compliant, Faster Google Fonts. Easy. plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 's' Search Parameter via comments-atom Feed in all versions up to, and including, 6.3.10 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Successful exploitation requires that the front-end server serves the retained .tmp file without a Content-Type or X-Content-Type-Options header, enabling MIME-sniffing browsers such as Chromium to execute the injected script — a condition present by default on many Apache and nginx/php-fpm deployments.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-89417",
+      "last_modified": "2026-10-07T09:17:05.817",
+      "products": [],
+      "published": "2026-10-07T09:17:05.817",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/host-webfonts-local/tags/6.3.10/src/Download.php#L78"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/host-webfonts-local/tags/6.3.10/src/Frontend/Process.php#L411"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/host-webfonts-local/tags/6.3.10/src/Frontend/Process.php#L663"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/host-webfonts-local/tags/6.3.10/src/Optimize.php#L159"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/browser/host-webfonts-local/tags/6.3.10/src/Optimize.php#L411"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset/3707539/host-webfonts-local/trunk/src/Frontend/Process.php"
+        },
+        {
+          "tags": [],
+          "url": "https://plugins.trac.wordpress.org/changeset?reponame=&new=3707539%40host-webfonts-local%2Ftags%2F6.3.11&old=3641590%40host-webfonts-local%2Ftags%2F6.3.10"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/cd760ff9-fe72-44d6-a5f0-212a20dd2a51?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-08"
+  },
   "CVE-2026-89424": {
     "added": "2026-10-01",
     "checks_done": 6,
@@ -464926,36 +465184,6 @@
       ]
     },
     "next_check": "2026-10-09"
-  },
-  "CVE-2026-93355": {
-    "added": "2026-09-29",
-    "checks_done": 7,
-    "cve": {
-      "cvss_score": 8.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-1390"
-      ],
-      "description": "LiteLLM contains a weak authentication vulnerability that allows an attacker holding a valid JWT from the configured identity provider to authenticate as any existing user by exploiting an email-based fallback lookup in the JWT authentication flow without verifying the email_verified claim. Attackers can present a token with an unverified email address matching a victim's account to inherit the victim's role, including proxy_admin privileges, and permanently overwrite the victim's stored identity binding to retain persistent unauthorized access to administrative endpoints exposing API keys and user management.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-93355",
-      "last_modified": "2026-09-28T20:17:11.547",
-      "products": [],
-      "published": "2026-09-28T20:17:11.547",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://www.ox.security/blog/litellm-an-ordinary-login-token-can-become-someone-elses-admin-account/"
-        },
-        {
-          "tags": [],
-          "url": "https://www.vulncheck.com/advisories/litellm-weak-jwt-authentication-via-email-based-user-lookup"
-        }
-      ]
-    },
-    "next_check": "2026-10-13"
   },
   "CVE-2026-9336": {
     "added": "2026-09-11",
