@@ -3131,15 +3131,6 @@
     "poc_source": "github_search",
     "published": "2024-02-27T16:15:45.643"
   },
-  "CVE-2024-1651": {
-    "cvss_score": 10.0,
-    "cvss_severity": "CRITICAL",
-    "kev": false,
-    "poc_confirmed_date": "2026-08-23",
-    "poc_published_date": "2024-02-23",
-    "poc_source": "github_search",
-    "published": "2024-02-20T00:15:14.847"
-  },
   "CVE-2024-1709": {
     "cvss_score": 10.0,
     "cvss_severity": "CRITICAL",
