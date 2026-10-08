@@ -76289,45 +76289,6 @@
     },
     "next_check": "2026-10-09"
   },
-  "CVE-2026-105192": {
-    "added": "2026-10-08",
-    "checks_done": 0,
-    "cve": {
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "cvss_version": "3.1",
-      "cwe_ids": [
-        "CWE-306",
-        "CWE-502"
-      ],
-      "description": "LMCache multiprocess mode, also called distributed mode, opens an unauthenticated ZeroMQ ROUTER so worker processes can register and share KV cache blocks. Messages on that socket are msgpack. Extension code 1 is passed to DeviceIPCWrapper.Deserialize, which calls pickle.loads, while the server is still decoding request arguments and before the handler runs. A single unauthenticated ZMQ DEALER message to the transport port (default 5555) therefore executes code as the user the LMCache process runs as. Official container images run that process as root. The transport binds to localhost unless the operator sets a routable address with --host, which is how multi-node deployments let peers connect.",
-      "has_exploit_tag": false,
-      "id": "CVE-2026-105192",
-      "last_modified": "2026-10-07T18:17:15.427",
-      "products": [],
-      "published": "2026-10-07T10:17:32.647",
-      "references": [
-        {
-          "tags": [],
-          "url": "https://github.com/LMCache/LMCache"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/LMCache/LMCache/blob/v0.3.9/lmcache/v1/multiprocess/custom_types.py"
-        },
-        {
-          "tags": [],
-          "url": "https://github.com/LMCache/LMCache/blob/v0.5.5/lmcache/v1/platform/base/ipc_wrapper.py"
-        },
-        {
-          "tags": [],
-          "url": "https://pypi.org/project/lmcache/"
-        }
-      ]
-    },
-    "next_check": "2026-10-09"
-  },
   "CVE-2026-105207": {
     "added": "2026-10-05",
     "checks_done": 3,
@@ -88533,6 +88494,40 @@
         {
           "tags": [],
           "url": "https://github.com/containerd/overlaybd/pull/438"
+        }
+      ]
+    },
+    "next_check": "2026-10-09"
+  },
+  "CVE-2026-107450": {
+    "added": "2026-10-08",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-863"
+      ],
+      "description": "In Stump through 0.1.10, the updateSmartList and deleteSmartList GraphQL mutations (crates/graphql/src/mutation/smart_lists.rs) depend only on the shared AccessSmartList permission and resolve the target list at Reader access (lacking a creator check). Any authenticated user with that permission can overwrite, delete, or take over another user's smart list. (updateSmartList sets creatorId to the caller identity, and can set visibility to PRIVATE, locking out the original owner.) NOTE: this is unrelated to the graphql crate on crates.io.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-107450",
+      "last_modified": "2026-10-08T05:17:04.477",
+      "products": [],
+      "published": "2026-10-08T05:17:04.477",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://crates.io/crates/graphql"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/kashishtopi/stump-smartlist-bola"
+        },
+        {
+          "tags": [],
+          "url": "https://github.com/stumpapp/stump/blob/42a9918/crates/graphql/src/mutation/smart_lists.rs"
         }
       ]
     },
@@ -114882,6 +114877,36 @@
     },
     "next_check": "2026-11-19"
   },
+  "CVE-2026-17196": {
+    "added": "2026-10-08",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "The Super Forms – Drag & Drop Form Builder plugin for WordPress is vulnerable to Unrestricted File Type Upload in all versions up to, and including, 6.3.316 via the upload_files function. This is due to missing file type validation in the upload_files function, which reads and applies an attacker-controlled extensions string from _super_elements post meta verbatim as the allowed MIME type map. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload files that may be executable, which makes remote code execution possible. The attack requires a preceding step: poisoning the _super_elements post meta via the super_save_form AJAX handler, which lacks a capability and nonce check but requires the attacker to be authenticated as at minimum a Subscriber-level user; the subsequent file upload via super_upload_files requires no authentication at all.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-17196",
+      "last_modified": "2026-10-08T05:17:04.657",
+      "products": [],
+      "published": "2026-10-08T05:17:04.657",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/RensTillmann/super-forms/pull/205"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/63db136b-58da-4758-a506-4dc79b3c177d?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-09"
+  },
   "CVE-2026-17197": {
     "added": "2026-08-14",
     "checks_done": 9,
@@ -116977,6 +117002,36 @@
       ]
     },
     "next_check": "2026-11-15"
+  },
+  "CVE-2026-17609": {
+    "added": "2026-10-08",
+    "checks_done": 0,
+    "cve": {
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+      "cvss_version": "3.1",
+      "cwe_ids": [
+        "CWE-434"
+      ],
+      "description": "The Super Forms – Drag & Drop Form Builder plugin for WordPress is vulnerable to Arbitrary Directory Deletion in all versions up to, and including, 6.3.316 via the submit_form function. This is due to insufficient validation of attacker-controlled JSON field declarations against the actual form schema, combined with a non-effective ABSPATH guard that dirname() trivially bypasses by stripping the trailing slash. This makes it possible for unauthenticated attackers to recursively delete arbitrary directories on the server, including the WordPress root directory. Exploitation requires that an administrator has enabled the 'Delete files from server after form submissions' setting, though this is a documented and commonly-enabled feature.",
+      "has_exploit_tag": false,
+      "id": "CVE-2026-17609",
+      "last_modified": "2026-10-08T05:17:04.793",
+      "products": [],
+      "published": "2026-10-08T05:17:04.793",
+      "references": [
+        {
+          "tags": [],
+          "url": "https://github.com/RensTillmann/super-forms/pull/205"
+        },
+        {
+          "tags": [],
+          "url": "https://www.wordfence.com/threat-intel/vulnerabilities/id/f21577b4-b7c6-4b39-b2b7-66a75c5f56fb?source=cve"
+        }
+      ]
+    },
+    "next_check": "2026-10-09"
   },
   "CVE-2026-17613": {
     "added": "2026-08-06",
