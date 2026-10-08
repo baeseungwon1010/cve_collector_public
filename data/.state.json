@@ -770,5 +770,6 @@
     "CVE-2026-96940"
   ],
   "study_scan_index": 7730,
-  "study_severity_index": 0
+  "study_severity_index": 0,
+  "verify_scan_index": 300
 }
