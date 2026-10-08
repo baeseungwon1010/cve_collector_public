@@ -1,5 +1,83 @@
 {
-  "CVE-2026-32267": {
-    "package": "COMPOSER:craftcms/cms"
+  "CVE-2026-105681": {
+    "package": "NPM:ghost"
+  },
+  "CVE-2026-105741": {
+    "package": "PIP:langflow"
+  },
+  "CVE-2026-106100": {
+    "package": "NPM:@payloadcms/db-mongodb"
+  },
+  "CVE-2026-106102": {
+    "package": "NPM:quasar"
+  },
+  "CVE-2026-106103": {
+    "package": "NPM:@quasar/icongenie"
+  },
+  "CVE-2026-106104": {
+    "package": "NPM:quasar"
+  },
+  "CVE-2026-106105": {
+    "package": "NPM:@quasar/app-vite"
+  },
+  "CVE-2026-106106": {
+    "package": "NPM:@quasar/app-vite"
+  },
+  "CVE-2026-106107": {
+    "package": "NPM:@quasar/app-vite"
+  },
+  "CVE-2026-106108": {
+    "package": "NPM:@quasar/app-vite"
+  },
+  "CVE-2026-106109": {
+    "package": "NPM:@quasar/app-vite"
+  },
+  "CVE-2026-106117": {
+    "package": "NUGET:ImageSharp"
+  },
+  "CVE-2026-106118": {
+    "package": "NUGET:ImageSharp"
+  },
+  "CVE-2026-106120": {
+    "package": "NPM:liquidjs"
+  },
+  "CVE-2026-106123": {
+    "package": "MAVEN:com.rabbitmq:amqp-client"
+  },
+  "CVE-2026-106500": {
+    "package": "NPM:@backstage/plugin-scaffolder-backend"
+  },
+  "CVE-2026-106501": {
+    "package": "NPM:@backstage/plugin-scaffolder-backend"
+  },
+  "CVE-2026-106503": {
+    "package": "NPM:@backstage/plugin-scaffolder-backend"
+  },
+  "CVE-2026-106504": {
+    "package": "NPM:@backstage/plugin-scaffolder-backend"
+  },
+  "CVE-2026-106505": {
+    "package": "NPM:@backstage/plugin-techdocs-node"
+  },
+  "CVE-2026-106509": {
+    "package": "NPM:@backstage/plugin-techdocs-node"
+  },
+  "CVE-2026-106557": {
+    "package": "NPM:@backstage/plugin-techdocs-node"
+  },
+  "CVE-2026-47110": {
+    "package": "COMPOSER:ueberdosis/tiptap-php"
+  },
+  "CVE-2026-61436": {
+    "package": "PIP:praisonai"
+  },
+  "CVE-2026-62251": {
+    "package": "GO:github.com/sipcapture/homer-app"
+  },
+  "CVE-2026-62252": {
+    "package": "GO:github.com/sipcapture/homer-app"
+  },
+  "CVE-2026-62253": {
+    "package": "GO:github.com/sipcapture/homer-app"
   }
 }
