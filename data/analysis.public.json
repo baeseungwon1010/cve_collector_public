@@ -1,104 +1,95 @@
 {
-  "CVE-2026-104890": {
-    "package": "COMPOSER:kunstmaan/bundles-cms"
-  },
-  "CVE-2026-104891": {
-    "package": "NPM:@insumermodel/mppx-token-gate"
-  },
-  "CVE-2026-105680": {
+  "CVE-2026-105649": {
     "package": "NPM:ghost"
   },
-  "CVE-2026-106110": {
-    "package": "NUGET:SixLabors.ImageSharp"
+  "CVE-2026-105650": {
+    "package": "NPM:ghost"
   },
-  "CVE-2026-106112": {
-    "package": "NUGET:SixLabors.ImageSharp"
+  "CVE-2026-105651": {
+    "package": "NPM:ghost"
   },
-  "CVE-2026-106113": {
-    "package": "NUGET:SixLabors.ImageSharp"
+  "CVE-2026-105675": {
+    "package": "NPM:ghost"
   },
-  "CVE-2026-106115": {
-    "package": "NUGET:SixLabors.ImageSharp"
+  "CVE-2026-105677": {
+    "package": "NPM:ghost"
   },
-  "CVE-2026-106439": {
-    "package": "PIP:hydra-core"
+  "CVE-2026-105679": {
+    "package": "NPM:ghost"
   },
-  "CVE-2026-106440": {
-    "package": "PIP:hydra-optuna-sweeper"
+  "CVE-2026-105697": {
+    "package": "PIP:lfx"
   },
-  "CVE-2026-106441": {
-    "package": "PIP:hydra-core"
+  "CVE-2026-105699": {
+    "package": "PIP:langflow"
   },
-  "CVE-2026-106442": {
-    "package": "PIP:hydra-core"
+  "CVE-2026-105744": {
+    "package": "PIP:docling-slim"
   },
-  "CVE-2026-106443": {
-    "package": "PIP:WeasyPrint"
+  "CVE-2026-105745": {
+    "package": "PIP:docling-slim"
   },
-  "CVE-2026-106459": {
-    "package": "NPM:@backstage/plugin-scaffolder-backend-module-sentry"
+  "CVE-2026-105749": {
+    "package": "PIP:docling-slim"
   },
-  "CVE-2026-106460": {
-    "package": "NPM:@backstage/plugin-auth-node"
+  "CVE-2026-105856": {
+    "package": "NPM:@payloadcms/db-d1-sqlite"
   },
-  "CVE-2026-106462": {
-    "package": "NPM:@backstage/plugin-scaffolder-backend-module-bitbucket-server"
+  "CVE-2026-105857": {
+    "package": "NPM:@payloadcms/plugin-form-builder"
   },
-  "CVE-2026-106486": {
-    "package": "NPM:@backstage/plugin-scaffolder-backend-module-bitbucket-server"
+  "CVE-2026-105858": {
+    "package": "NPM:payload"
   },
-  "CVE-2026-106488": {
-    "package": "NPM:@backstage/plugin-auth-backend-module-oidc-provider"
+  "CVE-2026-105859": {
+    "package": "NPM:payload"
   },
-  "CVE-2026-106489": {
-    "package": "NPM:@backstage/plugin-techdocs-backend"
+  "CVE-2026-105860": {
+    "package": "NPM:@payloadcms/plugin-multi-tenant"
   },
-  "CVE-2026-106490": {
-    "package": "NPM:@backstage/plugin-techdocs-backend"
+  "CVE-2026-105861": {
+    "package": "NPM:payload"
   },
-  "CVE-2026-106491": {
-    "package": "NPM:@backstage/plugin-proxy-backend"
+  "CVE-2026-105862": {
+    "package": "NPM:payload"
   },
-  "CVE-2026-106492": {
-    "package": "NPM:@backstage/backend-defaults"
+  "CVE-2026-105863": {
+    "package": "NPM:payload"
   },
-  "CVE-2026-106498": {
-    "package": "NPM:@backstage/plugin-catalog-backend"
+  "CVE-2026-105864": {
+    "package": "NPM:@payloadcms/plugin-multi-tenant"
   },
-  "CVE-2026-106510": {
+  "CVE-2026-105865": {
+    "package": "NPM:payload"
+  },
+  "CVE-2026-105866": {
+    "package": "NPM:payload"
+  },
+  "CVE-2026-105867": {
+    "package": "NPM:@payloadcms/storage-s3"
+  },
+  "CVE-2026-105868": {
+    "package": "NPM:payload"
+  },
+  "CVE-2026-106122": {
+    "package": "MAVEN:com.rabbitmq:amqp-client"
+  },
+  "CVE-2026-106451": {
+    "package": "MAVEN:org.lz4:lz4-java"
+  },
+  "CVE-2026-106455": {
     "package": "NPM:@backstage/plugin-techdocs-node"
   },
-  "CVE-2026-106558": {
-    "package": "NPM:@backstage/plugin-techdocs-node"
+  "CVE-2026-106457": {
+    "package": "NPM:@backstage/plugin-auth-backend-module-cloudflare-access-provider"
   },
-  "CVE-2026-106559": {
-    "package": "NPM:@backstage/plugin-scaffolder-backend-module-confluence-to-markdown"
+  "CVE-2026-106458": {
+    "package": "NPM:@backstage/plugin-catalog-backend-module-bitbucket-server"
   },
-  "CVE-2026-106560": {
-    "package": "NPM:@backstage/plugin-scaffolder-backend-module-confluence-to-markdown"
+  "CVE-2026-82533": {
+    "package": "NPM:@deepseek-ai/dsh-client-connection"
   },
-  "CVE-2026-107217": {
-    "package": "GO:github.com/xuri/excelize"
-  },
-  "CVE-2026-107219": {
-    "package": "GO:github.com/xuri/excelize/v2"
-  },
-  "CVE-2026-107220": {
-    "package": "GO:github.com/xuri/excelize/v2"
-  },
-  "CVE-2026-107221": {
-    "package": "GO:github.com/xuri/excelize/v2"
-  },
-  "CVE-2026-107222": {
-    "package": "GO:github.com/xuri/excelize/v2"
-  },
-  "CVE-2026-107223": {
-    "package": "GO:github.com/xuri/excelize/v2"
-  },
-  "CVE-2026-107224": {
-    "package": "GO:github.com/xuri/excelize/v2"
-  },
-  "CVE-2026-107225": {
-    "package": "GO:github.com/xuri/excelize/v2"
+  "CVE-2026-94483": {
+    "package": "NPM:next"
   }
 }
