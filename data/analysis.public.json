@@ -1,95 +1,95 @@
 {
-  "CVE-2026-105649": {
-    "package": "NPM:ghost"
+  "CVE-2026-102676": {
+    "package": "NPM:electron"
   },
-  "CVE-2026-105650": {
-    "package": "NPM:ghost"
-  },
-  "CVE-2026-105651": {
-    "package": "NPM:ghost"
-  },
-  "CVE-2026-105675": {
-    "package": "NPM:ghost"
-  },
-  "CVE-2026-105677": {
-    "package": "NPM:ghost"
-  },
-  "CVE-2026-105679": {
-    "package": "NPM:ghost"
-  },
-  "CVE-2026-105697": {
-    "package": "PIP:lfx"
-  },
-  "CVE-2026-105699": {
+  "CVE-2026-10561": {
     "package": "PIP:langflow"
   },
-  "CVE-2026-105744": {
-    "package": "PIP:docling-slim"
+  "CVE-2026-105644": {
+    "package": "NPM:ghost"
   },
-  "CVE-2026-105745": {
-    "package": "PIP:docling-slim"
+  "CVE-2026-107212": {
+    "package": "GO:github.com/xuri/excelize/v2"
   },
-  "CVE-2026-105749": {
-    "package": "PIP:docling-slim"
+  "CVE-2026-107213": {
+    "package": "GO:github.com/xuri/excelize/v2"
   },
-  "CVE-2026-105856": {
-    "package": "NPM:@payloadcms/db-d1-sqlite"
+  "CVE-2026-107214": {
+    "package": "GO:github.com/xuri/excelize/v2"
   },
-  "CVE-2026-105857": {
-    "package": "NPM:@payloadcms/plugin-form-builder"
+  "CVE-2026-107215": {
+    "package": "GO:github.com/xuri/excelize/v2"
   },
-  "CVE-2026-105858": {
-    "package": "NPM:payload"
+  "CVE-2026-107216": {
+    "package": "GO:github.com/xuri/excelize/v2"
   },
-  "CVE-2026-105859": {
-    "package": "NPM:payload"
+  "CVE-2026-107226": {
+    "package": "MAVEN:org.asynchttpclient:async-http-client"
   },
-  "CVE-2026-105860": {
-    "package": "NPM:@payloadcms/plugin-multi-tenant"
+  "CVE-2026-107227": {
+    "package": "MAVEN:org.asynchttpclient:async-http-client"
   },
-  "CVE-2026-105861": {
-    "package": "NPM:payload"
+  "CVE-2026-107228": {
+    "package": "MAVEN:org.asynchttpclient:async-http-client"
   },
-  "CVE-2026-105862": {
-    "package": "NPM:payload"
+  "CVE-2026-107230": {
+    "package": "MAVEN:org.asynchttpclient:async-http-client"
   },
-  "CVE-2026-105863": {
-    "package": "NPM:payload"
+  "CVE-2026-107231": {
+    "package": "MAVEN:org.asynchttpclient:async-http-client"
   },
-  "CVE-2026-105864": {
-    "package": "NPM:@payloadcms/plugin-multi-tenant"
+  "CVE-2026-107280": {
+    "package": "MAVEN:org.asynchttpclient:async-http-client"
   },
-  "CVE-2026-105865": {
-    "package": "NPM:payload"
+  "CVE-2026-107282": {
+    "package": "MAVEN:org.asynchttpclient:async-http-client"
   },
-  "CVE-2026-105866": {
-    "package": "NPM:payload"
+  "CVE-2026-107289": {
+    "package": "PIP:pydantic-ai-slim"
   },
-  "CVE-2026-105867": {
-    "package": "NPM:@payloadcms/storage-s3"
+  "CVE-2026-107290": {
+    "package": "PIP:pydantic-ai-slim"
   },
-  "CVE-2026-105868": {
-    "package": "NPM:payload"
+  "CVE-2026-107291": {
+    "package": "PIP:pydantic-ai-slim"
   },
-  "CVE-2026-106122": {
-    "package": "MAVEN:com.rabbitmq:amqp-client"
+  "CVE-2026-107292": {
+    "package": "PIP:pydantic-ai-slim"
   },
-  "CVE-2026-106451": {
-    "package": "MAVEN:org.lz4:lz4-java"
+  "CVE-2026-107293": {
+    "package": "PIP:pydantic-ai-slim"
   },
-  "CVE-2026-106455": {
-    "package": "NPM:@backstage/plugin-techdocs-node"
+  "CVE-2026-107294": {
+    "package": "PIP:pydantic-ai-slim"
   },
-  "CVE-2026-106457": {
-    "package": "NPM:@backstage/plugin-auth-backend-module-cloudflare-access-provider"
+  "CVE-2026-107295": {
+    "package": "PIP:pydantic-ai-slim"
   },
-  "CVE-2026-106458": {
-    "package": "NPM:@backstage/plugin-catalog-backend-module-bitbucket-server"
+  "CVE-2026-107300": {
+    "package": "NPM:msgpack5"
   },
-  "CVE-2026-82533": {
-    "package": "NPM:@deepseek-ai/dsh-client-connection"
+  "CVE-2026-107301": {
+    "package": "NPM:msgpack5"
   },
-  "CVE-2026-94483": {
-    "package": "NPM:next"
+  "CVE-2026-25160": {
+    "package": "GO:github.com/alist-org/alist/v3"
+  },
+  "CVE-2026-25161": {
+    "package": "GO:github.com/alist-org/alist/v3"
+  },
+  "CVE-2026-27483": {
+    "package": "PIP:mindsdb"
+  },
+  "CVE-2026-60089": {
+    "package": "PIP:praisonaiagents"
+  },
+  "CVE-2026-60090": {
+    "package": "PIP:praisonai"
+  },
+  "CVE-2026-61539": {
+    "package": "PIP:xinference"
+  },
+  "CVE-2026-92951": {
+    "package": "NPM:vm2"
   }
 }
