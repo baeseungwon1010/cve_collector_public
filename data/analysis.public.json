@@ -1,95 +1,98 @@
 {
-  "CVE-2026-102676": {
-    "package": "NPM:electron"
+  "CVE-2026-106119": {
+    "package": "NPM:@langchain/mongodb"
   },
-  "CVE-2026-10561": {
-    "package": "PIP:langflow"
+  "CVE-2026-106445": {
+    "package": "NPM:handlebars"
   },
-  "CVE-2026-105644": {
-    "package": "NPM:ghost"
+  "CVE-2026-106446": {
+    "package": "NPM:handlebars"
   },
-  "CVE-2026-107212": {
+  "CVE-2026-107211": {
     "package": "GO:github.com/xuri/excelize/v2"
   },
-  "CVE-2026-107213": {
-    "package": "GO:github.com/xuri/excelize/v2"
-  },
-  "CVE-2026-107214": {
-    "package": "GO:github.com/xuri/excelize/v2"
-  },
-  "CVE-2026-107215": {
-    "package": "GO:github.com/xuri/excelize/v2"
-  },
-  "CVE-2026-107216": {
-    "package": "GO:github.com/xuri/excelize/v2"
-  },
-  "CVE-2026-107226": {
-    "package": "MAVEN:org.asynchttpclient:async-http-client"
-  },
-  "CVE-2026-107227": {
-    "package": "MAVEN:org.asynchttpclient:async-http-client"
-  },
-  "CVE-2026-107228": {
-    "package": "MAVEN:org.asynchttpclient:async-http-client"
-  },
-  "CVE-2026-107230": {
-    "package": "MAVEN:org.asynchttpclient:async-http-client"
-  },
-  "CVE-2026-107231": {
-    "package": "MAVEN:org.asynchttpclient:async-http-client"
-  },
-  "CVE-2026-107280": {
-    "package": "MAVEN:org.asynchttpclient:async-http-client"
-  },
-  "CVE-2026-107282": {
-    "package": "MAVEN:org.asynchttpclient:async-http-client"
-  },
-  "CVE-2026-107289": {
+  "CVE-2026-107286": {
     "package": "PIP:pydantic-ai-slim"
   },
-  "CVE-2026-107290": {
+  "CVE-2026-107287": {
     "package": "PIP:pydantic-ai-slim"
   },
-  "CVE-2026-107291": {
-    "package": "PIP:pydantic-ai-slim"
-  },
-  "CVE-2026-107292": {
-    "package": "PIP:pydantic-ai-slim"
-  },
-  "CVE-2026-107293": {
-    "package": "PIP:pydantic-ai-slim"
-  },
-  "CVE-2026-107294": {
-    "package": "PIP:pydantic-ai-slim"
-  },
-  "CVE-2026-107295": {
-    "package": "PIP:pydantic-ai-slim"
-  },
-  "CVE-2026-107300": {
+  "CVE-2026-107302": {
     "package": "NPM:msgpack5"
   },
-  "CVE-2026-107301": {
-    "package": "NPM:msgpack5"
+  "CVE-2026-107303": {
+    "package": "NPM:react-jhipster"
   },
-  "CVE-2026-25160": {
-    "package": "GO:github.com/alist-org/alist/v3"
+  "CVE-2026-107375": {
+    "package": "NPM:generator-jhipster"
   },
-  "CVE-2026-25161": {
-    "package": "GO:github.com/alist-org/alist/v3"
+  "CVE-2026-107377": {
+    "package": "PIP:datamodel-code-generator"
   },
-  "CVE-2026-27483": {
-    "package": "PIP:mindsdb"
+  "CVE-2026-107378": {
+    "package": "PIP:cairosvg"
   },
-  "CVE-2026-60089": {
-    "package": "PIP:praisonaiagents"
+  "CVE-2026-107379": {
+    "package": "COMPOSER:enshrined/svg-sanitize"
   },
-  "CVE-2026-60090": {
+  "CVE-2026-107381": {
+    "package": "COMPOSER:enshrined/svg-sanitize"
+  },
+  "CVE-2026-107383": {
+    "package": "NPM:mariadb"
+  },
+  "CVE-2026-107384": {
+    "package": "NPM:mariadb"
+  },
+  "CVE-2026-107385": {
+    "package": "NPM:mariadb"
+  },
+  "CVE-2026-107386": {
+    "package": "GO:github.com/rabbitmq/amqp091-go"
+  },
+  "CVE-2026-107387": {
+    "package": "NPM:music-metadata"
+  },
+  "CVE-2026-107388": {
+    "package": "NPM:music-metadata"
+  },
+  "CVE-2026-107389": {
+    "package": "NPM:music-metadata"
+  },
+  "CVE-2026-107391": {
+    "package": "NPM:music-metadata"
+  },
+  "CVE-2026-107392": {
+    "package": "NPM:music-metadata"
+  },
+  "CVE-2026-107399": {
+    "package": "RUBYGEMS:mechanize"
+  },
+  "CVE-2026-107715": {
+    "package": "RUBYGEMS:mechanize"
+  },
+  "CVE-2026-107720": {
+    "package": "NPM:fast-jwt"
+  },
+  "CVE-2026-107722": {
+    "package": "NPM:fast-jwt"
+  },
+  "CVE-2026-107723": {
+    "package": "NPM:fast-jwt"
+  },
+  "CVE-2026-107724": {
+    "package": "NPM:fast-jwt"
+  },
+  "CVE-2026-61433": {
     "package": "PIP:praisonai"
   },
-  "CVE-2026-61539": {
-    "package": "PIP:xinference"
+  "CVE-2026-61435": {
+    "package": "PIP:praisonai"
   },
-  "CVE-2026-92951": {
-    "package": "NPM:vm2"
+  "CVE-2026-61440": {
+    "package": "PIP:praisonai-platform"
+  },
+  "CVE-2026-61442": {
+    "package": "PIP:praisonai-platform"
   }
 }
