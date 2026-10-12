@@ -4679,15 +4679,6 @@
     "poc_source": "github_search",
     "published": "2026-08-06T08:16:29.780"
   },
-  "CVE-2026-18718": {
-    "cvss_score": 7.0,
-    "cvss_severity": "HIGH",
-    "kev": false,
-    "poc_confirmed_date": "2026-08-07",
-    "poc_published_date": "2026-08-03",
-    "poc_source": "github_search",
-    "published": "2026-08-03T17:16:36.447"
-  },
   "CVE-2026-18729": {
     "cvss_score": 8.8,
     "cvss_severity": "HIGH",
