@@ -1,98 +1,89 @@
 {
-  "CVE-2026-106119": {
-    "package": "NPM:@langchain/mongodb"
+  "CVE-2026-105697": {
+    "package": "PIP:lfx"
   },
-  "CVE-2026-106445": {
-    "package": "NPM:handlebars"
+  "CVE-2026-107394": {
+    "package": "PIP:indico"
   },
-  "CVE-2026-106446": {
-    "package": "NPM:handlebars"
+  "CVE-2026-107716": {
+    "package": "PIP:banks"
   },
-  "CVE-2026-107211": {
-    "package": "GO:github.com/xuri/excelize/v2"
+  "CVE-2026-107717": {
+    "package": "PIP:banks"
   },
-  "CVE-2026-107286": {
-    "package": "PIP:pydantic-ai-slim"
+  "CVE-2026-107718": {
+    "package": "NPM:@adonisjs/http-server"
   },
-  "CVE-2026-107287": {
-    "package": "PIP:pydantic-ai-slim"
+  "CVE-2026-107725": {
+    "package": "MAVEN:com.hazelcast:hazelcast"
   },
-  "CVE-2026-107302": {
-    "package": "NPM:msgpack5"
+  "CVE-2026-107726": {
+    "package": "MAVEN:com.hazelcast:hazelcast"
   },
-  "CVE-2026-107303": {
-    "package": "NPM:react-jhipster"
+  "CVE-2026-107728": {
+    "package": "PIP:strawberry-graphql"
   },
-  "CVE-2026-107375": {
-    "package": "NPM:generator-jhipster"
+  "CVE-2026-107806": {
+    "package": "GO:github.com/0xJacky/Nginx-UI"
   },
-  "CVE-2026-107377": {
-    "package": "PIP:datamodel-code-generator"
+  "CVE-2026-107807": {
+    "package": "GO:github.com/0xJacky/Nginx-UI"
   },
-  "CVE-2026-107378": {
-    "package": "PIP:cairosvg"
+  "CVE-2026-107808": {
+    "package": "GO:github.com/0xJacky/Nginx-UI"
   },
-  "CVE-2026-107379": {
-    "package": "COMPOSER:enshrined/svg-sanitize"
+  "CVE-2026-107809": {
+    "package": "GO:github.com/0xJacky/Nginx-UI"
   },
-  "CVE-2026-107381": {
-    "package": "COMPOSER:enshrined/svg-sanitize"
+  "CVE-2026-107810": {
+    "package": "GO:github.com/0xJacky/Nginx-UI"
   },
-  "CVE-2026-107383": {
-    "package": "NPM:mariadb"
+  "CVE-2026-107811": {
+    "package": "GO:github.com/0xJacky/Nginx-UI"
   },
-  "CVE-2026-107384": {
-    "package": "NPM:mariadb"
+  "CVE-2026-107812": {
+    "package": "GO:github.com/0xJacky/Nginx-UI"
   },
-  "CVE-2026-107385": {
-    "package": "NPM:mariadb"
+  "CVE-2026-107813": {
+    "package": "GO:github.com/0xJacky/Nginx-UI"
   },
-  "CVE-2026-107386": {
-    "package": "GO:github.com/rabbitmq/amqp091-go"
+  "CVE-2026-107826": {
+    "package": "GO:github.com/corazawaf/coraza/v3"
   },
-  "CVE-2026-107387": {
-    "package": "NPM:music-metadata"
+  "CVE-2026-107839": {
+    "package": "GO:github.com/luskaner/ageLANServer/server"
   },
-  "CVE-2026-107388": {
-    "package": "NPM:music-metadata"
+  "CVE-2026-107840": {
+    "package": "GO:github.com/jhaals/yopass"
   },
-  "CVE-2026-107389": {
-    "package": "NPM:music-metadata"
+  "CVE-2026-48484": {
+    "package": "PIP:pyload-ng"
   },
-  "CVE-2026-107391": {
-    "package": "NPM:music-metadata"
+  "CVE-2026-55797": {
+    "package": "GO:github.com/argoproj/argo-cd/v3"
   },
-  "CVE-2026-107392": {
-    "package": "NPM:music-metadata"
+  "CVE-2026-57458": {
+    "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-107399": {
-    "package": "RUBYGEMS:mechanize"
+  "CVE-2026-62367": {
+    "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-107715": {
-    "package": "RUBYGEMS:mechanize"
+  "CVE-2026-62376": {
+    "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-107720": {
-    "package": "NPM:fast-jwt"
+  "CVE-2026-68581": {
+    "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-107722": {
-    "package": "NPM:fast-jwt"
+  "CVE-2026-91982": {
+    "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-107723": {
-    "package": "NPM:fast-jwt"
+  "CVE-2026-91983": {
+    "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-107724": {
-    "package": "NPM:fast-jwt"
+  "CVE-2026-91984": {
+    "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-61433": {
-    "package": "PIP:praisonai"
-  },
-  "CVE-2026-61435": {
-    "package": "PIP:praisonai"
-  },
-  "CVE-2026-61440": {
-    "package": "PIP:praisonai-platform"
-  },
-  "CVE-2026-61442": {
-    "package": "PIP:praisonai-platform"
+  "CVE-2026-91985": {
+    "package": "GO:code.vikunja.io/api"
   }
 }
