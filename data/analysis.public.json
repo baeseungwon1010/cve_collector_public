@@ -1,89 +1,56 @@
 {
-  "CVE-2026-105697": {
-    "package": "PIP:lfx"
+  "CVE-2026-102827": {
+    "package": "NPM:simple-git"
   },
-  "CVE-2026-107394": {
-    "package": "PIP:indico"
+  "CVE-2026-106117": {
+    "package": "NUGET:ImageSharp"
   },
-  "CVE-2026-107716": {
-    "package": "PIP:banks"
+  "CVE-2026-106445": {
+    "package": "NPM:handlebars"
   },
-  "CVE-2026-107717": {
-    "package": "PIP:banks"
-  },
-  "CVE-2026-107718": {
-    "package": "NPM:@adonisjs/http-server"
-  },
-  "CVE-2026-107725": {
-    "package": "MAVEN:com.hazelcast:hazelcast"
-  },
-  "CVE-2026-107726": {
-    "package": "MAVEN:com.hazelcast:hazelcast"
-  },
-  "CVE-2026-107728": {
-    "package": "PIP:strawberry-graphql"
-  },
-  "CVE-2026-107806": {
+  "CVE-2026-107805": {
     "package": "GO:github.com/0xJacky/Nginx-UI"
   },
-  "CVE-2026-107807": {
-    "package": "GO:github.com/0xJacky/Nginx-UI"
+  "CVE-2026-107845": {
+    "package": "COMPOSER:contao/comments-bundle"
   },
-  "CVE-2026-107808": {
-    "package": "GO:github.com/0xJacky/Nginx-UI"
+  "CVE-2026-108258": {
+    "package": "PIP:shiny"
   },
-  "CVE-2026-107809": {
-    "package": "GO:github.com/0xJacky/Nginx-UI"
+  "CVE-2026-108259": {
+    "package": "NPM:@tinacms/cli"
   },
-  "CVE-2026-107810": {
-    "package": "GO:github.com/0xJacky/Nginx-UI"
+  "CVE-2026-108260": {
+    "package": "NPM:@tinacms/web-components"
   },
-  "CVE-2026-107811": {
-    "package": "GO:github.com/0xJacky/Nginx-UI"
+  "CVE-2026-108261": {
+    "package": "NPM:@tinacms/app"
   },
-  "CVE-2026-107812": {
-    "package": "GO:github.com/0xJacky/Nginx-UI"
+  "CVE-2026-73557": {
+    "package": "PIP:vllm"
   },
-  "CVE-2026-107813": {
-    "package": "GO:github.com/0xJacky/Nginx-UI"
-  },
-  "CVE-2026-107826": {
-    "package": "GO:github.com/corazawaf/coraza/v3"
-  },
-  "CVE-2026-107839": {
-    "package": "GO:github.com/luskaner/ageLANServer/server"
-  },
-  "CVE-2026-107840": {
-    "package": "GO:github.com/jhaals/yopass"
-  },
-  "CVE-2026-48484": {
-    "package": "PIP:pyload-ng"
-  },
-  "CVE-2026-55797": {
-    "package": "GO:github.com/argoproj/argo-cd/v3"
-  },
-  "CVE-2026-57458": {
+  "CVE-2026-91968": {
     "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-62367": {
+  "CVE-2026-91969": {
     "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-62376": {
+  "CVE-2026-91970": {
     "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-68581": {
+  "CVE-2026-91971": {
     "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-91982": {
+  "CVE-2026-91973": {
     "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-91983": {
+  "CVE-2026-91979": {
     "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-91984": {
+  "CVE-2026-91980": {
     "package": "GO:code.vikunja.io/api"
   },
-  "CVE-2026-91985": {
+  "CVE-2026-91981": {
     "package": "GO:code.vikunja.io/api"
   }
 }
