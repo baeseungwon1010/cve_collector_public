@@ -309,19 +309,28 @@ def sync_analysis(manifest: dict) -> tuple[int, dict]:
     return added, analysis
 
 
-def audit_archive(manifest: dict, gh_token: str | None, nvd_api_key: str | None,
-                   batch_size: int | None = None, cursor: int = 0) -> tuple[list, list, dict, int]:
+def audit_archive(
+    manifest: dict, gh_token: str | None, nvd_api_key: str | None,
+    batch_size: int | None = None, cursor: int = 0,
+) -> tuple[list, list, dict, int]:
     """아카이브 각 항목의 PoC 근거를 현재 소스 기준으로 다시 확인한다 (쓰기 없음).
 
     GitHub 검색은 정확 일치가 아니라서 짧은 시퀀스 번호의 CVE가 긴 CVE에 잡아먹힌다
     (CVE-2026-3141 → CVE-2026-31413). 실제로 아카이브의 23%가 이렇게 오염된 적이
     있어서, 사람이 눈으로 발견하기 전에 잡아내려고 둔 검사다.
 
-    batch_size를 주면 전체 대신 cursor부터 batch_size건만 순환 검사해(끝에 닿으면
-    처음으로) 회당 비용을 아카이브 크기와 무관하게 고정한다 — 2026-09-19 GitHub
-    Actions 무료 한도 소진 사고 이후의 영구 조치(private 저장소에서 먼저 적용).
+    항목당 레이트리밋 대기가 붙어서 비용이 len(manifest)에 선형 비례하는데, 아카이브는
+    설계상 절대 줄지 않고 계속 큰다 — 매번 전체를 돌면 영원히 느려진다는 뜻이다. 실제로
+    615건에서 회당 40분까지 자랐고, 이걸 하루 3회 돌리다 2026-09-19에 GitHub Actions
+    무료 한도(월 2,000분)를 통째로 소진하는 사고로 이어졌다. batch_size를 주면 전체 대신
+    sorted(manifest) 중 cursor부터 batch_size개만(끝에 닿으면 처음으로 순환) 검사해
+    회당 비용을 아카이브 크기와 무관하게 영원히 고정한다 — backfill_severity_index/
+    study_scan_index와 같은 커서 패턴. 대신 한 항목이 다시 검사되기까지의 주기가
+    아카이브 크기에 비례해 늘어나는데, 이 프로젝트는 실시간성이 필요 없으므로 괜찮다.
+    batch_size가 None이면(기본값) 기존처럼 전체를 매번 검사한다 — 로컬 수동
+    `--verify --rerender` 전체 재확인용 동작은 그대로 둔다.
 
-    반환: (문제 항목, 확인 불가 항목, {cve_id: 유효 repos}, next_cursor)
+    반환: (문제 항목, 확인 불가 항목, {cve_id: 유효 repos}, 다음 cursor)
     """
     all_ids = sorted(manifest)
     if batch_size is not None and batch_size < len(all_ids):

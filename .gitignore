@@ -2,18 +2,15 @@ __pycache__/
 *.pyc
 .venv/
 
-# ── 이 저장소는 PUBLIC 입니다 ──────────────────────────────────────────
-# 우회 연구·제보·익스플로잇은 사설 연구 저장소에만 둔다. 아래는 절대 커밋 금지.
-# (미공개 취약점 상세를 공개 상태로 커밋하면 조율 공개 정책 위반이다.)
-reports/
-data/analysis.private.json
-data/analysis.md
-data/mechanisms.md
-data/study/
-HANDOFF.md
-CLAUDE.md
+# 미공개 취약점 보고서(reports/)는 저장소가 private 인 동안에만 커밋해도 된다.
+# 다시 public 으로 되돌린다면 그 전에 reports/ 를 여기 추가할 것 —
+# 커밋된 상태로 공개하면 그 자체가 IBM/ArcadeData 조율 공개 정책 위반이 된다.
+# 제보 첨부 zip (107MB 오프라인 번들 포함) — git 에 넣지 않는다.
+# gitignore 는 인라인 주석을 지원하지 않으므로 주석은 반드시 별도 줄에 둘 것.
+reports/attachments/
 
-# 퍼징/첨부 산출물 — 재생성 가능
+# 퍼징 산출물 — 재생성 가능하므로 저장소에 넣지 않는다.
+# jar 바이너리는 특히 한 번 커밋하면 히스토리에서 빼기 번거롭다.
 *.jar
 coverage*.tsv
 sample*.sh
