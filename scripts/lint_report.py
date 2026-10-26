@@ -65,6 +65,7 @@ MD_CODEFENCE_RE = re.compile(r"```")
 MD_BOLD_RE = re.compile(r"\*\*[^*]+\*\*")
 MD_HEADER_RE = re.compile(r"^#{1,6}\s", re.MULTILINE)
 PLACEHOLDER_RE = re.compile(r"\[reporter name\]|\[your name\]|\[TODO\]|\[FIXME\]", re.IGNORECASE)
+MD_IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 
 
 class Result:
@@ -239,6 +240,29 @@ def check_email_plaintext(text: str, result: Result):
         result.ok("Email plain-text: no markdown syntax found")
 
 
+def check_relative_image_links(text: str, is_email: bool, result: Result):
+    """A markdown image with a relative/local path renders broken once the text is
+    pasted into a vendor's web form textarea (no filesystem behind it there) - see
+    feedback_no-relative-image-paths-in-pasted-vendor-forms.md. Only an absolute
+    http(s)/data: URL (meaning the image was actually already uploaded somewhere)
+    is safe to leave in a pasteable section."""
+    body = text if is_email else _strip_internal_wrapper(text)
+    bad = []
+    for m in MD_IMAGE_RE.finditer(body):
+        target = m.group(1).strip()
+        if not re.match(r"^(https?://|data:)", target, re.IGNORECASE):
+            bad.append(target)
+    if bad:
+        result.fail(
+            f"Image link: relative/local path(s) {bad} found in pasteable body - this renders "
+            f"broken once pasted into a web form. Use a placeholder like "
+            f"'[recording to be dropped in here]' instead, and put the drag-and-drop instruction "
+            f"in the internal header note, not inside the pasteable section."
+        )
+    else:
+        result.ok("Image link: no relative/local-path markdown images found in pasteable body")
+
+
 def check_ai_disclosure(text: str, result: Result):
     if re.search(r"AI Use Disclosure", text, re.IGNORECASE):
         result.ok("AI Use Disclosure: section present")
@@ -257,6 +281,7 @@ def lint_file(path: str) -> bool:
     check_korean(text, is_email, result)
     check_cvss_narrative(text, is_email, result)
     check_reporter(text, result)
+    check_relative_image_links(text, is_email, result)
     check_ai_disclosure(text, result)
     if is_email:
         check_email_plaintext(text, result)
