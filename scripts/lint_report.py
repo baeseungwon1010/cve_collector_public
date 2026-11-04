@@ -39,6 +39,7 @@ ECOSYSTEM_WRONG_GUESSES = {
     "c": "Other (no C/C++ option exists - verify against the live dropdown, don't guess)",
     "c++": "Other",
     "cpp": "Other",
+    "generic": "Other (no generic/language-agnostic option exists - verify against the live dropdown, don't guess)",
     "python": "pip",
     "javascript": "npm",
     "js": "npm",
@@ -93,6 +94,26 @@ def extract_field(text: str, field_name: str) -> list[str]:
         )
         if m:
             out.append(m.group(1).strip().rstrip("|").strip())
+            continue
+        # Combined-header table row, e.g. "| **Ecosystem** / **Package name** | `X` / `Y` |" --
+        # this project's reports routinely merge two fields into one cell pair. If the header
+        # cell contains this field name alongside another bolded label (joined by "/"), take the
+        # same position out of the value cell.
+        if "|" not in line or f"**{field_name.lower()}**" not in line.lower():
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) < 2:
+            continue
+        header_parts = [h.strip() for h in cells[0].split("/")]
+        idx = next(
+            (i for i, h in enumerate(header_parts) if h.lower() == f"**{field_name.lower()}**"),
+            None,
+        )
+        if idx is None:
+            continue
+        value_parts = [v.strip() for v in cells[1].split("/")]
+        if idx < len(value_parts):
+            out.append(value_parts[idx].strip("`").strip())
     return out
 
 
