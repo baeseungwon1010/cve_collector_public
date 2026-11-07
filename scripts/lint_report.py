@@ -237,9 +237,18 @@ def check_cvss_narrative(text: str, is_email: bool, result: Result):
         result.ok("CVSS vector: no stray occurrences found outside the structured Severity field")
 
 
-def check_reporter(text: str, result: Result):
+def check_reporter(text: str, is_ghsa: bool, result: Result):
     if PLACEHOLDER_RE.search(text):
         result.fail("Reporter: leftover placeholder found (e.g. '[reporter name]') - fill in baeseungwon1010")
+        return
+    if is_ghsa:
+        # GitHub Security Advisory forms auto-identify/credit the submitting account -
+        # a manual Reporter line is redundant, not just unnecessary (2026-11-07).
+        if "baeseungwon1010" in text:
+            result.warn("Reporter: 'baeseungwon1010' present but this is a GHSA-channel report - "
+                        "GitHub auto-identifies the submitter, drop the manual Reporter line")
+        else:
+            result.ok("Reporter: none present (correct for a GHSA-channel report - GitHub auto-identifies)")
         return
     if "baeseungwon1010" in text:
         result.ok("Reporter: baeseungwon1010 present")
@@ -295,13 +304,14 @@ def lint_file(path: str) -> bool:
     with open(path, encoding="utf-8") as f:
         text = f.read()
     is_email = path.endswith("-EMAIL.txt")
+    is_ghsa = "security/advisories/new" in text
 
     result = Result()
     check_ecosystem(text, result)
     check_cve_in_title(text, is_email, result)
     check_korean(text, is_email, result)
     check_cvss_narrative(text, is_email, result)
-    check_reporter(text, result)
+    check_reporter(text, is_ghsa, result)
     check_relative_image_links(text, is_email, result)
     check_ai_disclosure(text, result)
     if is_email:
