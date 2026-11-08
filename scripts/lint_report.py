@@ -160,6 +160,21 @@ def check_cve_in_title(text: str, is_email: bool, result: Result):
             result.ok(f"Title/Subject: no CVE/GHSA ID found ('{t}')")
 
 
+def _extract_email_fence(text: str) -> str:
+    """For the single-.md email convention (see REPORT_WRITING_PROMPT.md's
+    "Email-channel reports" section, 2026-11-06+), the only content that actually
+    gets pasted into an email client is inside one fenced code block, identified
+    by starting with "To:" - everything else in the file (H1 title, intro
+    blockquote, internal '심각도 산정 메모' notes) is our own working notes and must
+    never be run through the vendor-facing checks. Falls back to the whole text
+    if no such fence is found, which keeps this correct for the older plain
+    *-EMAIL.txt convention too (that file IS the pasteable body, no fence at all)."""
+    for m in re.finditer(r"```\n(.*?)```", text, re.DOTALL):
+        if m.group(1).lstrip().startswith("To:"):
+            return m.group(1)
+    return text
+
+
 def _strip_internal_wrapper(text: str) -> str:
     """Drop our own H1 title + intro blockquote (before the first '---') and the
     trailing internal severity-rationale section (e.g. '## 심각도 산정 메모'),
@@ -182,7 +197,7 @@ def vendor_facing_body(text: str, is_email: bool) -> str:
     *paragraphs* (e.g. the actual value written under a "## Asset"/"## Title"
     heading) are literal paste content."""
     if is_email:
-        return text
+        return _extract_email_fence(text)
     text = _strip_internal_wrapper(text)
     lines = text.splitlines()
     body_lines = [
@@ -211,7 +226,7 @@ def check_korean(text: str, is_email: bool, result: Result):
 def check_cvss_narrative(text: str, is_email: bool, result: Result):
     # Headers must survive here (unlike the Korean check) so "## Severity" can be
     # recognized as the structured field; only strip our own intro/internal wrapper.
-    body = text if is_email else _strip_internal_wrapper(text)
+    body = _extract_email_fence(text) if is_email else _strip_internal_wrapper(text)
     lines = body.splitlines()
     # Lines that are clearly the structured field (table row or **Severity**/**Vector string** line)
     structured_lines = set()
@@ -257,15 +272,18 @@ def check_reporter(text: str, is_ghsa: bool, result: Result):
 
 
 def check_email_plaintext(text: str, result: Result):
+    # Check only the pasteable fence content, not the file's own markdown
+    # wrapper (H1 title, "## 그대로 붙여넣기" heading, the fence markers themselves).
+    body = _extract_email_fence(text)
     issues = []
-    if MD_CODEFENCE_RE.search(text):
+    if MD_CODEFENCE_RE.search(body):
         issues.append("code fence (```)")
-    if MD_BOLD_RE.search(text):
+    if MD_BOLD_RE.search(body):
         issues.append("**bold**")
-    if MD_HEADER_RE.search(text):
+    if MD_HEADER_RE.search(body):
         issues.append("# header")
     if issues:
-        result.fail(f"Email plain-text: markdown syntax found ({', '.join(issues)}) - EMAIL.txt must be pure plain text")
+        result.fail(f"Email plain-text: markdown syntax found ({', '.join(issues)}) - the pasteable body must be pure plain text")
     else:
         result.ok("Email plain-text: no markdown syntax found")
 
@@ -276,7 +294,7 @@ def check_relative_image_links(text: str, is_email: bool, result: Result):
     feedback_no-relative-image-paths-in-pasted-vendor-forms.md. Only an absolute
     http(s)/data: URL (meaning the image was actually already uploaded somewhere)
     is safe to leave in a pasteable section."""
-    body = text if is_email else _strip_internal_wrapper(text)
+    body = _extract_email_fence(text) if is_email else _strip_internal_wrapper(text)
     bad = []
     for m in MD_IMAGE_RE.finditer(body):
         target = m.group(1).strip()
@@ -303,7 +321,16 @@ def check_ai_disclosure(text: str, result: Result):
 def lint_file(path: str) -> bool:
     with open(path, encoding="utf-8") as f:
         text = f.read()
-    is_email = path.endswith("-EMAIL.txt")
+    # The older convention was a standalone *-EMAIL.txt file (the whole file IS
+    # the pasteable body). Since 2026-11-06 an email-channel report is a single
+    # *-SUBMISSION.md with the pasteable body inside one fenced "그대로 붙여넣기"
+    # block instead - detect that too, or every check gated on is_email silently
+    # no-ops/mis-scopes on the new format (caught 2026-11-07: Subject-line check
+    # never ran, and Korean/CVSS-narrative/image-link checks ran against either
+    # the wrong region or an accidentally-empty one instead of the real fence).
+    is_email = path.endswith("-EMAIL.txt") or re.search(
+        r"^##\s*그대로\s*붙여넣기\s*\(이메일", text, re.MULTILINE
+    )
     is_ghsa = "security/advisories/new" in text
 
     result = Result()

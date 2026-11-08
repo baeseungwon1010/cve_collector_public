@@ -51,7 +51,15 @@ def main():
         if v.get("report_status") not in ("submitted", "triaged"):
             continue
         channel = v.get("report_channel") or ""
-        if "ghsa" not in channel.lower() and not (v.get("report_id") or "").startswith("GHSA"):
+        channel_lower = channel.lower()
+        is_ghsa_channel = (
+            "ghsa" in channel_lower
+            or "security advisor" in channel_lower  # "GitHub Security Advisory" / "advisories"
+            or "security/advisories" in channel_lower
+            or (v.get("report_id") or "").startswith("GHSA")
+            or (v.get("ghsa_id") or "").startswith("GHSA")
+        )
+        if not is_ghsa_channel:
             continue
         targets.append((key, v))
 
@@ -61,7 +69,7 @@ def main():
 
     for key, v in targets:
         channel = v.get("report_channel") or ""
-        ghsa_id = v.get("report_id")
+        ghsa_id = v.get("report_id") or v.get("ghsa_id")
         gm = GHSA_ID_RE.search(ghsa_id or "") or GHSA_ID_RE.search(channel)
         if gm:
             ghsa_id = gm.group(0)
