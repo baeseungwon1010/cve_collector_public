@@ -140,6 +140,34 @@ def check_ecosystem(text: str, result: Result):
             )
 
 
+AFFECTED_VERSIONS_PROSE_RE = re.compile(
+    r"[(){}]|[가-힣]|\bmain\b|\bmaster\b|\bcurrent\b|\btoday\b|\bcommit\b|\bbranch\b",
+    re.IGNORECASE,
+)
+
+
+def check_affected_versions(text: str, result: Result):
+    """'Affected versions' must be a clean semver range (<= X.Y.Z, >= A, <= B) -
+    never prose, a branch name, or a commit hash. See
+    feedback_affected-products-clean-version-range.md - this has recurred
+    (Excelize/GitPython/PraisonAI 2026-09, then OpenEMR/vllm 2026-11-13: both
+    wrote 'main (<date> 기준 미수정)' instead of the actual latest release tag)."""
+    values = extract_field(text, "Affected versions")
+    if not values:
+        result.ok("Affected versions: no field found (fine if this isn't a GHSA-form report)")
+        return
+    bad = [v for v in values if AFFECTED_VERSIONS_PROSE_RE.search(v)]
+    if bad:
+        result.fail(
+            f"Affected versions: {bad} looks like prose/a branch name/a commit hash, not a clean "
+            "semver range - use the actual latest release version (e.g. '<= 8.5.0'), and put any "
+            "'confirmed present on main at commit X' detail in the PoC's Versions-tested section "
+            "instead."
+        )
+    else:
+        result.ok("Affected versions: clean semver range")
+
+
 def check_cve_in_title(text: str, is_email: bool, result: Result):
     titles = extract_field(text, "Title")
     # also catch a standalone "## Title" section
@@ -311,6 +339,38 @@ def check_relative_image_links(text: str, is_email: bool, result: Result):
         result.ok("Image link: no relative/local-path markdown images found in pasteable body")
 
 
+FIELD_HEADER_RE = re.compile(
+    r"^##\s*\[(Summary|Details|Proof of concept|Impact) field\]\s*$", re.MULTILINE
+)
+
+
+def check_field_fences(text: str, result: Result):
+    """GHSA-style reports: each '## [X field]' header's body must start with a
+    code fence, so a copy button/block-select grabs exactly that field - see
+    feedback_report-fields-wrapped-in-code-fences.md. This has silently lapsed
+    three times across sessions (2026-11-01, -08, -13) because it lived only in
+    memory text with nothing mechanically checking it; this is that check."""
+    headers = list(FIELD_HEADER_RE.finditer(text))
+    if not headers:
+        result.ok("Field fences: no '## [X field]' headers found (not a GHSA-style report)")
+        return
+    unfenced = []
+    for i, m in enumerate(headers):
+        start = m.end()
+        end = headers[i + 1].start() if i + 1 < len(headers) else len(text)
+        body = text[start:end].strip()
+        if not body.startswith("```"):
+            unfenced.append(m.group(1))
+    if unfenced:
+        result.fail(
+            f"Field fences: {unfenced} field body(ies) don't start with a ``` fence - "
+            "wrap each field's pasteable content in its own code fence immediately "
+            "under its header so a copy button/block-select grabs exactly that field."
+        )
+    else:
+        result.ok("Field fences: every '## [X field]' body is fenced")
+
+
 def check_ai_disclosure(text: str, result: Result):
     if re.search(r"AI Use Disclosure", text, re.IGNORECASE):
         result.ok("AI Use Disclosure: section present")
@@ -335,12 +395,15 @@ def lint_file(path: str) -> bool:
 
     result = Result()
     check_ecosystem(text, result)
+    check_affected_versions(text, result)
     check_cve_in_title(text, is_email, result)
     check_korean(text, is_email, result)
     check_cvss_narrative(text, is_email, result)
     check_reporter(text, is_ghsa, result)
     check_relative_image_links(text, is_email, result)
     check_ai_disclosure(text, result)
+    if not is_email:
+        check_field_fences(text, result)
     if is_email:
         check_email_plaintext(text, result)
 
