@@ -372,10 +372,12 @@ def check_field_fences(text: str, result: Result):
 
 
 def check_ai_disclosure(text: str, result: Result):
+    # Policy changed 2026-11-21: vendor reports no longer carry an AI Use
+    # Disclosure section at all (user decision). Warn if one slipped back in.
     if re.search(r"AI Use Disclosure", text, re.IGNORECASE):
-        result.ok("AI Use Disclosure: section present")
+        result.warn("AI Use Disclosure: section present - policy is to omit this entirely now, remove it")
     else:
-        result.warn("AI Use Disclosure: no 'AI Use Disclosure' section found")
+        result.ok("AI Use Disclosure: correctly absent (policy: omit entirely)")
 
 
 def lint_file(path: str) -> bool:
