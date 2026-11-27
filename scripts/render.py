@@ -292,7 +292,8 @@ def render_analysis_index(entries: list[dict], stats: dict, reported: list[dict]
         f"없음 {stats['none']}건, 도달불가 {stats['unreachable']}건, "
         f"판정불가 {stats['undeterminable']}건, 미판정 {stats['unknown']}건",
         f"- 제보: 발송 {stats['report_submitted']}건, 접수확인 {stats['report_triaged']}건, "
-        f"수정완료 {stats['report_fixed']}건, 초안 {stats['report_drafted']}건",
+        f"수정완료 {stats['report_fixed']}건, 초안 {stats['report_drafted']}건, "
+        f"인정만됨 {stats['report_informational']}건, 기각 {stats['report_rejected']}건",
         "",
     ]
 
@@ -306,7 +307,8 @@ def render_analysis_index(entries: list[dict], stats: dict, reported: list[dict]
             "|---|---|---|---|---|---|",
         ]
         smark = {"submitted": "📤 발송", "triaged": "🔍 접수확인",
-                 "fixed": "✅ 수정완료", "rejected": "❌ 기각"}
+                 "fixed": "✅ 수정완료", "rejected": "❌ 기각",
+                 "informational": "☑️ 인정만됨(미수정)"}
         for e in reported:
             lines.append(
                 f"| {e['id']} | {smark.get(e.get('report_status'), e.get('report_status'))} | "

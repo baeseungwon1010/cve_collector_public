@@ -102,7 +102,7 @@ def ingest_historical_backfill(
                 continue
             if cve["id"] in manifest or cve["id"] in pool:
                 continue
-            pool_store.add_candidate(pool, cve, today)
+            pool_store.add_candidate(pool, cve, today, origin="backfill")
             added.append(cve["id"])
 
         if cursor >= total:
@@ -268,14 +268,14 @@ def ingest_ghsa_candidates(state_data: dict, gh_token: str | None,
     return added, len(advisories)
 
 
-def sync_analysis(manifest: dict) -> tuple[int, dict]:
+def sync_analysis(manifest: dict, today: date) -> tuple[int, dict]:
     """아카이브에 새로 들어온 CVE의 분석 항목을 만들고, 현황 인덱스를 재생성한다.
 
     기존 항목은 절대 덮어쓰지 않는다 — 사람이 손으로 적는 파일이라 수집기는 빈 항목만
     추가한다. 값을 고칠 때는 data/analysis.json 을 직접 편집할 것.
     """
     analysis = analysis_store.load()
-    added = analysis_store.ensure_entries(analysis, manifest.keys())
+    added = analysis_store.ensure_entries(analysis, manifest, today.isoformat())
     analysis_store.save(analysis)
 
     # 아카이브에 없는 CVE도 분석 이력은 남긴다 (PoC 미확인이라 승격은 안 됐지만
@@ -555,7 +555,7 @@ def scan_full_db_for_study(
 
 def write_daily_study_batch(
     today: date,
-    promotions: list[tuple[dict, dict]],
+    promotions: list[tuple[dict, dict, str]],
     pool: dict,
     manifest: dict,
     kev_map: dict,
@@ -580,7 +580,7 @@ def write_daily_study_batch(
     fresh = sorted(
         (
             (cve, poc_info)
-            for cve, poc_info in promotions
+            for cve, poc_info, _origin in promotions
             if cve["cvss_score"] and cve["cvss_score"] >= min_cvss and cve["id"] not in delivered
         ),
         key=lambda pair: pair[0]["cvss_score"],
@@ -726,7 +726,7 @@ def main() -> None:
             manifest_store.save(manifest)
             rebuild_indices(manifest)
             write_high_severity_index(manifest, args.high_severity_min_cvss)
-            sync_analysis(manifest)
+            sync_analysis(manifest, date.today())
             print(f"[rerender] {done}건 재생성, 날짜 정정 {len(changed)}건", file=sys.stderr)
 
         # 확인불가는 일시적 장애일 수 있으므로 실패로 치지 않는다.
@@ -785,7 +785,7 @@ def main() -> None:
         failed_stages.append("lastmod-scan")
         print(f"[collect] lastmod scan FAILED ({type(exc).__name__}: {exc}); 창 유지", file=sys.stderr)
 
-    promotions: list[tuple[dict, dict]] = []
+    promotions: list[tuple[dict, dict, str]] = []
     resolved_ids: set[str] = set()
     for cve in modified:
         if cve["id"] in pool and cve["has_exploit_tag"]:
@@ -797,7 +797,8 @@ def main() -> None:
                 "confirmed_date": today.isoformat(),
                 "published_date": None,  # NVD 레퍼런스는 게시 시각 정보가 없음
             }
-            promotions.append((cve, poc_info))
+            origin = pool[cve["id"]].get("origin", "fresh")
+            promotions.append((cve, poc_info, origin))
             resolved_ids.add(cve["id"])
             pool_store.remove(pool, cve["id"])
     print(f"[collect] {len(resolved_ids)} resolved via NVD Exploit tag", file=sys.stderr)
@@ -821,7 +822,8 @@ def main() -> None:
                 "confirmed_date": today.isoformat(),
                 "published_date": earliest_poc_date(repos),
             }
-            promotions.append((pool[cve_id]["cve"], poc_info))
+            origin = pool[cve_id].get("origin", "fresh")
+            promotions.append((pool[cve_id]["cve"], poc_info, origin))
             resolved_ids.add(cve_id)
             pool_store.remove(pool, cve_id)
             swept += 1
@@ -846,6 +848,7 @@ def main() -> None:
             print(f"[collect] hit --max-github-checks={args.max_github_checks}, remaining stay due for next run", file=sys.stderr)
             break
         cve = pool[cve_id]["cve"]
+        origin = pool[cve_id].get("origin", "fresh")
         repos, used_search = find_poc(cve_id, poc_index, gh_token)
         checked += 1
         if used_search:
@@ -866,7 +869,7 @@ def main() -> None:
                 "confirmed_date": today.isoformat(),
                 "published_date": earliest_poc_date(repos),
             }
-            promotions.append((cve, poc_info))
+            promotions.append((cve, poc_info, origin))
             github_resolved += 1
             pool_store.remove(pool, cve_id)
         else:
@@ -882,7 +885,7 @@ def main() -> None:
 
     # 4) 승격된 CVE 렌더링/저장
     kev_map = kev_client.fetch_kev()
-    for cve, poc_info in promotions:
+    for cve, poc_info, origin in promotions:
         kev_entry = kev_map.get(cve["id"])
         ghsa_entry = fetch_ghsa_for_cve(cve["id"], gh_token)
         markdown = render.render_cve_markdown(cve, kev_entry, ghsa_entry, poc_info)
@@ -895,6 +898,7 @@ def main() -> None:
             "poc_confirmed_date": poc_info["confirmed_date"],
             "poc_published_date": poc_info.get("published_date"),
             "poc_source": poc_info["source"],
+            "origin": origin,
         }
 
     # 5) 공부용 배분 — 3순위 전체 DB 스캔이 새 CVE를 아카이브로 승격시킬 수 있으므로
@@ -921,7 +925,7 @@ def main() -> None:
         state_data, gh_token, args.min_cvss, args.ghsa_batch_size)
     print(f"[collect] GHSA: {ghsa_seen} advisories seen, +{ghsa_added} to analysis queue",
           file=sys.stderr)
-    analysis_added, analysis = sync_analysis(manifest)
+    analysis_added, analysis = sync_analysis(manifest, today)
     pending = analysis_store.counts(analysis)["pending"]
 
     pool_store.save(pool)

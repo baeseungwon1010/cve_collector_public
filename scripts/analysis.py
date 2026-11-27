@@ -74,7 +74,11 @@ REPORT_STATES = (
     "submitted",     # 보냄, 벤더 응답 대기
     "triaged",       # 벤더가 접수·검토 중임을 확인
     "fixed",         # 수정본 배포됨
-    "rejected",      # 벤더가 취약점 아님으로 판단
+    "rejected",      # 벤더가 취약점 자체가 아니라고 판단 (우리가 틀렸다는 뜻)
+    "informational", # 벤더가 유효성은 인정하지만 패치 계획이 없음 (단종 버전 백포트 안 함,
+                      # "accepting as informational" 류) - rejected 와 반드시 구분할 것.
+                      # 2026-11-26: Trilium 건에서 이 값이 없어 rejected 로 억지 매핑했다가
+                      # "우리가 틀렸다"와 "맞다고 인정하지만 안 고친다"가 뭉개진 이력이 있음.
     "n/a",           # 제보 대상 아님 (기존 CVE가 커버, 폐쇄형이라 분석 불가 등)
 )
 
@@ -156,17 +160,40 @@ def save(analysis: dict[str, dict]) -> None:
     write_public(analysis)
 
 
-def ensure_entries(analysis: dict[str, dict], cve_ids) -> int:
+def ensure_entries(analysis: dict[str, dict], manifest: dict[str, dict], today: str) -> int:
     """아카이브에 있는 CVE 중 아직 항목이 없는 것만 기본값으로 추가한다.
 
     기존 항목은 값이 무엇이든 손대지 않는다(사람이 적은 내용 보존). 새 필드가
     나중에 추가된 경우에만 그 필드의 기본값을 채워 넣는다.
+
+    manifest 엔트리의 origin이 "backfill"(과거 CVE 백필, collect.py 1b 단계)이면
+    분석 큐(Phase 1의 reviewed:false)에 넣지 않고 바로 닫아서 추가한다 — 백필은
+    "발행일 무관 PoC 존재 여부"만으로 들어온 임의의 옛 CVE라 Exit B(벤더 제보용
+    우회 분석) 대상이 아니라는 2026-11-27 정책. Exit A(공부용 study/high-severity)는
+    이 필드와 무관하게 그대로 영향 없음 — study 3순위 스캔(scan_full_db_for_study)은
+    origin을 안 쓰는 별개 경로라 이 정책의 적용 대상이 아니다.
+
     반환값: 새로 추가한 CVE 수.
     """
     added = 0
-    for cve_id in cve_ids:
+    for cve_id, meta in manifest.items():
         if cve_id not in analysis:
-            analysis[cve_id] = dict(DEFAULT_ENTRY)
+            if meta.get("origin") == "backfill":
+                entry = dict(DEFAULT_ENTRY)
+                entry["reviewed"] = True
+                entry["reviewed_date"] = today
+                entry["bypass"] = "unknown"
+                entry["bypass_note"] = (
+                    "[2026-11-27 정책] 과거 CVE 백필(collect.py 1b, CVSS 내림차순 "
+                    "트리클 유입) 경로로 들어온 CVE라 Exit B(벤더 제보용 우회) 심층 "
+                    "분석 대상에서 처음부터 제외함. 발행일/PoC 존재만으로 들어왔고 "
+                    "incomplete-fix 가능성과 무관한 무작위 유입이라 분석 가치가 낮음 "
+                    "— 재작업하지 말 것."
+                )
+                entry["report_status"] = "n/a"
+                analysis[cve_id] = entry
+            else:
+                analysis[cve_id] = dict(DEFAULT_ENTRY)
             added += 1
 
     # 새 필드가 추가됐을 때의 보충은 **전체 항목**에 대해 한다. 아카이브 밖 항목
@@ -204,7 +231,7 @@ def reported(analysis: dict[str, dict]) -> list[dict]:
     rows = [
         {**e, "id": k}
         for k, e in analysis.items()
-        if e.get("report_status") in ("submitted", "triaged", "fixed", "rejected")
+        if e.get("report_status") in ("submitted", "triaged", "fixed", "rejected", "informational")
     ]
     rows.sort(key=lambda e: e.get("report_date") or "", reverse=True)
     return rows

@@ -42,7 +42,12 @@ def save(pool: dict[str, dict]) -> None:
         f.write("\n")
 
 
-def add_candidate(pool: dict[str, dict], cve: dict, today: date) -> None:
+def add_candidate(pool: dict[str, dict], cve: dict, today: date, origin: str = "fresh") -> None:
+    """origin: "fresh"(신규 발행 유입, step 1) 또는 "backfill"(과거 CVE 백필, step 1b).
+
+    승격 시점에 manifest로 그대로 복사돼, sync_analysis가 백필 유입분은 분석 큐에
+    넣지 않고 바로 닫는 데 쓴다(2026-11-27, "백필은 Exit B 분석 대상 아님" 정책).
+    """
     if cve["id"] in pool:
         return
     added = today.isoformat()
@@ -52,6 +57,7 @@ def add_candidate(pool: dict[str, dict], cve: dict, today: date) -> None:
         "checks_done": 0,
         "added": added,
         "next_check": next_check,
+        "origin": origin,
     }
 
 

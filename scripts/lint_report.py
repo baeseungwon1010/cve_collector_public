@@ -294,7 +294,12 @@ def check_reporter(text: str, is_ghsa: bool, result: Result):
             result.ok("Reporter: none present (correct for a GHSA-channel report - GitHub auto-identifies)")
         return
     if "baeseungwon1010" in text:
-        result.ok("Reporter: baeseungwon1010 present")
+        if "baeseungwon1010 (github)" in text:
+            result.ok("Reporter: 'baeseungwon1010 (github)' present")
+        else:
+            result.fail("Reporter: 'baeseungwon1010' present but missing the '(github)' suffix - "
+                        "this is a recurring mistake (ERPNext MT940/FFmpeg/Payload all hit it "
+                        "2026-11-26), fix the signature line to read 'baeseungwon1010 (github)'")
     else:
         result.warn("Reporter: 'baeseungwon1010' not found anywhere - confirm reporter identity is set")
 
